@@ -1,0 +1,18 @@
+CVE: CVE-2022-0847 | Name: DirtyPipe | Match data: pkg=linux-kernel,ver>=5.8,ver<=5.16.11 | Tags: ubuntu=(20.04|21.04),debian=11 | Rank: 1
+CVE: CVE-2022-0995 | Name: watch_queue | Match data: pkg=linux-kernel,ver>=5.8,ver<5.16.5,x86_64 | Tags: ubuntu=21.10{kernel:5.13.0.37-generic} | Rank: 1 | Details: Not 100% reliable, may need to be run a couple of times. It rare cases it may panic the kernel.
+═╣ Kernel vulns found: 2
+CVE-2026-43284 (xfrm-ESP): autoloadable: esp4 esp6 xfrm_user ipcomp6
+CVE-2026-43500 (rxrpc): autoloadable: rxrpc
+
+══╣ Potential local forwarders/relays (T1049)
+adam       47722  0.0  0.0   6720  1092 pts/2    S+   19:10   0:00 sed -E s,socat|ssh|-L|-R|-D|ncat|nc,?[1;31;103m&?[0m,g
+
+══╣ Polkit Binary (T1548.003,T1068)
+Pkexec binary found at: /usr/bin/pkexec
+Pkexec binary has SUID bit set!
+-rwsr-xr-x 1 root root 30872 Apr 10 10:59 /usr/bin/pkexec
+pkexec version 0.105
+Potentially vulnerable to CVE-2021-4034 (PwnKit) - check distro patches
+
+
+

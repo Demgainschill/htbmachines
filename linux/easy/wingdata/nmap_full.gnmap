@@ -1,0 +1,5 @@
+# Nmap 7.98 scan initiated Sun Jun 14 10:49:58 2026 as: /usr/lib/nmap/nmap -vvv -p 22,80 -sV -sC -Pn -T4 --min-rate 5000 -vvv --reason -oA ./nmap_full 10.129.3.181
+# Ports scanned: TCP(2;22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.3.181 ()	Status: Up
+Host: 10.129.3.181 ()	Ports: 22/open/tcp//ssh//OpenSSH 9.2p1 Debian 2+deb12u7 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.66/
+# Nmap done at Sun Jun 14 10:50:11 2026 -- 1 IP address (1 host up) scanned in 13.02 seconds

@@ -1,0 +1,64 @@
+# Nmap 7.99 scan initiated Mon Jun 29 19:09:47 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA garfield_results 10.129.244.207
+Increasing send delay for 10.129.244.207 from 0 to 5 due to 14 out of 46 dropped probes since last increase.
+Increasing send delay for 10.129.244.207 from 5 to 10 due to 11 out of 19 dropped probes since last increase.
+Nmap scan report for 10.129.244.207
+Host is up (1.1s latency).
+Not shown: 65514 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-06-29 21:41:27Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: garfield.htb, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+2179/tcp  open  vmrdp?
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: garfield.htb, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2026-06-29T21:43:01+00:00; +8h00m02s from scanner time.
+| ssl-cert: Subject: commonName=DC01.garfield.htb
+| Issuer: commonName=DC01.garfield.htb
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-02-13T01:10:36
+| Not valid after:  2026-08-15T01:10:36
+| MD5:     1d54 628d c6bd 0ef0 98e8 6fe7 ed23 3178
+| SHA-1:   6a3b 9a1d cd3f 0006 7f71 f340 cefb 59b8 b2e9 5041
+|_SHA-256: f7cc 022a 49f7 12ba 7bf1 ba5e 4d55 723c c89b 0f9e e9cc 1e29 9d2b 8d7e 36f3 c999
+| rdp-ntlm-info: 
+|   Target_Name: GARFIELD
+|   NetBIOS_Domain_Name: GARFIELD
+|   NetBIOS_Computer_Name: DC01
+|   DNS_Domain_Name: garfield.htb
+|   DNS_Computer_Name: DC01.garfield.htb
+|   DNS_Tree_Name: garfield.htb
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-06-29T21:42:19+00:00
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        .NET Message Framing
+49667/tcp open  msrpc         Microsoft Windows RPC
+49674/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49675/tcp open  msrpc         Microsoft Windows RPC
+49677/tcp open  msrpc         Microsoft Windows RPC
+49678/tcp open  msrpc         Microsoft Windows RPC
+49903/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2026-06-29T21:42:21
+|_  start_date: N/A
+|_clock-skew: mean: 8h00m01s, deviation: 0s, median: 8h00m01s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 29 19:13:03 2026 -- 1 IP address (1 host up) scanned in 195.95 seconds

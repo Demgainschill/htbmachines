@@ -1,0 +1,4 @@
+assets              [36m (Status: 301)[0m [Size: 353][34m [--> http://wingdata.htb/assets/][0m
+index.html          [32m (Status: 200)[0m [Size: 12492]
+vendor              [36m (Status: 301)[0m [Size: 353][34m [--> http://wingdata.htb/vendor/][0m
+server-status       [33m (Status: 403)[0m [Size: 317]

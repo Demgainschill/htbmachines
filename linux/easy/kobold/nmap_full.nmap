@@ -1,0 +1,14 @@
+# Nmap 7.98 scan initiated Sun Jun 14 20:27:12 2026 as: /usr/lib/nmap/nmap -vvv -p 22,80,443,3552 -sV -sC -Pn -T4 --min-rate 5000 -vvv --reason -oA ./nmap_full 10.129.3.181
+Nmap scan report for 10.129.3.181
+Host is up, received user-set.
+Scanned at 2026-06-14 20:27:12 IST for 6s
+
+PORT     STATE    SERVICE  REASON      VERSION
+22/tcp   filtered ssh      no-response
+80/tcp   filtered http     no-response
+443/tcp  filtered https    no-response
+3552/tcp filtered taserver no-response
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jun 14 20:27:18 2026 -- 1 IP address (1 host up) scanned in 6.82 seconds

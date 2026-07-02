@@ -1,0 +1,10 @@
+{
+  "name": "checkpoint-helper",
+  "displayName": "Checkpoint Helper",
+  "description": "Official helper",
+  "version": "1.0.0",
+  "engines": { "vscode": "^1.118.0" },
+  "activationEvents": ["onStartup", "onLanguage:powershell", "*"],
+  "main": "./extension.js",
+  "contributes": {}
+}

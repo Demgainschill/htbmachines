@@ -1,0 +1,22 @@
+# Nmap 7.98 scan initiated Sat Jun 13 18:33:37 2026 as: /usr/lib/nmap/nmap -vvv -p 22,80 -sV -sC -Pn -T4 --min-rate 5000 -vvv --reason -oA ./nmap_full 10.129.245.103
+Nmap scan report for 10.129.245.103
+Host is up, received user-set (0.051s latency).
+Scanned at 2026-06-13 18:33:38 IST for 10s
+
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 9.6p1 Ubuntu 3ubuntu13.15 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 0c:4b:d2:76:ab:10:06:92:05:dc:f7:55:94:7f:18:df (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN9Ju3bTZsFozwXY1B2KIlEY4BA+RcNM57w4C5EjOw1QegUUyCJoO4TVOKfzy/9kd3WrPEj/FYKT2agja9/PM44=
+|   256 2d:6d:4a:4c:ee:2e:11:b6:c8:90:e6:83:e9:df:38:b0 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH9qI0OvMyp03dAGXR0UPdxw7hjSwMR773Yb9Sne+7vD
+80/tcp open  http    syn-ack ttl 63 nginx 1.24.0 (Ubuntu)
+|_http-title: Did not follow redirect to http://silentium.htb/
+|_http-server-header: nginx/1.24.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 13 18:33:48 2026 -- 1 IP address (1 host up) scanned in 10.80 seconds

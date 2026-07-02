@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Tue Jun 30 21:13:21 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA orion_results 10.129.13.145
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.13.145 ()	Status: Up
+Host: 10.129.13.145 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.15 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/	Ignored State: closed (65533)
+# Nmap done at Tue Jun 30 21:13:45 2026 -- 1 IP address (1 host up) scanned in 24.43 seconds

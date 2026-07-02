@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Jun 14 10:48:57 2026 as: /usr/lib/nmap/nmap -vvv -p 22,80 -sV -sC -Pn -T4 -&#45;min-rate 5000 -vvv -&#45;reason -oA ./nmap_full 10.129.3.181 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -vvv -p 22,80 -sV -sC -Pn -T4 -&#45;min-rate 5000 -vvv -&#45;reason -oA ./nmap_full 10.129.3.181" start="1781414337" startstr="Sun Jun 14 10:48:57 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="6"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1781414337"/>
+<taskend task="NSE" time="1781414337"/>
+<taskbegin task="NSE" time="1781414337"/>
+<taskend task="NSE" time="1781414337"/>
+<taskbegin task="NSE" time="1781414337"/>
+<taskend task="NSE" time="1781414337"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1781414337"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1781414338"/>
+<taskbegin task="SYN Stealth Scan" time="1781414338"/>
+<taskend task="SYN Stealth Scan" time="1781414338" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1781414338"/>
+<taskend task="Service scan" time="1781414344" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1781414344"/>
+<taskend task="NSE" time="1781414349"/>
+<taskbegin task="NSE" time="1781414349"/>
+<taskend task="NSE" time="1781414350"/>
+<taskbegin task="NSE" time="1781414350"/>
+<taskend task="NSE" time="1781414350"/>
+<host starttime="1781414338" endtime="1781414350"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.3.181" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="9.2p1 Debian 2+deb12u7" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 a1:fa:95:8b:d7:56:03:85:e4:45:c9:c7:1e:ba:28:3b (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL+8LZAmzRfTy+4t8PJxEvRWhPho8aZj9ImxRfWn9TKepkxh8pAF3WDu55pd/gaSUGIo9cuOvv+3r6w7IuCpqI4=&#xa;  256 9c:ba:21:1a:97:2f:3a:64:73:c1:4c:1d:ce:65:7a:2f (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFFmcxflCAAe4LPgkg7hOxJen41bu6zaE/y08UnA4oRp"><table>
+<elem key="fingerprint">a1fa958bd7560385e445c9c71eba283b</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL+8LZAmzRfTy+4t8PJxEvRWhPho8aZj9ImxRfWn9TKepkxh8pAF3WDu55pd/gaSUGIo9cuOvv+3r6w7IuCpqI4=</elem>
+</table>
+<table>
+<elem key="fingerprint">9cba211a972f3a6473c14c1dce657a2f</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIFFmcxflCAAe4LPgkg7hOxJen41bu6zaE/y08UnA4oRp</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.66" hostname="localhost" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.66</cpe></service><script id="http-server-header" output="Apache/2.4.66 (Debian)"><elem>Apache/2.4.66 (Debian)</elem>
+</script><script id="http-title" output="Did not follow redirect to http://wingdata.htb/"><elem key="redirect_url">http://wingdata.htb/</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="56116" rttvar="55639" to="278672"/>
+</host>
+<taskbegin task="NSE" time="1781414350"/>
+<taskend task="NSE" time="1781414350"/>
+<taskbegin task="NSE" time="1781414350"/>
+<taskend task="NSE" time="1781414350"/>
+<taskbegin task="NSE" time="1781414350"/>
+<taskend task="NSE" time="1781414350"/>
+<runstats><finished time="1781414350" timestr="Sun Jun 14 10:49:10 2026" summary="Nmap done at Sun Jun 14 10:49:10 2026; 1 IP address (1 host up) scanned in 13.09 seconds" elapsed="13.09" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

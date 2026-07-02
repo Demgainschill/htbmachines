@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Jun 14 20:27:12 2026 as: /usr/lib/nmap/nmap -vvv -p 22,80,443,3552 -sV -sC -Pn -T4 -&#45;min-rate 5000 -vvv -&#45;reason -oA ./nmap_full 10.129.3.181 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -vvv -p 22,80,443,3552 -sV -sC -Pn -T4 -&#45;min-rate 5000 -vvv -&#45;reason -oA ./nmap_full 10.129.3.181" start="1781449032" startstr="Sun Jun 14 20:27:12 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="4" services="22,80,443,3552"/>
+<verbose level="6"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1781449032"/>
+<taskend task="NSE" time="1781449032"/>
+<taskbegin task="NSE" time="1781449032"/>
+<taskend task="NSE" time="1781449032"/>
+<taskbegin task="NSE" time="1781449032"/>
+<taskend task="NSE" time="1781449032"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1781449032"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1781449032"/>
+<taskbegin task="SYN Stealth Scan" time="1781449032"/>
+<taskend task="SYN Stealth Scan" time="1781449033" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1781449033"/>
+<taskbegin task="NSE" time="1781449033"/>
+<taskend task="NSE" time="1781449038"/>
+<taskbegin task="NSE" time="1781449038"/>
+<taskend task="NSE" time="1781449038"/>
+<taskbegin task="NSE" time="1781449038"/>
+<taskend task="NSE" time="1781449038"/>
+<host starttime="1781449032" endtime="1781449038"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.3.181" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3552"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="taserver" method="table" conf="3"/></port>
+</ports>
+</host>
+<taskbegin task="NSE" time="1781449038"/>
+<taskend task="NSE" time="1781449038"/>
+<taskbegin task="NSE" time="1781449038"/>
+<taskend task="NSE" time="1781449038"/>
+<taskbegin task="NSE" time="1781449038"/>
+<taskend task="NSE" time="1781449038"/>
+<runstats><finished time="1781449038" timestr="Sun Jun 14 20:27:18 2026" summary="Nmap done at Sun Jun 14 20:27:18 2026; 1 IP address (1 host up) scanned in 6.82 seconds" elapsed="6.82" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,5 @@
+# Nmap 7.98 scan initiated Tue Jun 16 08:31:05 2026 as: /usr/lib/nmap/nmap -vvv -p 21 -sV -sC -Pn -T4 --min-rate 5000 -vvv --reason -oA ./nmap_full 10.129.46.37
+# Ports scanned: TCP(1;21) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.46.37 ()	Status: Up
+Host: 10.129.46.37 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/
+# Nmap done at Tue Jun 16 08:31:18 2026 -- 1 IP address (1 host up) scanned in 12.67 seconds

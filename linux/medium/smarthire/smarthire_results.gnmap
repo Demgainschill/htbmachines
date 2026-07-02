@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Thu Jul  2 08:09:57 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA smarthire_results 10.129.245.215
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.245.215 (smarthire.htb)	Status: Up
+Host: 10.129.245.215 (smarthire.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.15 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/	Ignored State: closed (65533)
+# Nmap done at Thu Jul  2 08:10:38 2026 -- 1 IP address (1 host up) scanned in 41.57 seconds

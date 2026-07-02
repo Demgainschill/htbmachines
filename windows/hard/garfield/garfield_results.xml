@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Mon Jun 29 19:09:47 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA garfield_results 10.129.244.207 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA garfield_results 10.129.244.207" start="1782740387" startstr="Mon Jun 29 19:09:47 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1782740388"/>
+<taskend task="NSE" time="1782740388"/>
+<taskbegin task="NSE" time="1782740388"/>
+<taskend task="NSE" time="1782740388"/>
+<taskbegin task="NSE" time="1782740388"/>
+<taskend task="NSE" time="1782740388"/>
+<taskbegin task="Ping Scan" time="1782740388"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.244.207" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1782740388" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1782740388"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1782740388"/>
+<taskbegin task="SYN Stealth Scan" time="1782740388"/>
+<taskprogress task="SYN Stealth Scan" time="1782740437" percent="59.12" remaining="34" etc="1782740471"/>
+<taskend task="SYN Stealth Scan" time="1782740479" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1782740479"/>
+<taskend task="Service scan" time="1782740536" extrainfo="21 services on 1 host"/>
+<taskbegin task="NSE" time="1782740536"/>
+<taskend task="NSE" time="1782740576"/>
+<taskbegin task="NSE" time="1782740576"/>
+<taskend task="NSE" time="1782740583"/>
+<taskbegin task="NSE" time="1782740583"/>
+<taskend task="NSE" time="1782740583"/>
+<host starttime="1782740388" endtime="1782740583"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.244.207" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65514">
+<extrareasons reason="no-response" count="65514" proto="tcp" ports="1-52,54-87,89-134,136-138,140-388,390-444,446-463,465-592,594-635,637-2178,2180-3267,3270-3388,3390-5984,5986-9388,9390-49666,49668-49673,49676,49679-49902,49904-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-06-29 21:41:27Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: garfield.htb, Site: Default-First-Site-Name" hostname="DC01" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="2179"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="vmrdp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: garfield.htb, Site: Default-First-Site-Name" hostname="DC01" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-06-29T21:43:01+00:00; +8h00m02s from scanner time."><elem key="date">2026-06-29T21:43:01+00:00</elem>
+<elem key="delta">28802.0</elem>
+</script><script id="ssl-cert" output="Subject: commonName=DC01.garfield.htb&#xa;Issuer: commonName=DC01.garfield.htb&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-02-13T01:10:36&#xa;Not valid after:  2026-08-15T01:10:36&#xa;MD5:     1d54 628d c6bd 0ef0 98e8 6fe7 ed23 3178&#xa;SHA-1:   6a3b 9a1d cd3f 0006 7f71 f340 cefb 59b8 b2e9 5041&#xa;SHA-256: f7cc 022a 49f7 12ba 7bf1 ba5e 4d55 723c c89b 0f9e e9cc 1e29 9d2b 8d7e 36f3 c999"><table key="subject">
+<elem key="commonName">DC01.garfield.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DC01.garfield.htb</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B9DC0D32C85004EDF3AB5FE913CFA7071C06C49D654B2C93E5C4C884D0D518E8F592F9EBBDB92C4F4EC457EBEA3059C2AE9D5DE02030BCEA82185B8F3E8570D97EA810CDC21E4DD6769A00183B92512352BDF91EB4684F88F8C3D266D1525D3F4CBA83BB4B2138BD43EEAD485C78781FF4BB46A81D19752CEE3435F51AF2C9527A7DB1F56A866B8362404EB969CC087DBBBEEEA4F5612B6A26793C84CFD3CDC5E1256DBF23DB66200BD5A347E612C1072AF718CC352FBC05FD8CC05F65B4F629DCCF0F28C3BA21BF7712F59F6E443BE60C41D4227E509A3CE62F3F3752F966F7E40CFE549019062A26960DF22AC7E465A54B8EB7963DF0DFECCD3D3C97E61005</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-02-13T01:10:36</elem>
+<elem key="notAfter">2026-08-15T01:10:36</elem>
+</table>
+<elem key="md5">1d54628dc6bd0ef098e86fe7ed233178</elem>
+<elem key="sha1">6a3b9a1dcd3f00067f71f340cefb59b8b2e95041</elem>
+<elem key="sha256">f7cc022a49f712ba7bf1ba5e4d55723cc89b0f9ee9cc1e299d2b8d7e36f3c999</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC5jCCAc6gAwIBAgIQRWjBnxmhFpRL9DZFFlNNGzANBgkqhkiG9w0BAQsFADAc&#xa;MRowGAYDVQQDExFEQzAxLmdhcmZpZWxkLmh0YjAeFw0yNjAyMTMwMTEwMzZaFw0y&#xa;NjA4MTUwMTEwMzZaMBwxGjAYBgNVBAMTEURDMDEuZ2FyZmllbGQuaHRiMIIBIjAN&#xa;BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAudwNMshQBO3zq1/pE8+nBxwGxJ1l&#xa;SyyT5cTIhNDVGOj1kvnrvbksT07EV+vqMFnCrp1d4CAwvOqCGFuPPoVw2X6oEM3C&#xa;Hk3WdpoAGDuSUSNSvfketGhPiPjD0mbRUl0/TLqDu0shOL1D7q1IXHh4H/S7Rqgd&#xa;GXUs7jQ19RryyVJ6fbH1aoZrg2JATrlpzAh9u77upPVhK2omeTyEz9PNxeElbb8j&#xa;22YgC9WjR+YSwQcq9xjMNS+8Bf2MwF9ltPYp3M8PKMO6Ib93EvWfbkQ75gxB1CJ+&#xa;UJo85i8/N1L5ZvfkDP5UkBkGKiaWDfIqx+RlpUuOt5Y98N/szT08l+YQBQIDAQAB&#xa;oyQwIjATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcN&#xa;AQELBQADggEBACOttD+PBn41TyIk0Fr5ISoHzalcZLFhWwVpmJKvGPwEEj+2o3JI&#xa;yZgV0kVinOLCkEY2O+N95iWNcbc0jTkmkhHmfTyNZ2mA4P0Dxd+TVnBzUleL8Tjm&#xa;Rm8s53SBxncdtykSulWbszQLLgRy09EBapw2JHNpWG9p0ymPqW3uBGcJXfsZ3hif&#xa;+xIeWo+aXoJfSG4F+ptBxRMJ7OGr+q4jQh84VUi5tLUXtHvxJMuM/LPgNVkEsYFU&#xa;yNeT8ukEDEdMTVAYWeftXPMfAbdDX1Ptr0JCeLW5VFWrql9EszHXs4nCvoBg9iSj&#xa;7ipPJi99f+g9vL4srEEeQxsVGlv/RZ85Bj4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: GARFIELD&#xa;  NetBIOS_Domain_Name: GARFIELD&#xa;  NetBIOS_Computer_Name: DC01&#xa;  DNS_Domain_Name: garfield.htb&#xa;  DNS_Computer_Name: DC01.garfield.htb&#xa;  DNS_Tree_Name: garfield.htb&#xa;  Product_Version: 10.0.17763&#xa;  System_Time: 2026-06-29T21:42:19+00:00"><elem key="Target_Name">GARFIELD</elem>
+<elem key="NetBIOS_Domain_Name">GARFIELD</elem>
+<elem key="NetBIOS_Computer_Name">DC01</elem>
+<elem key="DNS_Domain_Name">garfield.htb</elem>
+<elem key="DNS_Computer_Name">DC01.garfield.htb</elem>
+<elem key="DNS_Tree_Name">garfield.htb</elem>
+<elem key="Product_Version">10.0.17763</elem>
+<elem key="System_Time">2026-06-29T21:42:19+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49674"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49675"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49677"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49678"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49903"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2026-06-29T21:42:21&#xa;  start_date: N/A"><elem key="date">2026-06-29T21:42:21</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: 8h00m01s, deviation: 0s, median: 8h00m01s"><elem key="mean">28801</elem>
+<elem key="count">3</elem>
+<elem key="median">28801</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="1114158" rttvar="1288426" to="6267862"/>
+</host>
+<taskbegin task="NSE" time="1782740583"/>
+<taskend task="NSE" time="1782740583"/>
+<taskbegin task="NSE" time="1782740583"/>
+<taskend task="NSE" time="1782740583"/>
+<taskbegin task="NSE" time="1782740583"/>
+<taskend task="NSE" time="1782740583"/>
+<runstats><finished time="1782740583" timestr="Mon Jun 29 19:13:03 2026" summary="Nmap done at Mon Jun 29 19:13:03 2026; 1 IP address (1 host up) scanned in 195.95 seconds" elapsed="195.95" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

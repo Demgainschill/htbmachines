@@ -1,0 +1,25 @@
+# Nmap 7.99 scan initiated Thu Jul  2 08:09:57 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA smarthire_results 10.129.245.215
+Increasing send delay for 10.129.245.215 from 0 to 5 due to 1854 out of 6178 dropped probes since last increase.
+Increasing send delay for 10.129.245.215 from 10 to 20 due to 1454 out of 4846 dropped probes since last increase.
+Increasing send delay for 10.129.245.215 from 40 to 80 due to 1187 out of 3955 dropped probes since last increase.
+Increasing send delay for 10.129.245.215 from 80 to 160 due to 2159 out of 7196 dropped probes since last increase.
+Increasing send delay for 10.129.245.215 from 320 to 640 due to 676 out of 2252 dropped probes since last increase.
+Increasing send delay for 10.129.245.215 from 640 to 1000 due to 407 out of 1356 dropped probes since last increase.
+Nmap scan report for smarthire.htb (10.129.245.215)
+Host is up (0.18s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.15 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 41:3c:e3:bb:88:70:99:7f:b8:96:59:48:9b:85:98:69 (ECDSA)
+|_  256 d5:9d:fd:6b:be:d8:39:6f:3f:43:ab:0e:f6:3e:22:db (ED25519)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+|_http-title: Overview | SmartHIRE
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jul  2 08:10:38 2026 -- 1 IP address (1 host up) scanned in 41.57 seconds

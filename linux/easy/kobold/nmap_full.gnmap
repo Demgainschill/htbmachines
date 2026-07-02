@@ -1,0 +1,5 @@
+# Nmap 7.98 scan initiated Sun Jun 14 20:27:12 2026 as: /usr/lib/nmap/nmap -vvv -p 22,80,443,3552 -sV -sC -Pn -T4 --min-rate 5000 -vvv --reason -oA ./nmap_full 10.129.3.181
+# Ports scanned: TCP(4;22,80,443,3552) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.3.181 ()	Status: Up
+Host: 10.129.3.181 ()	Ports: 22/filtered/tcp//ssh///, 80/filtered/tcp//http///, 443/filtered/tcp//https///, 3552/filtered/tcp//taserver///
+# Nmap done at Sun Jun 14 20:27:18 2026 -- 1 IP address (1 host up) scanned in 6.82 seconds
