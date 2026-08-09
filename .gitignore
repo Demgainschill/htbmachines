@@ -1,0 +1,6 @@
+# Pentesting tools (binary executables)
+*.exe
+*.dll
+*.bin
+winPEAS*
+mimikatz*
