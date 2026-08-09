@@ -1,0 +1,3 @@
+help: Show level-2 specific fast reroute/loop free alternate (lfa)
+			information
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

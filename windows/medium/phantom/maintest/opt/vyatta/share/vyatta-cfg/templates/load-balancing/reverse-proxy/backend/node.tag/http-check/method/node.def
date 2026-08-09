@@ -1,0 +1,5 @@
+type: txt
+help: HTTP method used for health check
+val_help: options|head|get|post|put; HTTP method used for health checking
+allowed: echo "options head get post put"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(options|head|get|post|put)\'   --value \'$VAR(@)\'"; "Invalid value"

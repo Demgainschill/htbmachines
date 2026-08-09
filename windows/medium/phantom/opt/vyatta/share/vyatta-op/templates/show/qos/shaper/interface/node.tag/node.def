@@ -1,0 +1,3 @@
+help: Show QoS shaping for given interface
+allowed: echo "<interface>" && /bin/cli-shell-api listActiveNodes qos interface | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/qos.py show_shaper --ifname $5

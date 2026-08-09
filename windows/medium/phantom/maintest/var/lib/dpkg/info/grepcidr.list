@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/grepcidr
+/usr/share
+/usr/share/doc
+/usr/share/doc/grepcidr
+/usr/share/doc/grepcidr/README.gz
+/usr/share/doc/grepcidr/changelog.Debian.gz
+/usr/share/doc/grepcidr/changelog.gz
+/usr/share/doc/grepcidr/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/grepcidr.1.gz

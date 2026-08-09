@@ -1,0 +1,2 @@
+help: Monitor last lines of ALL Virtual Private Network services
+run: journalctl --no-hostname --boot --unit strongswan.service --unit accel-ppp@*.service --unit ocserv.service

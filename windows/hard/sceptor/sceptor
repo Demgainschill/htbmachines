@@ -1,0 +1,15 @@
+[libdefaults]
+    dns_lookup_kdc = false
+    dns_lookup_realm = false
+    default_realm = SCEPTER.HTB
+
+[realms]
+    SCEPTER.HTB = {
+        kdc = dc01.scepter.htb
+        admin_server = dc01.scepter.htb
+        default_domain = scepter.htb
+    }
+
+[domain_realm]
+    .scepter.htb = SCEPTER.HTB
+    scepter.htb = SCEPTER.HTB

@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/lib
+/usr/lib/podman
+/usr/lib/podman/aardvark-dns
+/usr/share
+/usr/share/doc
+/usr/share/doc/aardvark-dns
+/usr/share/doc/aardvark-dns/changelog.Debian.gz
+/usr/share/doc/aardvark-dns/copyright

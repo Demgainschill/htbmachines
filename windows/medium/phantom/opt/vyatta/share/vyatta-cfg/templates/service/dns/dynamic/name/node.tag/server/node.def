@@ -1,0 +1,6 @@
+type: txt
+help: Remote Dynamic DNS server to send updates to
+val_help: ipv4; IPv4 address of the remote server
+val_help: ipv6; IPv6 address of the remote server
+val_help: hostname; Fully qualified domain name of the remote server
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-address \" --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Remote server must be IP address or fully qualified domain name"

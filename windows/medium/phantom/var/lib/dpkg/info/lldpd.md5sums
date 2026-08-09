@@ -1,0 +1,16 @@
+a399dd14710edbc76d57bb14dc970e9f  lib/systemd/system/lldpd.service
+b0fa581290a2f25c4250bfa3ceaf7f9e  usr/lib/x86_64-linux-gnu/liblldpctl.so.4.9.1
+c1602bf40ee719792e6424954013d891  usr/sbin/lldpcli
+f44b4e8769fe92da279d9b482c6f9444  usr/sbin/lldpd
+c95eef7b9f64148a2f7083e1f6d08e1a  usr/share/bash-completion/completions/lldpcli
+28e4ccb8176921a54928ec173e7f76a2  usr/share/doc/lldpd/CONTRIBUTE.md
+2bb8f5871c76d6531f61536bbfbd6d1d  usr/share/doc/lldpd/NEWS.gz
+0aa6f448341e4c89b11de1f80b5a037f  usr/share/doc/lldpd/README.Debian
+1c97cf0dae40eb8edba4388bcbfedf2e  usr/share/doc/lldpd/README.md.gz
+a0b7a609b70b25416ffc9050535d9d7f  usr/share/doc/lldpd/changelog.Debian.gz
+953ece9b6ed1a418b4f62eed1678e39b  usr/share/doc/lldpd/changelog.gz
+6485aa3bddf86d669a2b1729639f04dd  usr/share/doc/lldpd/copyright
+c40270ef160f830df30ab7b885cdc5f1  usr/share/lintian/overrides/lldpd
+000e65d8aaa2768edb52e9f2ef980046  usr/share/man/man8/lldpcli.8.gz
+6d4a874b7ebc9db7b09058fd33882f75  usr/share/man/man8/lldpd.8.gz
+dfc66b406c0bee35a3b96127a10a96c5  usr/share/zsh/vendor-completions/_lldpcli

@@ -1,0 +1,3 @@
+/etc/logcheck/ignore.d.server/pdns-recursor
+/etc/powerdns/recursor.conf
+/etc/powerdns/recursor.lua

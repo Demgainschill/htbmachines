@@ -1,0 +1,26 @@
+show run
+configure
+show running-config zebra no-header
+show running-config zebra no-header
+conf t
+ip route 0.0.0.0/0 192.168.1.1 eth0 tag 210 210 
+show run
+configure
+show running-config zebra no-header
+show running-config zebra no-header
+conf t
+no ip route 0.0.0.0/0 192.168.1.1 eth0 tag 210 210 
+show run
+configure
+show running-config zebra no-header
+show running-config zebra no-header
+conf t
+ip route 0.0.0.0/0 192.168.1.1 eth0 tag 210 210 
+conf t
+no ip route 0.0.0.0/0 192.168.1.1 eth0 tag 210 210 
+show run
+configure
+show running-config zebra no-header
+show running-config zebra no-header
+conf t
+ip route 0.0.0.0/0 192.168.1.1 eth0 tag 210 210 

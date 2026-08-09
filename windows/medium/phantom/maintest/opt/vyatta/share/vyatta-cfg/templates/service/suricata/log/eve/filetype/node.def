@@ -1,0 +1,6 @@
+type: txt
+help: EVE logging destination (default: regular)
+val_help: regular; Log to filename (default)
+val_help: syslog; Log to syslog
+allowed: echo "regular syslog"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(regular|syslog)\'   --value \'$VAR(@)\'"; "Invalid value"

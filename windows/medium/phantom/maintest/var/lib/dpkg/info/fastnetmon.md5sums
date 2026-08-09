@@ -1,0 +1,9 @@
+b0200264adf877049e82713ce48fcf48  lib/systemd/system/fastnetmon.service
+448780c39a91d0d5dca5233f56cd2c62  usr/bin/fastnetmon_api_client
+da14edc194f4f948de0d3e5139a03faf  usr/bin/fastnetmon_client
+bcf1db7e6cd68cb19c1f499c1d1e9d2a  usr/sbin/fastnetmon
+756670c07836d035ce742776adea767f  usr/share/doc/fastnetmon/changelog.Debian.gz
+40afaf56a78c564f0f43525a32b1de98  usr/share/doc/fastnetmon/copyright
+5942be96dd2514cc0e3c737b0adc9891  usr/share/lintian/overrides/fastnetmon
+3548d45cba4ad7b1ed0dbc1116023950  usr/share/man/man1/fastnetmon_client.1.gz
+dc157cce28eb216bdfdce72b66c34739  usr/share/man/man8/fastnetmon.8.gz

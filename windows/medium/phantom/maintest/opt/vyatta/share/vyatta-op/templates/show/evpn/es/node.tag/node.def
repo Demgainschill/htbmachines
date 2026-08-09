@@ -1,0 +1,3 @@
+help: Show ESI information for specified ESI
+allowed: echo "<esi>" && ${vyos_completion_dir}/list_esi.sh
+run: ${vyos_op_scripts_dir}/evpn.py show_evpn --command "$*"

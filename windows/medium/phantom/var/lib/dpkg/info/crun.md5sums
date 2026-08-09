@@ -1,0 +1,6 @@
+25b85c7d34f46ee0bfa8b1cf731da156  usr/bin/crun
+3700078f326781f4c2700852a8526df6  usr/lib/x86_64-linux-gnu/libcrun.a
+f1e7933b17d42b24ceab745790fdf510  usr/share/doc/crun/README.md.gz
+51f5cf8dadcb3813eaf2b5237e772adc  usr/share/doc/crun/changelog.Debian.gz
+6b9592b6d85d156a3a89af366f401be7  usr/share/doc/crun/copyright
+0a448552c67374e67ac44cb46a2f90fa  usr/share/man/man1/crun.1.gz

@@ -1,0 +1,2 @@
+help: Show WWAN module detailed information summary
+run: if cli-shell-api existsActive interfaces wwan $4; then mmcli --modem ${4#wwan}; else echo "Interface \"$4\" unconfigured!"; fi

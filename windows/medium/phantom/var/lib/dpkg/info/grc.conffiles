@@ -1,0 +1,5 @@
+/etc/default/grc
+/etc/grc.conf
+/etc/grc.fish
+/etc/grc.zsh
+/etc/profile.d/grc.sh

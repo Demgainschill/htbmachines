@@ -1,0 +1,16 @@
+libnetfilter_cttimeout.so.1 libnetfilter-cttimeout1 #MINVER#
+* Build-Depends-Package: libnetfilter-cttimeout-dev
+ LIBNETFILTER_CTTIMEOUT_1.0@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ LIBNETFILTER_CTTIMEOUT_1.1@LIBNETFILTER_CTTIMEOUT_1.1 1.0.0
+ nfct_timeout_alloc@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_attr_set@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_attr_set_u16@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_attr_set_u8@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_attr_unset@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_free@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_nlmsg_build_hdr@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_nlmsg_build_payload@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_nlmsg_parse_payload@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_policy_attr_set_u32@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_policy_attr_to_name@LIBNETFILTER_CTTIMEOUT_1.0 1.0.0
+ nfct_timeout_snprintf@LIBNETFILTER_CTTIMEOUT_1.1 1.0.0

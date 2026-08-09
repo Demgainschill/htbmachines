@@ -1,0 +1,2 @@
+help: Show NAT static log for specified rule
+run: journalctl --no-hostname --boot -k | egrep "\[STATIC-(SRC|DST)-NAT-$6\]"

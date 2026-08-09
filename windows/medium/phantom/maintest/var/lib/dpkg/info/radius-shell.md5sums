@@ -1,0 +1,5 @@
+15e022ce41cd3161104bc26520736546  sbin/radius_shell
+72ba171227f43fc5a0c24e533c35130b  usr/share/doc/radius-shell/changelog.Debian.gz
+2445c0a06ab6e3d5630916f526dfdd2e  usr/share/doc/radius-shell/changelog.gz
+01e28efbf56ddabc748e069ab0b2cb76  usr/share/doc/radius-shell/copyright
+02c4adec659b05d7ec7f8e9f0c5099db  usr/share/man/man8/radius_shell.8.gz

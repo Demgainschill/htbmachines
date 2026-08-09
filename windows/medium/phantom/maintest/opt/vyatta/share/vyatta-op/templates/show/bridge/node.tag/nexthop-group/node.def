@@ -1,0 +1,2 @@
+help: Display bridge interface nexthop-group
+run: ${vyos_op_scripts_dir}/bridge.py show_detail --nexthop_group --interface=$3

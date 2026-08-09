@@ -1,0 +1,2 @@
+help: Show NAT destination log for specified rule
+run: journalctl --no-hostname --boot -k | egrep "\[DST-NAT-$6\]"

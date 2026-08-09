@@ -1,0 +1,6 @@
+type: txt
+help: Group management cipher suite. All the stations connecting to
+			the BSS will also need to support the selected cipher
+			(default: AES-128-CMAC)
+allowed: echo "AES-128-CMAC BIP-CMAC-256 BIP-GMAC-128 BIP-GMAC-256"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(AES-128-CMAC|BIP-CMAC-256|BIP-GMAC-128|BIP-GMAC-256)\'   --value \'$VAR(@)\'"; "Invalid group management cipher selection"

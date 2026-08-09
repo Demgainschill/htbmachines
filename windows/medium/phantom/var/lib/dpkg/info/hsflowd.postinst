@@ -1,0 +1,7 @@
+#!/bin/bash
+# either:
+# update-rc.d hsflowd defaults
+# or:
+# systemctl daemon-reload
+# systemctl enable hsflowd
+exit 0

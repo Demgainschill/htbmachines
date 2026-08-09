@@ -1,0 +1,3 @@
+help: Show DHCPv6 server static mappings for a specific pool
+allowed: /bin/cli-shell-api listActiveNodes service dhcp-server shared-network-name | sed -e "s/'//g" && echo
+run: ${vyos_op_scripts_dir}/dhcp.py show_server_static_mappings --family inet6 --pool $6

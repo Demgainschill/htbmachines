@@ -1,0 +1,3 @@
+help: Show log for specific wireless interface supplicant
+allowed: /bin/cli-shell-api listActiveNodes interfaces wireless | sed -e "s/'//g" && echo
+run: if [[ $(cli-shell-api returnActiveValue interfaces wireless $6 type) == "station" ]]; then journalctl --no-hostname --boot --unit "wpa_supplicant@$6.service"; else echo "Wireless interface $6 not configured as station!"; fi

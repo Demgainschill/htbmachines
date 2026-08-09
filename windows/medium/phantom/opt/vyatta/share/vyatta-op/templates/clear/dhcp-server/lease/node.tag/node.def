@@ -1,0 +1,2 @@
+help: DHCP server lease
+run: ${vyos_op_scripts_dir}/dhcp.py clear_dhcp_server_lease --family inet --address $4

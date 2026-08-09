@@ -1,0 +1,7 @@
+type: txt
+help: Set timeout
+val_help: <number>s; Timeout value in seconds
+val_help: <number>m; Timeout value in minutes
+val_help: <number>h; Timeout value in hours
+val_help: <number>d; Timeout value in days
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'\\d+(s|m|h|d)\'   --value \'$VAR(@)\'"; "Invalid value"

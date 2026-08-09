@@ -1,0 +1,2 @@
+help: BGP Segment Routing SRv6
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

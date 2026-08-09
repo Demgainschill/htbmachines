@@ -1,0 +1,93 @@
+# Nmap 7.99 scan initiated Fri Jul 17 21:37:54 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA overwatch_results 10.129.244.81
+Nmap scan report for overwatch.htb (10.129.244.81)
+Host is up (0.100s latency).
+Not shown: 65512 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  tcpwrapped
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-17 16:09:35Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: overwatch.htb, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: overwatch.htb, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=S200401.overwatch.htb
+| Issuer: commonName=S200401.overwatch.htb
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-05-12T14:36:16
+| Not valid after:  2026-11-11T14:36:16
+| MD5:     6a0f b3fa ecc9 c795 b2f3 cf32 8a50 df68
+| SHA-1:   278d d2fc 146c f8d6 4c5c 9c21 fa78 a428 f5e8 e352
+|_SHA-256: b60e 3dd3 51ce 872d 6b85 23fb 0068 8f95 f596 a2a8 2d4e fc32 0b7a 9e53 dff6 21f8
+| rdp-ntlm-info: 
+|   Target_Name: OVERWATCH
+|   NetBIOS_Domain_Name: OVERWATCH
+|   NetBIOS_Computer_Name: S200401
+|   DNS_Domain_Name: overwatch.htb
+|   DNS_Computer_Name: S200401.overwatch.htb
+|   DNS_Tree_Name: overwatch.htb
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-07-17T16:10:21+00:00
+|_ssl-date: 2026-07-17T16:10:58+00:00; +39s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+6520/tcp  open  ms-sql-s      Microsoft SQL Server 2022 16.00.1000.00; RTM
+| ms-sql-info: 
+|   10.129.244.81:6520: 
+|     Version: 
+|       name: Microsoft SQL Server 2022 RTM
+|       number: 16.00.1000.00
+|       Product: Microsoft SQL Server 2022
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 6520
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-17T14:33:06
+| Not valid after:  2056-07-17T14:33:06
+| MD5:     a24e aadf 5655 5c2f f164 fd8a e42a cc9f
+| SHA-1:   ae1b 317a e5fd e9d9 1c72 5840 373d 8887 638d 2fa3
+|_SHA-256: c8fd 4a41 8860 f821 e67f 450e b7a1 4b34 1d60 9f12 84f4 9ea4 d658 a599 0075 a25c
+| ms-sql-ntlm-info: 
+|   10.129.244.81:6520: 
+|     Target_Name: OVERWATCH
+|     NetBIOS_Domain_Name: OVERWATCH
+|     NetBIOS_Computer_Name: S200401
+|     DNS_Domain_Name: overwatch.htb
+|     DNS_Computer_Name: S200401.overwatch.htb
+|     DNS_Tree_Name: overwatch.htb
+|_    Product_Version: 10.0.20348
+|_ssl-date: 2026-07-17T16:10:58+00:00; +39s from scanner time.
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+60448/tcp open  tcpwrapped
+60450/tcp open  tcpwrapped
+62476/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+62477/tcp open  msrpc         Microsoft Windows RPC
+62484/tcp open  msrpc         Microsoft Windows RPC
+62501/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: S200401; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2026-07-17T16:10:23
+|_  start_date: N/A
+|_clock-skew: mean: 40s, deviation: 1s, median: 40s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul 17 21:40:23 2026 -- 1 IP address (1 host up) scanned in 149.12 seconds

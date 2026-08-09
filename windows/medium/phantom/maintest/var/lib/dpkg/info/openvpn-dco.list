@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/openvpn-dco
+/usr/share/doc/openvpn-dco/changelog.gz
+/lib
+/lib/modules
+/lib/modules/6.6.36-amd64-vyos
+/lib/modules/6.6.36-amd64-vyos/extra
+/lib/modules/6.6.36-amd64-vyos/extra/ovpn-dco-v2.ko

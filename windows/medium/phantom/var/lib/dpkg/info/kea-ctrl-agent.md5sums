@@ -1,0 +1,10 @@
+c38807a39b49237cffa78ee6d3cc648b  lib/systemd/system/kea-ctrl-agent.service
+3b6a7dbbf348bb7c305715cff22ec521  usr/sbin/kea-ctrl-agent
+5af02180fed14ec51ade77c829e07d31  usr/sbin/kea-shell
+17c21540d41bedb61b09bd55ee8cb145  usr/share/doc/kea-ctrl-agent/NEWS.Debian.gz
+f785bc28db5fd731386708eecde49d6d  usr/share/doc/kea-ctrl-agent/changelog.Debian.gz
+2c4ed6777d152a99fdb2b8fe16266e29  usr/share/doc/kea-ctrl-agent/changelog.gz
+53640d962f6dd5856da55a8bec8d64b4  usr/share/doc/kea-ctrl-agent/copyright
+484acd4f089da7f931bcd11230c98a73  usr/share/lintian/overrides/kea-ctrl-agent
+c0a7c042438438809a651a278b10dd40  usr/share/man/man8/kea-ctrl-agent.8.gz
+e83ac3a6f8df9f9af89606c3008aa083  usr/share/man/man8/kea-shell.8.gz

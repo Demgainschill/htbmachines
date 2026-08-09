@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Jul 12 11:00:27 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA bruno_results 10.129.238.9 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA bruno_results 10.129.238.9" start="1783834227" startstr="Sun Jul 12 11:00:27 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1783834227"/>
+<taskend task="NSE" time="1783834227"/>
+<taskbegin task="NSE" time="1783834227"/>
+<taskend task="NSE" time="1783834227"/>
+<taskbegin task="NSE" time="1783834227"/>
+<taskend task="NSE" time="1783834227"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1783834227"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1783834228"/>
+<taskbegin task="SYN Stealth Scan" time="1783834228"/>
+<taskend task="SYN Stealth Scan" time="1783834277" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1783834278"/>
+<taskend task="Service scan" time="1783834332" extrainfo="23 services on 1 host"/>
+<taskbegin task="NSE" time="1783834332"/>
+<taskend task="NSE" time="1783834372"/>
+<taskbegin task="NSE" time="1783834372"/>
+<taskend task="NSE" time="1783834374"/>
+<taskbegin task="NSE" time="1783834374"/>
+<taskend task="NSE" time="1783834374"/>
+<host starttime="1783834228" endtime="1783834374"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.238.9" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65512">
+<extrareasons reason="no-response" count="65512" proto="tcp" ports="1-20,22-52,54-79,81-87,89-134,136-138,140-388,390-442,444,446-463,465-592,594-635,637-3267,3270-3388,3390-5984,5986-9388,9390-49663,49665-49668,49670-58755,58757-58760,58762-62375,62378-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-syst" output="&#xa;  SYST: Windows_NT"><elem key="SYST">Windows_NT</elem>
+</script><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;06-29-22  04:55PM       &lt;DIR&gt;          app&#xa;06-29-22  04:33PM       &lt;DIR&gt;          benign&#xa;06-29-22  01:41PM       &lt;DIR&gt;          malicious&#xa;06-29-22  04:33PM       &lt;DIR&gt;          queue"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="IIS Windows Server"><elem key="title">IIS Windows Server</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-07-12 05:31:14Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: bruno.vl, Site: Default-First-Site-Name" hostname="BRUNODC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-07-12T05:32:43+00:00; -10s from scanner time."><elem key="delta">-10.0</elem>
+<elem key="date">2026-07-12T05:32:43+00:00</elem>
+</script><script id="ssl-cert" output="Subject: &#xa;Subject Alternative Name: DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO&#xa;Issuer: commonName=bruno-BRUNODC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-10-09T09:54:08&#xa;Not valid after:  2105-10-09T09:54:08&#xa;MD5:     e92b 7496 6c9a 3a81 62eb 4ea4 58e0 20d3&#xa;SHA-1:   855d c331 c896 ab01 fa20 6c8a 5fd1 dfe8 402b 1a93&#xa;SHA-256: 9fdd 1186 faed d447 84ce 7b67 5cb0 3f4f f00c e98d 77c0 14dd 1113 1e53 a5ed 9787"><table key="subject">
+</table>
+<table key="issuer">
+<elem key="commonName">bruno-BRUNODC-CA</elem>
+<elem key="domainComponent">bruno</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">9D495BF8E2E1B29059C356AAB3A7A38D372CB716010B425F21276558C3EE6E77A69BBB3DF70E922B825E2474FA18FAD9109C6EBE826F558224A28A3A53059C89926304C6D9774D229B6130BBCCBB2E0BB0590896FD85B6EBBA1A14CEAEC7BBD3D8582D03CD50F07311614546E0D0CBAC2F2460A98FD2434B7A84391F5282B703A31977FDA8ADB915FF1803F1127537346200C996FB3885B1B06FFDAE429236F4D37303C4C8933699E7CB1930B3A8D036B18566463040F649193802FC5C2FF5AED6EC89089F902CF0C7F185B62934A79C5DB5F32546A497D7A66164508B897EF8946B61CF32F0243C9268B9DC693311A93D5036F0D2255F5A71418954F482C7E9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">Microsoft certificate template</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication, Microsoft Smartcard Login, Signing KDC Response</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft Application Policies Extension</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">2A:D5:11:18:35:92:A9:64:40:86:62:88:09:1F:6B:F6:CE:8F:CA:02</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">AD:60:B8:57:67:4F:9A:31:57:96:7A:72:5B:23:F4:92:BA:A3:4B:EB</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=bruno-BRUNODC-CA(1),CN=brunodc,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=bruno,DC=vl?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=bruno-BRUNODC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=bruno,DC=vl?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft NTDS CA Extension</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-10-09T09:54:08</elem>
+<elem key="notAfter">2105-10-09T09:54:08</elem>
+</table>
+<elem key="md5">e92b74966c9a3a8162eb4ea458e020d3</elem>
+<elem key="sha1">855dc331c896ab01fa206c8a5fd1dfe8402b1a93</elem>
+<elem key="sha256">9fdd1186faedd44784ce7b675cb03f4ff00ce98d77c014dd11131e53a5ed9787</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF7zCCBNegAwIBAgITGQAAAAjXc+X85f8E1QABAAAACDANBgkqhkiG9w0BAQsF&#xa;ADBGMRIwEAYKCZImiZPyLGQBGRYCdmwxFTATBgoJkiaJk/IsZAEZFgVicnVubzEZ&#xa;MBcGA1UEAxMQYnJ1bm8tQlJVTk9EQy1DQTAgFw0yNTEwMDkwOTU0MDhaGA8yMTA1&#xa;MTAwOTA5NTQwOFowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ1J&#xa;W/ji4bKQWcNWqrOno403LLcWAQtCXyEnZVjD7m53ppu7PfcOkiuCXiR0+hj62RCc&#xa;br6Cb1WCJKKKOlMFnImSYwTG2XdNIpthMLvMuy4LsFkIlv2Ftuu6GhTOrse709hY&#xa;LQPNUPBzEWFFRuDQy6wvJGCpj9JDS3qEOR9SgrcDoxl3/aituRX/GAPxEnU3NGIA&#xa;yZb7OIWxsG/9rkKSNvTTcwPEyJM2mefLGTCzqNA2sYVmRjBA9kkZOAL8XC/1rtbs&#xa;iQifkCzwx/GFtik0p5xdtfMlRqSX16ZhZFCLiX74lGthzzLwJDySaLncaTMRqT1Q&#xa;NvDSJV9acUGJVPSCx+kCAwEAAaOCAxgwggMUMDcGCSsGAQQBgjcVBwQqMCgGICsG&#xa;AQQBgjcVCIbn3TOCwLdjg42TEIfHx3qEpIl+WwEhAgFuAgEAMDIGA1UdJQQrMCkG&#xa;CCsGAQUFBwMCBggrBgEFBQcDAQYKKwYBBAGCNxQCAgYHKwYBBQIDBTAOBgNVHQ8B&#xa;Af8EBAMCBaAwQAYJKwYBBAGCNxUKBDMwMTAKBggrBgEFBQcDAjAKBggrBgEFBQcD&#xa;ATAMBgorBgEEAYI3FAICMAkGBysGAQUCAwUwHQYDVR0OBBYEFCrVERg1kqlkQIZi&#xa;iAkfa/bOj8oCMB8GA1UdIwQYMBaAFK1guFdnT5oxV5Z6clsj9JK6o0vrMIHOBgNV&#xa;HR8EgcYwgcMwgcCggb2ggbqGgbdsZGFwOi8vL0NOPWJydW5vLUJSVU5PREMtQ0Eo&#xa;MSksQ049YnJ1bm9kYyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMs&#xa;Q049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1icnVubyxEQz12bD9jZXJ0&#xa;aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJp&#xa;YnV0aW9uUG9pbnQwgb8GCCsGAQUFBwEBBIGyMIGvMIGsBggrBgEFBQcwAoaBn2xk&#xa;YXA6Ly8vQ049YnJ1bm8tQlJVTk9EQy1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5&#xa;JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1icnVu&#xa;byxEQz12bD9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNh&#xa;dGlvbkF1dGhvcml0eTAvBgNVHREBAf8EJTAjghBicnVub2RjLmJydW5vLnZsgghi&#xa;cnVuby52bIIFQlJVTk8wTwYJKwYBBAGCNxkCBEIwQKA+BgorBgEEAYI3GQIBoDAE&#xa;LlMtMS01LTIxLTE1MzYzNzU5NDQtNDI4NjQxODM2Ni0zNDQ3Mjc4MTM3LTEwMDAw&#xa;DQYJKoZIhvcNAQELBQADggEBAA2bsenNTOyPUQIN3j1sCnXL74xMyDt8/Pq/uck+&#xa;q3dQSERyLFQxgwKuPXYtPMfgmOiIj6PWECbde4D3Ikw5WIyD+XQwMRzbg/z2ct6V&#xa;59/WCLXetGd34KpUqcksjtO0/RLGI5aBU+KK9EWBRi/FFB23CPY+MgkCEFYQBIEm&#xa;PGRHr/RtSAoWMklpPWcj7dkdLSXVyUnL35YY5pEANvFDsROQ52BbH4BT+jIwjxF0&#xa;c8zuVsi4N8XUTcR9r2dNZHB6CRqFvM+6rVNUar90Qi4OUsZR7oYzKf5loPXUdyyI&#xa;lcZ21Xw4Q5V1vGn2qB6Z6kLjmUSLAT3qFYRrx5+HYhznweU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="https" tunnel="ssl" method="table" conf="3"/><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-cert" output="Subject: commonName=bruno-BRUNODC-CA&#xa;Issuer: commonName=bruno-BRUNODC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2022-06-29T13:23:01&#xa;Not valid after:  2121-06-29T13:33:00&#xa;MD5:     659b 3c90 00eb 1e0a 5170 1be9 0456 840c&#xa;SHA-1:   a093 f4c2 3c8e 0532 86f2 1e99 cad7 82f8 e40e 3d72&#xa;SHA-256: 427d 451e b031 5365 7c58 b5e6 3f16 c7c9 4a1e 788e e86e be01 4442 2949 1754 f63b"><table key="subject">
+<elem key="commonName">bruno-BRUNODC-CA</elem>
+<elem key="domainComponent">bruno</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">bruno-BRUNODC-CA</elem>
+<elem key="domainComponent">bruno</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AB77F2D9A385612679920917AAAED6FA803E0D00844B7A8C896206AEEA1E0E705DEC18D48D9B6D7460A644AD1A7693D76028D35ECBD789DBADF2B61F61638D03D11520F74AE275351FB9C5B089CE272EB57751DF88E08AD1892229023511BA3EB234D9B5DA136119CF95F5F16BFFC17AAA4DA654201ECB5610B500BD1F2F27943A3375DBE7289337D35724B60A6AFA1BD32800F8C13F3D9EF83157C4D0060B8C9988F62608A51DC3625478C4255338CE6C2EC5610097A226CB7AECAA3B5A766355A93710D6E87AB232450B599C8C6E0B1D3B72409CE2CAF33C82DD1FB571066D21EF4AEC0AE66EFED0BAA29A8C9792E063DCBE011346718B5BDE4D51BD0572A5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Certificate Sign, CRL Sign</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">72:9A:66:BE:9D:7E:7D:24:22:2E:12:AC:F2:5E:96:35:2A:AE:AD:E8</elem>
+</table>
+<table>
+<elem key="name">1.3.6.1.4.1.311.21.1</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-06-29T13:23:01</elem>
+<elem key="notAfter">2121-06-29T13:33:00</elem>
+</table>
+<elem key="md5">659b3c9000eb1e0a51701be90456840c</elem>
+<elem key="sha1">a093f4c23c8e053286f21e99cad782f8e40e3d72</elem>
+<elem key="sha256">427d451eb03153657c58b5e63f16c7c94a1e788ee86ebe01444229491754f63b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDaTCCAlGgAwIBAgIQUtEbK1zCdqVN5bd/XhJejTANBgkqhkiG9w0BAQsFADBG&#xa;MRIwEAYKCZImiZPyLGQBGRYCdmwxFTATBgoJkiaJk/IsZAEZFgVicnVubzEZMBcG&#xa;A1UEAxMQYnJ1bm8tQlJVTk9EQy1DQTAgFw0yMjA2MjkxMzIzMDFaGA8yMTIxMDYy&#xa;OTEzMzMwMFowRjESMBAGCgmSJomT8ixkARkWAnZsMRUwEwYKCZImiZPyLGQBGRYF&#xa;YnJ1bm8xGTAXBgNVBAMTEGJydW5vLUJSVU5PREMtQ0EwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQCrd/LZo4VhJnmSCReqrtb6gD4NAIRLeoyJYgau6h4O&#xa;cF3sGNSNm210YKZErRp2k9dgKNNey9eJ263yth9hY40D0RUg90ridTUfucWwic4n&#xa;LrV3Ud+I4IrRiSIpAjURuj6yNNm12hNhGc+V9fFr/8F6qk2mVCAey1YQtQC9Hy8n&#xa;lDozddvnKJM301cktgpq+hvTKAD4wT89nvgxV8TQBguMmYj2JgilHcNiVHjEJVM4&#xa;zmwuxWEAl6Imy3rsqjtadmNVqTcQ1uh6sjJFC1mcjG4LHTtyQJziyvM8gt0ftXEG&#xa;bSHvSuwK5m7+0LqimoyXkuBj3L4BE0Zxi1veTVG9BXKlAgMBAAGjUTBPMAsGA1Ud&#xa;DwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBRymma+nX59JCIuEqzy&#xa;XpY1Kq6t6DAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAQEAk+Gd&#xa;sTRy/LmduD1KEfb69YUzAxID4AL4kyKZUMxdP2Y5KEcQOpujW23ctG2iRrPCNAZW&#xa;K4sfZj5rLrGCUdzCRpl7dU+ag1tgyYtQz6mtx7r8ojQvFa3ehvzgH5Kuubnx8YJf&#xa;UN0rgD4bHf2vEub2/7ZK2uRN+xdYuYKW5JDLXpYUOi2YgzpjHuPTqJ8rFYpDsiPb&#xa;kms6eaHUgsGde6mf3fzYXrzN2T9jp3DVnQ9a+cG6t58X/QzhLByO9q4RkI8doqcS&#xa;OWEA5QD0ALJL2yHL31M6VwqYiO0vkpwc1DiRP+MVUX/YgsIWFA2ygf93loF/3hqP&#xa;wc7DM/NxbJM1GJzG4Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: bruno.vl, Site: Default-First-Site-Name" hostname="BRUNODC" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-07-12T05:32:43+00:00; -9s from scanner time."><elem key="delta">-9.0</elem>
+<elem key="date">2026-07-12T05:32:43+00:00</elem>
+</script><script id="ssl-cert" output="Subject: &#xa;Subject Alternative Name: DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO&#xa;Issuer: commonName=bruno-BRUNODC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-10-09T09:54:08&#xa;Not valid after:  2105-10-09T09:54:08&#xa;MD5:     e92b 7496 6c9a 3a81 62eb 4ea4 58e0 20d3&#xa;SHA-1:   855d c331 c896 ab01 fa20 6c8a 5fd1 dfe8 402b 1a93&#xa;SHA-256: 9fdd 1186 faed d447 84ce 7b67 5cb0 3f4f f00c e98d 77c0 14dd 1113 1e53 a5ed 9787"><table key="subject">
+</table>
+<table key="issuer">
+<elem key="commonName">bruno-BRUNODC-CA</elem>
+<elem key="domainComponent">bruno</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">9D495BF8E2E1B29059C356AAB3A7A38D372CB716010B425F21276558C3EE6E77A69BBB3DF70E922B825E2474FA18FAD9109C6EBE826F558224A28A3A53059C89926304C6D9774D229B6130BBCCBB2E0BB0590896FD85B6EBBA1A14CEAEC7BBD3D8582D03CD50F07311614546E0D0CBAC2F2460A98FD2434B7A84391F5282B703A31977FDA8ADB915FF1803F1127537346200C996FB3885B1B06FFDAE429236F4D37303C4C8933699E7CB1930B3A8D036B18566463040F649193802FC5C2FF5AED6EC89089F902CF0C7F185B62934A79C5DB5F32546A497D7A66164508B897EF8946B61CF32F0243C9268B9DC693311A93D5036F0D2255F5A71418954F482C7E9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">Microsoft certificate template</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication, Microsoft Smartcard Login, Signing KDC Response</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft Application Policies Extension</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">2A:D5:11:18:35:92:A9:64:40:86:62:88:09:1F:6B:F6:CE:8F:CA:02</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">AD:60:B8:57:67:4F:9A:31:57:96:7A:72:5B:23:F4:92:BA:A3:4B:EB</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=bruno-BRUNODC-CA(1),CN=brunodc,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=bruno,DC=vl?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=bruno-BRUNODC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=bruno,DC=vl?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft NTDS CA Extension</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-10-09T09:54:08</elem>
+<elem key="notAfter">2105-10-09T09:54:08</elem>
+</table>
+<elem key="md5">e92b74966c9a3a8162eb4ea458e020d3</elem>
+<elem key="sha1">855dc331c896ab01fa206c8a5fd1dfe8402b1a93</elem>
+<elem key="sha256">9fdd1186faedd44784ce7b675cb03f4ff00ce98d77c014dd11131e53a5ed9787</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF7zCCBNegAwIBAgITGQAAAAjXc+X85f8E1QABAAAACDANBgkqhkiG9w0BAQsF&#xa;ADBGMRIwEAYKCZImiZPyLGQBGRYCdmwxFTATBgoJkiaJk/IsZAEZFgVicnVubzEZ&#xa;MBcGA1UEAxMQYnJ1bm8tQlJVTk9EQy1DQTAgFw0yNTEwMDkwOTU0MDhaGA8yMTA1&#xa;MTAwOTA5NTQwOFowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ1J&#xa;W/ji4bKQWcNWqrOno403LLcWAQtCXyEnZVjD7m53ppu7PfcOkiuCXiR0+hj62RCc&#xa;br6Cb1WCJKKKOlMFnImSYwTG2XdNIpthMLvMuy4LsFkIlv2Ftuu6GhTOrse709hY&#xa;LQPNUPBzEWFFRuDQy6wvJGCpj9JDS3qEOR9SgrcDoxl3/aituRX/GAPxEnU3NGIA&#xa;yZb7OIWxsG/9rkKSNvTTcwPEyJM2mefLGTCzqNA2sYVmRjBA9kkZOAL8XC/1rtbs&#xa;iQifkCzwx/GFtik0p5xdtfMlRqSX16ZhZFCLiX74lGthzzLwJDySaLncaTMRqT1Q&#xa;NvDSJV9acUGJVPSCx+kCAwEAAaOCAxgwggMUMDcGCSsGAQQBgjcVBwQqMCgGICsG&#xa;AQQBgjcVCIbn3TOCwLdjg42TEIfHx3qEpIl+WwEhAgFuAgEAMDIGA1UdJQQrMCkG&#xa;CCsGAQUFBwMCBggrBgEFBQcDAQYKKwYBBAGCNxQCAgYHKwYBBQIDBTAOBgNVHQ8B&#xa;Af8EBAMCBaAwQAYJKwYBBAGCNxUKBDMwMTAKBggrBgEFBQcDAjAKBggrBgEFBQcD&#xa;ATAMBgorBgEEAYI3FAICMAkGBysGAQUCAwUwHQYDVR0OBBYEFCrVERg1kqlkQIZi&#xa;iAkfa/bOj8oCMB8GA1UdIwQYMBaAFK1guFdnT5oxV5Z6clsj9JK6o0vrMIHOBgNV&#xa;HR8EgcYwgcMwgcCggb2ggbqGgbdsZGFwOi8vL0NOPWJydW5vLUJSVU5PREMtQ0Eo&#xa;MSksQ049YnJ1bm9kYyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMs&#xa;Q049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1icnVubyxEQz12bD9jZXJ0&#xa;aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJp&#xa;YnV0aW9uUG9pbnQwgb8GCCsGAQUFBwEBBIGyMIGvMIGsBggrBgEFBQcwAoaBn2xk&#xa;YXA6Ly8vQ049YnJ1bm8tQlJVTk9EQy1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5&#xa;JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1icnVu&#xa;byxEQz12bD9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNh&#xa;dGlvbkF1dGhvcml0eTAvBgNVHREBAf8EJTAjghBicnVub2RjLmJydW5vLnZsgghi&#xa;cnVuby52bIIFQlJVTk8wTwYJKwYBBAGCNxkCBEIwQKA+BgorBgEEAYI3GQIBoDAE&#xa;LlMtMS01LTIxLTE1MzYzNzU5NDQtNDI4NjQxODM2Ni0zNDQ3Mjc4MTM3LTEwMDAw&#xa;DQYJKoZIhvcNAQELBQADggEBAA2bsenNTOyPUQIN3j1sCnXL74xMyDt8/Pq/uck+&#xa;q3dQSERyLFQxgwKuPXYtPMfgmOiIj6PWECbde4D3Ikw5WIyD+XQwMRzbg/z2ct6V&#xa;59/WCLXetGd34KpUqcksjtO0/RLGI5aBU+KK9EWBRi/FFB23CPY+MgkCEFYQBIEm&#xa;PGRHr/RtSAoWMklpPWcj7dkdLSXVyUnL35YY5pEANvFDsROQ52BbH4BT+jIwjxF0&#xa;c8zuVsi4N8XUTcR9r2dNZHB6CRqFvM+6rVNUar90Qi4OUsZR7oYzKf5loPXUdyyI&#xa;lcZ21Xw4Q5V1vGn2qB6Z6kLjmUSLAT3qFYRrx5+HYhznweU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: bruno.vl, Site: Default-First-Site-Name" hostname="BRUNODC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-07-12T05:32:43+00:00; -10s from scanner time."><elem key="delta">-10.0</elem>
+<elem key="date">2026-07-12T05:32:43+00:00</elem>
+</script><script id="ssl-cert" output="Subject: &#xa;Subject Alternative Name: DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO&#xa;Issuer: commonName=bruno-BRUNODC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-10-09T09:54:08&#xa;Not valid after:  2105-10-09T09:54:08&#xa;MD5:     e92b 7496 6c9a 3a81 62eb 4ea4 58e0 20d3&#xa;SHA-1:   855d c331 c896 ab01 fa20 6c8a 5fd1 dfe8 402b 1a93&#xa;SHA-256: 9fdd 1186 faed d447 84ce 7b67 5cb0 3f4f f00c e98d 77c0 14dd 1113 1e53 a5ed 9787"><table key="subject">
+</table>
+<table key="issuer">
+<elem key="commonName">bruno-BRUNODC-CA</elem>
+<elem key="domainComponent">bruno</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">9D495BF8E2E1B29059C356AAB3A7A38D372CB716010B425F21276558C3EE6E77A69BBB3DF70E922B825E2474FA18FAD9109C6EBE826F558224A28A3A53059C89926304C6D9774D229B6130BBCCBB2E0BB0590896FD85B6EBBA1A14CEAEC7BBD3D8582D03CD50F07311614546E0D0CBAC2F2460A98FD2434B7A84391F5282B703A31977FDA8ADB915FF1803F1127537346200C996FB3885B1B06FFDAE429236F4D37303C4C8933699E7CB1930B3A8D036B18566463040F649193802FC5C2FF5AED6EC89089F902CF0C7F185B62934A79C5DB5F32546A497D7A66164508B897EF8946B61CF32F0243C9268B9DC693311A93D5036F0D2255F5A71418954F482C7E9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">Microsoft certificate template</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication, Microsoft Smartcard Login, Signing KDC Response</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft Application Policies Extension</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">2A:D5:11:18:35:92:A9:64:40:86:62:88:09:1F:6B:F6:CE:8F:CA:02</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">AD:60:B8:57:67:4F:9A:31:57:96:7A:72:5B:23:F4:92:BA:A3:4B:EB</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=bruno-BRUNODC-CA(1),CN=brunodc,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=bruno,DC=vl?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=bruno-BRUNODC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=bruno,DC=vl?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft NTDS CA Extension</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-10-09T09:54:08</elem>
+<elem key="notAfter">2105-10-09T09:54:08</elem>
+</table>
+<elem key="md5">e92b74966c9a3a8162eb4ea458e020d3</elem>
+<elem key="sha1">855dc331c896ab01fa206c8a5fd1dfe8402b1a93</elem>
+<elem key="sha256">9fdd1186faedd44784ce7b675cb03f4ff00ce98d77c014dd11131e53a5ed9787</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF7zCCBNegAwIBAgITGQAAAAjXc+X85f8E1QABAAAACDANBgkqhkiG9w0BAQsF&#xa;ADBGMRIwEAYKCZImiZPyLGQBGRYCdmwxFTATBgoJkiaJk/IsZAEZFgVicnVubzEZ&#xa;MBcGA1UEAxMQYnJ1bm8tQlJVTk9EQy1DQTAgFw0yNTEwMDkwOTU0MDhaGA8yMTA1&#xa;MTAwOTA5NTQwOFowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ1J&#xa;W/ji4bKQWcNWqrOno403LLcWAQtCXyEnZVjD7m53ppu7PfcOkiuCXiR0+hj62RCc&#xa;br6Cb1WCJKKKOlMFnImSYwTG2XdNIpthMLvMuy4LsFkIlv2Ftuu6GhTOrse709hY&#xa;LQPNUPBzEWFFRuDQy6wvJGCpj9JDS3qEOR9SgrcDoxl3/aituRX/GAPxEnU3NGIA&#xa;yZb7OIWxsG/9rkKSNvTTcwPEyJM2mefLGTCzqNA2sYVmRjBA9kkZOAL8XC/1rtbs&#xa;iQifkCzwx/GFtik0p5xdtfMlRqSX16ZhZFCLiX74lGthzzLwJDySaLncaTMRqT1Q&#xa;NvDSJV9acUGJVPSCx+kCAwEAAaOCAxgwggMUMDcGCSsGAQQBgjcVBwQqMCgGICsG&#xa;AQQBgjcVCIbn3TOCwLdjg42TEIfHx3qEpIl+WwEhAgFuAgEAMDIGA1UdJQQrMCkG&#xa;CCsGAQUFBwMCBggrBgEFBQcDAQYKKwYBBAGCNxQCAgYHKwYBBQIDBTAOBgNVHQ8B&#xa;Af8EBAMCBaAwQAYJKwYBBAGCNxUKBDMwMTAKBggrBgEFBQcDAjAKBggrBgEFBQcD&#xa;ATAMBgorBgEEAYI3FAICMAkGBysGAQUCAwUwHQYDVR0OBBYEFCrVERg1kqlkQIZi&#xa;iAkfa/bOj8oCMB8GA1UdIwQYMBaAFK1guFdnT5oxV5Z6clsj9JK6o0vrMIHOBgNV&#xa;HR8EgcYwgcMwgcCggb2ggbqGgbdsZGFwOi8vL0NOPWJydW5vLUJSVU5PREMtQ0Eo&#xa;MSksQ049YnJ1bm9kYyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMs&#xa;Q049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1icnVubyxEQz12bD9jZXJ0&#xa;aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJp&#xa;YnV0aW9uUG9pbnQwgb8GCCsGAQUFBwEBBIGyMIGvMIGsBggrBgEFBQcwAoaBn2xk&#xa;YXA6Ly8vQ049YnJ1bm8tQlJVTk9EQy1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5&#xa;JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1icnVu&#xa;byxEQz12bD9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNh&#xa;dGlvbkF1dGhvcml0eTAvBgNVHREBAf8EJTAjghBicnVub2RjLmJydW5vLnZsgghi&#xa;cnVuby52bIIFQlJVTk8wTwYJKwYBBAGCNxkCBEIwQKA+BgorBgEEAYI3GQIBoDAE&#xa;LlMtMS01LTIxLTE1MzYzNzU5NDQtNDI4NjQxODM2Ni0zNDQ3Mjc4MTM3LTEwMDAw&#xa;DQYJKoZIhvcNAQELBQADggEBAA2bsenNTOyPUQIN3j1sCnXL74xMyDt8/Pq/uck+&#xa;q3dQSERyLFQxgwKuPXYtPMfgmOiIj6PWECbde4D3Ikw5WIyD+XQwMRzbg/z2ct6V&#xa;59/WCLXetGd34KpUqcksjtO0/RLGI5aBU+KK9EWBRi/FFB23CPY+MgkCEFYQBIEm&#xa;PGRHr/RtSAoWMklpPWcj7dkdLSXVyUnL35YY5pEANvFDsROQ52BbH4BT+jIwjxF0&#xa;c8zuVsi4N8XUTcR9r2dNZHB6CRqFvM+6rVNUar90Qi4OUsZR7oYzKf5loPXUdyyI&#xa;lcZ21Xw4Q5V1vGn2qB6Z6kLjmUSLAT3qFYRrx5+HYhznweU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: bruno.vl, Site: Default-First-Site-Name" hostname="BRUNODC" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-07-12T05:32:43+00:00; -9s from scanner time."><elem key="delta">-9.0</elem>
+<elem key="date">2026-07-12T05:32:43+00:00</elem>
+</script><script id="ssl-cert" output="Subject: &#xa;Subject Alternative Name: DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO&#xa;Issuer: commonName=bruno-BRUNODC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-10-09T09:54:08&#xa;Not valid after:  2105-10-09T09:54:08&#xa;MD5:     e92b 7496 6c9a 3a81 62eb 4ea4 58e0 20d3&#xa;SHA-1:   855d c331 c896 ab01 fa20 6c8a 5fd1 dfe8 402b 1a93&#xa;SHA-256: 9fdd 1186 faed d447 84ce 7b67 5cb0 3f4f f00c e98d 77c0 14dd 1113 1e53 a5ed 9787"><table key="subject">
+</table>
+<table key="issuer">
+<elem key="commonName">bruno-BRUNODC-CA</elem>
+<elem key="domainComponent">bruno</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">9D495BF8E2E1B29059C356AAB3A7A38D372CB716010B425F21276558C3EE6E77A69BBB3DF70E922B825E2474FA18FAD9109C6EBE826F558224A28A3A53059C89926304C6D9774D229B6130BBCCBB2E0BB0590896FD85B6EBBA1A14CEAEC7BBD3D8582D03CD50F07311614546E0D0CBAC2F2460A98FD2434B7A84391F5282B703A31977FDA8ADB915FF1803F1127537346200C996FB3885B1B06FFDAE429236F4D37303C4C8933699E7CB1930B3A8D036B18566463040F649193802FC5C2FF5AED6EC89089F902CF0C7F185B62934A79C5DB5F32546A497D7A66164508B897EF8946B61CF32F0243C9268B9DC693311A93D5036F0D2255F5A71418954F482C7E9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">Microsoft certificate template</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication, Microsoft Smartcard Login, Signing KDC Response</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft Application Policies Extension</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">2A:D5:11:18:35:92:A9:64:40:86:62:88:09:1F:6B:F6:CE:8F:CA:02</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">AD:60:B8:57:67:4F:9A:31:57:96:7A:72:5B:23:F4:92:BA:A3:4B:EB</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=bruno-BRUNODC-CA(1),CN=brunodc,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=bruno,DC=vl?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=bruno-BRUNODC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=bruno,DC=vl?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft NTDS CA Extension</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-10-09T09:54:08</elem>
+<elem key="notAfter">2105-10-09T09:54:08</elem>
+</table>
+<elem key="md5">e92b74966c9a3a8162eb4ea458e020d3</elem>
+<elem key="sha1">855dc331c896ab01fa206c8a5fd1dfe8402b1a93</elem>
+<elem key="sha256">9fdd1186faedd44784ce7b675cb03f4ff00ce98d77c014dd11131e53a5ed9787</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF7zCCBNegAwIBAgITGQAAAAjXc+X85f8E1QABAAAACDANBgkqhkiG9w0BAQsF&#xa;ADBGMRIwEAYKCZImiZPyLGQBGRYCdmwxFTATBgoJkiaJk/IsZAEZFgVicnVubzEZ&#xa;MBcGA1UEAxMQYnJ1bm8tQlJVTk9EQy1DQTAgFw0yNTEwMDkwOTU0MDhaGA8yMTA1&#xa;MTAwOTA5NTQwOFowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ1J&#xa;W/ji4bKQWcNWqrOno403LLcWAQtCXyEnZVjD7m53ppu7PfcOkiuCXiR0+hj62RCc&#xa;br6Cb1WCJKKKOlMFnImSYwTG2XdNIpthMLvMuy4LsFkIlv2Ftuu6GhTOrse709hY&#xa;LQPNUPBzEWFFRuDQy6wvJGCpj9JDS3qEOR9SgrcDoxl3/aituRX/GAPxEnU3NGIA&#xa;yZb7OIWxsG/9rkKSNvTTcwPEyJM2mefLGTCzqNA2sYVmRjBA9kkZOAL8XC/1rtbs&#xa;iQifkCzwx/GFtik0p5xdtfMlRqSX16ZhZFCLiX74lGthzzLwJDySaLncaTMRqT1Q&#xa;NvDSJV9acUGJVPSCx+kCAwEAAaOCAxgwggMUMDcGCSsGAQQBgjcVBwQqMCgGICsG&#xa;AQQBgjcVCIbn3TOCwLdjg42TEIfHx3qEpIl+WwEhAgFuAgEAMDIGA1UdJQQrMCkG&#xa;CCsGAQUFBwMCBggrBgEFBQcDAQYKKwYBBAGCNxQCAgYHKwYBBQIDBTAOBgNVHQ8B&#xa;Af8EBAMCBaAwQAYJKwYBBAGCNxUKBDMwMTAKBggrBgEFBQcDAjAKBggrBgEFBQcD&#xa;ATAMBgorBgEEAYI3FAICMAkGBysGAQUCAwUwHQYDVR0OBBYEFCrVERg1kqlkQIZi&#xa;iAkfa/bOj8oCMB8GA1UdIwQYMBaAFK1guFdnT5oxV5Z6clsj9JK6o0vrMIHOBgNV&#xa;HR8EgcYwgcMwgcCggb2ggbqGgbdsZGFwOi8vL0NOPWJydW5vLUJSVU5PREMtQ0Eo&#xa;MSksQ049YnJ1bm9kYyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMs&#xa;Q049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1icnVubyxEQz12bD9jZXJ0&#xa;aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJp&#xa;YnV0aW9uUG9pbnQwgb8GCCsGAQUFBwEBBIGyMIGvMIGsBggrBgEFBQcwAoaBn2xk&#xa;YXA6Ly8vQ049YnJ1bm8tQlJVTk9EQy1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5&#xa;JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1icnVu&#xa;byxEQz12bD9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNh&#xa;dGlvbkF1dGhvcml0eTAvBgNVHREBAf8EJTAjghBicnVub2RjLmJydW5vLnZsgghi&#xa;cnVuby52bIIFQlJVTk8wTwYJKwYBBAGCNxkCBEIwQKA+BgorBgEEAYI3GQIBoDAE&#xa;LlMtMS01LTIxLTE1MzYzNzU5NDQtNDI4NjQxODM2Ni0zNDQ3Mjc4MTM3LTEwMDAw&#xa;DQYJKoZIhvcNAQELBQADggEBAA2bsenNTOyPUQIN3j1sCnXL74xMyDt8/Pq/uck+&#xa;q3dQSERyLFQxgwKuPXYtPMfgmOiIj6PWECbde4D3Ikw5WIyD+XQwMRzbg/z2ct6V&#xa;59/WCLXetGd34KpUqcksjtO0/RLGI5aBU+KK9EWBRi/FFB23CPY+MgkCEFYQBIEm&#xa;PGRHr/RtSAoWMklpPWcj7dkdLSXVyUnL35YY5pEANvFDsROQ52BbH4BT+jIwjxF0&#xa;c8zuVsi4N8XUTcR9r2dNZHB6CRqFvM+6rVNUar90Qi4OUsZR7oYzKf5loPXUdyyI&#xa;lcZ21Xw4Q5V1vGn2qB6Z6kLjmUSLAT3qFYRrx5+HYhznweU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: BRUNO&#xa;  NetBIOS_Domain_Name: BRUNO&#xa;  NetBIOS_Computer_Name: BRUNODC&#xa;  DNS_Domain_Name: bruno.vl&#xa;  DNS_Computer_Name: brunodc.bruno.vl&#xa;  DNS_Tree_Name: bruno.vl&#xa;  Product_Version: 10.0.20348&#xa;  System_Time: 2026-07-12T05:32:04+00:00"><elem key="Target_Name">BRUNO</elem>
+<elem key="NetBIOS_Domain_Name">BRUNO</elem>
+<elem key="NetBIOS_Computer_Name">BRUNODC</elem>
+<elem key="DNS_Domain_Name">bruno.vl</elem>
+<elem key="DNS_Computer_Name">brunodc.bruno.vl</elem>
+<elem key="DNS_Tree_Name">bruno.vl</elem>
+<elem key="Product_Version">10.0.20348</elem>
+<elem key="System_Time">2026-07-12T05:32:04+00:00</elem>
+</script><script id="ssl-date" output="2026-07-12T05:32:43+00:00; -9s from scanner time."><elem key="delta">-9.0</elem>
+<elem key="date">2026-07-12T05:32:43+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=brunodc.bruno.vl&#xa;Issuer: commonName=brunodc.bruno.vl&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-07-11T05:28:17&#xa;Not valid after:  2027-01-10T05:28:17&#xa;MD5:     b3bf f8a1 4a12 4941 31f9 a131 cdc4 54a4&#xa;SHA-1:   c228 92a1 1c9e 732d 7470 eee9 945c 4cbf 0396 05aa&#xa;SHA-256: 959d 10a8 9134 0213 ff4c 847a 3ad3 b0d5 e248 7ffb 91c6 ebb2 cc56 1acd 68b4 cacd"><table key="subject">
+<elem key="commonName">brunodc.bruno.vl</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">brunodc.bruno.vl</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C7A9FEF679252406890DB715E99BDF977C6CB138533D8F805668126D25CE1B16A6542C162DA0ACEA31C2E1BD57CDBD301516AFF0C26243B6393D83C2F734D65FA8AF35C93540B4024F08A6D3A34425141D14239EF78A825B24F5AF28DF3E40D6F12071C3F03765E20705928E2D9E3AFD8F11FB9643089779161048A28671AB347BFDBEFD713905F4612A091D22483652DAECD58D0F09725D800685C14FDE8DFF06AE8D29E7B616BB1D11C34FBE026A128D17C5930819D6F3EEFCC268E55A7D0A6FA6B67B35272599A6F50114A82810C834DE70D142D0E013924517A9A8846532D263A70FB02A68FBE7716B88C4CF82CBD6E7C688ECE5C9E7F52B8E1A1512BC19</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-11T05:28:17</elem>
+<elem key="notAfter">2027-01-10T05:28:17</elem>
+</table>
+<elem key="md5">b3bff8a14a12494131f9a131cdc454a4</elem>
+<elem key="sha1">c22892a11c9e732d7470eee9945c4cbf039605aa</elem>
+<elem key="sha256">959d10a891340213ff4c847a3ad3b0d5e2487ffb91c6ebb2cc561acd68b4cacd</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC5DCCAcygAwIBAgIQJjlGF6q2/a1H4676BEuisTANBgkqhkiG9w0BAQsFADAb&#xa;MRkwFwYDVQQDExBicnVub2RjLmJydW5vLnZsMB4XDTI2MDcxMTA1MjgxN1oXDTI3&#xa;MDExMDA1MjgxN1owGzEZMBcGA1UEAxMQYnJ1bm9kYy5icnVuby52bDCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAMep/vZ5JSQGiQ23Femb35d8bLE4Uz2P&#xa;gFZoEm0lzhsWplQsFi2grOoxwuG9V829MBUWr/DCYkO2OT2Dwvc01l+orzXJNUC0&#xa;Ak8IptOjRCUUHRQjnveKglsk9a8o3z5A1vEgccPwN2XiBwWSji2eOv2PEfuWQwiX&#xa;eRYQSKKGcas0e/2+/XE5BfRhKgkdIkg2Utrs1Y0PCXJdgAaFwU/ejf8Gro0p57YW&#xa;ux0Rw0++AmoSjRfFkwgZ1vPu/MJo5Vp9Cm+mtns1JyWZpvUBFKgoEMg03nDRQtDg&#xa;E5JFF6mohGUy0mOnD7AqaPvncWuIxM+Cy9bnxojs5cnn9SuOGhUSvBkCAwEAAaMk&#xa;MCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEB&#xa;CwUAA4IBAQBGs0Cr3pOlwMUpv+djjHmsWXoGNAP4yw3vJOX+EywrfoMvXknGzJre&#xa;MtVQTIiNboALiNyUChoI8re5h+h/fD018AhT+bpA6/Ye1JIvxFX5CCt9IO1r53hu&#xa;lHbKYoZcUaS7CcilKfaqXL3UkuqKdEg/M63xacySKWsAVGvyTI6kTKEBVQFsRp1b&#xa;CNKZFulyCofzupcqR+9/dFb+gTJMLBXhqwCyEquQMgKfRz/hBxVayGH5SkGMCsPx&#xa;mSAxMF7dCPg4jxMxzkX8kEtWJb/VIKme0f4rKr+rWrJpA+gRPJzJIopuXqA6leXd&#xa;xuJskZVWbJ/lU79dqWAFaBji/sOSLOyS&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="58756"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="58761"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="62376"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="62377"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="clock-skew" output="mean: -9s, deviation: 0s, median: -9s"><elem key="mean">-9</elem>
+<elem key="median">-9</elem>
+<elem key="count">7</elem>
+<elem key="stddev">0</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2026-07-12T05:32:07&#xa;  start_date: N/A"><elem key="date">2026-07-12T05:32:07</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="59240" rttvar="32318" to="188512"/>
+</host>
+<taskbegin task="NSE" time="1783834374"/>
+<taskend task="NSE" time="1783834374"/>
+<taskbegin task="NSE" time="1783834374"/>
+<taskend task="NSE" time="1783834374"/>
+<taskbegin task="NSE" time="1783834374"/>
+<taskend task="NSE" time="1783834374"/>
+<runstats><finished time="1783834374" timestr="Sun Jul 12 11:02:54 2026" summary="Nmap done at Sun Jul 12 11:02:54 2026; 1 IP address (1 host up) scanned in 147.30 seconds" elapsed="147.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

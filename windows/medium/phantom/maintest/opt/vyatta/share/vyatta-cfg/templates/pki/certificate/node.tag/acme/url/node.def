@@ -1,0 +1,5 @@
+type: txt
+help: Remote URL (default:
+			https://acme-v02.api.letsencrypt.org/directory)
+val_help: url; Remote HTTP(S) URL
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/url --scheme http --scheme https\"  --value \'$VAR(@)\'"; "Invalid HTTP(S) URL format"

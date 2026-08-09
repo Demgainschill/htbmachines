@@ -1,0 +1,6 @@
+01e1099ba8d4212ff912a702639a76d1  usr/lib/x86_64-linux-gnu/libopentracing.so.1.6.0
+6473a6f9254b27a7b3fe1c4e3ae9c3ca  usr/lib/x86_64-linux-gnu/libopentracing_mocktracer.so.1.6.0
+d8a11974126ac37c854050c3668d1a8e  usr/share/doc/libopentracing1/changelog.Debian.gz
+2adea680fe13b27ae6510603ff3adb83  usr/share/doc/libopentracing1/changelog.gz
+2a2b74c491e7e2fbfb49d16654184b85  usr/share/doc/libopentracing1/copyright
+7bea0b14ff3a4ee7a21c8b6d0470b48e  usr/share/lintian/overrides/libopentracing1

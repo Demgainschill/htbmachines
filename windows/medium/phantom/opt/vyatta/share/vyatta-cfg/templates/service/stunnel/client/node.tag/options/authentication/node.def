@@ -1,0 +1,8 @@
+type: txt
+help: Authentication type for the protocol negotiations
+val_help: basic; The default 'connect' authentication type
+val_help: ntlm; Supported authentication types for the 'connect' protocol
+val_help: plain; The default 'smtp' authentication type
+val_help: login; Supported authentication types for the 'smtp' protocol
+allowed: echo "basic ntlm plain login"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(basic|ntlm|plain|login)\'   --value \'$VAR(@)\'"; "Invalid value"

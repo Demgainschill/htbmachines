@@ -1,0 +1,2 @@
+help: Order conntrackd to request a complete conntrack table resync
+			against the other node at startup

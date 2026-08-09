@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Thu Jul 16 10:40:32 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA ghostlink_results 10.129.7.32 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA ghostlink_results 10.129.7.32" start="1784178632" startstr="Thu Jul 16 10:40:32 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1784178632"/>
+<taskend task="NSE" time="1784178632"/>
+<taskbegin task="NSE" time="1784178632"/>
+<taskend task="NSE" time="1784178632"/>
+<taskbegin task="NSE" time="1784178632"/>
+<taskend task="NSE" time="1784178632"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1784178632"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1784178633"/>
+<taskbegin task="SYN Stealth Scan" time="1784178633"/>
+<taskend task="SYN Stealth Scan" time="1784178699" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1784178699"/>
+<taskend task="Service scan" time="1784178760" extrainfo="24 services on 1 host"/>
+<taskbegin task="NSE" time="1784178760"/>
+<taskend task="NSE" time="1784178800"/>
+<taskbegin task="NSE" time="1784178800"/>
+<taskend task="NSE" time="1784178802"/>
+<taskbegin task="NSE" time="1784178802"/>
+<taskend task="NSE" time="1784178802"/>
+<host starttime="1784178633" endtime="1784178802"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.7.32" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65511">
+<extrareasons reason="no-response" count="65511" proto="tcp" ports="1-52,54-79,81-87,89-134,136-138,140-388,390-444,446-463,465-592,594-635,637-1882,1884-2178,2180-3267,3270-5984,5986-9388,9390-49663,49665-49672,49674-49675,49677-49678,49681-49899,49901-49914,49916-50654,50656-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="Ghost Protocol Zero"><elem key="title">Ghost Protocol Zero</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-07-16 13:11:33Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: ghostlink.htb, Site: Default-First-Site-Name" hostname="DC01" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=dc01.ghostlink.htb&#xa;Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:dc01.ghostlink.htb&#xa;Issuer: commonName=ghostlink-GPZ-OP26-SECURE-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-03-03T16:53:53&#xa;Not valid after:  2027-03-03T16:53:53&#xa;MD5:     67e4 aece a99f d27e 070c 64af 5223 d817&#xa;SHA-1:   0aa4 7883 fb11 35ab a666 2a69 d6c1 735f 31b7 ea91&#xa;SHA-256: 167c cfec 311e ffed a00f 4e30 f4c4 1489 a6e2 5674 262d 0f66 fa9a b8d3 24b5 9d8e"><table key="subject">
+<elem key="commonName">dc01.ghostlink.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ghostlink-GPZ-OP26-SECURE-CA</elem>
+<elem key="domainComponent">ghostlink</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CD2534BCC9C51A79CE7FE0620BBD8A09551DCB7C26828851C606A5C18EF71CC5B61E023716C1B23EA08730E7A47D632AA2E792B7526293E66D616824F53D733BAD13AC886B8F4DE4F38C07DAE13A2DF7D06E103CEFCEF4D074F9C92ECCF076E8AFEACBEA93EB4ABB29D001BE3F78DBDDCC119D628926E4A2711DA3F88CDA0DCE01286FE5D32C729361A2B164B96360976CCBC7889BAAA8077996029F752B34C987F7B930F8586656C527D0F35ADAA426B66D04F1868B1E7D676BAB317460FF47DE9D092C809911FB5F6FF545AC54D263321ACE3F8FC5AA17A181E615267CF578D73C2CA7BC002066449570BDF9B82BFC273B2645F0B4A9FA2F6F829F9EFD5D35</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">S/MIME Capabilities</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">4B:4A:77:90:4F:A7:F0:02:EA:D5:F0:E7:20:0B:6E:9D:C6:72:E1:3A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">76:E6:82:8E:71:7D:55:4C:72:47:5E:AF:AF:50:C5:42:B1:5E:77:F9</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=ghostlink-GPZ-OP26-SECURE-CA,CN=gpz-op26-secure,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ghostlink,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=ghostlink-GPZ-OP26-SECURE-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ghostlink,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:dc01.ghostlink.htb</elem>
+</table>
+<table>
+<elem key="name">Microsoft NTDS CA Extension</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-03-03T16:53:53</elem>
+<elem key="notAfter">2027-03-03T16:53:53</elem>
+</table>
+<elem key="md5">67e4aecea99fd27e070c64af5223d817</elem>
+<elem key="sha1">0aa47883fb1135aba6662a69d6c1735f31b7ea91</elem>
+<elem key="sha256">167ccfec311effeda00f4e30f4c41489a6e25674262d0f66fa9ab8d324b59d8e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGbDCCBVSgAwIBAgITJwAAAAMbRLdcQqcOnAAAAAAAAzANBgkqhkiG9w0BAQsF&#xa;ADBXMRMwEQYKCZImiZPyLGQBGRYDaHRiMRkwFwYKCZImiZPyLGQBGRYJZ2hvc3Rs&#xa;aW5rMSUwIwYDVQQDExxnaG9zdGxpbmstR1BaLU9QMjYtU0VDVVJFLUNBMB4XDTI2&#xa;MDMwMzE2NTM1M1oXDTI3MDMwMzE2NTM1M1owHTEbMBkGA1UEAxMSZGMwMS5naG9z&#xa;dGxpbmsuaHRiMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzSU0vMnF&#xa;GnnOf+BiC72KCVUdy3wmgohRxgalwY73HMW2HgI3FsGyPqCHMOekfWMqoueSt1Ji&#xa;k+ZtYWgk9T1zO60TrIhrj03k84wH2uE6LffQbhA878700HT5yS7M8Hbor+rL6pPr&#xa;Srsp0AG+P3jb3cwRnWKJJuSicR2j+IzaDc4BKG/l0yxyk2GisWS5Y2CXbMvHiJuq&#xa;qAd5lgKfdSs0yYf3uTD4WGZWxSfQ81rapCa2bQTxhosefWdrqzF0YP9H3p0JLICZ&#xa;Eftfb/VFrFTSYzIazj+PxaoXoYHmFSZ89XjXPCynvAAgZkSVcL35uCv8JzsmRfC0&#xa;qfovb4Kfnv1dNQIDAQABo4IDaTCCA2UwLwYJKwYBBAGCNxQCBCIeIABEAG8AbQBh&#xa;AGkAbgBDAG8AbgB0AHIAbwBsAGwAZQByMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr&#xa;BgEFBQcDATAOBgNVHQ8BAf8EBAMCBaAweAYJKoZIhvcNAQkPBGswaTAOBggqhkiG&#xa;9w0DAgICAIAwDgYIKoZIhvcNAwQCAgCAMAsGCWCGSAFlAwQBKjALBglghkgBZQME&#xa;AS0wCwYJYIZIAWUDBAECMAsGCWCGSAFlAwQBBTAHBgUrDgMCBzAKBggqhkiG9w0D&#xa;BzAdBgNVHQ4EFgQUS0p3kE+n8ALq1fDnIAtuncZy4TowHwYDVR0jBBgwFoAUduaC&#xa;jnF9VUxyR16vr1DFQrFed/kwgeQGA1UdHwSB3DCB2TCB1qCB06CB0IaBzWxkYXA6&#xa;Ly8vQ049Z2hvc3RsaW5rLUdQWi1PUDI2LVNFQ1VSRS1DQSxDTj1ncHotb3AyNi1z&#xa;ZWN1cmUsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENOPVNlcnZp&#xa;Y2VzLENOPUNvbmZpZ3VyYXRpb24sREM9Z2hvc3RsaW5rLERDPWh0Yj9jZXJ0aWZp&#xa;Y2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJpYnV0&#xa;aW9uUG9pbnQwgdAGCCsGAQUFBwEBBIHDMIHAMIG9BggrBgEFBQcwAoaBsGxkYXA6&#xa;Ly8vQ049Z2hvc3RsaW5rLUdQWi1PUDI2LVNFQ1VSRS1DQSxDTj1BSUEsQ049UHVi&#xa;bGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlv&#xa;bixEQz1naG9zdGxpbmssREM9aHRiP2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RD&#xa;bGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MD4GA1UdEQQ3MDWgHwYJKwYBBAGC&#xa;NxkBoBIEEEm84HGiyQtNnfwSAH8tvsSCEmRjMDEuZ2hvc3RsaW5rLmh0YjBPBgkr&#xa;BgEEAYI3GQIEQjBAoD4GCisGAQQBgjcZAgGgMAQuUy0xLTUtMjEtMzQyNjQ1OTM4&#xa;Mi0xOTM2Mjk3ODQyLTIzMTI0NjgwMjQtMTAwMDANBgkqhkiG9w0BAQsFAAOCAQEA&#xa;jpP/seS2HfKvtDd7ayEDZAfiihWdNod7Ug4vKMM21Ei6Nh3p8b+AGm7KB2sPeXMs&#xa;lnr1wUQfdn7ok1eaJjAProel3pzC0Zmf/C9+B/5bvrWIeFCjmynzFg0bBF0ywX8u&#xa;xkVVlVKtzm2ub96n/ZBajoZymj93Nv+KdaimDdcUji/fjp6eShm0RuEq/+elm/y0&#xa;NDlQNlpjKQyx3sY2QaF5L1CvlngBv80rtOJWG8AUHyww9uRCRYySWDxPEbXeJICo&#xa;SJpWXzAfdD7LV7jA6tCdWkgyIKPAcjxyoakc+fQdb79+h3DBu3mEMRzAWV4AqJg0&#xa;BHtJHdMHWsYf1Q9PIqxZ2w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: ghostlink.htb, Site: Default-First-Site-Name" hostname="DC01" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=dc01.ghostlink.htb&#xa;Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:dc01.ghostlink.htb&#xa;Issuer: commonName=ghostlink-GPZ-OP26-SECURE-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-03-03T16:53:53&#xa;Not valid after:  2027-03-03T16:53:53&#xa;MD5:     67e4 aece a99f d27e 070c 64af 5223 d817&#xa;SHA-1:   0aa4 7883 fb11 35ab a666 2a69 d6c1 735f 31b7 ea91&#xa;SHA-256: 167c cfec 311e ffed a00f 4e30 f4c4 1489 a6e2 5674 262d 0f66 fa9a b8d3 24b5 9d8e"><table key="subject">
+<elem key="commonName">dc01.ghostlink.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ghostlink-GPZ-OP26-SECURE-CA</elem>
+<elem key="domainComponent">ghostlink</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CD2534BCC9C51A79CE7FE0620BBD8A09551DCB7C26828851C606A5C18EF71CC5B61E023716C1B23EA08730E7A47D632AA2E792B7526293E66D616824F53D733BAD13AC886B8F4DE4F38C07DAE13A2DF7D06E103CEFCEF4D074F9C92ECCF076E8AFEACBEA93EB4ABB29D001BE3F78DBDDCC119D628926E4A2711DA3F88CDA0DCE01286FE5D32C729361A2B164B96360976CCBC7889BAAA8077996029F752B34C987F7B930F8586656C527D0F35ADAA426B66D04F1868B1E7D676BAB317460FF47DE9D092C809911FB5F6FF545AC54D263321ACE3F8FC5AA17A181E615267CF578D73C2CA7BC002066449570BDF9B82BFC273B2645F0B4A9FA2F6F829F9EFD5D35</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">S/MIME Capabilities</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">4B:4A:77:90:4F:A7:F0:02:EA:D5:F0:E7:20:0B:6E:9D:C6:72:E1:3A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">76:E6:82:8E:71:7D:55:4C:72:47:5E:AF:AF:50:C5:42:B1:5E:77:F9</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=ghostlink-GPZ-OP26-SECURE-CA,CN=gpz-op26-secure,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ghostlink,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=ghostlink-GPZ-OP26-SECURE-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ghostlink,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:dc01.ghostlink.htb</elem>
+</table>
+<table>
+<elem key="name">Microsoft NTDS CA Extension</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-03-03T16:53:53</elem>
+<elem key="notAfter">2027-03-03T16:53:53</elem>
+</table>
+<elem key="md5">67e4aecea99fd27e070c64af5223d817</elem>
+<elem key="sha1">0aa47883fb1135aba6662a69d6c1735f31b7ea91</elem>
+<elem key="sha256">167ccfec311effeda00f4e30f4c41489a6e25674262d0f66fa9ab8d324b59d8e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGbDCCBVSgAwIBAgITJwAAAAMbRLdcQqcOnAAAAAAAAzANBgkqhkiG9w0BAQsF&#xa;ADBXMRMwEQYKCZImiZPyLGQBGRYDaHRiMRkwFwYKCZImiZPyLGQBGRYJZ2hvc3Rs&#xa;aW5rMSUwIwYDVQQDExxnaG9zdGxpbmstR1BaLU9QMjYtU0VDVVJFLUNBMB4XDTI2&#xa;MDMwMzE2NTM1M1oXDTI3MDMwMzE2NTM1M1owHTEbMBkGA1UEAxMSZGMwMS5naG9z&#xa;dGxpbmsuaHRiMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzSU0vMnF&#xa;GnnOf+BiC72KCVUdy3wmgohRxgalwY73HMW2HgI3FsGyPqCHMOekfWMqoueSt1Ji&#xa;k+ZtYWgk9T1zO60TrIhrj03k84wH2uE6LffQbhA878700HT5yS7M8Hbor+rL6pPr&#xa;Srsp0AG+P3jb3cwRnWKJJuSicR2j+IzaDc4BKG/l0yxyk2GisWS5Y2CXbMvHiJuq&#xa;qAd5lgKfdSs0yYf3uTD4WGZWxSfQ81rapCa2bQTxhosefWdrqzF0YP9H3p0JLICZ&#xa;Eftfb/VFrFTSYzIazj+PxaoXoYHmFSZ89XjXPCynvAAgZkSVcL35uCv8JzsmRfC0&#xa;qfovb4Kfnv1dNQIDAQABo4IDaTCCA2UwLwYJKwYBBAGCNxQCBCIeIABEAG8AbQBh&#xa;AGkAbgBDAG8AbgB0AHIAbwBsAGwAZQByMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr&#xa;BgEFBQcDATAOBgNVHQ8BAf8EBAMCBaAweAYJKoZIhvcNAQkPBGswaTAOBggqhkiG&#xa;9w0DAgICAIAwDgYIKoZIhvcNAwQCAgCAMAsGCWCGSAFlAwQBKjALBglghkgBZQME&#xa;AS0wCwYJYIZIAWUDBAECMAsGCWCGSAFlAwQBBTAHBgUrDgMCBzAKBggqhkiG9w0D&#xa;BzAdBgNVHQ4EFgQUS0p3kE+n8ALq1fDnIAtuncZy4TowHwYDVR0jBBgwFoAUduaC&#xa;jnF9VUxyR16vr1DFQrFed/kwgeQGA1UdHwSB3DCB2TCB1qCB06CB0IaBzWxkYXA6&#xa;Ly8vQ049Z2hvc3RsaW5rLUdQWi1PUDI2LVNFQ1VSRS1DQSxDTj1ncHotb3AyNi1z&#xa;ZWN1cmUsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENOPVNlcnZp&#xa;Y2VzLENOPUNvbmZpZ3VyYXRpb24sREM9Z2hvc3RsaW5rLERDPWh0Yj9jZXJ0aWZp&#xa;Y2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJpYnV0&#xa;aW9uUG9pbnQwgdAGCCsGAQUFBwEBBIHDMIHAMIG9BggrBgEFBQcwAoaBsGxkYXA6&#xa;Ly8vQ049Z2hvc3RsaW5rLUdQWi1PUDI2LVNFQ1VSRS1DQSxDTj1BSUEsQ049UHVi&#xa;bGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlv&#xa;bixEQz1naG9zdGxpbmssREM9aHRiP2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RD&#xa;bGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MD4GA1UdEQQ3MDWgHwYJKwYBBAGC&#xa;NxkBoBIEEEm84HGiyQtNnfwSAH8tvsSCEmRjMDEuZ2hvc3RsaW5rLmh0YjBPBgkr&#xa;BgEEAYI3GQIEQjBAoD4GCisGAQQBgjcZAgGgMAQuUy0xLTUtMjEtMzQyNjQ1OTM4&#xa;Mi0xOTM2Mjk3ODQyLTIzMTI0NjgwMjQtMTAwMDANBgkqhkiG9w0BAQsFAAOCAQEA&#xa;jpP/seS2HfKvtDd7ayEDZAfiihWdNod7Ug4vKMM21Ei6Nh3p8b+AGm7KB2sPeXMs&#xa;lnr1wUQfdn7ok1eaJjAProel3pzC0Zmf/C9+B/5bvrWIeFCjmynzFg0bBF0ywX8u&#xa;xkVVlVKtzm2ub96n/ZBajoZymj93Nv+KdaimDdcUji/fjp6eShm0RuEq/+elm/y0&#xa;NDlQNlpjKQyx3sY2QaF5L1CvlngBv80rtOJWG8AUHyww9uRCRYySWDxPEbXeJICo&#xa;SJpWXzAfdD7LV7jA6tCdWkgyIKPAcjxyoakc+fQdb79+h3DBu3mEMRzAWV4AqJg0&#xa;BHtJHdMHWsYf1Q9PIqxZ2w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="1883"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mqtt" method="probed" conf="10"/><script id="mqtt-subscribe" output="&#xa;  Topics and their most recent payloads: &#xa;    $SYS/brokers/client_status/mqttui-3c1e1930: {&quot;status&quot;:&quot;offline&quot;, &quot;username&quot;:&quot;(null)&quot;,&quot;ts&quot;:1784207553666,&quot;reason_code&quot;:&quot;0&quot;,&quot;client_id&quot;:&quot;mqttui-3c1e1930&quot;,&quot;IPv4&quot;:&quot;127.0.0.1&quot;}&#xa;    $SYS/brokers/client_status/mqttui-bc4f47e3: {&quot;status&quot;:&quot;online&quot;, &quot;username&quot;:&quot;(null)&quot;, &quot;ts&quot;:1784207555740,&quot;proto_name&quot;:&quot;MQTT&quot;,&quot;keepalive&quot;:60,&quot;return_code&quot;:&quot;0&quot;,&quot;proto_ver&quot;:4,&quot;client_id&quot;:&quot;mqttui-bc4f47e3&quot;,&quot;clean_start&quot;:1, &quot;IPv4&quot;:&quot;127.0.0.1&quot;}&#xa;    $SYS/brokers/client_status/mqttui-6bb0fa06: {&quot;status&quot;:&quot;offline&quot;, &quot;username&quot;:&quot;(null)&quot;,&quot;ts&quot;:1784207551601,&quot;reason_code&quot;:&quot;0&quot;,&quot;client_id&quot;:&quot;mqttui-6bb0fa06&quot;,&quot;IPv4&quot;:&quot;127.0.0.1&quot;}&#xa;    $SYS/brokers/client_status/mqttui-940f64e4: {&quot;status&quot;:&quot;offline&quot;, &quot;username&quot;:&quot;(null)&quot;,&quot;ts&quot;:1784207549530,&quot;reason_code&quot;:&quot;0&quot;,&quot;client_id&quot;:&quot;mqttui-940f64e4&quot;,&quot;IPv4&quot;:&quot;127.0.0.1&quot;}"><table key="Topics and their most recent payloads">
+<elem key="$SYS/brokers/client_status/mqttui-3c1e1930">{&quot;status&quot;:&quot;offline&quot;, &quot;username&quot;:&quot;(null)&quot;,&quot;ts&quot;:1784207553666,&quot;reason_code&quot;:&quot;0&quot;,&quot;client_id&quot;:&quot;mqttui-3c1e1930&quot;,&quot;IPv4&quot;:&quot;127.0.0.1&quot;}</elem>
+<elem key="$SYS/brokers/client_status/mqttui-bc4f47e3">{&quot;status&quot;:&quot;online&quot;, &quot;username&quot;:&quot;(null)&quot;, &quot;ts&quot;:1784207555740,&quot;proto_name&quot;:&quot;MQTT&quot;,&quot;keepalive&quot;:60,&quot;return_code&quot;:&quot;0&quot;,&quot;proto_ver&quot;:4,&quot;client_id&quot;:&quot;mqttui-bc4f47e3&quot;,&quot;clean_start&quot;:1, &quot;IPv4&quot;:&quot;127.0.0.1&quot;}</elem>
+<elem key="$SYS/brokers/client_status/mqttui-6bb0fa06">{&quot;status&quot;:&quot;offline&quot;, &quot;username&quot;:&quot;(null)&quot;,&quot;ts&quot;:1784207551601,&quot;reason_code&quot;:&quot;0&quot;,&quot;client_id&quot;:&quot;mqttui-6bb0fa06&quot;,&quot;IPv4&quot;:&quot;127.0.0.1&quot;}</elem>
+<elem key="$SYS/brokers/client_status/mqttui-940f64e4">{&quot;status&quot;:&quot;offline&quot;, &quot;username&quot;:&quot;(null)&quot;,&quot;ts&quot;:1784207549530,&quot;reason_code&quot;:&quot;0&quot;,&quot;client_id&quot;:&quot;mqttui-940f64e4&quot;,&quot;IPv4&quot;:&quot;127.0.0.1&quot;}</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="2179"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="vmrdp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: ghostlink.htb, Site: Default-First-Site-Name" hostname="DC01" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=dc01.ghostlink.htb&#xa;Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:dc01.ghostlink.htb&#xa;Issuer: commonName=ghostlink-GPZ-OP26-SECURE-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-03-03T16:53:53&#xa;Not valid after:  2027-03-03T16:53:53&#xa;MD5:     67e4 aece a99f d27e 070c 64af 5223 d817&#xa;SHA-1:   0aa4 7883 fb11 35ab a666 2a69 d6c1 735f 31b7 ea91&#xa;SHA-256: 167c cfec 311e ffed a00f 4e30 f4c4 1489 a6e2 5674 262d 0f66 fa9a b8d3 24b5 9d8e"><table key="subject">
+<elem key="commonName">dc01.ghostlink.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ghostlink-GPZ-OP26-SECURE-CA</elem>
+<elem key="domainComponent">ghostlink</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CD2534BCC9C51A79CE7FE0620BBD8A09551DCB7C26828851C606A5C18EF71CC5B61E023716C1B23EA08730E7A47D632AA2E792B7526293E66D616824F53D733BAD13AC886B8F4DE4F38C07DAE13A2DF7D06E103CEFCEF4D074F9C92ECCF076E8AFEACBEA93EB4ABB29D001BE3F78DBDDCC119D628926E4A2711DA3F88CDA0DCE01286FE5D32C729361A2B164B96360976CCBC7889BAAA8077996029F752B34C987F7B930F8586656C527D0F35ADAA426B66D04F1868B1E7D676BAB317460FF47DE9D092C809911FB5F6FF545AC54D263321ACE3F8FC5AA17A181E615267CF578D73C2CA7BC002066449570BDF9B82BFC273B2645F0B4A9FA2F6F829F9EFD5D35</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">S/MIME Capabilities</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">4B:4A:77:90:4F:A7:F0:02:EA:D5:F0:E7:20:0B:6E:9D:C6:72:E1:3A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">76:E6:82:8E:71:7D:55:4C:72:47:5E:AF:AF:50:C5:42:B1:5E:77:F9</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=ghostlink-GPZ-OP26-SECURE-CA,CN=gpz-op26-secure,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ghostlink,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=ghostlink-GPZ-OP26-SECURE-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ghostlink,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:dc01.ghostlink.htb</elem>
+</table>
+<table>
+<elem key="name">Microsoft NTDS CA Extension</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-03-03T16:53:53</elem>
+<elem key="notAfter">2027-03-03T16:53:53</elem>
+</table>
+<elem key="md5">67e4aecea99fd27e070c64af5223d817</elem>
+<elem key="sha1">0aa47883fb1135aba6662a69d6c1735f31b7ea91</elem>
+<elem key="sha256">167ccfec311effeda00f4e30f4c41489a6e25674262d0f66fa9ab8d324b59d8e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGbDCCBVSgAwIBAgITJwAAAAMbRLdcQqcOnAAAAAAAAzANBgkqhkiG9w0BAQsF&#xa;ADBXMRMwEQYKCZImiZPyLGQBGRYDaHRiMRkwFwYKCZImiZPyLGQBGRYJZ2hvc3Rs&#xa;aW5rMSUwIwYDVQQDExxnaG9zdGxpbmstR1BaLU9QMjYtU0VDVVJFLUNBMB4XDTI2&#xa;MDMwMzE2NTM1M1oXDTI3MDMwMzE2NTM1M1owHTEbMBkGA1UEAxMSZGMwMS5naG9z&#xa;dGxpbmsuaHRiMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzSU0vMnF&#xa;GnnOf+BiC72KCVUdy3wmgohRxgalwY73HMW2HgI3FsGyPqCHMOekfWMqoueSt1Ji&#xa;k+ZtYWgk9T1zO60TrIhrj03k84wH2uE6LffQbhA878700HT5yS7M8Hbor+rL6pPr&#xa;Srsp0AG+P3jb3cwRnWKJJuSicR2j+IzaDc4BKG/l0yxyk2GisWS5Y2CXbMvHiJuq&#xa;qAd5lgKfdSs0yYf3uTD4WGZWxSfQ81rapCa2bQTxhosefWdrqzF0YP9H3p0JLICZ&#xa;Eftfb/VFrFTSYzIazj+PxaoXoYHmFSZ89XjXPCynvAAgZkSVcL35uCv8JzsmRfC0&#xa;qfovb4Kfnv1dNQIDAQABo4IDaTCCA2UwLwYJKwYBBAGCNxQCBCIeIABEAG8AbQBh&#xa;AGkAbgBDAG8AbgB0AHIAbwBsAGwAZQByMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr&#xa;BgEFBQcDATAOBgNVHQ8BAf8EBAMCBaAweAYJKoZIhvcNAQkPBGswaTAOBggqhkiG&#xa;9w0DAgICAIAwDgYIKoZIhvcNAwQCAgCAMAsGCWCGSAFlAwQBKjALBglghkgBZQME&#xa;AS0wCwYJYIZIAWUDBAECMAsGCWCGSAFlAwQBBTAHBgUrDgMCBzAKBggqhkiG9w0D&#xa;BzAdBgNVHQ4EFgQUS0p3kE+n8ALq1fDnIAtuncZy4TowHwYDVR0jBBgwFoAUduaC&#xa;jnF9VUxyR16vr1DFQrFed/kwgeQGA1UdHwSB3DCB2TCB1qCB06CB0IaBzWxkYXA6&#xa;Ly8vQ049Z2hvc3RsaW5rLUdQWi1PUDI2LVNFQ1VSRS1DQSxDTj1ncHotb3AyNi1z&#xa;ZWN1cmUsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENOPVNlcnZp&#xa;Y2VzLENOPUNvbmZpZ3VyYXRpb24sREM9Z2hvc3RsaW5rLERDPWh0Yj9jZXJ0aWZp&#xa;Y2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJpYnV0&#xa;aW9uUG9pbnQwgdAGCCsGAQUFBwEBBIHDMIHAMIG9BggrBgEFBQcwAoaBsGxkYXA6&#xa;Ly8vQ049Z2hvc3RsaW5rLUdQWi1PUDI2LVNFQ1VSRS1DQSxDTj1BSUEsQ049UHVi&#xa;bGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlv&#xa;bixEQz1naG9zdGxpbmssREM9aHRiP2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RD&#xa;bGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MD4GA1UdEQQ3MDWgHwYJKwYBBAGC&#xa;NxkBoBIEEEm84HGiyQtNnfwSAH8tvsSCEmRjMDEuZ2hvc3RsaW5rLmh0YjBPBgkr&#xa;BgEEAYI3GQIEQjBAoD4GCisGAQQBgjcZAgGgMAQuUy0xLTUtMjEtMzQyNjQ1OTM4&#xa;Mi0xOTM2Mjk3ODQyLTIzMTI0NjgwMjQtMTAwMDANBgkqhkiG9w0BAQsFAAOCAQEA&#xa;jpP/seS2HfKvtDd7ayEDZAfiihWdNod7Ug4vKMM21Ei6Nh3p8b+AGm7KB2sPeXMs&#xa;lnr1wUQfdn7ok1eaJjAProel3pzC0Zmf/C9+B/5bvrWIeFCjmynzFg0bBF0ywX8u&#xa;xkVVlVKtzm2ub96n/ZBajoZymj93Nv+KdaimDdcUji/fjp6eShm0RuEq/+elm/y0&#xa;NDlQNlpjKQyx3sY2QaF5L1CvlngBv80rtOJWG8AUHyww9uRCRYySWDxPEbXeJICo&#xa;SJpWXzAfdD7LV7jA6tCdWkgyIKPAcjxyoakc+fQdb79+h3DBu3mEMRzAWV4AqJg0&#xa;BHtJHdMHWsYf1Q9PIqxZ2w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: ghostlink.htb, Site: Default-First-Site-Name" hostname="DC01" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=dc01.ghostlink.htb&#xa;Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:dc01.ghostlink.htb&#xa;Issuer: commonName=ghostlink-GPZ-OP26-SECURE-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-03-03T16:53:53&#xa;Not valid after:  2027-03-03T16:53:53&#xa;MD5:     67e4 aece a99f d27e 070c 64af 5223 d817&#xa;SHA-1:   0aa4 7883 fb11 35ab a666 2a69 d6c1 735f 31b7 ea91&#xa;SHA-256: 167c cfec 311e ffed a00f 4e30 f4c4 1489 a6e2 5674 262d 0f66 fa9a b8d3 24b5 9d8e"><table key="subject">
+<elem key="commonName">dc01.ghostlink.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ghostlink-GPZ-OP26-SECURE-CA</elem>
+<elem key="domainComponent">ghostlink</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CD2534BCC9C51A79CE7FE0620BBD8A09551DCB7C26828851C606A5C18EF71CC5B61E023716C1B23EA08730E7A47D632AA2E792B7526293E66D616824F53D733BAD13AC886B8F4DE4F38C07DAE13A2DF7D06E103CEFCEF4D074F9C92ECCF076E8AFEACBEA93EB4ABB29D001BE3F78DBDDCC119D628926E4A2711DA3F88CDA0DCE01286FE5D32C729361A2B164B96360976CCBC7889BAAA8077996029F752B34C987F7B930F8586656C527D0F35ADAA426B66D04F1868B1E7D676BAB317460FF47DE9D092C809911FB5F6FF545AC54D263321ACE3F8FC5AA17A181E615267CF578D73C2CA7BC002066449570BDF9B82BFC273B2645F0B4A9FA2F6F829F9EFD5D35</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">S/MIME Capabilities</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">4B:4A:77:90:4F:A7:F0:02:EA:D5:F0:E7:20:0B:6E:9D:C6:72:E1:3A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">76:E6:82:8E:71:7D:55:4C:72:47:5E:AF:AF:50:C5:42:B1:5E:77:F9</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=ghostlink-GPZ-OP26-SECURE-CA,CN=gpz-op26-secure,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ghostlink,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=ghostlink-GPZ-OP26-SECURE-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ghostlink,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:dc01.ghostlink.htb</elem>
+</table>
+<table>
+<elem key="name">Microsoft NTDS CA Extension</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-03-03T16:53:53</elem>
+<elem key="notAfter">2027-03-03T16:53:53</elem>
+</table>
+<elem key="md5">67e4aecea99fd27e070c64af5223d817</elem>
+<elem key="sha1">0aa47883fb1135aba6662a69d6c1735f31b7ea91</elem>
+<elem key="sha256">167ccfec311effeda00f4e30f4c41489a6e25674262d0f66fa9ab8d324b59d8e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGbDCCBVSgAwIBAgITJwAAAAMbRLdcQqcOnAAAAAAAAzANBgkqhkiG9w0BAQsF&#xa;ADBXMRMwEQYKCZImiZPyLGQBGRYDaHRiMRkwFwYKCZImiZPyLGQBGRYJZ2hvc3Rs&#xa;aW5rMSUwIwYDVQQDExxnaG9zdGxpbmstR1BaLU9QMjYtU0VDVVJFLUNBMB4XDTI2&#xa;MDMwMzE2NTM1M1oXDTI3MDMwMzE2NTM1M1owHTEbMBkGA1UEAxMSZGMwMS5naG9z&#xa;dGxpbmsuaHRiMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzSU0vMnF&#xa;GnnOf+BiC72KCVUdy3wmgohRxgalwY73HMW2HgI3FsGyPqCHMOekfWMqoueSt1Ji&#xa;k+ZtYWgk9T1zO60TrIhrj03k84wH2uE6LffQbhA878700HT5yS7M8Hbor+rL6pPr&#xa;Srsp0AG+P3jb3cwRnWKJJuSicR2j+IzaDc4BKG/l0yxyk2GisWS5Y2CXbMvHiJuq&#xa;qAd5lgKfdSs0yYf3uTD4WGZWxSfQ81rapCa2bQTxhosefWdrqzF0YP9H3p0JLICZ&#xa;Eftfb/VFrFTSYzIazj+PxaoXoYHmFSZ89XjXPCynvAAgZkSVcL35uCv8JzsmRfC0&#xa;qfovb4Kfnv1dNQIDAQABo4IDaTCCA2UwLwYJKwYBBAGCNxQCBCIeIABEAG8AbQBh&#xa;AGkAbgBDAG8AbgB0AHIAbwBsAGwAZQByMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr&#xa;BgEFBQcDATAOBgNVHQ8BAf8EBAMCBaAweAYJKoZIhvcNAQkPBGswaTAOBggqhkiG&#xa;9w0DAgICAIAwDgYIKoZIhvcNAwQCAgCAMAsGCWCGSAFlAwQBKjALBglghkgBZQME&#xa;AS0wCwYJYIZIAWUDBAECMAsGCWCGSAFlAwQBBTAHBgUrDgMCBzAKBggqhkiG9w0D&#xa;BzAdBgNVHQ4EFgQUS0p3kE+n8ALq1fDnIAtuncZy4TowHwYDVR0jBBgwFoAUduaC&#xa;jnF9VUxyR16vr1DFQrFed/kwgeQGA1UdHwSB3DCB2TCB1qCB06CB0IaBzWxkYXA6&#xa;Ly8vQ049Z2hvc3RsaW5rLUdQWi1PUDI2LVNFQ1VSRS1DQSxDTj1ncHotb3AyNi1z&#xa;ZWN1cmUsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENOPVNlcnZp&#xa;Y2VzLENOPUNvbmZpZ3VyYXRpb24sREM9Z2hvc3RsaW5rLERDPWh0Yj9jZXJ0aWZp&#xa;Y2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJpYnV0&#xa;aW9uUG9pbnQwgdAGCCsGAQUFBwEBBIHDMIHAMIG9BggrBgEFBQcwAoaBsGxkYXA6&#xa;Ly8vQ049Z2hvc3RsaW5rLUdQWi1PUDI2LVNFQ1VSRS1DQSxDTj1BSUEsQ049UHVi&#xa;bGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlv&#xa;bixEQz1naG9zdGxpbmssREM9aHRiP2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RD&#xa;bGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MD4GA1UdEQQ3MDWgHwYJKwYBBAGC&#xa;NxkBoBIEEEm84HGiyQtNnfwSAH8tvsSCEmRjMDEuZ2hvc3RsaW5rLmh0YjBPBgkr&#xa;BgEEAYI3GQIEQjBAoD4GCisGAQQBgjcZAgGgMAQuUy0xLTUtMjEtMzQyNjQ1OTM4&#xa;Mi0xOTM2Mjk3ODQyLTIzMTI0NjgwMjQtMTAwMDANBgkqhkiG9w0BAQsFAAOCAQEA&#xa;jpP/seS2HfKvtDd7ayEDZAfiihWdNod7Ug4vKMM21Ei6Nh3p8b+AGm7KB2sPeXMs&#xa;lnr1wUQfdn7ok1eaJjAProel3pzC0Zmf/C9+B/5bvrWIeFCjmynzFg0bBF0ywX8u&#xa;xkVVlVKtzm2ub96n/ZBajoZymj93Nv+KdaimDdcUji/fjp6eShm0RuEq/+elm/y0&#xa;NDlQNlpjKQyx3sY2QaF5L1CvlngBv80rtOJWG8AUHyww9uRCRYySWDxPEbXeJICo&#xa;SJpWXzAfdD7LV7jA6tCdWkgyIKPAcjxyoakc+fQdb79+h3DBu3mEMRzAWV4AqJg0&#xa;BHtJHdMHWsYf1Q9PIqxZ2w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49673"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49676"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49679"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49680"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49900"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49915"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="50655"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2026-07-16T13:12:33&#xa;  start_date: N/A"><elem key="date">2026-07-16T13:12:33</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="clock-skew" output="7h59m47s"><elem key="median">28787</elem>
+<elem key="count">1</elem>
+<elem key="mean">28787</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="78729" rttvar="3001" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1784178802"/>
+<taskend task="NSE" time="1784178802"/>
+<taskbegin task="NSE" time="1784178802"/>
+<taskend task="NSE" time="1784178802"/>
+<taskbegin task="NSE" time="1784178802"/>
+<taskend task="NSE" time="1784178802"/>
+<runstats><finished time="1784178802" timestr="Thu Jul 16 10:43:22 2026" summary="Nmap done at Thu Jul 16 10:43:22 2026; 1 IP address (1 host up) scanned in 169.86 seconds" elapsed="169.86" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Certificate revocation list in PEM format
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/base64 \"  --value \'$VAR(@)\'"; "CRL is not base64-encoded"

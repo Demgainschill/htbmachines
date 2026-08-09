@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: Add label variables
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?\'   --value \'$VAR(@)\'"; "Label variable name must be alphanumeric and can contain hyphen, dots and underscores"

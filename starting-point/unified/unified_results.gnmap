@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sun Aug  9 09:08:54 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA unified_results 10.129.44.242
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.44.242 ()	Status: Up
+Host: 10.129.44.242 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 6789/open/tcp//ibm-db2-admin?///, 8080/open/tcp//http//Apache Tomcat (language: en)/, 8443/open/tcp//ssl|nagios-nsca//Nagios NSCA/, 8843/open/tcp//ssl|http//Apache Tomcat (language: en)/, 8880/open/tcp//http//Apache Tomcat (language: en)/, 9989/filtered/tcp/////, 21244/filtered/tcp/////, 29624/filtered/tcp/////	Ignored State: closed (65526)
+# Nmap done at Sun Aug  9 09:11:55 2026 -- 1 IP address (1 host up) scanned in 181.86 seconds

@@ -1,0 +1,6 @@
+libgrpc++ 1.51 libgrpc++1.51 (>= 1.51.1)
+libgrpc++_alts 1.51 libgrpc++1.51 (>= 1.51.1)
+libgrpc++_error_details 1.51 libgrpc++1.51 (>= 1.51.1)
+libgrpc++_reflection 1.51 libgrpc++1.51 (>= 1.51.1)
+libgrpc++_unsecure 1.51 libgrpc++1.51 (>= 1.51.1)
+libgrpcpp_channelz 1.51 libgrpc++1.51 (>= 1.51.1)

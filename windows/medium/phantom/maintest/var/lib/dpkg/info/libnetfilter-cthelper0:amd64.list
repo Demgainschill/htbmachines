@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libnetfilter_cthelper.so.0.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnetfilter-cthelper0
+/usr/share/doc/libnetfilter-cthelper0/changelog.Debian.gz
+/usr/share/doc/libnetfilter-cthelper0/copyright
+/usr/lib/x86_64-linux-gnu/libnetfilter_cthelper.so.0

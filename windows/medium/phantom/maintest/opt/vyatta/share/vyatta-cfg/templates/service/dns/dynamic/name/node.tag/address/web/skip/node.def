@@ -1,0 +1,3 @@
+type: txt
+help: Pattern to skip from the HTTP(S) respose
+val_help: txt; Pattern to skip from the HTTP(S) respose to extract the external IP address

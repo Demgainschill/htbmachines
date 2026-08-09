@@ -1,0 +1,3 @@
+564cf44109a0b344930b678798facc6f  lib/systemd/system/radvd.service
+d656f626e0e68f8934f62b3d363b1a6b  usr/sbin/radvd
+81d8f88e7a9579642f7e52c975b3adfc  usr/share/doc/radvd/changelog.gz

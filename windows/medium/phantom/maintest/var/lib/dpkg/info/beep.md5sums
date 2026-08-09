@@ -1,0 +1,14 @@
+1e521e5909d9f831388b1f2ed53cbba8  lib/udev/rules.d/70-pcspkr-beep.rules
+755e87588b31527dce5d79ddfbe77464  usr/bin/beep
+b287fee29d2aa2abcc7dd7b093e9b438  usr/share/doc/beep/CREDITS
+860843a6dcef275866790f9b96327e63  usr/share/doc/beep/INSTALL.md
+ebc8e7939291c42d87ef94e0f926dad7  usr/share/doc/beep/NEWS.Debian.gz
+308714ea8c2c3daeb1d2105023a22905  usr/share/doc/beep/PERMISSIONS.md.gz
+c767e4aea995125b21338b7b218390fc  usr/share/doc/beep/README.md.gz
+637b830e703b7ccef13261969c4e3437  usr/share/doc/beep/changelog.Debian.amd64.gz
+d9c85d68112771f0171a42d2b8e77152  usr/share/doc/beep/changelog.Debian.gz
+22d9cc66121d9d5f6486126459eebb51  usr/share/doc/beep/changelog.gz
+351341352e8b6edfa3b5a3a029dc141a  usr/share/doc/beep/contrib/failure-beeps
+a24003598e2dca30949fe8e01b8a7be1  usr/share/doc/beep/contrib/success-beeps
+193022659502c57dfd3e1219c4aa9913  usr/share/doc/beep/copyright
+7c7344f8a0450ebd71458b9eaae4dd1a  usr/share/man/man1/beep.1.gz

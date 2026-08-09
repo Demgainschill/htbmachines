@@ -1,0 +1,6 @@
+tag:
+type: txt
+help: Logging to specific terminal of given user
+val_help: txt; Local user account
+allowed: /bin/cli-shell-api listNodes system login user
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9.]{1,100}\'   --value \'$VAR(@)\'"; "illegal characters in user"

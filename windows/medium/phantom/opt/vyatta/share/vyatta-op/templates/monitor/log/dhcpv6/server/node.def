@@ -1,0 +1,2 @@
+help: Monitor last lines of DHCPv6 server log
+run: journalctl --no-hostname --follow --boot --unit kea-dhcp6-server.service

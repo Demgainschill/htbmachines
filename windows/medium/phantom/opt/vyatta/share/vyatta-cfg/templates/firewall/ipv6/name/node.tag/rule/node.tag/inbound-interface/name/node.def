@@ -1,0 +1,7 @@
+type: txt
+help: Match interface
+val_help: txt; Interface name
+val_help: txt*; Interface name with wildcard
+val_help: !txt; Inverted interface name to match
+allowed: /bin/cli-shell-api listNodes vrf name && echo " " && sh -c "${vyos_completion_dir}/list_interfaces"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(\\!?)(bond|br|dum|en|ersp|eth|gnv|ifb|ipoe|lan|l2tp|l2tpeth|macsec|peth|ppp|pppoe|pptp|sstp|tun|veth|vti|vtun|vxlan|wg|wlan|wwan)([0-9]?)(\\*?)(.+)?|(\\!?)lo\' --exec \"${vyos_validators_dir}/vrf-name \"  --value \'$VAR(@)\'"; "Invalid value"

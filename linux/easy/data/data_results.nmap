@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Sat Aug  8 07:32:45 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA data_results 10.129.234.47
+Nmap scan report for 10.129.234.47 [host down]
+Read data files from: /usr/share/nmap
+# Nmap done at Sat Aug  8 07:32:47 2026 -- 1 IP address (0 hosts up) scanned in 2.25 seconds

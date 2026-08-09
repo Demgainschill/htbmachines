@@ -1,0 +1,3 @@
+help: Update webproxy blacklist database via specified VRF
+allowed: /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/webproxy_update_blacklist.sh --update-blacklist --vrf "${5}" 

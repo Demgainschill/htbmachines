@@ -1,0 +1,4 @@
+type: txt
+help: SRv6 segments
+val_help: txt; Segs (SIDs)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-srv6-segments \"  --value \'$VAR(@)\'"; "Invalid value"

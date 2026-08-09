@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Jul 12 17:13:18 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA optimum_results 10.129.4.205 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA optimum_results 10.129.4.205" start="1783856598" startstr="Sun Jul 12 17:13:18 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1783856598"/>
+<taskend task="NSE" time="1783856598"/>
+<taskbegin task="NSE" time="1783856598"/>
+<taskend task="NSE" time="1783856598"/>
+<taskbegin task="NSE" time="1783856598"/>
+<taskend task="NSE" time="1783856598"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1783856598"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1783856603"/>
+<taskbegin task="SYN Stealth Scan" time="1783856603"/>
+<taskend task="SYN Stealth Scan" time="1783856636" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1783856636"/>
+<taskend task="Service scan" time="1783856642" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1783856642"/>
+<taskend task="NSE" time="1783856647"/>
+<taskbegin task="NSE" time="1783856647"/>
+<taskend task="NSE" time="1783856647"/>
+<taskbegin task="NSE" time="1783856647"/>
+<taskend task="NSE" time="1783856647"/>
+<host starttime="1783856603" endtime="1783856647"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.4.205" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-response" count="65534" proto="tcp" ports="1-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="HttpFileServer httpd" version="2.3" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:rejetto:httpfileserver:2.3</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="HFS 2.3"><elem>HFS 2.3</elem>
+</script><script id="http-title" output="HFS /"><elem key="title">HFS /</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-favicon" output="Unknown favicon MD5: 759792EDD4EF8E6BC2D1877D27153CB1"/></port>
+</ports>
+<times srtt="59468" rttvar="23552" to="153676"/>
+</host>
+<taskbegin task="NSE" time="1783856647"/>
+<taskend task="NSE" time="1783856647"/>
+<taskbegin task="NSE" time="1783856647"/>
+<taskend task="NSE" time="1783856647"/>
+<taskbegin task="NSE" time="1783856647"/>
+<taskend task="NSE" time="1783856647"/>
+<runstats><finished time="1783856647" timestr="Sun Jul 12 17:14:07 2026" summary="Nmap done at Sun Jul 12 17:14:07 2026; 1 IP address (1 host up) scanned in 49.15 seconds" elapsed="49.15" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

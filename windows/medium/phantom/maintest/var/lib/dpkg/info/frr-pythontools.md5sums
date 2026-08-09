@@ -1,0 +1,7 @@
+05bb8c5bd93d2613a6146bedcd1926c1  usr/lib/frr/frr-reload.py
+c38546cda8baaca6691c1edc538b7cd5  usr/lib/frr/frr_babeltrace.py
+5aa07954c62d6e67f61b96276e19888a  usr/lib/frr/generate_support_bundle.py
+4258a7be85cde7415d96651635c628ec  usr/lib/frr/ospfclient.py
+e4a50c301a1ab891b322d0589238f43c  usr/share/doc/frr-pythontools/changelog.Debian.gz
+116c94190bd7de6896d53ee562327310  usr/share/doc/frr-pythontools/copyright
+e76849909f424fdbfc829cac881531ce  usr/share/lintian/overrides/frr-pythontools

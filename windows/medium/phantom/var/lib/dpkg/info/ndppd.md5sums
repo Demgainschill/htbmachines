@@ -1,0 +1,8 @@
+66b8eee4b575e98972106cf5a17fdd32  usr/sbin/ndppd
+a6a5adca392240a65508c60ec76586c2  usr/share/doc/ndppd/README.gz
+5b2a42e87667f0f06451c9c0d0ca3e12  usr/share/doc/ndppd/changelog.Debian.gz
+a865307c5336c9d17335584ca090176f  usr/share/doc/ndppd/changelog.gz
+7bf54f558184ad6fccb6b63b1be66dfa  usr/share/doc/ndppd/copyright
+c8a82cc337a20d2b5bb87e171b5fd408  usr/share/doc/ndppd/ndppd.conf-dist
+39595968bf5fdaf593abb20fdae45e3b  usr/share/man/man1/ndppd.1.gz
+2f4b69e2ae9a226780114c3381ce34c8  usr/share/man/man5/ndppd.conf.5.gz

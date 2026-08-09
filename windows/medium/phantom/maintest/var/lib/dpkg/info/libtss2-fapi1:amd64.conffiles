@@ -1,0 +1,3 @@
+/etc/tpm2-tss/fapi-config.json
+/etc/tpm2-tss/fapi-profiles/P_ECCP256SHA256.json
+/etc/tpm2-tss/fapi-profiles/P_RSA2048SHA256.json

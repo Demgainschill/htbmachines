@@ -1,0 +1,5 @@
+type: txt
+help: Accept Duplicate Address Detection (default: 1)
+val_help: 0; Disable DAD
+val_help: 1; Enable DAD (default)
+val_help: 2; Enable DAD - disable IPv6 if MAC-based duplicate link-local address found

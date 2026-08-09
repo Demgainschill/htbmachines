@@ -1,0 +1,2 @@
+help: Monitor last lines of mDNS repeater service
+run: journalctl --no-hostname --follow --boot --unit avahi-daemon.service

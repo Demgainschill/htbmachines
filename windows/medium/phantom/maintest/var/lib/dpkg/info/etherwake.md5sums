@@ -1,0 +1,5 @@
+a502804c62ef3904dab735d2a68ff9bb  usr/sbin/etherwake
+6f166e364e7c63c6051778922a02f186  usr/share/doc/etherwake/changelog.Debian.amd64.gz
+05bdf185a95c2e0f1d9ddee0b3db22dd  usr/share/doc/etherwake/changelog.Debian.gz
+7c7265f20a65c5883eb4569b3cebf1f5  usr/share/doc/etherwake/copyright
+0593ec5e46a753b5835f998d13ea0585  usr/share/man/man8/etherwake.8.gz

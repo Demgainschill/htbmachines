@@ -1,0 +1,18 @@
+# This is a transient unit file, created programmatically via the systemd API. Do not edit.
+[Scope]
+Slice=user-1002.slice
+
+[Unit]
+Description=Session 1 of User vyos
+Wants=user-runtime-dir@1002.service
+Wants=user@1002.service
+After=systemd-logind.service
+After=user-runtime-dir@1002.service
+After=systemd-user-sessions.service
+After=user@1002.service
+RequiresMountsFor=/home/vyos
+
+[Scope]
+SendSIGHUP=yes
+OOMPolicy=continue
+TasksMax=infinity

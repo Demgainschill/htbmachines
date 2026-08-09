@@ -1,0 +1,4 @@
+2139ae48cf6e495fa2abbc1e10c3e409  usr/share/doc/live-boot-initramfs-tools/changelog.Debian.gz
+0684cf5583bfdd30348725787765bb0c  usr/share/doc/live-boot-initramfs-tools/copyright
+b839aaac329c9a14bb47d0c5339d0ea0  usr/share/initramfs-tools/hooks/live
+3b5d3a6649023af4830b4706b7731b3a  usr/share/initramfs-tools/scripts/live

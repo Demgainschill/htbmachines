@@ -1,0 +1,105 @@
+# Nmap 7.99 scan initiated Sat Jul  4 07:36:52 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA retro_results 10.129.234.44
+Nmap scan report for 10.129.234.44
+Host is up (0.25s latency).
+Not shown: 65515 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-04 02:07:50Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: retro.vl, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC.retro.vl
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC.retro.vl
+| Issuer: commonName=retro-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-10-02T10:33:09
+| Not valid after:  2025-10-02T10:33:09
+| MD5:     0570 85e4 2e0b 442c 16c0 d258 3acb 1019
+| SHA-1:   0b6c b037 2581 5555 b186 8ca2 35e7 21db 2c8d 56d6
+|_SHA-256: d49e 84da b23d bdf2 6e7e 1936 4a50 a3c8 3957 98fd 43af d39a 345d b253 c5f9 81c6
+|_ssl-date: 2026-07-04T02:09:21+00:00; 0s from scanner time.
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: retro.vl, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC.retro.vl
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC.retro.vl
+| Issuer: commonName=retro-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-10-02T10:33:09
+| Not valid after:  2025-10-02T10:33:09
+| MD5:     0570 85e4 2e0b 442c 16c0 d258 3acb 1019
+| SHA-1:   0b6c b037 2581 5555 b186 8ca2 35e7 21db 2c8d 56d6
+|_SHA-256: d49e 84da b23d bdf2 6e7e 1936 4a50 a3c8 3957 98fd 43af d39a 345d b253 c5f9 81c6
+|_ssl-date: 2026-07-04T02:09:21+00:00; 0s from scanner time.
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: retro.vl, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC.retro.vl
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC.retro.vl
+| Issuer: commonName=retro-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-10-02T10:33:09
+| Not valid after:  2025-10-02T10:33:09
+| MD5:     0570 85e4 2e0b 442c 16c0 d258 3acb 1019
+| SHA-1:   0b6c b037 2581 5555 b186 8ca2 35e7 21db 2c8d 56d6
+|_SHA-256: d49e 84da b23d bdf2 6e7e 1936 4a50 a3c8 3957 98fd 43af d39a 345d b253 c5f9 81c6
+|_ssl-date: 2026-07-04T02:09:21+00:00; 0s from scanner time.
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: retro.vl, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-04T02:09:21+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=DC.retro.vl
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC.retro.vl
+| Issuer: commonName=retro-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-10-02T10:33:09
+| Not valid after:  2025-10-02T10:33:09
+| MD5:     0570 85e4 2e0b 442c 16c0 d258 3acb 1019
+| SHA-1:   0b6c b037 2581 5555 b186 8ca2 35e7 21db 2c8d 56d6
+|_SHA-256: d49e 84da b23d bdf2 6e7e 1936 4a50 a3c8 3957 98fd 43af d39a 345d b253 c5f9 81c6
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: RETRO
+|   NetBIOS_Domain_Name: RETRO
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: retro.vl
+|   DNS_Computer_Name: DC.retro.vl
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-07-04T02:08:42+00:00
+| ssl-cert: Subject: commonName=DC.retro.vl
+| Issuer: commonName=DC.retro.vl
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-03T02:03:16
+| Not valid after:  2027-01-02T02:03:16
+| MD5:     36c4 5cb8 8826 78d4 5c3e 5d59 7df2 4467
+| SHA-1:   f161 2d88 b4f3 1c70 5e3d 24b3 371f 9821 91d5 2104
+|_SHA-256: 2a6c 0543 a721 389d 6eba 59e5 d5e7 47db 4646 3e25 6666 52c6 0a25 5218 3e11 6311
+|_ssl-date: 2026-07-04T02:09:21+00:00; 0s from scanner time.
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+54728/tcp open  msrpc         Microsoft Windows RPC
+54741/tcp open  msrpc         Microsoft Windows RPC
+58349/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+58358/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2026-07-04T02:08:43
+|_  start_date: N/A
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul  4 07:39:24 2026 -- 1 IP address (1 host up) scanned in 152.16 seconds

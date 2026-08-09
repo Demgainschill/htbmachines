@@ -1,0 +1,2 @@
+help: Monitor Neighbor Discovery Protocol (NDP) information
+run: sudo ndptool monitor

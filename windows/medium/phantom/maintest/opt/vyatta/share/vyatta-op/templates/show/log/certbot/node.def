@@ -1,0 +1,2 @@
+help: Show log for certbot
+run: if sudo test -f /var/log/letsencrypt/letsencrypt.log; then sudo cat /var/log/letsencrypt/letsencrypt.log; else echo "Cerbot log does not exist"; fi

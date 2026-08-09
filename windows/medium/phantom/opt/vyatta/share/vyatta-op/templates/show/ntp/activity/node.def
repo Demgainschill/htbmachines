@@ -1,0 +1,3 @@
+help: Report the number of servers and peers that are online and
+			offline
+run: ${vyos_op_scripts_dir}/ntp.py show_activity

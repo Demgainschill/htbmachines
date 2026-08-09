@@ -1,0 +1,2 @@
+help: Show log for WPA supplicant
+run: if cli-shell-api existsActive interfaces wireless; then journalctl --no-hostname --boot --unit "wpa_supplicant@*.service"; else echo "No wireless interface configured!"; fi

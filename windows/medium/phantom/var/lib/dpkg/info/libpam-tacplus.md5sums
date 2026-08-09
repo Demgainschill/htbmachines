@@ -1,0 +1,9 @@
+29b418ddf369980db3eba5a8fa05c900  lib/x86_64-linux-gnu/security/pam_tacplus.so
+b08f7f6516c872781a8e85b8e8573bdf  usr/share/doc/libpam-tacplus/README.Debian
+6f38618d33b0c342f9339803f3a77a76  usr/share/doc/libpam-tacplus/README.md.gz
+4a399797f3a133c8d3b59199a02c3f3e  usr/share/doc/libpam-tacplus/changelog.Debian.gz
+92ab760c310b9b2874608cf066add9d3  usr/share/doc/libpam-tacplus/changelog.gz
+b26eed2dcf8460609771b9a041e22a1e  usr/share/doc/libpam-tacplus/copyright
+fc4a7ec63da49d85b52814bd867608c6  usr/share/doc/libpam-tacplus/sample.pam
+9b29d102501d5e1178aa8ef8c8bc5f93  usr/share/man/man5/tacplus_servers.5.gz
+5902953285e7a1efa0a49bd850bd71cb  usr/share/pam-configs/tacplus

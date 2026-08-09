@@ -1,0 +1,5 @@
+help: Destination path
+comptype: imagefiles
+allowed: echo -n "<imagefiles>"
+run: sudo ${vyos_op_scripts_dir}/file.py --copy $3 $5
+            

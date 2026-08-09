@@ -1,0 +1,4 @@
+type: txt
+help: Maximum Receive Unit (MRU) (default: MTU value)
+val_help: u32:128-16384; Maximum Receive Unit in byte
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 128-16384\"  --value \'$VAR(@)\'"; "MRU must be between 128 and 16384"

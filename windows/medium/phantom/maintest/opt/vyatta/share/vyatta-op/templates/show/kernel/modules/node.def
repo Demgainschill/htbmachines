@@ -1,0 +1,2 @@
+help: Show kernel modules
+run: sudo ${vyos_op_scripts_dir}/kernel_modules.py show

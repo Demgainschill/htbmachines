@@ -1,0 +1,3 @@
+/etc/systemd/system-generators/vyos-generator normal=/run/systemd/generator early=/run/systemd/generator.early late=/run/systemd/generator.late
+default found enabled
+enabled via /run/systemd/generator.early/multi-user.target.wants/vyos.target -> /lib/systemd/system/vyos.target

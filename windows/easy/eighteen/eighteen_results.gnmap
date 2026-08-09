@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Wed Jul 22 07:47:12 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA eighteen_results 10.129.10.104
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.10.104 ()	Status: Up
+Host: 10.129.10.104 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 1433/open/tcp//ms-sql-s//Microsoft SQL Server 2022 16.00.1000.00; RTM/, 5985/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/	Ignored State: filtered (65532)
+# Nmap done at Wed Jul 22 07:47:59 2026 -- 1 IP address (1 host up) scanned in 47.26 seconds

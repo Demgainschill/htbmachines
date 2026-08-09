@@ -1,0 +1,8 @@
+07a4b98332ebb97d5ba6a6ec8776fe9a  lib/systemd/system/kea-dhcp-ddns-server.service
+e8736421228fce7597a2af561589e33d  usr/sbin/kea-dhcp-ddns
+17c21540d41bedb61b09bd55ee8cb145  usr/share/doc/kea-dhcp-ddns-server/NEWS.Debian.gz
+f72d1e76f9e46cb7013e38ea995b1f87  usr/share/doc/kea-dhcp-ddns-server/changelog.Debian.gz
+2c4ed6777d152a99fdb2b8fe16266e29  usr/share/doc/kea-dhcp-ddns-server/changelog.gz
+53640d962f6dd5856da55a8bec8d64b4  usr/share/doc/kea-dhcp-ddns-server/copyright
+186c63b3210ea921de4c6fa0b572d14f  usr/share/lintian/overrides/kea-dhcp-ddns-server
+87c88754ae41950c4da1e2e3aff058c8  usr/share/man/man8/kea-dhcp-ddns.8.gz

@@ -1,0 +1,4 @@
+type: txt
+help: Connection API timeout (default: 60)
+val_help: u32:1-3600; Connection API timeout
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-3600\"  --value \'$VAR(@)\'"; "Invalid value"

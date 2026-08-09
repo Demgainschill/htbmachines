@@ -1,0 +1,104 @@
+# Nmap 7.99 scan initiated Thu Jul 16 10:40:32 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA ghostlink_results 10.129.7.32
+Nmap scan report for 10.129.7.32
+Host is up (0.079s latency).
+Not shown: 65511 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Ghost Protocol Zero
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-16 13:11:33Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: ghostlink.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=dc01.ghostlink.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:dc01.ghostlink.htb
+| Issuer: commonName=ghostlink-GPZ-OP26-SECURE-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-03-03T16:53:53
+| Not valid after:  2027-03-03T16:53:53
+| MD5:     67e4 aece a99f d27e 070c 64af 5223 d817
+| SHA-1:   0aa4 7883 fb11 35ab a666 2a69 d6c1 735f 31b7 ea91
+|_SHA-256: 167c cfec 311e ffed a00f 4e30 f4c4 1489 a6e2 5674 262d 0f66 fa9a b8d3 24b5 9d8e
+|_ssl-date: TLS randomness does not represent time
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: ghostlink.htb, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=dc01.ghostlink.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:dc01.ghostlink.htb
+| Issuer: commonName=ghostlink-GPZ-OP26-SECURE-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-03-03T16:53:53
+| Not valid after:  2027-03-03T16:53:53
+| MD5:     67e4 aece a99f d27e 070c 64af 5223 d817
+| SHA-1:   0aa4 7883 fb11 35ab a666 2a69 d6c1 735f 31b7 ea91
+|_SHA-256: 167c cfec 311e ffed a00f 4e30 f4c4 1489 a6e2 5674 262d 0f66 fa9a b8d3 24b5 9d8e
+1883/tcp  open  mqtt
+| mqtt-subscribe: 
+|   Topics and their most recent payloads: 
+|     $SYS/brokers/client_status/mqttui-3c1e1930: {"status":"offline", "username":"(null)","ts":1784207553666,"reason_code":"0","client_id":"mqttui-3c1e1930","IPv4":"127.0.0.1"}
+|     $SYS/brokers/client_status/mqttui-bc4f47e3: {"status":"online", "username":"(null)", "ts":1784207555740,"proto_name":"MQTT","keepalive":60,"return_code":"0","proto_ver":4,"client_id":"mqttui-bc4f47e3","clean_start":1, "IPv4":"127.0.0.1"}
+|     $SYS/brokers/client_status/mqttui-6bb0fa06: {"status":"offline", "username":"(null)","ts":1784207551601,"reason_code":"0","client_id":"mqttui-6bb0fa06","IPv4":"127.0.0.1"}
+|_    $SYS/brokers/client_status/mqttui-940f64e4: {"status":"offline", "username":"(null)","ts":1784207549530,"reason_code":"0","client_id":"mqttui-940f64e4","IPv4":"127.0.0.1"}
+2179/tcp  open  vmrdp?
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: ghostlink.htb, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=dc01.ghostlink.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:dc01.ghostlink.htb
+| Issuer: commonName=ghostlink-GPZ-OP26-SECURE-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-03-03T16:53:53
+| Not valid after:  2027-03-03T16:53:53
+| MD5:     67e4 aece a99f d27e 070c 64af 5223 d817
+| SHA-1:   0aa4 7883 fb11 35ab a666 2a69 d6c1 735f 31b7 ea91
+|_SHA-256: 167c cfec 311e ffed a00f 4e30 f4c4 1489 a6e2 5674 262d 0f66 fa9a b8d3 24b5 9d8e
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: ghostlink.htb, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=dc01.ghostlink.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:dc01.ghostlink.htb
+| Issuer: commonName=ghostlink-GPZ-OP26-SECURE-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-03-03T16:53:53
+| Not valid after:  2027-03-03T16:53:53
+| MD5:     67e4 aece a99f d27e 070c 64af 5223 d817
+| SHA-1:   0aa4 7883 fb11 35ab a666 2a69 d6c1 735f 31b7 ea91
+|_SHA-256: 167c cfec 311e ffed a00f 4e30 f4c4 1489 a6e2 5674 262d 0f66 fa9a b8d3 24b5 9d8e
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49673/tcp open  msrpc         Microsoft Windows RPC
+49676/tcp open  msrpc         Microsoft Windows RPC
+49679/tcp open  msrpc         Microsoft Windows RPC
+49680/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49900/tcp open  msrpc         Microsoft Windows RPC
+49915/tcp open  msrpc         Microsoft Windows RPC
+50655/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-07-16T13:12:33
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: 7h59m47s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jul 16 10:43:22 2026 -- 1 IP address (1 host up) scanned in 169.86 seconds

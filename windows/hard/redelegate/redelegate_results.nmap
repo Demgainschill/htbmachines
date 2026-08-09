@@ -1,0 +1,86 @@
+# Nmap 7.99 scan initiated Mon Jul 27 16:10:12 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA redelegate_results 10.129.234.50
+Increasing send delay for 10.129.234.50 from 0 to 5 due to 213 out of 709 dropped probes since last increase.
+Increasing send delay for 10.129.234.50 from 5 to 10 due to 1228 out of 4091 dropped probes since last increase.
+Increasing send delay for 10.129.234.50 from 640 to 1000 due to 801 out of 2669 dropped probes since last increase.
+Warning: 10.129.234.50 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.129.234.50
+Host is up (0.15s latency).
+Not shown: 65507 closed tcp ports (reset)
+PORT      STATE SERVICE       VERSION
+21/tcp    open  ftp           Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 10-20-24  01:11AM                  434 CyberAudit.txt
+| 10-20-24  05:14AM                 2622 Shared.kdbx
+|_10-20-24  01:26AM                  580 TrainingAgenda.txt
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-27 10:40:26Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: redelegate.vl, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: redelegate.vl, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: REDELEGATE
+|   NetBIOS_Domain_Name: REDELEGATE
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: redelegate.vl
+|   DNS_Computer_Name: dc.redelegate.vl
+|   DNS_Tree_Name: redelegate.vl
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-07-27T10:41:22+00:00
+|_ssl-date: 2026-07-27T10:41:31+00:00; -19s from scanner time.
+| ssl-cert: Subject: commonName=dc.redelegate.vl
+| Issuer: commonName=dc.redelegate.vl
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-26T10:38:46
+| Not valid after:  2027-01-25T10:38:46
+| MD5:     7a19 189e 2bd1 99f4 37cb e60e 74f2 1338
+| SHA-1:   d46b 5b60 5a02 5fc0 d67c 614b 5dca 1a15 f6cf 7c5d
+|_SHA-256: 2058 1f8b 6c9f 3adb a6a0 ff8d 01b9 69c5 9b38 3754 9340 2a1f 82db 6fb1 4501 bacf
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        .NET Message Framing
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+51205/tcp open  msrpc         Microsoft Windows RPC
+54420/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+54421/tcp open  msrpc         Microsoft Windows RPC
+54427/tcp open  msrpc         Microsoft Windows RPC
+54437/tcp open  msrpc         Microsoft Windows RPC
+54439/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: -19s, deviation: 0s, median: -20s
+| smb2-time: 
+|   date: 2026-07-27T10:41:23
+|_  start_date: N/A
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 27 16:11:58 2026 -- 1 IP address (1 host up) scanned in 105.85 seconds

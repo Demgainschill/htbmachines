@@ -1,0 +1,3 @@
+type: txt
+help: Expected to be in response body for the health check to pass
+val_help: txt; A string expected to be in the response

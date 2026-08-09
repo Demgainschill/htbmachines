@@ -1,0 +1,2 @@
+help: Manually archive configuration
+run: /etc/commit/post-hooks.d/02vyos-commit-archive; printf "\n"

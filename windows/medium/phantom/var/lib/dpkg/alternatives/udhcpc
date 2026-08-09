@@ -1,0 +1,6 @@
+auto
+/usr/sbin/udhcpc
+
+/usr/sbin/udhcpc.bb
+10
+

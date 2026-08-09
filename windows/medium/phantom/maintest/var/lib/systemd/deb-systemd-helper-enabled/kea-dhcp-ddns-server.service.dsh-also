@@ -1,0 +1,2 @@
+/etc/systemd/system/kea-dhcp4-server.service.wants/kea-dhcp-ddns-server.service
+/etc/systemd/system/kea-dhcp6-server.service.wants/kea-dhcp-ddns-server.service

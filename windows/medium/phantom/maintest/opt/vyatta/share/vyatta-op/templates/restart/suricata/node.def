@@ -1,0 +1,2 @@
+help: Restart Suricata service
+run: if systemctl is-active --quiet suricata; then sudo systemctl restart suricata.service; else echo "Service Suricata not configured"; fi

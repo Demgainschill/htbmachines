@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Interfaces to use this flowtable
+allowed: sh -c "${vyos_completion_dir}/list_interfaces"

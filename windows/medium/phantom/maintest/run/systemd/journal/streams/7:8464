@@ -1,0 +1,9 @@
+# This is private data. Do not parse
+PRIORITY=30
+LEVEL_PREFIX=1
+FORWARD_TO_SYSLOG=0
+FORWARD_TO_KMSG=0
+FORWARD_TO_CONSOLE=0
+STREAM_ID=ec2aed7b19aa4972b51da578967c8160
+IDENTIFIER=vmtoolsd
+UNIT=open-vm-tools.service

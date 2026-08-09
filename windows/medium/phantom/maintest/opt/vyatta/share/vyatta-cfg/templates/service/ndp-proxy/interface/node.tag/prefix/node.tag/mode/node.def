@@ -1,0 +1,7 @@
+type: txt
+help: Specify the running mode of the rule (default: static)
+val_help: static; Immediately answer any Neighbor Solicitation Messages (default)
+val_help: auto; Check for a matching route in /proc/net/ipv6_route
+val_help: interface; Forward Neighbor Solicitation message through specified interface
+allowed: echo "static auto interface"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(static|auto|interface)\'   --value \'$VAR(@)\'"; "Mode must be either one of: static, auto or interface"

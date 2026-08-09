@@ -1,0 +1,9 @@
+multi:
+type: txt
+help: Session state
+val_help: established; Established state
+val_help: invalid; Invalid state
+val_help: new; New state
+val_help: related; Related state
+allowed: echo "established invalid new related"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(established|invalid|new|related)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show NAT static log
+run: journalctl --no-hostname --boot -k | egrep "\[STATIC-(SRC|DST)-NAT-[0-9]+\]"

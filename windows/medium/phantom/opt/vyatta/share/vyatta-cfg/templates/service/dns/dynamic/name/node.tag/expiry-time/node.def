@@ -1,0 +1,4 @@
+type: txt
+help: Time in seconds for the hostname to be marked expired in cache
+val_help: u32:300-2160000; Time in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 300-2160000\"  --value \'$VAR(@)\'"; "Expiry time must be between 300 and 2160000 seconds"

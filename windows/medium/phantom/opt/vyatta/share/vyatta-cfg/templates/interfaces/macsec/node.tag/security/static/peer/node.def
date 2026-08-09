@@ -1,0 +1,4 @@
+tag:
+type: txt
+help: MACsec peer name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[^ ]{1,100}\'   --value \'$VAR(@)\'"; "MACsec peer name exceeds limit of 100 characters"

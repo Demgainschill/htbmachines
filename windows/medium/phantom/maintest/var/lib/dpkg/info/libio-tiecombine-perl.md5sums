@@ -1,0 +1,9 @@
+124fed845c2dce46d470f91f97659351  usr/share/doc/libio-tiecombine-perl/changelog.Debian.gz
+33c3980c7858d359cf750d59d228a640  usr/share/doc/libio-tiecombine-perl/changelog.gz
+b43adae591e34a4c6b8e99f4881f8511  usr/share/doc/libio-tiecombine-perl/copyright
+7d5032688a8d81fd0daf5d8a4718f5d8  usr/share/man/man3/IO::TieCombine.3pm.gz
+6a1c1c3fd8276daa8dbadeb8f4a0ab7c  usr/share/man/man3/IO::TieCombine::Handle.3pm.gz
+81e73fe8ac0e5892d568284b0e77b64d  usr/share/man/man3/IO::TieCombine::Scalar.3pm.gz
+9407598746d67bfcefa38cb549cbca1a  usr/share/perl5/IO/TieCombine.pm
+aa73fafafc427ad81c7b88444c4761cf  usr/share/perl5/IO/TieCombine/Handle.pm
+e24491fb99ff917a50de72543beb16b8  usr/share/perl5/IO/TieCombine/Scalar.pm

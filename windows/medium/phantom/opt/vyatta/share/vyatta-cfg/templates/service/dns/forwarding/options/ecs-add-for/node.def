@@ -1,0 +1,8 @@
+multi:
+type: txt
+help: Client netmask for which EDNS Client Subnet will be added
+val_help: ipv4net; IPv4 prefix to match
+val_help: !ipv4net; Match everything except the specified IPv4 prefix
+val_help: ipv6net; IPv6 prefix to match
+val_help: !ipv6net; Match everything except the specified IPv6 prefix
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \" --exec \"${vyos_validators_dir}/ipv4-prefix-exclude \" --exec \"${vyos_validators_dir}/ipv6-prefix \" --exec \"${vyos_validators_dir}/ipv6-prefix-exclude \"  --value \'$VAR(@)\'"; "Invalid value"

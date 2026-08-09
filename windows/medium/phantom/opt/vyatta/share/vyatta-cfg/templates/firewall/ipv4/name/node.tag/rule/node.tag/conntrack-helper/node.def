@@ -1,0 +1,13 @@
+multi:
+type: txt
+help: Match related traffic from conntrack helpers
+val_help: ftp; Related traffic from FTP helper
+val_help: h323; Related traffic from H.323 helper
+val_help: pptp; Related traffic from PPTP helper
+val_help: nfs; Related traffic from NFS helper
+val_help: rtsp; Related traffic from RTSP helper
+val_help: sip; Related traffic from SIP helper
+val_help: tftp; Related traffic from TFTP helper
+val_help: sqlnet; Related traffic from SQLNet helper
+allowed: echo "ftp h323 pptp nfs sip tftp sqlnet"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ftp|h323|pptp|nfs|rtsp|sip|tftp|sqlnet)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/squidclient
+/usr/share
+/usr/share/doc
+/usr/share/doc/squidclient
+/usr/share/doc/squidclient/NEWS.Debian.gz
+/usr/share/doc/squidclient/changelog.Debian.gz
+/usr/share/doc/squidclient/changelog.gz
+/usr/share/doc/squidclient/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/squidclient.1.gz

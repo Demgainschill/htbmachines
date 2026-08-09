@@ -1,0 +1,10 @@
+type: txt
+help: Configure IS-IS topologies
+val_help: ipv4-multicast; Use IPv4 multicast topology
+val_help: ipv4-mgmt; Use IPv4 management topology
+val_help: ipv6-unicast; Use IPv6 unicast topology
+val_help: ipv6-multicast; Use IPv6 multicast topology
+val_help: ipv6-mgmt; Use IPv6 management topology
+val_help: ipv6-dstsrc; Use IPv6 dst-src topology
+allowed: echo "ipv4-multicast ipv4-mgmt ipv6-unicast ipv6-multicast ipv6-mgmt ipv6-dstsrc"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ipv4-multicast|ipv4-mgmt|ipv6-unicast|ipv6-multicast|ipv6-mgmt|ipv6-dstsrc)\'   --value \'$VAR(@)\'"; "Invalid value"

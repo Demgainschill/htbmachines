@@ -1,0 +1,7 @@
+tag:
+type: txt
+help: Logging to remote host
+val_help: ipv4; Remote syslog server IPv4 address
+val_help: ipv6; Remote syslog server IPv6 address
+val_help: hostname; Remote syslog server FQDN
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ip-address \" --exec \"${vyos_validators_dir}/fqdn \"  --value \'$VAR(@)\'"; "Invalid host (FQDN or IP address)"

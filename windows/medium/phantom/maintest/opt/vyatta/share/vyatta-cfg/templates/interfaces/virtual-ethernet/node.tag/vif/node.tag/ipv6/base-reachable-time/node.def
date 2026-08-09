@@ -1,0 +1,4 @@
+type: txt
+help: Base reachable time in seconds (default: 30)
+val_help: u32:1-86400; Base reachable time in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-86400\"  --value \'$VAR(@)\'"; "Base reachable time must be between 1 and 86400 seconds"

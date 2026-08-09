@@ -1,0 +1,7 @@
+type: txt
+help: Time window for rate calculation (default: second)
+val_help: hour; hour
+val_help: minute; minute
+val_help: second; second (default)
+allowed: echo "hour minute second"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(hour|minute|second)\'   --value \'$VAR(@)\'"; "Invalid value"

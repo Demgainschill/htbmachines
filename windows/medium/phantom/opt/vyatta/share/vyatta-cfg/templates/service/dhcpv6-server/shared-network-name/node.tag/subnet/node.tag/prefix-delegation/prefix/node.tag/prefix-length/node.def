@@ -1,0 +1,4 @@
+type: txt
+help: Length in bits of prefix
+val_help: u32:32-64; Prefix length (32-64)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 32-64\"  --value \'$VAR(@)\'"; "Prefix length must be between 32 and 64"

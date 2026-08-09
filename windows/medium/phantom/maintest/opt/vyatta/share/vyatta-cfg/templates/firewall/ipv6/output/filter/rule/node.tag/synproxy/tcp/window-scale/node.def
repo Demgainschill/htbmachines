@@ -1,0 +1,4 @@
+type: txt
+help: TCP window scale for synproxy connections
+val_help: u32:1-14; TCP window scale
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-14\"  --value \'$VAR(@)\'"; "Invalid value"

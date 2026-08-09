@@ -1,0 +1,2 @@
+help: Show OTP authentication QR code
+run: ${vyos_op_scripts_dir}/otp.py show_login --username="$6" --info="qrcode"

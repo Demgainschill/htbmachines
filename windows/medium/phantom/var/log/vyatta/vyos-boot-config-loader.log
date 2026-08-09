@@ -1,0 +1,27 @@
+
+
+2024-07-06 17:00:43.266908    Begin config load
+2024-07-06 17:00:43.557604    End config load
+Elapsed time for config load: 0:00:00.290696
+2024-07-06 17:00:43.557609    Begin config commit
+[ system host-name vyos ]
+sudo: unable to resolve host vyos: System error
+
+2024-07-06 17:00:48.128947    End config commit
+Elapsed time for config commit: 0:00:04.571338
+
+
+2024-07-06 17:21:46.785901    Begin config load
+2024-07-06 17:21:47.357821    End config load
+Elapsed time for config load: 0:00:00.571920
+2024-07-06 17:21:47.357826    Begin config commit
+2024-07-06 17:21:53.041984    End config commit
+Elapsed time for config commit: 0:00:05.684158
+
+
+2024-07-06 19:31:41.727327    Begin config load
+2024-07-06 19:31:42.576538    End config load
+Elapsed time for config load: 0:00:00.849211
+2024-07-06 19:31:42.576543    Begin config commit
+2024-07-06 19:31:48.552602    End config commit
+Elapsed time for config commit: 0:00:05.976059

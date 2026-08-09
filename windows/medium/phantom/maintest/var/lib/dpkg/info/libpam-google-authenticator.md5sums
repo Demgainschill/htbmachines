@@ -1,0 +1,14 @@
+e5a2f7b6574ab245572068d3e4e3b3c0  lib/x86_64-linux-gnu/security/pam_google_authenticator.la
+c705489036c0b3258f3cb17cee7b3e58  lib/x86_64-linux-gnu/security/pam_google_authenticator.so
+838e84e4fd4046b43ad00b52199d83b1  usr/bin/google-authenticator
+6ac5d38e5d730994abaa12f9266e7c0d  usr/share/doc/google-authenticator/FILEFORMAT
+8aa2c67d77936723e7d58ef4f9923dca  usr/share/doc/google-authenticator/README.md.gz
+af7df94f34e5bb1b1afbb356030da848  usr/share/doc/google-authenticator/totp.html
+6ac5d38e5d730994abaa12f9266e7c0d  usr/share/doc/libpam-google-authenticator/FILEFORMAT
+8aa2c67d77936723e7d58ef4f9923dca  usr/share/doc/libpam-google-authenticator/README.md.gz
+157cc353c4f1f2b0a5d8657122c1fb41  usr/share/doc/libpam-google-authenticator/changelog.Debian.gz
+6f3fbe46c85d730060d40b283c2d9ff3  usr/share/doc/libpam-google-authenticator/copyright
+1bd0e7bd8ce9a22ca5e753e268be5748  usr/share/doc/libpam-google-authenticator/google-authenticator.1.md.gz
+30063a439316854c69c7f35666596b3b  usr/share/doc/libpam-google-authenticator/pam_google_authenticator.8.md.gz
+1e462b8a9ee0724ccb238b0b8847d393  usr/share/man/man1/google-authenticator.1.gz
+4a3b91de27b9a1f198d569ed87458a29  usr/share/man/man8/pam_google_authenticator.8.gz

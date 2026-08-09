@@ -1,0 +1,14 @@
+5159124bbc01ab93d837da201c44b0b9  usr/lib/ipsec/plugins/libstrongswan-aesni.so
+6b7608fc1a25ad30b9d14a264dd105e3  usr/lib/ipsec/plugins/libstrongswan-agent.so
+64293b4cdabd906663ba471fe8625b46  usr/lib/ipsec/plugins/libstrongswan-connmark.so
+40bafe6055dd62637e717f4b23efda62  usr/lib/ipsec/plugins/libstrongswan-gcm.so
+755645ba94223fd187ae87a848d1798f  usr/lib/ipsec/plugins/libstrongswan-openssl.so
+25c174f75715864b7d825dc6e565c17e  usr/share/doc/libstrongswan-standard-plugins/NEWS.Debian.gz
+350923a2e0a9aae11bc062e8dd3c56cc  usr/share/doc/libstrongswan-standard-plugins/changelog.Debian.gz
+7580e3007897a92e3311df1ba4dab82e  usr/share/doc/libstrongswan-standard-plugins/changelog.gz
+8542ae617d33d7b35208cac3d3b5755b  usr/share/doc/libstrongswan-standard-plugins/copyright
+97be59e66e3b8b46fb545129ad212f33  usr/share/strongswan/templates/config/plugins/aesni.conf
+8ae69148027830d4bccbd52781267c96  usr/share/strongswan/templates/config/plugins/agent.conf
+2c107515780ab10c907766e107d26884  usr/share/strongswan/templates/config/plugins/connmark.conf
+13ee7ff0e89523b688a6c46c74e085f2  usr/share/strongswan/templates/config/plugins/gcm.conf
+c7ff48a2a9a32589e28090b601c8f92b  usr/share/strongswan/templates/config/plugins/openssl.conf

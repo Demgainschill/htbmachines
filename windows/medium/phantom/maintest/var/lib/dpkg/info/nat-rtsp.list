@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/nat-rtsp
+/usr/share/doc/nat-rtsp/changelog.gz
+/lib
+/lib/modules
+/lib/modules/6.6.36-amd64-vyos
+/lib/modules/6.6.36-amd64-vyos/extra
+/lib/modules/6.6.36-amd64-vyos/extra/nf_conntrack_rtsp.ko
+/lib/modules/6.6.36-amd64-vyos/extra/nf_nat_rtsp.ko

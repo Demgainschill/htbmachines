@@ -1,0 +1,2 @@
+help: Add a RAID set element
+allowed: ${vyos_completion_dir}/list_raidset.sh

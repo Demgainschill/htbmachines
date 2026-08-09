@@ -1,0 +1,4 @@
+type: txt
+help: BSS coloring helps to prevent channel jamming when multiple APs
+			use the same channels
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-63\"  --value \'$VAR(@)\'"; "Invalid value"

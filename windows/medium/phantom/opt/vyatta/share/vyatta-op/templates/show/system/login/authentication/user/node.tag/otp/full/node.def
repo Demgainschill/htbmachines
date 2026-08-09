@@ -1,0 +1,2 @@
+help: Show full settings, including QR code and commands for VyOS
+run: ${vyos_op_scripts_dir}/otp.py show_login --username="$6" --info="full"

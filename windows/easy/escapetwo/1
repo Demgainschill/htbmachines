@@ -1,0 +1,5 @@
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+usage: certipy-ad [-v] [-h]
+                  {account,auth,ca,cert,find,parse,forge,relay,req,shadow,template} ...
+certipy-ad: error: unrecognized arguments: output

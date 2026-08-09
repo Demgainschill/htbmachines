@@ -1,0 +1,3 @@
+help: Show last number of messages in master logging buffer
+allowed: echo "<1-9999>"
+run: if ${vyos_validators_dir}/numeric --range 1-9999 "$3"; then journalctl --no-hostname --boot --lines "$3"; fi

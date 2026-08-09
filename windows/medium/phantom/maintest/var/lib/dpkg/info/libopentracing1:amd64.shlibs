@@ -1,0 +1,2 @@
+libopentracing 1 libopentracing1 (>= 1.6.0)
+libopentracing_mocktracer 1 libopentracing1 (>= 1.6.0)

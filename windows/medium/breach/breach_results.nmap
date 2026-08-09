@@ -1,0 +1,109 @@
+# Nmap 7.99 scan initiated Sun Jul 26 21:24:27 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA breach_results 10.129.12.247
+Nmap scan report for 10.129.12.247
+Host is up (0.045s latency).
+Scanned at 2026-07-26 21:24:28 IST for 134s
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-26 07:56:15Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: breach.vl, Site: Default-First-Site-Name)
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2019 15.00.2000.00; RTM
+| ms-sql-info: 
+|   10.129.12.247:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+|_ssl-date: 2026-07-26T07:57:54+00:00; -7h58m44s from scanner time.
+| ms-sql-ntlm-info: 
+|   10.129.12.247:1433: 
+|     Target_Name: BREACH
+|     NetBIOS_Domain_Name: BREACH
+|     NetBIOS_Computer_Name: BREACHDC
+|     DNS_Domain_Name: breach.vl
+|     DNS_Computer_Name: BREACHDC.breach.vl
+|     DNS_Tree_Name: breach.vl
+|_    Product_Version: 10.0.20348
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-26T07:55:25
+| Not valid after:  2056-07-26T07:55:25
+| MD5:     5122 746e dd77 f6d6 16f2 29e8 01d4 7526
+| SHA-1:   8521 e905 1ae8 d2cc 7e28 9a6f f80f dd7c fcc4 2e00
+|_SHA-256: ec61 425f 519f 0d15 5db5 9771 78cb 2de4 2169 0e9c 4c2e 7fb2 2f96 8649 41c6 bc11
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: breach.vl, Site: Default-First-Site-Name)
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+3269/tcp  open  tcpwrapped
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=BREACHDC.breach.vl
+| Issuer: commonName=BREACHDC.breach.vl
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-25T07:52:42
+| Not valid after:  2027-01-24T07:52:42
+| MD5:     766c fe6b 98f4 f3f4 bf90 3284 5e48 de5f
+| SHA-1:   2f4e b33d 34bc 855d ee78 8cc8 055d a1dc a13f 1de9
+|_SHA-256: 1e61 f112 0217 463a 2ab5 1bef eb12 3f57 fee4 77ba 31f5 d47e 9d05 9ba6 97a6 9309
+| rdp-ntlm-info: 
+|   Target_Name: BREACH
+|   NetBIOS_Domain_Name: BREACH
+|   NetBIOS_Computer_Name: BREACHDC
+|   DNS_Domain_Name: breach.vl
+|   DNS_Computer_Name: BREACHDC.breach.vl
+|   DNS_Tree_Name: breach.vl
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-07-26T07:57:09+00:00
+|_ssl-date: 2026-07-26T07:57:55+00:00; -7h58m44s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49677/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+Service Info: Host: BREACHDC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|_  ERROR: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb2-time: 
+|   date: 2026-07-26T07:57:11
+|_  start_date: N/A
+| nbstat: 
+|_  ERROR: Name query failed: TIMEOUT
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb-security-mode: 
+|_  ERROR: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_clock-skew: mean: -7h58m46s, deviation: 2s, median: -7h58m47s
+
+Read from /usr/share/nmap: nmap-protocols nmap-service-probes nmap-services.
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 26 21:26:42 2026 -- 1 IP address (1 host up) scanned in 135.23 seconds

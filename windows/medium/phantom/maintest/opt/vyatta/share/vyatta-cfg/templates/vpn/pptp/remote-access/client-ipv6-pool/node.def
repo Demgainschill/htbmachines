@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Pool of client IPv6 addresses
+val_help: txt; Name of IPv6 pool
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9][\\w\\-\\.\\+]*\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show OTP authentication otpauth URI
+run: ${vyos_op_scripts_dir}/otp.py show_login --username="$6" --info="uri"

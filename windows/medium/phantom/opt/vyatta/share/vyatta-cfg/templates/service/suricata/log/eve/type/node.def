@@ -1,0 +1,12 @@
+multi:
+type: txt
+help: Log types
+val_help: alert; Record events for rule matches
+val_help: anomaly; Record unexpected conditions such as truncated packets, packets with invalid IP/UDP/TCP length values, and other events that render the packet invalid for further processing or describe unexpected behavior on an established stream
+val_help: drop; Record events for dropped packets
+val_help: file; Record file details (e.g., MD5) for files extracted from application protocols (e.g., HTTP)
+val_help: application (http, dns, tls, ...); Record application-level transactions
+val_help: flow; Record bi-directional flows
+val_help: netflow; Record uni-directional flows
+allowed: echo "alert anomaly drop files http dns tls smtp dnp3 ftp rdp nfs smb tftp ikev2 dcerpc krb5 snmp rfb sip dhcp ssh mqtt http2 flow netflow"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(alert|anomaly|http|dns|tls|files|drop|smtp|dnp3|ftp|rdp|nfs|smb|tftp|ikev2|dcerpc|krb5|snmp|rfb|sip|dhcp|ssh|mqtt|http2|flow|netflow)\'   --value \'$VAR(@)\'"; "Invalid value"

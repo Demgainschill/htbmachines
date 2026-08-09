@@ -1,0 +1,12 @@
+/.
+/lib
+/lib/x86_64-linux-gnu
+/lib/x86_64-linux-gnu/libauparse.so.0.0.0
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libauparse0
+/usr/share/doc/libauparse0/changelog.Debian.gz
+/usr/share/doc/libauparse0/changelog.gz
+/usr/share/doc/libauparse0/copyright
+/lib/x86_64-linux-gnu/libauparse.so.0

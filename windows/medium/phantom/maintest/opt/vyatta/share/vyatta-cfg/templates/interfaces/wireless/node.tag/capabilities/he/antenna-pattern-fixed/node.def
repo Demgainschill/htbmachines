@@ -1,0 +1,2 @@
+help: Tell the AP that antenna positions are fixed and will not change
+			during the lifetime of an association

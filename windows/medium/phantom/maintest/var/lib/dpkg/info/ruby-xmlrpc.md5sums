@@ -1,0 +1,14 @@
+6c5f66aee7e0fea60f24b2a49fee2915  usr/lib/ruby/vendor_ruby/xmlrpc.rb
+76c25b766c3aad22e47ee179e34f8242  usr/lib/ruby/vendor_ruby/xmlrpc/base64.rb
+94d4f66af4048462839a2907184e238d  usr/lib/ruby/vendor_ruby/xmlrpc/client.rb
+89a2025fc4de227da85c674e5bcebad4  usr/lib/ruby/vendor_ruby/xmlrpc/config.rb
+c00226d31ac74dd429812e3280bc17ea  usr/lib/ruby/vendor_ruby/xmlrpc/create.rb
+4b5fd0fadccc94caab86f697a8cafb73  usr/lib/ruby/vendor_ruby/xmlrpc/datetime.rb
+e1956dc6e77645fdc59775fe62ffd8eb  usr/lib/ruby/vendor_ruby/xmlrpc/marshal.rb
+08062b372ba7eecbae3020ed1027b76c  usr/lib/ruby/vendor_ruby/xmlrpc/parser.rb
+2ca6845356132a34be848a60785b2162  usr/lib/ruby/vendor_ruby/xmlrpc/server.rb
+e34cf544cf0f84db148db090c18a77ec  usr/lib/ruby/vendor_ruby/xmlrpc/utils.rb
+5d60ad3eb778a0a4af0be0d66cff952a  usr/share/doc/ruby-xmlrpc/README.md
+2f12860baac2e529e7c764dc6b3faf8f  usr/share/doc/ruby-xmlrpc/changelog.Debian.gz
+24ea8a15db35769c2a77a8147417de17  usr/share/doc/ruby-xmlrpc/copyright
+7c8f1d964ba7640ad2c5ac26cb3ed773  usr/share/rubygems-integration/all/specifications/xmlrpc-0.3.2.gemspec

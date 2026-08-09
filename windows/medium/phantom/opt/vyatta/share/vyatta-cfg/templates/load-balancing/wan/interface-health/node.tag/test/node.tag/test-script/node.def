@@ -1,0 +1,4 @@
+type: txt
+help: Path to user-defined script
+val_help: txt; Script in /config/scripts
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/script \"  --value \'$VAR(@)\'"; "Invalid value"

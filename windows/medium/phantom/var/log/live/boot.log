@@ -1,0 +1,9 @@
+Begin: Running /scripts/live-realpremount ... done.
+Begin: Mounting "/live/medium//boot/1.5-rolling-202407060019/1.5-rolling-202407060019.squashfs" on "//1.5-rolling-202407060019.squashfs" via "/dev/loop0" ... done.
+mount: mounting /dev/sda1 on /live/persistence/ failed: No such device
+mount: mounting /dev/sda on /live/persistence/ failed: No such device
+mount: mounting /dev/sr0 on /live/persistence/ failed: No such device
+umount: /root: target is busy.
+done.
+Begin: Configuring fstab ... done.
+Begin: Configuring VyOS config path ... done.

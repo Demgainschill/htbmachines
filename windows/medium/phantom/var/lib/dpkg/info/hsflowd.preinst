@@ -1,0 +1,3 @@
+#!/bin/bash
+# config file behavior now handled by conffiles mechanism
+exit 0

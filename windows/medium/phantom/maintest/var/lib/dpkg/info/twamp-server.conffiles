@@ -1,0 +1,4 @@
+/etc/apparmor.d/usr.sbin.twampd
+/etc/init.d/twamp-server
+/etc/twamp-server/twamp-server.conf
+/etc/twamp-server/twamp-server.limits

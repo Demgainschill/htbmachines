@@ -1,0 +1,2 @@
+# Nmap 7.99 scan initiated Tue Jul  7 08:59:59 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA thefrizz_results 10.129.232.168
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)

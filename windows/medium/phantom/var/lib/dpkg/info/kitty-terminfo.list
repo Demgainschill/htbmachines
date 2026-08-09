@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/kitty-terminfo
+/usr/share/doc/kitty-terminfo/changelog.Debian.gz
+/usr/share/doc/kitty-terminfo/changelog.gz
+/usr/share/doc/kitty-terminfo/copyright
+/usr/share/terminfo
+/usr/share/terminfo/x
+/usr/share/terminfo/x/xterm-kitty

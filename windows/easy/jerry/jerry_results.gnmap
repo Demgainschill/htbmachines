@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Tue Jul  7 07:05:50 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA jerry_results 10.129.13.27
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.13.27 ()	Status: Up
+Host: 10.129.13.27 ()	Ports: 8080/open/tcp//http//Apache Tomcat|Coyote JSP engine 1.1/	Ignored State: filtered (65534)
+# Nmap done at Tue Jul  7 07:06:36 2026 -- 1 IP address (1 host up) scanned in 45.86 seconds

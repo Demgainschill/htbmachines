@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Jul 26 07:37:24 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA darkzeroreturns_results 10.129.12.182 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA darkzeroreturns_results 10.129.12.182" start="1785031644" startstr="Sun Jul 26 07:37:24 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1785031644"/>
+<taskend task="NSE" time="1785031644"/>
+<taskbegin task="NSE" time="1785031644"/>
+<taskend task="NSE" time="1785031644"/>
+<taskbegin task="NSE" time="1785031644"/>
+<taskend task="NSE" time="1785031644"/>
+<taskbegin task="Ping Scan" time="1785031644"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.12.182" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1785031645" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1785031645"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1785031645"/>
+<taskbegin task="SYN Stealth Scan" time="1785031645"/>
+<taskend task="SYN Stealth Scan" time="1785031678" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1785031678"/>
+<taskprogress task="Service scan" time="1785031831" percent="50.00" remaining="154" etc="1785031984"/>
+<taskend task="Service scan" time="1785031831" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1785031831"/>
+<taskend task="NSE" time="1785031837"/>
+<taskbegin task="NSE" time="1785031837"/>
+<taskend task="NSE" time="1785031838"/>
+<taskbegin task="NSE" time="1785031838"/>
+<taskend task="NSE" time="1785031838"/>
+<host starttime="1785031645" endtime="1785031838"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.12.182" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-21,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ssh" product="OpenSSH" version="9.6p1 Ubuntu 3ubuntu13.18" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 0c:4b:d2:76:ab:10:06:92:05:dc:f7:55:94:7f:18:df (ECDSA)&#xa;  256 2d:6d:4a:4c:ee:2e:11:b6:c8:90:e6:83:e9:df:38:b0 (ED25519)"><table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN9Ju3bTZsFozwXY1B2KIlEY4BA+RcNM57w4C5EjOw1QegUUyCJoO4TVOKfzy/9kd3WrPEj/FYKT2agja9/PM44=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">0c4bd276ab10069205dcf755947f18df</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIH9qI0OvMyp03dAGXR0UPdxw7hjSwMR773Yb9Sne+7vD</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">2d6d4a4cee2e11b6c890e683e9df38b0</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="nginx/1.24.0 (Ubuntu)" servicefp="SF-Port80-TCP:V=7.99%I=7%D=7/26%Time=6A656C96%P=x86_64-pc-linux-gnu%r(afp,147,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20nginx/1\.24\.0\x20\(Ubuntu\)\r\nDate:\x20Sun,\x2026\x20Jul\x202026\x2009:10:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20166\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx/1\.24\.0\x20\(Ubuntu\)&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(giop,147,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20nginx/1\.24\.0\x20\(Ubuntu\)\r\nDate:\x20Sun,\x2026\x20Jul\x202026\x2009:10:13\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20166\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx/1\.24\.0\x20\(Ubuntu\)&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="http-title" output="Did not follow redirect to http://dzcampaigns.htb/"><elem key="redirect_url">http://dzcampaigns.htb/</elem>
+</script><script id="http-server-header" output="nginx/1.24.0 (Ubuntu)"><elem>nginx/1.24.0 (Ubuntu)</elem>
+</script><script id="fingerprint-strings" output="&#xa;  afp: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: nginx/1.24.0 (Ubuntu)&#xa;    Date: Sun, 26 Jul 2026 09:10:12 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 166&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;nginx/1.24.0 (Ubuntu)&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  giop: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: nginx/1.24.0 (Ubuntu)&#xa;    Date: Sun, 26 Jul 2026 09:10:13 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 166&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;nginx/1.24.0 (Ubuntu)&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="afp">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: nginx/1.24.0 (Ubuntu)&#xa;    Date: Sun, 26 Jul 2026 09:10:12 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 166&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;nginx/1.24.0 (Ubuntu)&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="giop">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: nginx/1.24.0 (Ubuntu)&#xa;    Date: Sun, 26 Jul 2026 09:10:13 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 166&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;nginx/1.24.0 (Ubuntu)&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="120866" rttvar="29883" to="240398"/>
+</host>
+<taskbegin task="NSE" time="1785031838"/>
+<taskend task="NSE" time="1785031838"/>
+<taskbegin task="NSE" time="1785031838"/>
+<taskend task="NSE" time="1785031838"/>
+<taskbegin task="NSE" time="1785031838"/>
+<taskend task="NSE" time="1785031838"/>
+<runstats><finished time="1785031838" timestr="Sun Jul 26 07:40:38 2026" summary="Nmap done at Sun Jul 26 07:40:38 2026; 1 IP address (1 host up) scanned in 193.55 seconds" elapsed="193.55" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

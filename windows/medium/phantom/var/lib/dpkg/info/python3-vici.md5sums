@@ -1,0 +1,10 @@
+a9e108abd821953d0af6eedd8935fa4a  usr/lib/python3/dist-packages/vici-5.9.8.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/vici-5.9.8.egg-info/dependency_links.txt
+55637ec975c58d9c2d26d362e2347ec2  usr/lib/python3/dist-packages/vici-5.9.8.egg-info/top_level.txt
+bab4dece524aeca8cf89414322d3ff13  usr/lib/python3/dist-packages/vici/__init__.py
+8d5654d5564f2919d0701e17ef5f6761  usr/lib/python3/dist-packages/vici/command_wrappers.py
+6dee29e0b20326ed0ea62e8f23dbca96  usr/lib/python3/dist-packages/vici/compat.py
+9861cc69bab69e0d9cabd4d2a78866db  usr/lib/python3/dist-packages/vici/exception.py
+ef500a762a717832be8291d850bdab62  usr/lib/python3/dist-packages/vici/protocol.py
+de15194bd23788cccf1ac5fd1749a6ff  usr/lib/python3/dist-packages/vici/session.py
+855ae2215ebcfbe44157c37e41656d1e  usr/share/doc/python3-vici/changelog.Debian.gz

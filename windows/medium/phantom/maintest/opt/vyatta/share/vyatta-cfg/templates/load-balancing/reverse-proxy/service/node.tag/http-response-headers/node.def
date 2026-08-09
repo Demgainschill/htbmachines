@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Headers to include in HTTP response
+val_help: txt; HTTP header name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-a-zA-Z]+\'   --value \'$VAR(@)\'"; "Header names must only include alphabetical characters and hyphens"

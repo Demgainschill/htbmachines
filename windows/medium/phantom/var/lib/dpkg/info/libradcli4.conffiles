@@ -1,0 +1,11 @@
+/etc/radcli/dictionary
+/etc/radcli/dictionary.ascend
+/etc/radcli/dictionary.compat
+/etc/radcli/dictionary.merit
+/etc/radcli/dictionary.microsoft
+/etc/radcli/dictionary.roaringpenguin
+/etc/radcli/dictionary.sip
+/etc/radcli/radiusclient-tls.conf
+/etc/radcli/radiusclient.conf
+/etc/radcli/servers
+/etc/radcli/servers-tls

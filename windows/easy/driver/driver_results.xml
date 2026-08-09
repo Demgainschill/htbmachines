@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Thu Jul  9 21:13:34 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA driver_results 10.129.95.238 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA driver_results 10.129.95.238" start="1783611814" startstr="Thu Jul  9 21:13:34 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1783611814"/>
+<taskend task="NSE" time="1783611814"/>
+<taskbegin task="NSE" time="1783611814"/>
+<taskend task="NSE" time="1783611814"/>
+<taskbegin task="NSE" time="1783611814"/>
+<taskend task="NSE" time="1783611814"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1783611814"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1783611814"/>
+<taskbegin task="SYN Stealth Scan" time="1783611814"/>
+<taskend task="SYN Stealth Scan" time="1783611847" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1783611847"/>
+<taskend task="Service scan" time="1783611853" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1783611853"/>
+<taskend task="NSE" time="1783611893"/>
+<taskbegin task="NSE" time="1783611893"/>
+<taskend task="NSE" time="1783611894"/>
+<taskbegin task="NSE" time="1783611894"/>
+<taskend task="NSE" time="1783611894"/>
+<host starttime="1783611814" endtime="1783611894"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.95.238" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65531">
+<extrareasons reason="no-response" count="65531" proto="tcp" ports="1-79,81-134,136-444,446-5984,5986-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-auth" output="&#xa;HTTP/1.1 401 Unauthorized&#xd;&#xa;  Basic realm=MFP Firmware Update Center. Please enter password for admin&#xa;"><table>
+<table key="params">
+<elem key="realm">MFP Firmware Update Center. Please enter password for admin</elem>
+</table>
+<elem key="scheme">Basic</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Microsoft Windows 7 - 10 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="DRIVER" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2026-07-09T22:44:09&#xa;  start_date: 2026-07-09T22:41:15"><elem key="date">2026-07-09T22:44:09</elem>
+<elem key="start_date">2026-07-09T22:41:15</elem>
+</script><script id="clock-skew" output="mean: 6h59m52s, deviation: 0s, median: 6h59m52s"><elem key="stddev">0</elem>
+<elem key="median">25192</elem>
+<elem key="mean">25192</elem>
+<elem key="count">2</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script></hostscript><times srtt="41814" rttvar="1205" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1783611894"/>
+<taskend task="NSE" time="1783611894"/>
+<taskbegin task="NSE" time="1783611894"/>
+<taskend task="NSE" time="1783611894"/>
+<taskbegin task="NSE" time="1783611894"/>
+<taskend task="NSE" time="1783611894"/>
+<runstats><finished time="1783611894" timestr="Thu Jul  9 21:14:54 2026" summary="Nmap done at Thu Jul  9 21:14:54 2026; 1 IP address (1 host up) scanned in 80.75 seconds" elapsed="80.75" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

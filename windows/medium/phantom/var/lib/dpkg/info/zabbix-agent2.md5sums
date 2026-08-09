@@ -1,0 +1,9 @@
+d8ebb9e679dd1276292befabb4e3e544  lib/systemd/system/zabbix-agent2.service
+beee5dea0e05f8cbcd417157ca35da8b  usr/lib/tmpfiles.d/zabbix-agent2.conf
+a2624aa81fa429c52454c6ca1a006382  usr/sbin/zabbix_agent2
+6d5b154b22cf8660a45efdf17c7ab00f  usr/share/doc/zabbix-agent2/README.Debian
+2d576b270b95289ebb32201b0448dad4  usr/share/doc/zabbix-agent2/changelog.Debian.amd64.gz
+05cc35215e2aa5811359fee0fb71b729  usr/share/doc/zabbix-agent2/changelog.Debian.gz
+0a8b4bb1745fbf16834b92cc22a92236  usr/share/doc/zabbix-agent2/changelog.gz
+156bcd47b918677eac65a5a95f6251a8  usr/share/doc/zabbix-agent2/copyright
+52c821f844ace3bf7c3d068cb9735891  usr/share/man/man8/zabbix_agent2.8.gz

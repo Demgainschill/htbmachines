@@ -1,0 +1,3 @@
+help: Lookup IP prefix and optionally ASN in prefix table
+allowed: echo "<x.x.x.x/x> <h:h:h:h:h:h:h:h/x>"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

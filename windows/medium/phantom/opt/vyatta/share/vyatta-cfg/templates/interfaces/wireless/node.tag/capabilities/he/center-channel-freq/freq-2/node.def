@@ -1,0 +1,5 @@
+type: txt
+help: HE operating channel center frequency - center freq 2 (for use
+			with the 80+80 mode)
+val_help: u32:1-233; 6Ghz (802.11 ax) center channel index (use 23 (at 80MHz) for secondary channel 17)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-233\"  --value \'$VAR(@)\'"; "Channel center value must be between 1 and 233"

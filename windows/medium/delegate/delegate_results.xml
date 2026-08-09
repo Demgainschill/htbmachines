@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Mon Jul 13 07:02:43 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA delegate_results 10.129.5.27 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA delegate_results 10.129.5.27" start="1783906363" startstr="Mon Jul 13 07:02:43 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1783906363"/>
+<taskend task="NSE" time="1783906363"/>
+<taskbegin task="NSE" time="1783906363"/>
+<taskend task="NSE" time="1783906363"/>
+<taskbegin task="NSE" time="1783906363"/>
+<taskend task="NSE" time="1783906363"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1783906363"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1783906364"/>
+<taskbegin task="SYN Stealth Scan" time="1783906364"/>
+<taskprogress task="SYN Stealth Scan" time="1783906395" percent="37.82" remaining="51" etc="1783906446"/>
+<taskend task="SYN Stealth Scan" time="1783906446" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1783906446"/>
+<taskend task="Service scan" time="1783906507" extrainfo="26 services on 1 host"/>
+<taskbegin task="NSE" time="1783906507"/>
+<taskend task="NSE" time="1783906547"/>
+<taskbegin task="NSE" time="1783906547"/>
+<taskend task="NSE" time="1783906551"/>
+<taskbegin task="NSE" time="1783906551"/>
+<taskend task="NSE" time="1783906551"/>
+<host starttime="1783906364" endtime="1783906551"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.5.27" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65509">
+<extrareasons reason="no-response" count="65509" proto="tcp" ports="1-52,54-87,89-134,136-138,140-388,390-444,446-463,465-592,594-635,637-3267,3270-3388,3390-5984,5986-9388,9390-47000,47002-49663,49669,49671-54721,54723-58542,58545-58547,58549-58560,58562-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-07-13 01:34:02Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: delegate.vl, Site: Default-First-Site-Name" hostname="DC1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: delegate.vl, Site: Default-First-Site-Name" hostname="DC1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-07-13T01:35:37+00:00; -10s from scanner time."><elem key="delta">-10.0</elem>
+<elem key="date">2026-07-13T01:35:37+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=DC1.delegate.vl&#xa;Issuer: commonName=DC1.delegate.vl&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-07-12T01:29:25&#xa;Not valid after:  2027-01-11T01:29:25&#xa;MD5:     21fa 3a5d 98ea 1340 b598 255e 4b53 8652&#xa;SHA-1:   9d31 880d 9554 2e09 62de 9a9e 9dc3 5a9c 7ff6 e6c6&#xa;SHA-256: 1b3e 2837 38ec 5683 fdb6 ab1c 0de3 8468 0f48 64ed 765b 90f4 599c cba2 cdfa d0a4"><table key="subject">
+<elem key="commonName">DC1.delegate.vl</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DC1.delegate.vl</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B357249F660F7507A977266E1685C73513F0DB1C28ECC1DE8C8D1D47E29A2BB125A6AF95467816D3B4F66AA645964B5AC5D8E46C20F80ADF22D9206DE135A13C4864B2F404C7F8198442A3BA3D8CC8152DFF6C060A0FF611139BBE66F5ACB4BCCBAFF26B23A4F424FBE726A52DFE0716B7895830538171215724213E5F4697B7D28251588D4B35D29FC6225385611F9A6043C24257F8C90AE817AD3E6D874983CB7242A9D1DDB0214BB58E36564C6BC33096D9E8CE17CF2B37DDBF51AF5FD6F79C47C87B6188B02C79B164DCA357B5934C2BD0D986A958BB9F786D51634E670ADCC7B61C7F92B071F9208E5E2995EC8EA1982D909CFFC6E2EC86B3890373F21D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-12T01:29:25</elem>
+<elem key="notAfter">2027-01-11T01:29:25</elem>
+</table>
+<elem key="md5">21fa3a5d98ea1340b598255e4b538652</elem>
+<elem key="sha1">9d31880d95542e0962de9a9e9dc35a9c7ff6e6c6</elem>
+<elem key="sha256">1b3e283738ec5683fdb6ab1c0de384680f4864ed765b90f4599ccba2cdfad0a4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQbCkRk1pdnYlIPylyilhtDDANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9EQzEuZGVsZWdhdGUudmwwHhcNMjYwNzEyMDEyOTI1WhcNMjcw&#xa;MTExMDEyOTI1WjAaMRgwFgYDVQQDEw9EQzEuZGVsZWdhdGUudmwwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCzVySfZg91B6l3Jm4Whcc1E/DbHCjswd6M&#xa;jR1H4porsSWmr5VGeBbTtPZqpkWWS1rF2ORsIPgK3yLZIG3hNaE8SGSy9ATH+BmE&#xa;QqO6PYzIFS3/bAYKD/YRE5u+ZvWstLzLr/JrI6T0JPvnJqUt/gcWt4lYMFOBcSFX&#xa;JCE+X0aXt9KCUViNSzXSn8YiU4VhH5pgQ8JCV/jJCugXrT5th0mDy3JCqdHdsCFL&#xa;tY42VkxrwzCW2ejOF88rN92/Ua9f1vecR8h7YYiwLHmxZNyjV7WTTCvQ2YapWLuf&#xa;eG1RY05nCtzHthx/krBx+SCOXimV7I6hmC2QnP/G4uyGs4kDc/IdAgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAhEyuqkyQpQ3CN4ErmvjLwpGSeFKUJs7QL77Cr1xHYEfIob0cj02onSQf&#xa;C83YAaVsrdqOsWfAXel36ZgaJLne0++YJCknnD9ehQ8QzN5JcSQlrUoMwnjbwc0O&#xa;MI07NMOOfHRy/XT3lMtJMh+n+XTkQAlAQ/tflImBVBf2evfICUIQvnVlfs/tZl56&#xa;HsPz5qxgS68oykRhZ9gc/Wk7fomhPRiMSYSKNUwi53E/un8YUKaQWu2hQjV4LW0t&#xa;uI4nexCDMrDE8kxG4+stZVMQtoqONL2k1YSpw7nXB83s7bEalt+oAGzRDAnP3T7u&#xa;r+50pbJ3qEiOgX3UdKE1/pN8fvyHhA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: DELEGATE&#xa;  NetBIOS_Domain_Name: DELEGATE&#xa;  NetBIOS_Computer_Name: DC1&#xa;  DNS_Domain_Name: delegate.vl&#xa;  DNS_Computer_Name: DC1.delegate.vl&#xa;  DNS_Tree_Name: delegate.vl&#xa;  Product_Version: 10.0.20348&#xa;  System_Time: 2026-07-13T01:34:57+00:00"><elem key="Target_Name">DELEGATE</elem>
+<elem key="NetBIOS_Domain_Name">DELEGATE</elem>
+<elem key="NetBIOS_Computer_Name">DC1</elem>
+<elem key="DNS_Domain_Name">delegate.vl</elem>
+<elem key="DNS_Computer_Name">DC1.delegate.vl</elem>
+<elem key="DNS_Tree_Name">delegate.vl</elem>
+<elem key="Product_Version">10.0.20348</elem>
+<elem key="System_Time">2026-07-13T01:34:57+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="54722"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="58543"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="58544"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="58548"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="58561"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -10s, deviation: 0s, median: -11s"><elem key="mean">-10</elem>
+<elem key="stddev">0</elem>
+<elem key="count">3</elem>
+<elem key="median">-11</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2026-07-13T01:34:58&#xa;  start_date: N/A"><elem key="date">2026-07-13T01:34:58</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="81407" rttvar="6689" to="108163"/>
+</host>
+<taskbegin task="NSE" time="1783906551"/>
+<taskend task="NSE" time="1783906551"/>
+<taskbegin task="NSE" time="1783906551"/>
+<taskend task="NSE" time="1783906551"/>
+<taskbegin task="NSE" time="1783906551"/>
+<taskend task="NSE" time="1783906551"/>
+<runstats><finished time="1783906551" timestr="Mon Jul 13 07:05:51 2026" summary="Nmap done at Mon Jul 13 07:05:51 2026; 1 IP address (1 host up) scanned in 187.78 seconds" elapsed="187.78" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

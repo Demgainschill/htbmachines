@@ -1,0 +1,4 @@
+type: txt
+help: Number of bits of IPv4 address to pass for EDNS Client Subnet
+val_help: u32:0-32; Number of bits of IPv4 address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-32\"  --value \'$VAR(@)\'"; "Invalid value"

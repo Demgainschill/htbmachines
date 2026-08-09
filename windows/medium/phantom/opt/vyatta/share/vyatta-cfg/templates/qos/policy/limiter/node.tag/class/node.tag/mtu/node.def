@@ -1,0 +1,4 @@
+type: txt
+help: MTU size for this class
+val_help: u32:256-65535; Bytes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 256-65535\"  --value \'$VAR(@)\'"; "Invalid value"

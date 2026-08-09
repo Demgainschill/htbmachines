@@ -1,0 +1,4 @@
+type: txt
+help: Base MSS to start probing from (applicable to "probing force")
+val_help: u32:48-1460; Base MSS value for probing (default: 1024)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 48-1460\"  --value \'$VAR(@)\'"; "Invalid value"

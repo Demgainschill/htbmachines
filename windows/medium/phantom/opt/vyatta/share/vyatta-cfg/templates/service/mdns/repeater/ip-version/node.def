@@ -1,0 +1,7 @@
+type: txt
+help: IP address version to use (default: both)
+val_help: _ipv4; Use only IPv4 address
+val_help: _ipv6; Use only IPv6 address
+val_help: both; Use both IPv4 and IPv6 address (default)
+allowed: echo "ipv4 ipv6 both"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ipv[46]|both)\'   --value \'$VAR(@)\'"; "IP Version must be literal 'ipv4', 'ipv6' or 'both'"

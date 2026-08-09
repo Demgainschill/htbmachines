@@ -1,0 +1,5 @@
+/etc/apparmor.d/usr.sbin.owampd
+/etc/cron.daily/owamp-server
+/etc/init.d/owamp-server
+/etc/owamp-server/owamp-server.conf
+/etc/owamp-server/owamp-server.limits

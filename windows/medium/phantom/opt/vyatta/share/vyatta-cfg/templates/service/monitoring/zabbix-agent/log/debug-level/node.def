@@ -1,0 +1,10 @@
+type: txt
+help: Debug level (default: warning)
+val_help: basic; Basic information
+val_help: critical; Critical information
+val_help: error; Error information
+val_help: warning; Warnings (default)
+val_help: debug; Debug information
+val_help: extended-debug; Extended debug information
+allowed: echo "basic critical error warning debug extended-debug"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(basic|critical|error|warning|debug|extended-debug)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,5 @@
+type: txt
+help: Basic Service Set Identifier (BSSID) - currently station mode
+			only
+val_help: macaddr; BSSID (MAC) address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/mac-address \"  --value \'$VAR(@)\'"; "Invalid BSSID"

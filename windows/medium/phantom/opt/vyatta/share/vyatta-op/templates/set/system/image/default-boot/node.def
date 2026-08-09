@@ -1,0 +1,2 @@
+help: Set default image to boot.
+run: sudo ${vyos_op_scripts_dir}/image_manager.py --action set

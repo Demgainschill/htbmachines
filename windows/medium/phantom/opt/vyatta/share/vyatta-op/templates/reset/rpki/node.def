@@ -1,0 +1,2 @@
+help: Reset RPKI
+run: vtysh -c "rpki reset"

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Aug  2 20:54:56 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA writeup_results 10.129.17.166 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA writeup_results 10.129.17.166" start="1785684296" startstr="Sun Aug  2 20:54:56 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1785684296"/>
+<taskend task="NSE" time="1785684296"/>
+<taskbegin task="NSE" time="1785684296"/>
+<taskend task="NSE" time="1785684296"/>
+<taskbegin task="NSE" time="1785684296"/>
+<taskend task="NSE" time="1785684296"/>
+<taskbegin task="Ping Scan" time="1785684296"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.17.166" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1785684296" extrainfo="1 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1785684296"/>

@@ -1,0 +1,7 @@
+f0d473a33e8d72439bec1563b187bc4f  usr/libexec/vyos/completion/list_interfaces
+4aaba445ec7acd90e874760a4e542cc8  usr/libexec/vyos/validate-value
+a130a165004d400def54a26c36c28a51  usr/libexec/vyos/validators/file-path
+fda11ae82958f42e9dbb400ade3564c7  usr/libexec/vyos/validators/numeric
+752fb0d2c0a58f488e1bd480da6bcfaf  usr/libexec/vyos/validators/url
+448a734b86f383238885b181f9bf0b96  usr/share/doc/vyos-utils/changelog.gz
+a2dd63a3fc55dfebbe9118b43284f319  usr/share/doc/vyos-utils/copyright

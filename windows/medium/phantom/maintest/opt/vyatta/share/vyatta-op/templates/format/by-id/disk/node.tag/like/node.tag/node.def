@@ -1,0 +1,2 @@
+help: Format this disk the same as another disk
+run: sudo ${vyos_op_scripts_dir}/format_disk.py --by-id --target $4 --proto $6

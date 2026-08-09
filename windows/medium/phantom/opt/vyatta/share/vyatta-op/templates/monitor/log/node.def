@@ -1,0 +1,2 @@
+help: Monitor last lines of messages file
+run: SYSTEMD_LOG_COLOR=false journalctl --no-hostname --follow --boot

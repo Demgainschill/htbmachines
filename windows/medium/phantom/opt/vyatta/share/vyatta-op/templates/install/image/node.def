@@ -1,0 +1,2 @@
+help: Install new system image to hard drive
+run: sudo ${vyos_op_scripts_dir}/image_installer.py --action install

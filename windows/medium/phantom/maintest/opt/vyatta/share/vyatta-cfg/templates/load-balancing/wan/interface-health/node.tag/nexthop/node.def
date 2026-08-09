@@ -1,0 +1,7 @@
+type: txt
+help: Outbound interface nexthop address. Can be 'DHCP or IPv4
+			address' [REQUIRED]
+val_help: ipv4; Nexthop IP address
+val_help: dhcp; Set the nexthop via DHCP
+allowed: echo "dhcp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(dhcp)\' --exec \"${vyos_validators_dir}/ipv4-address \"  --value \'$VAR(@)\'"; "Invalid value"

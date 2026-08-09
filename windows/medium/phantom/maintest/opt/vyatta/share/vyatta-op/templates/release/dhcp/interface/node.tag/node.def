@@ -1,0 +1,3 @@
+help: Release DHCP client lease for specified interface
+allowed: ${vyos_completion_dir}/list_interfaces
+run: sudo ${vyos_op_scripts_dir}/dhcp.py release_client_lease --family inet --interface "$4"

@@ -1,0 +1,4 @@
+type: txt
+help: Do not keep data longer than N seconds in buffer (default: 5)
+val_help: u32:1-3600; Seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-3600\"  --value \'$VAR(@)\'"; "buffer-flush-interval must be between 1 and 3600 seconds"

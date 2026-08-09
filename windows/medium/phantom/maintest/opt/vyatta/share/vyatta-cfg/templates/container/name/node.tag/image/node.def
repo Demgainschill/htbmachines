@@ -1,0 +1,5 @@
+type: txt
+help: Container image to use
+val_help: txt; Image name in the hub-registry
+allowed: sh -c "sudo podman image list --format "{{.Repository}}:{{.Tag}}""
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:ascii:]]{1,255}\'   --value \'$VAR(@)\'"; "Invalid value"

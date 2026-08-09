@@ -1,0 +1,6 @@
+type: txt
+help: Offloading method (default: software)
+val_help: hardware; Hardware offload
+val_help: software; Software offload (default)
+allowed: echo "hardware software"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(hardware|software)\'   --value \'$VAR(@)\'"; "Invalid value"

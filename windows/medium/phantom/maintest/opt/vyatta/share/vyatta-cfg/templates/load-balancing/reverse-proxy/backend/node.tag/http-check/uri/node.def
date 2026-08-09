@@ -1,0 +1,3 @@
+type: txt
+help: URI used for HTTP health check (Example: '/' or '/health')
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'^\\/([^?#\\s]*)(\\?[^#\\s]*)?$\'   --value \'$VAR(@)\'"; "Invalid value"

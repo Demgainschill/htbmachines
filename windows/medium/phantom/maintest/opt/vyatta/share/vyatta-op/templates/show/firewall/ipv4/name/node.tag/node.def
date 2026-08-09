@@ -1,0 +1,3 @@
+help: Show IPv4 custom firewall chains
+allowed: /bin/cli-shell-api listActiveNodes firewall ipv4 name | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/firewall.py --action show --family $3 --hook $4 --priority $5

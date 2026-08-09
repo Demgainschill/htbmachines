@@ -1,0 +1,9 @@
+8cf4b2a3bf1b0dd1dd568ec255ed5637  usr/sbin/igmpproxy
+3a88e1190cd525253f5343d527817e89  usr/share/doc/igmpproxy/AUTHORS
+866b316232e979a6077585b46c89a6fb  usr/share/doc/igmpproxy/NEWS.gz
+2e37c2b399a117a5e44300e9a8ba3c19  usr/share/doc/igmpproxy/README
+6271c386db05dd11b7a4a4662a09b6d3  usr/share/doc/igmpproxy/changelog.Debian.gz
+ab555ea52bc4d667e3c9f5aa30dcdd4a  usr/share/doc/igmpproxy/changelog.gz
+aa8d3c983ddaeb8656638f02e97c050e  usr/share/doc/igmpproxy/copyright
+aa2cd5570f2cd7ed8a75fa8e9235ba2d  usr/share/man/man5/igmpproxy.conf.5.gz
+369107a1aaebd2f0b62596e94810307e  usr/share/man/man8/igmpproxy.8.gz

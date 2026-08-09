@@ -1,0 +1,2 @@
+help: Show summary information of all interfaces
+run: ${vyos_op_scripts_dir}/interfaces.py show_summary

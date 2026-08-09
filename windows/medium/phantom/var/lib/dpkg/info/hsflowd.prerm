@@ -1,0 +1,4 @@
+#!/bin/bash
+# if using init(1):
+# update-rc.d -f hsflowd remove
+exit 0

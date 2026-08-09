@@ -1,0 +1,3 @@
+help: Show DHCP server leases granted by local or remote DHCP server
+allowed: echo "local remote"
+run: ${vyos_op_scripts_dir}/dhcp.py show_server_leases --family inet --origin $6

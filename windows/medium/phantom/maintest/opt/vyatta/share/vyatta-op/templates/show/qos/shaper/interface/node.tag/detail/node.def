@@ -1,0 +1,2 @@
+help: Show QoS detailed information for given interface
+run: sudo ${vyos_op_scripts_dir}/qos.py show_shaper --ifname $5 --detail

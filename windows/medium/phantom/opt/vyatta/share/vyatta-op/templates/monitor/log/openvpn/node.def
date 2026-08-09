@@ -1,0 +1,2 @@
+help: Monitor last lines of OpenVPN log
+run: journalctl --no-hostname --boot --follow --unit openvpn@*.service

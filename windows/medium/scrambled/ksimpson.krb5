@@ -1,0 +1,15 @@
+[libdefaults]
+    dns_lookup_kdc = false
+    dns_lookup_realm = false
+    default_realm = SCRM.LOCAL
+
+[realms]
+    SCRM.LOCAL = {
+        kdc = dc1.scrm.local
+        admin_server = dc1.scrm.local
+        default_domain = scrm.local
+    }
+
+[domain_realm]
+    .scrm.local = SCRM.LOCAL
+    scrm.local = SCRM.LOCAL

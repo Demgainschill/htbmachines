@@ -1,0 +1,8 @@
+I:25298940
+E:ID_MM_CANDIDATE=1
+E:ID_NET_LINK_FILE=/usr/lib/systemd/network/99-default.link
+E:ID_NET_NAME=pim6reg
+E:SYSTEMD_ALIAS=/sys/subsystem/net/devices/pim6reg /sys/subsystem/net/devices/pim6reg
+G:systemd
+Q:systemd
+V:1

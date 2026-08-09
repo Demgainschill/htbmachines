@@ -1,0 +1,5 @@
+type: txt
+help: Minimum connection retry interval (in milliseconds) (default:
+			1000)
+val_help: u32:100-86400000; Minimum connection retry interval
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 100-86400000\"  --value \'$VAR(@)\'"; "Invalid value"

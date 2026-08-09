@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libhs.so.5.4.0
+/usr/lib/x86_64-linux-gnu/libhs_runtime.so.5.4.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libhyperscan5
+/usr/share/doc/libhyperscan5/changelog.Debian.gz
+/usr/share/doc/libhyperscan5/changelog.gz
+/usr/share/doc/libhyperscan5/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libhyperscan5
+/usr/lib/x86_64-linux-gnu/libhs.so.5
+/usr/lib/x86_64-linux-gnu/libhs_runtime.so.5

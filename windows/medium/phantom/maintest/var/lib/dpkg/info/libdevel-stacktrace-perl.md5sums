@@ -1,0 +1,9 @@
+7da45c8351417bc0abed6e38beccb2b6  usr/share/doc/libdevel-stacktrace-perl/CONTRIBUTING.md
+9112e03376d7e9926730e2cd7f60e586  usr/share/doc/libdevel-stacktrace-perl/NEWS.Debian.gz
+ad3ab590cb36d7fb225e08f518c731e3  usr/share/doc/libdevel-stacktrace-perl/changelog.Debian.gz
+0c2d2cde5bb22f9e0cf04638568478c5  usr/share/doc/libdevel-stacktrace-perl/changelog.gz
+47cef3d3d4b9eec53bd818c28df65188  usr/share/doc/libdevel-stacktrace-perl/copyright
+9bb032af3e24953bca87db6e6b05c9ad  usr/share/man/man3/Devel::StackTrace.3pm.gz
+d79a8b2efff9b8847b5a4b1b6c0b2ee1  usr/share/man/man3/Devel::StackTrace::Frame.3pm.gz
+86e99556d4064ec1f14fe93b0505b5ec  usr/share/perl5/Devel/StackTrace.pm
+7d7bbe06b5e11f6bb6f8051ff628be97  usr/share/perl5/Devel/StackTrace/Frame.pm

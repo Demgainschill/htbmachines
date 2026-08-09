@@ -1,0 +1,4 @@
+type: txt
+help: Delay timer (default: 5)
+val_help: u32:5-1800; Timer interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 5-1800\"  --value \'$VAR(@)\'"; "Invalid value"

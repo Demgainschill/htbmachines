@@ -1,0 +1,14 @@
+ac594dac65c25cccfb3d0653d94d4e1e  lib/systemd/system/ddclient.service
+5fc4a64ad0db7f71ac9409053d5e3d87  usr/bin/ddclient
+422989ead085030933a9e2b426e8fcf1  usr/share/doc/ddclient/NEWS.gz
+81062cc8a664ab2527044dc52a1a01aa  usr/share/doc/ddclient/README.cisco
+a826fb8fd17b058c82c14c04708b3a0a  usr/share/doc/ddclient/README.md.gz
+431a37dda279958e9295887d36f7b5de  usr/share/doc/ddclient/changelog.gz
+c633f98ceaac2f7cc8dc3a915370fd98  usr/share/doc/ddclient/copyright
+7480cee5b77d335a189a283665d2e9a2  usr/share/doc/ddclient/examples/sample-ddclient-wrapper.sh
+60f7155efecb8c9a592e7a5335daf149  usr/share/doc/ddclient/examples/sample-etc_cron.d_ddclient
+e2c6da6b30cfc1003f25469397154f1f  usr/share/doc/ddclient/examples/sample-etc_ddclient.conf
+78f14c197cdfd855596959b974a23c80  usr/share/doc/ddclient/examples/sample-etc_dhcpc_dhcpcd-eth0.exe
+a8387512ff4522d5b02d30d2c2014cdd  usr/share/doc/ddclient/examples/sample-get-ip-from-fritzbox
+e1ef2b7d792ad1d32455904813e01ccf  usr/share/lintian/overrides/ddclient
+5c334c18a25d981b7a708d3a4ddd7c57  usr/share/man/man8/ddclient.8.gz

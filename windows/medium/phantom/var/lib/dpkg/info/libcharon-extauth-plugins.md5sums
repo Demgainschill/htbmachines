@@ -1,0 +1,8 @@
+97ec9c4af3ef7e04f31db5379836fed1  usr/lib/ipsec/plugins/libstrongswan-eap-mschapv2.so
+5313a89d1758d91114017a417a461682  usr/lib/ipsec/plugins/libstrongswan-xauth-generic.so
+25c174f75715864b7d825dc6e565c17e  usr/share/doc/libcharon-extauth-plugins/NEWS.Debian.gz
+a94f801acbaaec1a9b77d11bd0b7055a  usr/share/doc/libcharon-extauth-plugins/changelog.Debian.gz
+7580e3007897a92e3311df1ba4dab82e  usr/share/doc/libcharon-extauth-plugins/changelog.gz
+8542ae617d33d7b35208cac3d3b5755b  usr/share/doc/libcharon-extauth-plugins/copyright
+027ebdff6bb85be3ce30af87415ed4c1  usr/share/strongswan/templates/config/plugins/eap-mschapv2.conf
+a7190a4f18b8947d9fd41b47714790a6  usr/share/strongswan/templates/config/plugins/xauth-generic.conf

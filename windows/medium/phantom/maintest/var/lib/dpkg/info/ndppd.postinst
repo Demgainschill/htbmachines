@@ -1,0 +1,31 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+  configure)
+    if [ -n "$2" ] && dpkg --compare-versions "$2" lt-nl 0.2.5-6~
+    then
+      # Buster version can't be stopped. See #942117
+      if [ -f /var/run/ndppd.pid ]
+      then
+        chmod 644 /var/run/ndppd.pid
+      fi
+    fi
+  ;;
+esac
+
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if [ -z "${DPKG_ROOT:-}" ] && [ -x "/etc/init.d/ndppd" ]; then
+		update-rc.d ndppd defaults >/dev/null
+		if [ -n "$2" ]; then
+			_dh_action=restart
+		else
+			_dh_action=start
+		fi
+		invoke-rc.d --skip-systemd-native ndppd $_dh_action || exit 1
+	fi
+fi
+# End automatically added section
+

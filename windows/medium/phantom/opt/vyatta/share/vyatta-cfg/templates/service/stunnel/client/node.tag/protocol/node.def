@@ -1,0 +1,13 @@
+type: txt
+help: Application protocol to negotiate TLS
+val_help: cifs; Proprietary (undocummented) extension of CIFS protocol
+val_help: connect; Based on RFC 2817 - Upgrading to TLS Within HTTP/1.1, section 5.2 - Requesting a Tunnel with CONNECT
+val_help: imap; Based on RFC 2595 - Using TLS with IMAP, POP3 and ACAP
+val_help: nntp; Based on RFC 4642 - Using Transport Layer Security (TLS) with Network News Transfer Protocol (NNTP)
+val_help: pgsql; Based on PostgreSQL frontend/backend protocol
+val_help: pop3; Based on RFC 2449 - POP3 Extension Mechanism
+val_help: proxy; Passing of the original client IP address with HAProxy PROXY protocol version 1
+val_help: smtp; Based on RFC 2487 - SMTP Service Extension for Secure SMTP over TLS
+val_help: socks; SOCKS versions 4, 4a, and 5 are supported
+allowed: echo "cifs connect imap nntp pgsql pop3 proxy smtp socks"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(cifs|connect|imap|nntp|pgsql|pop3|proxy|smtp|socks)\'   --value \'$VAR(@)\'"; "Invalid value"

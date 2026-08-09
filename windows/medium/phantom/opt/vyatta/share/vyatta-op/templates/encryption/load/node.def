@@ -1,0 +1,2 @@
+help: Load encrypted config volume using TPM or recovery key
+run: sudo ${vyos_libexec_dir}/vyos-config-encrypt.py --load

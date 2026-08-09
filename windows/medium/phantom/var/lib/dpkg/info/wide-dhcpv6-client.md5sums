@@ -1,0 +1,12 @@
+eb2253f4ffb978299ebabe05a16c92e6  usr/sbin/dhcp6c
+bc4d4f3a319f8cd904654ac7a2c6b70b  usr/sbin/dhcp6ctl
+8d7704f989b5fdfeb9080b247696a811  usr/share/doc/wide-dhcpv6-client/NEWS.Debian.gz
+25cda5710cb9e83ecdf179d6e6892e00  usr/share/doc/wide-dhcpv6-client/changelog.Debian.gz
+42ad124e3ce2aa60c96aac9e5ca12f8b  usr/share/doc/wide-dhcpv6-client/changelog.gz
+4966c89d884ef91ee4fbc0165c3bf6fd  usr/share/doc/wide-dhcpv6-client/copyright
+00b8fe4e30d8114b72f71a921bd58886  usr/share/doc/wide-dhcpv6-client/examples/dhcp6c.conf.sample
+eaf2579dcbd5d480432e632be883f58f  usr/share/doc/wide-dhcpv6-client/examples/ppp_ipv6-updown.sample
+a555c3323d1dd6c08360dfafcb617ae3  usr/share/lintian/overrides/wide-dhcpv6-client
+b11c9cfda991a270093701c74cda6302  usr/share/man/man5/dhcp6c.conf.5.gz
+d8c2d08416fe274a26c85d47b1f17823  usr/share/man/man8/dhcp6c.8.gz
+9a3d21cd79d5ea334bdf3910d30bd3d4  usr/share/man/man8/dhcp6ctl.8.gz

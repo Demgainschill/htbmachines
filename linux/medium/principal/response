@@ -1,0 +1,122 @@
+┌──(root kali)-[~/htbmachines/linux/medium/principal]
+└─# # Download and inspect the JavaScript file
+curl -s http://10.129.244.220:8080/static/js/app.js > app.js
+cat app.js | head -100
+
+# Look for these endpoints in comments:
+# POST /api/auth/login
+# GET /api/auth/jwks
+# GET /api/dashboard
+# GET /api/users
+# GET /api/settings
+# GET /api/profile
+
+# You'll also find information about:
+# - Encryption: RSA-OAEP-256 + A128GCM
+# - Inner JWT: RS256
+# - Available roles: ROLE_ADMIN, ROLE_MANAGER, ROLE_USER
+/**
+ * Principal Internal Platform - Client Application
+ * Version: 1.2.0
+ *
+ * Authentication flow:
+ * 1. User submits credentials to /api/auth/login
+ * 2. Server returns encrypted JWT (JWE) token
+ * 3. Token is stored and sent as Bearer token for subsequent requests
+ *
+ * Token handling:
+ * - Tokens are JWE-encrypted using RSA-OAEP-256 + A128GCM
+ * - Public key available at /api/auth/jwks for token verification
+ * - Inner JWT is signed with RS256
+ *
+ * JWT claims schema:
+ *   sub   - username
+ *   role  - one of: ROLE_ADMIN, ROLE_MANAGER, ROLE_USER
+ *   iss   - "principal-platform"
+ *   iat   - issued at (epoch)
+ *   exp   - expiration (epoch)
+ */
+
+const API_BASE = '';
+const JWKS_ENDPOINT = '/api/auth/jwks';
+const AUTH_ENDPOINT = '/api/auth/login';
+const DASHBOARD_ENDPOINT = '/api/dashboard';
+const USERS_ENDPOINT = '/api/users';
+const SETTINGS_ENDPOINT = '/api/settings';
+
+// Role constants - must match server-side role definitions
+const ROLES = {
+    ADMIN: 'ROLE_ADMIN',
+    MANAGER: 'ROLE_MANAGER',
+    USER: 'ROLE_USER'
+};
+
+// Token management
+class TokenManager {
+    static getToken() {
+        return sessionStorage.getItem('auth_token');
+    }
+
+    static setToken(token) {
+        sessionStorage.setItem('auth_token', token);
+    }
+
+    static clearToken() {
+        sessionStorage.removeItem('auth_token');
+    }
+
+    static isAuthenticated() {
+        return !!this.getToken();
+    }
+
+    static getAuthHeaders() {
+        const token = this.getToken();
+        return token ? { 'Authorization': `Bearer ${token}` } : {};
+    }
+}
+
+// API client
+class ApiClient {
+    static async request(endpoint, options = {}) {
+        const defaults = {
+            headers: {
+                'Content-Type': 'application/json',
+                ...TokenManager.getAuthHeaders()
+            }
+        };
+
+        const config = { ...defaults, ...options, headers: { ...defaults.headers, ...options.headers } };
+
+        try {
+            const response = await fetch(`${API_BASE}${endpoint}`, config);
+
+            if (response.status === 401) {
+                TokenManager.clearToken();
+                if (window.location.pathname !== '/login') {
+                    window.location.href = '/login';
+                }
+                throw new Error('Authentication required');
+            }
+
+            return response;
+        } catch (error) {
+            if (error.message === 'Authentication required') throw error;
+            throw new Error('Network error. Please try again.');
+        }
+    }
+
+    static async get(endpoint) {
+        return this.request(endpoint);
+    }
+
+    static async post(endpoint, data) {
+        return this.request(endpoint, {
+            method: 'POST',
+            body: JSON.stringify(data)
+        });
+    }
+                                                                                                                                                                        
+┌──(root kali)-[~/htbmachines/linux/medium/principal]
+└─# 
+
+

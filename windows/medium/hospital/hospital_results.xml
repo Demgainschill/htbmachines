@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sat Jul 18 08:42:49 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA hospital_results 10.129.229.189 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA hospital_results 10.129.229.189" start="1784344369" startstr="Sat Jul 18 08:42:49 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1784344369"/>
+<taskend task="NSE" time="1784344369"/>
+<taskbegin task="NSE" time="1784344369"/>
+<taskend task="NSE" time="1784344369"/>
+<taskbegin task="NSE" time="1784344369"/>
+<taskend task="NSE" time="1784344369"/>
+<taskbegin task="SYN Stealth Scan" time="1784344369"/>
+<taskend task="SYN Stealth Scan" time="1784344418" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1784344418"/>
+<taskend task="Service scan" time="1784344479" extrainfo="29 services on 1 host"/>
+<taskbegin task="NSE" time="1784344479"/>
+<taskend task="NSE" time="1784344520"/>
+<taskbegin task="NSE" time="1784344520"/>
+<taskend task="NSE" time="1784344521"/>
+<taskbegin task="NSE" time="1784344521"/>
+<taskend task="NSE" time="1784344521"/>
+<host starttime="1784344369" endtime="1784344521"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.229.189" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hospital.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65506">
+<extrareasons reason="no-response" count="65506" proto="tcp" ports="1-21,23-52,54-87,89-134,136-138,140-388,390-442,444,446-463,465-592,594-635,637-1800,1802-2102,2104,2106,2108-2178,2180-3267,3270-3388,3390-5984,5986-6015,6017-6403,6405,6408,6410-6611,6613-6618,6620-8079,8081-9388,9390-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" product="OpenSSH" version="9.0p1 Ubuntu 1ubuntu8.5" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.0p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 e1:4b:4b:3a:6d:18:66:69:39:f7:aa:74:b3:16:0a:aa (ECDSA)&#xa;  256 96:c1:dc:d8:97:20:95:e7:01:5f:20:a2:43:61:cb:ca (ED25519)"><table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEOWkMB0YsRlK8hP9kX0zXBlQ6XzkYCcTXABmN/HBNeupDztdxbCEjbAULKam7TMUf0410Sid7Kw9ofShv0gdQM=</elem>
+<elem key="fingerprint">e14b4b3a6d18666939f7aa74b3160aaa</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIGH/I0Ybp33ljRcWU66wO+gP/WSw8P6qamet4bjvS10R</elem>
+<elem key="fingerprint">96c1dcd8972095e7015f20a24361cbca</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-07-18 10:13:31Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: hospital.htb, Site: Default-First-Site-Name" hostname="DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=DC&#xa;Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb&#xa;Issuer: commonName=DC&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-09-06T10:49:03&#xa;Not valid after:  2028-09-06T10:49:03&#xa;MD5:     04b1 adfe 746a 788e 36c0 802a bdf3 3119&#xa;SHA-1:   17e5 8592 278f 4e8f 8ce1 554c 3550 9c02 2825 91e3&#xa;SHA-256: 1931 f7e1 41f1 a2b9 95fb 9739 6037 05ba d0f8 6683 7053 9b47 1863 4243 e911 cbba"><table key="subject">
+<elem key="commonName">DC</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DC</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">EE86C03F9DE4D6AC931AB62EDFA77731FA9645FFA73C4162EA2F862BBFFC70EA107D03E33CD30C1DC9B31DA16090E74072FD768DCB4DCD0621EB1510639477CEA8D7949C91A2B7EDBC194A0D4D364B810E2AC772B67CE21DB1C6E5912F443A028151F7BAFB7853B72AC24D6E134AFA896C1E80AFF1C6D4D504F90E6E67A98D33B50C43328FC8FA514F63C32087F2313955308252258923FABE07FB5C25C20D7C57ABBF8A036A0A6D2AB30021FB17F917AA6D9A23083E444448CC5329FE0228194DEC9292C7AC3360B2E9F915932A42A26925A89C366082250E73F1761DE90308F25256DC6FA5B01396842B0B848324725C711310AC1C50121AEF2DE2452542A5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:DC, DNS:DC.hospital.htb</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-09-06T10:49:03</elem>
+<elem key="notAfter">2028-09-06T10:49:03</elem>
+</table>
+<elem key="md5">04b1adfe746a788e36c0802abdf33119</elem>
+<elem key="sha1">17e58592278f4e8f8ce1554c35509c02282591e3</elem>
+<elem key="sha256">1931f7e141f1a2b995fb9739603705bad0f8668370539b4718634243e911cbba</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC+TCCAeGgAwIBAgIQdNv8q6fykq5PQSM0k1YFAjANBgkqhkiG9w0BAQsFADAN&#xa;MQswCQYDVQQDEwJEQzAeFw0yMzA5MDYxMDQ5MDNaFw0yODA5MDYxMDQ5MDNaMA0x&#xa;CzAJBgNVBAMTAkRDMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7obA&#xa;P53k1qyTGrYu36d3MfqWRf+nPEFi6i+GK7/8cOoQfQPjPNMMHcmzHaFgkOdAcv12&#xa;jctNzQYh6xUQY5R3zqjXlJyRorftvBlKDU02S4EOKsdytnziHbHG5ZEvRDoCgVH3&#xa;uvt4U7cqwk1uE0r6iWwegK/xxtTVBPkObmepjTO1DEMyj8j6UU9jwyCH8jE5VTCC&#xa;UiWJI/q+B/tcJcINfFerv4oDagptKrMAIfsX+ReqbZojCD5EREjMUyn+AigZTeyS&#xa;ksesM2Cy6fkVkypComklqJw2YIIlDnPxdh3pAwjyUlbcb6WwE5aEKwuEgyRyXHET&#xa;EKwcUBIa7y3iRSVCpQIDAQABo1UwUzAOBgNVHQ8BAf8EBAMCBaAwHgYDVR0RBBcw&#xa;FYICREOCD0RDLmhvc3BpdGFsLmh0YjATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNV&#xa;HRMBAf8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQBjA0NUb25R42VBXvb328jEcMam&#xa;19VS+MPZijp14phJ0Q/YuxlztTGnSlIFrUPWtJWvx8PLtdCnE1MOmFmcS2TNISg9&#xa;Vt1sE4RF5N9s9TeFqCE80wH+qzZMCaBTlQxrzftkTfN67+SxoEGd6aywXEmzG5tw&#xa;wbEe/dMglJVZ0Uk2DUXjpdXIDQlFIg+Yn0CqWjUvppLUyinxpmVqoC5dY8ijuuem&#xa;3JjZd5mDoYg1XIP3gfAAutdsce5Safoq7oqh0OYb4sQMu0y9YcRL0JsP3cwB4FnW&#xa;eh2XVUa9NjHJi5hvdH3wy6/jU4UwPED41iuM6Y1rwF/l4J0LmELsmmYZEaWm&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.56" extrainfo="(Win64) OpenSSL/1.1.1t PHP/8.0.28" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.56</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-title" output="Hospital Webmail :: Welcome to Hospital Webmail"><elem key="title">Hospital Webmail :: Welcome to Hospital Webmail</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="http-server-header" output="Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28"><elem>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28</elem>
+</script><script id="ssl-cert" output="Subject: commonName=localhost&#xa;Issuer: commonName=localhost&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2009-11-10T23:48:47&#xa;Not valid after:  2019-11-08T23:48:47&#xa;MD5:     a0a4 4cc9 9e84 b26f 9e63 9f9e d229 dee0&#xa;SHA-1:   b023 8c54 7a90 5bfa 119c 4e8b acca eacf 3649 1ff6&#xa;SHA-256: 0169 7338 0c0f 1df0 0bd9 593e d8d5 efa3 706c d6df 7993 f614 1272 b805 22ac dd23"><table key="subject">
+<elem key="commonName">localhost</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">C125D327E3ECAD0D836A6DE75F9A751023E2909DA063958F1D419A58D59C638C5B73869079CCC3D6A389B875BC1E947C7C6EE3ADE8275C0BC60C6AF90F32FEB3C47A1023042B2928D4AAF9B32F6610F8A7C1CD60C46B2857E3673BF79ECD4822DC38EA4813803A4097570C4735463D71629AEE539D630E677A28C9A434FF19ED</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2009-11-10T23:48:47</elem>
+<elem key="notAfter">2019-11-08T23:48:47</elem>
+</table>
+<elem key="md5">a0a44cc99e84b26f9e639f9ed229dee0</elem>
+<elem key="sha1">b0238c547a905bfa119c4e8baccaeacf36491ff6</elem>
+<elem key="sha256">016973380c0f1df00bd9593ed8d5efa3706cd6df7993f6141272b80522acdd23</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls&#xa;b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD&#xa;VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj&#xa;7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o&#xa;J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT&#xa;gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD&#xa;gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd&#xa;aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL&#xa;vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-favicon" output="Unknown favicon MD5: 924A68D347C80D0E502157E83812BB23"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldapssl" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=DC&#xa;Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb&#xa;Issuer: commonName=DC&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-09-06T10:49:03&#xa;Not valid after:  2028-09-06T10:49:03&#xa;MD5:     04b1 adfe 746a 788e 36c0 802a bdf3 3119&#xa;SHA-1:   17e5 8592 278f 4e8f 8ce1 554c 3550 9c02 2825 91e3&#xa;SHA-256: 1931 f7e1 41f1 a2b9 95fb 9739 6037 05ba d0f8 6683 7053 9b47 1863 4243 e911 cbba"><table key="subject">
+<elem key="commonName">DC</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DC</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">EE86C03F9DE4D6AC931AB62EDFA77731FA9645FFA73C4162EA2F862BBFFC70EA107D03E33CD30C1DC9B31DA16090E74072FD768DCB4DCD0621EB1510639477CEA8D7949C91A2B7EDBC194A0D4D364B810E2AC772B67CE21DB1C6E5912F443A028151F7BAFB7853B72AC24D6E134AFA896C1E80AFF1C6D4D504F90E6E67A98D33B50C43328FC8FA514F63C32087F2313955308252258923FABE07FB5C25C20D7C57ABBF8A036A0A6D2AB30021FB17F917AA6D9A23083E444448CC5329FE0228194DEC9292C7AC3360B2E9F915932A42A26925A89C366082250E73F1761DE90308F25256DC6FA5B01396842B0B848324725C711310AC1C50121AEF2DE2452542A5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:DC, DNS:DC.hospital.htb</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-09-06T10:49:03</elem>
+<elem key="notAfter">2028-09-06T10:49:03</elem>
+</table>
+<elem key="md5">04b1adfe746a788e36c0802abdf33119</elem>
+<elem key="sha1">17e58592278f4e8f8ce1554c35509c02282591e3</elem>
+<elem key="sha256">1931f7e141f1a2b995fb9739603705bad0f8668370539b4718634243e911cbba</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC+TCCAeGgAwIBAgIQdNv8q6fykq5PQSM0k1YFAjANBgkqhkiG9w0BAQsFADAN&#xa;MQswCQYDVQQDEwJEQzAeFw0yMzA5MDYxMDQ5MDNaFw0yODA5MDYxMDQ5MDNaMA0x&#xa;CzAJBgNVBAMTAkRDMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7obA&#xa;P53k1qyTGrYu36d3MfqWRf+nPEFi6i+GK7/8cOoQfQPjPNMMHcmzHaFgkOdAcv12&#xa;jctNzQYh6xUQY5R3zqjXlJyRorftvBlKDU02S4EOKsdytnziHbHG5ZEvRDoCgVH3&#xa;uvt4U7cqwk1uE0r6iWwegK/xxtTVBPkObmepjTO1DEMyj8j6UU9jwyCH8jE5VTCC&#xa;UiWJI/q+B/tcJcINfFerv4oDagptKrMAIfsX+ReqbZojCD5EREjMUyn+AigZTeyS&#xa;ksesM2Cy6fkVkypComklqJw2YIIlDnPxdh3pAwjyUlbcb6WwE5aEKwuEgyRyXHET&#xa;EKwcUBIa7y3iRSVCpQIDAQABo1UwUzAOBgNVHQ8BAf8EBAMCBaAwHgYDVR0RBBcw&#xa;FYICREOCD0RDLmhvc3BpdGFsLmh0YjATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNV&#xa;HRMBAf8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQBjA0NUb25R42VBXvb328jEcMam&#xa;19VS+MPZijp14phJ0Q/YuxlztTGnSlIFrUPWtJWvx8PLtdCnE1MOmFmcS2TNISg9&#xa;Vt1sE4RF5N9s9TeFqCE80wH+qzZMCaBTlQxrzftkTfN67+SxoEGd6aywXEmzG5tw&#xa;wbEe/dMglJVZ0Uk2DUXjpdXIDQlFIg+Yn0CqWjUvppLUyinxpmVqoC5dY8ijuuem&#xa;3JjZd5mDoYg1XIP3gfAAutdsce5Safoq7oqh0OYb4sQMu0y9YcRL0JsP3cwB4FnW&#xa;eh2XVUa9NjHJi5hvdH3wy6/jU4UwPED41iuM6Y1rwF/l4J0LmELsmmYZEaWm&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="1801"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msmq" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2103"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="2105"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="2107"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="2179"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="vmrdp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: hospital.htb, Site: Default-First-Site-Name" hostname="DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=DC&#xa;Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb&#xa;Issuer: commonName=DC&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-09-06T10:49:03&#xa;Not valid after:  2028-09-06T10:49:03&#xa;MD5:     04b1 adfe 746a 788e 36c0 802a bdf3 3119&#xa;SHA-1:   17e5 8592 278f 4e8f 8ce1 554c 3550 9c02 2825 91e3&#xa;SHA-256: 1931 f7e1 41f1 a2b9 95fb 9739 6037 05ba d0f8 6683 7053 9b47 1863 4243 e911 cbba"><table key="subject">
+<elem key="commonName">DC</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DC</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">EE86C03F9DE4D6AC931AB62EDFA77731FA9645FFA73C4162EA2F862BBFFC70EA107D03E33CD30C1DC9B31DA16090E74072FD768DCB4DCD0621EB1510639477CEA8D7949C91A2B7EDBC194A0D4D364B810E2AC772B67CE21DB1C6E5912F443A028151F7BAFB7853B72AC24D6E134AFA896C1E80AFF1C6D4D504F90E6E67A98D33B50C43328FC8FA514F63C32087F2313955308252258923FABE07FB5C25C20D7C57ABBF8A036A0A6D2AB30021FB17F917AA6D9A23083E444448CC5329FE0228194DEC9292C7AC3360B2E9F915932A42A26925A89C366082250E73F1761DE90308F25256DC6FA5B01396842B0B848324725C711310AC1C50121AEF2DE2452542A5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:DC, DNS:DC.hospital.htb</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-09-06T10:49:03</elem>
+<elem key="notAfter">2028-09-06T10:49:03</elem>
+</table>
+<elem key="md5">04b1adfe746a788e36c0802abdf33119</elem>
+<elem key="sha1">17e58592278f4e8f8ce1554c35509c02282591e3</elem>
+<elem key="sha256">1931f7e141f1a2b995fb9739603705bad0f8668370539b4718634243e911cbba</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC+TCCAeGgAwIBAgIQdNv8q6fykq5PQSM0k1YFAjANBgkqhkiG9w0BAQsFADAN&#xa;MQswCQYDVQQDEwJEQzAeFw0yMzA5MDYxMDQ5MDNaFw0yODA5MDYxMDQ5MDNaMA0x&#xa;CzAJBgNVBAMTAkRDMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7obA&#xa;P53k1qyTGrYu36d3MfqWRf+nPEFi6i+GK7/8cOoQfQPjPNMMHcmzHaFgkOdAcv12&#xa;jctNzQYh6xUQY5R3zqjXlJyRorftvBlKDU02S4EOKsdytnziHbHG5ZEvRDoCgVH3&#xa;uvt4U7cqwk1uE0r6iWwegK/xxtTVBPkObmepjTO1DEMyj8j6UU9jwyCH8jE5VTCC&#xa;UiWJI/q+B/tcJcINfFerv4oDagptKrMAIfsX+ReqbZojCD5EREjMUyn+AigZTeyS&#xa;ksesM2Cy6fkVkypComklqJw2YIIlDnPxdh3pAwjyUlbcb6WwE5aEKwuEgyRyXHET&#xa;EKwcUBIa7y3iRSVCpQIDAQABo1UwUzAOBgNVHQ8BAf8EBAMCBaAwHgYDVR0RBBcw&#xa;FYICREOCD0RDLmhvc3BpdGFsLmh0YjATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNV&#xa;HRMBAf8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQBjA0NUb25R42VBXvb328jEcMam&#xa;19VS+MPZijp14phJ0Q/YuxlztTGnSlIFrUPWtJWvx8PLtdCnE1MOmFmcS2TNISg9&#xa;Vt1sE4RF5N9s9TeFqCE80wH+qzZMCaBTlQxrzftkTfN67+SxoEGd6aywXEmzG5tw&#xa;wbEe/dMglJVZ0Uk2DUXjpdXIDQlFIg+Yn0CqWjUvppLUyinxpmVqoC5dY8ijuuem&#xa;3JjZd5mDoYg1XIP3gfAAutdsce5Safoq7oqh0OYb4sQMu0y9YcRL0JsP3cwB4FnW&#xa;eh2XVUa9NjHJi5hvdH3wy6/jU4UwPED41iuM6Y1rwF/l4J0LmELsmmYZEaWm&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="globalcatLDAPssl" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=DC&#xa;Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb&#xa;Issuer: commonName=DC&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-09-06T10:49:03&#xa;Not valid after:  2028-09-06T10:49:03&#xa;MD5:     04b1 adfe 746a 788e 36c0 802a bdf3 3119&#xa;SHA-1:   17e5 8592 278f 4e8f 8ce1 554c 3550 9c02 2825 91e3&#xa;SHA-256: 1931 f7e1 41f1 a2b9 95fb 9739 6037 05ba d0f8 6683 7053 9b47 1863 4243 e911 cbba"><table key="subject">
+<elem key="commonName">DC</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DC</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">EE86C03F9DE4D6AC931AB62EDFA77731FA9645FFA73C4162EA2F862BBFFC70EA107D03E33CD30C1DC9B31DA16090E74072FD768DCB4DCD0621EB1510639477CEA8D7949C91A2B7EDBC194A0D4D364B810E2AC772B67CE21DB1C6E5912F443A028151F7BAFB7853B72AC24D6E134AFA896C1E80AFF1C6D4D504F90E6E67A98D33B50C43328FC8FA514F63C32087F2313955308252258923FABE07FB5C25C20D7C57ABBF8A036A0A6D2AB30021FB17F917AA6D9A23083E444448CC5329FE0228194DEC9292C7AC3360B2E9F915932A42A26925A89C366082250E73F1761DE90308F25256DC6FA5B01396842B0B848324725C711310AC1C50121AEF2DE2452542A5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:DC, DNS:DC.hospital.htb</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-09-06T10:49:03</elem>
+<elem key="notAfter">2028-09-06T10:49:03</elem>
+</table>
+<elem key="md5">04b1adfe746a788e36c0802abdf33119</elem>
+<elem key="sha1">17e58592278f4e8f8ce1554c35509c02282591e3</elem>
+<elem key="sha256">1931f7e141f1a2b995fb9739603705bad0f8668370539b4718634243e911cbba</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC+TCCAeGgAwIBAgIQdNv8q6fykq5PQSM0k1YFAjANBgkqhkiG9w0BAQsFADAN&#xa;MQswCQYDVQQDEwJEQzAeFw0yMzA5MDYxMDQ5MDNaFw0yODA5MDYxMDQ5MDNaMA0x&#xa;CzAJBgNVBAMTAkRDMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7obA&#xa;P53k1qyTGrYu36d3MfqWRf+nPEFi6i+GK7/8cOoQfQPjPNMMHcmzHaFgkOdAcv12&#xa;jctNzQYh6xUQY5R3zqjXlJyRorftvBlKDU02S4EOKsdytnziHbHG5ZEvRDoCgVH3&#xa;uvt4U7cqwk1uE0r6iWwegK/xxtTVBPkObmepjTO1DEMyj8j6UU9jwyCH8jE5VTCC&#xa;UiWJI/q+B/tcJcINfFerv4oDagptKrMAIfsX+ReqbZojCD5EREjMUyn+AigZTeyS&#xa;ksesM2Cy6fkVkypComklqJw2YIIlDnPxdh3pAwjyUlbcb6WwE5aEKwuEgyRyXHET&#xa;EKwcUBIa7y3iRSVCpQIDAQABo1UwUzAOBgNVHQ8BAf8EBAMCBaAwHgYDVR0RBBcw&#xa;FYICREOCD0RDLmhvc3BpdGFsLmh0YjATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNV&#xa;HRMBAf8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQBjA0NUb25R42VBXvb328jEcMam&#xa;19VS+MPZijp14phJ0Q/YuxlztTGnSlIFrUPWtJWvx8PLtdCnE1MOmFmcS2TNISg9&#xa;Vt1sE4RF5N9s9TeFqCE80wH+qzZMCaBTlQxrzftkTfN67+SxoEGd6aywXEmzG5tw&#xa;wbEe/dMglJVZ0Uk2DUXjpdXIDQlFIg+Yn0CqWjUvppLUyinxpmVqoC5dY8ijuuem&#xa;3JjZd5mDoYg1XIP3gfAAutdsce5Safoq7oqh0OYb4sQMu0y9YcRL0JsP3cwB4FnW&#xa;eh2XVUa9NjHJi5hvdH3wy6/jU4UwPED41iuM6Y1rwF/l4J0LmELsmmYZEaWm&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=DC.hospital.htb&#xa;Issuer: commonName=DC.hospital.htb&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-07-17T10:08:54&#xa;Not valid after:  2027-01-16T10:08:54&#xa;MD5:     23ae 6594 1584 b0da d921 b3cb 1b86 203b&#xa;SHA-1:   d82d ab61 1c60 305d 7fe4 e761 02b7 4095 f461 4954&#xa;SHA-256: e326 02a0 16a9 c0d9 4c81 c12f b556 81be 80bc 45e9 953d 4de7 907a c25f bc38 3083"><table key="subject">
+<elem key="commonName">DC.hospital.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DC.hospital.htb</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CA7AAA0D85C2B6682A158FC5FBED69CA769AE9D39745030334E7852093431661861F675DA9C1EE52EA96E7450D076EE5F518BB49F9675723242FA112D52FD8C99F3F0B1855AAB36D639F13CDE9D78C2868AA205FB856820C2E053985594D92A1706C2C755C691C9963CC9916B95F1E897FEE569805AD54A5B1EA866039425EBC1046626BC94629A342B53DC07D6E4C197FE6AED5ED36E04A34E7194B426653EC7F617D583CB7486E036FA05B367B1A66383E30886A986D1F0FF1A77399937057FDD2D5AED7005C26925155F71F99A16AE6EDCABD49628BE26359B4EC4DBC4981BD45472BA4B5DB934E18B3D076CED4474BB9A58FCCF9F133A8428A2FF3921E95</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-17T10:08:54</elem>
+<elem key="notAfter">2027-01-16T10:08:54</elem>
+</table>
+<elem key="md5">23ae65941584b0dad921b3cb1b86203b</elem>
+<elem key="sha1">d82dab611c60305d7fe4e76102b74095f4614954</elem>
+<elem key="sha256">e32602a016a9c0d94c81c12fb55681be80bc45e9953d4de7907ac25fbc383083</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQOugn3rfc37ZAel+FFs1lRDANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9EQy5ob3NwaXRhbC5odGIwHhcNMjYwNzE3MTAwODU0WhcNMjcw&#xa;MTE2MTAwODU0WjAaMRgwFgYDVQQDEw9EQy5ob3NwaXRhbC5odGIwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDKeqoNhcK2aCoVj8X77WnKdprp05dFAwM0&#xa;54Ugk0MWYYYfZ12pwe5S6pbnRQ0HbuX1GLtJ+WdXIyQvoRLVL9jJnz8LGFWqs21j&#xa;nxPN6deMKGiqIF+4VoIMLgU5hVlNkqFwbCx1XGkcmWPMmRa5Xx6Jf+5WmAWtVKWx&#xa;6oZgOUJevBBGYmvJRimjQrU9wH1uTBl/5q7V7TbgSjTnGUtCZlPsf2F9WDy3SG4D&#xa;b6BbNnsaZjg+MIhqmG0fD/Gnc5mTcFf90tWu1wBcJpJRVfcfmaFq5u3KvUlii+Jj&#xa;WbTsTbxJgb1FRyuktduTThiz0HbO1EdLuaWPzPnxM6hCii/zkh6VAgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAX8ZjlsfL38T2aE93MaEDcf4YoIlRaaWTXYPrrrPapKYnaZOJM8i/qXYg&#xa;uwf1gdftgGOScF/lVF8GXeQKgFremiswmGy0xGPK/QsRgNbCv4ZbOdhQilinV2hg&#xa;76JbgBOKe79vKQPj1c8dZgD+fsSeHHHEKesO/hHKBeoXdhElVSuwkLa33TyHVDeR&#xa;maPRraXcvuT3zo3JPuPJw8OsSS+e/b7Pnd7IoW1f4GZLJo21TyIC5SIfVyfVZL4J&#xa;WmT8Q3sG+fmEIyuQ+lJJgoQHSJe3YQztEh+WGucXVtYeXMXlSGmOCkQnxx5gFkRj&#xa;Xty31zLR5s+CNLSjeLTLMOTob0Adhw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: HOSPITAL&#xa;  NetBIOS_Domain_Name: HOSPITAL&#xa;  NetBIOS_Computer_Name: DC&#xa;  DNS_Domain_Name: hospital.htb&#xa;  DNS_Computer_Name: DC.hospital.htb&#xa;  DNS_Tree_Name: hospital.htb&#xa;  Product_Version: 10.0.17763&#xa;  System_Time: 2026-07-18T10:14:28+00:00"><elem key="Target_Name">HOSPITAL</elem>
+<elem key="NetBIOS_Domain_Name">HOSPITAL</elem>
+<elem key="NetBIOS_Computer_Name">DC</elem>
+<elem key="DNS_Domain_Name">hospital.htb</elem>
+<elem key="DNS_Computer_Name">DC.hospital.htb</elem>
+<elem key="DNS_Tree_Name">hospital.htb</elem>
+<elem key="Product_Version">10.0.17763</elem>
+<elem key="System_Time">2026-07-18T10:14:28+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="6016"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="6404"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="6406"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="6407"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="6409"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="6612"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="6619"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http" product="Apache httpd" version="2.4.55" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.55</cpe></service><script id="http-server-header" output="Apache/2.4.55 (Ubuntu)"><elem>Apache/2.4.55 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-title" output="Login&#xa;Requested resource was login.php"><elem key="title">Login</elem>
+<elem key="redirect_url">login.php</elem>
+</script><script id="http-open-proxy" output="Proxy might be redirecting requests"/></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2026-07-18T10:14:29&#xa;  start_date: N/A"><elem key="date">2026-07-18T10:14:29</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="clock-skew" output="mean: 6h59m46s, deviation: 0s, median: 6h59m45s"><elem key="mean">25186</elem>
+<elem key="median">25185</elem>
+<elem key="count">2</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="76906" rttvar="741" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1784344521"/>
+<taskend task="NSE" time="1784344521"/>
+<taskbegin task="NSE" time="1784344521"/>
+<taskend task="NSE" time="1784344521"/>
+<taskbegin task="NSE" time="1784344521"/>
+<taskend task="NSE" time="1784344521"/>
+<runstats><finished time="1784344521" timestr="Sat Jul 18 08:45:21 2026" summary="Nmap done at Sat Jul 18 08:45:21 2026; 1 IP address (1 host up) scanned in 152.98 seconds" elapsed="152.98" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

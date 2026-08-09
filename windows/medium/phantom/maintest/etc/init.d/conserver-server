@@ -1,0 +1,93 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          conserver
+# Required-Start:    $network $syslog $named $time $local_fs $remote_fs
+# Required-Stop:     $network $syslog $named $time $local_fs $remote_fs
+# Should-Start:      
+# Should-Stop:       
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: start the conserver daemon
+# Description:       this script will start the conserver daemon
+#		     used by the conserver-client console program
+### END INIT INFO
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/sbin/conserver
+NAME=conserver
+DESC=conserver
+PIDFILE=/run/conserver/conserver.pid
+conf=/etc/conserver/server.conf
+localconf=/etc/conserver/server.local
+OPTS=
+ASROOT=
+
+if [ -f $conf ]; then
+	. $conf
+fi
+if [ -f $localconf ]; then
+	. $localconf
+fi
+
+test -f $DAEMON || exit 0
+
+. /lib/lsb/init-functions
+
+PIDPATH=`dirname $PIDFILE`
+
+case "$1" in
+  start)
+	echo -n "Starting $DESC: "
+	if [ ! -d $PIDPATH ]; then
+		mkdir $PIDPATH
+		chown conservr:adm $PIDPATH
+	fi
+	# somehow conserver hangs dpkg -i, --background is a workaround
+	if [ "$ASROOT" ]; then
+		start-stop-daemon --background --start \
+			--quiet --exec $DAEMON -- -d $OPTS
+	else
+		start-stop-daemon --chuid conservr --background --start \
+			--quiet --exec $DAEMON -- -d $OPTS
+	fi
+	echo "$NAME."
+	;;
+  stop)
+	echo -n "Stopping $DESC: "
+	start-stop-daemon --stop --oknodo --quiet --exec $DAEMON --retry 5
+	echo "$NAME."
+	;;
+  status)
+	status_of_proc -p $PIDFILE $DAEMON "$DESC"
+	;;
+  reload|force-reload)
+	#
+	echo "Reloading $DESC configuration files."
+	start-stop-daemon --stop --oknodo --quiet --exec $DAEMON --retry 5 --signal 1
+	;;
+  rotate)
+	#
+	# make conserver quietly reopen it's log files
+	# 
+	if [ -f $PIDFILE ]; then
+		kill -USR2 `cat $PIDFILE`
+	fi
+	;;
+  restart)
+	#
+	#	If the "reload" option is implemented, move the "force-reload"
+	#	option to the "reload" entry above. If not, "force-reload" is
+	#	just the same as "restart".
+	#
+	$0 stop
+	$0 start
+	;;
+  *)
+	N=/etc/init.d/$NAME
+	echo "Usage: $N {start|stop|restart|reload|force-reload|status|rotate}" >&2
+	exit 1
+	;;
+esac
+
+exit 0
+

@@ -1,0 +1,3 @@
+help: Flows are defined by the 5-tuple, fairness is applied over
+			source and destination addresses and also over individual
+			flows (default)

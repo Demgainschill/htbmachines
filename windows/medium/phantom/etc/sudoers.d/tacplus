@@ -1,0 +1,6 @@
+# Allow any tacacs group login to run this set of commands.  this is just a
+# demonstration.
+# This example uses group tacacs, if you want all tacacs group users
+# to be able to run some commands thorugh sudo.
+# %tacacs	ALL = (root) NOPASSWD:NOEXEC: /usr/bin/whoami
+

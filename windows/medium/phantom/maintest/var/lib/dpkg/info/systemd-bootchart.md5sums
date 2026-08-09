@@ -1,0 +1,8 @@
+f815adf4531c2df643e2121680f2c83a  lib/systemd/system/systemd-bootchart.service
+5b3daa776cf0159552937be6fa638ef0  lib/systemd/systemd-bootchart
+c4298c9b3104c3e01d7964326957a340  usr/share/doc/systemd-bootchart/README
+d04c28c0e0d9cb4583110bc9991214ee  usr/share/doc/systemd-bootchart/changelog.Debian.amd64.gz
+c34d96b5948c01a9f312e174a01a3fa3  usr/share/doc/systemd-bootchart/changelog.Debian.gz
+6c132becb29af1448d226311362f0a42  usr/share/doc/systemd-bootchart/copyright
+1bb8a6fa25255f0dd8f5b8de8f553e8e  usr/share/man/man1/systemd-bootchart.1.gz
+37c0537f691c9c5bcd827201d9afc80c  usr/share/man/man5/bootchart.conf.5.gz

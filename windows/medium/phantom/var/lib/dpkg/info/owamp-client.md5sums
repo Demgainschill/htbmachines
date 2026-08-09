@@ -1,0 +1,10 @@
+075ea754ec2056761605cc2fedbb5ce5  usr/bin/owping
+ffc3ec2748d1100e1df77c04f223f593  usr/bin/powstream
+4862d77448f1b7b07eba767bd49d9822  usr/share/doc/owamp-client/changelog.Debian.gz
+686e204ac41ae02a32ccd592015115e8  usr/share/doc/owamp-client/changelog.gz
+beeebe1e05c5c2edb169314c03886083  usr/share/doc/owamp-client/copyright
+f20a921de9d271d7d15a9456bcef2650  usr/share/man/man1/owfetch.1.gz
+25b56fb3357464e38be7db3d30b3f834  usr/share/man/man1/owping.1.gz
+554a8b742c456a0d7093970a6658f43f  usr/share/man/man1/owstats.1.gz
+bb44193b83669ea4a3f95d5b2a37b0f1  usr/share/man/man1/owup.1.gz
+a9a4a8b1335c7652de69f98c6c64f1dd  usr/share/man/man1/powstream.1.gz

@@ -1,0 +1,2 @@
+help: Show SSH guard log
+run: journalctl --no-hostname --boot --unit sshguard.service

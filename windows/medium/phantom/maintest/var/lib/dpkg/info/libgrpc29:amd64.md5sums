@@ -1,0 +1,10 @@
+887ac2d55bc3dc58908a468d4c470d28  usr/lib/x86_64-linux-gnu/libaddress_sorting.so.29.0.0
+ac3f02ec166f9a82abb035e51fa88eb1  usr/lib/x86_64-linux-gnu/libgpr.so.29.0.0
+8bdf4992817050b2fd99d40d3489ff06  usr/lib/x86_64-linux-gnu/libgrpc.so.29.0.0
+541355b33a11ac721f6d560fdb071737  usr/lib/x86_64-linux-gnu/libgrpc_plugin_support.so.1.51.1
+13420fb248559fedb0865487534a3a6d  usr/lib/x86_64-linux-gnu/libgrpc_unsecure.so.29.0.0
+2565c06bc9c08bdd950d63276242ec04  usr/lib/x86_64-linux-gnu/libupb.so.29.0.0
+b1cae6cbcf63dbbf1773fd63cd3c7bf3  usr/share/doc/libgrpc29/changelog.Debian.amd64.gz
+fc1fb84c770d7d01d32031f0105a0a08  usr/share/doc/libgrpc29/changelog.Debian.gz
+b9c886955f431051bcbc2acfc454628d  usr/share/doc/libgrpc29/copyright
+09b0a4e1f6db75fbc55d4b2b3643f4ea  usr/share/grpc/roots.pem

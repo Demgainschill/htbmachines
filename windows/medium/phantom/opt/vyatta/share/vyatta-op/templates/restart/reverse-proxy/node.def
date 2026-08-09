@@ -1,0 +1,2 @@
+help: Restart reverse-proxy service
+run: if cli-shell-api existsActive load-balancing reverse-proxy; then sudo systemctl restart haproxy.service; else echo "Reverse-Proxy not configured"; fi

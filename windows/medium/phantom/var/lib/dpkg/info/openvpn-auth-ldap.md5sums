@@ -1,0 +1,5 @@
+0445789cd6768a7d567058c9e5c8e21f  usr/lib/openvpn/openvpn-auth-ldap.so
+d86722d50e08f0adeb9e9901d1b3e702  usr/share/doc/openvpn-auth-ldap/README.md
+ea6a844c3c7b709a96c42c1002ec0717  usr/share/doc/openvpn-auth-ldap/changelog.Debian.gz
+c6929f344ea9311de7ede807a12ddbdd  usr/share/doc/openvpn-auth-ldap/copyright
+579e8f11e346c0f06bb86d95fbf5e3a1  usr/share/doc/openvpn-auth-ldap/examples/auth-ldap.conf

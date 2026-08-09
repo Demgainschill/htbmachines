@@ -1,0 +1,7 @@
+type: txt
+help: Size of the RSA key (default: 2048)
+val_help: 2048; RSA key length 2048 bit (default)
+val_help: 3072; RSA key length 3072 bit
+val_help: 4096; RSA key length 4096 bit
+allowed: echo "2048 3072 4096"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(2048|3072|4096)\'   --value \'$VAR(@)\'"; "Invalid value"

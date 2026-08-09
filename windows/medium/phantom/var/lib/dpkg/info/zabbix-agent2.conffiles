@@ -1,0 +1,12 @@
+/etc/init.d/zabbix-agent2
+/etc/logrotate.d/zabbix-agent2
+/etc/zabbix/zabbix_agent2.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/ceph.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/docker.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/memcached.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/modbus.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/mqtt.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/mysql.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/oracle.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/redis.conf
+/etc/zabbix/zabbix_agent2.d/plugins.d/smart.conf

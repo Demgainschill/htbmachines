@@ -1,0 +1,13 @@
+[2024-07-06T17:00:31.737Z] [ message] [vmtoolsd] [913] VMware Tools Version: 12.2.0.41219 (build-21223074)
+[2024-07-06T17:00:31.738Z] [ message] [vmtoolsd] [913] Guest OS details: architecture='X86' bitness='64' distroName='VyOS' distroVersion='1.5-rolling-202407060019' familyName='Linux' kernelVersion='6.6.36-amd64-vyos' prettyName='VyOS 1.5-rolling-202407060019 (current)'
+[2024-07-06T17:00:31.737Z] [ message] [vmtoolsd] [913] Log caching is enabled with maxCacheEntries=4096.
+[2024-07-06T17:00:31.738Z] [ message] [vmtoolsd] [913] Core dump limit set to -1
+[2024-07-06T17:00:31.742Z] [ message] [vmtoolsd] [913] Cannot load message catalog for domain 'vmtoolsd', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:21:39.383Z] [ message] [vmtoolsd] [904] VMware Tools Version: 12.2.0.41219 (build-21223074)
+[2024-07-06T17:21:39.383Z] [ message] [vmtoolsd] [904] Guest OS details: architecture='X86' bitness='64' distroName='VyOS' distroVersion='1.5-rolling-202407060019' familyName='Linux' kernelVersion='6.6.36-amd64-vyos' prettyName='VyOS 1.5-rolling-202407060019 (current)'
+[2024-07-06T17:21:39.383Z] [ message] [vmtoolsd] [904] Log caching is enabled with maxCacheEntries=4096.
+[2024-07-06T17:21:39.383Z] [ message] [vmtoolsd] [904] Core dump limit set to -1
+[2024-07-06T19:31:33.289Z] [ message] [vmtoolsd] [907] VMware Tools Version: 12.2.0.41219 (build-21223074)
+[2024-07-06T19:31:33.289Z] [ message] [vmtoolsd] [907] Guest OS details: architecture='X86' bitness='64' distroName='VyOS' distroVersion='1.5-rolling-202407060019' familyName='Linux' kernelVersion='6.6.36-amd64-vyos' prettyName='VyOS 1.5-rolling-202407060019 (current)'
+[2024-07-06T19:31:33.289Z] [ message] [vmtoolsd] [907] Log caching is enabled with maxCacheEntries=4096.
+[2024-07-06T19:31:33.289Z] [ message] [vmtoolsd] [907] Core dump limit set to -1

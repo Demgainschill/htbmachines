@@ -1,0 +1,4 @@
+type: txt
+help: Set flowtable offload target. Action offload must be defined to
+			use this setting
+allowed: /bin/cli-shell-api listNodes firewall flowtable

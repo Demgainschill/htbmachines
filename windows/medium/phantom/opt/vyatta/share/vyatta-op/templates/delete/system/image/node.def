@@ -1,0 +1,2 @@
+help: Remove an installed image from the system
+run: sudo ${vyos_op_scripts_dir}/image_manager.py --action delete

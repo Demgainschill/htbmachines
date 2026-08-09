@@ -1,0 +1,2 @@
+help: Show log for Network Address Translation (NAT)
+run: journalctl --no-hostname --boot -k | egrep "\[(STATIC-)?(DST|SRC)-NAT-[0-9]+(-MASQ)?\]"

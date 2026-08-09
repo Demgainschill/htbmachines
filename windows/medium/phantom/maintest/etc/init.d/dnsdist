@@ -1,0 +1,13 @@
+#!/usr/bin/env /lib/init/init-d-script
+### BEGIN INIT INFO
+# Provides:          dnsdist
+# Required-Start:    $syslog $remote_fs
+# Required-Stop:     $syslog $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: DNS Loadbalancer
+# Description:       Debian init script to start the dnsdist daemon.
+### END INIT INFO
+DAEMON=/usr/bin/dnsdist
+START_ARGS="-b -m"
+DAEMON_ARGS="-u _dnsdist -g _dnsdist --supervised"

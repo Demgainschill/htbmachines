@@ -1,0 +1,19 @@
+# This is private data. Do not parse.
+UID=1002
+USER=vyos
+ACTIVE=1
+IS_DISPLAY=1
+STATE=active
+REMOTE=1
+TYPE=tty
+ORIGINAL_TYPE=tty
+CLASS=user
+SCOPE=session-1.scope
+FIFO=/run/systemd/sessions/1.ref
+REMOTE_HOST=192.168.1.25
+SERVICE=sshd
+POSITION=0
+LEADER=2592
+AUDIT=1
+REALTIME=1720294381828798
+MONOTONIC=106369412

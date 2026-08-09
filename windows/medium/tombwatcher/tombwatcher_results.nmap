@@ -1,0 +1,96 @@
+# Nmap 7.99 scan initiated Wed Jul 15 14:43:12 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA tombwatcher_results 10.129.232.167
+Increasing send delay for 10.129.232.167 from 0 to 5 due to 11 out of 22 dropped probes since last increase.
+Increasing send delay for 10.129.232.167 from 5 to 10 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 10.129.232.167 from 10 to 20 due to 11 out of 15 dropped probes since last increase.
+Nmap scan report for 10.129.232.167
+Host is up (0.11s latency).
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-15 13:15:04Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: tombwatcher.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-15T13:16:37+00:00; +3h59m49s from scanner time.
+| ssl-cert: Subject: commonName=DC01.tombwatcher.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.tombwatcher.htb
+| Issuer: commonName=tombwatcher-CA-1
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2024-11-16T00:47:59
+| Not valid after:  2025-11-16T00:47:59
+| MD5:     a396 4dc0 104d 3c58 54e0 19e3 c2ae 0666
+| SHA-1:   fe5e 76e2 d528 4a33 8adf c84e 92e3 900e 4234 ef9c
+|_SHA-256: 5128 aaea b79b bc06 762a 04d6 b475 4a21 a52c d1b1 205a 0440 85bd f5d6 2734 6ea9
+445/tcp   open  microsoft-ds?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: tombwatcher.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-15T13:16:36+00:00; +3h59m48s from scanner time.
+| ssl-cert: Subject: commonName=DC01.tombwatcher.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.tombwatcher.htb
+| Issuer: commonName=tombwatcher-CA-1
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2024-11-16T00:47:59
+| Not valid after:  2025-11-16T00:47:59
+| MD5:     a396 4dc0 104d 3c58 54e0 19e3 c2ae 0666
+| SHA-1:   fe5e 76e2 d528 4a33 8adf c84e 92e3 900e 4234 ef9c
+|_SHA-256: 5128 aaea b79b bc06 762a 04d6 b475 4a21 a52c d1b1 205a 0440 85bd f5d6 2734 6ea9
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: tombwatcher.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-15T13:16:37+00:00; +3h59m49s from scanner time.
+| ssl-cert: Subject: commonName=DC01.tombwatcher.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.tombwatcher.htb
+| Issuer: commonName=tombwatcher-CA-1
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2024-11-16T00:47:59
+| Not valid after:  2025-11-16T00:47:59
+| MD5:     a396 4dc0 104d 3c58 54e0 19e3 c2ae 0666
+| SHA-1:   fe5e 76e2 d528 4a33 8adf c84e 92e3 900e 4234 ef9c
+|_SHA-256: 5128 aaea b79b bc06 762a 04d6 b475 4a21 a52c d1b1 205a 0440 85bd f5d6 2734 6ea9
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: tombwatcher.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-15T13:16:36+00:00; +3h59m48s from scanner time.
+| ssl-cert: Subject: commonName=DC01.tombwatcher.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.tombwatcher.htb
+| Issuer: commonName=tombwatcher-CA-1
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2024-11-16T00:47:59
+| Not valid after:  2025-11-16T00:47:59
+| MD5:     a396 4dc0 104d 3c58 54e0 19e3 c2ae 0666
+| SHA-1:   fe5e 76e2 d528 4a33 8adf c84e 92e3 900e 4234 ef9c
+|_SHA-256: 5128 aaea b79b bc06 762a 04d6 b475 4a21 a52c d1b1 205a 0440 85bd f5d6 2734 6ea9
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        .NET Message Framing
+49666/tcp open  msrpc         Microsoft Windows RPC
+49695/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49696/tcp open  msrpc         Microsoft Windows RPC
+49697/tcp open  msrpc         Microsoft Windows RPC
+49716/tcp open  msrpc         Microsoft Windows RPC
+49722/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-07-15T13:15:55
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 3h59m48s, deviation: 0s, median: 3h59m47s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jul 15 14:46:48 2026 -- 1 IP address (1 host up) scanned in 215.90 seconds

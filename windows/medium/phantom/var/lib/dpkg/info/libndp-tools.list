@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/bin
+/usr/bin/ndptool
+/usr/share
+/usr/share/doc
+/usr/share/doc/libndp-tools
+/usr/share/doc/libndp-tools/changelog.Debian.gz
+/usr/share/doc/libndp-tools/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/ndptool.8.gz

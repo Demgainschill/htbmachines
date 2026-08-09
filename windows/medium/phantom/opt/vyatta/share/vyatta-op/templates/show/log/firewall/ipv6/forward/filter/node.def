@@ -1,0 +1,2 @@
+help: Show firewall IPv6 forward filter log
+run: journalctl --no-hostname --boot -k | grep ipv6-FWD-filter

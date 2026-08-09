@@ -1,0 +1,14 @@
+# /etc/shells: valid login shells
+/bin/sh
+/usr/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/bin/dash
+/usr/bin/dash
+/sbin/radius_shell
+/usr/sbin/radius_shell
+/bin/vbash
+/usr/bin/vbash
+/usr/bin/screen

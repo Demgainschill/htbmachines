@@ -1,0 +1,2 @@
+help: Show SSH server dynamic-protection blocked attackers
+run: sudo ${vyos_op_scripts_dir}/ssh.py show_dynamic_protection

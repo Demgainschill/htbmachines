@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sun Jul 26 07:37:24 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA darkzeroreturns_results 10.129.12.182
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.12.182 ()	Status: Up
+Host: 10.129.12.182 ()	Ports: 22/open/tcp//ssh//OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx|1.24.0 (Ubuntu)/	Ignored State: filtered (65533)
+# Nmap done at Sun Jul 26 07:40:38 2026 -- 1 IP address (1 host up) scanned in 193.55 seconds

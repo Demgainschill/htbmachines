@@ -1,0 +1,3 @@
+help: Execute shell in given VRF instance
+allowed: /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo
+run: sudo ip vrf exec $3 su - $(whoami)

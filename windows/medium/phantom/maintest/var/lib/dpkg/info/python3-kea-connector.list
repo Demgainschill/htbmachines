@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/kea
+/usr/lib/python3/dist-packages/kea/kea_conn.py
+/usr/lib/python3/dist-packages/kea/kea_connector3.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-kea-connector
+/usr/share/doc/python3-kea-connector/NEWS.Debian.gz
+/usr/share/doc/python3-kea-connector/changelog.Debian.gz
+/usr/share/doc/python3-kea-connector/changelog.gz
+/usr/share/doc/python3-kea-connector/copyright

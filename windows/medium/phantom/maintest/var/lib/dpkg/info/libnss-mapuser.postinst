@@ -1,0 +1,14 @@
+#!/bin/sh
+# postinst script for libnss-mapuser
+#
+# see: dh_installdeb(1)
+
+set -e
+
+# needed for install, upgrade, remove, and purge, including aborts
+pam-auth-update --package
+
+
+
+
+exit 0

@@ -1,0 +1,2 @@
+help: Show x509 CA certificate in PEM format
+run: sudo ${vyos_op_scripts_dir}/pki.py --action show --ca "$4" --pem

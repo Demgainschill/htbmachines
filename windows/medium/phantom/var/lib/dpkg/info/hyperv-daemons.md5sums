@@ -1,0 +1,11 @@
+beeb9c58024a3e757f4e8d1bd6c6dfbc  lib/systemd/system/hv-fcopy-daemon.service
+4d0881be913f1d2d53d41c83c19dc4e3  lib/systemd/system/hv-kvp-daemon.service
+8b64ff5c233b289216d18058dd86d90d  lib/systemd/system/hv-vss-daemon.service
+2c63e3bf68cbe39d9c729ebf421276c3  lib/udev/rules.d/60-hyperv-daemons.rules
+0f5e776357ed4441e3f0cb93e4ef4fcb  usr/sbin/hv_fcopy_daemon
+062e849438b02c63f1094567494f562e  usr/sbin/hv_kvp_daemon
+e5b2429c04d5619cd3a7c4e8dd2ad63b  usr/sbin/hv_vss_daemon
+0bb3b0c48965c1300b26a796db4b5614  usr/share/doc/hyperv-daemons/README.Debian
+6f3c938ed2cbf73c6aed500e4982f192  usr/share/doc/hyperv-daemons/changelog.Debian.gz
+9fd298cedfdc3554b2625e165d0f9997  usr/share/doc/hyperv-daemons/copyright
+70ff036d2ded51947042bbc72615f945  usr/share/lintian/overrides/hyperv-daemons

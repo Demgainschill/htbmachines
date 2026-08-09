@@ -1,0 +1,3 @@
+help: Add a new image to the system
+allowed: echo "/path/to/vyos-image.iso "http://example.com/vyos-image.iso" latest"
+run: sudo ${vyos_op_scripts_dir}/image_installer.py --action add --image-path "${4}"

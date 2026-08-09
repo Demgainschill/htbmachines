@@ -1,0 +1,12 @@
+3f6a603115c6a039bdfec51a0fe5593d  usr/lib/x86_64-linux-gnu/libyang.so.2.46.3
+bb86deea95f7a10a8c18e2314bb35b52  usr/share/doc/libyang2/README.Debian
+0c7cd7d13e2f2b9d42e136f1784ed0bb  usr/share/doc/libyang2/changelog.Debian.gz
+90270b90bf2a24081b5230f2b57a7759  usr/share/doc/libyang2/copyright
+a5f4683689d49edcbbf26aead22ee0f2  usr/share/yang/modules/libyang/ietf-datastores@2018-02-14.yang
+fd06e465f26f1e7d0253bbf77e7e55e1  usr/share/yang/modules/libyang/ietf-inet-types@2013-07-15.yang
+1bed6c8808a1a1e69dd777998476633c  usr/share/yang/modules/libyang/ietf-yang-library@2019-01-04.yang
+d9cf35000d1c4e03ee68f082d63ce6d1  usr/share/yang/modules/libyang/ietf-yang-metadata@2016-08-05.yang
+8e1ea459bd4b107059e4b52040ce7dc9  usr/share/yang/modules/libyang/ietf-yang-schema-mount@2019-01-14.yang
+595f293acf32bc17220e258c3df7a1b7  usr/share/yang/modules/libyang/ietf-yang-structure-ext@2020-06-17.yang
+0b888fed449f5a648859c2a2c4d9b567  usr/share/yang/modules/libyang/ietf-yang-types@2013-07-15.yang
+995e405e95ba0f6cedef141070ac2c36  usr/share/yang/modules/libyang/yang@2022-06-16.yang

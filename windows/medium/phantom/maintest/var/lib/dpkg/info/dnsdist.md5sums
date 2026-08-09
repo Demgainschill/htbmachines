@@ -1,0 +1,10 @@
+9798eeabe4e48ecdaf836a8c0c9443a9  lib/systemd/system/dnsdist.service
+28c367ebb6e2952f70e9143d85b990aa  lib/systemd/system/dnsdist@.service
+d3d1d14f8ac322abb52941b5966ad785  usr/bin/dnsdist
+e5f88bb72b36edfb7d5b209f1c19d9cc  usr/share/dnsdist/snmp/DNSDIST-MIB.txt
+dd4b4a9746e6014150b8a619bd39837a  usr/share/doc/dnsdist/README.md
+aac3f935bc5471f7f899a1af3bb6d855  usr/share/doc/dnsdist/changelog.Debian.gz
+d922f5204980728236aa3be14e099ceb  usr/share/doc/dnsdist/copyright
+3015bb12435ab1e98aec6204748f4d9d  usr/share/doc/dnsdist/examples/dnsdist.conf
+d223bbdb49538df268a54242db8bcef0  usr/share/lintian/overrides/dnsdist
+7b3c8e0f1eb4b40c72fda007408f2af3  usr/share/man/man1/dnsdist.1.gz

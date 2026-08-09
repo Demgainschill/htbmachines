@@ -1,0 +1,8 @@
+0cb91a54443f16bf6989348555013467  usr/lib/pppd/2.4.9/sstp-pppd-plugin.so
+efb6a3f9b3c699a281542c6f3a1248bf  usr/sbin/sstpc
+aebde5b210b9926b90c7967671051ffe  usr/share/doc/sstp-client/changelog.Debian.gz
+78cd81c09ed6bd1a8eb69373b9a9510b  usr/share/doc/sstp-client/changelog.gz
+a07c492072d4f4cce3863755c73aa1ed  usr/share/doc/sstp-client/copyright
+959a1b27af7231584b8ecccad96e3019  usr/share/doc/sstp-client/sstp-test-nopty.example
+bbd60d2996043362f0fae9c5faf3df72  usr/share/doc/sstp-client/sstp-test.example
+7614e1eb9ed4920d3c8a3862613edcc8  usr/share/man/man8/sstpc.8.gz

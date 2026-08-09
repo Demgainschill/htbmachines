@@ -1,0 +1,5 @@
+type: txt
+help: Treat-as-withdraw any incoming BGP UPDATE messages that contain
+			the specified attribute
+val_help: u32:1-255; Attribute number
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-255\"  --value \'$VAR(@)\'"; "Invalid value"

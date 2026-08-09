@@ -1,0 +1,6 @@
+type: txt
+help: Select security operation mode (default: accept)
+val_help: accept; Accept all clients unless found in deny list (default)
+val_help: deny; Deny all clients unless found in accept list
+allowed: echo "accept deny"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(accept|deny)\'   --value \'$VAR(@)\'"; "Invalid value"

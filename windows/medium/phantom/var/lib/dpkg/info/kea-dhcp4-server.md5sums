@@ -1,0 +1,7 @@
+b26869c72aaba3fa2b61dd6ef931b67d  lib/systemd/system/kea-dhcp4-server.service
+249e1985a4d64bae06349cb7270464bd  usr/sbin/kea-dhcp4
+17c21540d41bedb61b09bd55ee8cb145  usr/share/doc/kea-dhcp4-server/NEWS.Debian.gz
+ec5fdcf32104352594f893582a811a5f  usr/share/doc/kea-dhcp4-server/changelog.Debian.gz
+2c4ed6777d152a99fdb2b8fe16266e29  usr/share/doc/kea-dhcp4-server/changelog.gz
+53640d962f6dd5856da55a8bec8d64b4  usr/share/doc/kea-dhcp4-server/copyright
+70f212e1b65a82c75e10341a2a77cfb0  usr/share/man/man8/kea-dhcp4.8.gz

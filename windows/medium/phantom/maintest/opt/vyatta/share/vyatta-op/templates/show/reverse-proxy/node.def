@@ -1,0 +1,2 @@
+help: Show load-balancing reverse-proxy
+run: sudo ${vyos_op_scripts_dir}/reverseproxy.py show

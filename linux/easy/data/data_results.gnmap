@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Sat Aug  8 07:32:45 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA data_results 10.129.234.47
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.234.47 ()	Status: Down
+# Nmap done at Sat Aug  8 07:32:47 2026 -- 1 IP address (0 hosts up) scanned in 2.25 seconds

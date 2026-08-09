@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libsstp_api-0.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsstp-api-0
+/usr/share/doc/libsstp-api-0/changelog.Debian.gz
+/usr/share/doc/libsstp-api-0/changelog.gz
+/usr/share/doc/libsstp-api-0/copyright

@@ -1,0 +1,9 @@
+452041d4343f9cc6bca5283144e6eb69  lib/systemd/system/twamp-server.service
+341f772559362e185be24c172c973e98  usr/sbin/twampd
+f991a1c2cec5c3c1895ac2ce16336321  usr/share/doc/twamp-server/changelog.Debian.gz
+686e204ac41ae02a32ccd592015115e8  usr/share/doc/twamp-server/changelog.gz
+beeebe1e05c5c2edb169314c03886083  usr/share/doc/twamp-server/copyright
+bcf75c13adf2b1cc0f7a6c3e0f1a239c  usr/share/man/man5/twamp-server.conf.5.gz
+ba1763c4c55df6e45ee66651e46b9d29  usr/share/man/man5/twamp-server.limits.5.gz
+3341ded0be6a6fe6d9228cfbbef0c300  usr/share/man/man5/twamp-server.pfs.5.gz
+28a770a67221ffda0ae29298d5860ffb  usr/share/man/man8/twampd.8.gz

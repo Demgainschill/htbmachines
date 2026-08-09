@@ -1,0 +1,4 @@
+type: txt
+help: Specify SRv6 locator
+val_help: txt; SRv6 locator name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Invalid value"

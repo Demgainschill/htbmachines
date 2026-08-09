@@ -1,0 +1,2 @@
+help: Show contents of current master logging buffer
+run: journalctl --no-hostname --boot

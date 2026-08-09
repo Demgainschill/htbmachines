@@ -1,0 +1,2 @@
+help: Show firewall IPv6 input filter log
+run: journalctl --no-hostname --boot -k | grep ipv6-INP-filter

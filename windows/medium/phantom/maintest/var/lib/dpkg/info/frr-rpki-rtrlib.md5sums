@@ -1,0 +1,4 @@
+958667efefe1ecf595368eb6c078fc3a  usr/lib/x86_64-linux-gnu/frr/modules/bgpd_rpki.so
+ee6f9397501226372a033021f4980d20  usr/share/doc/frr-rpki-rtrlib/changelog.Debian.gz
+116c94190bd7de6896d53ee562327310  usr/share/doc/frr-rpki-rtrlib/copyright
+9022a70080bcb22130ec647a88570d97  usr/share/lintian/overrides/frr-rpki-rtrlib

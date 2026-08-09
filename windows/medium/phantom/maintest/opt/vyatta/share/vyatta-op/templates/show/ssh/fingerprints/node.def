@@ -1,0 +1,2 @@
+help: Show SSH server public key fingerprints
+run: ${vyos_op_scripts_dir}/ssh.py show_fingerprints

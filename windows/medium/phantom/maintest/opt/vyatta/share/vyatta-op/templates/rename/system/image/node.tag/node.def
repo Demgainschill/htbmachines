@@ -1,0 +1,2 @@
+help: System image to rename
+allowed: sudo ${vyos_op_scripts_dir}/image_manager.py --action list

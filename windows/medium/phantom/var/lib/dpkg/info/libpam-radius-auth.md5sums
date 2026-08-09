@@ -1,0 +1,8 @@
+f776650c2afd2b3d38b37c12e56c6c4f  lib/x86_64-linux-gnu/security/pam_radius_auth.so
+c54aae1a70484707281dd010151402c2  usr/share/doc/libpam-radius-auth/README.Debian
+759a647f735691b80d5014aa829996d3  usr/share/doc/libpam-radius-auth/changelog.Debian.gz
+2445c0a06ab6e3d5630916f526dfdd2e  usr/share/doc/libpam-radius-auth/changelog.gz
+01e28efbf56ddabc748e069ab0b2cb76  usr/share/doc/libpam-radius-auth/copyright
+1b4c145e1d5b60f844f2c48307b2dd8c  usr/share/lintian/overrides/libpam-radius-auth
+e019e17bb32f3f0edeac8688e61277d4  usr/share/man/man5/pam_radius_auth.5.gz
+9c958e78de8b0b25cfcab02dd2e2e5e0  usr/share/man/man8/pam_radius_auth.8.gz

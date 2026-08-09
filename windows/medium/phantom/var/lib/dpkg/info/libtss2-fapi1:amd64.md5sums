@@ -1,0 +1,6 @@
+c3fb2c04fc1131431ad3981f0e11e293  usr/lib/tmpfiles.d/tpm2-tss-fapi.conf
+276e891b0283a6c85700810c1ec6353e  usr/lib/x86_64-linux-gnu/libtss2-fapi.so.1.0.0
+8fc8e39280d538e764ce3968d0bc251a  usr/share/doc/libtss2-fapi1/changelog.Debian.gz
+5639e9555a883275e76f26f591048fc1  usr/share/doc/libtss2-fapi1/changelog.gz
+0c86ca1a9ffbfeba1bd76d25b841976b  usr/share/doc/libtss2-fapi1/copyright
+166e7b1233106e5d3dbb93dc08d5f41b  usr/share/lintian/overrides/libtss2-fapi1

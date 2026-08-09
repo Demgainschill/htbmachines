@@ -1,0 +1,12 @@
+0d6755ae9541512789a7f92ed923ce9f  usr/bin/unionfs
+55e323592e51c769a73be04b692271bd  usr/bin/unionfsctl
+45615fbc5faeb901c306b233f79515e5  usr/sbin/mount.unionfs
+880420db34d9fce4cb6d6a54606d4c06  usr/share/doc/unionfs-fuse/CREDITS
+7e1f2baf01f4760f3a384e6a74237d1e  usr/share/doc/unionfs-fuse/NEWS.gz
+3a0ec937fd7f0810ec4db19abd6a2251  usr/share/doc/unionfs-fuse/changelog.Debian.amd64.gz
+27f564992aa3c122b40f6cd8d957f862  usr/share/doc/unionfs-fuse/changelog.Debian.gz
+054e431298e84a77e1201d1e2714d333  usr/share/doc/unionfs-fuse/copyright
+0455bce415f1b881aed3898af5b1eb73  usr/share/doc/unionfs-fuse/examples/S01a-unionfs-live-cd.sh
+8e135b18ae463bf253b2f0c207890acc  usr/share/doc/unionfs-fuse/examples/rc.local.omit-pid.sh
+276e5aa40a97a5327998d347f88460d6  usr/share/doc/unionfs-fuse/examples/unionfs-fuse-nfs-root
+17ccc782dd0db221a0c6aa7abbd2bdca  usr/share/man/man8/unionfs.8.gz

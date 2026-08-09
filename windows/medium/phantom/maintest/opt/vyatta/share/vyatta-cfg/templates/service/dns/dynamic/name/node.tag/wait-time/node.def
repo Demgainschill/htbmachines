@@ -1,0 +1,4 @@
+type: txt
+help: Time in seconds to wait between update attempts
+val_help: u32:60-86400; Time in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 60-86400\"  --value \'$VAR(@)\'"; "Wait time must be between 60 and 86400 seconds"

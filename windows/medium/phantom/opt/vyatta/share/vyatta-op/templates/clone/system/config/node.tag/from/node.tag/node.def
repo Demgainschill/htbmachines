@@ -1,0 +1,3 @@
+help: Clone system configuration from an image to another one
+allowed: echo "running" && ${vyos_completion_dir}/list_images.py
+run: sudo ${vyos_op_scripts_dir}/file.py --clone-from $6 $4

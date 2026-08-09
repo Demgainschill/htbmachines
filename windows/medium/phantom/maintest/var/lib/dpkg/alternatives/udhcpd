@@ -1,0 +1,6 @@
+auto
+/usr/sbin/udhcpd
+
+/usr/sbin/udhcpd.bb
+10
+

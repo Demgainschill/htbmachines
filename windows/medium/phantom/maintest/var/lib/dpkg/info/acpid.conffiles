@@ -1,0 +1,5 @@
+/etc/default/acpid
+/etc/init.d/acpid
+/etc/sv/acpid/.meta/installed
+/etc/sv/acpid/log/run
+/etc/sv/acpid/run

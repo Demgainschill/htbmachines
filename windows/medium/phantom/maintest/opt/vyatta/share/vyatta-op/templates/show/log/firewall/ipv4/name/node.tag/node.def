@@ -1,0 +1,3 @@
+help: Show custom IPv4 firewall log
+allowed: /bin/cli-shell-api listActiveNodes firewall ipv4 name | sed -e "s/'//g" && echo
+run: journalctl --no-hostname --boot -k | grep ipv4-NAM-$6

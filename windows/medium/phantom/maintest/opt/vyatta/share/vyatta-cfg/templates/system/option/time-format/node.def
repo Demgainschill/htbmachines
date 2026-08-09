@@ -1,0 +1,6 @@
+type: txt
+help: System time-format (default: 12-hour)
+val_help: 12-hour; 12 hour time format (default)
+val_help: 24-hour; 24 hour time format
+allowed: echo "12-hour 24-hour"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(12-hour|24-hour)\'   --value \'$VAR(@)\'"; "Invalid value"

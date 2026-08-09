@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/bin
+/usr/bin/crun
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libcrun.a
+/usr/share
+/usr/share/doc
+/usr/share/doc/crun
+/usr/share/doc/crun/README.md.gz
+/usr/share/doc/crun/changelog.Debian.gz
+/usr/share/doc/crun/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/crun.1.gz

@@ -1,0 +1,6 @@
+type: txt
+help: Security mode for TACACS+ authentication (default: optional)
+val_help: mandatory; Deny access immediately if TACACS+ answers with REJECT
+val_help: optional; Pass to the next authentication method if TACACS+ answers with REJECT (default)
+allowed: echo "mandatory optional"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(mandatory|optional)\'   --value \'$VAR(@)\'"; "Invalid value"

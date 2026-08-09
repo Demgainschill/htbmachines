@@ -1,0 +1,8 @@
+58d4e4c65631a88a7cfa46bcb3d189cf  lib/systemd/system/strongswan.service
+5f9b315f67263207775369512658e9fd  usr/sbin/charon-systemd
+25c174f75715864b7d825dc6e565c17e  usr/share/doc/charon-systemd/NEWS.Debian.gz
+70a4f74ec2643f68871bd4210acffe7a  usr/share/doc/charon-systemd/changelog.Debian.gz
+7580e3007897a92e3311df1ba4dab82e  usr/share/doc/charon-systemd/changelog.gz
+8542ae617d33d7b35208cac3d3b5755b  usr/share/doc/charon-systemd/copyright
+05678ed224fba58dbcc5dfb365386ef0  usr/share/lintian/overrides/charon-systemd
+ce7055fbf9daee369f193b185e434c6f  usr/share/strongswan/templates/config/strongswan.d/charon-systemd.conf

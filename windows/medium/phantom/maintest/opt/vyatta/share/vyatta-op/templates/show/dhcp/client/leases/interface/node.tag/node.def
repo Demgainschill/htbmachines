@@ -1,0 +1,3 @@
+help:  Show DHCP client information for a given interface
+allowed: ${vyos_completion_dir}/list_interfaces --broadcast
+run: ${vyos_op_scripts_dir}/dhcp.py show_client_leases --family inet --interface $6

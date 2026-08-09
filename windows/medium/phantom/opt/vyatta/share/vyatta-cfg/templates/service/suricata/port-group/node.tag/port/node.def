@@ -1,0 +1,8 @@
+multi:
+type: txt
+help: Port number
+val_help: u32:1-65535; Numeric port to match
+val_help: !u32:1-65535; Numeric port to exclude from matches
+val_help: start-end; Numbered port range (e.g. 1001-1005) to match
+val_help: !start-end; Numbered port range (e.g. !1001-1005) to exclude from matches
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/port-range \" --exec \"${vyos_validators_dir}/port-range-exclude \"  --value \'$VAR(@)\'"; "Invalid value"

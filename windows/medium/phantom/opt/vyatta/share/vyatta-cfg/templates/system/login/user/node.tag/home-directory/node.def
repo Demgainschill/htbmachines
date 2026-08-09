@@ -1,0 +1,4 @@
+type: txt
+help: Home directory
+val_help: txt; Path to home directory
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'\\/$|(\\/[a-zA-Z_0-9-.]+)+\'   --value \'$VAR(@)\'"; "Invalid value"

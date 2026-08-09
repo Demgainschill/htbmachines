@@ -1,0 +1,4 @@
+type: txt
+help: Refresh interval for IPv6 routes (default: 30000)
+val_help: u32:10000-120000; Time in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 10000-120000\"  --value \'$VAR(@)\'"; "Route-refresh must be between 10000 and 120000 milliseconds"

@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sun Jul  5 16:17:23 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA access_results 10.129.12.30
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.12.30 ()	Status: Up
+Host: 10.129.12.30 ()	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 23/open/tcp//telnet//Microsoft Windows XP telnetd/, 80/open/tcp//http//Microsoft IIS httpd 7.5/	Ignored State: filtered (65532)
+# Nmap done at Sun Jul  5 16:18:10 2026 -- 1 IP address (1 host up) scanned in 46.70 seconds

@@ -1,0 +1,4 @@
+help: Show the contents of a file, a directory or an image
+comptype: imagefiles
+allowed: echo -n "<imagefiles>"
+run: sudo ${vyos_op_scripts_dir}/file.py --show $3

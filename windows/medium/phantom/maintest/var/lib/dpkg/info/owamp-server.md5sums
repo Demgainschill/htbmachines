@@ -1,0 +1,9 @@
+a7051f2abd62a9eb0e7a728dd72c1939  lib/systemd/system/owamp-server.service
+61d00f817cef7853cd5363e479457599  usr/sbin/owampd
+2dedcfc7641abdfa320bcf17ce079459  usr/share/doc/owamp-server/changelog.Debian.gz
+686e204ac41ae02a32ccd592015115e8  usr/share/doc/owamp-server/changelog.gz
+beeebe1e05c5c2edb169314c03886083  usr/share/doc/owamp-server/copyright
+3d7ab1757dd5192bd52068ad1a6eb0ae  usr/share/man/man5/owamp-server.conf.5.gz
+7fa9d8e03563b92e760a3a71b1759a10  usr/share/man/man5/owamp-server.limits.5.gz
+0512dbda1079f62e4853e455114e0cfc  usr/share/man/man5/owamp-server.pfs.5.gz
+130a492b3da05f3313e1f7727ddd9990  usr/share/man/man8/owampd.8.gz

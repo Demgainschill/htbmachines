@@ -1,0 +1,3 @@
+aed16b87748027f06b735f4082664c17  lib/modules/6.6.36-amd64-vyos/updates/drivers/net/ethernet/intel/ixgbe/ixgbe.ko
+0de9ea1c7c65937a626e8fa0156fd392  usr/share/doc/vyos-intel-ixgbe/changelog.gz
+68e1df7a5353ea359817a66aa56d7b4f  usr/share/man/man7/ixgbe.7.gz

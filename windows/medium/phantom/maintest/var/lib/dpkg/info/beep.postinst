@@ -1,0 +1,14 @@
+#!/bin/sh
+# postinst for beep
+# copyright 2019 by Rhonda D'Vine <rhonda@debian.org>
+# Licenced under MIT
+
+set -e
+
+# get rid of debconf database
+if [ "$1" = configure ] && [ -e /usr/share/debconf/confmodule ]; then
+	. /usr/share/debconf/confmodule
+	db_purge
+fi
+
+

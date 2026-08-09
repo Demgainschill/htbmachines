@@ -1,0 +1,2 @@
+help: Clear Dynamic DNS information cache (ddclient)
+run: sudo rm -f /run/ddclient/ddclient.cache

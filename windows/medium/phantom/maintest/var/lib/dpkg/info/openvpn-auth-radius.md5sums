@@ -1,0 +1,8 @@
+83468e23039323bd951b53fdcaa8b478  usr/lib/openvpn/radiusplugin.so
+3c3b9f0678cda906dc1a466046ba44df  usr/share/doc/openvpn-auth-radius/README.gz
+f54cc691301cebc3ab6da4660b4a12e2  usr/share/doc/openvpn-auth-radius/ToDo
+d7682acf093df6d2b5907c2a6c5f5ec7  usr/share/doc/openvpn-auth-radius/changelog.Debian.gz
+49a0b3a3e0f9a8c10c9c132dddcfe2b6  usr/share/doc/openvpn-auth-radius/changelog.gz
+412e689c352b1c5bd6c122ee2fc6c933  usr/share/doc/openvpn-auth-radius/copyright
+ee1b4b8b1e622a53b76439d7cab86f8a  usr/share/doc/openvpn-auth-radius/examples/radiusplugin.cnf
+702697b0da893a78bf8b1d6bc2ffe5b4  usr/share/doc/openvpn-auth-radius/examples/vsascript.pl

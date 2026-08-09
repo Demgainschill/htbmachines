@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sat Aug  8 08:41:41 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA pennyworth_results 10.129.44.201
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.44.201 ()	Status: Up
+Host: 10.129.44.201 ()	Ports: 8080/open/tcp//http//Jetty 9.4.39.v20210325/	Ignored State: closed (65534)
+# Nmap done at Sat Aug  8 08:42:28 2026 -- 1 IP address (1 host up) scanned in 46.87 seconds

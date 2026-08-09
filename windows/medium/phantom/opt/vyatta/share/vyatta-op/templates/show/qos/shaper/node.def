@@ -1,0 +1,2 @@
+help: Show QoS shaping information
+run: sudo ${vyos_op_scripts_dir}/qos.py show_shaper

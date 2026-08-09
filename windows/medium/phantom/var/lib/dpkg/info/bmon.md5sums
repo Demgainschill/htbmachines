@@ -1,0 +1,6 @@
+38185b49bb08bb5bf0c9d969c6b9de1e  usr/bin/bmon
+052bdcf9f74306d633aa0fc378805243  usr/share/doc/bmon/changelog.Debian.gz
+daef065b491f3ae5243062d3cabb0022  usr/share/doc/bmon/changelog.gz
+f47a84e712f469c3d5fd4fa42152ea92  usr/share/doc/bmon/copyright
+117c0f6670c64fd3a20c423b66509d01  usr/share/doc/bmon/examples/bmon.conf
+5f64898b0f917a2f698a347118b76e0c  usr/share/man/man8/bmon.8.gz

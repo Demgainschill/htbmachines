@@ -1,0 +1,2 @@
+help: Show NAT source log
+run: journalctl --no-hostname --boot -k | egrep "\[SRC-NAT-[0-9]+(-MASQ)?\]"""

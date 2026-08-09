@@ -1,0 +1,2 @@
+help: Show visual ASCII art representation of the public key
+run: ${vyos_op_scripts_dir}/ssh.py show_fingerprints --ascii

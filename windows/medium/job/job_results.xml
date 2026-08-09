@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sat Jul 18 08:36:49 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA job_results 10.129.234.73 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA job_results 10.129.234.73" start="1784344009" startstr="Sat Jul 18 08:36:49 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1784344009"/>
+<taskend task="NSE" time="1784344009"/>
+<taskbegin task="NSE" time="1784344009"/>
+<taskend task="NSE" time="1784344009"/>
+<taskbegin task="NSE" time="1784344009"/>
+<taskend task="NSE" time="1784344009"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1784344009"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1784344009"/>
+<taskbegin task="SYN Stealth Scan" time="1784344009"/>
+<taskend task="SYN Stealth Scan" time="1784344059" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1784344059"/>
+<taskend task="Service scan" time="1784344072" extrainfo="5 services on 1 host"/>
+<taskbegin task="NSE" time="1784344072"/>

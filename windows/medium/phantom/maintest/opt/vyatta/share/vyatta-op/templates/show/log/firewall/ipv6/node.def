@@ -1,0 +1,2 @@
+help: Show firewall IPv6 log
+run: journalctl --no-hostname --boot -k | egrep "ipv6-(FWD|INP|OUT|NAM)"

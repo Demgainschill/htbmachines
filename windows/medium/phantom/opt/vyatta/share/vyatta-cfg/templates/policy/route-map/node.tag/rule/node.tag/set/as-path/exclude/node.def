@@ -1,0 +1,6 @@
+type: txt
+help: Remove/exclude from the as-path attribute
+val_help: u32:1-4294967295; AS number
+val_help: all; Exclude all AS numbers from the as-path
+allowed: echo "all"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(all)\' --exec \"${vyos_validators_dir}/as-number-list \"  --value \'$VAR(@)\'"; "Invalid value"

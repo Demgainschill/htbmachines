@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: External summary address
+val_help: ipv4net; OSPF area number in dotted decimal notation
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,100 @@
+Template: kea-ctrl-agent/kea_api_password
+Type: password
+Description: New password for the kea control agent "kea_api" user:
+ This password will be stored in the /etc/kea/kea-api-password file.
+ .
+ NOTE: if the password is empty, no action will be taken.
+Description-de.UTF-8: Neues Passwort für den Kea Control Agent »kea_api«-Benutzer:
+ Dieses Passwort wird in der Datei /etc/kea/kea-api-password gespeichert.
+ .
+ HINWEIS: falls das Passwort leer ist, wird keine Aktion durchgeführt.
+Description-es.UTF-8: Nueva contraseña del usuario «kea-api» del Agente de Control Kea:
+ Esta contraseña se guardará en el archivo «/etc/kea/kea-api-password».
+ .
+ NOTA: si deja la contraseña en blanco, no se llevará a cabo ninguna acción.
+Description-nl.UTF-8: Nieuw wachtwoord voor gebruiker "kea_api" van de kea control agent:
+ Dit wachtwoord wordt opgeslagen in het bestand /etc/kea/kea-api-password.
+ .
+ OPMERKING: als het wachtwoord leeg is, wordt er geen actie ondernomen.
+
+Template: kea-ctrl-agent/kea_api_password_again
+Type: password
+Description: Repeat password for the kea control agent "kea_api" user:
+Description-de.UTF-8: Geben Sie das Passwort für den Kea Control Agent »kea_api«-Benutzer erneut ein:
+Description-es.UTF-8: Vuelva a introducir la contraseña del usuario «kea-api» del Agente de Control Kea:
+Description-nl.UTF-8: Herhaal het wachtwoord voor gebruiker "kea_api" van de kea control agent:
+
+Template: kea-ctrl-agent/password_mismatch
+Type: error
+Description: Password input error
+ The two passwords you entered were not the same. Please try again.
+Description-de.UTF-8: Passwort-Eingabefehler
+ Die zwei eingegebenen Passwörter sind nicht identisch. Bitte versuchen Sie es erneut.
+Description-es.UTF-8: Error al introducir la contraseña
+ Las contraseñas que ha introducido no coinciden. Inténtelo de nuevo.
+Description-nl.UTF-8: Fout bij het invoeren van het wachtwoord
+ De twee wachtwoorden die u invoerde, waren niet identiek. Probeer opnieuw.
+
+Template: kea-ctrl-agent/make_a_choice
+Type: select
+Choices: do_nothing, configured_random_password, configured_password
+Description: Kea control agent authentication configuration
+ Starting with this version, the Kea Control Agent will be configured to require authentication by default.
+ .
+ The available options are:
+ .
+  do nothing:
+   Until you create /etc/kea/kea-api-password, either manually or using one the other options described here, the service will not start.
+ .
+  configured with a random password:
+   The packaging will generate a random password for you, save it, and start the service.
+ .
+  configured with password:
+   The packaging will save the password you supply, and start the service. Note that an empty password will result in no action and be equivalent to "do nothing" above.
+ .
+ The username is `kea-api`, and the password will be expected to be in `/etc/kea/kea-api-password`.
+Description-de.UTF-8: Kea Control Agent-Authentifizierungskonfiguration
+ Ab dieser Version ist die Standardeinstellung des Kea Control Agent so, dass eine Authentifizierung erforderlich ist.
+ .
+ Die verfügbaren Möglichkeiten sind:
+ .
+  keine Aktion:
+  Bis Sie /etc/kea/kea-api-password erstellt haben, entweder manuell oder durch Verwendung der anderen hier beschriebenen Möglichkeiten, wird der Dienst nicht starten.
+ .
+  mit einem zufälligen Passwort konfiguriert:
+   Das Paket erzeugt ein zufälliges Passwort, speichert es und startet den Dienst.
+ .
+  konfiguriert mit einem Passwort:
+   Das Paket speichert das bereitgestellte Passwort und startet den Dienst. Beachten Sie, dass ein leeres Passwort keine Aktionen bewirkt und dem »keine Aktion« von oben entspricht.
+ .
+ Der Benutzername ist `kea-api` und das Passwort wird in `/etc/kea/kea-api-password` erwartet.
+Description-es.UTF-8: Configuración de la autentificación del Agente de Control Kea
+ A partir de esta versión, el Agente de Control Kea se configurará para requerir autentificación de manera predeterminada.
+ .
+ Las opciones disponibles son:
+ .
+  no hacer nada:
+   El servicio no se iniciará hasta que no se genere el archivo «/etc/kea/kea-api-password», bien manualmente o utilizando alguna de las otras opciones descritas en este apartado.
+ .
+  configurado con una contraseña aleatoria:
+   El paquete generará una contraseña aleatoria para usted, la guardará e iniciará el servicio.
+ .
+  configurado con contraseña:
+   El paquete guardará la contraseña que introduzca e iniciará el servicio. Tenga en cuenta que una contraseña en blanco no generará ninguna acción y será equivalente a la opción «no hacer nada».
+ .
+ El nombre de usuario es «kea-api» y se espera que la contraseña esté en el archivo «/etc/kea/kea-api-password».
+Description-nl.UTF-8: Kea control agent authenticatieconfiguratie
+ Vanaf deze versie wordt Kea Control Agent geconfigureerd om standaard verificatie te vereisen.
+ .
+ De beschikbare opties zijn:
+ .
+  niets doen:
+   Totdat u /etc/kea/kea-api-password aanmaakt, handmatig of met behulp van een van de andere hier beschreven opties, zal de service niet starten.
+ .
+  geconfigureerd met een willekeurig wachtwoord:
+   Het pakket genereert een willekeurig wachtwoord voor u, slaat het op en start de service.
+ .
+  geconfigureerd met wachtwoord:
+   Het pakket slaat het door u opgegeven wachtwoord op en start de service. Merk op dat een leeg wachtwoord geen actie tot gevolg heeft en gelijk staat aan "niets doen" hierboven.
+ .
+ De gebruikersnaam is `kea-api` en het wachtwoord wordt verwacht in `/etc/kea/kea-api-password` te staan.

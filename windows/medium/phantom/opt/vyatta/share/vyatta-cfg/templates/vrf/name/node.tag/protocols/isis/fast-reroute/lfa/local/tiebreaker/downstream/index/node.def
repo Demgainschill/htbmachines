@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Set preference order among tiebreakers
+val_help: u32:1-255; The index integer value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-255\"  --value \'$VAR(@)\'"; "Invalid value"

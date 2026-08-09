@@ -1,0 +1,6 @@
+type: txt
+help: Synchronization mode
+val_help: load; Load and replace configuration section
+val_help: set; Set configuration section
+allowed: echo "load set"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(load|set)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,4 @@
+type: txt
+help: Port range (default: 1024-65535)
+val_help: range; Numbered port range (e.g., 1001-1005)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/port-range \"  --value \'$VAR(@)\'"; "Invalid value"

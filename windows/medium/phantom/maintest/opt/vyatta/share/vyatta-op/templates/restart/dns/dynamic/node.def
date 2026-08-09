@@ -1,0 +1,2 @@
+help: Restart Dynamic DNS service
+run: if cli-shell-api existsActive service dns dynamic; then sudo systemctl restart ddclient.service; else echo "Dynamic DNS not configured"; fi

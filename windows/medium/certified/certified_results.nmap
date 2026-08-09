@@ -1,0 +1,89 @@
+# Nmap 7.99 scan initiated Fri Jul 17 15:43:38 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA certified_results 10.129.231.186
+Nmap scan report for 10.129.231.186
+Host is up (0.099s latency).
+Not shown: 65515 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-17 10:17:27Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: certified.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Issuer: commonName=certified-DC01-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-11T21:05:29
+| Not valid after:  2105-05-23T21:05:29
+| MD5:     ac8a 4187 4d19 237f 7cfa de61 b5b2 941f
+| SHA-1:   85f1 ada4 c000 4cd3 13de d1c2 f3c6 58f7 7134 d397
+|_SHA-256: efbd f880 f25e 9059 7d06 867b ba6c 7050 277e 6fa7 aa81 5bee 9b4c bf63 358d e0b8
+|_ssl-date: 2026-07-17T10:19:04+00:00; +3m00s from scanner time.
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: certified.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-17T10:19:04+00:00; +3m00s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Issuer: commonName=certified-DC01-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-11T21:05:29
+| Not valid after:  2105-05-23T21:05:29
+| MD5:     ac8a 4187 4d19 237f 7cfa de61 b5b2 941f
+| SHA-1:   85f1 ada4 c000 4cd3 13de d1c2 f3c6 58f7 7134 d397
+|_SHA-256: efbd f880 f25e 9059 7d06 867b ba6c 7050 277e 6fa7 aa81 5bee 9b4c bf63 358d e0b8
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: certified.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Issuer: commonName=certified-DC01-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-11T21:05:29
+| Not valid after:  2105-05-23T21:05:29
+| MD5:     ac8a 4187 4d19 237f 7cfa de61 b5b2 941f
+| SHA-1:   85f1 ada4 c000 4cd3 13de d1c2 f3c6 58f7 7134 d397
+|_SHA-256: efbd f880 f25e 9059 7d06 867b ba6c 7050 277e 6fa7 aa81 5bee 9b4c bf63 358d e0b8
+|_ssl-date: 2026-07-17T10:19:04+00:00; +3m00s from scanner time.
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: certified.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-17T10:19:04+00:00; +3m00s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Issuer: commonName=certified-DC01-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-11T21:05:29
+| Not valid after:  2105-05-23T21:05:29
+| MD5:     ac8a 4187 4d19 237f 7cfa de61 b5b2 941f
+| SHA-1:   85f1 ada4 c000 4cd3 13de d1c2 f3c6 58f7 7134 d397
+|_SHA-256: efbd f880 f25e 9059 7d06 867b ba6c 7050 277e 6fa7 aa81 5bee 9b4c bf63 358d e0b8
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+49667/tcp open  msrpc         Microsoft Windows RPC
+49691/tcp open  msrpc         Microsoft Windows RPC
+49692/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49693/tcp open  msrpc         Microsoft Windows RPC
+49719/tcp open  msrpc         Microsoft Windows RPC
+49728/tcp open  msrpc         Microsoft Windows RPC
+49771/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-07-17T10:18:24
+|_  start_date: N/A
+|_clock-skew: mean: 2m59s, deviation: 1s, median: 2m59s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul 17 15:46:05 2026 -- 1 IP address (1 host up) scanned in 146.78 seconds

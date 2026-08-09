@@ -1,0 +1,4 @@
+type: txt
+help: Maximum number of values in a memory buffer (default: 100)
+val_help: u32:2-65535; Maximum number of values in a memory buffer
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 2-65535\"  --value \'$VAR(@)\'"; "Buffer-size must be between 2 and 65535"

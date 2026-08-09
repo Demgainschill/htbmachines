@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Dynamic DNS configuration
+val_help: txt; Dynamic DNS service name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]+\'   --value \'$VAR(@)\'"; "Dynamic DNS service name must be alphanumeric and can contain hyphens and underscores"

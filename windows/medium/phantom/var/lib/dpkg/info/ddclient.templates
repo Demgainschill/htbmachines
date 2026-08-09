@@ -1,0 +1,770 @@
+
+Template: ddclient/service
+Type: select
+Choices: ${choices}, other
+Choices-ca.UTF-8: ${choices}, un altre
+Choices-cs.UTF-8: ${choices}, jiný
+Choices-da.UTF-8: ${choices}, anden
+Choices-de.UTF-8: ${choices}, anderer
+Choices-es.UTF-8: ${choices}, otro
+Choices-eu.UTF-8: ${choices}, bestelakoa
+Choices-fi.UTF-8: ${choices}, muu
+Choices-fr.UTF-8: ${choices}, Autre
+Choices-gl.UTF-8: ${choices}, outro
+Choices-it.UTF-8: ${choices}, altro
+Choices-ja.UTF-8: ${choices}, その他
+Choices-nb.UTF-8: ${choices}, andre
+Choices-nl.UTF-8: ${choices}, andere
+Choices-no.UTF-8: ${choices}, andre
+Choices-pl.UTF-8: ${choices}, inny
+Choices-pt_BR.UTF-8: ${choices}, outro
+Choices-pt_PT.UTF-8: ${choices}, outro
+Choices-ru.UTF-8: ${choices}, другой вариант
+Choices-sk.UTF-8: ${choices}, iný
+Choices-sv.UTF-8: ${choices}, annan
+Choices-uk.UTF-8: ${choices}, інші
+Choices-vi.UTF-8: ${choices}, khác
+Choices-zh_TW.UTF-8: ${choices}, 其他
+Default: no-ip.com
+Description: Dynamic DNS service provider:
+ Dynamic DNS service you are using. If the service you use is not
+ listed, choose "other".
+Description-de.UTF-8: Anbieter des dynamischen DNS-Dienstes:
+ Dynamischer DNS-Dienst, den Sie verwenden. Falls der von Ihnen verwandte Dienst nicht aufgeführt ist, wählen Sie »anderer«.
+Description-fi.UTF-8: Dynaamisen DNS:n palveluntarjoaja:
+ Dynaaminen DNS–palvelu, jota käytät. Jos käyttämääsi palvelua ei ole listassa, valitse ”muu”.
+Description-fr.UTF-8: Fournisseur de service de DNS dynamique :
+ Service de DNS dynamique que vous utilisez. Si celui-ci n'est pas affiché ici, veuillez choisir « Autre ».
+Description-nl.UTF-8: Aanbieder van dynamische DNS:
+ Dienst voor dynamische DNS welke u gebruikt. Als de dienst niet weergegeven wordt, kies dan "andere".
+Description-pt_BR.UTF-8: Provedor de serviço de DNS dinâmico:
+ Serviço de DNS dinâmico que você está usando. Se o serviço que você usa não está listado, escolha "outro".
+Description-pt_PT.UTF-8: Fornecedor do serviço Dynamic DNS:
+ O serviço Dynamic DNS que está a usar. Se o serviço que você usa não estiver listado, escolha "outro".
+Description-ru.UTF-8: Провайдер службы динамического DNS:
+ Используемая служба динамического DNS. Если вашей службы нет в списке, выберите «другой вариант».
+Description-sv.UTF-8: Leverantör av dynamisk DNS:
+ Den dynamiska DNS-tjänst du använder. Om tjänsten du använder inte finns i listan väljer du ”annan”.
+
+Template: ddclient/server
+Type: string
+Description: Dynamic DNS server (blank for default):
+ Server providing the dynamic DNS service (example:
+ members.dyndns.org). Leave blank to use the default for the
+ "${protocol}" protocol.
+Description-de.UTF-8: Dynamischer DNS-Server (leer lassen für Vorgabe):
+ Server, der den dynamischen DNS-Dienst bereitstellt (Beispiel: members.dyndns.org). Lassen Sie dies leer, um die Vorgabe für das Protokoll »${protocol}« zu verwenden.
+Description-fi.UTF-8: Dynaaminen DNS–palvelin (oletuksena tyhjä):
+ Palvelin joka tarjoaa dynaamisen DNS–palvelun (esimerkki: members.dyndns.org). Jätä tyhjäksi käyttääksesi oletusarvoja "${protocol}" protokollalle.
+Description-fr.UTF-8: Serveur de DNS dynamique (vide pour le choix par défaut) :
+ Serveur qui fournit le DNS dynamique (par exemple : members.dyndns.org). Veuillez laisser vide pour utiliser le protocole « ${protocol} » par défaut.
+Description-nl.UTF-8: Server voor dynamische DNS (laat leeg voor de standaardwaarde):
+ De server welke de dynamische DNS-dienst levert (bijvoorbeeld members.dyndns.org). Laat dit leeg om de standaardwaarde te gebruiken voor protocol "${protocol}".
+Description-pt_BR.UTF-8: Servidor de DNS dinâmico (vazio para padrão):
+ Servidor que provê o serviço de DNS dinâmico (exemplo: members.dyndns.org). Deixe vazio para usar o padrão para o protocolo "${protocol}".
+Description-pt_PT.UTF-8: Servidor Dynamic DNS (vazio para predefinição):
+ Servidor que fornece o serviço de DNS dinâmico (exemplo: members.dyndns.org). Deixe vazio para usar o predefinido para o protocolo "${protocol}".
+Description-ru.UTF-8: Сервер динамического DNS (оставьте пустым для использования значения по умолчанию):
+ Сервер, предоставляющий услугу динамического DNS (пример: members.dyndns.org). Оставьте пустым для использования значения по умолчанию для протокола «${protocol}».
+Description-sv.UTF-8: Dynamisk DNS-server (blankt för standardvärde):
+ Server som förser dig med den dynamiska DNS-tjänsten (exempelvis medlemmar.dyndns.org). Lämna blankt för att använda standardvärdet för ”${protocol}”-protokollet.
+
+Template: ddclient/protocol
+Type: select
+Choices: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, other
+Choices-ca.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, un altre
+Choices-cs.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, jiný
+Choices-da.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, anden
+Choices-de.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, anderer
+Choices-es.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, otro
+Choices-eu.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, bestelakoa
+Choices-fi.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, muu
+Choices-fr.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, Autre
+Choices-gl.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, outro
+Choices-it.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, altro
+Choices-ja.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, その他
+Choices-nb.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, andre
+Choices-nl.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, andere
+Choices-no.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, andre
+Choices-pl.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, inny
+Choices-pt_BR.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, outro
+Choices-pt_PT.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, outro
+Choices-ru.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, другой вариант
+Choices-sk.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, iný
+Choices-sv.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, annan
+Choices-uk.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, інші
+Choices-vi.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, khác
+Choices-zh_TW.UTF-8: 1984, changeip, cloudflare, cloudns, dinahosting, dnsexit, dnsmadeeasy, dondominio, dslreports1, duckdns, dyndns1, dyndns2, easydns, freedns, freemyip, gandi, godaddy, googledomains, hetzner, keysystems, namecheap, nfsn, njalla, noip, nsupdate, ovh, sitelutions, woima, yandex, zoneedit1, 其他
+Default: dyndns2
+Description: Dynamic DNS update protocol:
+ Dynamic DNS update protocol used by your dynamic DNS service
+ provider. If the protocol your service uses is not listed, select
+ "other".
+Description-de.UTF-8: Protokoll für die dynamische DNS-Aktualisierung:
+ Protokoll für die dynamische DNS-Aktualisierung, das von Ihrem Anbieter für dynamischen DNS-Dienst verwandt wird. Falls das von Ihrem Dienst verwandte Protokoll nicht aufgeführt ist, wählen Sie »anderer«.
+Description-fi.UTF-8: Dynaamisen DNS:n päivitysprotokolla:
+ Dynaamisen DNS: päivittämiseen käytettävä protokolla, jota dynaamisen DNS:n palveluntarjoajasi käyttää. Jos palvelusi käyttämää protokollaa ei ole listattu, valitse "muu".
+Description-fr.UTF-8: Protocole de mise à jour du DNS dynamique :
+ Protocole de mise à jour du DNS dynamique utilisé par le fournisseur du service. Si le protocole utilisé par votre service n'est pas affiché, veuillez sélectionner « Autre ».
+Description-nl.UTF-8: Updateprotocol voor de dynamische DNS:
+ Door uw aanbieder van dynamische DNS gebruikt updateprotocol voor de dynamische DNS. Indien het door uw dienst gebruikte protocol niet vermeld wordt, selecteer dan "andere".
+Description-pt_BR.UTF-8: Protocolo de atualização de DNS dinâmico:
+ Protocolo de atualização de DNS dinâmico utilizado pelo seu provedor do serviço de DNS dinâmico. Se o protocolo que o seu serviço usa não estiver listado, selecione "outro".
+Description-pt_PT.UTF-8: Protocolo de actualização do Dynamic DNS:
+ Protocolo de actualização de Dynamic DNS usado pelo seu fornecedor de serviço de DNS dinâmico. Se o protocolo que o seu serviço usa não está listado, selecione "outro".
+Description-ru.UTF-8: Протокол обновления динамического DNS:
+ Протокол обновления динамического DNS, который используется вашим провайдером службы динамического DNS. Если протокола службы нет в списке, выберите «другой вариант».
+Description-sv.UTF-8: Protokoll för uppdateringar av dynamisk DNS:
+ Uppdateringsprotokollet som används av din tjänsteleverantör av dynamisk DNS. Om protokollet din tjänst använder inte finns, välj ”annan”.
+
+Template: ddclient/protocol-other
+Type: string
+Description: Dynamic DNS update protocol:
+ The name of the dynamic DNS update protocol used by your dynamic DNS
+ service provider.
+Description-de.UTF-8: Protokoll für die dynamische DNS-Aktualisierung:
+ Der Name des Protokolls für die dynamische DNS-Aktualisierung, das vom Anbieter Ihres des dynamischen DNS-Dienstes verwandt wird.
+Description-fi.UTF-8: Dynaamisen DNS:n päivitysprotokolla:
+ Dynaamisen DNS–päivitysprotokollan nimi, jota dynaamisen DNS–palveluntarjoajasi käyttää.
+Description-fr.UTF-8: Protocole de mise à jour du DNS dynamique :
+ Nom du protocole de mise à jour du DNS dynamique utilisé par le fournisseur du service.
+Description-nl.UTF-8: Updateprotocol voor de dynamische DNS:
+ De naam van het door uw aanbieder van dynamische DNS gebruikte updateprotocol voor de dynamische DNS.
+Description-pt_BR.UTF-8: Protocolo de atualização de DNS dinâmico:
+ O nome do protocolo de atualização de DNS dinâmico utilizado pelo seu provedor do serviço de DNS dinâmico.
+Description-pt_PT.UTF-8: Protocolo de actualização do Dynamic DNS:
+ O nome do protocolo de actualização de DNS dinâmico usado pelo seu fornecedor de serviço de DNS dinâmico.
+Description-ru.UTF-8: Протокол обновления динамического DNS:
+ Название протокола обновления динамического DNS, который используется вашим провайдером службы динамического DNS.
+Description-sv.UTF-8: Protokoll för uppdateringar av dynamisk DNS:
+ Namnet på uppdateringsprotokollet som används av din tjänsteleverantör av dynamisk DNS.
+
+Template: ddclient/proxy
+Type: string
+Description: Optional HTTP proxy:
+ HTTP proxy in the form http://proxy.example.com or
+ https://proxy.example.com. Proxy authentication is not supported.
+ Leave blank if you do not use an HTTP proxy.
+Description-de.UTF-8: Optionaler HTTP-Proxy:
+ HTTP-Proxy in der Form http://proxy.example.com oder https://proxy.example.com. Proxy-Authentifizierung wird nicht unterstützt. Lassen Sie dies leer, falls Sie keinen HTTP-Proxy verwenden.
+Description-fi.UTF-8: Valinnainen HTTP–välityspalvelin:
+ HTTP–välityspalvelin muodossa http://proxy.example.com tai https://proxy.example.com. Välityspalvelimen tunnistautumista ei tueta. Jätä tyhjäksi, jos et käytä HTTP–välityspalvelinta.
+Description-fr.UTF-8: Mandataire HTTP facultatif :
+ Mandataire HTTP sous la forme http://proxy.example.com ou https://proxy.example.com. L'authentification du mandataire n'est pas prise en charge. Veuillez laisser vide si vous n'utilisez pas de mandataire HTTP.
+Description-nl.UTF-8: Eventuele HTTP-proxy:
+ HTTP-proxy in de vorm http://proxy.example.com of https://proxy.example.com. Proxy-authenticatie wordt niet ondersteund. Laat dit leeg indien u geen HTTP-proxy gebruikt.
+Description-pt_BR.UTF-8: Proxy HTTP opcional:
+ Proxy HTTP no formato http://proxy.example.com ou https://proxy.example.com. Não há suporte para autenticação de proxy. Deixe vazio se você não usa um proxy HTTP.
+Description-pt_PT.UTF-8: proxy HTTP opcional:
+ Proxy HTTP no formato http://proxy.example.com ou https://proxy.example.com. A autenticação de proxy não é suportada. Deixe vazio se você não usar um proxy HTTP.
+Description-ru.UTF-8: Прокси HTTP (необязательно):
+ Прокси HTTP в виде http://proxy.example.com или https://proxy.example.com. Аутентификация прокси не поддерживается. Оставьте пустым, если не используете прокси HTTP.
+Description-sv.UTF-8: Valfri HTTP-proxy:
+ HTTP-proxy på formen http://proxy.example.com eller https://proxy.example.com. Proxy-autentisering stöds inte. Lämna blankt om du inte använder en HTTP-proxy.
+
+Template: ddclient/names
+Type: string
+Description: Hosts to update (comma-separated):
+ Comma-separated list of fully qualified domain names to update (for
+ instance, "myname.dyndns.org" with only one host, or
+ "myname1.dyndns.org,myname2.dyndns.org" for two hosts).
+Description-de.UTF-8: Zu aktualisierende Rechner (Kommata-getrennt):
+ Kommata-getrennte Liste der zu aktualisierenden, vollständigen Domainnamen (zum Beispiel »meinname.dyndns.org« mit nur einem Rechner oder »meinname1.dyndns.org,meinname2.dyndns.org« für zwei Rechner).
+Description-fi.UTF-8: Päivitettävät verkkonimet (pilkulla eroteltuna):
+ Pilkuilla eroteltu lista täydellisistä verkkotunnuksista, jotka päivitetään (esimerkiksi, ”myname.dyndns.org” ainoastaan yhden verkkotunnuksen kohdalla tai ”myname1.dyndns.org,myname2.dyndns.org” kahdelle verkkotunnukselle).
+Description-fr.UTF-8: Hôtes à mettre à jour (séparés par des virgules) :
+ Liste, séparée par des virgules, des noms de domaine complètement qualifiés à mettre à jour (par exemple « myname.dyndns.org » pour un nom unique ou « myname1.dyndns.org,myname2.dyndns.org » pour deux noms).
+Description-nl.UTF-8: Te updaten computers (gescheiden door een komma):
+ Door komma's gescheiden lijst van volledige computernamen (FQDN's) welke bijgewerkt moeten worden (bijvoorbeeld 'mijnnaam.dyndns.org' voor één enkele computer of 'mijnnaam1.dyndns.org,mijnnaam2.dyndns.org' voor twee computers).
+Description-pt_BR.UTF-8: Nomes de máquina para atualizar (separados por vírgula):
+ Lista de nomes de domínio totalmente qualificados separados por vírgula (por exemplo, "meunome.dyndns.org" se você tem apenas um nome de máquina ou "meunome1.dyndns.org,meunome2.dyndns.org" para dois nomes de máquina).
+Description-pt_PT.UTF-8: Máquinas a actualizar (separadas por vírgulas):
+ Lista separada por vírgulas dos nomes de domínio totalmente qualificados para actualizar (por exemplo "myname.dyndns.org" com apenas uma máquina, ou "myname1.dyndns.org,myname2.dyndns.org" para duas máquinas).
+Description-ru.UTF-8: Обновляемые узлы (через запятую):
+ Список обновляемых полностью определённых доменных имён (например, «myname.dyndns.org», если у вас только один узел, или «myname1.dyndns.org,myname2.dyndns.org», если их два).
+Description-sv.UTF-8: Värdar att uppdatera (kommaseparerade):
+ Kommaseparerad lista av kompletta domännamn som ska uppdateras (exempelvis ”mittnamn.dyndns.org” för endast en värd eller ”mittnamn1.dyndns.org,mittnamn2.dyndns.org” för två värdar).
+
+Template: ddclient/username
+Type: string
+Description: Username:
+ Username (or other type of account identifer) to use with the dynamic
+ DNS service.
+Description-de.UTF-8: Benutzername:
+ Benutzername (oder eine andere Art von Kontokennzeichner), der mit dem dynamischen DNS-Dienst verwandt werden soll.
+Description-fi.UTF-8: Käyttäjätunnus:
+ Käyttäjätunnus (tai jokin muu tilin tunniste) jota käytetään dynaamiseen DNS-palveluun.
+Description-fr.UTF-8: Identifiant :
+ Nom d'utilisateur (ou tout type d'identifiant de compte) qui sera utilisé pour la connexion au serveur de DNS dynamique.
+Description-nl.UTF-8: Gebruikersnaam:
+ Te gebruiken gebruikersnaam (of ander type account-identificatie) bij de dienst voor dynamische DNS.
+Description-pt_BR.UTF-8: Nome de usuário:
+ Nome do usuário (ou outro tipo de identificador de conta) que você utiliza para acessar o serviço de DNS dinâmico.
+Description-pt_PT.UTF-8: Nome de utilizador:
+ Nome de utilizador (ou outro tipo de identificador de conta) para usar com o serviço de DNS dinâmico.
+Description-ru.UTF-8: Имя пользователя:
+ Имя пользователя (или другой тип идентификатора учётной записи), используемое службой динамического DNS.
+Description-sv.UTF-8: Användarnamn:
+ Användarnamn (eller annan typ av kontoidentifierare) som ska användas för den dynamiska DNS-tjänsten.
+
+Template: ddclient/password
+Type: password
+Description: Password:
+ Password, API key, or token to use with the dynamic DNS service.
+Description-de.UTF-8: Passwort:
+ Passwort, API-Schlüssel oder Token, der mit dem dynamischen DNS-Dienst verwandt werden soll.
+Description-fi.UTF-8: Salasana:
+ Salasana, API–avain tai tunnus jota käytetään dynaamiseen DNS–palveluun.
+Description-fr.UTF-8: Mot de passe :
+ Mot de passe, clé API ou jeton qui sera utilisé pour la connexion au serveur de DNS dynamique.
+Description-nl.UTF-8: Wachtwoord:
+ Te gebruiken wachtwoord, API-sleutel of token bij de dienst voor dynamische DNS.
+Description-pt_BR.UTF-8: Senha:
+ Senha, chave de API ou código que você utiliza para acessar o serviço de DNS dinâmico.
+Description-pt_PT.UTF-8: Palavra passe:
+ Palavra passe, chave API, ou testemunho a usar com o serviço de DNS dinâmico.
+Description-ru.UTF-8: Пароль:
+ Пароль, ключ API или токен, используемый службой динамического DNS.
+Description-sv.UTF-8: Lösenord:
+ Lösenord, API-nyckel eller symbol som ska användas för den dynamiska DNS-tjänsten.
+
+Template: ddclient/password-repeat
+Type: password
+Description: Re-enter password:
+ Password, API key, or token entered again to ensure it was entered
+ correctly.
+Description-de.UTF-8: Passwortwiederholung:
+ Erneute Eingabe von Passwort, API-Schlüssel oder Token, um sicherzustellen, dass die Eingabe korrekt war.
+Description-fi.UTF-8: Kirjoita salasana uudelleen:
+ Salasana, API–avain tai tunnus syötettäväksi uudelleen ja varmistaakseen, että se oli syötetty oikein.
+Description-fr.UTF-8: Confirmation du mot de passe :
+ Veuillez entrer une seconde fois le mot de passe, la clé de l'API ou le jeton pour s'assurer qu'il a été saisi correctement.
+Description-nl.UTF-8: Voer het wachtwoord nogmaals in:
+ Wachtwoord, API-sleutel of token opnieuw ingegeven om zeker te zijn dat dit correct ingegeven werd.
+Description-pt_BR.UTF-8: Redigite a senha:
+ Senha, chave de API ou código informado novamente para garantir que foi informado corretamente.
+Description-pt_PT.UTF-8: Re-insira a palavra-passe:
+ Palavra passe, chave API, ou testemunho inserido outra vez para assegurar que foi inserido corretamente.
+Description-ru.UTF-8: Введите пароль ещё раз:
+ Пароль, ключ API или токен, вводимый повторно для проверки правильности.
+Description-sv.UTF-8: Ange lösenordet igen:
+ Lösenord, API-nyckel eller symbol angivet igen för att försäkra att det matats in korrekt.
+
+Template: ddclient/password-mismatch
+Type: error
+Description: Passwords do not match
+ The two passwords you entered were not the same. Please try again.
+Description-da.UTF-8: Adgangskoder matcher ikke
+ De to adgangskoder du indtastede var ikke de samme. Prøv igen.
+Description-de.UTF-8: Passwörter stimmen nicht überein
+ Sie haben zwei verschiedene Passwörter eingegeben. Bitte versuchen Sie es noch einmal.
+Description-es.UTF-8: Las contraseñas no coinciden
+ Las dos contraseñas introducidas no son iguales. Por favor, pruebe de nuevo.
+Description-fi.UTF-8: Salasanat eivät täsmää
+ Kaksi antamaasi salasanaa eivät ole samanlaisia. Yritä uudelleen.
+Description-fr.UTF-8: Mots de passe différents
+ Le mot de passe et sa confirmation ne sont pas identiques. Veuillez recommencer.
+Description-ja.UTF-8: パスワードが一致しません
+ 入力した 2 つのパスワードが一致しません。もう一度やり直してください。
+Description-nl.UTF-8: De wachtwoorden komen niet overeen
+ De twee wachtwoorden die u invoerde waren niet identiek. Probeer opnieuw.
+Description-pt_BR.UTF-8: Senhas não conferem
+ As duas senhas que você informou não são iguais. Por favor, tente novamente.
+Description-pt_PT.UTF-8: As palavras-passe não correspondem
+ As duas palavras-passe que inseriu não são iguais. Por favor tente de novo.
+Description-ru.UTF-8: Пароли не совпадают
+ Введённые вами пароли не совпадают. Попробуйте ещё раз.
+Description-sv.UTF-8: Lösenorden stämmer ej
+ De båda lösenorden stämde inte överens. Försök igen.
+
+Template: ddclient/method
+Type: select
+Choices: Web-based IP discovery service, Network interface
+Choices-de.UTF-8: Web-basierter IP-Ermittlungsdienst, Netzwerkschnittstelle
+Choices-fi.UTF-8: Verkkopohjainen IP:n hakupalvelu, Verkkoliittymä
+Choices-fr.UTF-8: Service de découverte d'IP basée sur le web, Interface réseau
+Choices-nl.UTF-8: Webgebaseerde IP-detectiedienst, Netwerkinterface
+Choices-pt_BR.UTF-8: Serviço de descoberta de IP baseado na web, Interface de rede
+Choices-pt_PT.UTF-8: Serviço de descoberta de IP baseado em Web, Interface de rede
+Choices-ru.UTF-8: Веб-служба определения IP-адреса, Сетевой интерфейс
+Choices-sv.UTF-8: Webb-baserad IP-identifieringstjänst, Nätverksgränssnitt
+Default: Web-based IP discovery service
+Description: IP address discovery method:
+ The method ddclient uses to determine your current IP address.
+ Your options:
+ .
+ Web-based IP discovery service: Periodically visit a web page that
+ shows your IP address. You probably want this option if your computer
+ is connected to the Internet via a Network Address Translation (NAT)
+ device such as a typical consumer router.
+ .
+ Network interface: Use the IP address assigned to your computer's
+ network interface (such as an Ethernet adapter or PPP connection).
+ You probably want this option if your computer connects directly to
+ the Internet (your connection does not go through a NAT device).
+Description-de.UTF-8: IP-Adressen-Ermittlungsmethode:
+ Die Methode, die Ddclient zur Ermittlung Ihrer aktuellen IP-Adresse verwendet. Ihre Optionen:
+ .
+ Web-basierter IP-Ermittlungsdienst: Besucht periodisch eine Webseite, die Ihre IP-Adresse anzeigt. Dieser Option ist wahrscheinlich die richtige, wenn Ihr Computer über ein Gerät zur Netzwerk-Adressen-Übersetzung (NAT) mit dem Internet verbunden ist, wie bei einem typischen Endverbraucher-Router.
+ .
+ Netzwerkschnittstelle: Verwendet die IP-Adresse, die der Netzwerkschnittstelle (wie einem Ethernet-Adapter oder einer PPP-Verbindung) Ihres Computers zugewiesen ist. Diese Option ist wahrscheinlich die richtige, falls sich Ihr Computer direkt mit dem Internet verbindet (Ihre Verbindung läuft nicht über ein NAT-Gerät).
+Description-fi.UTF-8: IP–osoitteen hakutapa:
+ Tapa jolla ddclient määrittää nykyiset IP–asetuksesi. Vaihtoehtosi:
+ .
+ Verkkopohjainen IP:n hakupalvelu: Vierailee säännöllisesti verkkosivulla joka näyttää IP–osoitteesi. Haluat luultavasti tämän valinnan, jos tietokoneesi on kytketty Internettiin käyttäen NAT (Network Address Translation) –laitetta, kuten tavallista kuluttajareititintä.
+ .
+ Verkkoliittymä: Käytä IP–osoitetta, joka on määritelty tietokoneesi verkkoliittymäksi (kuten Ethernet–sovitin tai PPP–yhteys). Haluat luultavasti tämän valinnan, jos tietokoneesi on yhdistetty suoraan Internettiin (yhteytesi ei kulje NAT–laitteen kautta).
+Description-fr.UTF-8: Méthode de découverte d'adresse IP :
+ Méthode utilisée par ddclient pour déterminer votre adresse IP actuelle. Vos options sont :
+ .
+ Service de découverte d'IP basée sur le web : visite régulière d'une page web qui affiche votre adresse IP. Ce sera probablement votre choix si votre ordinateur est connecté à Internet par un périphérique de traduction d'adresse réseau (NAT) tel qu'un routeur de type grand public.
+ .
+ Interface réseau : utilisation de l'adresse IP assignée à l'interface réseau de votre ordinateur (tel qu'un adaptateur Ethernet ou une connexion PPP). Ce sera probablement votre choix si votre ordinateur se connecte directement à Internet (votre connexion ne passe pas par un périphérique NAT).
+Description-nl.UTF-8: Methode om het IP-adres te detecteren:
+ De methode die door ddclient gebruikt wordt om uw huidig IP-adres vast te stellen. Uw keuzemogelijkheden:
+ .
+ Webgebaseerde IP-detectiedienst: regelmatig een webpagina bezoeken die uw IP-adres toont. Normaal gezien selecteert u deze optie als uw computer met internet verbonden is via een apparaat dat zorgt voor Network Address Translation (NAT), zoals een typische consumentenrouter.
+ .
+ Netwerkinterface: het IP-adres gebruiken dat toegekend is aan de netwerkinterface (zoals een netwerkkaart of een PPP-verbinding) van uw computer. Normaal gezien selecteert u deze optie als uw computer rechtstreeks verbonden is met het internet (uw verbinding loopt niet via een NAT-apparaat).
+Description-pt_BR.UTF-8: Método de descoberta de endereço IP:
+ O método que o ddclient usa para determinar o seu endereço IP atual. Suas opções:
+ .
+ Serviço de descoberta de IP baseado na web: periodicamente, visita uma página web que mostra o seu endereço IP. Você provavelmente quer essa opção se o seu computador está conectado à Internet via um dispositivo NAT (Network Address Translation), tal como um típico roteador doméstico.
+ .
+ Interface de rede: usa o endereço IP associado à interface de rede do seu computador (tal como um adaptador Ethernet ou conexão PPP). Você provavelmente quer essa opção se o seu computador está conectado diretamente à Internet (sua conexão não passa por um dispositivo NAT).
+Description-pt_PT.UTF-8: Método de descoberta de endereço IP:
+ O método que o ddclient usa para determinar o seu endereço IP actual. A suas opções:
+ .
+ Serviço de descoberta de IP baseado em Web: Periodicamente visita uma página web que mostra o seu endereço IP. Provavelmente você vai querer esta opção se o seu computador estiver ligado à Internet via dispositivo de Network Address Translation (NAT) tal como um router típico de consumidor.
+ .
+ Interface de rede: Use o endereço IP atribuído à interface de rede do seu computador (tal como uma placa Ethernet ou ligação PPP). Provavelmente você vai querer esta opção se o seu computador estiver ligado directamente à Internet (a sua ligação não passa por um dispositivo NAT).
+Description-ru.UTF-8: Метод определения IP-адреса:
+ Метод, используемый ddclient для определения текущего IP-адреса. Доступные варианты:
+ .
+ Веб-служба определения IP-адреса: периодически посещает веб-страницу, которая возвращает ваш IP-адрес. Вероятно, самый правильный вариант, если ваш компьютер подключается к Интернету через устройство с настроенным NAT (трансляция сетевых адресов), таким как обычный домашний маршрутизатор.
+ .
+ Сетевой интерфейс: используется IP-адрес, назначенный сетевому интерфейсу вашего компьютера (например, адаптеру Ethernet или подключению PPP). Обычно используется, если компьютер подключён к Интернету напрямую (соединяется без промежуточного устройства с NAT).
+Description-sv.UTF-8: Identifieringsmetod för IP-adress:
+ Metoden ddclient använder för att identifiera din aktuella IP-adress. Dina alternativ:
+ .
+ Webb-baserad IP-identifieringstjänst: Besöker periodiskt en webbsida som visar din IP-adress. Du vill förmodligen använda detta alternativ om din dator är ansluten till internet via en nätverksadressöversättningsenhet (Network Address Translation, NAT), exempelvis en vanlig router.
+ .
+ Nätverksgränssnitt: Använd IP-adressen som tilldelats till din dators nätverksgränssnitt (exempelvis en Ethernet-adapter eller PPP-anslutning). Du vill förmodligen använda detta alternativ om datorn ansluter direkt till internet (din anslutning går inte via en NAT-enhet).
+
+Template: ddclient/web
+Type: select
+Choices: ${choices}, other
+Choices-ca.UTF-8: ${choices}, un altre
+Choices-cs.UTF-8: ${choices}, jiný
+Choices-da.UTF-8: ${choices}, anden
+Choices-de.UTF-8: ${choices}, anderer
+Choices-es.UTF-8: ${choices}, otro
+Choices-eu.UTF-8: ${choices}, bestelakoa
+Choices-fi.UTF-8: ${choices}, muu
+Choices-fr.UTF-8: ${choices}, Autre
+Choices-gl.UTF-8: ${choices}, outro
+Choices-it.UTF-8: ${choices}, altro
+Choices-ja.UTF-8: ${choices}, その他
+Choices-nb.UTF-8: ${choices}, andre
+Choices-nl.UTF-8: ${choices}, andere
+Choices-no.UTF-8: ${choices}, andre
+Choices-pl.UTF-8: ${choices}, inny
+Choices-pt_BR.UTF-8: ${choices}, outro
+Choices-pt_PT.UTF-8: ${choices}, outro
+Choices-ru.UTF-8: ${choices}, другой вариант
+Choices-sk.UTF-8: ${choices}, iný
+Choices-sv.UTF-8: ${choices}, annan
+Choices-uk.UTF-8: ${choices}, інші
+Choices-vi.UTF-8: ${choices}, khác
+Choices-zh_TW.UTF-8: ${choices}, 其他
+Description: IP discovery service:
+ The web-based IP discovery service you would like ddclient to use to
+ determine your current IP address.
+Description-de.UTF-8: IP-Ermittlungsdienst:
+ Der Web-basierte IP-Ermittlungsdienst, den Ddclient verwenden soll, um Ihre aktuelle IP-Adresse zu ermitteln.
+Description-fi.UTF-8: IP:n hakupalvelu:
+ Verkkopohjainen IP:n hakupalvelu jota haluaisit ddclient:n käyttävän nykyisen IP–osoitteesi määrittelemiseksi.
+Description-fr.UTF-8: Service de découverte d'IP :
+ Service de découverte d'IP dont vous souhaitez que ddclient se serve pour déterminer votre adresse IP actuelle.
+Description-nl.UTF-8: IP-detectiedienst:
+ De webgebaseerde IP-detectiedienst welke u door ddclient wilt laten gebruiken om uw huidig IP-adres vast te stellen.
+Description-pt_BR.UTF-8: Serviço de descoberta IP:
+ O serviço de descoberta de IP baseado na web que você quer que o ddclient use para determinar o seu endereço IP atual.
+Description-pt_PT.UTF-8: Serviço de descoberta de IP:
+ O serviço de descoberta de IP baseado em web  que você deseja que o ddclient use para determinar o seu endereço IP actual.
+Description-ru.UTF-8: Служба определения IP:
+ Веб-служба определения IP-адреса, которую должен использовать ddclient для получения вашего текущего IP-адреса.
+Description-sv.UTF-8: IP-identifieringstjänst:
+ Den webb-baserade IP-identifieringstjänsten du vill att ddclient ska använda för att bestämma din aktuella IP-adress.
+
+Template: ddclient/web-url
+Type: string
+Description: IP discovery service URL:
+ URL to a web page that returns your IP address.
+Description-de.UTF-8: URL des IP-Ermittlungsdienstes:
+ URL zu einer Web-Seite, die Ihre IP-Adresse zurückliefert.
+Description-fi.UTF-8: IP:n hakupalvelun URL:
+ URL verkkosivulle joka palauttaa IP–osoitteesi.
+Description-fr.UTF-8: URL du service découverte d'IP :
+ URL de la page web qui renvoie votre adresse IP.
+Description-nl.UTF-8: URL van de IP-detectiedienst:
+ URL van een webpagina die uw IP-adres weergeeft.
+Description-pt_BR.UTF-8: URL do serviço de descoberta de IP:
+ URL para uma página web que retorna o seu endereço IP.
+Description-pt_PT.UTF-8: URL do serviço de descoberta de IP:
+ URL para uma página web que retorna o seu endereço IP.
+Description-ru.UTF-8: URL службы определения IP:
+ URL веб-страницы, которая возвращает ваш IP-адрес.
+Description-sv.UTF-8: Tjänst-URL för IP-identifieringstjänst:
+ URL till en webbsida som returnerar din IP-adress.
+
+Template: ddclient/interface
+Type: string
+Description: Network interface:
+ The name of the network interface (e.g., eth0, wlan0, ppp0) that
+ ddclient will look at to determine the current IP address.
+Description-de.UTF-8: Netzwerkschnittstelle:
+ Der Name der Netzwerkschnittstelle (z.B. eth0, wlan0, ppp0), die Ddclient sich anschauen wird, um die aktuelle IP-Adresse zu ermitteln.
+Description-fi.UTF-8: Verkkoliittymä:
+ Verkkoliittymän nimi (esim. eth0, wlan0, ppp0), jonka ddclient etsii määritelläkseen nykyisen IP–osoitteesi.
+Description-fr.UTF-8: Interface réseau :
+ Nom de l'interface réseau (par exemple eth0, wlan0, ppp0) que ddclient examinera pour déterminer l'adresse IP en cours.
+Description-nl.UTF-8: Netwerkinterface:
+ De naam van de netwerkinterface (bijvoorbeeld eth0, wlan0, ppp0) waar ddclient gaat kijken om het huidige IP-adres vast te stellen.
+Description-pt_BR.UTF-8: Interface de rede:
+ O nome da interface de rede (p. ex., eth0, wlan0, ppp0) que o ddclient usará para determinar o endereço IP atual.
+Description-pt_PT.UTF-8: Interface de rede:
+ O nome da interface de rede (ex. eth0, wlan0, ppp0) que o ddclient irá olhar para determinar o endereço IP actual.
+Description-ru.UTF-8: Сетевой интерфейс:
+ Имя сетевого интерфейса (например, eth0, wlan0, ppp0), по которому ddclient будет определять ваш текущий IP-адрес.
+Description-sv.UTF-8: Nätverksgränssnitt:
+ Namnet på nätverksgränssnittet (t.ex., eth0, wlan0, ppp0) för vilket ddclient kommer att försöka bestämma aktuell IP-adress.
+
+Template: ddclient/run_mode
+Type: select
+Choices: As a daemon, On PPP connect
+Choices-de.UTF-8: Als Daemon, Bei PPP-Aufbau
+Choices-fi.UTF-8: Taustaprosessina, PPP–yhteydellä
+Choices-fr.UTF-8: En tant que démon, Lors des connexions PPP
+Choices-nl.UTF-8: Als achtergronddienst, Bij het tot stand brengen van een PPP-verbinding
+Choices-pt_BR.UTF-8: Como um daemon, Ao conectar via PPP
+Choices-pt_PT.UTF-8: Como um daemon, Em ligação PPP
+Choices-ru.UTF-8: Как служба, При подключении PPP
+Choices-sv.UTF-8: Som en demon, Vid PPP-anslutning
+Default: As a daemon
+Description: How to run ddclient:
+ The ddclient run mode. Your options:
+ .
+ As a daemon: ddclient runs in the background periodically checking to
+ see if the IP address has changed.
+ .
+ On PPP connect: Each time you connect via PPP ddclient will start,
+ update the IP address, and exit.
+Description-de.UTF-8: Wie Ddclient ausgeführt werden soll:
+ Der Ddclient-Ausführungsmodus. Ihre Optionen:
+ .
+ Als Daemon: Ddclient läuft im Hintergrund und überprüft periodisch, ob sich die IP-Adresse geändert hat.
+ .
+ Bei PPP-Aufbau: Jedes Mal, wenn Sie sich über PPP verbinden, wird DDclient starten, die IP-Adresse aktualisieren und sich beenden.
+Description-fi.UTF-8: Kuinka ddclient suoritetaan:
+ Suoritustila ddclient:lle. Vaihtoehtosi:
+ .
+ Taustapalveluna: ddclient  suoritetaan taustalla ajoittain tarkastaakseen onko IP–osoitteesi vaihtunut.
+ .
+ PPP–yhteydellä: Aina yhdistäessäsi PPP:llä, ddclient käynnistyy, päivittää IP–osoitteesi ja poistuu.
+Description-fr.UTF-8: Comment lancer ddclient :
+ Mode de lancement de ddclient. Vos options :
+ .
+ En tant que démon : ddclient est lancé périodiquement en tâche de fond pour vérifier si l'adresse IP a changé.
+ .
+ Lors de connexions PPP : chaque fois que vous vous connectez par PPP, ddclient démarre, met à jour l'adresse IP et quitte.
+Description-nl.UTF-8: Hoe ddclient uitgevoerd moet worden:
+ De wijze waarop ddclient uitgevoerd wordt. Uw keuzemogelijkheden:
+ .
+ Als achtergronddienst: ddclient wordt in de achtergrond uitgevoerd en gaat periodiek na of het IP-adres gewijzigd is.
+ .
+ Bij het tot stand brengen van een PPP-verbinding: telkens wanneer u een verbinding maakt via PPP zal ddclient opstarten, het IP-adres bijwerken en afsluiten.
+Description-pt_BR.UTF-8: Como executar o ddclient:
+ O modo de execução do ddclient. Suas opções:
+ .
+ Como um daemon: o ddclient executa em segundo plano, verificando periodicamente se o endereço IP mudou.
+ .
+ Ao conectar via PPP: a cada vez que você conectar via PPP, o ddclient vai iniciar, atualizar o endereço IP e sair.
+Description-pt_PT.UTF-8: Como correr o ddclient:
+ O modo de execução do ddclient. As suas opções:
+ .
+ Como um daemon: ddclient corre em segundo plano verificando periodicamente para ver se o seu endereço IP mudou.
+ .
+ Em ligação PPP: Cada vez que você liga via PPP o ddclient irá arrancar, actualiza o endereço IP, e termina.
+Description-ru.UTF-8: Как запускать ddclient:
+ Режим работы ddclient. Доступные варианты:
+ .
+ Как служба: ddclient работает в фоновом режиме, периодически проверяя, изменился ли IP-адрес.
+ .
+ При подключении PPP: ddclient запускается каждый раз при установлении соединения PPP, обновляет IP-адрес и завершает работу.
+Description-sv.UTF-8: Hur ddclient ska köras:
+ ddclients körläge. Dina alternativ:
+ .
+ Som en demon: ddclient körs periodiskt i bakgrunden för att kontrollera om IP-adressen ändrats.
+ .
+ Vid varje PPP-anslutning: Varje gång du ansluter via PPP kommer ddclient att starta, uppdatera IP-adressen och avslutas.
+
+Template: ddclient/daemon_interval
+Type: string
+Default: 5m
+Description: Time between address checks:
+ How long ddclient should wait between IP address checks. Values may
+ be given in seconds (e.g., "300s"), in minutes (e.g., "5m"), in hours
+ (e.g., "7h") or in days (e.g., "1d").
+Description-de.UTF-8: Zeitdauer zwischen Adressüberprüfungen:
+ Die Wartezeit zwischen IP-Adressüberprüfungen. Werte können in Sekunden (z.B. »300s«), Minuten (z.B. »5m«), Stunden (z.B. »7h«) oder Tagen (z.B. »1d«) angegeben werden.
+Description-fi.UTF-8: Aika osoitteen tarkastusten välillä:
+ Kuinka pitkään ddclient:n pitäisi odottaa IP–osoitteen tarkastuksia. Arvot voidaan antaa sekunteina (esim. ”300s”), minuutteina (esim. ”5m”), tunteina (esim. (”7h”) tai päivinä (esim. ”1d”).
+Description-fr.UTF-8: Intervalle entre deux vérifications d'adresse :
+ Intervalle entre deux vérifications par ddclient de l'adresse IP. Les valeurs peuvent être indiquées en seconde (par exemple « 300s »), en minute (par exemple « 5m »), en heure (par exemple « 7h ») ou en jour (par exemple « 1d »). Utilisateurs francophones, attention à l'abréviation utilisée pour les jours.
+Description-nl.UTF-8: Tijd tussen twee controles van het IP-adres:
+ Hoe lang moet ddclient wachten tussen twee controles van het IP-adres. Waardes mogen opgegeven worden in seconden (bijvoorbeeld "300s"), in minuten (bijvoorbeeld "5m"), in uren (bijvoorbeeld "7h"), of in dagen (bijvoorbeeld "1d").
+Description-pt_BR.UTF-8: Intervalo de tempo entre as verificações de endereço:
+ Intervalo de tempo que o ddclient deve esperar entre verificações de endereço IP. Valores podem ser informados em segundos (p. ex., "300s"), em minutos (p. ex., "5m"), em horas (p. ex., "7h") ou em dias (p. ex., "1d").
+Description-pt_PT.UTF-8: Tempo entre verificações de endereço:
+ Quando tempo deve o ddclient esperar entre verificações de endereço IP. Valores podem ser dados em segundo (ex. "300s"), em minutos (ex. "5m"), em horas (ex, "7h") ou em dias (ex. "1d").
+Description-ru.UTF-8: Интервал между проверками адреса:
+ Сколько ddclient будет ждать между проверками IP-адреса. Значения могут задаваться в секундах (например, «300s»), в минутах (например, «5m»), в часах (например, «7h») или в днях (например, «1d»).
+Description-sv.UTF-8: Tiden mellan adresskontroller:
+ Hur länge ddclient ska vänta mellan IP-adresskontroller. Värden kan anges i sekunder (t.ex ”300s”), minuter (t.ex. ”5m”), timmar (t.ex. ”7h”) eller i dagar (t.ex. ”1d”).
+
+Template: ddclient/fetchhosts
+Type: select
+Default: From list
+Choices: From list, Manually
+Choices-ca.UTF-8: Des d'una llista, Manualment
+Choices-cs.UTF-8: Ze seznamu, Ručně
+Choices-da.UTF-8: Fra liste, Manuelt
+Choices-de.UTF-8: aus der Liste, manuell
+Choices-es.UTF-8: De una lista, Manualmente
+Choices-eu.UTF-8: Zerrendatik, Eskuz
+Choices-fi.UTF-8: Listalta, Käsin
+Choices-fr.UTF-8: À partit d'une liste, Manuellement
+Choices-it.UTF-8: Dall'elenco, Manualmente
+Choices-ja.UTF-8: リストから, 手動
+Choices-nb.UTF-8: Fra liste, Manuelt
+Choices-nl.UTF-8: Uit de lijst, Handmatig
+Choices-no.UTF-8: Fra liste, Manuelt
+Choices-pl.UTF-8: Z listy, Ręcznie
+Choices-pt_BR.UTF-8: Da lista, Manualmente
+Choices-pt_PT.UTF-8: A partir de lista, Manualmente
+Choices-ru.UTF-8: Из списка, Вручную
+Choices-sk.UTF-8: Zo zoznamu, Ručne
+Choices-sv.UTF-8: Från lista, Manuellt
+Choices-vi.UTF-8: Từ danh sách, Bằng tay
+Description: How to enter host names:
+ How to prompt you for the host name(s) that ddclient will update.
+ .
+ If you choose "From list", this program will attempt to look up the
+ host names that are registered with your DynDNS account. You will
+ then select hosts from that list.
+ .
+ If you choose "Manually", you will have to type in the host name(s).
+Description-de.UTF-8: Wie der Rechnername eingegeben werden soll:
+ Wie sollen Sie nach dem oder den Rechername(n) gefragt werden, die Ddclient aktualisieren wird.
+ .
+ Falls Sie »aus der Liste« auswählen, wird dieses Programm versuchen, die Rechnernamen nachzuschlagen, die mit Ihrem DynDNS-Konto registriert sind. Sie können dann die Rechner aus der Liste auswählen.
+ .
+ Falls Sie »manuell« auswählen, müssen Sie den oder die Rechnername(n) eingeben.
+Description-fi.UTF-8: Kuinka syöttää verkkonimet:
+ Kuinka sinulta kysytään verkkonimi/verkkonimet, jotka ddclient päivittää.
+ .
+ Jos valitset "Listalta", tämä ohjelma yrittää etsiä verkkonimiä, jotka löytyvät DynDNS–tililtäsi. Sitten valitset verkkonimet tältä listalta.
+ .
+ Jos valitset "Käsin", sinun täytyy kirjoittaa verkkonimi/verkkonimet.
+Description-fr.UTF-8: Comment entrer les noms d'hôte :
+ Comment demander le(s) nom(s) d'hôte que ddclient mettra à jour.
+ .
+ Si vous choisissez « À partir d'une liste », ce programme tentera de consulter les noms d'hôte qui sont enregistrés avec votre compte DynDNS. Vous choisirez alors les hôtes à partir de cette liste.
+ .
+ Si vous choisissez « Manuellement », vous devrez entrer le(s) nom(s) d'hôte.
+Description-nl.UTF-8: Hoe computernamen opgegeven moeten worden:
+ Hoe moet u gevraagd worden naar de computerna(a)m(en) welke ddclient moet bijwerken.
+ .
+ Indien u kiest voor "Uit de lijst", zal dit programma de computernamen proberen op te zoeken welke bij uw DynDNS-account geregistreerd zijn. U kunt dan computers selecteren uit die lijst.
+ .
+ Indien u kiest voor "Handmatig", zult u de computerna(a)m(en) moeten intypen.
+Description-pt_BR.UTF-8: Como informar nomes de máquina:
+ Como perguntar a você os nomes de máquina que o ddclient atualizará.
+ .
+ Se você escolher "Da lista", esse programa tentará consultar os nomes de máquina que estão registrados na sua conta DynDNS. Você então selecionará nomes dessa lista.
+ .
+ Se você escolher "Manualmente", você deverá digitar os nomes de máquina.
+Description-pt_PT.UTF-8: Como inserir nomes de máquinas:
+ Como lhe perguntar pelos nome(s) de máquina(s) que o ddclient irá actualizar.
+ .
+ Se você escolher "A partir de lista", este programa irá tentar encontrar os nomes de máquinas que estão registados com a sua conta DynDNS. Você irá então selecionar máquinas dessa lista.
+ .
+ Se você escolher "Manualmente", você terá de escrever os nomes das máquina(s).
+Description-ru.UTF-8: Способ задания имён узла:
+ Как вы будете вводить имена узла, которые ddclient будет обновлять.
+ .
+ Если выбрать «Из списка», то программа будет пытаться найти имена узла, которые зарегистрированы в вашей учётной записи DynDNS. Затем вы выберете имена из этого списка.
+ .
+ Если выбрать «Вручную», то вам нужно будет напечатать имена узла самостоятельно.
+Description-sv.UTF-8: Hur värdnamn anges:
+ Hur du kommer att efterfrågas efter värdnamnen som ddclient kommer att uppdatera.
+ .
+ Om du väljer ”Från lista” kommer detta program att försöka att slå upp värdnamnen som är registrerade med ditt DynDNS-konto. Du kommer sedan att välja värdar från den listan.
+ .
+ Om du väljer ”Manuellt” måste du mata in värdnamnen.
+
+Template: ddclient/hostslist
+Type: multiselect
+Choices: ${choices}
+Description: Hosts to update:
+ The host name(s) to keep updated with your current IP address. (This
+ list of host names was downloaded from your DynDNS account.)
+Description-de.UTF-8: Zu aktualisierende Rechnernamen:
+ Den oder die Rechnername(n), die mit Ihrer aktuellen IP-Adresse aktuell zu halten sind. (Diese Liste von Rechnernamen wurde von Ihrem DynDNS-Konto heruntergeladen.)
+Description-fi.UTF-8: Päivitettävät verkkonimet:
+ Verkkonimi/verkkonimet joilta nykyinen IP–osoitteesi päivitetään. (Tämä lista ladattiin DynDNS–tililtäsi.)
+Description-fr.UTF-8: Hôtes à tenir à jour :
+ Nom(s) d'hôte à tenir à jour avec votre adresse IP actuelle. (Cette liste de noms d'hôte est téléchargée à partir de votre compte DynDNS.)
+Description-nl.UTF-8: Bij te werken computers:
+ De computerna(a)m(en) welke bijgewerkt moeten worden met uw huidig IP-adres. (Deze lijst met computernamen werd gedownload van uw DynDNS-account.)
+Description-pt_BR.UTF-8: Nomes de máquina para atualizar:
+ Os nomes de máquina para manter atualizados com o seu endereço IP atual. (Essa lista de nomes de máquina foi baixada da sua conta DynDNS).
+Description-pt_PT.UTF-8: Máquinas para actualizar:
+ Os nome(s) de máquinas para manter actualizadas com o seu endereço IP actual. (Esta lista de nomes de máquinas foi descarregada da sua conta DynDNS.)
+Description-ru.UTF-8: Обновляемые имена узла:
+ Имена узла, у которых необходимо обновлять ваш текущий IP-адрес (этот список имён узла был получен из вашей учётной записи DynDNS).
+Description-sv.UTF-8: Värdnamn att uppdaterade:
+ Värdnamn att hålla uppdaterade med din aktuella IP-adress. (Denna lista av värdnamn hämtades från ditt DynDNS-konto.)
+
+Template: ddclient/blankhostslist
+Type: error
+Description: Empty host list
+ The list of host names managed under your account is empty when retrieved
+ from the dynamic DNS service website.
+ .
+ You may have provided an incorrect username or password, or the online account
+ may have no host names configured.
+ .
+ Please check your account to be sure you have host names configured, then run
+ "dpkg-reconfigure ddclient" to input your username and password again.
+Description-ca.UTF-8: Llista de noms buida
+ La llista de noms d'ordinadors gestionats pel vostre compte, obtinguda de la pàgina del servei de DNS dinàmic, és buida.
+ .
+ Potser heu indicat un nom d'usuari o contrasenya que no són correctes, o el compte d'usuari no té encara noms d'ordinadors configurats.
+ .
+ Comproveu el vostre compte per assegurar-vos que heu configurat els noms, i després executeu «dpkg-reconfigure ddclient» per indicar un altre cop el nom d'usuari i la contrasenya.
+Description-cs.UTF-8: Prázdný seznam počítačů
+ Seznam jmen počítačů stažený z vašeho účtu služby dynamického DNS je prázdný.
+ .
+ Buď jste zadali špatné uživatelské jméno nebo heslo, nebo pod zadaným účtem nemáte nastavena žádná jména počítačů.
+ .
+ Zkontrolujte prosím svůj účet, abyste se ujistili, že jsou jména počítačů nastavena a poté spusťte „dpkg-reconfigure ddclient“ a znovu zadejte své uživatelské jméno a heslo.
+Description-da.UTF-8: Tom værtsliste
+ Listen af værtsnavne håndteret under din konto er tom når den hentes fra den dynamiske DNS-tjenestes internetside.
+ .
+ Du har måske angivet et forkert brugernavn eller adgangskode, eller kontoen på nettet har måske ingen værtsnavne konfigureret.
+ .
+ Tjek venligst din konto for at være sikker på, at du har værtsnavne konfigureret, og kør så »dpkg-reconfigure ddclient« for at indtaste dit brugernavn og adgangskode igen.
+Description-de.UTF-8: Leere Rechnerliste
+ Die Liste der mit Ihrem Konto verwalteten Rechnernamen ist leer, wenn sie von der Website des dynamischen DNS-Dienstes heruntergeladen wird.
+ .
+ Es könnte sein, dass Sie keinen korrekten Benutzernamen oder kein korrektes Passwort angegeben haben oder im Online-Konto keine Rechnernamen konfiguriert worden sind.
+ .
+ Bitte überprüfen Sie Ihr Konto, um sicherzustellen, dass Sie Rechnernamen konfiguriert haben. Führen Sie danach »dpkg-reconfigure ddclient« aus, um erneut Ihren Benutzernamen und Ihr Passwort einzugeben.
+Description-es.UTF-8: Lista de equipos vacía
+ La consulta de la lista de nombres de equipo del sitio web del servicio de DNS dinámico con su cuenta devolvió una lista vacía.
+ .
+ Puede que haya introducido un nombre de usuario o contraseña incorrectos, o que la cuenta no tenga configurado ningún nombre de equipo.
+ .
+ Asegúrese de comprobar de que en su cuenta tiene nombres de equipo configurados. A continuación ejecute «dpkg-reconfigure ddclient» para introducir de nuevo su nombre de usuario y contraseña.
+Description-eu.UTF-8: Ostalarien zerrenda hutsik
+ Zure kontuaren bidez kudeatutako ostalari-izenen zerrenda hutsik dago DNS dinamikoaren webgunetik eskuratzean.
+ .
+ Erabiltzaile-izena edo pasahitza gaizki dago, edo lineako kontuak ez dauka ostalari-izenik konfiguratuta.
+ .
+ Egiaztatu zure kontua ostalarien izenak konfiguratuta daudela ziurtatzeko, gero exekutatu "dpkg-reconfigure ddclient" zure erabiltzaile-izena eta pasahitza berriro sartzeko.
+Description-fi.UTF-8: Tyhjä verkkonimilista
+ DynDNS-verkkosivulta haettu lista tilisi kautta hallinnoitavista verkkonimistä oli tyhjä.
+ .
+ Olet saattanut antaa väärän käyttäjätunnuksen tai salasanan, tai tililläsi ei ehkä ole yhtään verkkonimeä asetettuna.
+ .
+ Tarkista tili varmistaaksesi, että verkkonimiä on asetettuina ja aja sen jälkeen komento ”dpkg-reconfigure ddclient” antaaksesi käyttäjätunnuksen, ja salasanan uudelleen.
+Description-fr.UTF-8: Liste d'hôtes vide
+ La liste des noms d'hôte gérés avec votre compte, téléchargée sur le site web du service de DNS dynamique, est vide.
+ .
+ Vous avez peut-être indiqué un identifiant ou un mot de passe non valable, ou bien le compte en ligne n'a peut-être aucun nom d'hôte configuré.
+ .
+ Veuillez vérifier si des noms d'hôte sont définis avec le compte utilisé, puis utiliser la commande « dpkg-reconfigure ddclient » pour indiquer à nouveau l'identifiant et le mot de passe à utiliser.
+Description-it.UTF-8: Elenco degli host vuoto
+ L'elenco dei nomi degli host gestiti dall'account scaricato dal sito web del servizio dynamic DNS è vuoto.
+ .
+ È possibile che si siano fornite credenziali d'accesso (nome utente o password) errati, oppure che l'account non abbia alcun nome di host configurato.
+ .
+ Controllare l'account per accertarsi di avere nomi di host configurati, poi eseguire «dpkg-reconfigure ddclient» per inserire nuovamente le proprie credenziali d'accesso.
+Description-ja.UTF-8: 空のホストリスト
+ あなたのアカウントで管理されるホスト名のリストは、動的 DNS サービスの Web サイトから取得した時点で空です。
+ .
+ 不正なユーザー名またはパスワードを指定したか、オンラインアカウントに設定されたホスト名がないのでしょう。
+ .
+ ホスト名が正しく設定されているかあなたのアカウントを確認し、ユーザー名とパスワードを再度入力するために "dpkg-reconfigure ddclient" を実行してください。
+Description-nb.UTF-8: Tom vertsliste
+ Lista over vertsnavn som styres under din konto er tom når den hentes fra nettstedet til den dynamiske DNS-tjenesten.
+ .
+ Du kan ha oppgitt feil brukernavn eller passord, eller nettverkskontoen har ingen vertsnavn satt opp.
+ .
+ Kontroller kontoen din for å forsikre deg om at du har vertsnavn satt opp, og kjør deretter «dpkg-reconfigure ddclient» for å skrive inn brukernavn og passord igjen.
+Description-nl.UTF-8: Lege computerlijst
+ De lijst met computernamen welke aan uw account gekoppeld zijn, blijkt volgens de website van de dynamische DNS-dienst leeg te zijn.
+ .
+ U heeft mogelijk een verkeerde gebruikersnaam of wachtwoord opgegeven, of er staan bij uw account geen computernamen ingesteld.
+ .
+ Controleer uw account zodat u zeker weet dat er computernamen zijn ingesteld en voer dan "dpkg-reconfigure ddclient" uit om uw gebruikersnaam en wachtwoord nogmaals op te geven.
+Description-no.UTF-8: Tom vertsliste
+ Lista over vertsnavn som styres under din konto er tom når den hentes fra nettstedet til den dynamiske DNS-tjenesten.
+ .
+ Du kan ha oppgitt feil brukernavn eller passord, eller nettverkskontoen har ingen vertsnavn satt opp.
+ .
+ Kontroller kontoen din for å forsikre deg om at du har vertsnavn satt opp, og kjør deretter «dpkg-reconfigure ddclient» for å skrive inn brukernavn og passord igjen.
+Description-pl.UTF-8: Pusta lista nazw
+ Lista nazw hosta zarządzanych za pomocą konta, pobrana ze strony usługi dynamicznego DNS jest pusta.
+ .
+ Być może podano niewłaściwą nazwę użytkownika lub hasło, albo nie skonfigurowano nazw hosta w koncie online.
+ .
+ Proszę sprawdzić swoje konto, aby upewnić się, że nazwy hostów zostały skonfigurowane, a następnie wykonać "dpkg-reconfigure ddclient" aby ponownie wpisać swoją nazwę użytkownika i hasło.
+Description-pt_BR.UTF-8: Lista de nomes de máquina vazia
+ A lista de nomes de máquina gerenciados por sua conta está vazia quando obtida do website do serviço de DNS dinâmico.
+ .
+ Você pode ter informado um nome de usuário ou senha incorretos, ou sua conta online talvez não tenha nomes de máquina configurados.
+ .
+ Por favor, verifique sua conta para ter certeza que tem nomes de máquina configurados, em seguida execute "dpkg-reconfigure ddclient" para informar seu nome de usuário e senha novamente.
+Description-pt_PT.UTF-8: Lista de máquinas vazia
+ A lista de nomes de máquinas geridas sob a sua conta estava vazia quando obtida a partir do sítio web do serviço de DNS dinâmico.
+ .
+ Você pode ter fornecido um nome de utilizador ou palavra passe incorretos, ou a conta online pode não ter nomes de máquinas configurados.
+ .
+ Por favor verifique a sua conta para certificar que tem nomes de máquinas configurados, depois corra "dpkg-reconfigure ddclient" para inserir o seu nome de utilizador e palavra passe outra vez.
+Description-ru.UTF-8: Список узлов пуст
+ Из вашей учётной записи в службе динамического DNS получен пустой список имён узлов.
+ .
+ Вы могли указать неправильное имя или пароль, или в учётной записи не настроено ни одного имени узла.
+ .
+ Проверьте, что в вашей учётной записи настроены имена узлов, а затем запустите «dpkg-reconfigure ddclient», чтобы ввести имя и пароль к службе ещё раз.
+Description-sk.UTF-8: Prázdny zoznam počítačov
+ Zoznam názvov počítačov stiahnutých z webstránky dynamického DNS spravovaných prostredníctvom vášho účtu bol prázdny.
+ .
+ Možno ste zadali nesprávne prihlasovacie meno alebo heslo alebo na účte online nie sú nakonfigurované žiadne názvy počítačov.
+ .
+ Skontrolujte prosím  svoj účet, aby ste sa uistili, že máte nastavené názvy počítačov a potom spustite „dpkg-reconfigure ddclient“ a znova zadajte svoje používateľské meno a heslo.
+Description-sv.UTF-8: Tom värdlista
+ Listan med värdnamn som hanteras i ditt konto var tom när den hämtades från webbsidan för tjänsten som tillhandahåller dynamisk DNS.
+ .
+ Antingen så har du angivit felaktiga inloggningsuppgifter eller så finns det inga värdnamn i inställningarna ännu.
+ .
+ Kontrollera ditt konto för att säkerställa att det finns värdnamn att nyttja och kör sedan ”dpkg-reconfigure ddclient” och ange dina inloggningsuppgifter på nytt.
+Description-vi.UTF-8: Danh sách máy trống
+ Danh sách các tên máy được quản lý dưới tài khoản của bạn vẫn còn trống khi được lấy từ địa chỉ Web của dịch vụ DNS động.
+ .
+ Có thể là bạn đưa ra một tên người dùng hay mật khẩu không đúng, hoặc tài khoản trực tuyến không có tên máy nào được cấu hình.
+ .
+ Hãy kiểm tra lại tài khoản của mình có tên máy được cấu hình, sau đó chạy câu lệnh « dpkg-reconfigure ddclient » để gõ lại tên người dùng và mật khẩu.

@@ -1,0 +1,11 @@
+ae35a91032047f4f6746e6ead4adc1d3  usr/lib/x86_64-linux-gnu/frr/libfrrsnmp.so.0.0.0
+d749857effacf9d459ca18a782fdd221  usr/lib/x86_64-linux-gnu/frr/modules/bgpd_snmp.so
+30ddeeb30e1cc10f4905422329b49698  usr/lib/x86_64-linux-gnu/frr/modules/isisd_snmp.so
+30f522a49183e235dd8ce596a35a9270  usr/lib/x86_64-linux-gnu/frr/modules/ldpd_snmp.so
+cd2aa2496c4a377c9bc1036b0108f62d  usr/lib/x86_64-linux-gnu/frr/modules/ospf6d_snmp.so
+3fa953738a7eba3f7132a61837b6ec12  usr/lib/x86_64-linux-gnu/frr/modules/ospfd_snmp.so
+cf65b908e99d57990fdcbd46479330fc  usr/lib/x86_64-linux-gnu/frr/modules/ripd_snmp.so
+eec88bd771a7448f768bab1325141900  usr/lib/x86_64-linux-gnu/frr/modules/zebra_snmp.so
+9cf4c08c185d30dd83c42637431c5611  usr/share/doc/frr-snmp/changelog.Debian.gz
+116c94190bd7de6896d53ee562327310  usr/share/doc/frr-snmp/copyright
+e76849909f424fdbfc829cac881531ce  usr/share/lintian/overrides/frr-snmp

@@ -1,0 +1,2 @@
+help: Show details about installed VyOS images
+run: sudo ${vyos_op_scripts_dir}/image_info.py show_images_details

@@ -1,0 +1,5 @@
+type: txt
+help: Timeout for Neighbor Advertisement after Neighbor Solicitation
+			message (default: 500)
+val_help: u32:500-120000; Timeout in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 500-120000\"  --value \'$VAR(@)\'"; "Timeout must be between 500 and 120000 milliseconds"

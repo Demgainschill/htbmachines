@@ -1,0 +1,4 @@
+type: txt
+help: SRv6 locator prefix
+val_help: ipv6net; SRv6 locator prefix
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv6-prefix \"  --value \'$VAR(@)\'"; "Invalid value"

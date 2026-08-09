@@ -1,0 +1,3 @@
+type: txt
+help: DH parameters in PEM format
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/base64 \"  --value \'$VAR(@)\'"; "DH parameters are not base64-encoded"

@@ -1,0 +1,2 @@
+help: Password to use with authentication
+run: sudo ${vyos_op_scripts_dir}/image_installer.py --action add --image-path "${4}" --username "${6}" --password "${8}"

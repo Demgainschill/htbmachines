@@ -1,0 +1,122 @@
+# Nmap 7.99 scan initiated Sun Jul 26 19:26:57 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA office_results 10.129.230.226
+Nmap scan report for 10.129.230.226
+Host is up (0.10s latency).
+Scanned at 2026-07-26 19:26:58 IST for 150s
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Apache httpd 2.4.56 ((Win64) OpenSSL/1.1.1t PHP/8.0.28)
+|_http-title: Home
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: 1B6942E22443109DAEA739524AB74123
+|_http-generator: Joomla! - Open Source Content Management
+| http-robots.txt: 16 disallowed entries 
+| /joomla/administrator/ /administrator/ /api/ /bin/ 
+| /cache/ /cli/ /components/ /includes/ /installation/ 
+|_/language/ /layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/
+|_http-server-header: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-26 15:16:01Z)
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: office.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-26T15:17:40+00:00; +1h18m14s from scanner time.
+| ssl-cert: Subject: commonName=DC.office.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC.office.htb
+| Issuer: commonName=office-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-05-10T12:36:58
+| Not valid after:  2024-05-09T12:36:58
+| MD5:     b83f ab78 db28 734d de84 11e9 420f 8878
+| SHA-1:   36c4 cedf 9185 3d4c 598c 739a 8bc7 a062 4458 cfe4
+|_SHA-256: 286c 44cc 3617 76ef a8a0 a4a3 c10e 4e41 79c7 83b8 fd86 f051 e0c9 6855 63f5 950e
+443/tcp   open  ssl/http      Apache httpd 2.4.56 (OpenSSL/1.1.1t PHP/8.0.28)
+|_http-server-header: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28
+| tls-alpn: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:     a0a4 4cc9 9e84 b26f 9e63 9f9e d229 dee0
+| SHA-1:   b023 8c54 7a90 5bfa 119c 4e8b acca eacf 3649 1ff6
+|_SHA-256: 0169 7338 0c0f 1df0 0bd9 593e d8d5 efa3 706c d6df 7993 f614 1272 b805 22ac dd23
+|_http-title: 403 Forbidden
+| http-cisco-anyconnect: 
+|_  ERROR: Failed to connect to SSL VPN server
+|_ssl-date: TLS randomness does not represent time
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: office.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-26T15:17:40+00:00; +1h18m14s from scanner time.
+| ssl-cert: Subject: commonName=DC.office.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC.office.htb
+| Issuer: commonName=office-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-05-10T12:36:58
+| Not valid after:  2024-05-09T12:36:58
+| MD5:     b83f ab78 db28 734d de84 11e9 420f 8878
+| SHA-1:   36c4 cedf 9185 3d4c 598c 739a 8bc7 a062 4458 cfe4
+|_SHA-256: 286c 44cc 3617 76ef a8a0 a4a3 c10e 4e41 79c7 83b8 fd86 f051 e0c9 6855 63f5 950e
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: office.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC.office.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC.office.htb
+| Issuer: commonName=office-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-05-10T12:36:58
+| Not valid after:  2024-05-09T12:36:58
+| MD5:     b83f ab78 db28 734d de84 11e9 420f 8878
+| SHA-1:   36c4 cedf 9185 3d4c 598c 739a 8bc7 a062 4458 cfe4
+|_SHA-256: 286c 44cc 3617 76ef a8a0 a4a3 c10e 4e41 79c7 83b8 fd86 f051 e0c9 6855 63f5 950e
+|_ssl-date: 2026-07-26T15:17:40+00:00; +1h18m14s from scanner time.
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: office.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC.office.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC.office.htb
+| Issuer: commonName=office-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-05-10T12:36:58
+| Not valid after:  2024-05-09T12:36:58
+| MD5:     b83f ab78 db28 734d de84 11e9 420f 8878
+| SHA-1:   36c4 cedf 9185 3d4c 598c 739a 8bc7 a062 4458 cfe4
+|_SHA-256: 286c 44cc 3617 76ef a8a0 a4a3 c10e 4e41 79c7 83b8 fd86 f051 e0c9 6855 63f5 950e
+|_ssl-date: 2026-07-26T15:17:40+00:00; +1h18m14s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49869/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49874/tcp open  msrpc         Microsoft Windows RPC
+49904/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Hosts: DC, www.example.com; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: 
+|_  ERROR: Name query failed: TIMEOUT
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 1h18m13s, deviation: 1s, median: 1h18m13s
+| smb-os-discovery: 
+|_  ERROR: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb2-time: 
+|   date: 2026-07-26T15:17:01
+|_  start_date: N/A
+| smb-security-mode: 
+|_  ERROR: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Read from /usr/share/nmap: nmap-protocols nmap-service-probes nmap-services.
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 26 19:29:28 2026 -- 1 IP address (1 host up) scanned in 150.41 seconds

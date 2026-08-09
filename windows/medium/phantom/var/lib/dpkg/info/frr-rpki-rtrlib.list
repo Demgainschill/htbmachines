@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/frr
+/usr/lib/x86_64-linux-gnu/frr/modules
+/usr/lib/x86_64-linux-gnu/frr/modules/bgpd_rpki.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/frr-rpki-rtrlib
+/usr/share/doc/frr-rpki-rtrlib/changelog.Debian.gz
+/usr/share/doc/frr-rpki-rtrlib/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/frr-rpki-rtrlib

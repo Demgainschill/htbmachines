@@ -1,0 +1,110 @@
+┌──(root kali)-[~/htbmachines/linux/medium/principal]
+
+└─# # Most common endpoint (try these in order)
+
+curl -s http://10.129.244.220:8080/api/auth/jwks | jq .
+
+curl -s http://10.129.244.220:8080/.well-known/jwks.json | jq .
+
+curl -s http://10.129.244.220:8080/jwks | jq .
+
+# You should get something like:
+
+# {
+
+#   "keys": [
+
+#     {
+
+#       "kty": "RSA",
+
+#       "use": "enc",
+
+#       "kid": "enc-key-1",
+
+#       "n": "...",
+
+#       "e": "AQAB"
+
+#     }
+
+#   ]
+
+# }
+
+# Save it
+
+curl -s http://10.129.244.220:8080/api/auth/jwks | jq . > jwks.json
+
+cat jwks.json
+
+{
+
+  "keys": [
+
+    {
+
+      "kty": "RSA",
+
+      "e": "AQAB",
+
+      "kid": "enc-key-1",
+
+      "n": "lTh54vtBS1NAWrxAFU1NEZdrVxPeSMhHZ5NpZX-WtBsdWtJRaeeG61iNgYsFUXE9j2MAqmekpnyapD6A9dfSANhSgCF60uAZhnpIkFQVKEZday6ZIxoHpuP9zh2c3a7JrknrTbCPKzX39T6IK8pydccUvRl9zT4E_i6gtoVCUKixFVHnCvBpWJtmn4h3PCPCIOXtbZHAP3Nw7ncbXXNsrO3zmWXl-GQPuXu5-Uoi6mBQbmm0Z0SC07MCEZdFwoqQFC1E6OMN2G-KRwmuf661-uP9kPSXW8l4FutRpk6-LZW5C7gwihAiWyhZLQpjReRuhnUvLbG7I_m2PV0bWWy-Fw"
+
+    }
+
+  ]
+
+}
+
+{
+
+  "timestamp": "2026-08-02T04:58:59.234+00:00",
+
+  "status": 404,
+
+  "error": "Not Found",
+
+  "path": "/.well-known/jwks.json"
+
+}
+
+{
+
+  "timestamp": "2026-08-02T04:58:59.500+00:00",
+
+  "status": 404,
+
+  "error": "Not Found",
+
+  "path": "/jwks"
+
+}
+
+{
+
+  "keys": [
+
+    {
+
+      "kty": "RSA",
+
+      "e": "AQAB",
+
+      "kid": "enc-key-1",
+
+      "n": "lTh54vtBS1NAWrxAFU1NEZdrVxPeSMhHZ5NpZX-WtBsdWtJRaeeG61iNgYsFUXE9j2MAqmekpnyapD6A9dfSANhSgCF60uAZhnpIkFQVKEZday6ZIxoHpuP9zh2c3a7JrknrTbCPKzX39T6IK8pydccUvRl9zT4E_i6gtoVCUKixFVHnCvBpWJtmn4h3PCPCIOXtbZHAP3Nw7ncbXXNsrO3zmWXl-GQPuXu5-Uoi6mBQbmm0Z0SC07MCEZdFwoqQFC1E6OMN2G-KRwmuf661-uP9kPSXW8l4FutRpk6-LZW5C7gwihAiWyhZLQpjReRuhnUvLbG7I_m2PV0bWWy-Fw"
+
+    }
+
+  ]
+
+}
+
+                                                                                                            
+
+┌──(root kali)-[~/htbmachines/linux/medium/principal]
+
+└─# 
+

@@ -1,0 +1,6 @@
+type: txt
+help: High availability hierarchy
+val_help: primary; Configure this server to be the primary node
+val_help: secondary; Configure this server to be the secondary node
+allowed: echo "primary secondary"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(primary|secondary)\'   --value \'$VAR(@)\'"; "Invalid DHCP high availability peer status"

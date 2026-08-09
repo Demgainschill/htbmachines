@@ -1,0 +1,3 @@
+help: Show list view of firewall statistics
+allowed: /bin/cli-shell-api listActiveNodes firewall statistics detail | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/firewall.py --action show_statistics --detail $4

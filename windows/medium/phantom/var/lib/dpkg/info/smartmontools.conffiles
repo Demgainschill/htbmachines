@@ -1,0 +1,4 @@
+/etc/default/smartmontools
+/etc/init.d/smartmontools
+/etc/smartd.conf
+/etc/smartmontools/run.d/10mail

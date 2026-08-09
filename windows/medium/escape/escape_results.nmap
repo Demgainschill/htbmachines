@@ -1,0 +1,117 @@
+# Nmap 7.99 scan initiated Tue Jul 21 12:50:18 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA escape_results 10.129.228.253
+Nmap scan report for 10.129.228.253
+Host is up (0.27s latency).
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-21 15:20:44Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: sequel.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-21T15:22:20+00:00; +7h59m45s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel
+| Issuer: commonName=sequel-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-01-18T23:03:57
+| Not valid after:  2074-01-05T23:03:57
+| MD5:     ee4c c647 ebb2 c23e f472 1d70 2880 9d82
+| SHA-1:   d88d 12ae 8a50 fcf1 2242 909e 3dd7 5cff 92d1 a480
+|_SHA-256: 9b16 318b 7bc0 f508 b5cd 98a5 3a80 d1d7 54e1 e158 45b1 4956 003b 4bb5 05f8 7f98
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: sequel.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel
+| Issuer: commonName=sequel-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-01-18T23:03:57
+| Not valid after:  2074-01-05T23:03:57
+| MD5:     ee4c c647 ebb2 c23e f472 1d70 2880 9d82
+| SHA-1:   d88d 12ae 8a50 fcf1 2242 909e 3dd7 5cff 92d1 a480
+|_SHA-256: 9b16 318b 7bc0 f508 b5cd 98a5 3a80 d1d7 54e1 e158 45b1 4956 003b 4bb5 05f8 7f98
+|_ssl-date: 2026-07-21T15:22:20+00:00; +7h59m45s from scanner time.
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2019 15.00.2000.00; RTM
+| ms-sql-ntlm-info: 
+|   10.129.228.253:1433: 
+|     Target_Name: sequel
+|     NetBIOS_Domain_Name: sequel
+|     NetBIOS_Computer_Name: DC
+|     DNS_Domain_Name: sequel.htb
+|     DNS_Computer_Name: dc.sequel.htb
+|     DNS_Tree_Name: sequel.htb
+|_    Product_Version: 10.0.17763
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-21T15:18:40
+| Not valid after:  2056-07-21T15:18:40
+| MD5:     594e 4676 1978 96c7 9559 7b5c 8d84 522f
+| SHA-1:   c078 70ea 1bea bede 2341 4063 7e04 0a38 36f3 9ebc
+|_SHA-256: 2321 98a0 174f 7c06 e162 d1da 782f bc74 fc8c e824 7e35 23a5 d8e2 418f ffce 824a
+| ms-sql-info: 
+|   10.129.228.253:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+|_ssl-date: 2026-07-21T15:22:20+00:00; +7h59m45s from scanner time.
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: sequel.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-21T15:22:20+00:00; +7h59m45s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel
+| Issuer: commonName=sequel-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-01-18T23:03:57
+| Not valid after:  2074-01-05T23:03:57
+| MD5:     ee4c c647 ebb2 c23e f472 1d70 2880 9d82
+| SHA-1:   d88d 12ae 8a50 fcf1 2242 909e 3dd7 5cff 92d1 a480
+|_SHA-256: 9b16 318b 7bc0 f508 b5cd 98a5 3a80 d1d7 54e1 e158 45b1 4956 003b 4bb5 05f8 7f98
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: sequel.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel
+| Issuer: commonName=sequel-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-01-18T23:03:57
+| Not valid after:  2074-01-05T23:03:57
+| MD5:     ee4c c647 ebb2 c23e f472 1d70 2880 9d82
+| SHA-1:   d88d 12ae 8a50 fcf1 2242 909e 3dd7 5cff 92d1 a480
+|_SHA-256: 9b16 318b 7bc0 f508 b5cd 98a5 3a80 d1d7 54e1 e158 45b1 4956 003b 4bb5 05f8 7f98
+|_ssl-date: 2026-07-21T15:22:20+00:00; +7h59m45s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        .NET Message Framing
+49667/tcp open  msrpc         Microsoft Windows RPC
+49679/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49680/tcp open  msrpc         Microsoft Windows RPC
+49703/tcp open  msrpc         Microsoft Windows RPC
+49713/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2026-07-21T15:21:42
+|_  start_date: N/A
+|_clock-skew: mean: 7h59m44s, deviation: 0s, median: 7h59m44s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 21 12:52:39 2026 -- 1 IP address (1 host up) scanned in 140.94 seconds

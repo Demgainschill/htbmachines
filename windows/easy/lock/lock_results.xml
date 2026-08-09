@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Jul  7 07:25:05 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA lock_results 10.129.234.64 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA lock_results 10.129.234.64" start="1783389305" startstr="Tue Jul  7 07:25:05 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1783389305"/>
+<taskend task="NSE" time="1783389305"/>
+<taskbegin task="NSE" time="1783389305"/>
+<taskend task="NSE" time="1783389305"/>
+<taskbegin task="NSE" time="1783389305"/>
+<taskend task="NSE" time="1783389305"/>
+<taskbegin task="Ping Scan" time="1783389305"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.234.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1783389306" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1783389306"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1783389306"/>
+<taskbegin task="SYN Stealth Scan" time="1783389306"/>
+<taskend task="SYN Stealth Scan" time="1783389339" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1783389339"/>
+<taskend task="Service scan" time="1783389366" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1783389366"/>
+<taskend task="NSE" time="1783389407"/>
+<taskbegin task="NSE" time="1783389407"/>
+<taskend task="NSE" time="1783389407"/>
+<taskbegin task="NSE" time="1783389407"/>
+<taskend task="NSE" time="1783389407"/>
+<host starttime="1783389306" endtime="1783389407"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.234.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65531">
+<extrareasons reason="no-response" count="65531" proto="tcp" ports="1-79,81-444,446-2999,3001-3388,3390-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: FED84E16B6CCFE88EE7FFAAE5DFEFD34"/><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="Lock - Index"><elem key="title">Lock - Index</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3000"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Golang net/http server" servicefp="SF-Port3000-TCP:V=7.99%I=7%D=7/7%Time=6A4C5CA1%P=x86_64-pc-linux-gnu%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(GetRequest,1000,&quot;HTTP/1\.0\x20200\x20OK\r\nCache-Control:\x20max-age=0,\x20private,\x20must-revalidate,\x20no-transform\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nSet-Cookie:\x20i_like_gitea=c941d0c874755d6c;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nSet-Cookie:\x20_csrf=E3y1PCOIS9SmyMWi1RcDq-YjRHE6MTc4MzM4OTM0NTk2NzIwOTIwMA;\x20Path=/;\x20Max-Age=86400;\x20HttpOnly;\x20SameSite=Lax\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Tue,\x2007\x20Jul\x202026\x2001:55:46\x20GMT\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en-US\&quot;\x20class=\&quot;theme-auto\&quot;&gt;\n&lt;head&gt;\n\t&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\t&lt;title&gt;Gitea:\x20Git\x20with\x20a\x20cup\x20of\x20tea&lt;/title&gt;\n\t&lt;link\x20rel=\&quot;manifest\&quot;\x20href=\&quot;data:application/json;base64,eyJuYW1lIjoiR2l0ZWE6IEdpdCB3aXRoIGEgY3VwIG9mIHRlYSIsInNob3J0X25hbWUiOiJHaXRlYTogR2l0IHdpdGggYSBjdXAgb2YgdGVhIiwic3RhcnRfdXJsIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwLyIsImljb25zIjpbeyJzcmMiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXNzZXRzL2ltZy9sb2dvLnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJzaXplcyI6IjU&quot;)%r(Help,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(HTTPOptions,1A4,&quot;HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nAllow:\x20HEAD\r\nAllow:\x20HEAD\r\nAllow:\x20GET\r\nCache-Control:\x20max-age=0,\x20private,\x20must-revalidate,\x20no-transform\r\nSet-Cookie:\x20i_like_gitea=824fa41e95aab2de;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nSet-Cookie:\x20_csrf=Nxg1Kge4wmqAptmU01-pXeymlFA6MTc4MzM4OTM0NjMxNDQ2MTYwMA;\x20Path=/;\x20Max-Age=86400;\x20HttpOnly;\x20SameSite=Lax\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Tue,\x2007\x20Jul\x202026\x2001:55:46\x20GMT\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;);" method="probed" conf="10"><cpe>cpe:/a:golang:go</cpe></service><script id="http-title" output="Gitea: Git with a cup of tea"><elem key="title">Gitea: Git with a cup of tea</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: F6E1A9128148EEAD9EFF823C540EF471"/><script id="http-methods" output="&#xa;  Supported Methods: HEAD GET"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="fingerprint-strings" output="&#xa;  GenericLines, Help, RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Cache-Control: max-age=0, private, must-revalidate, no-transform&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Set-Cookie: i_like_gitea=c941d0c874755d6c; Path=/; HttpOnly; SameSite=Lax&#xa;    Set-Cookie: _csrf=E3y1PCOIS9SmyMWi1RcDq-YjRHE6MTc4MzM4OTM0NTk2NzIwOTIwMA; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Tue, 07 Jul 2026 01:55:46 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en-US&quot; class=&quot;theme-auto&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;title&gt;Gitea: Git with a cup of tea&lt;/title&gt;&#xa;    &lt;link rel=&quot;manifest&quot; href=&quot;data:application/json;base64,eyJuYW1lIjoiR2l0ZWE6IEdpdCB3aXRoIGEgY3VwIG9mIHRlYSIsInNob3J0X25hbWUiOiJHaXRlYTogR2l0IHdpdGggYSBjdXAgb2YgdGVhIiwic3RhcnRfdXJsIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwLyIsImljb25zIjpbeyJzcmMiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXNzZXRzL2ltZy9sb2dvLnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJzaXplcyI6IjU&#xa;  HTTPOptions: &#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Allow: HEAD&#xa;    Allow: HEAD&#xa;    Allow: GET&#xa;    Cache-Control: max-age=0, private, must-revalidate, no-transform&#xa;    Set-Cookie: i_like_gitea=824fa41e95aab2de; Path=/; HttpOnly; SameSite=Lax&#xa;    Set-Cookie: _csrf=Nxg1Kge4wmqAptmU01-pXeymlFA6MTc4MzM4OTM0NjMxNDQ2MTYwMA; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Tue, 07 Jul 2026 01:55:46 GMT&#xa;    Content-Length: 0"><elem key="GenericLines, Help, RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Cache-Control: max-age=0, private, must-revalidate, no-transform&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Set-Cookie: i_like_gitea=c941d0c874755d6c; Path=/; HttpOnly; SameSite=Lax&#xa;    Set-Cookie: _csrf=E3y1PCOIS9SmyMWi1RcDq-YjRHE6MTc4MzM4OTM0NTk2NzIwOTIwMA; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Tue, 07 Jul 2026 01:55:46 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en-US&quot; class=&quot;theme-auto&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;title&gt;Gitea: Git with a cup of tea&lt;/title&gt;&#xa;    &lt;link rel=&quot;manifest&quot; href=&quot;data:application/json;base64,eyJuYW1lIjoiR2l0ZWE6IEdpdCB3aXRoIGEgY3VwIG9mIHRlYSIsInNob3J0X25hbWUiOiJHaXRlYTogR2l0IHdpdGggYSBjdXAgb2YgdGVhIiwic3RhcnRfdXJsIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwLyIsImljb25zIjpbeyJzcmMiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXNzZXRzL2ltZy9sb2dvLnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJzaXplcyI6IjU</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Allow: HEAD&#xa;    Allow: HEAD&#xa;    Allow: GET&#xa;    Cache-Control: max-age=0, private, must-revalidate, no-transform&#xa;    Set-Cookie: i_like_gitea=824fa41e95aab2de; Path=/; HttpOnly; SameSite=Lax&#xa;    Set-Cookie: _csrf=Nxg1Kge4wmqAptmU01-pXeymlFA6MTc4MzM4OTM0NjMxNDQ2MTYwMA; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Tue, 07 Jul 2026 01:55:46 GMT&#xa;    Content-Length: 0</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=Lock&#xa;Issuer: commonName=Lock&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-07-06T01:54:07&#xa;Not valid after:  2027-01-05T01:54:07&#xa;MD5:     244f b588 a47b 6eef 22d3 7a4c a882 6b37&#xa;SHA-1:   e8ba 0100 b57a 7866 29c6 fcd7 df11 6940 b00f 9b36&#xa;SHA-256: 4aa0 c788 f473 fa49 8f27 254e 52a7 c31a c04b 91fe 0537 e727 ad35 3367 ea69 cc42"><table key="subject">
+<elem key="commonName">Lock</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Lock</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CDBAF1BCE29B6BB74C96DC700F4C62FA724A1D92CA7FF1E560E56FCFE5FAB2F511AF384C28C94C409B66C06E2DE2BB6482C4E66919A4AD7D90959F2C9290EBE9C451F2596AF15EA60AB980D25F564EF13508E658020E4B1EBE61F68D5EDF7ABEC28451B63CB4C5E04A4E0FBC3EC2D0BB01FFDF526D80033FA4958B1808EA245048D4DD48CBC06BCE8C3D705FE7C1C8C4602E03BE9070F3292950D3FD45CA3583C1EFE0DBC1D7BD897FED6E87637A1890291EC889F1223BCE1F926AAA1E4080F67FE2CC5367C4936C2338ABB60F1B16811CC6A5E6B23EE2783BD2359413B5E76F994A029A74569A4B33F02610B125900F1C3BB56618D9B434DE50D57DA00DAC91</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-06T01:54:07</elem>
+<elem key="notAfter">2027-01-05T01:54:07</elem>
+</table>
+<elem key="md5">244fb588a47b6eef22d37a4ca8826b37</elem>
+<elem key="sha1">e8ba0100b57a786629c6fcd7df116940b00f9b36</elem>
+<elem key="sha256">4aa0c788f473fa498f27254e52a7c31ac04b91fe0537e727ad353367ea69cc42</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICzDCCAbSgAwIBAgIQYlT4J85rBYpNDtJtrqUq+DANBgkqhkiG9w0BAQsFADAP&#xa;MQ0wCwYDVQQDEwRMb2NrMB4XDTI2MDcwNjAxNTQwN1oXDTI3MDEwNTAxNTQwN1ow&#xa;DzENMAsGA1UEAxMETG9jazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB&#xa;AM268bzim2u3TJbccA9MYvpySh2Syn/x5WDlb8/l+rL1Ea84TCjJTECbZsBuLeK7&#xa;ZILE5mkZpK19kJWfLJKQ6+nEUfJZavFepgq5gNJfVk7xNQjmWAIOSx6+YfaNXt96&#xa;vsKEUbY8tMXgSk4PvD7C0LsB/99SbYADP6SVixgI6iRQSNTdSMvAa86MPXBf58HI&#xa;xGAuA76QcPMpKVDT/UXKNYPB7+Dbwde9iX/tbodjehiQKR7IifEiO84fkmqqHkCA&#xa;9n/izFNnxJNsIzirtg8bFoEcxqXmsj7ieDvSNZQTtedvmUoCmnRWmksz8CYQsSWQ&#xa;Dxw7tWYY2bQ03lDVfaANrJECAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEw&#xa;CwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBCwUAA4IBAQBx2f3M8VnqwY4hMbz+akwM&#xa;/48dk9jjs+O29G3JUSut2ofM/IswHRish98zVKIBoT3Aa1ETgpcz8Z17t4o8jVTP&#xa;3fJvMfQeUZALqmO9KIF12vgkerMc+paV19wbIc1wE+3MOD24guKVvZDmr3ihkBRj&#xa;pi18JTiwv3oG8E9rpgJjylgIVynqaqw6NXM2HWXE/s5Vqn7SekoV85uRR9pxMwXC&#xa;IyQe3MKbPBUuPpiHkCzx8g0pPcINo3Yj4T4RWIwVNEgsa6erNte7uacHoZcJ46JA&#xa;J8QRt5SjgfEUiQfEk1b9BwnIlFjtSKVkCTWBGXpefo7BAYiht54pD7ht117IIhHz&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2026-07-07T01:56:47+00:00; 0s from scanner time."><elem key="date">2026-07-07T01:56:47+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: LOCK&#xa;  NetBIOS_Domain_Name: LOCK&#xa;  NetBIOS_Computer_Name: LOCK&#xa;  DNS_Domain_Name: Lock&#xa;  DNS_Computer_Name: Lock&#xa;  Product_Version: 10.0.20348&#xa;  System_Time: 2026-07-07T01:56:07+00:00"><elem key="Target_Name">LOCK</elem>
+<elem key="NetBIOS_Domain_Name">LOCK</elem>
+<elem key="NetBIOS_Computer_Name">LOCK</elem>
+<elem key="DNS_Domain_Name">Lock</elem>
+<elem key="DNS_Computer_Name">Lock</elem>
+<elem key="Product_Version">10.0.20348</elem>
+<elem key="System_Time">2026-07-07T01:56:07+00:00</elem>
+</script></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2026-07-07T01:56:08&#xa;  start_date: N/A"><elem key="date">2026-07-07T01:56:08</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="40534" rttvar="202" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1783389407"/>
+<taskend task="NSE" time="1783389407"/>
+<taskbegin task="NSE" time="1783389407"/>
+<taskend task="NSE" time="1783389407"/>
+<taskbegin task="NSE" time="1783389407"/>
+<taskend task="NSE" time="1783389407"/>
+<runstats><finished time="1783389407" timestr="Tue Jul  7 07:26:47 2026" summary="Nmap done at Tue Jul  7 07:26:47 2026; 1 IP address (1 host up) scanned in 101.92 seconds" elapsed="101.92" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

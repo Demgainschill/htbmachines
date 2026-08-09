@@ -1,0 +1,8 @@
+type: txt
+help: Define HMAC policy for ingress SR-enabled packets on this
+			interface (default: accept)
+val_help: accept; Accept packets without HMAC, validate packets with HMAC (default)
+val_help: drop; Drop packets without HMAC, validate packets with HMAC
+val_help: ignore; Ignore HMAC field.
+allowed: echo "accept drop ignore"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(accept|drop|ignore)\'   --value \'$VAR(@)\'"; "Invalid value"

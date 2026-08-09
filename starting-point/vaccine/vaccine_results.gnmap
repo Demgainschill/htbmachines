@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sat Aug  8 18:37:42 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA vaccine_results 10.129.44.206
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.44.206 ()	Status: Up
+Host: 10.129.44.206 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 8.0p1 Ubuntu 6ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 4237/filtered/tcp//vrml-multi-use///, 6689/filtered/tcp//tsa///, 9190/filtered/tcp/////, 9386/filtered/tcp/////, 13533/filtered/tcp/////, 15326/filtered/tcp/////, 24230/filtered/tcp/////, 25044/filtered/tcp/////, 37163/filtered/tcp/////, 44056/filtered/tcp/////, 46237/filtered/tcp/////, 48555/filtered/tcp/////, 56565/filtered/tcp/////, 58314/filtered/tcp/////, 62244/filtered/tcp/////, 63517/filtered/tcp/////	Ignored State: closed (65516)
+# Nmap done at Sat Aug  8 18:39:31 2026 -- 1 IP address (1 host up) scanned in 108.59 seconds

@@ -1,0 +1,5 @@
+type: txt
+help: Default client IP pool name
+val_help: txt; Default IP pool
+allowed: /bin/cli-shell-api listNodes ${COMP_WORDS[@]:1:${#COMP_WORDS[@]}-3} client-ip-pool
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9][\\w\\-\\.\\+]*\'   --value \'$VAR(@)\'"; "Invalid value"

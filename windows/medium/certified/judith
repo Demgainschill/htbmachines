@@ -1,0 +1,15 @@
+[libdefaults]
+    dns_lookup_kdc = false
+    dns_lookup_realm = false
+    default_realm = CERTIFIED.HTB
+
+[realms]
+    CERTIFIED.HTB = {
+        kdc = dc01.certified.htb
+        admin_server = dc01.certified.htb
+        default_domain = certified.htb
+    }
+
+[domain_realm]
+    .certified.htb = CERTIFIED.HTB
+    certified.htb = CERTIFIED.HTB

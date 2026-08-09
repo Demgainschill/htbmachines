@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/minisign
+/usr/share
+/usr/share/doc
+/usr/share/doc/minisign
+/usr/share/doc/minisign/README.md
+/usr/share/doc/minisign/changelog.Debian.gz
+/usr/share/doc/minisign/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/minisign.1.gz

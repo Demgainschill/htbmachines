@@ -1,0 +1,4 @@
+type: txt
+help: ddclient protocol used for Dynamic DNS service
+allowed: sh -c "${vyos_completion_dir}/list_ddclient_protocols.sh"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ddclient-protocol \"  --value \'$VAR(@)\'"; "Invalid value"

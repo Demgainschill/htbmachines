@@ -1,0 +1,13 @@
+34946ad6df0e0d3cc0935465c573018e  sbin/ipvsadm
+3a0a5f8038ac117c32ce0bfbc606e87c  sbin/ipvsadm-restore
+72d8e4bf868f57842ce6732747d80388  sbin/ipvsadm-save
+b09b952012efa0c9c3cd67e9d6631683  usr/share/doc/ipvsadm/NEWS.Debian.gz
+e6aa7f8ba4e915483d839ccba50f3352  usr/share/doc/ipvsadm/README
+9f1272601f48ba3fc526ba13cfe30ceb  usr/share/doc/ipvsadm/SCHEDULERS
+529ea626ab71de0e5c35b828ce0c595a  usr/share/doc/ipvsadm/changelog.Debian.amd64.gz
+e80bb336431cae0027975f0506dda829  usr/share/doc/ipvsadm/changelog.Debian.gz
+87da4129ed21bd39135e296c63b6f8bd  usr/share/doc/ipvsadm/copyright
+be59568a91cf806f664194e42819dea2  usr/share/lintian/overrides/ipvsadm
+284ab1e5f43212ae22826e3f0fe3cedf  usr/share/man/man8/ipvsadm-restore.8.gz
+fdf87166a673de85ee71a59d0db8c5ed  usr/share/man/man8/ipvsadm-save.8.gz
+5176b37c11d8d4d53296c1f908cf0da2  usr/share/man/man8/ipvsadm.8.gz

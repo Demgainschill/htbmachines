@@ -1,0 +1,4 @@
+type: txt
+help: Maximum memory used for buffered mirroring messages (in bytes)
+val_help: u32:0-4294967294; Limit in bytes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-4294967294\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,8 @@
+0c6710646c5fa33c60412abfcf84f96c  usr/lib/ipsec/charon
+25c174f75715864b7d825dc6e565c17e  usr/share/doc/strongswan-charon/NEWS.Debian.gz
+70fdc78017659acbcc4555b4e49121b1  usr/share/doc/strongswan-charon/changelog.Debian.gz
+7580e3007897a92e3311df1ba4dab82e  usr/share/doc/strongswan-charon/changelog.gz
+8542ae617d33d7b35208cac3d3b5755b  usr/share/doc/strongswan-charon/copyright
+6a94765e3c8d8fba10c1f32963202511  usr/share/lintian/overrides/strongswan-charon
+db9eb5ea43c1f619aba1ab3727645a0a  usr/share/strongswan/templates/config/strongswan.d/charon-logging.conf
+32f939ee31e27598e73e43e91aadad7d  usr/share/strongswan/templates/config/strongswan.d/charon.conf

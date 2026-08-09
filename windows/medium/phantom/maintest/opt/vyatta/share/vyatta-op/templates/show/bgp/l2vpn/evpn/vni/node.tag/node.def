@@ -1,0 +1,3 @@
+help: VXLAN network identifier (VNI) number
+allowed: echo "<1-16777215>" && ${vyos_completion_dir}/list_vni.sh
+run: ${vyos_op_scripts_dir}/evpn.py show_evpn --command "$*"

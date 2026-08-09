@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Jul 12 09:29:07 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA timelapse_result 10.129.227.113 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA timelapse_result 10.129.227.113" start="1783828747" startstr="Sun Jul 12 09:29:07 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1783828747"/>
+<taskend task="NSE" time="1783828747"/>
+<taskbegin task="NSE" time="1783828747"/>
+<taskend task="NSE" time="1783828747"/>
+<taskbegin task="NSE" time="1783828747"/>
+<taskend task="NSE" time="1783828747"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1783828747"/>

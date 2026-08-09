@@ -1,0 +1,9 @@
+90444a53dc90a342ee558c3f91c5a122  usr/bin/lsscsi
+7f5456b8172ebc8253cab1a8a989cb5d  usr/share/doc/lsscsi/AUTHORS
+43dcb5cb3a99a6a47382df9c45472ce7  usr/share/doc/lsscsi/CREDITS
+c457e77950b9bca7dbb3543cc4a4f465  usr/share/doc/lsscsi/README
+97ce9044fe4e53fd1f9eedb835522a72  usr/share/doc/lsscsi/changelog.Debian.amd64.gz
+05e427cabf5553368057f89d474ff3eb  usr/share/doc/lsscsi/changelog.Debian.gz
+93d33810566f1254abd232e51b06983b  usr/share/doc/lsscsi/changelog.gz
+e157b1607f31792e10c9ddedc96e0bbb  usr/share/doc/lsscsi/copyright
+c98b2e1d9a04284682d7e682dbfde8bd  usr/share/man/man8/lsscsi.8.gz

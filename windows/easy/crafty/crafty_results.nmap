@@ -1,0 +1,17 @@
+# Nmap 7.99 scan initiated Sat Jul 11 22:15:46 2026 as: /usr/lib/nmap/nmap -p- -sC -sV -vvv --min-rate 4000 -oA crafty_results 10.129.230.193
+Nmap scan report for 10.129.230.193
+Host is up, received echo-reply ttl 127 (0.043s latency).
+Scanned at 2026-07-11 22:15:47 IST for 44s
+Not shown: 65533 filtered tcp ports (no-response)
+PORT      STATE SERVICE   REASON          VERSION
+80/tcp    open  http      syn-ack ttl 127 Microsoft IIS httpd 10.0
+|_http-title: Did not follow redirect to http://crafty.htb
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+25565/tcp open  minecraft syn-ack ttl 127 Minecraft 1.16.5 (Protocol: 127, Message: Crafty Server, Users: 0/100)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul 11 22:16:31 2026 -- 1 IP address (1 host up) scanned in 45.61 seconds

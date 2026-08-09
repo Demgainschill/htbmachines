@@ -1,0 +1,3 @@
+priority: 990
+help: Dynamic DNS
+end: sudo sh -c "${vyshim} ${vyos_conf_scripts_dir}/service_dns_dynamic.py"

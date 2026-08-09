@@ -1,0 +1,6 @@
+type: txt
+help: Time in seconds that the prefix will remain valid (default:
+			65528)
+val_help: u32:4-65528; Time in seconds that the prefix will remain valid
+allowed: echo "infinity"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 4-65528\"  --value \'$VAR(@)\'"; "Invalid value"

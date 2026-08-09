@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: Port group
+val_help: txt; Port group to match
+val_help: !txt; Exclude the specified port group from matches
+allowed: /bin/cli-shell-api listNodes service ids suricata port-group
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'!?[a-z0-9-]+\'   --value \'$VAR(@)\'"; "Invalid value"

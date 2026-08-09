@@ -1,0 +1,4 @@
+type: txt
+help: OpenSSH key in PKI configuration
+val_help: txt; Name of OpenSSH key in PKI configuration
+allowed: /bin/cli-shell-api listNodes pki openssh

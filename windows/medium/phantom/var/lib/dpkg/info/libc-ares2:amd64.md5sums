@@ -1,0 +1,5 @@
+06d5b401ac2b2af20747199e81a9f42f  usr/lib/x86_64-linux-gnu/libcares.so.2.5.1
+d64a94761d5a2546103e1e1a9cc02eea  usr/share/doc/libc-ares2/changelog.Debian.gz
+c8b9cb7aab2cd15f1bc5b82f1f4450af  usr/share/doc/libc-ares2/changelog.gz
+8efa7eab2626bb47486259cc07e9adb6  usr/share/doc/libc-ares2/copyright
+7239172d2f7dafd6b733263347e886b6  usr/share/lintian/overrides/libc-ares2

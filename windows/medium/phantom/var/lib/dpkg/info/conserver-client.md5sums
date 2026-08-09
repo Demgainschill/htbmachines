@@ -1,0 +1,14 @@
+74d27f5ca987193c1685d994fa7575cf  usr/bin/console
+ae22cc7d0bf559dcead4b86d2bc053bd  usr/share/conserver-client/console.cf
+4be0f713105c436a7d860f63c79e23b1  usr/share/doc/conserver-client/FAQ.gz
+b28513e7b696027d3d2b8dbf117f9fe5  usr/share/doc/conserver-client/LICENSE
+579dfb60645efcccbc095376d5edc965  usr/share/doc/conserver-client/LICENSES.gz
+b6177e7d462ea3d38299f00691818cc0  usr/share/doc/conserver-client/LICENSES.md.gz
+3f9486fff4f8356f75ada6f166f44585  usr/share/doc/conserver-client/PROTOCOL.gz
+f383d169cb98ad3005e854b2822cb2d0  usr/share/doc/conserver-client/README.md
+294b552b50f4cd36204d56e8e9ae1385  usr/share/doc/conserver-client/TODO.gz
+2177bf3970ea063693400fb6dcfeeac2  usr/share/doc/conserver-client/changelog.Debian.amd64.gz
+9b838c49be89f5211493cd0a51b4cc89  usr/share/doc/conserver-client/changelog.Debian.gz
+b6c2bd64be666143355486a436d5fbc7  usr/share/doc/conserver-client/changelog.gz
+ae21b48b15ddd9bd293eea845b47102c  usr/share/doc/conserver-client/copyright
+4da92d65d7ce1364aee7971ef581103d  usr/share/man/man1/console.1.gz

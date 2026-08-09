@@ -1,0 +1,3 @@
+help: Execute shell in given Network Namespace
+allowed: /bin/cli-shell-api listActiveNodes netns name | sed -e "s/'//g" && echo
+run: sudo ip netns exec $3 su - $(whoami)

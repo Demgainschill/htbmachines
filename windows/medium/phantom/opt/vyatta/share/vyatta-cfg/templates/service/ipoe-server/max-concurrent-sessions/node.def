@@ -1,0 +1,4 @@
+type: txt
+help: Maximum number of concurrent session start attempts
+val_help: u32:0-65535; Maximum number of concurrent session start attempts
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --allow-range --range 0-65535\"  --value \'$VAR(@)\'"; "Maximum concurent sessions must be in range 0-65535"

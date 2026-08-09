@@ -1,0 +1,9 @@
+type: txt
+help: Non HTTP health check options
+val_help: ldap; LDAP protocol check
+val_help: mysql; MySQL protocol check
+val_help: pgsql; PostgreSQL protocol check
+val_help: redis; Redis protocol check
+val_help: smtp; SMTP protocol check
+allowed: echo "ldap mysql pgsql redis smtp"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ldap|mysql|redis|pgsql|smtp)\'   --value \'$VAR(@)\'"; "Invalid value"

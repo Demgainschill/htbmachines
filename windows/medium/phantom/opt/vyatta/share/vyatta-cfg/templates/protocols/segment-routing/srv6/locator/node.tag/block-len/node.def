@@ -1,0 +1,4 @@
+type: txt
+help: Configure SRv6 locator block length in bits (default: 40)
+val_help: u32:16-64; Specify SRv6 locator block length in bits
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 16-64\"  --value \'$VAR(@)\'"; "Invalid value"

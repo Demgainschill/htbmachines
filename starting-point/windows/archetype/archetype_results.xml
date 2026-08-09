@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Wed Aug  5 09:19:09 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA archetype_results 10.129.95.187 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA archetype_results 10.129.95.187" start="1785901749" startstr="Wed Aug  5 09:19:09 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1785901749"/>
+<taskend task="NSE" time="1785901749"/>
+<taskbegin task="NSE" time="1785901749"/>
+<taskend task="NSE" time="1785901749"/>
+<taskbegin task="NSE" time="1785901749"/>
+<taskend task="NSE" time="1785901749"/>
+<taskbegin task="Ping Scan" time="1785901749"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.95.187" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1785901750" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1785901750"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1785901750"/>
+<taskbegin task="SYN Stealth Scan" time="1785901750"/>
+<taskend task="SYN Stealth Scan" time="1785901795" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1785901795"/>
+<taskprogress task="Service scan" time="1785901857" percent="58.33" remaining="45" etc="1785901901"/>
+<taskend task="Service scan" time="1785901857" extrainfo="12 services on 1 host"/>
+<taskbegin task="NSE" time="1785901857"/>
+<taskend task="NSE" time="1785901876"/>
+<taskbegin task="NSE" time="1785901876"/>
+<taskend task="NSE" time="1785901878"/>
+<taskbegin task="NSE" time="1785901878"/>
+<taskend task="NSE" time="1785901878"/>
+<host starttime="1785901750" endtime="1785901878"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.95.187" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65493">
+<extrareasons reason="reset" count="65493" proto="tcp" ports="1-134,136-138,140-444,446-1432,1434-5984,5986-11356,11358-13025,13027-13113,13115-13840,13842-18932,18934-20014,20016-20288,20290-24110,24112-28073,28075-28470,28472-29572,29574-30400,30402-31823,31825-32680,32682-35267,35269-41345,41347-42173,42175-43654,43656-44645,44647-45614,45616-47000,47002-49044,49046-49224,49226-49663,49670-56542,56544-56793,56795-57323,57325-57592,57594-62117,62119-62189,62191-63941,63943-65519,65521-65535"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows Server 2019 Standard 17763 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-sql-s" product="Microsoft SQL Server 2017" version="14.00.1000.00; RTM" method="probed" conf="10"><cpe>cpe:/a:microsoft:sql_server:2017</cpe></service><script id="ms-sql-info" output="&#xa;  10.129.95.187:1433: &#xa;    Version: &#xa;      name: Microsoft SQL Server 2017 RTM&#xa;      number: 14.00.1000.00&#xa;      Product: Microsoft SQL Server 2017&#xa;      Service pack level: RTM&#xa;      Post-SP patches applied: false&#xa;    TCP port: 1433"><table key="10.129.95.187:1433">
+<table key="Version">
+<elem key="name">Microsoft SQL Server 2017 RTM</elem>
+<elem key="number">14.00.1000.00</elem>
+<elem key="Product">Microsoft SQL Server 2017</elem>
+<elem key="Service pack level">RTM</elem>
+<elem key="Post-SP patches applied">false</elem>
+</table>
+<elem key="TCP port">1433</elem>
+</table>
+</script><script id="ms-sql-ntlm-info" output="&#xa;  10.129.95.187:1433: &#xa;    Target_Name: ARCHETYPE&#xa;    NetBIOS_Domain_Name: ARCHETYPE&#xa;    NetBIOS_Computer_Name: ARCHETYPE&#xa;    DNS_Domain_Name: Archetype&#xa;    DNS_Computer_Name: Archetype&#xa;    Product_Version: 10.0.17763"><table key="10.129.95.187:1433">
+<elem key="Target_Name">ARCHETYPE</elem>
+<elem key="NetBIOS_Domain_Name">ARCHETYPE</elem>
+<elem key="NetBIOS_Computer_Name">ARCHETYPE</elem>
+<elem key="DNS_Domain_Name">Archetype</elem>
+<elem key="DNS_Computer_Name">Archetype</elem>
+<elem key="Product_Version">10.0.17763</elem>
+</table>
+</script><script id="ssl-date" output="2026-08-05T03:51:14+00:00; -4s from scanner time."><elem key="delta">-4.0</elem>
+<elem key="date">2026-08-05T03:51:14+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-08-05T03:34:11&#xa;Not valid after:  2056-08-05T03:34:11&#xa;MD5:     e045 6520 c5cf d67b 9f50 3620 b890 85bb&#xa;SHA-1:   199f 9d1e 162b 3dd8 e2aa 1ef2 b432 c210 d780 7e95&#xa;SHA-256: 858d 434f 9e80 5c35 d4cf a221 0303 002a fdfd adbc fe95 1234 edaf 31b1 6c2a a47c"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BB033ACD26CF8E57364FA14748D5D7C6EA783EF9188AE6F6CD9144DCFA7BD9729A864F2FC4F90C858138CE0C0548898A3EC25F4884FC579944FB1B8F5F7418B6D4A1ED39514F0B19AC93C1060A288BC0D42BE61BEA9A4A5BC9DA024EFFF827E6A6F3C5CE54F1C4DA66372EE6F94A3BFC790C002147F871B64530B9623CC946E6EC011048D57DD0C4B06F56500DB9DE1141A2C52D3D3B607586F2575167E24B2A3AD0A270027649B9FBFB8FF06748FD3C2667D79FB5AE9CE9DA080F401D4412F1D20B8F298555340F936743D7C176DD85749A3623557E8C645797157352BECF56591B22BAC2DDDF9FA333706255D34916B961B5363C9059B05E5A56EE9D637FBD</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-08-05T03:34:11</elem>
+<elem key="notAfter">2056-08-05T03:34:11</elem>
+</table>
+<elem key="md5">e0456520c5cfd67b9f503620b89085bb</elem>
+<elem key="sha1">199f9d1e162b3dd8e2aa1ef2b432c210d7807e95</elem>
+<elem key="sha256">858d434f9e805c35d4cfa2210303002afdfdadbcfe951234edaf31b16c2aa47c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDADCCAeigAwIBAgIQSqkxPOuEHK1CxAvDBFlfcTANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjYwODA1MDMzNDExWhgPMjA1NjA4MDUwMzM0MTFaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALsDOs0m&#xa;z45XNk+hR0jV18bqeD75GIrm9s2RRNz6e9lymoZPL8T5DIWBOM4MBUiJij7CX0iE&#xa;/FeZRPsbj190GLbUoe05UU8LGayTwQYKKIvA1CvmG+qaSlvJ2gJO//gn5qbzxc5U&#xa;8cTaZjcu5vlKO/x5DAAhR/hxtkUwuWI8yUbm7AEQSNV90MSwb1ZQDbneEUGixS09&#xa;O2B1hvJXUWfiSyo60KJwAnZJufv7j/BnSP08JmfXn7WunOnaCA9AHUQS8dILjymF&#xa;VTQPk2dD18F23YV0mjYjVX6MZFeXFXNSvs9WWRsiusLd35+jM3BiVdNJFrlhtTY8&#xa;kFmwXlpW7p1jf70CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEADsGQWvEGR5lrUeP6&#xa;XPkWs+lpE9gSImY6yf2mIIXYMicKwMkxcSaCE3gBDguZPC5+lTjhJj2XkBVy+bUw&#xa;R8uCAdLmjzqt6llO+uyHiHZcmqI2IuRxMrBviFliwgd/Hirs8ctfApvdD4RVqp38&#xa;sd4uqXrgxu7HiS5mjF8v1EgF69TURE/WimuwJFC1tedGiggerTEZgjxjPJN8Cioc&#xa;KCERvHTEI2qClsmVRSqauPnjQWK30N/Opqd9BeARUIpyDvYlLGDS1tjt+6g+j5kp&#xa;XL8Kr74QLh8o3WSKSAXQAd2ZUVNsvlVv1GEJRxnlH4mZkZ1kNbqhUPAAjWS0hnkp&#xa;AqEvhQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="11357"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="13026"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="13114"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="13841"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="18933"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="20015"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="20289"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="24111"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="28074"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="28471"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="29573"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30401"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31824"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32681"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="35268"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="41346"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="42174"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="43655"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="44646"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="45615"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="49045"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49225"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="56543"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56794"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57324"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57593"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="62118"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="62190"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="63942"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="65520"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2026-08-05T03:50:57&#xa;  start_date: N/A"><elem key="date">2026-08-05T03:50:57</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: 1h23m56s, deviation: 3h07m52s, median: -4s"><elem key="stddev">11272</elem>
+<elem key="median">-4</elem>
+<elem key="mean">5036</elem>
+<elem key="count">5</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2019 Standard 17763 (Windows Server 2019 Standard 6.3)&#xa;  Computer name: Archetype&#xa;  NetBIOS computer name: ARCHETYPE\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2026-08-04T20:50:59-07:00&#xa;"><elem key="os">Windows Server 2019 Standard 17763</elem>
+<elem key="lanmanager">Windows Server 2019 Standard 6.3</elem>
+<elem key="server">ARCHETYPE\x00</elem>
+<elem key="date">2026-08-04T20:50:59-07:00</elem>
+<elem key="fqdn">Archetype</elem>
+<elem key="domain_dns">Archetype</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script></hostscript><times srtt="235688" rttvar="93752" to="610696"/>
+</host>
+<taskbegin task="NSE" time="1785901878"/>
+<taskend task="NSE" time="1785901878"/>
+<taskbegin task="NSE" time="1785901878"/>
+<taskend task="NSE" time="1785901878"/>
+<taskbegin task="NSE" time="1785901878"/>
+<taskend task="NSE" time="1785901878"/>
+<runstats><finished time="1785901878" timestr="Wed Aug  5 09:21:18 2026" summary="Nmap done at Wed Aug  5 09:21:18 2026; 1 IP address (1 host up) scanned in 129.16 seconds" elapsed="129.16" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

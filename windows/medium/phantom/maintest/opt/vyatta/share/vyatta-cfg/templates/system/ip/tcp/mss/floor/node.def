@@ -1,0 +1,4 @@
+type: txt
+help: Minimum MSS to stop probing at (default: 48)
+val_help: u32:48-1460; Minimum MSS value to probe
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 48-1460\"  --value \'$VAR(@)\'"; "Invalid value"

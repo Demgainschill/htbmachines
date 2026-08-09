@@ -1,0 +1,2 @@
+help: Access VLANs interface name
+allowed: ${vyos_completion_dir}/list_interfaces --bridgeable --no-vlan-subinterfaces

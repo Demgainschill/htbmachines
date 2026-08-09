@@ -1,0 +1,3 @@
+help: Download image via specified VRF
+allowed: /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/image_installer.py --action add --image-path "${4}" --vrf "${6}"

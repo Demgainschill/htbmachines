@@ -1,0 +1,79 @@
+Name: libpam-runtime/conflicts
+Template: libpam-runtime/conflicts
+Owners: libpam-runtime
+
+Name: libpam-runtime/no_profiles_chosen
+Template: libpam-runtime/no_profiles_chosen
+Owners: libpam-runtime
+
+Name: libpam-runtime/override
+Template: libpam-runtime/override
+Value: false
+Owners: libpam-runtime
+
+Name: libpam-runtime/profiles
+Template: libpam-runtime/profiles
+Value: mkhomedir, unix, systemd, capability
+Owners: libpam-runtime
+Variables:
+ profile_names = mkhomedir, tacplus-optional, tacplus-mandatory, radius-optional, radius-mandatory, mfa-google-authenticator, unix, systemd, capability
+ profiles = Create home directory during login, TACACS+ authentication (optional mode), TACACS+ authentication (mandatory mode), RADIUS authentication (optional mode), RADIUS authentication (mandatory mode), Google Authenticator PAM module (2FA/MFA), Unix authentication, Register user sessions in the systemd control group hierarchy, Inheritable Capabilities Management
+
+Name: libpam-runtime/title
+Template: libpam-runtime/title
+Owners: libpam-runtime
+
+Name: tzdata/Areas
+Template: tzdata/Areas
+Value: Etc
+Owners: tzdata
+
+Name: tzdata/Zones/Africa
+Template: tzdata/Zones/Africa
+Owners: tzdata
+
+Name: tzdata/Zones/America
+Template: tzdata/Zones/America
+Owners: tzdata
+
+Name: tzdata/Zones/Antarctica
+Template: tzdata/Zones/Antarctica
+Owners: tzdata
+
+Name: tzdata/Zones/Arctic
+Template: tzdata/Zones/Arctic
+Owners: tzdata
+
+Name: tzdata/Zones/Asia
+Template: tzdata/Zones/Asia
+Owners: tzdata
+
+Name: tzdata/Zones/Atlantic
+Template: tzdata/Zones/Atlantic
+Owners: tzdata
+
+Name: tzdata/Zones/Australia
+Template: tzdata/Zones/Australia
+Owners: tzdata
+
+Name: tzdata/Zones/Etc
+Template: tzdata/Zones/Etc
+Value: UTC
+Owners: tzdata
+
+Name: tzdata/Zones/Europe
+Template: tzdata/Zones/Europe
+Owners: tzdata
+
+Name: tzdata/Zones/Indian
+Template: tzdata/Zones/Indian
+Owners: tzdata
+
+Name: tzdata/Zones/Pacific
+Template: tzdata/Zones/Pacific
+Owners: tzdata
+
+Name: tzdata/Zones/US
+Template: tzdata/Zones/US
+Owners: tzdata
+

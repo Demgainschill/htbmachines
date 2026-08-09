@@ -1,0 +1,7 @@
+b937ac4dd13af6956a094bb3c338a422  lib/systemd/system/kea-dhcp6-server.service
+c6e6324561219d40621e101aadfacda3  usr/sbin/kea-dhcp6
+17c21540d41bedb61b09bd55ee8cb145  usr/share/doc/kea-dhcp6-server/NEWS.Debian.gz
+41817dfbb1ed2b6760ae1335cadb644a  usr/share/doc/kea-dhcp6-server/changelog.Debian.gz
+2c4ed6777d152a99fdb2b8fe16266e29  usr/share/doc/kea-dhcp6-server/changelog.gz
+53640d962f6dd5856da55a8bec8d64b4  usr/share/doc/kea-dhcp6-server/copyright
+65d9cae9d740afbf67794e0ac398b5fa  usr/share/man/man8/kea-dhcp6.8.gz

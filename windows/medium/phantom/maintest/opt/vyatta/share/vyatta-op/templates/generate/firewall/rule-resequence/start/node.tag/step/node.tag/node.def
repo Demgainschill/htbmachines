@@ -1,0 +1,3 @@
+help: Step between rules
+allowed: echo "1-1000"
+run: ${vyos_op_scripts_dir}/generate_service_rule-resequence.py --service $2 --start $5 --step $7

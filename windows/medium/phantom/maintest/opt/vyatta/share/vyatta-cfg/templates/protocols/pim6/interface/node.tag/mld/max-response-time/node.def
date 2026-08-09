@@ -1,0 +1,4 @@
+type: txt
+help: Max query response time
+val_help: u32:100-6553500; Query response value in milliseconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 100-6553500\"  --value \'$VAR(@)\'"; "Invalid value"

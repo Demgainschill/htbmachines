@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/openvpn
+/usr/lib/openvpn/radiusplugin.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/openvpn-auth-radius
+/usr/share/doc/openvpn-auth-radius/README.gz
+/usr/share/doc/openvpn-auth-radius/ToDo
+/usr/share/doc/openvpn-auth-radius/changelog.Debian.gz
+/usr/share/doc/openvpn-auth-radius/changelog.gz
+/usr/share/doc/openvpn-auth-radius/copyright
+/usr/share/doc/openvpn-auth-radius/examples
+/usr/share/doc/openvpn-auth-radius/examples/radiusplugin.cnf
+/usr/share/doc/openvpn-auth-radius/examples/vsascript.pl

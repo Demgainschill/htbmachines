@@ -1,0 +1,2 @@
+help: Show container image in JSON format
+run: sudo ${vyos_op_scripts_dir}/container.py show_image --raw

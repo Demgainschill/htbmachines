@@ -1,0 +1,2 @@
+help: Display bridge interface details
+run: ${vyos_op_scripts_dir}/bridge.py show_detail --interface=$3

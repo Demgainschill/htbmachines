@@ -1,0 +1,5 @@
+type: txt
+help: SSH public key type
+val_help: ssh-rsa; Key pair based on RSA algorithm
+allowed: echo "ssh-rsa"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ssh-rsa)\'   --value \'$VAR(@)\'"; "Invalid value"

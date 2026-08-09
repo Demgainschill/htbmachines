@@ -1,0 +1,2 @@
+help: Show DHCP server static mappings
+run: ${vyos_op_scripts_dir}/dhcp.py show_server_static_mappings --family inet

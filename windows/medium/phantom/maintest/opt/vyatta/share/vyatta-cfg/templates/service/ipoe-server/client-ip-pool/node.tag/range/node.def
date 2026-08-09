@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Range of IP addresses
+val_help: ipv4net; IPv4 prefix
+val_help: ipv4range; IPv4 address range inside /24 network
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/ipv4-prefix \" --exec \"${vyos_validators_dir}/ipv4-host \" --exec \"${vyos_validators_dir}/ipv4-range-mask -m 24 -r\"  --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,5 @@
+type: txt
+help: WPA passphrase. If you are using special characters in the WPA
+			passphrase then single quotes are required.
+val_help: txt; Passphrase of at least 8 but not more than 63 printable characters for WPA-Personal and any passphrase for WPA-Enterprise
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:ascii:]]{1,256}\'   --value \'$VAR(@)\'"; "Invalid WPA pass phrase, must be 8 to 63 printable characters!"

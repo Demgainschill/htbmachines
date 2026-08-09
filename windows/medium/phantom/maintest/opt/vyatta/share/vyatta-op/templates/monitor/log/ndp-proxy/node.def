@@ -1,0 +1,2 @@
+help: Monitor last lines of Neighbor Discovery Protocol (NDP) Proxy
+run: journalctl --no-hostname --boot --follow --unit ndppd.service

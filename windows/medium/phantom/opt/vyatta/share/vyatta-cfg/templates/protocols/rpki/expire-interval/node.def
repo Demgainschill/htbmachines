@@ -1,0 +1,4 @@
+type: txt
+help: Interval to wait before expiring the cache (default: 7200)
+val_help: u32:600-172800; Interval in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 600-172800\"  --value \'$VAR(@)\'"; "Invalid value"

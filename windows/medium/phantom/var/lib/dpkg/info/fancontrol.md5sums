@@ -1,0 +1,10 @@
+5e326740e76bb7b99635c675ab03d716  lib/systemd/system-sleep/fancontrol
+d54f520092d805a7052dcace014c7f59  lib/systemd/system/fancontrol.service
+453016a938effb8404e0113a012b26ba  usr/sbin/fancontrol
+b7bcf3a2506812a414c72790c0055ab0  usr/sbin/pwmconfig
+a63e0ee2ae0321b27f93e7d31b51dc8a  usr/share/doc/fancontrol/changelog.Debian.gz
+f063f938338bb95e9e27246535c8db00  usr/share/doc/fancontrol/changelog.gz
+0d860785814215f1c98a6018d17bf76d  usr/share/doc/fancontrol/copyright
+e1b3ed1dc4f2fb5d10b048eec317f937  usr/share/doc/fancontrol/fancontrol.txt.gz
+850b61de99390e09bb8e053529c3438e  usr/share/man/man8/fancontrol.8.gz
+b2253fa20a0da30c2606ca4d5ef05f00  usr/share/man/man8/pwmconfig.8.gz

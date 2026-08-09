@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/lib
+/usr/lib/openvpn
+/usr/lib/openvpn/openvpn-otp.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/openvpn-otp
+/usr/share/doc/openvpn-otp/changelog.gz

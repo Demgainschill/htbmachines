@@ -1,0 +1,11 @@
+multi:
+type: txt
+help: Commit archive location
+val_help: http://<user>:<passwd>@<host>/<path>; 
+val_help: https://<user>:<passwd>@<host>/<path>; 
+val_help: ftp://<user>:<passwd>@<host>/<path>; 
+val_help: sftp://<user>:<passwd>@<host>/<path>; 
+val_help: scp://<user>:<passwd>@<host>/<path>; 
+val_help: tftp://<host>/<path>; 
+val_help: git+https://<user>:<passwd>@<host>/<path>; 
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ssh|git|git\\+(\\w+)):\\/\\/.*\' --exec \"${vyos_validators_dir}/url --file-transport \"  --value \'$VAR(@)\'"; "Invalid value"

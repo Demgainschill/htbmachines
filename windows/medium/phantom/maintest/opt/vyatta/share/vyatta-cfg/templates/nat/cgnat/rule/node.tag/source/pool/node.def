@@ -1,0 +1,5 @@
+type: txt
+help: Source internal pool
+val_help: txt; Source internal pool name
+allowed: /bin/cli-shell-api listNodes nat cgnat pool internal
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9][\\w\\-\\.\\+]*\'   --value \'$VAR(@)\'"; "Name of pool can only contain alpha-numeric letters, hyphen and underscores"

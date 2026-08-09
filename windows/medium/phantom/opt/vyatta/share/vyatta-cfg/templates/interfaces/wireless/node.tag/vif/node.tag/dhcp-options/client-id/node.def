@@ -1,0 +1,4 @@
+type: txt
+help: Identifier used by client to identify itself to the DHCP server
+val_help: txt; DHCP option string
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9.\\s]+\' --regex \'([a-fA-F0-9][a-fA-F0-9]:){2,}[a-fA-F0-9][a-fA-F0-9]\'   --value \'$VAR(@)\'"; "Invalid value"

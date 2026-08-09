@@ -1,0 +1,2 @@
+help: Delete a member from a RAID set
+run: sudo ${vyos_op_scripts_dir}/raid.py delete --raid-set-name $3 --by-id --member $6

@@ -1,0 +1,10 @@
+type: txt
+help: Volume bind propagation (default: rprivate)
+val_help: shared; Sub-mounts of the original mount are exposed to replica mounts
+val_help: slave; Allow replica mount to see sub-mount from the original mount but not vice versa
+val_help: private; Sub-mounts within a mount are not visible to replica mounts or the original mount
+val_help: rshared; Allows sharing of mount points and their nested mount points between both the original and replica mounts
+val_help: rslave; Allows mount point and their nested mount points between original an replica mounts
+val_help: rprivate; No mount points within original or replica mounts in any direction (default)
+allowed: echo "shared slave private rshared rslave rprivate"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(shared|slave|private|rshared|rslave|rprivate)\'   --value \'$VAR(@)\'"; "Invalid value"

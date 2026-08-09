@@ -1,0 +1,4 @@
+type: txt
+help: HTTP header value
+val_help: txt; HTTP header value
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:ascii:]]{1,256}\'   --value \'$VAR(@)\'"; "Invalid value"

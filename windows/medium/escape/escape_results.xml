@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Jul 21 12:50:18 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA escape_results 10.129.228.253 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA escape_results 10.129.228.253" start="1784618418" startstr="Tue Jul 21 12:50:18 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1784618418"/>
+<taskend task="NSE" time="1784618418"/>
+<taskbegin task="NSE" time="1784618418"/>
+<taskend task="NSE" time="1784618418"/>
+<taskbegin task="NSE" time="1784618418"/>
+<taskend task="NSE" time="1784618418"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1784618418"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1784618419"/>
+<taskbegin task="SYN Stealth Scan" time="1784618419"/>
+<taskend task="SYN Stealth Scan" time="1784618452" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1784618452"/>
+<taskend task="Service scan" time="1784618512" extrainfo="19 services on 1 host"/>
+<taskbegin task="NSE" time="1784618512"/>
+<taskend task="NSE" time="1784618554"/>
+<taskbegin task="NSE" time="1784618554"/>
+<taskend task="NSE" time="1784618559"/>
+<taskbegin task="NSE" time="1784618559"/>
+<taskend task="NSE" time="1784618559"/>
+<host starttime="1784618419" endtime="1784618559"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.228.253" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65516">
+<extrareasons reason="no-response" count="65516" proto="tcp" ports="1-52,54-87,89-134,136-138,140-388,390-444,446-463,465-592,594-635,637-1432,1434-3267,3270-5984,5986-9388,9390-49666,49668-49678,49681-49702,49704-49712,49714-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-07-21 15:20:44Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: sequel.htb, Site: Default-First-Site-Name" hostname="DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-07-21T15:22:20+00:00; +7h59m45s from scanner time."><elem key="delta">28785.0</elem>
+<elem key="date">2026-07-21T15:22:20+00:00</elem>
+</script><script id="ssl-cert" output="Subject: &#xa;Subject Alternative Name: DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel&#xa;Issuer: commonName=sequel-DC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-01-18T23:03:57&#xa;Not valid after:  2074-01-05T23:03:57&#xa;MD5:     ee4c c647 ebb2 c23e f472 1d70 2880 9d82&#xa;SHA-1:   d88d 12ae 8a50 fcf1 2242 909e 3dd7 5cff 92d1 a480&#xa;SHA-256: 9b16 318b 7bc0 f508 b5cd 98a5 3a80 d1d7 54e1 e158 45b1 4956 003b 4bb5 05f8 7f98"><table key="subject">
+</table>
+<table key="issuer">
+<elem key="commonName">sequel-DC-CA</elem>
+<elem key="domainComponent">sequel</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AF7D40C6BD96DFEA82EFEBB1571287AA8BE5540CCC057025863A9C00944BCC09184C6B626AC7A9D54A5FBB511534AC5E37739F0090015BC17F44E41E0C7B864392A9075799C10641C43DD0CFE19958B2302656BCFB6C7033A777280E017D50ABFD4B88FC83D3FC30F68E7714D147A7709215567480EF21EBE37A0EE85936B01BB305117E1BEC11302FFB8D45866DC851EB7E6CCF04BE4CA2FAC16D9CD4E009E0827BE97A22CD75E9CAF57729D88203AFC03B87BB85B90FB7A426D72FD125FEF120CF1023AEC5217F67BA9F13405AB3594855CB1D112DF6E164853594DBA6686BAEF9563AB45CDCBB27EAD7019894E6ADDE0F82AAFD288DF990C0C16276D97189</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">Microsoft certificate template</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication, Microsoft Smartcard Login, Signing KDC Response</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft Application Policies Extension</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">09:56:E0:66:9E:25:3A:61:B0:B3:5C:FB:6C:FD:C8:9D:F4:E2:1E:23</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">62:9F:32:A3:A0:F0:38:20:D4:60:C0:CD:6D:C5:FA:51:30:5E:C3:15</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=sequel-DC-CA,CN=dc,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=sequel,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=sequel-DC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=sequel,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-01-18T23:03:57</elem>
+<elem key="notAfter">2074-01-05T23:03:57</elem>
+</table>
+<elem key="md5">ee4cc647ebb2c23ef4721d7028809d82</elem>
+<elem key="sha1">d88d12ae8a50fcf12242909e3dd75cff92d1a480</elem>
+<elem key="sha256">9b16318b7bc0f508b5cd98a53a80d1d754e1e15845b14956003b4bb505f87f98</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFkTCCBHmgAwIBAgITHgAAAAsyZYRdLEkTIgAAAAAACzANBgkqhkiG9w0BAQsF&#xa;ADBEMRMwEQYKCZImiZPyLGQBGRYDaHRiMRYwFAYKCZImiZPyLGQBGRYGc2VxdWVs&#xa;MRUwEwYDVQQDEwxzZXF1ZWwtREMtQ0EwIBcNMjQwMTE4MjMwMzU3WhgPMjA3NDAx&#xa;MDUyMzAzNTdaMAAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvfUDG&#xa;vZbf6oLv67FXEoeqi+VUDMwFcCWGOpwAlEvMCRhMa2Jqx6nVSl+7URU0rF43c58A&#xa;kAFbwX9E5B4Me4ZDkqkHV5nBBkHEPdDP4ZlYsjAmVrz7bHAzp3coDgF9UKv9S4j8&#xa;g9P8MPaOdxTRR6dwkhVWdIDvIevjeg7oWTawG7MFEX4b7BEwL/uNRYZtyFHrfmzP&#xa;BL5MovrBbZzU4AnggnvpeiLNdenK9Xcp2IIDr8A7h7uFuQ+3pCbXL9El/vEgzxAj&#xa;rsUhf2e6nxNAWrNZSFXLHREt9uFkhTWU26Zoa675Vjq0XNy7J+rXAZiU5q3eD4Kq&#xa;/SiN+ZDAwWJ22XGJAgMBAAGjggK8MIICuDA4BgkrBgEEAYI3FQcEKzApBiErBgEE&#xa;AYI3FQiHq/N2hdymVof9lTWDv8NZg4nKNYF3ASECAW4CAQIwMgYDVR0lBCswKQYI&#xa;KwYBBQUHAwIGCCsGAQUFBwMBBgorBgEEAYI3FAICBgcrBgEFAgMFMA4GA1UdDwEB&#xa;/wQEAwIFoDBABgkrBgEEAYI3FQoEMzAxMAoGCCsGAQUFBwMCMAoGCCsGAQUFBwMB&#xa;MAwGCisGAQQBgjcUAgIwCQYHKwYBBQIDBTAdBgNVHQ4EFgQUCVbgZp4lOmGws1z7&#xa;bP3InfTiHiMwHwYDVR0jBBgwFoAUYp8yo6DwOCDUYMDNbcX6UTBewxUwgcQGA1Ud&#xa;HwSBvDCBuTCBtqCBs6CBsIaBrWxkYXA6Ly8vQ049c2VxdWVsLURDLUNBLENOPWRj&#xa;LENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxD&#xa;Tj1Db25maWd1cmF0aW9uLERDPXNlcXVlbCxEQz1odGI/Y2VydGlmaWNhdGVSZXZv&#xa;Y2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlvblBvaW50&#xa;MIG9BggrBgEFBQcBAQSBsDCBrTCBqgYIKwYBBQUHMAKGgZ1sZGFwOi8vL0NOPXNl&#xa;cXVlbC1EQy1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049&#xa;U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1zZXF1ZWwsREM9aHRiP2NBQ2Vy&#xa;dGlmaWNhdGU/YmFzZT9vYmplY3RDbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5&#xa;MC8GA1UdEQEB/wQlMCOCDWRjLnNlcXVlbC5odGKCCnNlcXVlbC5odGKCBnNlcXVl&#xa;bDANBgkqhkiG9w0BAQsFAAOCAQEAK2aJVbODF+3XQ85GflrcPthxILDslZoJff13&#xa;ULw9IQRwFbr5wV/usQR8WXfp4FGWB7g6F3w4vOo8Wnm0eTcQM+N2Ry3aEWiv9SG8&#xa;/Vk18Z1sSU2hzlTdZbVJWgZwCyPvYoV02uPkP12f+Z9groRTtOEBq0AgdMDc5hZ/&#xa;A8Ikn9UuctvkX6qgw+ofyVveIqsE0GL6DCDGw6iUmXIgVJk5fgQnfyQquqnmhVnA&#xa;8NoXXuh0ioTHmCqYrdtIcB8KC4nS70p3ef2F2fTNejqtw46M04VZQw/67Y+83hI5&#xa;I1fLChrYFtPk3g5JHaHyIE9aY3EUmU3EH2SKhRSi5R6GJBctmw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: sequel.htb, Site: Default-First-Site-Name" hostname="DC" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: &#xa;Subject Alternative Name: DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel&#xa;Issuer: commonName=sequel-DC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-01-18T23:03:57&#xa;Not valid after:  2074-01-05T23:03:57&#xa;MD5:     ee4c c647 ebb2 c23e f472 1d70 2880 9d82&#xa;SHA-1:   d88d 12ae 8a50 fcf1 2242 909e 3dd7 5cff 92d1 a480&#xa;SHA-256: 9b16 318b 7bc0 f508 b5cd 98a5 3a80 d1d7 54e1 e158 45b1 4956 003b 4bb5 05f8 7f98"><table key="subject">
+</table>
+<table key="issuer">
+<elem key="commonName">sequel-DC-CA</elem>
+<elem key="domainComponent">sequel</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AF7D40C6BD96DFEA82EFEBB1571287AA8BE5540CCC057025863A9C00944BCC09184C6B626AC7A9D54A5FBB511534AC5E37739F0090015BC17F44E41E0C7B864392A9075799C10641C43DD0CFE19958B2302656BCFB6C7033A777280E017D50ABFD4B88FC83D3FC30F68E7714D147A7709215567480EF21EBE37A0EE85936B01BB305117E1BEC11302FFB8D45866DC851EB7E6CCF04BE4CA2FAC16D9CD4E009E0827BE97A22CD75E9CAF57729D88203AFC03B87BB85B90FB7A426D72FD125FEF120CF1023AEC5217F67BA9F13405AB3594855CB1D112DF6E164853594DBA6686BAEF9563AB45CDCBB27EAD7019894E6ADDE0F82AAFD288DF990C0C16276D97189</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">Microsoft certificate template</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication, Microsoft Smartcard Login, Signing KDC Response</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft Application Policies Extension</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">09:56:E0:66:9E:25:3A:61:B0:B3:5C:FB:6C:FD:C8:9D:F4:E2:1E:23</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">62:9F:32:A3:A0:F0:38:20:D4:60:C0:CD:6D:C5:FA:51:30:5E:C3:15</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=sequel-DC-CA,CN=dc,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=sequel,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=sequel-DC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=sequel,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-01-18T23:03:57</elem>
+<elem key="notAfter">2074-01-05T23:03:57</elem>
+</table>
+<elem key="md5">ee4cc647ebb2c23ef4721d7028809d82</elem>
+<elem key="sha1">d88d12ae8a50fcf12242909e3dd75cff92d1a480</elem>
+<elem key="sha256">9b16318b7bc0f508b5cd98a53a80d1d754e1e15845b14956003b4bb505f87f98</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFkTCCBHmgAwIBAgITHgAAAAsyZYRdLEkTIgAAAAAACzANBgkqhkiG9w0BAQsF&#xa;ADBEMRMwEQYKCZImiZPyLGQBGRYDaHRiMRYwFAYKCZImiZPyLGQBGRYGc2VxdWVs&#xa;MRUwEwYDVQQDEwxzZXF1ZWwtREMtQ0EwIBcNMjQwMTE4MjMwMzU3WhgPMjA3NDAx&#xa;MDUyMzAzNTdaMAAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvfUDG&#xa;vZbf6oLv67FXEoeqi+VUDMwFcCWGOpwAlEvMCRhMa2Jqx6nVSl+7URU0rF43c58A&#xa;kAFbwX9E5B4Me4ZDkqkHV5nBBkHEPdDP4ZlYsjAmVrz7bHAzp3coDgF9UKv9S4j8&#xa;g9P8MPaOdxTRR6dwkhVWdIDvIevjeg7oWTawG7MFEX4b7BEwL/uNRYZtyFHrfmzP&#xa;BL5MovrBbZzU4AnggnvpeiLNdenK9Xcp2IIDr8A7h7uFuQ+3pCbXL9El/vEgzxAj&#xa;rsUhf2e6nxNAWrNZSFXLHREt9uFkhTWU26Zoa675Vjq0XNy7J+rXAZiU5q3eD4Kq&#xa;/SiN+ZDAwWJ22XGJAgMBAAGjggK8MIICuDA4BgkrBgEEAYI3FQcEKzApBiErBgEE&#xa;AYI3FQiHq/N2hdymVof9lTWDv8NZg4nKNYF3ASECAW4CAQIwMgYDVR0lBCswKQYI&#xa;KwYBBQUHAwIGCCsGAQUFBwMBBgorBgEEAYI3FAICBgcrBgEFAgMFMA4GA1UdDwEB&#xa;/wQEAwIFoDBABgkrBgEEAYI3FQoEMzAxMAoGCCsGAQUFBwMCMAoGCCsGAQUFBwMB&#xa;MAwGCisGAQQBgjcUAgIwCQYHKwYBBQIDBTAdBgNVHQ4EFgQUCVbgZp4lOmGws1z7&#xa;bP3InfTiHiMwHwYDVR0jBBgwFoAUYp8yo6DwOCDUYMDNbcX6UTBewxUwgcQGA1Ud&#xa;HwSBvDCBuTCBtqCBs6CBsIaBrWxkYXA6Ly8vQ049c2VxdWVsLURDLUNBLENOPWRj&#xa;LENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxD&#xa;Tj1Db25maWd1cmF0aW9uLERDPXNlcXVlbCxEQz1odGI/Y2VydGlmaWNhdGVSZXZv&#xa;Y2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlvblBvaW50&#xa;MIG9BggrBgEFBQcBAQSBsDCBrTCBqgYIKwYBBQUHMAKGgZ1sZGFwOi8vL0NOPXNl&#xa;cXVlbC1EQy1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049&#xa;U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1zZXF1ZWwsREM9aHRiP2NBQ2Vy&#xa;dGlmaWNhdGU/YmFzZT9vYmplY3RDbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5&#xa;MC8GA1UdEQEB/wQlMCOCDWRjLnNlcXVlbC5odGKCCnNlcXVlbC5odGKCBnNlcXVl&#xa;bDANBgkqhkiG9w0BAQsFAAOCAQEAK2aJVbODF+3XQ85GflrcPthxILDslZoJff13&#xa;ULw9IQRwFbr5wV/usQR8WXfp4FGWB7g6F3w4vOo8Wnm0eTcQM+N2Ry3aEWiv9SG8&#xa;/Vk18Z1sSU2hzlTdZbVJWgZwCyPvYoV02uPkP12f+Z9groRTtOEBq0AgdMDc5hZ/&#xa;A8Ikn9UuctvkX6qgw+ofyVveIqsE0GL6DCDGw6iUmXIgVJk5fgQnfyQquqnmhVnA&#xa;8NoXXuh0ioTHmCqYrdtIcB8KC4nS70p3ef2F2fTNejqtw46M04VZQw/67Y+83hI5&#xa;I1fLChrYFtPk3g5JHaHyIE9aY3EUmU3EH2SKhRSi5R6GJBctmw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2026-07-21T15:22:20+00:00; +7h59m45s from scanner time."><elem key="delta">28785.0</elem>
+<elem key="date">2026-07-21T15:22:20+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-sql-s" product="Microsoft SQL Server 2019" version="15.00.2000.00; RTM" method="probed" conf="10"><cpe>cpe:/a:microsoft:sql_server:2019</cpe></service><script id="ms-sql-ntlm-info" output="&#xa;  10.129.228.253:1433: &#xa;    Target_Name: sequel&#xa;    NetBIOS_Domain_Name: sequel&#xa;    NetBIOS_Computer_Name: DC&#xa;    DNS_Domain_Name: sequel.htb&#xa;    DNS_Computer_Name: dc.sequel.htb&#xa;    DNS_Tree_Name: sequel.htb&#xa;    Product_Version: 10.0.17763"><table key="10.129.228.253:1433">
+<elem key="Target_Name">sequel</elem>
+<elem key="NetBIOS_Domain_Name">sequel</elem>
+<elem key="NetBIOS_Computer_Name">DC</elem>
+<elem key="DNS_Domain_Name">sequel.htb</elem>
+<elem key="DNS_Computer_Name">dc.sequel.htb</elem>
+<elem key="DNS_Tree_Name">sequel.htb</elem>
+<elem key="Product_Version">10.0.17763</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-07-21T15:18:40&#xa;Not valid after:  2056-07-21T15:18:40&#xa;MD5:     594e 4676 1978 96c7 9559 7b5c 8d84 522f&#xa;SHA-1:   c078 70ea 1bea bede 2341 4063 7e04 0a38 36f3 9ebc&#xa;SHA-256: 2321 98a0 174f 7c06 e162 d1da 782f bc74 fc8c e824 7e35 23a5 d8e2 418f ffce 824a"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BD83686319AA961F1D62C46AFA214815A201ABED0F86FA4C6221A632359E966CE972DB64596E9C5522C24B16CA69D0291007520842BB69333645292E590CC32A7A6E81D376801005D43999ACA27B6CE608464ED1B6DBADC3F50B77669B79C4CBBA1E482001E212AC5133668F12BA970F74151E4EEE6826C437A8F99CD9AEB3902ABD6CCC48C25F1E77302C575DB743DB588F0A682426BE9EECFC8E001238A654959B5B644F60CB5C94A0334BCA8D1CAB66D1929A8732F707EE64E945441951A13E5298A52738B8A9F79A2354C29C2CDA27DA46768081EEF06E9FCC89F76C0751C624FD08D11C3D898F9FF68EC4773049194DC32000C234FF667B313526073595</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-21T15:18:40</elem>
+<elem key="notAfter">2056-07-21T15:18:40</elem>
+</table>
+<elem key="md5">594e4676197896c795597b5c8d84522f</elem>
+<elem key="sha1">c07870ea1beabede234140637e040a3836f39ebc</elem>
+<elem key="sha256">232198a0174f7c06e162d1da782fbc74fc8ce8247e3523a5d8e2418fffce824a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDADCCAeigAwIBAgIQQNIdRtGoaKBGGB8GDzqh9TANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjYwNzIxMTUxODQwWhgPMjA1NjA3MjExNTE4NDBaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL2DaGMZ&#xa;qpYfHWLEavohSBWiAavtD4b6TGIhpjI1npZs6XLbZFlunFUiwksWymnQKRAHUghC&#xa;u2kzNkUpLlkMwyp6boHTdoAQBdQ5mayie2zmCEZO0bbbrcP1C3dmm3nEy7oeSCAB&#xa;4hKsUTNmjxK6lw90FR5O7mgmxDeo+ZzZrrOQKr1szEjCXx53MCxXXbdD21iPCmgk&#xa;Jr6e7PyOABI4plSVm1tkT2DLXJSgM0vKjRyrZtGSmocy9wfuZOlFRBlRoT5SmKUn&#xa;OLip95ojVMKcLNon2kZ2gIHu8G6fzIn3bAdRxiT9CNEcPYmPn/aOxHcwSRlNwyAA&#xa;wjT/ZnsxNSYHNZUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAoQxy8Xg9qPnYDwYS&#xa;q3kUaYsW0lxO54i3hVdOJsuSYLBTSFHF/Fw/lg7HUm6Z/EkAiPh/eXdoBAgqKSKn&#xa;ulToxMxXgKUdO4wsE6CT4hWcXid55BXEQ0q2yqAcacHpoAWOQ7rt/E0frQ+pl4sW&#xa;eW/iWRC+1bkA8XmL9c1ljnACzYXyCq9cxroeqQVbwy6pLkmzc0JOa3/gOaChtbJd&#xa;jpxFq0Zddmntftkm5WgFQfoHInC+IKTH/ThDlZVi6K3BcQK10Lzlx57th8Uc03C1&#xa;pV+8u8zXkO2DD3HPePSzJUhCKOHiOfUAuN19D+Esj9nUH8ldRuNN/h/Vf7NjaD9I&#xa;GpKiiA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ms-sql-info" output="&#xa;  10.129.228.253:1433: &#xa;    Version: &#xa;      name: Microsoft SQL Server 2019 RTM&#xa;      number: 15.00.2000.00&#xa;      Product: Microsoft SQL Server 2019&#xa;      Service pack level: RTM&#xa;      Post-SP patches applied: false&#xa;    TCP port: 1433"><table key="10.129.228.253:1433">
+<table key="Version">
+<elem key="name">Microsoft SQL Server 2019 RTM</elem>
+<elem key="number">15.00.2000.00</elem>
+<elem key="Product">Microsoft SQL Server 2019</elem>
+<elem key="Service pack level">RTM</elem>
+<elem key="Post-SP patches applied">false</elem>
+</table>
+<elem key="TCP port">1433</elem>
+</table>
+</script><script id="ssl-date" output="2026-07-21T15:22:20+00:00; +7h59m45s from scanner time."><elem key="delta">28785.0</elem>
+<elem key="date">2026-07-21T15:22:20+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: sequel.htb, Site: Default-First-Site-Name" hostname="DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-07-21T15:22:20+00:00; +7h59m45s from scanner time."><elem key="delta">28785.0</elem>
+<elem key="date">2026-07-21T15:22:20+00:00</elem>
+</script><script id="ssl-cert" output="Subject: &#xa;Subject Alternative Name: DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel&#xa;Issuer: commonName=sequel-DC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-01-18T23:03:57&#xa;Not valid after:  2074-01-05T23:03:57&#xa;MD5:     ee4c c647 ebb2 c23e f472 1d70 2880 9d82&#xa;SHA-1:   d88d 12ae 8a50 fcf1 2242 909e 3dd7 5cff 92d1 a480&#xa;SHA-256: 9b16 318b 7bc0 f508 b5cd 98a5 3a80 d1d7 54e1 e158 45b1 4956 003b 4bb5 05f8 7f98"><table key="subject">
+</table>
+<table key="issuer">
+<elem key="commonName">sequel-DC-CA</elem>
+<elem key="domainComponent">sequel</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AF7D40C6BD96DFEA82EFEBB1571287AA8BE5540CCC057025863A9C00944BCC09184C6B626AC7A9D54A5FBB511534AC5E37739F0090015BC17F44E41E0C7B864392A9075799C10641C43DD0CFE19958B2302656BCFB6C7033A777280E017D50ABFD4B88FC83D3FC30F68E7714D147A7709215567480EF21EBE37A0EE85936B01BB305117E1BEC11302FFB8D45866DC851EB7E6CCF04BE4CA2FAC16D9CD4E009E0827BE97A22CD75E9CAF57729D88203AFC03B87BB85B90FB7A426D72FD125FEF120CF1023AEC5217F67BA9F13405AB3594855CB1D112DF6E164853594DBA6686BAEF9563AB45CDCBB27EAD7019894E6ADDE0F82AAFD288DF990C0C16276D97189</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">Microsoft certificate template</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication, Microsoft Smartcard Login, Signing KDC Response</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft Application Policies Extension</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">09:56:E0:66:9E:25:3A:61:B0:B3:5C:FB:6C:FD:C8:9D:F4:E2:1E:23</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">62:9F:32:A3:A0:F0:38:20:D4:60:C0:CD:6D:C5:FA:51:30:5E:C3:15</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=sequel-DC-CA,CN=dc,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=sequel,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=sequel-DC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=sequel,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-01-18T23:03:57</elem>
+<elem key="notAfter">2074-01-05T23:03:57</elem>
+</table>
+<elem key="md5">ee4cc647ebb2c23ef4721d7028809d82</elem>
+<elem key="sha1">d88d12ae8a50fcf12242909e3dd75cff92d1a480</elem>
+<elem key="sha256">9b16318b7bc0f508b5cd98a53a80d1d754e1e15845b14956003b4bb505f87f98</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFkTCCBHmgAwIBAgITHgAAAAsyZYRdLEkTIgAAAAAACzANBgkqhkiG9w0BAQsF&#xa;ADBEMRMwEQYKCZImiZPyLGQBGRYDaHRiMRYwFAYKCZImiZPyLGQBGRYGc2VxdWVs&#xa;MRUwEwYDVQQDEwxzZXF1ZWwtREMtQ0EwIBcNMjQwMTE4MjMwMzU3WhgPMjA3NDAx&#xa;MDUyMzAzNTdaMAAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvfUDG&#xa;vZbf6oLv67FXEoeqi+VUDMwFcCWGOpwAlEvMCRhMa2Jqx6nVSl+7URU0rF43c58A&#xa;kAFbwX9E5B4Me4ZDkqkHV5nBBkHEPdDP4ZlYsjAmVrz7bHAzp3coDgF9UKv9S4j8&#xa;g9P8MPaOdxTRR6dwkhVWdIDvIevjeg7oWTawG7MFEX4b7BEwL/uNRYZtyFHrfmzP&#xa;BL5MovrBbZzU4AnggnvpeiLNdenK9Xcp2IIDr8A7h7uFuQ+3pCbXL9El/vEgzxAj&#xa;rsUhf2e6nxNAWrNZSFXLHREt9uFkhTWU26Zoa675Vjq0XNy7J+rXAZiU5q3eD4Kq&#xa;/SiN+ZDAwWJ22XGJAgMBAAGjggK8MIICuDA4BgkrBgEEAYI3FQcEKzApBiErBgEE&#xa;AYI3FQiHq/N2hdymVof9lTWDv8NZg4nKNYF3ASECAW4CAQIwMgYDVR0lBCswKQYI&#xa;KwYBBQUHAwIGCCsGAQUFBwMBBgorBgEEAYI3FAICBgcrBgEFAgMFMA4GA1UdDwEB&#xa;/wQEAwIFoDBABgkrBgEEAYI3FQoEMzAxMAoGCCsGAQUFBwMCMAoGCCsGAQUFBwMB&#xa;MAwGCisGAQQBgjcUAgIwCQYHKwYBBQIDBTAdBgNVHQ4EFgQUCVbgZp4lOmGws1z7&#xa;bP3InfTiHiMwHwYDVR0jBBgwFoAUYp8yo6DwOCDUYMDNbcX6UTBewxUwgcQGA1Ud&#xa;HwSBvDCBuTCBtqCBs6CBsIaBrWxkYXA6Ly8vQ049c2VxdWVsLURDLUNBLENOPWRj&#xa;LENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxD&#xa;Tj1Db25maWd1cmF0aW9uLERDPXNlcXVlbCxEQz1odGI/Y2VydGlmaWNhdGVSZXZv&#xa;Y2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlvblBvaW50&#xa;MIG9BggrBgEFBQcBAQSBsDCBrTCBqgYIKwYBBQUHMAKGgZ1sZGFwOi8vL0NOPXNl&#xa;cXVlbC1EQy1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049&#xa;U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1zZXF1ZWwsREM9aHRiP2NBQ2Vy&#xa;dGlmaWNhdGU/YmFzZT9vYmplY3RDbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5&#xa;MC8GA1UdEQEB/wQlMCOCDWRjLnNlcXVlbC5odGKCCnNlcXVlbC5odGKCBnNlcXVl&#xa;bDANBgkqhkiG9w0BAQsFAAOCAQEAK2aJVbODF+3XQ85GflrcPthxILDslZoJff13&#xa;ULw9IQRwFbr5wV/usQR8WXfp4FGWB7g6F3w4vOo8Wnm0eTcQM+N2Ry3aEWiv9SG8&#xa;/Vk18Z1sSU2hzlTdZbVJWgZwCyPvYoV02uPkP12f+Z9groRTtOEBq0AgdMDc5hZ/&#xa;A8Ikn9UuctvkX6qgw+ofyVveIqsE0GL6DCDGw6iUmXIgVJk5fgQnfyQquqnmhVnA&#xa;8NoXXuh0ioTHmCqYrdtIcB8KC4nS70p3ef2F2fTNejqtw46M04VZQw/67Y+83hI5&#xa;I1fLChrYFtPk3g5JHaHyIE9aY3EUmU3EH2SKhRSi5R6GJBctmw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: sequel.htb, Site: Default-First-Site-Name" hostname="DC" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: &#xa;Subject Alternative Name: DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel&#xa;Issuer: commonName=sequel-DC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-01-18T23:03:57&#xa;Not valid after:  2074-01-05T23:03:57&#xa;MD5:     ee4c c647 ebb2 c23e f472 1d70 2880 9d82&#xa;SHA-1:   d88d 12ae 8a50 fcf1 2242 909e 3dd7 5cff 92d1 a480&#xa;SHA-256: 9b16 318b 7bc0 f508 b5cd 98a5 3a80 d1d7 54e1 e158 45b1 4956 003b 4bb5 05f8 7f98"><table key="subject">
+</table>
+<table key="issuer">
+<elem key="commonName">sequel-DC-CA</elem>
+<elem key="domainComponent">sequel</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AF7D40C6BD96DFEA82EFEBB1571287AA8BE5540CCC057025863A9C00944BCC09184C6B626AC7A9D54A5FBB511534AC5E37739F0090015BC17F44E41E0C7B864392A9075799C10641C43DD0CFE19958B2302656BCFB6C7033A777280E017D50ABFD4B88FC83D3FC30F68E7714D147A7709215567480EF21EBE37A0EE85936B01BB305117E1BEC11302FFB8D45866DC851EB7E6CCF04BE4CA2FAC16D9CD4E009E0827BE97A22CD75E9CAF57729D88203AFC03B87BB85B90FB7A426D72FD125FEF120CF1023AEC5217F67BA9F13405AB3594855CB1D112DF6E164853594DBA6686BAEF9563AB45CDCBB27EAD7019894E6ADDE0F82AAFD288DF990C0C16276D97189</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">Microsoft certificate template</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication, Microsoft Smartcard Login, Signing KDC Response</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Microsoft Application Policies Extension</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">09:56:E0:66:9E:25:3A:61:B0:B3:5C:FB:6C:FD:C8:9D:F4:E2:1E:23</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">62:9F:32:A3:A0:F0:38:20:D4:60:C0:CD:6D:C5:FA:51:30:5E:C3:15</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=sequel-DC-CA,CN=dc,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=sequel,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=sequel-DC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=sequel,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:dc.sequel.htb, DNS:sequel.htb, DNS:sequel</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-01-18T23:03:57</elem>
+<elem key="notAfter">2074-01-05T23:03:57</elem>
+</table>
+<elem key="md5">ee4cc647ebb2c23ef4721d7028809d82</elem>
+<elem key="sha1">d88d12ae8a50fcf12242909e3dd75cff92d1a480</elem>
+<elem key="sha256">9b16318b7bc0f508b5cd98a53a80d1d754e1e15845b14956003b4bb505f87f98</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFkTCCBHmgAwIBAgITHgAAAAsyZYRdLEkTIgAAAAAACzANBgkqhkiG9w0BAQsF&#xa;ADBEMRMwEQYKCZImiZPyLGQBGRYDaHRiMRYwFAYKCZImiZPyLGQBGRYGc2VxdWVs&#xa;MRUwEwYDVQQDEwxzZXF1ZWwtREMtQ0EwIBcNMjQwMTE4MjMwMzU3WhgPMjA3NDAx&#xa;MDUyMzAzNTdaMAAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvfUDG&#xa;vZbf6oLv67FXEoeqi+VUDMwFcCWGOpwAlEvMCRhMa2Jqx6nVSl+7URU0rF43c58A&#xa;kAFbwX9E5B4Me4ZDkqkHV5nBBkHEPdDP4ZlYsjAmVrz7bHAzp3coDgF9UKv9S4j8&#xa;g9P8MPaOdxTRR6dwkhVWdIDvIevjeg7oWTawG7MFEX4b7BEwL/uNRYZtyFHrfmzP&#xa;BL5MovrBbZzU4AnggnvpeiLNdenK9Xcp2IIDr8A7h7uFuQ+3pCbXL9El/vEgzxAj&#xa;rsUhf2e6nxNAWrNZSFXLHREt9uFkhTWU26Zoa675Vjq0XNy7J+rXAZiU5q3eD4Kq&#xa;/SiN+ZDAwWJ22XGJAgMBAAGjggK8MIICuDA4BgkrBgEEAYI3FQcEKzApBiErBgEE&#xa;AYI3FQiHq/N2hdymVof9lTWDv8NZg4nKNYF3ASECAW4CAQIwMgYDVR0lBCswKQYI&#xa;KwYBBQUHAwIGCCsGAQUFBwMBBgorBgEEAYI3FAICBgcrBgEFAgMFMA4GA1UdDwEB&#xa;/wQEAwIFoDBABgkrBgEEAYI3FQoEMzAxMAoGCCsGAQUFBwMCMAoGCCsGAQUFBwMB&#xa;MAwGCisGAQQBgjcUAgIwCQYHKwYBBQIDBTAdBgNVHQ4EFgQUCVbgZp4lOmGws1z7&#xa;bP3InfTiHiMwHwYDVR0jBBgwFoAUYp8yo6DwOCDUYMDNbcX6UTBewxUwgcQGA1Ud&#xa;HwSBvDCBuTCBtqCBs6CBsIaBrWxkYXA6Ly8vQ049c2VxdWVsLURDLUNBLENOPWRj&#xa;LENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxD&#xa;Tj1Db25maWd1cmF0aW9uLERDPXNlcXVlbCxEQz1odGI/Y2VydGlmaWNhdGVSZXZv&#xa;Y2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlvblBvaW50&#xa;MIG9BggrBgEFBQcBAQSBsDCBrTCBqgYIKwYBBQUHMAKGgZ1sZGFwOi8vL0NOPXNl&#xa;cXVlbC1EQy1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049&#xa;U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1zZXF1ZWwsREM9aHRiP2NBQ2Vy&#xa;dGlmaWNhdGU/YmFzZT9vYmplY3RDbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5&#xa;MC8GA1UdEQEB/wQlMCOCDWRjLnNlcXVlbC5odGKCCnNlcXVlbC5odGKCBnNlcXVl&#xa;bDANBgkqhkiG9w0BAQsFAAOCAQEAK2aJVbODF+3XQ85GflrcPthxILDslZoJff13&#xa;ULw9IQRwFbr5wV/usQR8WXfp4FGWB7g6F3w4vOo8Wnm0eTcQM+N2Ry3aEWiv9SG8&#xa;/Vk18Z1sSU2hzlTdZbVJWgZwCyPvYoV02uPkP12f+Z9groRTtOEBq0AgdMDc5hZ/&#xa;A8Ikn9UuctvkX6qgw+ofyVveIqsE0GL6DCDGw6iUmXIgVJk5fgQnfyQquqnmhVnA&#xa;8NoXXuh0ioTHmCqYrdtIcB8KC4nS70p3ef2F2fTNejqtw46M04VZQw/67Y+83hI5&#xa;I1fLChrYFtPk3g5JHaHyIE9aY3EUmU3EH2SKhRSi5R6GJBctmw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2026-07-21T15:22:20+00:00; +7h59m45s from scanner time."><elem key="delta">28785.0</elem>
+<elem key="date">2026-07-21T15:22:20+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49679"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49680"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49703"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49713"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2026-07-21T15:21:42&#xa;  start_date: N/A"><elem key="date">2026-07-21T15:21:42</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: 7h59m44s, deviation: 0s, median: 7h59m44s"><elem key="mean">28784</elem>
+<elem key="median">28784</elem>
+<elem key="count">7</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="273179" rttvar="429" to="274895"/>
+</host>
+<taskbegin task="NSE" time="1784618559"/>
+<taskend task="NSE" time="1784618559"/>
+<taskbegin task="NSE" time="1784618559"/>
+<taskend task="NSE" time="1784618559"/>
+<taskbegin task="NSE" time="1784618559"/>
+<taskend task="NSE" time="1784618559"/>
+<runstats><finished time="1784618559" timestr="Tue Jul 21 12:52:39 2026" summary="Nmap done at Tue Jul 21 12:52:39 2026; 1 IP address (1 host up) scanned in 140.94 seconds" elapsed="140.94" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

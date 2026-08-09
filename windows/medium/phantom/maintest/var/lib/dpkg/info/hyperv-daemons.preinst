@@ -1,0 +1,52 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "upgrade" ]; then
+    for i in fcopy kvp vss; do
+        if [ -d /run/systemd/system ]; then
+            systemctl stop hyperv-daemons.hv-$i-daemon.service 2>/dev/null || true
+        fi
+        deb-systemd-helper purge hyperv-daemons.hv-$i-daemon.service || true
+        invoke-rc.d --skip-systemd-native hyperv-daemons.hv-$i-daemon stop || true
+        update-rc.d hyperv-daemons.hv-$i-daemon remove || true
+    done
+fi
+
+# Automatically added by dh_installdeb/13.11.4
+dpkg-maintscript-helper mv_conffile /etc/init.d/hyperv-daemons.hv-fcopy-daemon /etc/init.d/hv-fcopy-daemon 5.8\~rc7-1\~exp1 -- "$@"
+dpkg-maintscript-helper mv_conffile /etc/init.d/hyperv-daemons.hv-kvp-daemon /etc/init.d/hv-kvp-daemon 5.8\~rc7-1\~exp1 -- "$@"
+dpkg-maintscript-helper mv_conffile /etc/init.d/hyperv-daemons.hv-vss-daemon /etc/init.d/hv-vss-daemon 5.8\~rc7-1\~exp1 -- "$@"
+# End automatically added section
+# Automatically added by dh_installsystemd/13.11.4
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = upgrade ] && [ -d /run/systemd/system ] ; then
+	deb-systemd-invoke stop 'hv-fcopy-daemon.service' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/hv-fcopy-daemon" ] ; then
+	chmod +x "/etc/init.d/hv-fcopy-daemon" >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/13.11.4
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = upgrade ] && [ -d /run/systemd/system ] ; then
+	deb-systemd-invoke stop 'hv-kvp-daemon.service' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/hv-kvp-daemon" ] ; then
+	chmod +x "/etc/init.d/hv-kvp-daemon" >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/13.11.4
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = upgrade ] && [ -d /run/systemd/system ] ; then
+	deb-systemd-invoke stop 'hv-vss-daemon.service' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/hv-vss-daemon" ] ; then
+	chmod +x "/etc/init.d/hv-vss-daemon" >/dev/null || true
+fi
+# End automatically added section
+
+
+exit 0

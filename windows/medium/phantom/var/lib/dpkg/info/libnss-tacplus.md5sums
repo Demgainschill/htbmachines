@@ -1,0 +1,6 @@
+f49d5c753ec7b1a54de8c487a4998d9b  lib/x86_64-linux-gnu/libnss_tacplus-.so
+99a5c092bc2bbbaf3141a86b2af4cb0f  usr/share/doc/libnss-tacplus/changelog.Debian.gz
+39cb9d4c50d7213a36060eb017a5dd6d  usr/share/doc/libnss-tacplus/changelog.gz
+f45bdc2107722ef4b1f582998448efd3  usr/share/doc/libnss-tacplus/copyright
+5e9e94300b69d15a25bd796873a18f31  usr/share/lintian/overrides/libnss-tacplus
+3ff894d6f6addd1f5f17e0f51f7f55b7  usr/share/man/man5/tacplus_nss.conf.5.gz

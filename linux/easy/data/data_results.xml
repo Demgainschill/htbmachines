@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sat Aug  8 07:32:45 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA data_results 10.129.234.47 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA data_results 10.129.234.47" start="1786154565" startstr="Sat Aug  8 07:32:45 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1786154565"/>
+<taskend task="NSE" time="1786154565"/>
+<taskbegin task="NSE" time="1786154565"/>
+<taskend task="NSE" time="1786154565"/>
+<taskbegin task="NSE" time="1786154565"/>
+<taskend task="NSE" time="1786154565"/>
+<taskbegin task="Ping Scan" time="1786154565"/>
+<taskend task="Ping Scan" time="1786154567" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.129.234.47" addrtype="ipv4"/>
+</host>
+<taskbegin task="NSE" time="1786154567"/>
+<taskend task="NSE" time="1786154567"/>
+<taskbegin task="NSE" time="1786154567"/>
+<taskend task="NSE" time="1786154567"/>
+<taskbegin task="NSE" time="1786154567"/>
+<taskend task="NSE" time="1786154567"/>
+<runstats><finished time="1786154567" timestr="Sat Aug  8 07:32:47 2026" summary="Nmap done at Sat Aug  8 07:32:47 2026; 1 IP address (0 hosts up) scanned in 2.25 seconds" elapsed="2.25" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

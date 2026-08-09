@@ -1,0 +1,6 @@
+libaddress_sorting 29 libgrpc29 (>= 1.51.1)
+libgpr 29 libgrpc29 (>= 1.51.1)
+libgrpc 29 libgrpc29 (>= 1.51.1)
+libgrpc_plugin_support 1.51 libgrpc29 (>= 1.51.1)
+libgrpc_unsecure 29 libgrpc29 (>= 1.51.1)
+libupb 29 libgrpc29 (>= 1.51.1)

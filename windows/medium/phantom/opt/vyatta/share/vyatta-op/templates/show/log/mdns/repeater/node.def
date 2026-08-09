@@ -1,0 +1,2 @@
+help: Show log for mDNS repeater service
+run: journalctl --no-hostname --boot --unit avahi-daemon.service

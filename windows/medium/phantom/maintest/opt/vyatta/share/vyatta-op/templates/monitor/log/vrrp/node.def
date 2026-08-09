@@ -1,0 +1,2 @@
+help: Monitor last lines of Virtual Router Redundancy Protocol log
+run: journalctl --no-hostname --boot --follow --unit keepalived.service

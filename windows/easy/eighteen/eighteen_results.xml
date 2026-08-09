@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Wed Jul 22 07:47:12 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA eighteen_results 10.129.10.104 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA eighteen_results 10.129.10.104" start="1784686632" startstr="Wed Jul 22 07:47:12 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1784686632"/>
+<taskend task="NSE" time="1784686632"/>
+<taskbegin task="NSE" time="1784686632"/>
+<taskend task="NSE" time="1784686632"/>
+<taskbegin task="NSE" time="1784686632"/>
+<taskend task="NSE" time="1784686632"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1784686632"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1784686633"/>
+<taskbegin task="SYN Stealth Scan" time="1784686633"/>
+<taskend task="SYN Stealth Scan" time="1784686666" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1784686666"/>
+<taskend task="Service scan" time="1784686672" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1784686672"/>
+<taskend task="NSE" time="1784686678"/>
+<taskbegin task="NSE" time="1784686678"/>
+<taskend task="NSE" time="1784686679"/>
+<taskbegin task="NSE" time="1784686679"/>
+<taskend task="NSE" time="1784686679"/>
+<host starttime="1784686633" endtime="1784686679"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.10.104" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-79,81-1432,1434-5984,5986-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="Did not follow redirect to http://eighteen.htb/"><elem key="redirect_url">http://eighteen.htb/</elem>
+</script></port>
+<port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-sql-s" product="Microsoft SQL Server 2022" version="16.00.1000.00; RTM" method="probed" conf="10"><cpe>cpe:/a:microsoft:sql_server:2019</cpe></service><script id="ms-sql-ntlm-info" output="&#xa;  10.129.10.104:1433: &#xa;    Target_Name: EIGHTEEN&#xa;    NetBIOS_Domain_Name: EIGHTEEN&#xa;    NetBIOS_Computer_Name: DC01&#xa;    DNS_Domain_Name: eighteen.htb&#xa;    DNS_Computer_Name: DC01.eighteen.htb&#xa;    DNS_Tree_Name: eighteen.htb&#xa;    Product_Version: 10.0.26100"><table key="10.129.10.104:1433">
+<elem key="Target_Name">EIGHTEEN</elem>
+<elem key="NetBIOS_Domain_Name">EIGHTEEN</elem>
+<elem key="NetBIOS_Computer_Name">DC01</elem>
+<elem key="DNS_Domain_Name">eighteen.htb</elem>
+<elem key="DNS_Computer_Name">DC01.eighteen.htb</elem>
+<elem key="DNS_Tree_Name">eighteen.htb</elem>
+<elem key="Product_Version">10.0.26100</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 3072&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-07-22T09:17:03&#xa;Not valid after:  2056-07-22T09:17:03&#xa;MD5:     fc6c e948 a37b 07a6 0ef9 1ea8 7da4 a1d7&#xa;SHA-1:   c02b 25b6 052e 5747 9d0d 960c 83d7 8144 fe03 824d&#xa;SHA-256: e7f3 fd89 abfa 751d 9437 8e49 48de e99d 7f2f 4af0 333d eb04 1fbb 96e5 e12a d4b2"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="modulus">922887CEAD1668FE59290D80E83939AC1CEAE1DFE987E4A4C9E026D6B16652F5B4B9C9507CB83972155550E8F07E67BF416F3703126C783ED33CFD2671BD2531A9A231A4B2E4FAEC4E7CC4973081F7377CDC38387B3C3A382E889DE71ACB3A547D2D3C0513CDDC65E8BBAB0335DC8CB02DE4D7279EC939CD48D43F6855A9FAD8C197F22CEC289A21A192C3B144E686F1C269E9A7E617ED24F9228C47EB6171A169EA5A67922876FB3C7A45FD5BF3E8056D6F8C99A839D3D1EF0EE76896C1109E20219A8AB53F1EF6DCCB850BAF4F9AFEE383F94AD80B9241B9BDDB4331A250A0FDBDAF3F7F83BA60EE7E313C0F8816952894D558745056F80F5111A40A1024B3EE9388A10431DB8009914982CAC409F0E949855D9BA2BDBBFC5B813448FC55366038D318B81E4A062F1791A0C579565329896134D199088B51D34ABC9070926A15FC5988460920B6155E0BC671358577A12A870648DCAC626A34FDA0CE6EEDA478D39C75ABFFB0D4BAC407A370F3BB74A77642F1EB4F849534A84D7B1188AD91</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-22T09:17:03</elem>
+<elem key="notAfter">2056-07-22T09:17:03</elem>
+</table>
+<elem key="md5">fc6ce948a37b07a60ef91ea87da4a1d7</elem>
+<elem key="sha1">c02b25b6052e57479d0d960c83d78144fe03824d</elem>
+<elem key="sha256">e7f3fd89abfa751d94378e4948dee99d7f2f4af0333deb041fbb96e5e12ad4b2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEADCCAmigAwIBAgIQTfqC+Kz09rVAO5NxmlPg3jANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjYwNzIyMDkxNzAzWhgPMjA1NjA3MjIwOTE3MDNaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAJIoh86t&#xa;Fmj+WSkNgOg5Oawc6uHf6YfkpMngJtaxZlL1tLnJUHy4OXIVVVDo8H5nv0FvNwMS&#xa;bHg+0zz9JnG9JTGpojGksuT67E58xJcwgfc3fNw4OHs8OjguiJ3nGss6VH0tPAUT&#xa;zdxl6LurAzXcjLAt5Ncnnsk5zUjUP2hVqfrYwZfyLOwomiGhksOxROaG8cJp6afm&#xa;F+0k+SKMR+thcaFp6lpnkih2+zx6Rf1b8+gFbW+Mmag509HvDudolsEQniAhmoq1&#xa;Px723MuFC69Pmv7jg/lK2AuSQbm920MxolCg/b2vP3+DumDufjE8D4gWlSiU1Vh0&#xa;UFb4D1ERpAoQJLPuk4ihBDHbgAmRSYLKxAnw6UmFXZuivbv8W4E0SPxVNmA40xi4&#xa;HkoGLxeRoMV5VlMpiWE00ZkIi1HTSryQcJJqFfxZiEYJILYVXgvGcTWFd6EqhwZI&#xa;3KxiajT9oM5u7aR405x1q/+w1LrEB6Nw87t0p3ZC8etPhJU0qE17EYitkQIDAQAB&#xa;MA0GCSqGSIb3DQEBCwUAA4IBgQAwcIyp+d+J2FtxRirWKRCoAejZFMCj3un3A1Ft&#xa;Raoc1QLNh9TIqSlxObgiCXYUCSAH37p/hYR2/qsVaDeY3v25eMhEsnm0JeJrEofA&#xa;yArAhjr0sQ4XgH+6JA6hMjhVDmTxMkqg5AuKfSp5R3emBfdX45Zv7CfZM5GbrO/I&#xa;l8a3Ayg4sWSDZ/36Gga+y5W/peyEtI60RWVoW8AePsyDwmuwoQroYLTm3i/p9G87&#xa;8ItsRTpVkvNzDYQwz0GbcSV8CuLErt+Vip7tSh3gIK22mMkGYrXgLYu2zT93UrZG&#xa;voMIlg8BMla7J/K2sTlTidZlBqsA91LcOkqEGutTdT0K+HK/69TxxdKHNYoSufb4&#xa;nUJ5D+vvaayC4ru5dIkHNGbtGX//ZhoRFkVUsqKHs7QyaUiEEO2k+ct3cgAcunNY&#xa;z0LLImjfX9AfCLDtErfM50xc1pypKEnpAOJt8Ax4qIGZCuuxwc48SdRMOPSnZort&#xa;iOfaVuAdNMhYRJ4922U6alIfDVM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2026-07-22T09:17:44+00:00; +6h59m45s from scanner time."><elem key="delta">25185.0</elem>
+<elem key="date">2026-07-22T09:17:44+00:00</elem>
+</script><script id="ms-sql-info" output="&#xa;  10.129.10.104:1433: &#xa;    Version: &#xa;      name: Microsoft SQL Server 2022 RTM&#xa;      number: 16.00.1000.00&#xa;      Product: Microsoft SQL Server 2022&#xa;      Service pack level: RTM&#xa;      Post-SP patches applied: false&#xa;    TCP port: 1433"><table key="10.129.10.104:1433">
+<table key="Version">
+<elem key="name">Microsoft SQL Server 2022 RTM</elem>
+<elem key="number">16.00.1000.00</elem>
+<elem key="Product">Microsoft SQL Server 2022</elem>
+<elem key="Service pack level">RTM</elem>
+<elem key="Post-SP patches applied">false</elem>
+</table>
+<elem key="TCP port">1433</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 6h59m44s, deviation: 0s, median: 6h59m44s"><elem key="count">2</elem>
+<elem key="median">25184</elem>
+<elem key="stddev">0</elem>
+<elem key="mean">25184</elem>
+</script></hostscript><times srtt="74056" rttvar="49642" to="272624"/>
+</host>
+<taskbegin task="NSE" time="1784686679"/>
+<taskend task="NSE" time="1784686679"/>
+<taskbegin task="NSE" time="1784686679"/>
+<taskend task="NSE" time="1784686679"/>
+<taskbegin task="NSE" time="1784686679"/>
+<taskend task="NSE" time="1784686679"/>
+<runstats><finished time="1784686679" timestr="Wed Jul 22 07:47:59 2026" summary="Nmap done at Wed Jul 22 07:47:59 2026; 1 IP address (1 host up) scanned in 47.26 seconds" elapsed="47.26" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

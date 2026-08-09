@@ -1,0 +1,6 @@
+type: txt
+help: Attempt to lower the MSS if TCP connections fail to establish
+val_help: on-icmp-black-hole; Attempt TCP MSS probing when an ICMP black hole is detected
+val_help: force; Attempt TCP MSS probing by default
+allowed: echo "on-icmp-black-hole force"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(on-icmp-black-hole|force)\'   --value \'$VAR(@)\'"; "Must be on-icmp-black-hole or force"

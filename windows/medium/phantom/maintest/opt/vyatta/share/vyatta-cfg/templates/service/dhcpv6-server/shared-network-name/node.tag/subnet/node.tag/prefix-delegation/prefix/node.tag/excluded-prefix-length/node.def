@@ -1,0 +1,4 @@
+type: txt
+help: Length in bits of excluded prefix
+val_help: u32:33-64; Excluded prefix length (33-128)
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 33-128\"  --value \'$VAR(@)\'"; "Prefix length must be between 33 and 128"

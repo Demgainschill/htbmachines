@@ -1,0 +1,8 @@
+S:disk/by-diskseq/12
+I:8384787
+E:ID_FS_VERSION=4.0
+E:ID_FS_TYPE=squashfs
+E:ID_FS_USAGE=filesystem
+G:systemd
+Q:systemd
+V:1

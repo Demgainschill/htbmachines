@@ -1,0 +1,2 @@
+libnss_mapname 2 libnss-mapuser (>= 1.1.0)
+libnss_mapuid 2 libnss-mapuser (>= 1.1.0)

@@ -1,0 +1,16 @@
+817eb84d4de646019643112cb47c2d1e  opt/vyatta/bin/sudo-users/vyatta-wlb-connection.pl
+a3829bc1b2f044a843d306fc7349ac79  opt/vyatta/bin/sudo-users/vyatta-wlb-status
+d41d8cd98f00b204e9800998ecf8427e  opt/vyatta/etc/config-migrate/current/wanloadbalance@3
+96233e77191d809f459871124404efe4  opt/vyatta/sbin/vyatta-wanloadbalance.init
+e3408a456d9c2cbeb54a7bb0b15e210d  opt/vyatta/sbin/wan_lb
+694585927ff3c57c76c585218a8b8037  opt/vyatta/share/vyatta-op/templates/restart/wan-load-balance/node.def
+8c4ffdff88ece03178e1fdb95c6df3d3  opt/vyatta/share/vyatta-op/templates/show/wan-load-balance/connection/node.def
+313811f63c928c2a4f63ab1af08534ec  opt/vyatta/share/vyatta-op/templates/show/wan-load-balance/node.def
+c210262763bf465c2432f908bcfba86c  opt/vyatta/share/vyatta-op/templates/show/wan-load-balance/status/node.def
+f94ef3da9cae9a3f9b55c65f5eeb471e  opt/vyatta/share/vyatta-op/templates/show/wan-load-balance/status/with-dns/node.def
+5bee1349ca7093c6991dca0783c0bbfe  usr/share/doc/vyatta-wanloadbalance/NEWS.gz
+5e309010d92880d15672129133e5354d  usr/share/doc/vyatta-wanloadbalance/README
+7be55b1bc477c226b60c9c04ceafb9a0  usr/share/doc/vyatta-wanloadbalance/changelog.Debian.gz
+bc4d73fdfb2b55c027a3e16783ab4804  usr/share/doc/vyatta-wanloadbalance/changelog.gz
+bde1750de95ee38ee9e4fad45f02167d  usr/share/doc/vyatta-wanloadbalance/copyright
+e9e04ef2861fcfc07f03f018ec5d3305  usr/share/lintian/overrides/vyatta-wanloadbalance

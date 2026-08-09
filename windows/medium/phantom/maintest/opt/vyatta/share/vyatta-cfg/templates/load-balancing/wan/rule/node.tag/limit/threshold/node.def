@@ -1,0 +1,6 @@
+type: txt
+help: Threshold behavior for limit (default: below)
+val_help: above; Above limit
+val_help: below; Below limit (default)
+allowed: echo "above below"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(above|below)\'   --value \'$VAR(@)\'"; "Invalid value"

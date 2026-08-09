@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Aug  9 09:08:54 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA unified_results 10.129.44.242 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA unified_results 10.129.44.242" start="1786246734" startstr="Sun Aug  9 09:08:54 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1786246734"/>
+<taskend task="NSE" time="1786246734"/>
+<taskbegin task="NSE" time="1786246734"/>
+<taskend task="NSE" time="1786246734"/>
+<taskbegin task="NSE" time="1786246734"/>
+<taskend task="NSE" time="1786246734"/>
+<taskbegin task="Ping Scan" time="1786246734"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.44.242" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1786246734" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1786246734"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1786246735"/>
+<taskbegin task="SYN Stealth Scan" time="1786246735"/>
+<taskend task="SYN Stealth Scan" time="1786246787" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1786246787"/>
+<taskend task="Service scan" time="1786246891" extrainfo="6 services on 1 host"/>
+<taskbegin task="NSE" time="1786246891"/>
+<taskend task="NSE" time="1786246911"/>
+<taskbegin task="NSE" time="1786246911"/>
+<taskend task="NSE" time="1786246915"/>
+<taskbegin task="NSE" time="1786246915"/>
+<taskend task="NSE" time="1786246915"/>
+<host starttime="1786246735" endtime="1786246915"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.129.44.242" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65526">
+<extrareasons reason="reset" count="65526" proto="tcp" ports="1-21,23-6788,6790-8079,8081-8442,8444-8842,8844-8879,8881-9988,9990-21243,21245-29623,29625-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 48:ad:d5:b8:3a:9f:bc:be:f7:e8:20:1e:f6:bf:de:ae (RSA)&#xa;  256 b7:89:6c:0b:20:ed:49:b2:c1:86:7c:29:92:74:1c:1f (ECDSA)&#xa;  256 18:cd:9d:08:a6:21:a8:b8:b6:f7:9f:8d:40:51:54:fb (ED25519)"><table>
+<elem key="fingerprint">48add5b83a9fbcbef7e8201ef6bfdeae</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQC82vTuN1hMqiqUfN+Lwih4g8rSJjaMjDQdhfdT8vEQ67urtQIyPszlNtkCDn6MNcBfibD/7Zz4r8lr1iNe/Afk6LJqTt3OWewzS2a1TpCrEbvoileYAl/Feya5PfbZ8mv77+MWEA+kT0pAw1xW9bpkhYCGkJQm9OYdcsEEg1i+kQ/ng3+GaFrGJjxqYaW1LXyXN1f7j9xG2f27rKEZoRO/9HOH9Y+5ru184QQXjW/ir+lEJ7xTwQA5U1GOW1m/AgpHIfI5j9aDfT/r4QMe+au+2yPotnOGBBJBz3ef+fQzj/Cq7OGRR96ZBfJ3i00B/Waw/RI19qd7+ybNXF/gBzptEYXujySQZSu92Dwi23itxJBolE6hpQ2uYVA8VBlF0KXESt3ZJVWSAsU3oguNCXtY7krjqPe6BZRy+lrbeska1bIGPZrqLEgptpKhz14UaOcH9/vpMYFdSKr24aMXvZBDK1GJg50yihZx8I9I367z0my8E89+TnjGFY2QTzxmbmU=</elem>
+<elem key="bits">3072</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">b7896c0b20ed49b2c1867c2992741c1f</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH2y17GUe6keBxOcBGNkWsliFwTRwUtQB3NXEhTAFLziGDfCgBV7B9Hp6GQMPGQXqMk7nnveA8vUz0D7ug5n04A=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">18cd9d08a621a8b8b6f79f8d405154fb</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIKfXa+OM5/utlol5mJajysEsV4zb/L0BJ1lKxMPadPvR</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="6789"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ibm-db2-admin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache Tomcat" extrainfo="language: en" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-title" output="Did not follow redirect to https://10.129.44.242:8443/manage"><elem key="redirect_url">https://10.129.44.242:8443/manage</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="nagios-nsca" product="Nagios NSCA" tunnel="ssl" method="probed" conf="10"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-title" output="Site doesn&apos;t have a title (text/plain;charset=UTF-8)."></script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=UniFi/organizationName=Ubiquiti Inc./stateOrProvinceName=New York/countryName=US&#xa;Subject Alternative Name: DNS:UniFi&#xa;Issuer: commonName=UniFi/organizationName=Ubiquiti Inc./stateOrProvinceName=New York/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-12-30T21:37:24&#xa;Not valid after:  2024-04-03T21:37:24&#xa;MD5:     e6be 8c03 5e12 6827 d1fe 612d dc76 a919&#xa;SHA-1:   111b aa11 9cca 4401 7cec 6e03 dc45 5cfe 65f6 d829&#xa;SHA-256: be5e 8893 8943 1a79 fbf4 77dc 50a2 39dc 9c26 f0f2 27d0 979a 2c10 3aff 909f 1347"><table key="subject">
+<elem key="commonName">UniFi</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">New York</elem>
+<elem key="organizationName">Ubiquiti Inc.</elem>
+<elem key="organizationalUnitName">UniFi</elem>
+<elem key="stateOrProvinceName">New York</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">UniFi</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">New York</elem>
+<elem key="organizationName">Ubiquiti Inc.</elem>
+<elem key="organizationalUnitName">UniFi</elem>
+<elem key="stateOrProvinceName">New York</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">DEF67A3909DAD3DA2E45C83A5A67BD7EFF5CBAD163B7E7A702D526DBB9F7758D1CD75A89B4762A5F37B97E8BF048D8A2F25CFB68FA9DC1555C1B39141EE0EC0F6272EE086031652380B4C89E540574569BDB3B7E4C2525AB4A07FDA98D94024495EB0330E348DC3C8E4CB4B012D9CE2D4187766DF622B27459D3FA6D0A70554EF2768F34BB709120A19C7B5358CCCBA52436E6AC588186DD77B2A768C9C2EC6B19B25B68FEE38C71CCBD9FD3621F6E1EAD6B4109433386C73113FE6CF0760FAC2E4084770EC77CCED762D03A5F3FF419A76B4489ABCAACB06952F01CF7A836884685DDBD298AA93350FDF58A3A9CD516715B6CDA18C97627D882066FDE7AB87B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:UniFi</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-12-30T21:37:24</elem>
+<elem key="notAfter">2024-04-03T21:37:24</elem>
+</table>
+<elem key="md5">e6be8c035e126827d1fe612ddc76a919</elem>
+<elem key="sha1">111baa119cca44017cec6e03dc455cfe65f6d829</elem>
+<elem key="sha256">be5e889389431a79fbf477dc50a239dc9c26f0f227d0979a2c103aff909f1347</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDfTCCAmWgAwIBAgIEYc4mlDANBgkqhkiG9w0BAQsFADBrMQswCQYDVQQGEwJV&#xa;UzERMA8GA1UECAwITmV3IFlvcmsxETAPBgNVBAcMCE5ldyBZb3JrMRYwFAYDVQQK&#xa;DA1VYmlxdWl0aSBJbmMuMQ4wDAYDVQQLDAVVbmlGaTEOMAwGA1UEAwwFVW5pRmkw&#xa;HhcNMjExMjMwMjEzNzI0WhcNMjQwNDAzMjEzNzI0WjBrMQswCQYDVQQGEwJVUzER&#xa;MA8GA1UECAwITmV3IFlvcmsxETAPBgNVBAcMCE5ldyBZb3JrMRYwFAYDVQQKDA1V&#xa;YmlxdWl0aSBJbmMuMQ4wDAYDVQQLDAVVbmlGaTEOMAwGA1UEAwwFVW5pRmkwggEi&#xa;MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDe9no5CdrT2i5FyDpaZ71+/1y6&#xa;0WO356cC1Sbbufd1jRzXWom0dipfN7l+i/BI2KLyXPto+p3BVVwbORQe4OwPYnLu&#xa;CGAxZSOAtMieVAV0VpvbO35MJSWrSgf9qY2UAkSV6wMw40jcPI5MtLAS2c4tQYd2&#xa;bfYisnRZ0/ptCnBVTvJ2jzS7cJEgoZx7U1jMy6UkNuasWIGG3Xeyp2jJwuxrGbJb&#xa;aP7jjHHMvZ/TYh9uHq1rQQlDM4bHMRP+bPB2D6wuQIR3Dsd8ztdi0DpfP/QZp2tE&#xa;iavKrLBpUvAc96g2iEaF3b0piqkzUP31ijqc1RZxW2zaGMl2J9iCBm/eerh7AgMB&#xa;AAGjKTAnMBMGA1UdJQQMMAoGCCsGAQUFBwMBMBAGA1UdEQQJMAeCBVVuaUZpMA0G&#xa;CSqGSIb3DQEBCwUAA4IBAQAFvT2p6uA8sUGzz1WKbQjDPTeRM/ghhPCCqhWH3jF6&#xa;9udW490Mv0mSZS4pBtcttnJ4D5IWnOeYoxoxw7ZAODhzvzcZ3w6RjnDy7WOB9e0/&#xa;2ky4i+ABn2tfztNWTa2OBLM3bW1X15D3J7CHSGW1BOP2pA7ersOuP0/IV7Jo61Ok&#xa;FbxK5+8qn5ASRDZTeyCI//l5uYVjd19g7yNs850mv4hB8Y0I0PAzTLKVchv+A8VO&#xa;A2DeT8snk1C5L2Jw+WugNwdeyKqmmZRBKfo0KuQz0YG40zxx0SCAKnIXpUSrnlCU&#xa;VwtOH3PmERL30HjgR25E0RePOUepiX8psGR4CGV2U+dg&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="8843"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache Tomcat" extrainfo="language: en" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-title" output="Site doesn&apos;t have a title (text/plain;charset=UTF-8)."></script><script id="ssl-cert" output="Subject: commonName=UniFi/organizationName=Ubiquiti Inc./stateOrProvinceName=New York/countryName=US&#xa;Subject Alternative Name: DNS:UniFi&#xa;Issuer: commonName=UniFi/organizationName=Ubiquiti Inc./stateOrProvinceName=New York/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-12-30T21:37:24&#xa;Not valid after:  2024-04-03T21:37:24&#xa;MD5:     e6be 8c03 5e12 6827 d1fe 612d dc76 a919&#xa;SHA-1:   111b aa11 9cca 4401 7cec 6e03 dc45 5cfe 65f6 d829&#xa;SHA-256: be5e 8893 8943 1a79 fbf4 77dc 50a2 39dc 9c26 f0f2 27d0 979a 2c10 3aff 909f 1347"><table key="subject">
+<elem key="commonName">UniFi</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">New York</elem>
+<elem key="organizationName">Ubiquiti Inc.</elem>
+<elem key="organizationalUnitName">UniFi</elem>
+<elem key="stateOrProvinceName">New York</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">UniFi</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">New York</elem>
+<elem key="organizationName">Ubiquiti Inc.</elem>
+<elem key="organizationalUnitName">UniFi</elem>
+<elem key="stateOrProvinceName">New York</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">DEF67A3909DAD3DA2E45C83A5A67BD7EFF5CBAD163B7E7A702D526DBB9F7758D1CD75A89B4762A5F37B97E8BF048D8A2F25CFB68FA9DC1555C1B39141EE0EC0F6272EE086031652380B4C89E540574569BDB3B7E4C2525AB4A07FDA98D94024495EB0330E348DC3C8E4CB4B012D9CE2D4187766DF622B27459D3FA6D0A70554EF2768F34BB709120A19C7B5358CCCBA52436E6AC588186DD77B2A768C9C2EC6B19B25B68FEE38C71CCBD9FD3621F6E1EAD6B4109433386C73113FE6CF0760FAC2E4084770EC77CCED762D03A5F3FF419A76B4489ABCAACB06952F01CF7A836884685DDBD298AA93350FDF58A3A9CD516715B6CDA18C97627D882066FDE7AB87B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:UniFi</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-12-30T21:37:24</elem>
+<elem key="notAfter">2024-04-03T21:37:24</elem>
+</table>
+<elem key="md5">e6be8c035e126827d1fe612ddc76a919</elem>
+<elem key="sha1">111baa119cca44017cec6e03dc455cfe65f6d829</elem>
+<elem key="sha256">be5e889389431a79fbf477dc50a239dc9c26f0f227d0979a2c103aff909f1347</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDfTCCAmWgAwIBAgIEYc4mlDANBgkqhkiG9w0BAQsFADBrMQswCQYDVQQGEwJV&#xa;UzERMA8GA1UECAwITmV3IFlvcmsxETAPBgNVBAcMCE5ldyBZb3JrMRYwFAYDVQQK&#xa;DA1VYmlxdWl0aSBJbmMuMQ4wDAYDVQQLDAVVbmlGaTEOMAwGA1UEAwwFVW5pRmkw&#xa;HhcNMjExMjMwMjEzNzI0WhcNMjQwNDAzMjEzNzI0WjBrMQswCQYDVQQGEwJVUzER&#xa;MA8GA1UECAwITmV3IFlvcmsxETAPBgNVBAcMCE5ldyBZb3JrMRYwFAYDVQQKDA1V&#xa;YmlxdWl0aSBJbmMuMQ4wDAYDVQQLDAVVbmlGaTEOMAwGA1UEAwwFVW5pRmkwggEi&#xa;MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDe9no5CdrT2i5FyDpaZ71+/1y6&#xa;0WO356cC1Sbbufd1jRzXWom0dipfN7l+i/BI2KLyXPto+p3BVVwbORQe4OwPYnLu&#xa;CGAxZSOAtMieVAV0VpvbO35MJSWrSgf9qY2UAkSV6wMw40jcPI5MtLAS2c4tQYd2&#xa;bfYisnRZ0/ptCnBVTvJ2jzS7cJEgoZx7U1jMy6UkNuasWIGG3Xeyp2jJwuxrGbJb&#xa;aP7jjHHMvZ/TYh9uHq1rQQlDM4bHMRP+bPB2D6wuQIR3Dsd8ztdi0DpfP/QZp2tE&#xa;iavKrLBpUvAc96g2iEaF3b0piqkzUP31ijqc1RZxW2zaGMl2J9iCBm/eerh7AgMB&#xa;AAGjKTAnMBMGA1UdJQQMMAoGCCsGAQUFBwMBMBAGA1UdEQQJMAeCBVVuaUZpMA0G&#xa;CSqGSIb3DQEBCwUAA4IBAQAFvT2p6uA8sUGzz1WKbQjDPTeRM/ghhPCCqhWH3jF6&#xa;9udW490Mv0mSZS4pBtcttnJ4D5IWnOeYoxoxw7ZAODhzvzcZ3w6RjnDy7WOB9e0/&#xa;2ky4i+ABn2tfztNWTa2OBLM3bW1X15D3J7CHSGW1BOP2pA7ersOuP0/IV7Jo61Ok&#xa;FbxK5+8qn5ASRDZTeyCI//l5uYVjd19g7yNs850mv4hB8Y0I0PAzTLKVchv+A8VO&#xa;A2DeT8snk1C5L2Jw+WugNwdeyKqmmZRBKfo0KuQz0YG40zxx0SCAKnIXpUSrnlCU&#xa;VwtOH3PmERL30HjgR25E0RePOUepiX8psGR4CGV2U+dg&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="8880"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache Tomcat" extrainfo="language: en" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat</cpe></service><script id="http-title" output="HTTP Status 400 \xE2\x80\x93 Bad Request"><elem key="title">HTTP Status 400 \xE2\x80\x93 Bad Request</elem>
+</script></port>
+<port protocol="tcp" portid="9989"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="21244"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="29624"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+<times srtt="363912" rttvar="168198" to="1036704"/>
+</host>
+<taskbegin task="NSE" time="1786246915"/>
+<taskend task="NSE" time="1786246915"/>
+<taskbegin task="NSE" time="1786246915"/>
+<taskend task="NSE" time="1786246915"/>
+<taskbegin task="NSE" time="1786246915"/>
+<taskend task="NSE" time="1786246915"/>
+<runstats><finished time="1786246915" timestr="Sun Aug  9 09:11:55 2026" summary="Nmap done at Sun Aug  9 09:11:55 2026; 1 IP address (1 host up) scanned in 181.86 seconds" elapsed="181.86" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

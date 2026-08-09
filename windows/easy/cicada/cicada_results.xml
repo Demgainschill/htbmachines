@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Jul  7 08:01:45 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA cicada_results 10.129.231.149 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -&#45;min-rate 4000 -oA cicada_results 10.129.231.149" start="1783391505" startstr="Tue Jul  7 08:01:45 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1783391505"/>
+<taskend task="NSE" time="1783391505"/>
+<taskbegin task="NSE" time="1783391505"/>
+<taskend task="NSE" time="1783391505"/>
+<taskbegin task="NSE" time="1783391505"/>
+<taskend task="NSE" time="1783391505"/>
+<taskbegin task="Ping Scan" time="1783391505"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.231.149" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1783391505" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1783391505"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1783391506"/>
+<taskbegin task="SYN Stealth Scan" time="1783391506"/>
+<taskend task="SYN Stealth Scan" time="1783391555" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1783391555"/>
+<taskend task="Service scan" time="1783391610" extrainfo="13 services on 1 host"/>
+<taskbegin task="NSE" time="1783391610"/>
+<taskend task="NSE" time="1783391650"/>
+<taskbegin task="NSE" time="1783391650"/>
+<taskend task="NSE" time="1783391651"/>
+<taskbegin task="NSE" time="1783391651"/>
+<taskend task="NSE" time="1783391651"/>
+<host starttime="1783391506" endtime="1783391651"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.231.149" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65522">
+<extrareasons reason="no-response" count="65522" proto="tcp" ports="1-52,54-87,89-134,136-138,140-388,390-444,446-463,465-592,594-635,637-3267,3270-5984,5986-62242,62244-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-07-07 09:32:41Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: cicada.htb, Site: Default-First-Site-Name" hostname="CICADA-DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=CICADA-DC.cicada.htb&#xa;Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:CICADA-DC.cicada.htb&#xa;Issuer: commonName=CICADA-DC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-22T20:24:16&#xa;Not valid after:  2025-08-22T20:24:16&#xa;MD5:     9ec5 1a23 40ef b5b8 3d2c 39d8 447d db65&#xa;SHA-1:   2c93 6d7b cfd8 11b9 9f71 1a5a 155d 88d3 4a52 157a&#xa;SHA-256: c8b9 54cb f36f 460f 859f 24c6 f4b1 7245 3eec 001b ce26 2f62 7229 4374 b24d 0772"><table key="subject">
+<elem key="commonName">CICADA-DC.cicada.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">CICADA-DC-CA</elem>
+<elem key="domainComponent">cicada</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">E6AD6739C9D59CB913C7D516C0D6B6AE77D4A0264F25FC0713DD21579F1B58CA1CB613BD2B102D50EEBF4DBEA76F621FDBE7A98BC8CD28855A294A085071B5F3A9CAF09A110B9A35A26ABF7AAECA693FA70D3131F48B32E3797A63C9E721ED0BB71A9ED639D66483AEF5C1C4C5487F6DC950A81B86A49C4AB761F1F84BF172A06575631E6419567E0E360DAF24FDADBBB3F52A45D78FB31DAF2F461442292DD0DAEF8F4F2F2EF1A35CB0F0296830CB5C14AC156891F2EED320C14E4F55B1417948612A143C8C147738168C06DA88CC8009D3DD8B372B32E16EAAF2258573E4DBE378053F89DF6F55EFA79989DA94ADA827999677A22FB05ED12A9D0E19630781</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">S/MIME Capabilities</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">06:39:60:C3:7B:49:BD:16:57:C1:A9:CF:27:45:2C:F0:BE:EF:9D:40</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">88:0F:B8:0B:75:F8:1D:6E:44:4D:E7:87:5E:90:EA:04:81:91:3C:E9</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=CICADA-DC-CA,CN=CICADA-DC,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=cicada,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=CICADA-DC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=cicada,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:CICADA-DC.cicada.htb</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-22T20:24:16</elem>
+<elem key="notAfter">2025-08-22T20:24:16</elem>
+</table>
+<elem key="md5">9ec51a2340efb5b83d2c39d8447ddb65</elem>
+<elem key="sha1">2c936d7bcfd811b99f711a5a155d88d34a52157a</elem>
+<elem key="sha256">c8b954cbf36f460f859f24c6f4b172453eec001bce262f6272294374b24d0772</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4DCCBMigAwIBAgITHgAAAAOY38QFU4GSRAABAAAAAzANBgkqhkiG9w0BAQsF&#xa;ADBEMRMwEQYKCZImiZPyLGQBGRYDaHRiMRYwFAYKCZImiZPyLGQBGRYGY2ljYWRh&#xa;MRUwEwYDVQQDEwxDSUNBREEtREMtQ0EwHhcNMjQwODIyMjAyNDE2WhcNMjUwODIy&#xa;MjAyNDE2WjAfMR0wGwYDVQQDExRDSUNBREEtREMuY2ljYWRhLmh0YjCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAOatZznJ1Zy5E8fVFsDWtq531KAmTyX8&#xa;BxPdIVefG1jKHLYTvSsQLVDuv02+p29iH9vnqYvIzSiFWilKCFBxtfOpyvCaEQua&#xa;NaJqv3quymk/pw0xMfSLMuN5emPJ5yHtC7cantY51mSDrvXBxMVIf23JUKgbhqSc&#xa;Srdh8fhL8XKgZXVjHmQZVn4ONg2vJP2tu7P1KkXXj7Mdry9GFEIpLdDa749PLy7x&#xa;o1yw8CloMMtcFKwVaJHy7tMgwU5PVbFBeUhhKhQ8jBR3OBaMBtqIzIAJ092LNysy&#xa;4W6q8iWFc+Tb43gFP4nfb1Xvp5mJ2pStqCeZlneiL7Be0SqdDhljB4ECAwEAAaOC&#xa;Au4wggLqMC8GCSsGAQQBgjcUAgQiHiAARABvAG0AYQBpAG4AQwBvAG4AdAByAG8A&#xa;bABsAGUAcjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDgYDVR0PAQH/&#xa;BAQDAgWgMHgGCSqGSIb3DQEJDwRrMGkwDgYIKoZIhvcNAwICAgCAMA4GCCqGSIb3&#xa;DQMEAgIAgDALBglghkgBZQMEASowCwYJYIZIAWUDBAEtMAsGCWCGSAFlAwQBAjAL&#xa;BglghkgBZQMEAQUwBwYFKw4DAgcwCgYIKoZIhvcNAwcwHQYDVR0OBBYEFAY5YMN7&#xa;Sb0WV8GpzydFLPC+751AMB8GA1UdIwQYMBaAFIgPuAt1+B1uRE3nh16Q6gSBkTzp&#xa;MIHLBgNVHR8EgcMwgcAwgb2ggbqggbeGgbRsZGFwOi8vL0NOPUNJQ0FEQS1EQy1D&#xa;QSxDTj1DSUNBREEtREMsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2Vz&#xa;LENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9Y2ljYWRhLERDPWh0Yj9j&#xa;ZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlz&#xa;dHJpYnV0aW9uUG9pbnQwgb0GCCsGAQUFBwEBBIGwMIGtMIGqBggrBgEFBQcwAoaB&#xa;nWxkYXA6Ly8vQ049Q0lDQURBLURDLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXkl&#xa;MjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWNpY2Fk&#xa;YSxEQz1odGI/Y0FDZXJ0aWZpY2F0ZT9iYXNlP29iamVjdENsYXNzPWNlcnRpZmlj&#xa;YXRpb25BdXRob3JpdHkwQAYDVR0RBDkwN6AfBgkrBgEEAYI3GQGgEgQQ0dpG4APi&#xa;HkGYUf0NXWYT14IUQ0lDQURBLURDLmNpY2FkYS5odGIwDQYJKoZIhvcNAQELBQAD&#xa;ggEBAIrY4wzebzUMnbrfpkvGA715ds8pNq06CN4/24q0YmowD+XSR/OI0En8Z9LE&#xa;eytwBsFZJk5qv9yY+WL4Ubb4chKSsNjuc5SzaHxXAVczpNlH/a4WAKfVMU2D6nOb&#xa;xxqE1cVIcOyN4b3WUhRNltauw81EUTa4xT0WElw8FevodHlBXiUPUT9zrBhnvNkz&#xa;obX8oU3zyMO89QwxsusZ0TLiT/EREW6N44J+ROTUzdJwcFNRl+oLsiK5z/ltLRmT&#xa;P/gFJvqMFfK4x4/ftmQV5M3hb0rzUcS4NJCGtclEoxlJHRTDTG6yZleuHvKSN4JF&#xa;ji6zxYOoOznp6JlmbakLb1ZRLA8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2026-07-07T09:34:11+00:00; +7h00m00s from scanner time."><elem key="delta">25200.0</elem>
+<elem key="date">2026-07-07T09:34:11+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: cicada.htb, Site: Default-First-Site-Name" hostname="CICADA-DC" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=CICADA-DC.cicada.htb&#xa;Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:CICADA-DC.cicada.htb&#xa;Issuer: commonName=CICADA-DC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-22T20:24:16&#xa;Not valid after:  2025-08-22T20:24:16&#xa;MD5:     9ec5 1a23 40ef b5b8 3d2c 39d8 447d db65&#xa;SHA-1:   2c93 6d7b cfd8 11b9 9f71 1a5a 155d 88d3 4a52 157a&#xa;SHA-256: c8b9 54cb f36f 460f 859f 24c6 f4b1 7245 3eec 001b ce26 2f62 7229 4374 b24d 0772"><table key="subject">
+<elem key="commonName">CICADA-DC.cicada.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">CICADA-DC-CA</elem>
+<elem key="domainComponent">cicada</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">E6AD6739C9D59CB913C7D516C0D6B6AE77D4A0264F25FC0713DD21579F1B58CA1CB613BD2B102D50EEBF4DBEA76F621FDBE7A98BC8CD28855A294A085071B5F3A9CAF09A110B9A35A26ABF7AAECA693FA70D3131F48B32E3797A63C9E721ED0BB71A9ED639D66483AEF5C1C4C5487F6DC950A81B86A49C4AB761F1F84BF172A06575631E6419567E0E360DAF24FDADBBB3F52A45D78FB31DAF2F461442292DD0DAEF8F4F2F2EF1A35CB0F0296830CB5C14AC156891F2EED320C14E4F55B1417948612A143C8C147738168C06DA88CC8009D3DD8B372B32E16EAAF2258573E4DBE378053F89DF6F55EFA79989DA94ADA827999677A22FB05ED12A9D0E19630781</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">S/MIME Capabilities</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">06:39:60:C3:7B:49:BD:16:57:C1:A9:CF:27:45:2C:F0:BE:EF:9D:40</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">88:0F:B8:0B:75:F8:1D:6E:44:4D:E7:87:5E:90:EA:04:81:91:3C:E9</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=CICADA-DC-CA,CN=CICADA-DC,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=cicada,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=CICADA-DC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=cicada,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:CICADA-DC.cicada.htb</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-22T20:24:16</elem>
+<elem key="notAfter">2025-08-22T20:24:16</elem>
+</table>
+<elem key="md5">9ec51a2340efb5b83d2c39d8447ddb65</elem>
+<elem key="sha1">2c936d7bcfd811b99f711a5a155d88d34a52157a</elem>
+<elem key="sha256">c8b954cbf36f460f859f24c6f4b172453eec001bce262f6272294374b24d0772</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4DCCBMigAwIBAgITHgAAAAOY38QFU4GSRAABAAAAAzANBgkqhkiG9w0BAQsF&#xa;ADBEMRMwEQYKCZImiZPyLGQBGRYDaHRiMRYwFAYKCZImiZPyLGQBGRYGY2ljYWRh&#xa;MRUwEwYDVQQDEwxDSUNBREEtREMtQ0EwHhcNMjQwODIyMjAyNDE2WhcNMjUwODIy&#xa;MjAyNDE2WjAfMR0wGwYDVQQDExRDSUNBREEtREMuY2ljYWRhLmh0YjCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAOatZznJ1Zy5E8fVFsDWtq531KAmTyX8&#xa;BxPdIVefG1jKHLYTvSsQLVDuv02+p29iH9vnqYvIzSiFWilKCFBxtfOpyvCaEQua&#xa;NaJqv3quymk/pw0xMfSLMuN5emPJ5yHtC7cantY51mSDrvXBxMVIf23JUKgbhqSc&#xa;Srdh8fhL8XKgZXVjHmQZVn4ONg2vJP2tu7P1KkXXj7Mdry9GFEIpLdDa749PLy7x&#xa;o1yw8CloMMtcFKwVaJHy7tMgwU5PVbFBeUhhKhQ8jBR3OBaMBtqIzIAJ092LNysy&#xa;4W6q8iWFc+Tb43gFP4nfb1Xvp5mJ2pStqCeZlneiL7Be0SqdDhljB4ECAwEAAaOC&#xa;Au4wggLqMC8GCSsGAQQBgjcUAgQiHiAARABvAG0AYQBpAG4AQwBvAG4AdAByAG8A&#xa;bABsAGUAcjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDgYDVR0PAQH/&#xa;BAQDAgWgMHgGCSqGSIb3DQEJDwRrMGkwDgYIKoZIhvcNAwICAgCAMA4GCCqGSIb3&#xa;DQMEAgIAgDALBglghkgBZQMEASowCwYJYIZIAWUDBAEtMAsGCWCGSAFlAwQBAjAL&#xa;BglghkgBZQMEAQUwBwYFKw4DAgcwCgYIKoZIhvcNAwcwHQYDVR0OBBYEFAY5YMN7&#xa;Sb0WV8GpzydFLPC+751AMB8GA1UdIwQYMBaAFIgPuAt1+B1uRE3nh16Q6gSBkTzp&#xa;MIHLBgNVHR8EgcMwgcAwgb2ggbqggbeGgbRsZGFwOi8vL0NOPUNJQ0FEQS1EQy1D&#xa;QSxDTj1DSUNBREEtREMsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2Vz&#xa;LENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9Y2ljYWRhLERDPWh0Yj9j&#xa;ZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlz&#xa;dHJpYnV0aW9uUG9pbnQwgb0GCCsGAQUFBwEBBIGwMIGtMIGqBggrBgEFBQcwAoaB&#xa;nWxkYXA6Ly8vQ049Q0lDQURBLURDLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXkl&#xa;MjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWNpY2Fk&#xa;YSxEQz1odGI/Y0FDZXJ0aWZpY2F0ZT9iYXNlP29iamVjdENsYXNzPWNlcnRpZmlj&#xa;YXRpb25BdXRob3JpdHkwQAYDVR0RBDkwN6AfBgkrBgEEAYI3GQGgEgQQ0dpG4APi&#xa;HkGYUf0NXWYT14IUQ0lDQURBLURDLmNpY2FkYS5odGIwDQYJKoZIhvcNAQELBQAD&#xa;ggEBAIrY4wzebzUMnbrfpkvGA715ds8pNq06CN4/24q0YmowD+XSR/OI0En8Z9LE&#xa;eytwBsFZJk5qv9yY+WL4Ubb4chKSsNjuc5SzaHxXAVczpNlH/a4WAKfVMU2D6nOb&#xa;xxqE1cVIcOyN4b3WUhRNltauw81EUTa4xT0WElw8FevodHlBXiUPUT9zrBhnvNkz&#xa;obX8oU3zyMO89QwxsusZ0TLiT/EREW6N44J+ROTUzdJwcFNRl+oLsiK5z/ltLRmT&#xa;P/gFJvqMFfK4x4/ftmQV5M3hb0rzUcS4NJCGtclEoxlJHRTDTG6yZleuHvKSN4JF&#xa;ji6zxYOoOznp6JlmbakLb1ZRLA8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2026-07-07T09:34:11+00:00; +7h00m00s from scanner time."><elem key="delta">25200.0</elem>
+<elem key="date">2026-07-07T09:34:11+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: cicada.htb, Site: Default-First-Site-Name" hostname="CICADA-DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2026-07-07T09:34:11+00:00; +7h00m00s from scanner time."><elem key="delta">25200.0</elem>
+<elem key="date">2026-07-07T09:34:11+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=CICADA-DC.cicada.htb&#xa;Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:CICADA-DC.cicada.htb&#xa;Issuer: commonName=CICADA-DC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-22T20:24:16&#xa;Not valid after:  2025-08-22T20:24:16&#xa;MD5:     9ec5 1a23 40ef b5b8 3d2c 39d8 447d db65&#xa;SHA-1:   2c93 6d7b cfd8 11b9 9f71 1a5a 155d 88d3 4a52 157a&#xa;SHA-256: c8b9 54cb f36f 460f 859f 24c6 f4b1 7245 3eec 001b ce26 2f62 7229 4374 b24d 0772"><table key="subject">
+<elem key="commonName">CICADA-DC.cicada.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">CICADA-DC-CA</elem>
+<elem key="domainComponent">cicada</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">E6AD6739C9D59CB913C7D516C0D6B6AE77D4A0264F25FC0713DD21579F1B58CA1CB613BD2B102D50EEBF4DBEA76F621FDBE7A98BC8CD28855A294A085071B5F3A9CAF09A110B9A35A26ABF7AAECA693FA70D3131F48B32E3797A63C9E721ED0BB71A9ED639D66483AEF5C1C4C5487F6DC950A81B86A49C4AB761F1F84BF172A06575631E6419567E0E360DAF24FDADBBB3F52A45D78FB31DAF2F461442292DD0DAEF8F4F2F2EF1A35CB0F0296830CB5C14AC156891F2EED320C14E4F55B1417948612A143C8C147738168C06DA88CC8009D3DD8B372B32E16EAAF2258573E4DBE378053F89DF6F55EFA79989DA94ADA827999677A22FB05ED12A9D0E19630781</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">S/MIME Capabilities</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">06:39:60:C3:7B:49:BD:16:57:C1:A9:CF:27:45:2C:F0:BE:EF:9D:40</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">88:0F:B8:0B:75:F8:1D:6E:44:4D:E7:87:5E:90:EA:04:81:91:3C:E9</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=CICADA-DC-CA,CN=CICADA-DC,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=cicada,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=CICADA-DC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=cicada,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:CICADA-DC.cicada.htb</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-22T20:24:16</elem>
+<elem key="notAfter">2025-08-22T20:24:16</elem>
+</table>
+<elem key="md5">9ec51a2340efb5b83d2c39d8447ddb65</elem>
+<elem key="sha1">2c936d7bcfd811b99f711a5a155d88d34a52157a</elem>
+<elem key="sha256">c8b954cbf36f460f859f24c6f4b172453eec001bce262f6272294374b24d0772</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4DCCBMigAwIBAgITHgAAAAOY38QFU4GSRAABAAAAAzANBgkqhkiG9w0BAQsF&#xa;ADBEMRMwEQYKCZImiZPyLGQBGRYDaHRiMRYwFAYKCZImiZPyLGQBGRYGY2ljYWRh&#xa;MRUwEwYDVQQDEwxDSUNBREEtREMtQ0EwHhcNMjQwODIyMjAyNDE2WhcNMjUwODIy&#xa;MjAyNDE2WjAfMR0wGwYDVQQDExRDSUNBREEtREMuY2ljYWRhLmh0YjCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAOatZznJ1Zy5E8fVFsDWtq531KAmTyX8&#xa;BxPdIVefG1jKHLYTvSsQLVDuv02+p29iH9vnqYvIzSiFWilKCFBxtfOpyvCaEQua&#xa;NaJqv3quymk/pw0xMfSLMuN5emPJ5yHtC7cantY51mSDrvXBxMVIf23JUKgbhqSc&#xa;Srdh8fhL8XKgZXVjHmQZVn4ONg2vJP2tu7P1KkXXj7Mdry9GFEIpLdDa749PLy7x&#xa;o1yw8CloMMtcFKwVaJHy7tMgwU5PVbFBeUhhKhQ8jBR3OBaMBtqIzIAJ092LNysy&#xa;4W6q8iWFc+Tb43gFP4nfb1Xvp5mJ2pStqCeZlneiL7Be0SqdDhljB4ECAwEAAaOC&#xa;Au4wggLqMC8GCSsGAQQBgjcUAgQiHiAARABvAG0AYQBpAG4AQwBvAG4AdAByAG8A&#xa;bABsAGUAcjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDgYDVR0PAQH/&#xa;BAQDAgWgMHgGCSqGSIb3DQEJDwRrMGkwDgYIKoZIhvcNAwICAgCAMA4GCCqGSIb3&#xa;DQMEAgIAgDALBglghkgBZQMEASowCwYJYIZIAWUDBAEtMAsGCWCGSAFlAwQBAjAL&#xa;BglghkgBZQMEAQUwBwYFKw4DAgcwCgYIKoZIhvcNAwcwHQYDVR0OBBYEFAY5YMN7&#xa;Sb0WV8GpzydFLPC+751AMB8GA1UdIwQYMBaAFIgPuAt1+B1uRE3nh16Q6gSBkTzp&#xa;MIHLBgNVHR8EgcMwgcAwgb2ggbqggbeGgbRsZGFwOi8vL0NOPUNJQ0FEQS1EQy1D&#xa;QSxDTj1DSUNBREEtREMsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2Vz&#xa;LENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9Y2ljYWRhLERDPWh0Yj9j&#xa;ZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlz&#xa;dHJpYnV0aW9uUG9pbnQwgb0GCCsGAQUFBwEBBIGwMIGtMIGqBggrBgEFBQcwAoaB&#xa;nWxkYXA6Ly8vQ049Q0lDQURBLURDLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXkl&#xa;MjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWNpY2Fk&#xa;YSxEQz1odGI/Y0FDZXJ0aWZpY2F0ZT9iYXNlP29iamVjdENsYXNzPWNlcnRpZmlj&#xa;YXRpb25BdXRob3JpdHkwQAYDVR0RBDkwN6AfBgkrBgEEAYI3GQGgEgQQ0dpG4APi&#xa;HkGYUf0NXWYT14IUQ0lDQURBLURDLmNpY2FkYS5odGIwDQYJKoZIhvcNAQELBQAD&#xa;ggEBAIrY4wzebzUMnbrfpkvGA715ds8pNq06CN4/24q0YmowD+XSR/OI0En8Z9LE&#xa;eytwBsFZJk5qv9yY+WL4Ubb4chKSsNjuc5SzaHxXAVczpNlH/a4WAKfVMU2D6nOb&#xa;xxqE1cVIcOyN4b3WUhRNltauw81EUTa4xT0WElw8FevodHlBXiUPUT9zrBhnvNkz&#xa;obX8oU3zyMO89QwxsusZ0TLiT/EREW6N44J+ROTUzdJwcFNRl+oLsiK5z/ltLRmT&#xa;P/gFJvqMFfK4x4/ftmQV5M3hb0rzUcS4NJCGtclEoxlJHRTDTG6yZleuHvKSN4JF&#xa;ji6zxYOoOznp6JlmbakLb1ZRLA8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: cicada.htb, Site: Default-First-Site-Name" hostname="CICADA-DC" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=CICADA-DC.cicada.htb&#xa;Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:CICADA-DC.cicada.htb&#xa;Issuer: commonName=CICADA-DC-CA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-22T20:24:16&#xa;Not valid after:  2025-08-22T20:24:16&#xa;MD5:     9ec5 1a23 40ef b5b8 3d2c 39d8 447d db65&#xa;SHA-1:   2c93 6d7b cfd8 11b9 9f71 1a5a 155d 88d3 4a52 157a&#xa;SHA-256: c8b9 54cb f36f 460f 859f 24c6 f4b1 7245 3eec 001b ce26 2f62 7229 4374 b24d 0772"><table key="subject">
+<elem key="commonName">CICADA-DC.cicada.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">CICADA-DC-CA</elem>
+<elem key="domainComponent">cicada</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">E6AD6739C9D59CB913C7D516C0D6B6AE77D4A0264F25FC0713DD21579F1B58CA1CB613BD2B102D50EEBF4DBEA76F621FDBE7A98BC8CD28855A294A085071B5F3A9CAF09A110B9A35A26ABF7AAECA693FA70D3131F48B32E3797A63C9E721ED0BB71A9ED639D66483AEF5C1C4C5487F6DC950A81B86A49C4AB761F1F84BF172A06575631E6419567E0E360DAF24FDADBBB3F52A45D78FB31DAF2F461442292DD0DAEF8F4F2F2EF1A35CB0F0296830CB5C14AC156891F2EED320C14E4F55B1417948612A143C8C147738168C06DA88CC8009D3DD8B372B32E16EAAF2258573E4DBE378053F89DF6F55EFA79989DA94ADA827999677A22FB05ED12A9D0E19630781</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">1.3.6.1.4.1.311.20.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">S/MIME Capabilities</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">06:39:60:C3:7B:49:BD:16:57:C1:A9:CF:27:45:2C:F0:BE:EF:9D:40</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">88:0F:B8:0B:75:F8:1D:6E:44:4D:E7:87:5E:90:EA:04:81:91:3C:E9</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:ldap:///CN=CICADA-DC-CA,CN=CICADA-DC,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=cicada,DC=htb?certificateRevocationList?base?objectClass=cRLDistributionPoint&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:ldap:///CN=CICADA-DC-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=cicada,DC=htb?cACertificate?base?objectClass=certificationAuthority</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">othername: 1.3.6.1.4.1.311.25.1:&lt;unsupported&gt;, DNS:CICADA-DC.cicada.htb</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-22T20:24:16</elem>
+<elem key="notAfter">2025-08-22T20:24:16</elem>
+</table>
+<elem key="md5">9ec51a2340efb5b83d2c39d8447ddb65</elem>
+<elem key="sha1">2c936d7bcfd811b99f711a5a155d88d34a52157a</elem>
+<elem key="sha256">c8b954cbf36f460f859f24c6f4b172453eec001bce262f6272294374b24d0772</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4DCCBMigAwIBAgITHgAAAAOY38QFU4GSRAABAAAAAzANBgkqhkiG9w0BAQsF&#xa;ADBEMRMwEQYKCZImiZPyLGQBGRYDaHRiMRYwFAYKCZImiZPyLGQBGRYGY2ljYWRh&#xa;MRUwEwYDVQQDEwxDSUNBREEtREMtQ0EwHhcNMjQwODIyMjAyNDE2WhcNMjUwODIy&#xa;MjAyNDE2WjAfMR0wGwYDVQQDExRDSUNBREEtREMuY2ljYWRhLmh0YjCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAOatZznJ1Zy5E8fVFsDWtq531KAmTyX8&#xa;BxPdIVefG1jKHLYTvSsQLVDuv02+p29iH9vnqYvIzSiFWilKCFBxtfOpyvCaEQua&#xa;NaJqv3quymk/pw0xMfSLMuN5emPJ5yHtC7cantY51mSDrvXBxMVIf23JUKgbhqSc&#xa;Srdh8fhL8XKgZXVjHmQZVn4ONg2vJP2tu7P1KkXXj7Mdry9GFEIpLdDa749PLy7x&#xa;o1yw8CloMMtcFKwVaJHy7tMgwU5PVbFBeUhhKhQ8jBR3OBaMBtqIzIAJ092LNysy&#xa;4W6q8iWFc+Tb43gFP4nfb1Xvp5mJ2pStqCeZlneiL7Be0SqdDhljB4ECAwEAAaOC&#xa;Au4wggLqMC8GCSsGAQQBgjcUAgQiHiAARABvAG0AYQBpAG4AQwBvAG4AdAByAG8A&#xa;bABsAGUAcjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDgYDVR0PAQH/&#xa;BAQDAgWgMHgGCSqGSIb3DQEJDwRrMGkwDgYIKoZIhvcNAwICAgCAMA4GCCqGSIb3&#xa;DQMEAgIAgDALBglghkgBZQMEASowCwYJYIZIAWUDBAEtMAsGCWCGSAFlAwQBAjAL&#xa;BglghkgBZQMEAQUwBwYFKw4DAgcwCgYIKoZIhvcNAwcwHQYDVR0OBBYEFAY5YMN7&#xa;Sb0WV8GpzydFLPC+751AMB8GA1UdIwQYMBaAFIgPuAt1+B1uRE3nh16Q6gSBkTzp&#xa;MIHLBgNVHR8EgcMwgcAwgb2ggbqggbeGgbRsZGFwOi8vL0NOPUNJQ0FEQS1EQy1D&#xa;QSxDTj1DSUNBREEtREMsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2Vz&#xa;LENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9Y2ljYWRhLERDPWh0Yj9j&#xa;ZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlz&#xa;dHJpYnV0aW9uUG9pbnQwgb0GCCsGAQUFBwEBBIGwMIGtMIGqBggrBgEFBQcwAoaB&#xa;nWxkYXA6Ly8vQ049Q0lDQURBLURDLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXkl&#xa;MjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWNpY2Fk&#xa;YSxEQz1odGI/Y0FDZXJ0aWZpY2F0ZT9iYXNlP29iamVjdENsYXNzPWNlcnRpZmlj&#xa;YXRpb25BdXRob3JpdHkwQAYDVR0RBDkwN6AfBgkrBgEEAYI3GQGgEgQQ0dpG4APi&#xa;HkGYUf0NXWYT14IUQ0lDQURBLURDLmNpY2FkYS5odGIwDQYJKoZIhvcNAQELBQAD&#xa;ggEBAIrY4wzebzUMnbrfpkvGA715ds8pNq06CN4/24q0YmowD+XSR/OI0En8Z9LE&#xa;eytwBsFZJk5qv9yY+WL4Ubb4chKSsNjuc5SzaHxXAVczpNlH/a4WAKfVMU2D6nOb&#xa;xxqE1cVIcOyN4b3WUhRNltauw81EUTa4xT0WElw8FevodHlBXiUPUT9zrBhnvNkz&#xa;obX8oU3zyMO89QwxsusZ0TLiT/EREW6N44J+ROTUzdJwcFNRl+oLsiK5z/ltLRmT&#xa;P/gFJvqMFfK4x4/ftmQV5M3hb0rzUcS4NJCGtclEoxlJHRTDTG6yZleuHvKSN4JF&#xa;ji6zxYOoOznp6JlmbakLb1ZRLA8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2026-07-07T09:34:11+00:00; +7h00m00s from scanner time."><elem key="delta">25200.0</elem>
+<elem key="date">2026-07-07T09:34:11+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="62243"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2026-07-07T09:33:34&#xa;  start_date: N/A"><elem key="date">2026-07-07T09:33:34</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: 6h59m59s, deviation: 0s, median: 6h59m59s"><elem key="median">25199</elem>
+<elem key="stddev">0</elem>
+<elem key="mean">25199</elem>
+<elem key="count">5</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script></hostscript><times srtt="43553" rttvar="525" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1783391651"/>
+<taskend task="NSE" time="1783391651"/>
+<taskbegin task="NSE" time="1783391651"/>
+<taskend task="NSE" time="1783391651"/>
+<taskbegin task="NSE" time="1783391651"/>
+<taskend task="NSE" time="1783391651"/>
+<runstats><finished time="1783391651" timestr="Tue Jul  7 08:04:11 2026" summary="Nmap done at Tue Jul  7 08:04:11 2026; 1 IP address (1 host up) scanned in 146.37 seconds" elapsed="146.37" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sat Aug  8 08:21:57 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA tactics_results 10.129.44.200
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.44.200 ()	Status: Up
+Host: 10.129.44.200 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///	Ignored State: filtered (65532)
+# Nmap done at Sat Aug  8 08:23:43 2026 -- 1 IP address (1 host up) scanned in 105.54 seconds

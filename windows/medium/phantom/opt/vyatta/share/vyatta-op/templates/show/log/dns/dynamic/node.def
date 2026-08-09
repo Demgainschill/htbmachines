@@ -1,0 +1,2 @@
+help: Show log for Dynamic DNS update service
+run: journalctl --no-hostname --boot --unit ddclient.service

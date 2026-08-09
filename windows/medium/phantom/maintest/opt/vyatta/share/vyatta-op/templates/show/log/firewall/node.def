@@ -1,0 +1,2 @@
+help: Show log for Firewall
+run: journalctl --no-hostname --boot -k | egrep "(ipv[46]|bri)-(FWD|INP|OUT|NAM)"

@@ -1,0 +1,6 @@
+multi:
+type: txt
+help: Interface associated with zone
+val_help: txt; Interface associated with zone
+val_help: vrf; VRF associated with zone
+allowed: /bin/cli-shell-api listNodes vrf name && echo " " && sh -c "${vyos_completion_dir}/list_interfaces"

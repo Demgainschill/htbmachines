@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: External pool name
+val_help: txt; External pool name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9][\\w\\-\\.\\+]*\'   --value \'$VAR(@)\'"; "Name of pool can only contain alpha-numeric letters, hyphen and underscores"

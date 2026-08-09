@@ -1,0 +1,2 @@
+help: Show extended detail for LLDP neighbors
+run: ${vyos_op_scripts_dir}/lldp.py show_neighbors --detail

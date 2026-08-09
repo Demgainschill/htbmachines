@@ -1,0 +1,13 @@
+4c7dd787cf5950628677652c056e1111  lib/systemd/system/ocserv.service
+a395e1fdb7169eb6dd502d6d156866e1  usr/bin/occtl
+bbec95705b37b1ffd822eb3614dfe14c  usr/bin/ocpasswd
+0b155050e5eb4d8e1141fb9ff466dfd9  usr/bin/ocserv-fw
+6d9e494dcd6b4d3e1c131b328b8e1f1f  usr/sbin/ocserv
+ffbe0deea27e484e99da9e86a0ae77f5  usr/sbin/ocserv-worker
+ce7d7a9cd8fb6a249ca2f4d853aaab42  usr/share/doc/ocserv/README.Debian
+f1cd98c52cc606c10dfaeb35979bd1b1  usr/share/doc/ocserv/changelog.Debian.gz
+3282f98eee4fea9cad66b75653d7daeb  usr/share/doc/ocserv/changelog.gz
+3f4bcb72eaa0863fd9835cbc8cbb45bc  usr/share/doc/ocserv/copyright
+aa829f3da6b73b2a6df25eaf1a2506f6  usr/share/man/man8/occtl.8.gz
+2c445b8d08e62dd9615200b03b154f66  usr/share/man/man8/ocpasswd.8.gz
+80a33203fb6b66e7dd15a20ee00f8afb  usr/share/man/man8/ocserv.8.gz

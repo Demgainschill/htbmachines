@@ -1,0 +1,6 @@
+21cd9f08f8e8876cefc7af7a27b4ab86  usr/lib/x86_64-linux-gnu/libhs.so.5.4.0
+239e6998a86488ed813131cd6194150a  usr/lib/x86_64-linux-gnu/libhs_runtime.so.5.4.0
+923017e35de7ab65d7ee99cda8c10c38  usr/share/doc/libhyperscan5/changelog.Debian.gz
+cfb2ce7ab23d3f072d0aacb7c338c213  usr/share/doc/libhyperscan5/changelog.gz
+57d7758521928c9b7f6bfb3411345509  usr/share/doc/libhyperscan5/copyright
+fcf3c4dd6c1d868b2c2e7d24293f1946  usr/share/lintian/overrides/libhyperscan5

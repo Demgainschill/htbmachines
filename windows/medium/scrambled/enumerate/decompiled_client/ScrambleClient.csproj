@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>ScrambleClient</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="images/els_lock_48.png" />
+    <None Remove="images/gear_16.png" />
+    <None Remove="images/lock_48.ico" />
+    <None Remove="windows/optionswindow.baml" />
+    <None Remove="images/folder_16.png" />
+    <None Remove="windows/mainwindow.baml" />
+    <None Remove="images/left.png" />
+    <None Remove="windows/aboutwindow.baml" />
+    <None Remove="images/server_16.ico" />
+    <None Remove="images/graphic_report_16.png" />
+    <None Remove="images/workstation_lock_48.png" />
+    <None Remove="images/els_48.ico" />
+    <None Remove="windows/loginwindow.baml" />
+    <EmbeddedResource Include="images/els_lock_48.png" LogicalName="images/els_lock_48.png" />
+    <EmbeddedResource Include="images/gear_16.png" LogicalName="images/gear_16.png" />
+    <EmbeddedResource Include="images/lock_48.ico" LogicalName="images/lock_48.ico" />
+    <EmbeddedResource Include="windows/optionswindow.baml" LogicalName="windows/optionswindow.baml" />
+    <EmbeddedResource Include="images/folder_16.png" LogicalName="images/folder_16.png" />
+    <EmbeddedResource Include="windows/mainwindow.baml" LogicalName="windows/mainwindow.baml" />
+    <EmbeddedResource Include="images/left.png" LogicalName="images/left.png" />
+    <EmbeddedResource Include="windows/aboutwindow.baml" LogicalName="windows/aboutwindow.baml" />
+    <EmbeddedResource Include="images/server_16.ico" LogicalName="images/server_16.ico" />
+    <EmbeddedResource Include="images/graphic_report_16.png" LogicalName="images/graphic_report_16.png" />
+    <EmbeddedResource Include="images/workstation_lock_48.png" LogicalName="images/workstation_lock_48.png" />
+    <EmbeddedResource Include="images/els_48.ico" LogicalName="images/els_48.ico" />
+    <EmbeddedResource Include="windows/loginwindow.baml" LogicalName="windows/loginwindow.baml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="ScrambleLib">
+      <HintPath>../ScrambleLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.8/WindowsBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

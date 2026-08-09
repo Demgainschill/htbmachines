@@ -1,0 +1,7 @@
+a5dba0716c4d943df07a95298ed7e2a3  lib/systemd/system/proc-xen.mount
+f3a0151e606e2c414b6f5bc6889fd57e  lib/systemd/system/xe-guest-utilities.service
+aeb9ab77694209b06a40d5d26cb29391  lib/udev/rules.d/z10_xen-vcpu-hotplug.rules
+7292c40fe9e57cef7239880083992cae  usr/sbin/xe-daemon
+870987ea205445c69a5cf11f93840f41  usr/sbin/xe-linux-distribution
+4891ae892870a03086b584c75dc0086e  usr/share/doc/vyos-xe-guest-utilities/changelog.gz
+940c8c30ea416b791949e6d8566a5731  usr/share/doc/vyos-xe-guest-utilities/copyright

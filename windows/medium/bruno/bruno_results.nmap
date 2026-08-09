@@ -1,0 +1,138 @@
+# Nmap 7.99 scan initiated Sun Jul 12 11:00:27 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA bruno_results 10.129.238.9
+Nmap scan report for 10.129.238.9
+Host is up (0.059s latency).
+Not shown: 65512 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+21/tcp    open  ftp           Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 06-29-22  04:55PM       <DIR>          app
+| 06-29-22  04:33PM       <DIR>          benign
+| 06-29-22  01:41PM       <DIR>          malicious
+|_06-29-22  04:33PM       <DIR>          queue
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-12 05:31:14Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: bruno.vl, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-12T05:32:43+00:00; -10s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO
+| Issuer: commonName=bruno-BRUNODC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-10-09T09:54:08
+| Not valid after:  2105-10-09T09:54:08
+| MD5:     e92b 7496 6c9a 3a81 62eb 4ea4 58e0 20d3
+| SHA-1:   855d c331 c896 ab01 fa20 6c8a 5fd1 dfe8 402b 1a93
+|_SHA-256: 9fdd 1186 faed d447 84ce 7b67 5cb0 3f4f f00c e98d 77c0 14dd 1113 1e53 a5ed 9787
+443/tcp   open  ssl/https?
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=bruno-BRUNODC-CA
+| Issuer: commonName=bruno-BRUNODC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-06-29T13:23:01
+| Not valid after:  2121-06-29T13:33:00
+| MD5:     659b 3c90 00eb 1e0a 5170 1be9 0456 840c
+| SHA-1:   a093 f4c2 3c8e 0532 86f2 1e99 cad7 82f8 e40e 3d72
+|_SHA-256: 427d 451e b031 5365 7c58 b5e6 3f16 c7c9 4a1e 788e e86e be01 4442 2949 1754 f63b
+|_ssl-date: TLS randomness does not represent time
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: bruno.vl, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-12T05:32:43+00:00; -9s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO
+| Issuer: commonName=bruno-BRUNODC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-10-09T09:54:08
+| Not valid after:  2105-10-09T09:54:08
+| MD5:     e92b 7496 6c9a 3a81 62eb 4ea4 58e0 20d3
+| SHA-1:   855d c331 c896 ab01 fa20 6c8a 5fd1 dfe8 402b 1a93
+|_SHA-256: 9fdd 1186 faed d447 84ce 7b67 5cb0 3f4f f00c e98d 77c0 14dd 1113 1e53 a5ed 9787
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: bruno.vl, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-12T05:32:43+00:00; -10s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO
+| Issuer: commonName=bruno-BRUNODC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-10-09T09:54:08
+| Not valid after:  2105-10-09T09:54:08
+| MD5:     e92b 7496 6c9a 3a81 62eb 4ea4 58e0 20d3
+| SHA-1:   855d c331 c896 ab01 fa20 6c8a 5fd1 dfe8 402b 1a93
+|_SHA-256: 9fdd 1186 faed d447 84ce 7b67 5cb0 3f4f f00c e98d 77c0 14dd 1113 1e53 a5ed 9787
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: bruno.vl, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-12T05:32:43+00:00; -9s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:brunodc.bruno.vl, DNS:bruno.vl, DNS:BRUNO
+| Issuer: commonName=bruno-BRUNODC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-10-09T09:54:08
+| Not valid after:  2105-10-09T09:54:08
+| MD5:     e92b 7496 6c9a 3a81 62eb 4ea4 58e0 20d3
+| SHA-1:   855d c331 c896 ab01 fa20 6c8a 5fd1 dfe8 402b 1a93
+|_SHA-256: 9fdd 1186 faed d447 84ce 7b67 5cb0 3f4f f00c e98d 77c0 14dd 1113 1e53 a5ed 9787
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: BRUNO
+|   NetBIOS_Domain_Name: BRUNO
+|   NetBIOS_Computer_Name: BRUNODC
+|   DNS_Domain_Name: bruno.vl
+|   DNS_Computer_Name: brunodc.bruno.vl
+|   DNS_Tree_Name: bruno.vl
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-07-12T05:32:04+00:00
+|_ssl-date: 2026-07-12T05:32:43+00:00; -9s from scanner time.
+| ssl-cert: Subject: commonName=brunodc.bruno.vl
+| Issuer: commonName=brunodc.bruno.vl
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-11T05:28:17
+| Not valid after:  2027-01-10T05:28:17
+| MD5:     b3bf f8a1 4a12 4941 31f9 a131 cdc4 54a4
+| SHA-1:   c228 92a1 1c9e 732d 7470 eee9 945c 4cbf 0396 05aa
+|_SHA-256: 959d 10a8 9134 0213 ff4c 847a 3ad3 b0d5 e248 7ffb 91c6 ebb2 cc56 1acd 68b4 cacd
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  msrpc         Microsoft Windows RPC
+58756/tcp open  msrpc         Microsoft Windows RPC
+58761/tcp open  msrpc         Microsoft Windows RPC
+62376/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+62377/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: BRUNODC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: -9s, deviation: 0s, median: -9s
+| smb2-time: 
+|   date: 2026-07-12T05:32:07
+|_  start_date: N/A
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 12 11:02:54 2026 -- 1 IP address (1 host up) scanned in 147.30 seconds

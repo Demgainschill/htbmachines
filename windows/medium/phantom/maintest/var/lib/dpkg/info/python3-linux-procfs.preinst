@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "upgrade" ] && dpkg --compare-versions "$2" lt-nl "0.6.3-1.0" ; then
+  update-alternatives --remove pflags /usr/bin/pflags3
+fi
+
+

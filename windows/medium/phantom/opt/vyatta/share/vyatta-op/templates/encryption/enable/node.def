@@ -1,0 +1,2 @@
+help: Enable config encryption using TPM
+run: sudo ${vyos_libexec_dir}/vyos-config-encrypt.py --enable

@@ -1,0 +1,61 @@
+# Nmap 7.99 scan initiated Mon Jul  6 08:28:21 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA baby_results 10.129.234.71
+Nmap scan report for 10.129.234.71
+Host is up (0.059s latency).
+Not shown: 65514 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-06 02:59:02Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: baby.vl, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: baby.vl, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: BABY
+|   NetBIOS_Domain_Name: BABY
+|   NetBIOS_Computer_Name: BABYDC
+|   DNS_Domain_Name: baby.vl
+|   DNS_Computer_Name: BabyDC.baby.vl
+|   DNS_Tree_Name: baby.vl
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-07-06T02:59:52+00:00
+|_ssl-date: 2026-07-06T03:00:31+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=BabyDC.baby.vl
+| Issuer: commonName=BabyDC.baby.vl
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-05T02:57:13
+| Not valid after:  2027-01-04T02:57:13
+| MD5:     726e f9fe b19f 5738 79c0 2746 ed99 a830
+| SHA-1:   6e95 ff58 6d94 61b2 0778 8fc1 ca4f 0621 1087 0eb5
+|_SHA-256: 56ec 24bc bbbe 9e7f 5c7b 9f43 c415 c9f4 8195 54cf cca5 d185 2498 0462 1706 e581
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+52228/tcp open  msrpc         Microsoft Windows RPC
+53120/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+53121/tcp open  msrpc         Microsoft Windows RPC
+58265/tcp open  msrpc         Microsoft Windows RPC
+58278/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: BABYDC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2026-07-06T02:59:53
+|_  start_date: N/A
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul  6 08:30:34 2026 -- 1 IP address (1 host up) scanned in 132.41 seconds

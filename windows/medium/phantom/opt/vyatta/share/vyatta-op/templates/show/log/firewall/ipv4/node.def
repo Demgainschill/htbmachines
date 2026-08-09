@@ -1,0 +1,2 @@
+help: Show firewall IPv4 log
+run: journalctl --no-hostname --boot -k | egrep "ipv4-(FWD|INP|OUT|NAM)"

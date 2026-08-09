@@ -1,0 +1,15 @@
+91d9cb52413552c459f8f37f6f5a8c12  usr/lib/x86_64-linux-gnu/libcapnp-0.9.2.so
+3c7194f7a1159964c46af0cd37b37e04  usr/lib/x86_64-linux-gnu/libcapnp-json-0.9.2.so
+5a0565d2baef858e80929f8943032d87  usr/lib/x86_64-linux-gnu/libcapnp-rpc-0.9.2.so
+bbe0a8eb60d06efaee1bbc90938e09c1  usr/lib/x86_64-linux-gnu/libcapnp-websocket-0.9.2.so
+61fc6f080205c62c515ad40915dda334  usr/lib/x86_64-linux-gnu/libcapnpc-0.9.2.so
+7f869262fa77a0a462a4fde9c48c2fb3  usr/lib/x86_64-linux-gnu/libkj-0.9.2.so
+b7931092e12be65d30502232e3e8301b  usr/lib/x86_64-linux-gnu/libkj-async-0.9.2.so
+6deb458b0ccea8d8605eb6bb0ebb9900  usr/lib/x86_64-linux-gnu/libkj-gzip-0.9.2.so
+ca26e46d904ebc5df918db7e4f48ec32  usr/lib/x86_64-linux-gnu/libkj-http-0.9.2.so
+8ece0109c6d2a8d879089c13eca36637  usr/lib/x86_64-linux-gnu/libkj-test-0.9.2.so
+e2f81cf7f7da7dd5886c7148e3a29c03  usr/lib/x86_64-linux-gnu/libkj-tls-0.9.2.so
+cac48e16d2fc03db6ee36451ec8250ad  usr/share/doc/libcapnp-0.9.2/README.txt
+c599b1fc09ef1f8367187b879cadc18f  usr/share/doc/libcapnp-0.9.2/changelog.Debian.gz
+9f2f7b3c0cfcde3ebcb344098ec13ba7  usr/share/doc/libcapnp-0.9.2/copyright
+f3fe16a8efc651afa75c48eb8005a0fe  usr/share/lintian/overrides/libcapnp-0.9.2

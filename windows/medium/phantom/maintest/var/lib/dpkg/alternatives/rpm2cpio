@@ -1,0 +1,6 @@
+auto
+/usr/bin/rpm2cpio
+
+/usr/bin/rpm2cpio.bb
+10
+

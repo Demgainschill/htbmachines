@@ -1,0 +1,5 @@
+type: txt
+help: IPsec replay window to configure for this CHILD_SA (default: 32)
+val_help: u32:0; Disable IPsec replay protection
+val_help: u32:1-2040; Replay window size in packets
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-2040\"  --value \'$VAR(@)\'"; "Invalid value"

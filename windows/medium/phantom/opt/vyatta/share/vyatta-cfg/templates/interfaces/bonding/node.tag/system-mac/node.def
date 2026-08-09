@@ -1,0 +1,4 @@
+type: txt
+help: System MAC address for 802.3ad
+val_help: macaddr; MAC address
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/mac-address \"  --value \'$VAR(@)\'"; "Invalid value"

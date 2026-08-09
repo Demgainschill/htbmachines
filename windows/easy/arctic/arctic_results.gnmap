@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Tue Jul  7 07:13:45 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA arctic_results 10.129.13.29
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.13.29 ()	Status: Up
+Host: 10.129.13.29 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 8500/open/tcp//http//JRun Web Server/, 49154/open/tcp//msrpc//Microsoft Windows RPC/	Ignored State: filtered (65532)
+# Nmap done at Tue Jul  7 07:16:34 2026 -- 1 IP address (1 host up) scanned in 169.30 seconds

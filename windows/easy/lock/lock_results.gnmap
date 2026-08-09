@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Tue Jul  7 07:25:05 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA lock_results 10.129.234.64
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.234.64 ()	Status: Up
+Host: 10.129.234.64 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 445/open/tcp//microsoft-ds?///, 3000/open/tcp//http//Golang net|http server/, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/	Ignored State: filtered (65531)
+# Nmap done at Tue Jul  7 07:26:47 2026 -- 1 IP address (1 host up) scanned in 101.92 seconds

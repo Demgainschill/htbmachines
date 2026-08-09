@@ -1,0 +1,15 @@
+/.
+/etc
+/etc/sudoers.d
+/etc/sudoers.d/tacplus
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libtacplus_map.so.1.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libtacplus-map1
+/usr/share/doc/libtacplus-map1/changelog.Debian.gz
+/usr/share/doc/libtacplus-map1/changelog.gz
+/usr/share/doc/libtacplus-map1/copyright
+/usr/lib/x86_64-linux-gnu/libtacplus_map.so.1

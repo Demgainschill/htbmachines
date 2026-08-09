@@ -1,0 +1,70 @@
+# Nmap 7.99 scan initiated Mon Jul 27 10:27:03 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA delegate_results 10.129.234.69
+Nmap scan report for 10.129.234.69
+Host is up (0.058s latency).
+Not shown: 65508 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-27 04:57:57Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: delegate.vl, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: delegate.vl, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: DELEGATE
+|   NetBIOS_Domain_Name: DELEGATE
+|   NetBIOS_Computer_Name: DC1
+|   DNS_Domain_Name: delegate.vl
+|   DNS_Computer_Name: DC1.delegate.vl
+|   DNS_Tree_Name: delegate.vl
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-07-27T04:58:55+00:00
+|_ssl-date: 2026-07-27T04:59:52+00:00; -1s from scanner time.
+| ssl-cert: Subject: commonName=DC1.delegate.vl
+| Issuer: commonName=DC1.delegate.vl
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-26T04:55:13
+| Not valid after:  2027-01-25T04:55:13
+| MD5:     04e5 14da 5c85 4a17 d35e ee54 58a2 5e30
+| SHA-1:   608e 391b 1598 73dc 9397 b2d0 177b de28 237e 6c6e
+|_SHA-256: fabd 27fb 7363 17ff 7828 17f3 69f0 768b 49ad 4aa2 d685 8c8d a461 7fef 47cd 7d39
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  msrpc         Microsoft Windows RPC
+49726/tcp open  msrpc         Microsoft Windows RPC
+52325/tcp open  msrpc         Microsoft Windows RPC
+54999/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+55000/tcp open  msrpc         Microsoft Windows RPC
+55004/tcp open  msrpc         Microsoft Windows RPC
+59843/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-07-27T04:58:55
+|_  start_date: N/A
+|_clock-skew: mean: -13s, deviation: 10s, median: -19s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 27 10:29:59 2026 -- 1 IP address (1 host up) scanned in 176.26 seconds

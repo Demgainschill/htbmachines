@@ -1,0 +1,3 @@
+type: txt
+help: Username for the protocol negotiations
+val_help: txt; Authentication username

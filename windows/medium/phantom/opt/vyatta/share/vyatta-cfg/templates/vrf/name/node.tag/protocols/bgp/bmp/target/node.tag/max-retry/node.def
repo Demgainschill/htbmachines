@@ -1,0 +1,4 @@
+type: txt
+help: Maximum connection retry interval (default: 2000)
+val_help: u32:100-4294967295; Maximum connection retry interval
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 100-86400000\"  --value \'$VAR(@)\'"; "Invalid value"

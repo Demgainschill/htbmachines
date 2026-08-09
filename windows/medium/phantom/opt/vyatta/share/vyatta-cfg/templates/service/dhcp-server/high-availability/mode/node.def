@@ -1,0 +1,6 @@
+type: txt
+help: Configure high availability mode (default: active-active)
+val_help: active-active; Both server attend DHCP requests (default)
+val_help: active-passive; Only primary server attends DHCP requests
+allowed: echo "active-active active-passive"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(active-active|active-passive)\'   --value \'$VAR(@)\'"; "Invalid DHCP high availability mode"

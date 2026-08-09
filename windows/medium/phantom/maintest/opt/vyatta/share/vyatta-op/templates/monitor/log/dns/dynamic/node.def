@@ -1,0 +1,2 @@
+help: Monitor last lines of Dynamic DNS update service
+run: journalctl --no-hostname --follow --boot --unit ddclient.service

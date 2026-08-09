@@ -1,0 +1,13 @@
+/.
+/sbin
+/sbin/radius_shell
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/radius-shell
+/usr/share/doc/radius-shell/changelog.Debian.gz
+/usr/share/doc/radius-shell/changelog.gz
+/usr/share/doc/radius-shell/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/radius_shell.8.gz

@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Filter group for QoS policy
+val_help: txt; Match group name
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[^-].*\'   --value \'$VAR(@)\'"; "Match group name cannot start with hyphen"

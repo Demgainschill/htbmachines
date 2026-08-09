@@ -1,0 +1,15 @@
+7688fcf9bdcde5c4ef003fe43e02118e  lib/systemd/system/strongswan-starter.service
+2a277161dce9436333b1994f9ee00b68  usr/lib/ipsec/plugins/libstrongswan-stroke.so
+b3fa8dab6699b1ce5ff10d11724c9f07  usr/lib/ipsec/starter
+00e082e9245a510a39c2d81aeea042b3  usr/lib/ipsec/stroke
+abbfdc457f5f1f565eebabbc3650dce1  usr/sbin/ipsec
+25c174f75715864b7d825dc6e565c17e  usr/share/doc/strongswan-starter/NEWS.Debian.gz
+7290cbe7b1d70cc5447b602c8d05ba5b  usr/share/doc/strongswan-starter/changelog.Debian.gz
+7580e3007897a92e3311df1ba4dab82e  usr/share/doc/strongswan-starter/changelog.gz
+8542ae617d33d7b35208cac3d3b5755b  usr/share/doc/strongswan-starter/copyright
+20b4fd501a331c572fc129045bf945ac  usr/share/lintian/overrides/strongswan-starter
+be3869a8e0bf537e51011c396a301202  usr/share/man/man5/ipsec.conf.5.gz
+a97cf0dcb4c656e669568a330b63d16b  usr/share/man/man5/ipsec.secrets.5.gz
+6884788c3c899256a3b0463042d4859e  usr/share/man/man8/ipsec.8.gz
+effb1b5bc46a7c849754fada75bae0d2  usr/share/strongswan/templates/config/plugins/stroke.conf
+2ba2784c18e268e34cec179d90e38437  usr/share/strongswan/templates/config/strongswan.d/starter.conf

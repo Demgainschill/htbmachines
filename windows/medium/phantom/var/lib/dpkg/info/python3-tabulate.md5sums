@@ -1,0 +1,13 @@
+1f499cf97ea858581ce655c0fb8934ab  usr/bin/tabulate
+206f8c43c34ff7ee9fec2b6fb61e10c6  usr/lib/python3/dist-packages/tabulate-0.8.9.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/tabulate-0.8.9.egg-info/dependency_links.txt
+7cdde2e5cb10dd94c570703f39201e37  usr/lib/python3/dist-packages/tabulate-0.8.9.egg-info/entry_points.txt
+a9faca8620cf878d0194f88eb8d1d80a  usr/lib/python3/dist-packages/tabulate-0.8.9.egg-info/requires.txt
+cea099efc5985524e529f98f4b99e552  usr/lib/python3/dist-packages/tabulate-0.8.9.egg-info/top_level.txt
+bbdfc86296a62e35a2a0918e59bd4e7f  usr/lib/python3/dist-packages/tabulate.py
+42ba1b2035b94db0faaa24164ffdec53  usr/share/doc/python3-tabulate/README.md.gz
+67cb32b6ce2da10d2deecfdcffdf0a6e  usr/share/doc/python3-tabulate/changelog.Debian.gz
+51c893ab53b1a76e063d9e447297c012  usr/share/doc/python3-tabulate/changelog.gz
+1b7f497dc58aa0d7bf0fd568c9500ddc  usr/share/doc/python3-tabulate/copyright
+7c2372a59a718ba9b36ea5214a69a26c  usr/share/doc/python3-tabulate/examples/benchmark.py
+5ac12270ff7722b5c9a2cb5a4560c030  usr/share/man/man1/tabulate.1.gz

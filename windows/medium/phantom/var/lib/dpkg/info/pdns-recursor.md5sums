@@ -1,0 +1,15 @@
+bf601da6f43f1f26d217e5a116d4864d  lib/systemd/system/pdns-recursor.service
+2179286b4f77cfcbd0a23b01114d0d2a  lib/systemd/system/pdns-recursor@.service
+abf9a808639a85ab7604c467c133ad1c  usr/bin/rec_control
+0ed2bb6e2c5197a3fe79bdc08a3fd311  usr/sbin/pdns_recursor
+f1a39c4d68cb138f9302f2b3f0393576  usr/share/doc/pdns-recursor/changelog.Debian.gz
+0e8c7229a838ed4eb19aa4638f2ffd3e  usr/share/doc/pdns-recursor/copyright
+f309b33d2d8d4c75bf56725606e2a23d  usr/share/doc/pdns-recursor/examples/rrd/create
+36be89d4c8fd5ff0395cf84005a106cb  usr/share/doc/pdns-recursor/examples/rrd/index.html
+ff034483a28d9ff314ce1538e52227ce  usr/share/doc/pdns-recursor/examples/rrd/makegraphs
+6de5ecd1ce349e08d4f9b1379478f2fe  usr/share/doc/pdns-recursor/examples/rrd/update
+c4be5d4ae1cc3d273692bf518f416341  usr/share/lintian/overrides/pdns-recursor
+2611f2162c969b923df0eb1056444761  usr/share/man/man1/pdns_recursor.1.gz
+4b26c3ee4df1dee52e9b950a492f879a  usr/share/man/man1/rec_control.1.gz
+dc06fa604b4e4f6165226dc32764fe89  usr/share/pdns-recursor/lua-config/rootkeys.lua
+cfa03c3056162344840e24c8473f7d4a  usr/share/pdns-recursor/snmp/RECURSOR-MIB.txt

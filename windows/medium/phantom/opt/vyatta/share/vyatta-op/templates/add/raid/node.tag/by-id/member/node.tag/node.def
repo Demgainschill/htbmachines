@@ -1,0 +1,2 @@
+help: Add a member to a RAID set
+run: sudo ${vyos_op_scripts_dir}/raid.py add --raid-set-name $3 --by-id --member $6

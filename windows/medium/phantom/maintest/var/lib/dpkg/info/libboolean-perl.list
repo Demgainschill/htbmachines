@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libboolean-perl
+/usr/share/doc/libboolean-perl/CONTRIBUTING
+/usr/share/doc/libboolean-perl/changelog.Debian.gz
+/usr/share/doc/libboolean-perl/changelog.gz
+/usr/share/doc/libboolean-perl/copyright
+/usr/share/man
+/usr/share/man/man3
+/usr/share/man/man3/boolean.3pm.gz
+/usr/share/perl5
+/usr/share/perl5/boolean.pm
+/usr/share/perl5/boolean.pod

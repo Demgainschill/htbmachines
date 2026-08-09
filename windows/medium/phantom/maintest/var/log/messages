@@ -1,0 +1,564 @@
+Jul  6 19:31:45 vyos dhclient[2005]: Listening on LPF/eth0/00:0c:29:75:67:d4
+Jul  6 19:31:45 vyos dhclient[2005]: Listening on LPF/eth0/00:0c:29:75:67:d4
+Jul  6 19:31:45 vyos dhclient[2005]: Sending on   LPF/eth0/00:0c:29:75:67:d4
+Jul  6 19:31:45 vyos dhclient[2005]: Sending on   Socket/fallback
+Jul  6 19:31:45 vyos dhclient[2005]: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 2
+Jul  6 19:31:45 vyos dhclient[2005]: Sending on   LPF/eth0/00:0c:29:75:67:d4
+Jul  6 19:31:45 vyos dhclient[2005]: Sending on   Socket/fallback
+Jul  6 19:31:45 vyos dhclient[2005]: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 2
+Jul  6 19:31:45 vyos mgmtd[1671]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos mgmtd[1671]: [G6NKK-8C6DV] end_config: VTY:0x559d64691130, pending SET-CFG: 0
+Jul  6 19:31:45 vyos ripd[1680]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos ripd[1680]: [G6NKK-8C6DV] end_config: VTY:0x5653d7654400, pending SET-CFG: 0
+Jul  6 19:31:45 vyos zebra[1666]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos zebra[1666]: [G6NKK-8C6DV] end_config: VTY:0x55f1c9ca6570, pending SET-CFG: 0
+Jul  6 19:31:45 vyos ospfd[1686]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos ospfd[1686]: [G6NKK-8C6DV] end_config: VTY:0x561628dcdb70, pending SET-CFG: 0
+Jul  6 19:31:45 vyos ripngd[1683]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos ripngd[1683]: [G6NKK-8C6DV] end_config: VTY:0x5632ededacf0, pending SET-CFG: 0
+Jul  6 19:31:45 vyos ldpd[1707]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos ldpd[1707]: [G6NKK-8C6DV] end_config: VTY:0x55f23d9a3760, pending SET-CFG: 0
+Jul  6 19:31:45 vyos ospf6d[1689]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos ospf6d[1689]: [G6NKK-8C6DV] end_config: VTY:0x556625a0f760, pending SET-CFG: 0
+Jul  6 19:31:45 vyos bgpd[1673]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos bgpd[1673]: [G6NKK-8C6DV] end_config: VTY:0x55c6d013d2e0, pending SET-CFG: 0
+Jul  6 19:31:45 vyos bfdd[1716]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos bfdd[1716]: [G6NKK-8C6DV] end_config: VTY:0x55e43d492400, pending SET-CFG: 0
+Jul  6 19:31:45 vyos watchfrr[1647]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos isisd[1692]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos isisd[1692]: [G6NKK-8C6DV] end_config: VTY:0x55e1c7db54c0, pending SET-CFG: 0
+Jul  6 19:31:45 vyos staticd[1712]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos staticd[1712]: [G6NKK-8C6DV] end_config: VTY:0x556b0fd0e9b0, pending SET-CFG: 0
+Jul  6 19:31:45 vyos babeld[1695]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos babeld[1695]: [G6NKK-8C6DV] end_config: VTY:0x55ec6bf1c2d0, pending SET-CFG: 0
+Jul  6 19:31:45 vyos pim6d[1699]: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+Jul  6 19:31:45 vyos pim6d[1699]: [G6NKK-8C6DV] end_config: VTY:0x5609f477f8b0, pending SET-CFG: 0
+Jul  6 19:31:45 vyos vyos-configd[850]: Sending response 1
+Jul  6 19:31:45 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/firewall.py'
+Jul  6 19:31:45 vyos vyos-configd[850]: Received message: {"type": "node", "last": false, "data": "/usr/libexec/vyos/conf_mode/firewall.py"}
+Jul  6 19:31:45 vyos vyos-configd[850]: Sending response 1
+Jul  6 19:31:45 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_syslog.py'
+Jul  6 19:31:45 vyos vyos-configd[850]: Received message: {"type": "node", "last": false, "data": "/usr/libexec/vyos/conf_mode/system_syslog.py"}
+Jul  6 19:31:45 vyos systemd[1]: Reloading.
+Jul  6 19:31:46 vyos systemd[1]: Stopping rsyslog.service - System Logging Service...
+Jul  6 19:31:46 vyos rsyslogd: [origin software="rsyslogd" swVersion="8.2302.0" x-pid="1070" x-info="https://www.rsyslog.com"] exiting on signal 15.
+Jul  6 19:31:46 vyos systemd[1]: rsyslog.service: Deactivated successfully.
+Jul  6 19:31:46 vyos systemd[1]: Stopped rsyslog.service - System Logging Service.
+Jul  6 19:31:46 vyos systemd[1]: Starting rsyslog.service - System Logging Service...
+Jul  6 19:31:46 vyos rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2302.0]
+Jul  6 19:31:46 vyos rsyslogd: [origin software="rsyslogd" swVersion="8.2302.0" x-pid="2208" x-info="https://www.rsyslog.com"] start
+Jul  6 19:31:46 vyos systemd[1]: Started rsyslog.service - System Logging Service.
+Jul  6 19:31:46 vyos vyos-configd[850]: Sending response 1
+Jul  6 19:31:46 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_login.py'
+Jul  6 19:31:46 vyos vyos-configd[850]: Received message: {"type": "node", "last": false, "data": "/usr/libexec/vyos/conf_mode/system_login.py"}
+Jul  6 19:31:46 vyos vyos-configd[850]: Sending response 1
+Jul  6 19:31:46 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_config-management.py'
+Jul  6 19:31:46 vyos vyos-configd[850]: Received message: {"type": "node", "last": false, "data": "/usr/libexec/vyos/conf_mode/system_config-management.py"}
+Jul  6 19:31:46 vyos vyos-configd[850]: Sending response 1
+Jul  6 19:31:46 vyos dhclient[2005]: DHCPOFFER of 192.168.1.21 from 192.168.1.1
+Jul  6 19:31:46 vyos dhclient[2005]: DHCPOFFER of 192.168.1.21 from 192.168.1.1
+Jul  6 19:31:46 vyos dhclient[2005]: DHCPREQUEST for 192.168.1.21 on eth0 to 255.255.255.255 port 67
+Jul  6 19:31:46 vyos dhclient[2005]: DHCPREQUEST for 192.168.1.21 on eth0 to 255.255.255.255 port 67
+Jul  6 19:31:46 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/service_ntp.py'
+Jul  6 19:31:46 vyos vyos-configd[850]: Received message: {"type": "node", "last": false, "data": "/usr/libexec/vyos/conf_mode/service_ntp.py"}
+Jul  6 19:31:47 vyos systemd[1]: Reloading.
+Jul  6 19:31:47 vyos dhclient[2005]: DHCPACK of 192.168.1.21 from 192.168.1.1
+Jul  6 19:31:47 vyos dhclient[2005]: DHCPACK of 192.168.1.21 from 192.168.1.1
+Jul  6 19:31:47 vyos systemd[1]: Reached target time-set.target - System Time Set.
+Jul  6 19:31:47 vyos systemd[1]: Starting chrony.service - chrony, an NTP client/server...
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: Current dhclient PID: 2005, Parent PID: 1, IP version: 4, All dhclients for interface eth0: 2005
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: Passing command to /usr/sbin/ip: "-4 addr add 192.168.1.21/255.255.255.0 broadcast 192.168.1.255 valid_lft 86400 preferred_lft 86400 dev eth0 label eth0"
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: FRR status: running
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: Checking if the route presented in kernel: default via 192.168.1.1 dev eth0 metric 210 
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: Converted vtysh command: "ip route 0.0.0.0/0 192.168.1.1 eth0 tag 210 210 "
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: Sending command to vtysh
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: Deleting nameservers with tag "dhcp-eth0" via vyos-hostsd-client
+Jul  6 19:31:47 vyos chronyd[2437]: chronyd version 4.3 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 -DEBUG)
+Jul  6 19:31:47 vyos chronyd[2437]: Using right/UTC timezone to obtain leap second data
+Jul  6 19:31:47 vyos chronyd[2437]: Loaded seccomp filter (level 1)
+Jul  6 19:31:47 vyos systemd[1]: Started chrony.service - chrony, an NTP client/server.
+Jul  6 19:31:47 vyos systemd[1]: Reached target time-sync.target - System Time Synchronized.
+Jul  6 19:31:47 vyos vyos-configd[850]: Sending response 1
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Request data: {"type": "name_servers", "op": "delete", "data": ["dhcp-eth0"]}
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Saving state to /run/vyos-hostsd/vyos-hostsd.state
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Sent response: {'data': None}
+Jul  6 19:31:47 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/vpn_sstp.py'
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: Adding nameservers "192.168.1.1" with tag "dhcp-eth0" via vyos-hostsd-client
+Jul  6 19:31:47 vyos vyos-configd[850]: Received message: {"type": "node", "last": false, "data": "/usr/libexec/vyos/conf_mode/vpn_sstp.py"}
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Request data: {"type": "name_servers", "op": "add", "data": {"dhcp-eth0": ["192.168.1.1"]}}
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Saving state to /run/vyos-hostsd/vyos-hostsd.state
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Sent response: {'data': None}
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: Applying changes via vyos-hostsd-client
+Jul  6 19:31:47 vyos systemd[1]: Created slice system-accel\x2dppp.slice - Slice /system/accel-ppp.
+Jul  6 19:31:47 vyos systemd[1]: Starting accel-ppp@sstp.service - Accel-PPP - High performance VPN server application for Linux...
+Jul  6 19:31:47 vyos systemd[1]: Started accel-ppp@sstp.service - Accel-PPP - High performance VPN server application for Linux.
+Jul  6 19:31:47 vyos vyos-configd[850]: Sending response 1
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Request data: {"op": "apply"}
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Applying 2 changes
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Writing /etc/resolv.conf
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Writing /etc/hosts
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Writing /run/pdns-recursor/recursor.vyos-hostsd.conf.lua
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Writing /run/pdns-recursor/recursor.forward-zones.conf
+Jul  6 19:31:47 vyos accel-sstp: sstp: ssl-keyfile error: error:1E08010C:DECODER routines::unsupported
+Jul  6 19:31:47 vyos accel-sstp: sstp: iprange module disabled, improper IP configuration of PPP interfaces may cause kernel soft lockup
+Jul  6 19:31:47 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/service_ssh.py'
+Jul  6 19:31:47 vyos vyos-configd[850]: Received message: {"type": "node", "last": true, "data": "/usr/libexec/vyos/conf_mode/service_ssh.py"}
+Jul  6 19:31:47 vyos vyos-configd[850]: final element of priority queue
+Jul  6 19:31:47 vyos vyos-hostsd[851]: pdns_recursor not running, not sending "reload-lua-config"
+Jul  6 19:31:47 vyos vyos-hostsd[851]: pdns_recursor not running, not sending "reload-zones"
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Success
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Saving state to /run/vyos-hostsd/vyos-hostsd.state
+Jul  6 19:31:47 vyos vyos-hostsd[851]: Sent response: {'data': {'message': 'Applied 2 changes'}}
+Jul  6 19:31:47 vyos systemd[1]: Created slice system-ssh.slice - Slice /system/ssh.
+Jul  6 19:31:47 vyos systemd[1]: Starting ssh@default.service - OpenBSD Secure Shell server...
+Jul  6 19:31:47 vyos dhclient-script-vyos[2386]: No changes to apply via vyos-hostsd-client
+Jul  6 19:31:47 vyos dhclient[2005]: bound to 192.168.1.21 -- renewal in 34672 seconds.
+Jul  6 19:31:47 vyos dhclient[2005]: bound to 192.168.1.21 -- renewal in 34672 seconds.
+Jul  6 19:31:47 vyos sshd[2495]: Server listening on 0.0.0.0 port 22.
+Jul  6 19:31:47 vyos sshd[2495]: Server listening on :: port 22.
+Jul  6 19:31:47 vyos systemd[1]: Started ssh@default.service - OpenBSD Secure Shell server.
+Jul  6 19:31:47 vyos vyos-configd[850]: Sending response 1
+Jul  6 19:31:47 vyos systemd[1]: opt-vyatta-config-tmp-new_config_1775.mount: Deactivated successfully.
+Jul  6 19:31:48 vyos commit: Successful change to active configuration by user root on unknown
+Jul  6 19:31:48 vyos systemd[1]: opt-vyatta-config-tmp-new_config_1775.mount: Deactivated successfully.
+Jul  6 19:31:48 vyos vyos-router[1176]: Starting VyOS router: migrate system configure.
+Jul  6 19:31:48 vyos systemd[1]: Reloading.
+Jul  6 19:31:48 vyos vyos-config[1207]: Configuration success
+Jul  6 19:31:49 vyos agetty[2566]: /dev/ttyS0: not a tty
+Jul  6 19:31:59 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:31:59 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 1.
+Jul  6 19:31:59 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:31:59 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:31:59 vyos agetty[2569]: /dev/ttyS0: not a tty
+Jul  6 19:32:08 vyos systemd[1]: systemd-localed.service: Deactivated successfully.
+Jul  6 19:32:09 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:32:10 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 2.
+Jul  6 19:32:10 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:10 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:10 vyos agetty[2574]: /dev/ttyS0: not a tty
+Jul  6 19:32:13 vyos systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Jul  6 19:32:20 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:32:20 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 3.
+Jul  6 19:32:20 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:20 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:20 vyos agetty[2582]: /dev/ttyS0: not a tty
+Jul  6 19:32:30 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:32:30 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 4.
+Jul  6 19:32:30 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:30 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:30 vyos agetty[2585]: /dev/ttyS0: not a tty
+Jul  6 19:32:40 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:32:40 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 5.
+Jul  6 19:32:40 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:40 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:40 vyos agetty[2588]: /dev/ttyS0: not a tty
+Jul  6 19:32:50 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:32:51 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 6.
+Jul  6 19:32:51 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:51 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:32:51 vyos agetty[2591]: /dev/ttyS0: not a tty
+Jul  6 19:32:55 vyos sshd[2592]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.25  user=vyos
+Jul  6 19:32:57 vyos sshd[2592]: Failed password for vyos from 192.168.1.25 port 36518 ssh2
+Jul  6 19:33:01 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:33:01 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 7.
+Jul  6 19:33:01 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:01 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:01 vyos agetty[2596]: /dev/ttyS0: not a tty
+Jul  6 19:33:01 vyos sshd[2592]: Accepted password for vyos from 192.168.1.25 port 36518 ssh2
+Jul  6 19:33:01 vyos sshd[2592]: pam_unix(sshd:session): session opened for user vyos(uid=1002) by (uid=0)
+Jul  6 19:33:01 vyos systemd-logind[1071]: New session 1 of user vyos.
+Jul  6 19:33:01 vyos systemd[1]: Created slice user-1002.slice - User Slice of UID 1002.
+Jul  6 19:33:01 vyos systemd[1]: Starting user-runtime-dir@1002.service - User Runtime Directory /run/user/1002...
+Jul  6 19:33:01 vyos systemd[1]: Finished user-runtime-dir@1002.service - User Runtime Directory /run/user/1002.
+Jul  6 19:33:01 vyos systemd[1]: Starting user@1002.service - User Manager for UID 1002...
+Jul  6 19:33:01 vyos (systemd): pam_unix(systemd-user:session): session opened for user vyos(uid=1002) by (uid=0)
+Jul  6 19:33:02 vyos systemd[2598]: Queued start job for default target default.target.
+Jul  6 19:33:02 vyos systemd[2598]: Reached target paths.target - Paths.
+Jul  6 19:33:02 vyos systemd[2598]: Reached target sockets.target - Sockets.
+Jul  6 19:33:02 vyos systemd[2598]: Reached target timers.target - Timers.
+Jul  6 19:33:02 vyos systemd[2598]: Reached target basic.target - Basic System.
+Jul  6 19:33:02 vyos systemd[2598]: Reached target default.target - Main User Target.
+Jul  6 19:33:02 vyos systemd[2598]: Startup finished in 170ms.
+Jul  6 19:33:02 vyos systemd[1]: Started user@1002.service - User Manager for UID 1002.
+Jul  6 19:33:02 vyos systemd[1]: Started session-1.scope - Session 1 of User vyos.
+Jul  6 19:33:02 vyos systemd[1]: opt-vyatta-config-tmp-new_config_2620.mount: Deactivated successfully.
+Jul  6 19:33:03 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:33:11 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:33:11 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 8.
+Jul  6 19:33:11 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:11 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:11 vyos agetty[2797]: /dev/ttyS0: not a tty
+Jul  6 19:33:21 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:33:21 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 9.
+Jul  6 19:33:21 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:21 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:21 vyos agetty[2800]: /dev/ttyS0: not a tty
+Jul  6 19:33:31 vyos kernel: [  135.708756] hrtimer: interrupt took 2107101 ns
+Jul  6 19:33:31 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:33:32 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 10.
+Jul  6 19:33:32 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:32 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:32 vyos agetty[2803]: /dev/ttyS0: not a tty
+Jul  6 19:33:42 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:33:42 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 11.
+Jul  6 19:33:42 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:42 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:42 vyos agetty[2806]: /dev/ttyS0: not a tty
+Jul  6 19:33:52 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:33:52 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 12.
+Jul  6 19:33:52 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:52 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:33:52 vyos agetty[2809]: /dev/ttyS0: not a tty
+Jul  6 19:34:02 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:34:02 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 13.
+Jul  6 19:34:02 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:02 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:02 vyos agetty[2812]: /dev/ttyS0: not a tty
+Jul  6 19:34:12 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:34:13 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 14.
+Jul  6 19:34:13 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:13 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:13 vyos agetty[2815]: /dev/ttyS0: not a tty
+Jul  6 19:34:23 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:34:23 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 15.
+Jul  6 19:34:23 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:23 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:23 vyos agetty[2818]: /dev/ttyS0: not a tty
+Jul  6 19:34:33 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:34:33 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 16.
+Jul  6 19:34:33 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:33 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:33 vyos agetty[2821]: /dev/ttyS0: not a tty
+Jul  6 19:34:43 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:34:43 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 17.
+Jul  6 19:34:43 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:43 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:43 vyos agetty[2824]: /dev/ttyS0: not a tty
+Jul  6 19:34:53 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:34:54 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 18.
+Jul  6 19:34:54 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:54 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:34:54 vyos agetty[2834]: /dev/ttyS0: not a tty
+Jul  6 19:35:04 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:35:04 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 19.
+Jul  6 19:35:04 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:04 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:04 vyos agetty[2861]: /dev/ttyS0: not a tty
+Jul  6 19:35:06 vyos sudo:     vyos : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/rm -rf system_backup.tar.gz
+Jul  6 19:35:14 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:35:14 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 20.
+Jul  6 19:35:14 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:14 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:14 vyos agetty[2868]: /dev/ttyS0: not a tty
+Jul  6 19:35:24 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:35:24 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 21.
+Jul  6 19:35:24 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:24 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:24 vyos agetty[2871]: /dev/ttyS0: not a tty
+Jul  6 19:35:34 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:35:35 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 22.
+Jul  6 19:35:35 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:35 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:35 vyos agetty[2876]: /dev/ttyS0: not a tty
+Jul  6 19:35:40 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:35:45 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:35:45 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 23.
+Jul  6 19:35:45 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:45 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:45 vyos agetty[2893]: /dev/ttyS0: not a tty
+Jul  6 19:35:47 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/rm -rf /tmp/system_backup.tar.gz
+Jul  6 19:35:55 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:35:55 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 24.
+Jul  6 19:35:55 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:55 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:35:55 vyos agetty[2903]: /dev/ttyS0: not a tty
+Jul  6 19:36:05 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:36:05 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 25.
+Jul  6 19:36:05 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:05 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:05 vyos agetty[2906]: /dev/ttyS0: not a tty
+Jul  6 19:36:15 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:36:16 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 26.
+Jul  6 19:36:16 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:16 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:16 vyos agetty[2909]: /dev/ttyS0: not a tty
+Jul  6 19:36:18 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/usr --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:36:26 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:36:26 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 27.
+Jul  6 19:36:26 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:26 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:26 vyos agetty[2916]: /dev/ttyS0: not a tty
+Jul  6 19:36:36 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:36:36 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 28.
+Jul  6 19:36:36 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:36 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:36 vyos agetty[2946]: /dev/ttyS0: not a tty
+Jul  6 19:36:36 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/rm /tmp/system_backup.tar.gz
+Jul  6 19:36:46 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:36:46 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 29.
+Jul  6 19:36:46 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:46 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:46 vyos agetty[2952]: /dev/ttyS0: not a tty
+Jul  6 19:36:54 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/boot --exclude=/usr --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:36:56 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:36:57 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 30.
+Jul  6 19:36:57 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:57 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:36:57 vyos agetty[2960]: /dev/ttyS0: not a tty
+Jul  6 19:37:07 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:37:07 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 31.
+Jul  6 19:37:07 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:07 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:07 vyos agetty[2973]: /dev/ttyS0: not a tty
+Jul  6 19:37:17 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:37:17 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 32.
+Jul  6 19:37:17 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:17 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:17 vyos agetty[3002]: /dev/ttyS0: not a tty
+Jul  6 19:37:27 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:37:27 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 33.
+Jul  6 19:37:27 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:27 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:27 vyos agetty[3005]: /dev/ttyS0: not a tty
+Jul  6 19:37:37 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:37:38 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 34.
+Jul  6 19:37:38 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:38 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:38 vyos agetty[3008]: /dev/ttyS0: not a tty
+Jul  6 19:37:48 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:37:48 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 35.
+Jul  6 19:37:48 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:48 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:48 vyos agetty[3011]: /dev/ttyS0: not a tty
+Jul  6 19:37:58 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:37:58 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 36.
+Jul  6 19:37:58 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:58 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:37:58 vyos agetty[3014]: /dev/ttyS0: not a tty
+Jul  6 19:38:08 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:38:08 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 37.
+Jul  6 19:38:08 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:08 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:08 vyos agetty[3017]: /dev/ttyS0: not a tty
+Jul  6 19:38:18 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:38:19 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 38.
+Jul  6 19:38:19 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:19 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:19 vyos agetty[3020]: /dev/ttyS0: not a tty
+Jul  6 19:38:29 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:38:29 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 39.
+Jul  6 19:38:29 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:29 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:29 vyos agetty[3023]: /dev/ttyS0: not a tty
+Jul  6 19:38:39 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:38:39 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 40.
+Jul  6 19:38:39 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:39 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:39 vyos agetty[3050]: /dev/ttyS0: not a tty
+Jul  6 19:38:49 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:38:49 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 41.
+Jul  6 19:38:49 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:49 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:38:49 vyos agetty[3059]: /dev/ttyS0: not a tty
+Jul  6 19:38:59 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:39:00 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 42.
+Jul  6 19:39:00 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:00 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:00 vyos agetty[3062]: /dev/ttyS0: not a tty
+Jul  6 19:39:10 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:39:10 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 43.
+Jul  6 19:39:10 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:10 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:10 vyos agetty[3065]: /dev/ttyS0: not a tty
+Jul  6 19:39:20 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:39:20 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 44.
+Jul  6 19:39:20 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:20 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:20 vyos agetty[3068]: /dev/ttyS0: not a tty
+Jul  6 19:39:30 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:39:30 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 45.
+Jul  6 19:39:30 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:30 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:30 vyos agetty[3071]: /dev/ttyS0: not a tty
+Jul  6 19:39:40 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:39:41 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 46.
+Jul  6 19:39:41 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:41 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:41 vyos agetty[3074]: /dev/ttyS0: not a tty
+Jul  6 19:39:51 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:39:51 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 47.
+Jul  6 19:39:51 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:51 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:39:51 vyos agetty[3077]: /dev/ttyS0: not a tty
+Jul  6 19:40:01 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:40:01 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 48.
+Jul  6 19:40:01 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:01 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:01 vyos agetty[3080]: /dev/ttyS0: not a tty
+Jul  6 19:40:11 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:40:11 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 49.
+Jul  6 19:40:11 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:11 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:11 vyos agetty[3083]: /dev/ttyS0: not a tty
+Jul  6 19:40:21 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:40:22 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 50.
+Jul  6 19:40:22 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:22 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:22 vyos agetty[3086]: /dev/ttyS0: not a tty
+Jul  6 19:40:32 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:40:32 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 51.
+Jul  6 19:40:32 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:32 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:32 vyos agetty[3089]: /dev/ttyS0: not a tty
+Jul  6 19:40:42 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:40:42 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 52.
+Jul  6 19:40:42 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:42 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:42 vyos agetty[3092]: /dev/ttyS0: not a tty
+Jul  6 19:40:52 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:40:52 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 53.
+Jul  6 19:40:52 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:52 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:40:52 vyos agetty[3095]: /dev/ttyS0: not a tty
+Jul  6 19:41:02 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:41:03 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 54.
+Jul  6 19:41:03 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:03 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:03 vyos agetty[3098]: /dev/ttyS0: not a tty
+Jul  6 19:41:13 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:41:13 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 55.
+Jul  6 19:41:13 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:13 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:13 vyos agetty[3101]: /dev/ttyS0: not a tty
+Jul  6 19:41:23 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:41:23 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 56.
+Jul  6 19:41:23 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:23 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:23 vyos agetty[3104]: /dev/ttyS0: not a tty
+Jul  6 19:41:33 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:41:33 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 57.
+Jul  6 19:41:33 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:33 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:33 vyos agetty[3107]: /dev/ttyS0: not a tty
+Jul  6 19:41:43 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:41:44 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 58.
+Jul  6 19:41:44 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:44 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:44 vyos agetty[3112]: /dev/ttyS0: not a tty
+Jul  6 19:41:54 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:41:54 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 59.
+Jul  6 19:41:54 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:54 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:41:54 vyos agetty[3115]: /dev/ttyS0: not a tty
+Jul  6 19:42:04 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:42:04 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 60.
+Jul  6 19:42:04 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:04 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:04 vyos agetty[3118]: /dev/ttyS0: not a tty
+Jul  6 19:42:14 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:42:14 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 61.
+Jul  6 19:42:14 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:14 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:14 vyos agetty[3121]: /dev/ttyS0: not a tty
+Jul  6 19:42:24 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:42:25 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 62.
+Jul  6 19:42:25 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:25 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:25 vyos agetty[3125]: /dev/ttyS0: not a tty
+Jul  6 19:42:35 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:42:35 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 63.
+Jul  6 19:42:35 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:35 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:35 vyos agetty[3129]: /dev/ttyS0: not a tty
+Jul  6 19:42:45 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:42:45 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 64.
+Jul  6 19:42:45 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:45 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:45 vyos agetty[3132]: /dev/ttyS0: not a tty
+Jul  6 19:42:55 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:42:55 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 65.
+Jul  6 19:42:55 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:55 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:42:55 vyos agetty[3135]: /dev/ttyS0: not a tty
+Jul  6 19:43:05 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:43:06 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 66.
+Jul  6 19:43:06 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:06 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:06 vyos agetty[3138]: /dev/ttyS0: not a tty
+Jul  6 19:43:16 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:43:16 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 67.
+Jul  6 19:43:16 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:16 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:16 vyos agetty[3141]: /dev/ttyS0: not a tty
+Jul  6 19:43:26 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:43:26 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 68.
+Jul  6 19:43:26 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:26 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:26 vyos agetty[3144]: /dev/ttyS0: not a tty
+Jul  6 19:43:36 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:43:36 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 69.
+Jul  6 19:43:36 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:36 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:36 vyos agetty[3147]: /dev/ttyS0: not a tty
+Jul  6 19:43:46 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:43:47 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 70.
+Jul  6 19:43:47 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:47 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:47 vyos agetty[3150]: /dev/ttyS0: not a tty
+Jul  6 19:43:57 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:43:57 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 71.
+Jul  6 19:43:57 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:57 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:43:57 vyos agetty[3153]: /dev/ttyS0: not a tty
+Jul  6 19:44:07 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:44:07 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 72.
+Jul  6 19:44:07 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:07 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:07 vyos agetty[3156]: /dev/ttyS0: not a tty
+Jul  6 19:44:17 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:44:17 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 73.
+Jul  6 19:44:17 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:17 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:17 vyos agetty[3159]: /dev/ttyS0: not a tty
+Jul  6 19:44:27 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:44:28 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 74.
+Jul  6 19:44:28 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:28 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:28 vyos agetty[3162]: /dev/ttyS0: not a tty
+Jul  6 19:44:38 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:44:38 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 75.
+Jul  6 19:44:38 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:38 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:38 vyos agetty[3165]: /dev/ttyS0: not a tty
+Jul  6 19:44:48 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:44:48 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 76.
+Jul  6 19:44:48 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:48 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:48 vyos agetty[3168]: /dev/ttyS0: not a tty
+Jul  6 19:44:58 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:44:58 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 77.
+Jul  6 19:44:58 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:58 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:44:58 vyos agetty[3171]: /dev/ttyS0: not a tty
+Jul  6 19:45:08 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:45:09 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 78.
+Jul  6 19:45:09 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:45:09 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:45:09 vyos agetty[3175]: /dev/ttyS0: not a tty
+Jul  6 19:45:19 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:45:19 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 79.
+Jul  6 19:45:19 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:45:19 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:45:19 vyos agetty[3180]: /dev/ttyS0: not a tty
+Jul  6 19:45:29 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:45:29 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 80.
+Jul  6 19:45:29 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:45:29 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:45:29 vyos agetty[3191]: /dev/ttyS0: not a tty
+Jul  6 19:45:37 vyos sudo:     vyos : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/rm -rf system_backup.tar.gz
+Jul  6 19:45:39 vyos sudo:     vyos : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/boot --exclude=/usr --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:45:39 vyos systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Jul  6 19:45:39 vyos systemd[1]: serial-getty@ttyS0.service: Scheduled restart job, restart counter is at 81.
+Jul  6 19:45:39 vyos systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:45:39 vyos systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Jul  6 19:45:39 vyos agetty[3220]: /dev/ttyS0: not a tty

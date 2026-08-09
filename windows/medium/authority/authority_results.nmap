@@ -1,0 +1,132 @@
+# Nmap 7.99 scan initiated Sun Jul 19 16:33:38 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA authority_results 10.129.229.56
+Increasing send delay for 10.129.229.56 from 0 to 5 due to 220 out of 731 dropped probes since last increase.
+Increasing send delay for 10.129.229.56 from 20 to 40 due to 106 out of 353 dropped probes since last increase.
+Increasing send delay for 10.129.229.56 from 80 to 160 due to 85 out of 283 dropped probes since last increase.
+Increasing send delay for 10.129.229.56 from 640 to 1000 due to 106 out of 351 dropped probes since last increase.
+Warning: 10.129.229.56 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.129.229.56
+Host is up (0.049s latency).
+Not shown: 65501 closed tcp ports (reset)
+PORT      STATE    SERVICE       VERSION
+53/tcp    open     domain        Simple DNS Plus
+80/tcp    open     http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+88/tcp    open     kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-19 15:04:12Z)
+135/tcp   open     msrpc         Microsoft Windows RPC
+139/tcp   open     netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open     ldap          Microsoft Windows Active Directory LDAP (Domain: authority.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-19T15:05:18+00:00; +3h59m46s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: othername: UPN:AUTHORITY$@htb.corp, DNS:authority.htb.corp, DNS:htb.corp, DNS:HTB
+| Issuer: commonName=htb-AUTHORITY-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-08-09T23:03:21
+| Not valid after:  2024-08-09T23:13:21
+| MD5:     d494 7710 6f6b 8100 e4e1 9cf2 aa40 dae1
+| SHA-1:   dded b994 b80c 83a9 db0b e7d3 5853 ff8e 54c6 2d0b
+|_SHA-256: e1d2 e894 2960 a961 bbf7 b4e4 c110 c6d7 e5a1 7a29 8987 85dc 3553 fb90 458a 5cb7
+445/tcp   open     microsoft-ds?
+464/tcp   open     kpasswd5?
+593/tcp   open     ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open     ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: authority.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: othername: UPN:AUTHORITY$@htb.corp, DNS:authority.htb.corp, DNS:htb.corp, DNS:HTB
+| Issuer: commonName=htb-AUTHORITY-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-08-09T23:03:21
+| Not valid after:  2024-08-09T23:13:21
+| MD5:     d494 7710 6f6b 8100 e4e1 9cf2 aa40 dae1
+| SHA-1:   dded b994 b80c 83a9 db0b e7d3 5853 ff8e 54c6 2d0b
+|_SHA-256: e1d2 e894 2960 a961 bbf7 b4e4 c110 c6d7 e5a1 7a29 8987 85dc 3553 fb90 458a 5cb7
+|_ssl-date: 2026-07-19T15:05:18+00:00; +3h59m46s from scanner time.
+3268/tcp  open     ldap          Microsoft Windows Active Directory LDAP (Domain: authority.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: othername: UPN:AUTHORITY$@htb.corp, DNS:authority.htb.corp, DNS:htb.corp, DNS:HTB
+| Issuer: commonName=htb-AUTHORITY-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-08-09T23:03:21
+| Not valid after:  2024-08-09T23:13:21
+| MD5:     d494 7710 6f6b 8100 e4e1 9cf2 aa40 dae1
+| SHA-1:   dded b994 b80c 83a9 db0b e7d3 5853 ff8e 54c6 2d0b
+|_SHA-256: e1d2 e894 2960 a961 bbf7 b4e4 c110 c6d7 e5a1 7a29 8987 85dc 3553 fb90 458a 5cb7
+|_ssl-date: 2026-07-19T15:05:18+00:00; +3h59m46s from scanner time.
+3269/tcp  open     ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: authority.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-19T15:05:18+00:00; +3h59m46s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: othername: UPN:AUTHORITY$@htb.corp, DNS:authority.htb.corp, DNS:htb.corp, DNS:HTB
+| Issuer: commonName=htb-AUTHORITY-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-08-09T23:03:21
+| Not valid after:  2024-08-09T23:13:21
+| MD5:     d494 7710 6f6b 8100 e4e1 9cf2 aa40 dae1
+| SHA-1:   dded b994 b80c 83a9 db0b e7d3 5853 ff8e 54c6 2d0b
+|_SHA-256: e1d2 e894 2960 a961 bbf7 b4e4 c110 c6d7 e5a1 7a29 8987 85dc 3553 fb90 458a 5cb7
+5059/tcp  filtered sds
+5985/tcp  open     http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8443/tcp  open     ssl/http      Apache Tomcat (language: en)
+| ssl-cert: Subject: commonName=172.16.2.118
+| Issuer: commonName=172.16.2.118
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-17T12:27:23
+| Not valid after:  2028-07-19T00:05:47
+| MD5:     126d 7b95 0f8d ae97 f713 e051 83ce 6b72
+| SHA-1:   9f41 e0f6 0814 d550 b897 a755 dba2 eefd 8fdd 0d46
+|_SHA-256: 2455 5738 ae50 d1a0 ab11 616e 600d 8c9e e203 849f 064f e2da fd3f 0819 5e90 4b1a
+|_http-favicon: Unknown favicon MD5: F588322AAF157D82BB030AF1EFFD8CF9
+|_http-title: Site doesn't have a title (text/html;charset=ISO-8859-1).
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  h2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+9389/tcp  open     mc-nmf        .NET Message Framing
+19681/tcp filtered unknown
+23869/tcp filtered unknown
+35836/tcp filtered unknown
+46811/tcp filtered unknown
+47001/tcp open     http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open     msrpc         Microsoft Windows RPC
+49665/tcp open     msrpc         Microsoft Windows RPC
+49666/tcp open     msrpc         Microsoft Windows RPC
+49667/tcp open     msrpc         Microsoft Windows RPC
+49671/tcp open     msrpc         Microsoft Windows RPC
+49674/tcp open     ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49675/tcp open     msrpc         Microsoft Windows RPC
+49679/tcp open     msrpc         Microsoft Windows RPC
+49682/tcp open     msrpc         Microsoft Windows RPC
+49691/tcp open     msrpc         Microsoft Windows RPC
+49702/tcp open     msrpc         Microsoft Windows RPC
+57887/tcp open     msrpc         Microsoft Windows RPC
+57934/tcp open     msrpc         Microsoft Windows RPC
+Service Info: Host: AUTHORITY; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-07-19T15:05:10
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 3h59m45s, deviation: 0s, median: 3h59m45s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 19 16:35:32 2026 -- 1 IP address (1 host up) scanned in 113.93 seconds

@@ -1,0 +1,2 @@
+help: Username used for authentication
+allowed: /bin/cli-shell-api listActiveNodes system login user | sed -e "s/'//g" && echo

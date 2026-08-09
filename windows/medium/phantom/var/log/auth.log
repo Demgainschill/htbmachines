@@ -1,0 +1,82 @@
+Jul  6 17:00:43 debian sudo:     root : unable to resolve host vyos: System error
+Jul  6 17:00:43 debian sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_host-name.py'
+Jul  6 17:00:43 debian sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_console.py'
+Jul  6 17:00:44 debian sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim VYOS_TAGNODE_VALUE=\'lo\' /usr/libexec/vyos/conf_mode/interfaces_loopback.py'
+Jul  6 17:00:44 debian sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim VYOS_TAGNODE_VALUE=\'eth0\' /usr/libexec/vyos/conf_mode/interfaces_ethernet.py'
+Jul  6 17:00:45 debian sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_config-management.py'
+Jul  6 17:00:45 debian sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.857 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:00:45 debian sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:00:45 debian sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_syslog.py'
+Jul  6 17:00:46 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_login.py'
+Jul  6 17:00:46 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/service_ntp.py'
+Jul  6 17:00:47 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/service_ssh.py'
+Jul  6 17:00:48 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.2528 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:00:48 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:03:46 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim VYOS_TAGNODE_VALUE=\'eth0\' /usr/libexec/vyos/conf_mode/interfaces_ethernet.py'
+Jul  6 17:03:47 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/firewall.py'
+Jul  6 17:03:48 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.3775 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:03:48 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:04:15 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/firewall.py'
+Jul  6 17:04:16 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.3967 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:04:16 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:04:18 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sg vyattacfg 'umask 0002 ; /usr/libexec/vyos/vyos-save-config.py'
+Jul  6 17:04:35 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/firewall.py'
+Jul  6 17:04:35 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_login.py'
+Jul  6 17:04:38 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.4234 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:04:38 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:06:03 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/pki.py'
+Jul  6 17:06:05 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.4624 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:06:05 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:06:06 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sg vyattacfg 'umask 0002 ; /usr/libexec/vyos/vyos-save-config.py'
+Jul  6 17:07:04 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/pki.py'
+Jul  6 17:07:05 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.4988 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:07:05 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:07:06 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sg vyattacfg 'umask 0002 ; /usr/libexec/vyos/vyos-save-config.py'
+Jul  6 17:07:44 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/vpn_sstp.py'
+Jul  6 17:07:46 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.5415 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:07:46 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:07:47 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/sg vyattacfg 'umask 0002 ; /usr/libexec/vyos/vyos-save-config.py'
+Jul  6 17:17:01 vyos CRON[5691]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul  6 17:17:01 vyos CRON[5692]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Jul  6 17:17:01 vyos CRON[5691]: pam_unix(cron:session): session closed for user root
+Jul  6 17:21:01 vyos sudo:     vyos : TTY=pts/0 ; PWD=/opt/vyatta/etc/config ; USER=root ; COMMAND=/usr/bin/sg vyattacfg 'umask 0002 ; /usr/libexec/vyos/vyos-save-config.py'
+Jul  6 17:21:10 vyos sudo:     vyos : TTY=pts/0 ; PWD=/opt/vyatta/etc/config ; USER=root ; COMMAND=/usr/libexec/vyos/op_mode/powerctrl.py --reboot
+Jul  6 17:21:47 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_host-name.py'
+Jul  6 17:21:47 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_console.py'
+Jul  6 17:21:48 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/pki.py'
+Jul  6 17:21:48 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim VYOS_TAGNODE_VALUE=\'lo\' /usr/libexec/vyos/conf_mode/interfaces_loopback.py'
+Jul  6 17:21:48 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim VYOS_TAGNODE_VALUE=\'eth0\' /usr/libexec/vyos/conf_mode/interfaces_ethernet.py'
+Jul  6 17:21:50 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/firewall.py'
+Jul  6 17:21:50 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_syslog.py'
+Jul  6 17:21:50 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_login.py'
+Jul  6 17:21:51 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_config-management.py'
+Jul  6 17:21:51 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/service_ntp.py'
+Jul  6 17:21:52 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/vpn_sstp.py'
+Jul  6 17:21:52 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/service_ssh.py'
+Jul  6 17:21:52 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/mv /tmp/config.boot.2374 /opt/vyatta/etc/config/archive/config.boot
+Jul  6 17:21:52 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/sbin/logrotate -f -s /opt/vyatta/etc/config/archive/lr.state /opt/vyatta/etc/config/archive/lr.conf
+Jul  6 17:24:41 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/dd if=/dev/sda
+Jul  6 17:46:03 vyos sudo:     vyos : TTY=pts/0 ; PWD=/opt/vyatta/etc/config ; USER=root ; COMMAND=/usr/bin/sync
+Jul  6 17:46:19 vyos sudo:     vyos : TTY=pts/0 ; PWD=/opt/vyatta/etc/config ; USER=root ; COMMAND=/usr/bin/dd if=/dev/sda bs=512
+Jul  6 17:48:56 vyos sudo:     vyos : TTY=pts/0 ; PWD=/opt/vyatta/etc/config ; USER=root ; COMMAND=/usr/bin/dd if=/dev/sda bs=512
+Jul  6 19:31:42 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_host-name.py'
+Jul  6 19:31:43 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_console.py'
+Jul  6 19:31:43 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/pki.py'
+Jul  6 19:31:43 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim VYOS_TAGNODE_VALUE=\'lo\' /usr/libexec/vyos/conf_mode/interfaces_loopback.py'
+Jul  6 19:31:43 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim VYOS_TAGNODE_VALUE=\'eth0\' /usr/libexec/vyos/conf_mode/interfaces_ethernet.py'
+Jul  6 19:31:45 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/firewall.py'
+Jul  6 19:31:45 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_syslog.py'
+Jul  6 19:31:46 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_login.py'
+Jul  6 19:31:46 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/system_config-management.py'
+Jul  6 19:31:46 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/service_ntp.py'
+Jul  6 19:31:47 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/vpn_sstp.py'
+Jul  6 19:31:47 vyos sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sh -c '/usr/sbin/vyshim /usr/libexec/vyos/conf_mode/service_ssh.py'
+Jul  6 19:33:03 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:35:06 vyos sudo:     vyos : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/rm -rf system_backup.tar.gz
+Jul  6 19:35:40 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:35:47 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/rm -rf /tmp/system_backup.tar.gz
+Jul  6 19:36:18 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/usr --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:36:36 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/rm /tmp/system_backup.tar.gz
+Jul  6 19:36:54 vyos sudo:     vyos : TTY=pts/0 ; PWD=/home/vyos ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/boot --exclude=/usr --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /
+Jul  6 19:45:37 vyos sudo:     vyos : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/rm -rf system_backup.tar.gz
+Jul  6 19:45:39 vyos sudo:     vyos : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/tar --exclude=/proc --exclude=/boot --exclude=/usr --exclude=/sys --exclude=/dev --exclude=/tmp/system_backup.tar.gz -cvpzf /tmp/system_backup.tar.gz /

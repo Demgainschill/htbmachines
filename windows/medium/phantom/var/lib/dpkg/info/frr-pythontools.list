@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/frr
+/usr/lib/frr/frr-reload.py
+/usr/lib/frr/frr_babeltrace.py
+/usr/lib/frr/generate_support_bundle.py
+/usr/lib/frr/ospfclient.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/frr-pythontools
+/usr/share/doc/frr-pythontools/changelog.Debian.gz
+/usr/share/doc/frr-pythontools/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/frr-pythontools

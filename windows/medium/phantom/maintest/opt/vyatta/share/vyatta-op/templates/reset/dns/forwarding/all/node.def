@@ -1,0 +1,2 @@
+help: Reset DNS Forwarding cache for all domains
+run: sudo ${vyos_op_scripts_dir}/dns.py reset_forwarding --all

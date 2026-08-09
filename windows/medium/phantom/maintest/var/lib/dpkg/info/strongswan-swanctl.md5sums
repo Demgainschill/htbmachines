@@ -1,0 +1,12 @@
+eab38dee7448d31bed0a139c5e753bac  usr/lib/ipsec/libvici.so.0.0.0
+96efe4becd47629df5472b6edf30697e  usr/lib/ipsec/plugins/libstrongswan-vici.so
+a27537dfd3d90374fde6c16400a2fc94  usr/sbin/swanctl
+25c174f75715864b7d825dc6e565c17e  usr/share/doc/strongswan-swanctl/NEWS.Debian.gz
+a5718086f07eae42690827cbb2c40788  usr/share/doc/strongswan-swanctl/changelog.Debian.gz
+7580e3007897a92e3311df1ba4dab82e  usr/share/doc/strongswan-swanctl/changelog.gz
+8542ae617d33d7b35208cac3d3b5755b  usr/share/doc/strongswan-swanctl/copyright
+7b4786033919cc7e7625d19f4ebd2ee4  usr/share/lintian/overrides/strongswan-swanctl
+57abb234398e0409c9df7d5343d67aa6  usr/share/man/man5/swanctl.conf.5.gz
+b02f0a7d5130121e2c8d409e8cce00bb  usr/share/man/man8/swanctl.8.gz
+f2900f82fb39ef2539933ca143d53765  usr/share/strongswan/templates/config/plugins/vici.conf
+68c8c0fb03a622dc6b9d9b1e26bc2db4  usr/share/strongswan/templates/config/strongswan.d/swanctl.conf

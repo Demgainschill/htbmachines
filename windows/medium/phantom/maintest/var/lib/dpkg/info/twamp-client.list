@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/twping
+/usr/share
+/usr/share/doc
+/usr/share/doc/twamp-client
+/usr/share/doc/twamp-client/changelog.Debian.gz
+/usr/share/doc/twamp-client/changelog.gz
+/usr/share/doc/twamp-client/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/twping.1.gz

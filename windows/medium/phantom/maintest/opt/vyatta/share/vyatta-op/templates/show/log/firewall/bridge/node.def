@@ -1,0 +1,2 @@
+help: Show firewall bridge log
+run: journalctl --no-hostname --boot -k | egrep "bri-(FWD|INP|OUT|NAM)"

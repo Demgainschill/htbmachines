@@ -1,0 +1,3 @@
+help: Beacon Protection: management frame protection for Beacon
+			frames, requires Management Frame Protection (MFP) (default:
+			disabled)

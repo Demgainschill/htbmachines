@@ -1,0 +1,8 @@
+d22e86dd70e85d0f57b3ad5568f02ab2  usr/lib/x86_64-linux-gnu/lcdproc/hd44780.so
+9620918dc70b9e0a65135604409d1c1e  usr/lib/x86_64-linux-gnu/lcdproc/lirc.so
+aa5ff4033262a597e83c47c6b5456b30  usr/lib/x86_64-linux-gnu/lcdproc/picolcd.so
+e20b39cf078e5434b25f839689067506  usr/lib/x86_64-linux-gnu/lcdproc/xosd.so
+803d6d4157aabaf6e21d320075d0e232  usr/share/doc/lcdproc-extra-drivers/NEWS.Debian.gz
+8e78f42e9504f068b2b5256814bd480d  usr/share/doc/lcdproc-extra-drivers/changelog.Debian.amd64.gz
+a446445034c18cf50e7961132fc15ab3  usr/share/doc/lcdproc-extra-drivers/changelog.Debian.gz
+c04b208dd8bcba60000924698ef54ef2  usr/share/doc/lcdproc-extra-drivers/copyright

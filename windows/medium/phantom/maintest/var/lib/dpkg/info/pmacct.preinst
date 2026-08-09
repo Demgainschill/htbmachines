@@ -1,0 +1,37 @@
+#!/bin/sh
+
+set -e
+if dpkg-maintscript-helper supports mv_conffile; then
+    dpkg-maintscript-helper mv_conffile \
+        /etc/init.d/pmacct \
+        /etc/init.d/pmacctd \
+        1.5.0-1~~ pmacct -- "$@"
+
+    dpkg-maintscript-helper mv_conffile \
+        /etc/default/pmacct \
+        /etc/default/pmacctd \
+        1.5.0-1~~ pmacct -- "$@"
+fi
+
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/pmacctd" ] ; then
+	chmod +x "/etc/init.d/pmacctd" >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/nfacctd" ] ; then
+	chmod +x "/etc/init.d/nfacctd" >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/sfacctd" ] ; then
+	chmod +x "/etc/init.d/sfacctd" >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/uacctd" ] ; then
+	chmod +x "/etc/init.d/uacctd" >/dev/null || true
+fi
+# End automatically added section
+
+

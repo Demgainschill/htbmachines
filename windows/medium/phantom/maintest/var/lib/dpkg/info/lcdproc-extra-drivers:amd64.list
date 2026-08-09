@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/lcdproc
+/usr/lib/x86_64-linux-gnu/lcdproc/hd44780.so
+/usr/lib/x86_64-linux-gnu/lcdproc/lirc.so
+/usr/lib/x86_64-linux-gnu/lcdproc/picolcd.so
+/usr/lib/x86_64-linux-gnu/lcdproc/xosd.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/lcdproc-extra-drivers
+/usr/share/doc/lcdproc-extra-drivers/NEWS.Debian.gz
+/usr/share/doc/lcdproc-extra-drivers/changelog.Debian.amd64.gz
+/usr/share/doc/lcdproc-extra-drivers/changelog.Debian.gz
+/usr/share/doc/lcdproc-extra-drivers/copyright

@@ -1,0 +1,3 @@
+help: Show custom IPv6 firewall log
+allowed: /bin/cli-shell-api listActiveNodes firewall ipv6 name | sed -e "s/'//g" && echo
+run: journalctl --no-hostname --boot -k | grep ipv6-NAM-$6

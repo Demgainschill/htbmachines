@@ -1,0 +1,16 @@
+ceff98a15cd94d69ced0380c493e37bd  usr/lib/ipsec/_updown
+00a2831a5934f23dadc0f4f7d644a2cd  usr/lib/ipsec/libcharon.so.0.0.0
+a5937d533049185239fd7bcb7cab24e0  usr/lib/ipsec/plugins/libstrongswan-bypass-lan.so
+d8050ed17975939b348ae4e6402aa211  usr/lib/ipsec/plugins/libstrongswan-counters.so
+fa41761d1e34b09eb16cdfdd83970c6a  usr/lib/ipsec/plugins/libstrongswan-socket-default.so
+12c3a7597fa7bfd03d7d3376a6b1b1fb  usr/lib/ipsec/plugins/libstrongswan-updown.so
+3f54bee84038e5ef78caf9fc1937f245  usr/lib/ipsec/xfrmi
+25c174f75715864b7d825dc6e565c17e  usr/share/doc/strongswan-libcharon/NEWS.Debian.gz
+f80edf010ad07cf5af1e89893a953f7f  usr/share/doc/strongswan-libcharon/changelog.Debian.gz
+7580e3007897a92e3311df1ba4dab82e  usr/share/doc/strongswan-libcharon/changelog.gz
+8542ae617d33d7b35208cac3d3b5755b  usr/share/doc/strongswan-libcharon/copyright
+ab78bb642eee8c715ca7de39d3d83ed6  usr/share/lintian/overrides/strongswan-libcharon
+2984470c3c18761a26503c3b633879d5  usr/share/strongswan/templates/config/plugins/bypass-lan.conf
+8416145f4be2b32458fa057eac046af2  usr/share/strongswan/templates/config/plugins/counters.conf
+6cdc2ca073e24f6e6f7d1c081b2d53e2  usr/share/strongswan/templates/config/plugins/socket-default.conf
+241b5341a5537b0864c7f2027d38f37d  usr/share/strongswan/templates/config/plugins/updown.conf

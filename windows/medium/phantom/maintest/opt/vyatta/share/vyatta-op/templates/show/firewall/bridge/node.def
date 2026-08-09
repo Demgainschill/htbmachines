@@ -1,0 +1,2 @@
+help: Show bridge firewall
+run: sudo ${vyos_op_scripts_dir}/firewall.py --action show_family --family $3

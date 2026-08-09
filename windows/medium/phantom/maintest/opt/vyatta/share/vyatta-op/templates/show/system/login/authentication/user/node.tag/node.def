@@ -1,0 +1,2 @@
+help: Show configured user
+allowed: /bin/cli-shell-api listActiveNodes system login user | sed -e "s/'//g" && echo

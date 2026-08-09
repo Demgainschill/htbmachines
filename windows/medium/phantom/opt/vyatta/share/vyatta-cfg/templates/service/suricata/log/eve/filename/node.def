@@ -1,0 +1,4 @@
+type: txt
+help: Log file (default: eve.json)
+val_help: filename; File name in default Suricata log directory
+val_help: /path; Absolute file path

@@ -1,0 +1,6 @@
+libipsec 0 libcharon-extra-plugins (>= 5.9.11)
+libpttls 0 libcharon-extra-plugins (>= 5.9.11)
+libradius 0 libcharon-extra-plugins (>= 5.9.11)
+libsimaka 0 libcharon-extra-plugins (>= 5.9.11)
+libtls 0 libcharon-extra-plugins (>= 5.9.11)
+libtnccs 0 libcharon-extra-plugins (>= 5.9.11)

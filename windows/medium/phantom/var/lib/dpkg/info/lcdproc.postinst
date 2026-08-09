@@ -1,0 +1,69 @@
+#!/bin/sh -e
+
+# activate udev rule before cme tries to upgrade the configuration
+# restrict to usb subsystem used by imon. This could be changed if
+# udev rules are created for other devices.
+udevadm trigger --action=change --subsystem-match=usbmisc
+
+# Automatically added by dh_cme_upgrade/UNDECLARED
+# In case of error (error in configuration file or model bug), the
+# configuration file is left as is.
+
+. /usr/share/debconf/confmodule
+
+db_get  lcdproc/auto-upgrade-config
+
+# testing perl is required to avoid problem in embedded environments
+if [ "$RET" = true ] && [ -x "/usr/bin/perl" ] && [ -x "/usr/bin/cme" ] 
+then
+	cme fix lcdproc -create -backup dpkg-old -try-app-as-model -force || \
+	echo "WARNING: upgrade with cme failed: Run 'sudo cme migrate lcdproc -force'."
+fi
+# End automatically added section
+# Automatically added by dh_installdeb/13.11.4
+dpkg-maintscript-helper mv_conffile /etc/init.d/LCDd /etc/init.d/lcdproc 0.5.9-5\~ lcdproc -- "$@"
+# End automatically added section
+# Automatically added by dh_installinit/13.11.4
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if [ -z "${DPKG_ROOT:-}" ] && [ -x "/etc/init.d/lcdproc" ]; then
+		update-rc.d lcdproc defaults >/dev/null
+		if [ -n "$2" ]; then
+			_dh_action=restart
+		else
+			_dh_action=start
+		fi
+		invoke-rc.d --skip-systemd-native lcdproc $_dh_action || exit 1
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/13.11.4
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	# The following line should be removed in trixie or trixie+1
+	deb-systemd-helper unmask 'lcdproc.service' >/dev/null || true
+
+	# was-enabled defaults to true, so new installations run enable.
+	if deb-systemd-helper --quiet was-enabled 'lcdproc.service'; then
+		# Enables the unit on first installation, creates new
+		# symlinks on upgrades if the unit file has changed.
+		deb-systemd-helper enable 'lcdproc.service' >/dev/null || true
+	else
+		# Update the statefile to add new symlinks (if any), which need to be
+		# cleaned up on purge. Also remove old symlinks.
+		deb-systemd-helper update-state 'lcdproc.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/13.11.4
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if [ -d /run/systemd/system ]; then
+		systemctl --system daemon-reload >/dev/null || true
+		if [ -n "$2" ]; then
+			_dh_action=restart
+		else
+			_dh_action=start
+		fi
+		deb-systemd-invoke $_dh_action 'lcdproc.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+

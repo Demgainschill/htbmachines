@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/librdkafka.so.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/librdkafka1
+/usr/share/doc/librdkafka1/CONFIGURATION.md.gz
+/usr/share/doc/librdkafka1/INTRODUCTION.md.gz
+/usr/share/doc/librdkafka1/NEWS.Debian.gz
+/usr/share/doc/librdkafka1/README.md.gz
+/usr/share/doc/librdkafka1/changelog.Debian.gz
+/usr/share/doc/librdkafka1/changelog.gz
+/usr/share/doc/librdkafka1/copyright

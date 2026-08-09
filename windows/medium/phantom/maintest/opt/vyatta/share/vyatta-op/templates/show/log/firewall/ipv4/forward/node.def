@@ -1,0 +1,2 @@
+help: Show firewall IPv4 forward log
+run: journalctl --no-hostname --boot -k | grep ipv4-FWD

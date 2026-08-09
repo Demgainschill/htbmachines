@@ -1,0 +1,9 @@
+ebfd8d7546e8e07a42a072ccc465a558  usr/lib/x86_64-linux-gnu/perl5/5.36/B/Hooks/OP/Check.pm
+2667a0daa86c01fdadac80fd7d83bccc  usr/lib/x86_64-linux-gnu/perl5/5.36/B/Hooks/OP/Check/Install/Files.pm
+c8904848a16ee448ea244fccfc70371d  usr/lib/x86_64-linux-gnu/perl5/5.36/B/Hooks/OP/Check/Install/hook_op_check.h
+70b36ce1e0490caff66129b76caadd9a  usr/lib/x86_64-linux-gnu/perl5/5.36/auto/B/Hooks/OP/Check/Check.so
+b9d721459dfd22b574dd29e1943cfdf4  usr/share/doc/libb-hooks-op-check-perl/changelog.Debian.amd64.gz
+93d1358596e2a98a88de6545419c19bd  usr/share/doc/libb-hooks-op-check-perl/changelog.Debian.gz
+b65ccfbfd33933e479e8a0e3f3b3558b  usr/share/doc/libb-hooks-op-check-perl/changelog.gz
+0ffd7f9d34368d90810d448596678893  usr/share/doc/libb-hooks-op-check-perl/copyright
+1bba0b8685b4da1494d0569417f6d39f  usr/share/man/man3/B::Hooks::OP::Check.3pm.gz

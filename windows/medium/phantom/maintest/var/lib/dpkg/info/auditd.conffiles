@@ -1,0 +1,7 @@
+/etc/audit/audit-stop.rules
+/etc/audit/auditd.conf
+/etc/audit/plugins.d/af_unix.conf
+/etc/audit/plugins.d/syslog.conf
+/etc/audit/rules.d/audit.rules
+/etc/default/auditd
+/etc/init.d/auditd

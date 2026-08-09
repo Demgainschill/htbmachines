@@ -1,0 +1,7 @@
+type: txt
+help: BGP Labeled-unicast options
+val_help: explicit-null; Use explicit-null label values for all local prefixes
+val_help: ipv4-explicit-null; Use IPv4 explicit-null label value for IPv4 local prefixes
+val_help: ipv6-explicit-null; Use IPv6 explicit-null label value for IPv4 local prefixes
+allowed: echo "explicit-null ipv4-explicit-null ipv6-explicit-null"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(explicit-null|ipv4-explicit-null|ipv6-explicit-null)\'   --value \'$VAR(@)\'"; "Invalid value"

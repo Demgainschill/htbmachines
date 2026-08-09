@@ -1,0 +1,7 @@
+d417c4c16718f55abe58f3165b9dcd85  lib/x86_64-linux-gnu/libnss_mapname.so.2
+f78e8ffa527fca009b1e489ed2ddb00c  lib/x86_64-linux-gnu/libnss_mapuid.so.2
+c5ef4290e3ef7c3dd84551cf8dc739ba  usr/share/doc/libnss-mapuser/changelog.Debian.gz
+75dcc239cb09b60e914328dcace21b59  usr/share/doc/libnss-mapuser/copyright
+8fd7791ccae43b238821f5ff3612fb75  usr/share/lintian/overrides/libnss-mapuser
+2ea2568d9139122bb2d2fe4d32378fab  usr/share/man/man5/nss_mapuser.5.gz
+8cb924d3e6ba02ce89dfc01b1c69fc75  usr/share/man/man8/nss_mapuser.8.gz

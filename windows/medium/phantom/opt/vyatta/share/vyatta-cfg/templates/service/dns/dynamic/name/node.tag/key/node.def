@@ -1,0 +1,5 @@
+type: txt
+help: File containing TSIG authentication key for RFC2136 nsupdate on
+			remote DNS server
+val_help: filename; File in /config/auth directory
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/file-path --strict --parent-dir /config/auth\"  --value \'$VAR(@)\'"; "Invalid value"

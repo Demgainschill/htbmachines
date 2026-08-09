@@ -1,0 +1,11 @@
+multi:
+type: txt
+help: Define the parameters of the packet header to apply the hashing
+			(default: random)
+val_help: source-address; Use source IP address for hashing
+val_help: destination-address; Use destination IP address for hashing
+val_help: source-port; Use source port for hashing
+val_help: destination-port; Use destination port for hashing
+val_help: random; Do not use information from ip header. Use random value. (default)
+allowed: echo "source-address destination-address source-port destination-port random"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(source-address|destination-address|source-port|destination-port|random)\'   --value \'$VAR(@)\'"; "Invalid value"

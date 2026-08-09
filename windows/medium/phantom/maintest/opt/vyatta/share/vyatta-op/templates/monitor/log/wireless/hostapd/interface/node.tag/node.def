@@ -1,0 +1,3 @@
+help: Monitor last lines of specific host access point interface
+allowed: /bin/cli-shell-api listActiveNodes interfaces wireless | sed -e "s/'//g" && echo
+run: if [[ $(cli-shell-api returnActiveValue interfaces wireless $6 type) == "access-point" ]]; then journalctl --no-hostname --boot --follow --unit "hostapd@$6.service"; else echo "Wireless interface $6 not configured as access-point!"; fi

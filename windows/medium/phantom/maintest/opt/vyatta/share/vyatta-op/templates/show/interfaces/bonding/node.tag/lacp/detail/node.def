@@ -1,0 +1,2 @@
+help: Show LACP details
+run: sudo ${vyos_op_scripts_dir}/bonding.py show_lacp_detail --interface="$4" 

@@ -1,0 +1,2 @@
+help: Show Bridge firewall forward filter
+run: journalctl --no-hostname --boot -k | grep bri-FWD-filter

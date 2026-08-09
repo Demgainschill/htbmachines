@@ -1,0 +1,3 @@
+help: Clone the current system configuration to an image
+allowed: ${vyos_completion_dir}/list_images.py --no-running
+run: sudo ${vyos_op_scripts_dir}/file.py --clone $4

@@ -1,0 +1,2 @@
+help: Show allocated CGNAT parameters
+run: sudo ${vyos_op_scripts_dir}/cgnat.py show_allocation

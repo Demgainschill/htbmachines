@@ -1,0 +1,58 @@
+# Nmap 7.99 scan initiated Tue Jul  7 09:00:52 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA thefrizz_results 10.129.232.168
+Nmap scan report for 10.129.232.168
+Host is up (0.044s latency).
+Scanned at 2026-07-07 09:00:53 IST for 130s
+Not shown: 65515 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+22/tcp    open  ssh           OpenSSH for_Windows_9.5 (protocol 2.0)
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Apache httpd 2.4.58 (OpenSSL/3.1.3 PHP/8.2.12)
+|_http-server-header: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+|_http-title: Did not follow redirect to http://frizzdc.frizz.htb/home/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-07 10:31:33Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: frizz.htb, Site: Default-First-Site-Name)
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: frizz.htb, Site: Default-First-Site-Name)
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+3269/tcp  open  tcpwrapped
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49670/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+53340/tcp open  msrpc         Microsoft Windows RPC
+53344/tcp open  msrpc         Microsoft Windows RPC
+53354/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Hosts: localhost, FRIZZDC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: 
+|_  ERROR: Name query failed: TIMEOUT
+| smb2-time: 
+|   date: 2026-07-07T10:32:24
+|_  start_date: N/A
+| smb-security-mode: 
+|_  ERROR: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_clock-skew: 6h59m59s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb-os-discovery: 
+|_  ERROR: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Read from /usr/share/nmap: nmap-protocols nmap-service-probes nmap-services.
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul  7 09:03:03 2026 -- 1 IP address (1 host up) scanned in 130.12 seconds

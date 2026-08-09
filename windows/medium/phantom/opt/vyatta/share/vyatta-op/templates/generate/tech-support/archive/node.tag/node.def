@@ -1,0 +1,3 @@
+help: Generate tech support archive to defined location
+allowed: echo " <file> "
+run: sudo ${vyos_op_scripts_dir}/tech_support.py show --raw | gzip > $4.json.gz

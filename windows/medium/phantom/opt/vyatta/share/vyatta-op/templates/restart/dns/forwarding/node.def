@@ -1,0 +1,2 @@
+help: Restart DNS Forwarding service
+run: if cli-shell-api existsActive service dns forwarding; then sudo systemctl restart pdns-recursor.service; else echo "DNS forwarding not configured"; fi

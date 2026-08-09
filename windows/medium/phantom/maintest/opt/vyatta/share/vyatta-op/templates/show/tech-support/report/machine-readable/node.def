@@ -1,0 +1,2 @@
+help: Show consolidated tech-support report in JSON
+run: sudo ${vyos_op_scripts_dir}/tech_support.py show --raw

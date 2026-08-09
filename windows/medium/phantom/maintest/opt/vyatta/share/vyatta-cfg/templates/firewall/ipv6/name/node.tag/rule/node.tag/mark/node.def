@@ -1,0 +1,7 @@
+type: txt
+help: Firewall mark
+val_help: u32:0-2147483647; Firewall mark to match
+val_help: !u32:0-2147483647; Inverted Firewall mark to match
+val_help: <start-end>; Firewall mark range to match
+val_help: !<start-end>; Firewall mark inverted range to match
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric-exclude --allow-range --range 0-2147483647\"  --value \'$VAR(@)\'"; "Invalid value"

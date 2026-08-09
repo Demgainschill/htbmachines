@@ -1,0 +1,15 @@
+/.
+/etc
+/etc/vmware-tools
+/etc/vmware-tools/scripts
+/etc/vmware-tools/scripts/resume-vm-default.d
+/etc/vmware-tools/scripts/resume-vm-default.d/__pycache__
+/etc/vmware-tools/scripts/resume-vm-default.d/__pycache__/ether-resume.cpython-311.pyc
+/etc/vmware-tools/scripts/resume-vm-default.d/ether-resume.py
+/etc/vmware-tools/tools.conf
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/vyos-1x-vmware
+/usr/share/doc/vyos-1x-vmware/changelog.gz
+/usr/share/doc/vyos-1x-vmware/copyright

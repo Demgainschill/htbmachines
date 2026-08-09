@@ -1,0 +1,3 @@
+1e7d248527f65f9bad5fc772b01df84d  lib/modules/6.6.36-amd64-vyos/updates/drivers/net/ethernet/intel/ixgbevf/ixgbevf.ko
+d70c34ebacbe770273063b170b8c3d3a  usr/share/doc/vyos-intel-ixgbevf/changelog.gz
+689e733ab005d2ec7e7d291455bb18a1  usr/share/man/man7/ixgbevf.7.gz

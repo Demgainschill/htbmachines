@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# This script updates arpwatch's ethercode to vendor map using the information
+# provided in the ieee-data package. It is called as root by either arpwatch's
+# postinst script or in response to a user updating the ieee-database using the
+# `update-ieee-data` command.
+
+set -o nounset
+set -o errexit
+
+DIR=$1
+FILE=$2
+
+DST_DIR=/var/lib/arpwatch
+DST_FILE=ethercodes.db
+AWUSER="arpwatch"
+
+# we only want to act on oui.txt
+[ "${FILE}" = "oui.txt" ] || exit 0
+
+# if the input file does not exist, exit (ieee-data might not be installed and
+# arpwatch can live without ethercodes.db)
+[ -f "${DIR}/${FILE}" ] || exit 0
+
+# if the destination directory does not exist, arpwatch is not installed and
+# there is nothing to do
+[ -d "${DST_DIR}" ] || exit 0
+
+# if the arpwatch user does not exist, arpwatch is not installed
+getent passwd "${AWUSER}" > /dev/null || exit 0
+
+# as user arpwatch: create the new database with a .new suffix in the same
+# directory and move it to the correct place to update it atomically
+runuser -u "${AWUSER}" -- sh -c '
+	/usr/sbin/massagevendor "$1" > "${2}.new"
+	mv -f "${2}.new" "$2"' \
+		placeholder "${DIR}/${FILE}" "${DST_DIR}/${DST_FILE}"

@@ -1,0 +1,4 @@
+multi:
+type: txt
+help: Netmask or domain that we should enable EDNS subnet for
+val_help: txt; Netmask or domain

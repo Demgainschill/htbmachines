@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/libexec
+/usr/libexec/vyos
+/usr/libexec/vyos/completion
+/usr/libexec/vyos/completion/list_interfaces
+/usr/libexec/vyos/validate-value
+/usr/libexec/vyos/validators
+/usr/libexec/vyos/validators/file-path
+/usr/libexec/vyos/validators/numeric
+/usr/libexec/vyos/validators/url
+/usr/share
+/usr/share/doc
+/usr/share/doc/vyos-utils
+/usr/share/doc/vyos-utils/changelog.gz
+/usr/share/doc/vyos-utils/copyright

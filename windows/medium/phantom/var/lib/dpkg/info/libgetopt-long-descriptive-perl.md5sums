@@ -1,0 +1,9 @@
+227c5570e9767739c5c93b850d51408f  usr/share/doc/libgetopt-long-descriptive-perl/changelog.Debian.gz
+1b276d70b1ff0c4d273d5ea5fd94a2c0  usr/share/doc/libgetopt-long-descriptive-perl/changelog.gz
+2810e2caa61d42e0e005bfa444e7a6da  usr/share/doc/libgetopt-long-descriptive-perl/copyright
+3c0d8c6088863a9e96e961a711bb4631  usr/share/man/man3/Getopt::Long::Descriptive.3pm.gz
+5d5b58f364822c403526972f587603ba  usr/share/man/man3/Getopt::Long::Descriptive::Opts.3pm.gz
+3c5ee5c565ed71771c51934b8b574dab  usr/share/man/man3/Getopt::Long::Descriptive::Usage.3pm.gz
+5a7c5fddc71080d98700237508bbdf48  usr/share/perl5/Getopt/Long/Descriptive.pm
+5766a35c3fb6eb1de328cd3fae4d4127  usr/share/perl5/Getopt/Long/Descriptive/Opts.pm
+16eb947fd6e7e71c38921bc15d8ab769  usr/share/perl5/Getopt/Long/Descriptive/Usage.pm

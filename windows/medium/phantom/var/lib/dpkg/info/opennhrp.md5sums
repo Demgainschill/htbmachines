@@ -1,0 +1,5 @@
+0b61a6e99f8e547bc3b1febb496d284c  etc/racoon-ph1dead.sh
+b02b0375cb4ee4333b33f264d95bac6a  etc/racoon-ph1down.sh
+18b890d4dc5646fe7a5ba58e6823ad7c  usr/sbin/opennhrp
+9743097dc90a251565656ad4daff360f  usr/sbin/opennhrpctl
+36399f8d7a198addcfa1a4c60a22d4e3  usr/share/doc/opennhrp/changelog.gz

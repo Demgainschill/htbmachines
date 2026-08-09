@@ -1,0 +1,4 @@
+help: Delete a local file, possibly from an image
+comptype: imagefiles
+allowed: echo -n "<imagefiles>"
+run: sudo ${vyos_op_scripts_dir}/file.py --delete $3

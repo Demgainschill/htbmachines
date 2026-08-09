@@ -1,0 +1,2 @@
+help: Restart mDNS repeater service
+run: sudo systemctl restart avahi-daemon.service

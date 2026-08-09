@@ -1,0 +1,3 @@
+help: Monitor traffic dump from an interface
+allowed: ${vyos_completion_dir}/list_dumpable_interfaces.py
+run: ${vyos_op_scripts_dir}/tcpdump.py $4

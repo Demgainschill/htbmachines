@@ -1,0 +1,2 @@
+help: Show log for console server
+run: journalctl --no-hostname --boot --unit conserver-server.service

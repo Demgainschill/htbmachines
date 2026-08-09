@@ -1,0 +1,2 @@
+help: Monitor last lines of Secure Socket Tunneling Protocol client
+run: journalctl --no-hostname --boot --follow --unit "ppp@sstpc*.service"

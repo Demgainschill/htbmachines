@@ -1,0 +1,38 @@
+{
+  "frr-routing:routing": {
+    "control-plane-protocols": {
+      "control-plane-protocol": [
+        {
+          "type": "frr-staticd:staticd",
+          "name": "staticd",
+          "vrf": "default",
+          "frr-staticd:staticd": {
+            "route-list": [
+              {
+                "prefix": "0.0.0.0/0",
+                "afi-safi": "frr-routing:ipv4-unicast",
+                "path-list": [
+                  {
+                    "table-id": 0,
+                    "distance": 210,
+                    "tag": 210,
+                    "frr-nexthops": {
+                      "nexthop": [
+                        {
+                          "nh-type": "ip4-ifindex",
+                          "vrf": "default",
+                          "gateway": "192.168.1.1",
+                          "interface": "eth0"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+multi:
+type: txt
+help: MED attribute comparison parameters
+val_help: confed; Compare MEDs among confederation paths
+val_help: missing-as-worst; Treat missing route as a MED as the least preferred one
+allowed: echo "confed missing-as-worst"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(confed|missing-as-worst)\'   --value \'$VAR(@)\'"; "Invalid value"

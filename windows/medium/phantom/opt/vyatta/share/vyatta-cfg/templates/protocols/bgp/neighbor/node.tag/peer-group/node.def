@@ -1,0 +1,4 @@
+type: txt
+help: Peer group for this peer
+val_help: txt; Peer-group name
+allowed: /bin/cli-shell-api listNodes ${COMP_WORDS[@]:1:${#COMP_WORDS[@]}-5} peer-group

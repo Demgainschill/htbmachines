@@ -1,0 +1,9 @@
+3d88a8f57a5e5bf64cdf6a6119e84b17  usr/sbin/hsflowd
+1222fb8baf48e409b4ba870dc0881926  etc/dbus-1/system.d/net.sflow.hsflowd.conf
+79920e62a2caa45b2c943786ec86720e  etc/init.d/hsflowd
+ac13dd47d53e43cede076b2e98307340  etc/hsflowd/modules/mod_pcap.so
+c863fc104fc0ae20e4a631df0496c9d8  etc/hsflowd/modules/mod_dbus.so
+a7b5a45fd04cd93ec7aa1ea2699303c8  etc/hsflowd/modules/mod_json.so
+071a966eb57e6dcd9850d16eda95a0b7  etc/hsflowd/modules/mod_dnssd.so
+6817b7d182a75c9259f3d1541bfa7e4a  etc/hsflowd/modules/mod_dropmon.so
+c7504d393334ed92785866d3a5200d9e  etc/hsflowd.conf

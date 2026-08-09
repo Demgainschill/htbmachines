@@ -1,0 +1,21 @@
+Template: libhyperscan/cpu-ssse3
+Type: boolean
+Default: false
+Description: Really install package?
+ This CPU lacks support for the Supplemental Streaming SIMD Extensions
+ 3 (SSSE3) instruction set that is required to execute programs linked
+ against hyperscan.
+Description-de.UTF-8: Paket installieren?
+ Der CPU dieses Systems fehlt die "Supplemental Streaming SIMD Extensions 3" (SSSE3) Befehlssatzwerweiterung. Diese ist Voraussetzung, um Programme auszuführen, die die hyperscan-Bibliothek verwenden.
+Description-fr.UTF-8: Faut-il vraiment installer le paquet ?
+ Le processeur ne supporte pas le jeu d'instructions Supplemental Streaming SIMD Extensions 3 (SSSE3) nécessaire pour exécuter les programmes liés à hyperscan.
+Description-nl.UTF-8: Dit pakket echt installeren?
+ Deze CPU biedt geen ondersteuning voor de instructieset 'Supplemental Streaming SIMD Extensions 3 (SSSE3)'. Die is nodig voor het uitvoeren van programma's die met hyperscan gelinkt zijn.
+Description-pt.UTF-8: Tem a certeza que quer instalar o pacote?
+ Este CPU não possuí suporte a um conjunto de instruções de extensões Supplemental Streaming SIMD (SSS3) necessário para executar programas ligados ao hyperscan.
+Description-pt_BR.UTF-8: Realmente instalar o pacote?
+ Essa CPU não tem suporte ao conjunto de instruções "Supplemental Streaming SIMD Extensions 3" (SSSE3) que é necessário para executar programas lincados ao hyperscan.
+Description-ru.UTF-8: Действительно установить этот пакет?
+ У данного ЦП отсутствует поддержки набора инструкций Supplemental Streaming SIMD Extensions 3 (SSSE3), который требуется для выполнения программ, скомпонованных с hyperscan.
+Description-zh_TW.UTF-8: 確定安裝此套件?
+ CPU需支援 SSSE3 指令集, 才能執行 hyperscan

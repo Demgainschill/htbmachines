@@ -1,0 +1,2 @@
+help: DHCPv6 server lease
+run: ${vyos_op_scripts_dir}/dhcp.py clear_dhcp_server_lease --family inet6 --address $4

@@ -1,0 +1,3 @@
+help: Show CGNAT allocations for an external IP address
+allowed: echo "<x.x.x.x>"
+run: sudo ${vyos_op_scripts_dir}/cgnat.py show_allocation --external-address "$6"

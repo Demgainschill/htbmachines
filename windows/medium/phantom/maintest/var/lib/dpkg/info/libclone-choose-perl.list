@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libclone-choose-perl
+/usr/share/doc/libclone-choose-perl/changelog.Debian.gz
+/usr/share/doc/libclone-choose-perl/changelog.gz
+/usr/share/doc/libclone-choose-perl/copyright
+/usr/share/man
+/usr/share/man/man3
+/usr/share/man/man3/Clone::Choose.3pm.gz
+/usr/share/perl5
+/usr/share/perl5/Clone
+/usr/share/perl5/Clone/Choose.pm

@@ -1,0 +1,5 @@
+type: txt
+help: Vlan priority(pcp)
+val_help: u32:0-7; Vlan priority
+val_help: <start-end>; Vlan priority range to match
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --allow-range --range 0-7\"  --value \'$VAR(@)\'"; "Invalid value"

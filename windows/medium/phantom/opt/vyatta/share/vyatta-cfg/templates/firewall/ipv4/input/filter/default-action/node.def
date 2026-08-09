@@ -1,0 +1,6 @@
+type: txt
+help: Default-action for rule-set (default: accept)
+val_help: drop; Drop if no prior rules are hit
+val_help: accept; Accept if no prior rules are hit (default)
+allowed: echo "drop accept"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(drop|accept)\'   --value \'$VAR(@)\'"; "Invalid value"

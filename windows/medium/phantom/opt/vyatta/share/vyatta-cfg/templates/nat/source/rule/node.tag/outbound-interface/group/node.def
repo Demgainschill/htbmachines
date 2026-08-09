@@ -1,0 +1,5 @@
+type: txt
+help: Match interface-group
+val_help: txt; Interface-group name to match
+val_help: !txt; Inverted interface-group name to match
+allowed: /bin/cli-shell-api listNodes firewall group interface-group

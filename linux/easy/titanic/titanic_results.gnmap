@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Mon Aug  3 20:52:27 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 6000 -oA titanic_results 10.129.231.221
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.231.221 ()	Status: Up
+Host: 10.129.231.221 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.52/
+# Nmap done at Mon Aug  3 20:55:16 2026 -- 1 IP address (1 host up) scanned in 169.09 seconds

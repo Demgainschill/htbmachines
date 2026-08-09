@@ -1,0 +1,2 @@
+help: Show QoS detailed information for given class
+run: sudo ${vyos_op_scripts_dir}/qos.py show_shaper --ifname $5 --classn $7 --detail

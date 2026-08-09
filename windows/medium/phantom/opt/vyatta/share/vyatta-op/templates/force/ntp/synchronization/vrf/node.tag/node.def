@@ -1,0 +1,3 @@
+help: Force NTP time synchronization in given VRF
+allowed: /bin/cli-shell-api listActiveNodes vrf name | sed -e "s/'//g" && echo
+run: sudo ip vrf exec $5 chronyc makestep

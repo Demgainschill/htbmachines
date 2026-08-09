@@ -1,0 +1,2 @@
+/etc/strongswan.d/charon/eap-mschapv2.conf
+/etc/strongswan.d/charon/xauth-generic.conf

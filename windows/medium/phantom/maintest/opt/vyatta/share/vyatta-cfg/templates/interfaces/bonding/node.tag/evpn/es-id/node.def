@@ -1,0 +1,5 @@
+type: txt
+help: Ethernet segment identifier
+val_help: u32:1-16777215; Local discriminator
+val_help: txt; 10-byte ID - 00:11:22:33:44:55:AA:BB:CC:DD
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'([0-9A-Fa-f][0-9A-Fa-f]:){9}[0-9A-Fa-f][0-9A-Fa-f]\' --exec \"${vyos_validators_dir}/numeric --range 1-65535\"  --value \'$VAR(@)\'"; "Invalid value"

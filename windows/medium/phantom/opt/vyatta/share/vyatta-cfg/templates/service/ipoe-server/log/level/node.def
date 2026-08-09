@@ -1,0 +1,9 @@
+type: txt
+help: Specifies log level (default: 3)
+val_help: 0; Turn off logging
+val_help: 1; Log only error messages
+val_help: 2; Log error and warning messages
+val_help: 3; Log error, warning and minimum information messages (default)
+val_help: 4; Log error, warning and full information messages
+val_help: 5; Log all messages including debug messages
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 0-5\"  --value \'$VAR(@)\'"; "Invalid value"

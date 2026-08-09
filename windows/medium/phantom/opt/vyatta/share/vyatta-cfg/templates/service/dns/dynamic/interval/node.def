@@ -1,0 +1,5 @@
+type: txt
+help: Interval in seconds to wait between Dynamic DNS updates
+			(default: 300)
+val_help: u32:60-3600; Time in seconds
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 60-3600\"  --value \'$VAR(@)\'"; "Interval must be between 60 and 3600 seconds"

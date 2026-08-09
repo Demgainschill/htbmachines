@@ -1,0 +1,2 @@
+help: Show VNI information
+run: ${vyos_op_scripts_dir}/evpn.py show_evpn --command "$*"

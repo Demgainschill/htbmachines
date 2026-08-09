@@ -1,0 +1,7 @@
+75d44282e12565c572e38a04e92b72a1  usr/sbin/dhcrelay
+bd331f78a298b3b62ccb537a9bf81fdd  usr/share/doc/isc-dhcp-relay/NEWS.Debian.gz
+3ad026ee8a5a88d4bf53d8c65968a0ca  usr/share/doc/isc-dhcp-relay/README.gz
+69ac7518dac08f4abc661ba40ac499ce  usr/share/doc/isc-dhcp-relay/changelog.Debian.gz
+010baed8993701ab49afeced2044ac4e  usr/share/doc/isc-dhcp-relay/changelog.gz
+411dd0bc31f205338064fe8a0204e8f6  usr/share/doc/isc-dhcp-relay/copyright
+fb7ad4b793c2c315f8cfa442f3059075  usr/share/man/man8/dhcrelay.8.gz

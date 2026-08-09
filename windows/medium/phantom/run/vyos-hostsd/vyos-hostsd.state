@@ -1,0 +1,1 @@
+{"name_servers": {"dhcp-eth0": {"192.168.1.1": null}}, "name_server_tags_recursor": [], "name_server_tags_system": ["system"], "forward_zones": {}, "authoritative_zones": [], "hosts": {}, "host_name": "vyos", "domain_name": "", "search_domains": {}, "changes": 0}

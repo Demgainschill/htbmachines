@@ -1,0 +1,3 @@
+help: Show summary of specified virtual network interface (vif)
+			information
+run: ${vyos_op_scripts_dir}/interfaces.py show_summary --intf-name="$4.$6" --intf-type=ethernet

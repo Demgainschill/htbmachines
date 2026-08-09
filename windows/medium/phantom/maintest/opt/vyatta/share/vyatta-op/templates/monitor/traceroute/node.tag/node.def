@@ -1,0 +1,3 @@
+help: Monitor Traceroute and ping path to target
+allowed: echo "<hostname> <x.x.x.x> <h:h:h:h:h:h:h:h>"
+run: ${vyos_op_scripts_dir}/mtr.py ${@:3}

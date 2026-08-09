@@ -1,0 +1,6 @@
+Module: null
+[default=1]			pam_permit.so
+Module: mkhomedir
+required        pam_mkhomedir.so umask=0022 skel=/etc/skel
+Module: unix
+required	pam_unix.so

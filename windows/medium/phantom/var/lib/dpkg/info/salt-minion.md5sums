@@ -1,0 +1,8 @@
+ab9c672b9f23b998d13f303e77350567  lib/systemd/system/salt-minion.service
+4f4032d1b7fd9a980cfde14dc5d7a486  lib/systemd/system/salt-proxy@.service
+0cfc87197a88ffbbcea0d2d0179c5095  usr/bin/salt-minion
+9f5b660c7475022d6f2672c37c03208d  usr/bin/salt-proxy
+ec663451e9beea44106521af0b9ce7e9  usr/share/doc/salt-minion/changelog.Debian.gz
+673737390489fce85cdd04eb10382539  usr/share/doc/salt-minion/copyright
+33c7d224b5f2741fe274aad70faaf2b5  usr/share/man/man1/salt-minion.1.gz
+5e590b76f09e6ddc2b7b073964f04d4d  usr/share/man/man1/salt-proxy.1.gz

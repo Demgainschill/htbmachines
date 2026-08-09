@@ -1,0 +1,24 @@
+GhostProtocolZero/energy/grid/frequency {"timestamp":"2026-16-07-06:09:26","node":"node-3","telemetry":{"ip":"10.4.23.11","loadPercent":94,"hz":145004056.6}}
+GhostProtocolZero/identity/trust-provider/state {"timestamp":"2026-16-07-06:09:26","node":"node-2","telemetry":{"ip":"10.2.45.56","tokenValidation":"intermittent","authErrors":4}}
+GhostProtocolZero/network/node/healthcheck {"timestamp":"2026-16-07-06:09:26","node":"node-1","telemetry":{"healthy":false,"url":"https://core-telecom.ghostlink.htb/keepalive","lastCheckSecAgo":41,"ip":"10.1.12.34"}}
+GhostProtocolZero/network/node/keepalive {"timestamp":"2026-16-07-06:09:26","node":"node-2","telemetry":{"rttMs":182,"status":"timeout","url":"https://energy-grid.ghostlink.htb/canary","ip":"10.2.45.56"}}
+GhostProtocolZero/space/satellite/timing-drift {"timestamp":"2026-16-07-06:09:26","node":"node-3","telemetry":{"driftNs":247,"ip":"10.4.23.11","syncState":"locked"}}
+GhostProtocolZero/telecom/core-routing/health {"timestamp":"2026-16-07-06:09:26","node":"node-1","telemetry":{"ip":"10.1.12.34","packetLoss":3113339015,"routeStability":"stable"}}
+GhostProtocolZero/transport/logistics/status {"timestamp":"2026-16-07-06:09:26","node":"node-2","telemetry":{"throughput":65,"anomaly":"none","ip":"10.2.45.56"}}
+GhostProtocolZero/systems/node/domain/healthcheck {"timestamp":"2026-16-07-06:09:40","node":"node-4","telemetry":{"healthy":true,"url":"dc01.ghostlink.htb/healthcheck","latencyMs":22,"ip":"10.129.7.32"}}
+GhostProtocolZero/systems/node/repository/healthcheck {"timestamp":"2026-16-07-06:09:40","node":"node-5","telemetry":{"healthy":true,"url":"gpz-op26-toolkits.ghostlink.htb/healthcheck","lastCheckSecAgo":17,"responseCode":"200","ip":"172.16.20.20"}}
+GhostProtocolZero/systems/node/secureshare/healthcheck {"timestamp":"2026-16-07-06:09:40","node":"node-6","telemetry":{"healthy":true,"url":"gpz-op26-secure.ghostlink.htb/healthcheck","lastCheckSecAgo":54,"responseCode":"200","ip":"172.16.20.10"}}
+$SYS/brokers/client_status/mqttui-c426aed2 {"status":"online", "username":"(null)", "ts":1784208710889,"proto_name":"MQTT","keepalive":60,"return_code":"0","proto_ver":4,"client_id":"mqttui-c426aed2","clean_start":1, "IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-c426aed2 {"status":"offline", "username":"(null)","ts":1784208710889,"reason_code":"0","client_id":"mqttui-c426aed2","IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-8faf0780 {"status":"online", "username":"(null)", "ts":1784208712958,"proto_name":"MQTT","keepalive":60,"return_code":"0","proto_ver":4,"client_id":"mqttui-8faf0780","clean_start":1, "IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-8faf0780 {"status":"offline", "username":"(null)","ts":1784208712958,"reason_code":"0","client_id":"mqttui-8faf0780","IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-208a443e {"status":"online", "username":"(null)", "ts":1784208715027,"proto_name":"MQTT","keepalive":60,"return_code":"0","proto_ver":4,"client_id":"mqttui-208a443e","clean_start":1, "IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-208a443e {"status":"offline", "username":"(null)","ts":1784208715029,"reason_code":"0","client_id":"mqttui-208a443e","IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-de2e11d9 {"status":"online", "username":"(null)", "ts":1784208717084,"proto_name":"MQTT","keepalive":60,"return_code":"0","proto_ver":4,"client_id":"mqttui-de2e11d9","clean_start":1, "IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-de2e11d9 {"status":"offline", "username":"(null)","ts":1784208717086,"reason_code":"0","client_id":"mqttui-de2e11d9","IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-48d0e000 {"status":"online", "username":"(null)", "ts":1784208719150,"proto_name":"MQTT","keepalive":60,"return_code":"0","proto_ver":4,"client_id":"mqttui-48d0e000","clean_start":1, "IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-48d0e000 {"status":"offline", "username":"(null)","ts":1784208719150,"reason_code":"0","client_id":"mqttui-48d0e000","IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-3fe4290f {"status":"online", "username":"(null)", "ts":1784208721221,"proto_name":"MQTT","keepalive":60,"return_code":"0","proto_ver":4,"client_id":"mqttui-3fe4290f","clean_start":1, "IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-3fe4290f {"status":"offline", "username":"(null)","ts":1784208721223,"reason_code":"0","client_id":"mqttui-3fe4290f","IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-efab1f29 {"status":"online", "username":"(null)", "ts":1784208723271,"proto_name":"MQTT","keepalive":60,"return_code":"0","proto_ver":4,"client_id":"mqttui-efab1f29","clean_start":1, "IPv4":"127.0.0.1"}
+$SYS/brokers/client_status/mqttui-efab1f29 {"status":"offline", "username":"(null)","ts":1784208723271,"reason_code":"0","client_id":"mqttui-efab1f29","IPv4":"127.0.0.1"}

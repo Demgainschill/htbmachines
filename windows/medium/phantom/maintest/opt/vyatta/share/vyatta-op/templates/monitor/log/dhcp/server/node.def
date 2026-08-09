@@ -1,0 +1,2 @@
+help: Monitor last lines of DHCP server log
+run: journalctl --no-hostname --follow --boot --unit kea-dhcp4-server.service

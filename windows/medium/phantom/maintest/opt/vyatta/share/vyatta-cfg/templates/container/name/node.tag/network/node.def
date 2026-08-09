@@ -1,0 +1,5 @@
+tag:
+type: txt
+help: Attach user defined network to container
+allowed: /bin/cli-shell-api listNodes container network
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[-_a-zA-Z0-9]{1,11}\'   --value \'$VAR(@)\'"; "Network name cannot be longer than 11 characters"

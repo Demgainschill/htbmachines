@@ -1,0 +1,13 @@
+cce7b7109bc2580beb5566ac63a64cb9  usr/lib/python3/dist-packages/inotify-0.2.10.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/inotify-0.2.10.egg-info/dependency_links.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/inotify-0.2.10.egg-info/not-zip-safe
+401505891e85ad065ef35bba0e2cc96f  usr/lib/python3/dist-packages/inotify-0.2.10.egg-info/top_level.txt
+658c027032949e7d82a20c2e5deafac2  usr/lib/python3/dist-packages/inotify/__init__.py
+161fff6b663ad9d9d65d6aab4bc5bddf  usr/lib/python3/dist-packages/inotify/adapters.py
+e73975c960448b3b42a2ce1d2c33e5a1  usr/lib/python3/dist-packages/inotify/calls.py
+b0e2fcd424f2d3eb58b142982a8306f4  usr/lib/python3/dist-packages/inotify/constants.py
+c0544c63008caa03b0ac4c883999e453  usr/lib/python3/dist-packages/inotify/library.py
+b3d747bc8831bf298fc81c1365e5de1d  usr/lib/python3/dist-packages/inotify/resources/README.rst
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/inotify/resources/requirements.txt
+45a528c66100805b79f894d3f266f568  usr/lib/python3/dist-packages/inotify/test_support.py
+90775ea516f595874858368d33f70269  usr/share/doc/python3-inotify/changelog.Debian.gz

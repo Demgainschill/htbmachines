@@ -1,0 +1,2 @@
+help: Show log for DHCPv6 server
+run: journalctl --no-hostname --boot --unit kea-dhcp6-server.service

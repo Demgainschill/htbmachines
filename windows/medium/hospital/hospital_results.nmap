@@ -1,0 +1,144 @@
+# Nmap 7.99 scan initiated Sat Jul 18 08:42:49 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA hospital_results 10.129.229.189
+Nmap scan report for hospital.htb (10.129.229.189)
+Host is up (0.077s latency).
+Not shown: 65506 filtered tcp ports (no-response)
+PORT     STATE SERVICE           VERSION
+22/tcp   open  ssh               OpenSSH 9.0p1 Ubuntu 1ubuntu8.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 e1:4b:4b:3a:6d:18:66:69:39:f7:aa:74:b3:16:0a:aa (ECDSA)
+|_  256 96:c1:dc:d8:97:20:95:e7:01:5f:20:a2:43:61:cb:ca (ED25519)
+53/tcp   open  domain            Simple DNS Plus
+88/tcp   open  kerberos-sec      Microsoft Windows Kerberos (server time: 2026-07-18 10:13:31Z)
+135/tcp  open  msrpc             Microsoft Windows RPC
+139/tcp  open  netbios-ssn       Microsoft Windows netbios-ssn
+389/tcp  open  ldap              Microsoft Windows Active Directory LDAP (Domain: hospital.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC
+| Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb
+| Issuer: commonName=DC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-09-06T10:49:03
+| Not valid after:  2028-09-06T10:49:03
+| MD5:     04b1 adfe 746a 788e 36c0 802a bdf3 3119
+| SHA-1:   17e5 8592 278f 4e8f 8ce1 554c 3550 9c02 2825 91e3
+|_SHA-256: 1931 f7e1 41f1 a2b9 95fb 9739 6037 05ba d0f8 6683 7053 9b47 1863 4243 e911 cbba
+443/tcp  open  ssl/http          Apache httpd 2.4.56 ((Win64) OpenSSL/1.1.1t PHP/8.0.28)
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Hospital Webmail :: Welcome to Hospital Webmail
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:     a0a4 4cc9 9e84 b26f 9e63 9f9e d229 dee0
+| SHA-1:   b023 8c54 7a90 5bfa 119c 4e8b acca eacf 3649 1ff6
+|_SHA-256: 0169 7338 0c0f 1df0 0bd9 593e d8d5 efa3 706c d6df 7993 f614 1272 b805 22ac dd23
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: 924A68D347C80D0E502157E83812BB23
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http        Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ldapssl?
+| ssl-cert: Subject: commonName=DC
+| Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb
+| Issuer: commonName=DC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-09-06T10:49:03
+| Not valid after:  2028-09-06T10:49:03
+| MD5:     04b1 adfe 746a 788e 36c0 802a bdf3 3119
+| SHA-1:   17e5 8592 278f 4e8f 8ce1 554c 3550 9c02 2825 91e3
+|_SHA-256: 1931 f7e1 41f1 a2b9 95fb 9739 6037 05ba d0f8 6683 7053 9b47 1863 4243 e911 cbba
+1801/tcp open  msmq?
+2103/tcp open  msrpc             Microsoft Windows RPC
+2105/tcp open  msrpc             Microsoft Windows RPC
+2107/tcp open  msrpc             Microsoft Windows RPC
+2179/tcp open  vmrdp?
+3268/tcp open  ldap              Microsoft Windows Active Directory LDAP (Domain: hospital.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC
+| Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb
+| Issuer: commonName=DC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-09-06T10:49:03
+| Not valid after:  2028-09-06T10:49:03
+| MD5:     04b1 adfe 746a 788e 36c0 802a bdf3 3119
+| SHA-1:   17e5 8592 278f 4e8f 8ce1 554c 3550 9c02 2825 91e3
+|_SHA-256: 1931 f7e1 41f1 a2b9 95fb 9739 6037 05ba d0f8 6683 7053 9b47 1863 4243 e911 cbba
+3269/tcp open  globalcatLDAPssl?
+| ssl-cert: Subject: commonName=DC
+| Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb
+| Issuer: commonName=DC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-09-06T10:49:03
+| Not valid after:  2028-09-06T10:49:03
+| MD5:     04b1 adfe 746a 788e 36c0 802a bdf3 3119
+| SHA-1:   17e5 8592 278f 4e8f 8ce1 554c 3550 9c02 2825 91e3
+|_SHA-256: 1931 f7e1 41f1 a2b9 95fb 9739 6037 05ba d0f8 6683 7053 9b47 1863 4243 e911 cbba
+3389/tcp open  ms-wbt-server     Microsoft Terminal Services
+| ssl-cert: Subject: commonName=DC.hospital.htb
+| Issuer: commonName=DC.hospital.htb
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-17T10:08:54
+| Not valid after:  2027-01-16T10:08:54
+| MD5:     23ae 6594 1584 b0da d921 b3cb 1b86 203b
+| SHA-1:   d82d ab61 1c60 305d 7fe4 e761 02b7 4095 f461 4954
+|_SHA-256: e326 02a0 16a9 c0d9 4c81 c12f b556 81be 80bc 45e9 953d 4de7 907a c25f bc38 3083
+| rdp-ntlm-info: 
+|   Target_Name: HOSPITAL
+|   NetBIOS_Domain_Name: HOSPITAL
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: hospital.htb
+|   DNS_Computer_Name: DC.hospital.htb
+|   DNS_Tree_Name: hospital.htb
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-07-18T10:14:28+00:00
+5985/tcp open  http              Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+6016/tcp open  msrpc             Microsoft Windows RPC
+6404/tcp open  msrpc             Microsoft Windows RPC
+6406/tcp open  ncacn_http        Microsoft Windows RPC over HTTP 1.0
+6407/tcp open  msrpc             Microsoft Windows RPC
+6409/tcp open  msrpc             Microsoft Windows RPC
+6612/tcp open  msrpc             Microsoft Windows RPC
+6619/tcp open  msrpc             Microsoft Windows RPC
+8080/tcp open  http              Apache httpd 2.4.55 ((Ubuntu))
+|_http-server-header: Apache/2.4.55 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-title: Login
+|_Requested resource was login.php
+|_http-open-proxy: Proxy might be redirecting requests
+9389/tcp open  mc-nmf            .NET Message Framing
+Service Info: Host: DC; OSs: Linux, Windows; CPE: cpe:/o:linux:linux_kernel, cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-07-18T10:14:29
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 6h59m46s, deviation: 0s, median: 6h59m45s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul 18 08:45:21 2026 -- 1 IP address (1 host up) scanned in 152.98 seconds

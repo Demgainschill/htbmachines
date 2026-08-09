@@ -1,0 +1,5 @@
+898a915a07796d47c54f09a926f35290  usr/bin/minisign
+09d1ba12d8a5830f4247b39f36ec4a04  usr/share/doc/minisign/README.md
+5f3ad286b32b38e7705fdc72a17337b0  usr/share/doc/minisign/changelog.Debian.gz
+efe843857c25f758e4d463d8d1aaff7a  usr/share/doc/minisign/copyright
+60e045edd737af1698d1ecd327e9ef6e  usr/share/man/man1/minisign.1.gz

@@ -1,0 +1,2 @@
+help: Output log in a colored fashion
+run: SYSTEMD_LOG_COLOR=false grc journalctl --no-hostname --follow --boot

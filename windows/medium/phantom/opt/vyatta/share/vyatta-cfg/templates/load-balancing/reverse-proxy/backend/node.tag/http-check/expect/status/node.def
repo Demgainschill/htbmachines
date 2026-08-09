@@ -1,0 +1,4 @@
+type: txt
+help: Expected response status code for the health check to pass
+val_help: u32:200-399; Expected response code
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 200-399\"  --value \'$VAR(@)\'"; "Status code must be in range 200-399"

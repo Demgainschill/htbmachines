@@ -1,0 +1,3 @@
+help: Show custom Bridge firewall log
+allowed: /bin/cli-shell-api listActiveNodes firewall bridge name | sed -e "s/'//g" && echo
+run: journalctl --no-hostname --boot -k | grep bri-NAM-$6

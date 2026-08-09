@@ -1,0 +1,3 @@
+help: Display information for a route distinguisher
+allowed: echo "ASN:NN IPADDRESS:NN all"
+run: ${vyos_op_scripts_dir}/vtysh_wrapper.sh $@

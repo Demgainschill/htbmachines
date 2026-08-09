@@ -1,0 +1,11 @@
+libcapnp 0.9.2 libcapnp-0.9.2
+libcapnp-json 0.9.2 libcapnp-0.9.2
+libcapnp-rpc 0.9.2 libcapnp-0.9.2
+libcapnpc 0.9.2 libcapnp-0.9.2
+libcapnp-websocket 0.9.2 libcapnp-0.9.2
+libkj 0.9.2 libcapnp-0.9.2
+libkj-async 0.9.2 libcapnp-0.9.2
+libkj-http 0.9.2 libcapnp-0.9.2
+libkj-test 0.9.2 libcapnp-0.9.2
+libkj-gzip 0.9.2 libcapnp-0.9.2
+libkj-tls 0.9.2 libcapnp-0.9.2

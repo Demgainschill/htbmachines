@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Fri Jul 17 21:37:54 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA overwatch_results 10.129.244.81 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p- -v -sV -sC -Pn -&#45;min-rate 4000 -oA overwatch_results 10.129.244.81" start="1784304474" startstr="Fri Jul 17 21:37:54 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1784304474"/>
+<taskend task="NSE" time="1784304474"/>
+<taskbegin task="NSE" time="1784304474"/>
+<taskend task="NSE" time="1784304474"/>
+<taskbegin task="NSE" time="1784304474"/>
+<taskend task="NSE" time="1784304474"/>
+<taskbegin task="SYN Stealth Scan" time="1784304474"/>
+<taskprogress task="SYN Stealth Scan" time="1784304478" percent="7.78" remaining="48" etc="1784304525"/>
+<taskprogress task="SYN Stealth Scan" time="1784304478" percent="8.28" remaining="45" etc="1784304522"/>
+<taskend task="SYN Stealth Scan" time="1784304523" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1784304523"/>
+<taskend task="Service scan" time="1784304578" extrainfo="23 services on 1 host"/>
+<taskbegin task="NSE" time="1784304578"/>
+<taskend task="NSE" time="1784304619"/>
+<taskbegin task="NSE" time="1784304619"/>
+<taskend task="NSE" time="1784304623"/>
+<taskbegin task="NSE" time="1784304623"/>
+<taskend task="NSE" time="1784304623"/>
+<host starttime="1784304474" endtime="1784304623"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.244.81" addrtype="ipv4"/>
+<hostnames>
+<hostname name="overwatch.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65512">
+<extrareasons reason="no-response" count="65512" proto="tcp" ports="1-52,54-87,89-134,136-138,140-388,390-444,446-463,465-592,594-635,637-3267,3270-3388,3390-5984,5986-6519,6521-9388,9390-49663,49665-49667,49669-60447,60449,60451-62475,62478-62483,62485-62500,62502-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-07-17 16:09:35Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: overwatch.htb, Site: Default-First-Site-Name" hostname="S200401" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: overwatch.htb, Site: Default-First-Site-Name" hostname="S200401" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=S200401.overwatch.htb&#xa;Issuer: commonName=S200401.overwatch.htb&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-05-12T14:36:16&#xa;Not valid after:  2026-11-11T14:36:16&#xa;MD5:     6a0f b3fa ecc9 c795 b2f3 cf32 8a50 df68&#xa;SHA-1:   278d d2fc 146c f8d6 4c5c 9c21 fa78 a428 f5e8 e352&#xa;SHA-256: b60e 3dd3 51ce 872d 6b85 23fb 0068 8f95 f596 a2a8 2d4e fc32 0b7a 9e53 dff6 21f8"><table key="subject">
+<elem key="commonName">S200401.overwatch.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">S200401.overwatch.htb</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">F89A54FD0F37BBEF4BF8F4A1B2C89DA32831955F5E17679E82EFA7BBA976C0568698C4D997A8867631EEBD8E9C853F5D9A56FD7B7FD6F6382DBCA2B31D5E3F6687968C8C49407BB7625BA7C577DC2A867D8761DED8664E704EC4994EC64AEB7D0B04F8380DAF7CD35670083388C3943DC4D5BAAF756A795A94B694C2DCF466D54071982A4191AC3E37BC205CA4E56E22DB6C9C47448135457CFE66A63676A26DE8B6301A501E70EDBB97BBDE54B1069902E9EA9CC2AFB528C26395CC7189F2332186198DAB43B6A39435688FF5CBEA087A5CB757E5B2F538C203D9715AE088BE38EF608CF92CDF8410D972E749330B9B33621D5BCAEB697ED890997AE3EC5D45</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-05-12T14:36:16</elem>
+<elem key="notAfter">2026-11-11T14:36:16</elem>
+</table>
+<elem key="md5">6a0fb3faecc9c795b2f3cf328a50df68</elem>
+<elem key="sha1">278dd2fc146cf8d64c5c9c21fa78a428f5e8e352</elem>
+<elem key="sha256">b60e3dd351ce872d6b8523fb00688f95f596a2a82d4efc320b7a9e53dff621f8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC7jCCAdagAwIBAgIQbrjFyWfF04RHolKDebbrFjANBgkqhkiG9w0BAQsFADAg&#xa;MR4wHAYDVQQDExVTMjAwNDAxLm92ZXJ3YXRjaC5odGIwHhcNMjYwNTEyMTQzNjE2&#xa;WhcNMjYxMTExMTQzNjE2WjAgMR4wHAYDVQQDExVTMjAwNDAxLm92ZXJ3YXRjaC5o&#xa;dGIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQD4mlT9Dze770v49KGy&#xa;yJ2jKDGVX14XZ56C76e7qXbAVoaYxNmXqIZ2Me69jpyFP12aVv17f9b2OC28orMd&#xa;Xj9mh5aMjElAe7diW6fFd9wqhn2HYd7YZk5wTsSZTsZK630LBPg4Da9801ZwCDOI&#xa;w5Q9xNW6r3VqeVqUtpTC3PRm1UBxmCpBkaw+N7wgXKTlbiLbbJxHRIE1RXz+ZqY2&#xa;dqJt6LYwGlAecO27l7veVLEGmQLp6pzCr7UowmOVzHGJ8jMhhhmNq0O2o5Q1aI/1&#xa;y+oIely3V+Wy9TjCA9lxWuCIvjjvYIz5LN+EENly50kzC5szYh1byutpftiQmXrj&#xa;7F1FAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDAN&#xa;BgkqhkiG9w0BAQsFAAOCAQEAbsXqeMjpifKMGQD1PD6SElJzWUacTvtbIov5eU2x&#xa;UeOXGkelr4/0wUHJH4ReGqDU5ZNzoi+d9v0+iD1g3f1mjdGV9ivcQULuxMl2OEc8&#xa;ZjAXFiMFsNZKrU1belY+1pmXP4ih5iplbKvu3h/pzwtDx76srsk36/qw0PqWohSF&#xa;/62LcGZWM+i7jca9w+ps+C6jGtLFR2L7GhSB2pdEsp3igHR7oCDVDkN9pEtOi8r+&#xa;pY0s1fTI7k5KyTMoclc4qKAp+AqknQQZrHPuBTT8d+T4ikd/OUtA2ZRWaxj9YZKt&#xa;4t2pgdRXCAXNgZAUMTAI2upiNieoiYdf6GnUu58flUkCaA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: OVERWATCH&#xa;  NetBIOS_Domain_Name: OVERWATCH&#xa;  NetBIOS_Computer_Name: S200401&#xa;  DNS_Domain_Name: overwatch.htb&#xa;  DNS_Computer_Name: S200401.overwatch.htb&#xa;  DNS_Tree_Name: overwatch.htb&#xa;  Product_Version: 10.0.20348&#xa;  System_Time: 2026-07-17T16:10:21+00:00"><elem key="Target_Name">OVERWATCH</elem>
+<elem key="NetBIOS_Domain_Name">OVERWATCH</elem>
+<elem key="NetBIOS_Computer_Name">S200401</elem>
+<elem key="DNS_Domain_Name">overwatch.htb</elem>
+<elem key="DNS_Computer_Name">S200401.overwatch.htb</elem>
+<elem key="DNS_Tree_Name">overwatch.htb</elem>
+<elem key="Product_Version">10.0.20348</elem>
+<elem key="System_Time">2026-07-17T16:10:21+00:00</elem>
+</script><script id="ssl-date" output="2026-07-17T16:10:58+00:00; +39s from scanner time."><elem key="date">2026-07-17T16:10:58+00:00</elem>
+<elem key="delta">39.0</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="6520"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-sql-s" product="Microsoft SQL Server 2022" version="16.00.1000.00; RTM" method="probed" conf="10"><cpe>cpe:/a:microsoft:sql_server:2019</cpe></service><script id="ms-sql-info" output="&#xa;  10.129.244.81:6520: &#xa;    Version: &#xa;      name: Microsoft SQL Server 2022 RTM&#xa;      number: 16.00.1000.00&#xa;      Product: Microsoft SQL Server 2022&#xa;      Service pack level: RTM&#xa;      Post-SP patches applied: false&#xa;    TCP port: 6520"><table key="10.129.244.81:6520">
+<table key="Version">
+<elem key="name">Microsoft SQL Server 2022 RTM</elem>
+<elem key="number">16.00.1000.00</elem>
+<elem key="Product">Microsoft SQL Server 2022</elem>
+<elem key="Service pack level">RTM</elem>
+<elem key="Post-SP patches applied">false</elem>
+</table>
+<elem key="TCP port">6520</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 3072&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-07-17T14:33:06&#xa;Not valid after:  2056-07-17T14:33:06&#xa;MD5:     a24e aadf 5655 5c2f f164 fd8a e42a cc9f&#xa;SHA-1:   ae1b 317a e5fd e9d9 1c72 5840 373d 8887 638d 2fa3&#xa;SHA-256: c8fd 4a41 8860 f821 e67f 450e b7a1 4b34 1d60 9f12 84f4 9ea4 d658 a599 0075 a25c"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="modulus">D13F45F80F1E19CC1F0A4D4176B7AFAD8BEC14B334B765AAAF26AE4341B39DF0E5257A9D6635B803798E1E3E6ACF8EC0EF7A624BE25928469C6D199D403F6737EDA55159E1B60F5EE364CAC6C0A54878C64550BD1D5F4B1C8A4058B5A90BEC1CF80D49366AF221923CD466AB9CB4B5B2DF198BC53C5D6A77D9396560033B0146A87E279BE8D14673535F8BC1998E8E198F316BF11AE76A620D98674DEE33631CD0DB30B4C2C0C0860AC880869127E6D915A8041FB1EBB471CE04C1244A6271DC67B1DD44D4FFD29CCFF21D76AAEB92202CCF150A7467DAD22C4DFD84CA5C31558B83F7B975D07971E16B81DAD53E4E84E92951E7B84C50D95FFF99245916B81C7008ABC430401AB7143AE18ACED7E7E349A35B281D0B186FFE8160F74B10C7F77055F6A1F514C346640303C95AD825BBEDE58D090703207B400E37C45B0C869B60850969C31DB441CF7B49FEC82FBD4DA3E0367033C487D0A098BFE0EA6BD52CAD9E9C20835ADBEA48AEC8A0138D059C1208594CA9E5CD2996F302B1576EBDD1</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-17T14:33:06</elem>
+<elem key="notAfter">2056-07-17T14:33:06</elem>
+</table>
+<elem key="md5">a24eaadf56555c2ff164fd8ae42acc9f</elem>
+<elem key="sha1">ae1b317ae5fde9d91c725840373d8887638d2fa3</elem>
+<elem key="sha256">c8fd4a418860f821e67f450eb7a14b341d609f1284f49ea4d658a5990075a25c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEADCCAmigAwIBAgIQIlOFWzLdP4RGw5Pwvs96MzANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjYwNzE3MTQzMzA2WhgPMjA1NjA3MTcxNDMzMDZaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBANE/RfgP&#xa;HhnMHwpNQXa3r62L7BSzNLdlqq8mrkNBs53w5SV6nWY1uAN5jh4+as+OwO96Ykvi&#xa;WShGnG0ZnUA/ZzftpVFZ4bYPXuNkysbApUh4xkVQvR1fSxyKQFi1qQvsHPgNSTZq&#xa;8iGSPNRmq5y0tbLfGYvFPF1qd9k5ZWADOwFGqH4nm+jRRnNTX4vBmY6OGY8xa/Ea&#xa;52piDZhnTe4zYxzQ2zC0wsDAhgrIgIaRJ+bZFagEH7HrtHHOBMEkSmJx3Gex3UTU&#xa;/9Kcz/IddqrrkiAszxUKdGfa0ixN/YTKXDFVi4P3uXXQeXHha4Ha1T5OhOkpUee4&#xa;TFDZX/+ZJFkWuBxwCKvEMEAatxQ64YrO1+fjSaNbKB0LGG/+gWD3SxDH93BV9qH1&#xa;FMNGZAMDyVrYJbvt5Y0JBwMge0AON8RbDIabYIUJacMdtEHPe0n+yC+9TaPgNnAz&#xa;xIfQoJi/4Opr1Sytnpwgg1rb6kiuyKATjQWcEghZTKnlzSmW8wKxV2690QIDAQAB&#xa;MA0GCSqGSIb3DQEBCwUAA4IBgQCM9o0onpl/PFIJnTlas3L/3Yl9+jzYTV4brxko&#xa;W9Huo+p8A0PljbRFSimns+X5IOiuByUylhpm8yjsWFF0SRZhkLVmUOWpLSK0bxxA&#xa;60CLdleDUq5yh/nbrabfIAEhc501tNW+GTMqWh0RNg9v3B+zSAxUq841ors+ja4Y&#xa;refyN7V55N1SktNWH7tSFQgAm0NnqCWRKJYrUKPsH5j0C35x6iiqHy3bciitnNcz&#xa;magpYrpWmAYjwNQj7CpXt6dJ008CXwlpQnyO0NIh7GcCH5fctzc2MTuCDRkJr2TI&#xa;v0E0X/B96NFx50astomyeYPoJ6+g4JzV9NcGB/MpCA2C2dgLDQIA3SfnfSbgR3uV&#xa;3ghVtPTZdCbgLeG36ptJGkLXBup8e2RO/zIWaNzhjPgZLuke28lyeJMlv6y+QWT+&#xa;UinEmVrCBECAXbHxYwCbwNZDecCo8969ZltTNxxKWfpavImFlRfVZ7mIZ/x9QGbi&#xa;izrf/I90WxtNr2W8yHatrGov4/k=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ms-sql-ntlm-info" output="&#xa;  10.129.244.81:6520: &#xa;    Target_Name: OVERWATCH&#xa;    NetBIOS_Domain_Name: OVERWATCH&#xa;    NetBIOS_Computer_Name: S200401&#xa;    DNS_Domain_Name: overwatch.htb&#xa;    DNS_Computer_Name: S200401.overwatch.htb&#xa;    DNS_Tree_Name: overwatch.htb&#xa;    Product_Version: 10.0.20348"><table key="10.129.244.81:6520">
+<elem key="Target_Name">OVERWATCH</elem>
+<elem key="NetBIOS_Domain_Name">OVERWATCH</elem>
+<elem key="NetBIOS_Computer_Name">S200401</elem>
+<elem key="DNS_Domain_Name">overwatch.htb</elem>
+<elem key="DNS_Computer_Name">S200401.overwatch.htb</elem>
+<elem key="DNS_Tree_Name">overwatch.htb</elem>
+<elem key="Product_Version">10.0.20348</elem>
+</table>
+</script><script id="ssl-date" output="2026-07-17T16:10:58+00:00; +39s from scanner time."><elem key="date">2026-07-17T16:10:58+00:00</elem>
+<elem key="delta">39.0</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="60448"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="60450"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="62476"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="62477"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="62484"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="62501"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2026-07-17T16:10:23&#xa;  start_date: N/A"><elem key="date">2026-07-17T16:10:23</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: 40s, deviation: 1s, median: 40s"><elem key="count">5</elem>
+<elem key="median">40</elem>
+<elem key="mean">40</elem>
+<elem key="stddev">1</elem>
+</script></hostscript><times srtt="99608" rttvar="23726" to="194512"/>
+</host>
+<taskbegin task="NSE" time="1784304623"/>
+<taskend task="NSE" time="1784304623"/>
+<taskbegin task="NSE" time="1784304623"/>
+<taskend task="NSE" time="1784304623"/>
+<taskbegin task="NSE" time="1784304623"/>
+<taskend task="NSE" time="1784304623"/>
+<runstats><finished time="1784304623" timestr="Fri Jul 17 21:40:23 2026" summary="Nmap done at Fri Jul 17 21:40:23 2026; 1 IP address (1 host up) scanned in 149.12 seconds" elapsed="149.12" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,2 @@
+# Nmap 7.99 scan initiated Sat Jul 18 08:36:49 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA job_results 10.129.234.73
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)

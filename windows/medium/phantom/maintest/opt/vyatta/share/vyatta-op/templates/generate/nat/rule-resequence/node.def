@@ -1,0 +1,2 @@
+help: Resequence rules
+run: ${vyos_op_scripts_dir}/generate_service_rule-resequence.py --service $2

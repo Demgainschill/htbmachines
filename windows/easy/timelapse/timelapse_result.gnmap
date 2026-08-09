@@ -1,0 +1,2 @@
+# Nmap 7.99 scan initiated Sun Jul 12 09:29:07 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA timelapse_result 10.129.227.113
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)

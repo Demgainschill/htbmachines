@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/irqtop
+/usr/share
+/usr/share/doc
+/usr/share/doc/irqtop
+/usr/share/doc/irqtop/changelog.Debian.gz
+/usr/share/doc/irqtop/changelog.gz
+/usr/share/doc/irqtop/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/irqtop.1.gz

@@ -1,0 +1,2 @@
+help: A new name for an image
+run: sudo ${vyos_op_scripts_dir}/image_manager.py --action rename --image-name "${4}" --image-new-name "${6}"

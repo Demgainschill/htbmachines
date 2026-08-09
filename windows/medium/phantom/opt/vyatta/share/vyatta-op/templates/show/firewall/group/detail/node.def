@@ -1,0 +1,3 @@
+help: Show list view of firewall group
+allowed: /bin/cli-shell-api listActiveNodes firewall group detail | sed -e "s/'//g" && echo
+run: sudo ${vyos_op_scripts_dir}/firewall.py --action show_group --detail $4

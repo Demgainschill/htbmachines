@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/sbin
+/usr/sbin/opennhrpctl
+/usr/sbin/opennhrp
+/usr/share
+/usr/share/doc
+/usr/share/doc/opennhrp
+/usr/share/doc/opennhrp/changelog.gz
+/etc
+/etc/racoon-ph1dead.sh
+/etc/racoon-ph1down.sh

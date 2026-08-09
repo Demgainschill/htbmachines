@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/openvpn
+/usr/lib/openvpn/openvpn-auth-ldap.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/openvpn-auth-ldap
+/usr/share/doc/openvpn-auth-ldap/README.md
+/usr/share/doc/openvpn-auth-ldap/changelog.Debian.gz
+/usr/share/doc/openvpn-auth-ldap/copyright
+/usr/share/doc/openvpn-auth-ldap/examples
+/usr/share/doc/openvpn-auth-ldap/examples/auth-ldap.conf

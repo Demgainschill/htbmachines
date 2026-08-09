@@ -1,0 +1,4 @@
+type: txt
+help: Maximum request body size in megabytes (default: 1)
+val_help: u32:1-256; Request body size in megabytes
+syntax:expression: exec "${vyos_libexec_dir}/validate-value  --exec \"${vyos_validators_dir}/numeric --range 1-256\"  --value \'$VAR(@)\'"; "Invalid value"

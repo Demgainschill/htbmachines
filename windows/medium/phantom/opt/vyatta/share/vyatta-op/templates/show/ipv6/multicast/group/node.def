@@ -1,0 +1,2 @@
+help: Show IPv6 multicast group membership
+run: ${vyos_op_scripts_dir}/multicast.py show_group --family inet6

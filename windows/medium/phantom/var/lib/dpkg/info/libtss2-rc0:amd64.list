@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libtss2-rc.so.0.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libtss2-rc0
+/usr/share/doc/libtss2-rc0/changelog.Debian.gz
+/usr/share/doc/libtss2-rc0/changelog.gz
+/usr/share/doc/libtss2-rc0/copyright
+/usr/lib/x86_64-linux-gnu/libtss2-rc.so.0

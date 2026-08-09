@@ -1,0 +1,51 @@
+# Nmap 7.99 scan initiated Wed Jul 22 07:47:12 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC -Pn --min-rate 4000 -oA eighteen_results 10.129.10.104
+Nmap scan report for 10.129.10.104
+Host is up (0.074s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Did not follow redirect to http://eighteen.htb/
+1433/tcp open  ms-sql-s Microsoft SQL Server 2022 16.00.1000.00; RTM
+| ms-sql-ntlm-info: 
+|   10.129.10.104:1433: 
+|     Target_Name: EIGHTEEN
+|     NetBIOS_Domain_Name: EIGHTEEN
+|     NetBIOS_Computer_Name: DC01
+|     DNS_Domain_Name: eighteen.htb
+|     DNS_Computer_Name: DC01.eighteen.htb
+|     DNS_Tree_Name: eighteen.htb
+|_    Product_Version: 10.0.26100
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-22T09:17:03
+| Not valid after:  2056-07-22T09:17:03
+| MD5:     fc6c e948 a37b 07a6 0ef9 1ea8 7da4 a1d7
+| SHA-1:   c02b 25b6 052e 5747 9d0d 960c 83d7 8144 fe03 824d
+|_SHA-256: e7f3 fd89 abfa 751d 9437 8e49 48de e99d 7f2f 4af0 333d eb04 1fbb 96e5 e12a d4b2
+|_ssl-date: 2026-07-22T09:17:44+00:00; +6h59m45s from scanner time.
+| ms-sql-info: 
+|   10.129.10.104:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2022 RTM
+|       number: 16.00.1000.00
+|       Product: Microsoft SQL Server 2022
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+5985/tcp open  http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 6h59m44s, deviation: 0s, median: 6h59m44s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jul 22 07:47:59 2026 -- 1 IP address (1 host up) scanned in 47.26 seconds

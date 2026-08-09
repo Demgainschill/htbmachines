@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: Filter group for QoS policy
+val_help: txt; Match group name
+allowed: sh -c "${vyos_completion_dir}/qos/list_traffic_match_group.py"

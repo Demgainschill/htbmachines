@@ -1,0 +1,6 @@
+type: txt
+help: Traffic capture mode
+val_help: mirror; Listen to mirrored traffic
+val_help: sflow; Capture sFlow flows
+allowed: echo "mirror sflow"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(mirror|sflow)\'   --value \'$VAR(@)\'"; "Invalid value"

@@ -1,0 +1,2 @@
+help: Show FRRouting version information
+run: vtysh -c "show version"

@@ -1,0 +1,6 @@
+type: txt
+help: Statistic format
+val_help: simple; Simple format
+val_help: full; Full format
+allowed: echo "simple full"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(simple|full)\'   --value \'$VAR(@)\'"; "Invalid value"

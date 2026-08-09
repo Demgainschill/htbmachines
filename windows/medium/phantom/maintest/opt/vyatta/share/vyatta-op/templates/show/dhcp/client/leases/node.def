@@ -1,0 +1,2 @@
+help: Show DHCP client leases
+run: ${vyos_op_scripts_dir}/dhcp.py show_client_leases --family inet

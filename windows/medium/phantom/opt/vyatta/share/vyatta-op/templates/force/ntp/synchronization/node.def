@@ -1,0 +1,2 @@
+help: Force NTP time synchronization
+run: sudo chronyc makestep

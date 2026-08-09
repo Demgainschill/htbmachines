@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installsystemd/13.15.3
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = remove ] && [ -d /run/systemd/system ] ; then
+	deb-systemd-invoke stop 'podman-restart.service' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/13.15.3
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = remove ] && [ -d /run/systemd/system ] ; then
+	deb-systemd-invoke stop 'podman-auto-update.service' 'podman-auto-update.timer' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/13.15.3
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = remove ] && [ -d /run/systemd/system ] ; then
+	deb-systemd-invoke stop 'podman-auto-update.service' 'podman-auto-update.timer' 'podman-clean-transient.service' 'podman-restart.service' 'podman.service' 'podman.socket' >/dev/null || true
+fi
+# End automatically added section

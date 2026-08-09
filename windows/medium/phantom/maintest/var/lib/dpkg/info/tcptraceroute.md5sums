@@ -1,0 +1,9 @@
+1b77bce7f51676fe0926156657893e46  usr/bin/tcptraceroute.mt
+c4115da968bae1dd28a1e0126980673f  usr/share/doc/tcptraceroute/README.Debian
+3af7f8a275b663656d4e2c353bfc9ee2  usr/share/doc/tcptraceroute/changelog.Debian.amd64.gz
+71b8d1ae8d46ab4f5effd8f40546ad43  usr/share/doc/tcptraceroute/changelog.Debian.gz
+a580fb169599e7979b199f3fdc2c22b6  usr/share/doc/tcptraceroute/changelog.gz
+de6a998e9e7df19d6771d2dffe5a316d  usr/share/doc/tcptraceroute/copyright
+a9cc2cab8e2e439af9fc9ca533b92ebe  usr/share/doc/tcptraceroute/examples.txt.gz
+e86334640b7d2738a8d8b32a6e223258  usr/share/lintian/overrides/tcptraceroute
+7889f948663a7ba6aa408ecca8ec29a1  usr/share/man/man1/tcptraceroute.mt.1.gz

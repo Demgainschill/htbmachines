@@ -1,0 +1,9 @@
+type: txt
+help: HE operating channel width
+val_help: 131; 20 MHz channel width
+val_help: 132; 40 MHz channel width
+val_help: 133; 80 MHz channel width
+val_help: 134; 160 MHz channel width
+val_help: 135; 80+80 MHz channel width
+allowed: echo "131 132 133 134 135"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(131|132|133|134|135)\'   --value \'$VAR(@)\'"; "Invalid value"

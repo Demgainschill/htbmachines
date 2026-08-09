@@ -1,0 +1,2 @@
+help: Show information about the current time sources being accessed
+run: ${vyos_op_scripts_dir}/ntp.py show_sources

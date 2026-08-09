@@ -1,0 +1,4 @@
+type: txt
+help: DHCP unique identifier (DUID) to be sent by client
+val_help: duid; DHCP unique identifier
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'([0-9A-Fa-f]{2}:){0,127}([0-9A-Fa-f]{2})\'   --value \'$VAR(@)\'"; "Invalid DUID, must be in the format h[[:h]...]"

@@ -1,0 +1,22 @@
+multi:
+type: txt
+help: Sets the interface name prefix to include in the IF-MIB data
+			collection
+val_help: br; Allow prefix for IF-MIB data collection
+val_help: bond; Allow prefix for IF-MIB data collection
+val_help: dum; Allow prefix for IF-MIB data collection
+val_help: eth; Allow prefix for IF-MIB data collection
+val_help: gnv; Allow prefix for IF-MIB data collection
+val_help: macsec; Allow prefix for IF-MIB data collection
+val_help: peth; Allow prefix for IF-MIB data collection
+val_help: sstpc; Allow prefix for IF-MIB data collection
+val_help: tun; Allow prefix for IF-MIB data collection
+val_help: veth; Allow prefix for IF-MIB data collection
+val_help: vti; Allow prefix for IF-MIB data collection
+val_help: vtun; Allow prefix for IF-MIB data collection
+val_help: vxlan; Allow prefix for IF-MIB data collection
+val_help: wg; Allow prefix for IF-MIB data collection
+val_help: wlan; Allow prefix for IF-MIB data collection
+val_help: wwan; Allow prefix for IF-MIB data collection
+allowed: echo "br bond dum eth gnv macsec peth sstpc tun veth vti vtun vxlan wg wlan wwan"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(br|bond|dum|eth|gnv|macsec|peth|sstpc|tun|veth|vti|vtun|vxlan|wg|wlan|wwan)\'   --value \'$VAR(@)\'"; "Invalid value"

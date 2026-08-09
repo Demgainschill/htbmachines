@@ -1,0 +1,8 @@
+00151df64e7041f6755e09b9000344d7  lib/systemd/system/qemu-guest-agent.service
+4799cf937d11dbb32ff93d3e0e10356b  lib/udev/rules.d/60-qemu-guest-agent.rules
+92feaedc3dc04cd00706454a430038e7  usr/sbin/qemu-ga
+00cce0a05a554028208ee216218ff686  usr/share/doc/qemu-guest-agent/changelog.Debian.gz
+5726060b5d5914c788eed41522fc2e3c  usr/share/doc/qemu-guest-agent/copyright
+fd5d0e844f7fb8f17e08a0f74416a0cd  usr/share/doc/qemu-guest-agent/qapi-schema.json.gz
+a1bf0a909640f4a4a7823e677284f573  usr/share/man/man7/qemu-ga-ref.7.gz
+8c9a70c1036886be036a32d9eff291eb  usr/share/man/man8/qemu-ga.8.gz

@@ -1,0 +1,2 @@
+help: Show Bridge forward firewall log
+run: journalctl --no-hostname --boot -k | grep bri-FWD

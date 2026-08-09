@@ -1,0 +1,3 @@
+help: Show log for a rule in the specified firewall
+allowed: /bin/cli-shell-api listActiveNodes firewall ipv6 output filter rule | sed -e "s/'//g" && echo
+run: journalctl --no-hostname --boot -k | egrep "\[ipv6-OUT-filter-$8-[ADRJC]\]"

@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sat Jul 11 22:15:46 2026 as: /usr/lib/nmap/nmap -p- -sC -sV -vvv --min-rate 4000 -oA crafty_results 10.129.230.193
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.230.193 ()	Status: Up
+Host: 10.129.230.193 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 25565/open/tcp//minecraft//Minecraft 1.16.5 (Protocol: 127, Message: Crafty Server, Users: 0|100)/	Ignored State: filtered (65533)
+# Nmap done at Sat Jul 11 22:16:31 2026 -- 1 IP address (1 host up) scanned in 45.61 seconds

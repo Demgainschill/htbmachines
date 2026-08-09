@@ -1,0 +1,7 @@
+62fc6bd2ea61d23a25fceb9ddaa183de  usr/share/doc/ruby-net-telnet/README.md
+cc53c3b4c8cd19813cbc9c7d7905434e  usr/share/doc/ruby-net-telnet/changelog.Debian.gz
+464fdc546a259b49264a2b0edd70a3bf  usr/share/doc/ruby-net-telnet/copyright
+07ee3d5de0ab6afca30d94dd61f358ce  usr/share/rubygems-integration/all/gems/net-telnet-0.2.0/lib/net-telnet.rb
+b779cc096cd424592e32bf7fca25f219  usr/share/rubygems-integration/all/gems/net-telnet-0.2.0/lib/net/telnet.rb
+1ae6229db47144477c7bbd040ae1ac3b  usr/share/rubygems-integration/all/gems/net-telnet-0.2.0/lib/net/telnet/version.rb
+e719e73a3c2bc1b9c3e6642eeb3a0e94  usr/share/rubygems-integration/all/specifications/net-telnet-0.2.0.gemspec

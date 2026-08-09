@@ -1,0 +1,6 @@
+type: txt
+help: Remote EAP ID for client authentication (default: any)
+val_help: txt; Remote EAP ID for client authentication
+val_help: any; Allow any EAP ID (default)
+allowed: echo "any"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'[[:ascii:]]{1,64}\'   --value \'$VAR(@)\'"; "Invalid value"

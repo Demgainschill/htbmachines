@@ -1,0 +1,15 @@
+libopentracing-c-wrapper.so.0 libopentracing-c-wrapper0 #MINVER#
+* Build-Depends-Package: libopentracing-c-wrapper-dev
+ otc_binary_data_destroy@Base 1.1.0
+ otc_binary_data_new@Base 1.1.0
+ otc_ext_init@Base 1.1.0
+ otc_file_read@Base 1.1.0
+ otc_statistics@Base 1.1.0
+ otc_text_map_add@Base 1.1.0
+ otc_text_map_destroy@Base 1.1.0
+ otc_text_map_new@Base 1.1.0
+ otc_tracer_global@Base 1.1.0
+ otc_tracer_init@Base 1.1.0
+ otc_tracer_init_global@Base 1.1.0
+ otc_tracer_load@Base 1.1.0
+ otc_tracer_start@Base 1.1.0

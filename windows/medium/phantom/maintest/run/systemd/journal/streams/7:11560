@@ -1,0 +1,9 @@
+# This is private data. Do not parse
+PRIORITY=30
+LEVEL_PREFIX=1
+FORWARD_TO_SYSLOG=0
+FORWARD_TO_KMSG=0
+FORWARD_TO_CONSOLE=0
+STREAM_ID=64199f4fc9ae49fcaaf549b6152dfee6
+IDENTIFIER=vyos-configd
+UNIT=vyos-configd.service

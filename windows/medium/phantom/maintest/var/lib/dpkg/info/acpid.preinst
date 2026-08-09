@@ -1,0 +1,40 @@
+#!/bin/sh
+
+set -e
+
+# Automatically added by dh_installinit/13.10
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/acpid" ] ; then
+	chmod +x "/etc/init.d/acpid" >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/13.10
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = upgrade ] && [ -d /run/systemd/system ] ; then
+	deb-systemd-invoke stop 'acpid.service' >/dev/null || true
+fi
+# End automatically added section
+
+
+# Remove a no-longer used conffile
+rm_conffile() {
+    PKGNAME="$1"
+    CONFFILE="$2"
+    if [ -e "$CONFFILE" ]; then
+        md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
+        old_md5sum="`dpkg-query -W -f='${Conffiles}' $PKGNAME | sed -n -e \"\\\\' $CONFFILE '{s/ obsolete$//;s/.* //p}\"`"
+        if [ "$md5sum" != "$old_md5sum" ]; then
+            echo "Obsolete conffile $CONFFILE has been modified by you."
+            echo "Saving as $CONFFILE.dpkg-bak ..."
+            mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
+        else
+	    if [ "$CONFFILE" = "/etc/acpi/events/powerbtn" -a -e /etc/acpi/powerbtn.sh.dpkg-bak ]; then
+		# we need some special logic for /etc/acpi/events/powerbtn because it might
+		# be kept because it was changed itself or because /etc/acpi/powerbtn.sh was changed
+		echo "Obsolete conffile $CONFFILE saved as $CONFFILE.dpkg-bak ..."
+		sed -e 's#/etc/acpi/powerbtn.sh#/etc/acpi/powerbtn.sh.dpkg-bak#' < "$CONFFILE" > "$CONFFILE".dpkg-bak
+	    else
+		echo "Removing obsolete conffile $CONFFILE ..."
+	    fi
+	    rm -f "$CONFFILE"
+        fi
+    fi
+}

@@ -1,0 +1,83 @@
+[2024-07-06T17:00:31.742Z] [ message] [vmsvc] [913] VMware Tools Version: 12.2.0.41219 (build-21223074)
+[2024-07-06T17:00:31.742Z] [ message] [vmsvc] [913] Guest OS details: architecture='X86' bitness='64' distroName='VyOS' distroVersion='1.5-rolling-202407060019' familyName='Linux' kernelVersion='6.6.36-amd64-vyos' prettyName='VyOS 1.5-rolling-202407060019 (current)'
+[2024-07-06T17:00:31.742Z] [ message] [vmsvc] [913] Log caching is enabled with maxCacheEntries=4096.
+[2024-07-06T17:00:31.742Z] [ message] [vmsvc] [913] Core dump limit set to -1
+[2024-07-06T17:00:32.138Z] [ message] [vmsvc] [913] Cannot load message catalog for domain 'hgfsServer', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:00:32.138Z] [ message] [vmtoolsd] [913] Plugin 'hgfsServer' initialized.
+[2024-07-06T17:00:32.138Z] [ message] [vix] [913] QueryVGAuthConfig: vgauth usage is: 1
+[2024-07-06T17:00:32.138Z] [ message] [vmsvc] [913] Cannot load message catalog for domain 'vix', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:00:32.138Z] [ message] [vmtoolsd] [913] Plugin 'vix' initialized.
+[2024-07-06T17:00:32.138Z] [ message] [vmsvc] [913] Cannot load message catalog for domain 'appInfo', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:00:32.138Z] [ message] [vmtoolsd] [913] Plugin 'appInfo' initialized.
+[2024-07-06T17:00:32.138Z] [ message] [vmsvc] [913] Cannot load message catalog for domain 'componentMgr', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:00:32.138Z] [ message] [vmtoolsd] [913] Plugin 'componentMgr' initialized.
+[2024-07-06T17:00:32.138Z] [ message] [vmsvc] [913] Cannot load message catalog for domain 'guestInfo', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:00:32.138Z] [ message] [vmtoolsd] [913] Plugin 'guestInfo' initialized.
+[2024-07-06T17:00:32.138Z] [ message] [vmsvc] [913] Cannot load message catalog for domain 'powerops', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:00:32.138Z] [ message] [vmtoolsd] [913] Plugin 'powerops' initialized.
+[2024-07-06T17:00:32.138Z] [ message] [resolutionCommon] [913] resolutionCheckForKMS: dlopen succeeded.
+[2024-07-06T17:00:32.435Z] [ warning] [resolutionCommon] [913] resolutionCheckForKMS: No system support for resolutionKMS.
+[2024-07-06T17:00:32.435Z] [ message] [vmsvc] [913] Cannot load message catalog for domain 'timeSync', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:00:32.435Z] [ message] [vmtoolsd] [913] Plugin 'timeSync' initialized.
+[2024-07-06T17:00:32.435Z] [ message] [vmsvc] [913] Cannot load message catalog for domain 'vmbackup', language 'C', catalog dir '/usr/share/open-vm-tools'.
+[2024-07-06T17:00:32.435Z] [ message] [vmtoolsd] [913] Plugin 'vmbackup' initialized.
+[2024-07-06T17:00:32.443Z] [ message] [vix] [913] VixTools_ProcessVixCommand: command 62
+[2024-07-06T17:21:12.913Z] [ warning] [GLib-GObject] [913] g_object_get_is_valid_property: object class 'ToolsCoreService' has no property named 'tps_prop_gueststore'
+[2024-07-06T17:21:12.944Z] [ message] [vmtoolsd] [913] Unloading plugin 'vmbackup'.
+[2024-07-06T17:21:12.944Z] [ message] [vmtoolsd] [913] Unloading plugin 'timeSync'.
+[2024-07-06T17:21:12.944Z] [ message] [vmtoolsd] [913] Unloading plugin 'powerops'.
+[2024-07-06T17:21:12.944Z] [ message] [vmtoolsd] [913] Unloading plugin 'guestInfo'.
+[2024-07-06T17:21:12.944Z] [ message] [vmtoolsd] [913] Unloading plugin 'componentMgr'.
+[2024-07-06T17:21:12.944Z] [ message] [vmtoolsd] [913] Unloading plugin 'appInfo'.
+[2024-07-06T17:21:12.944Z] [ message] [vmtoolsd] [913] Unloading plugin 'vix'.
+[2024-07-06T17:21:12.944Z] [ message] [vmtoolsd] [913] Unloading plugin 'hgfsServer'.
+[2024-07-06T17:21:39.420Z] [ message] [vmsvc] [904] VMware Tools Version: 12.2.0.41219 (build-21223074)
+[2024-07-06T17:21:39.421Z] [ message] [vmsvc] [904] Guest OS details: architecture='X86' bitness='64' distroName='VyOS' distroVersion='1.5-rolling-202407060019' familyName='Linux' kernelVersion='6.6.36-amd64-vyos' prettyName='VyOS 1.5-rolling-202407060019 (current)'
+[2024-07-06T17:21:39.420Z] [ message] [vmsvc] [904] Log caching is enabled with maxCacheEntries=4096.
+[2024-07-06T17:21:39.421Z] [ message] [vmsvc] [904] Core dump limit set to -1
+[2024-07-06T17:21:39.554Z] [ message] [vmtoolsd] [904] Plugin 'hgfsServer' initialized.
+[2024-07-06T17:21:39.554Z] [ message] [vix] [904] QueryVGAuthConfig: vgauth usage is: 1
+[2024-07-06T17:21:39.554Z] [ message] [vmtoolsd] [904] Plugin 'vix' initialized.
+[2024-07-06T17:21:39.554Z] [ message] [vmtoolsd] [904] Plugin 'appInfo' initialized.
+[2024-07-06T17:21:39.554Z] [ message] [vmtoolsd] [904] Plugin 'componentMgr' initialized.
+[2024-07-06T17:21:39.554Z] [ message] [vmtoolsd] [904] Plugin 'guestInfo' initialized.
+[2024-07-06T17:21:39.554Z] [ message] [vmtoolsd] [904] Plugin 'powerops' initialized.
+[2024-07-06T17:21:39.554Z] [ message] [resolutionCommon] [904] resolutionCheckForKMS: dlopen succeeded.
+[2024-07-06T17:21:40.059Z] [ warning] [resolutionCommon] [904] resolutionCheckForKMS: No system support for resolutionKMS.
+[2024-07-06T17:21:40.060Z] [ message] [vmtoolsd] [904] Plugin 'timeSync' initialized.
+[2024-07-06T17:21:40.060Z] [ message] [vmtoolsd] [904] Plugin 'vmbackup' initialized.
+[2024-07-06T17:21:40.082Z] [ message] [vix] [904] VixTools_ProcessVixCommand: command 62
+[2024-07-06T17:49:53.409Z] [ message] [vmsvc] [904] Executing script for state change 'OS_Halt'.
+[2024-07-06T17:49:53.409Z] [ message] [powerops] [904] Executing script: '/etc/vmware-tools/poweroff-vm-default'
+[2024-07-06T17:49:53.733Z] [ message] [vmsvc] [904] Script exit code: 0, success = 1
+[2024-07-06T17:49:53.734Z] [ message] [vmsvc] [904] Initiating halt.
+[2024-07-06T17:49:53.841Z] [ warning] [GLib-GObject] [904] g_object_get_is_valid_property: object class 'ToolsCoreService' has no property named 'tps_prop_gueststore'
+[2024-07-06T17:49:53.862Z] [ message] [vmtoolsd] [904] Unloading plugin 'vmbackup'.
+[2024-07-06T17:49:53.862Z] [ message] [vmtoolsd] [904] Unloading plugin 'timeSync'.
+[2024-07-06T17:49:53.862Z] [ message] [vmtoolsd] [904] Unloading plugin 'powerops'.
+[2024-07-06T17:49:53.862Z] [ message] [vmtoolsd] [904] Unloading plugin 'guestInfo'.
+[2024-07-06T17:49:53.862Z] [ message] [vmtoolsd] [904] Unloading plugin 'componentMgr'.
+[2024-07-06T17:49:53.862Z] [ message] [vmtoolsd] [904] Unloading plugin 'appInfo'.
+[2024-07-06T17:49:53.862Z] [ message] [vmtoolsd] [904] Unloading plugin 'vix'.
+[2024-07-06T17:49:53.862Z] [ message] [vmtoolsd] [904] Unloading plugin 'hgfsServer'.
+[2024-07-06T19:31:33.331Z] [ message] [vmsvc] [907] VMware Tools Version: 12.2.0.41219 (build-21223074)
+[2024-07-06T19:31:33.331Z] [ message] [vmsvc] [907] Guest OS details: architecture='X86' bitness='64' distroName='VyOS' distroVersion='1.5-rolling-202407060019' familyName='Linux' kernelVersion='6.6.36-amd64-vyos' prettyName='VyOS 1.5-rolling-202407060019 (current)'
+[2024-07-06T19:31:33.331Z] [ message] [vmsvc] [907] Log caching is enabled with maxCacheEntries=4096.
+[2024-07-06T19:31:33.331Z] [ message] [vmsvc] [907] Core dump limit set to -1
+[2024-07-06T19:31:33.601Z] [ message] [vmtoolsd] [907] Plugin 'hgfsServer' initialized.
+[2024-07-06T19:31:33.601Z] [ message] [vix] [907] QueryVGAuthConfig: vgauth usage is: 1
+[2024-07-06T19:31:33.601Z] [ message] [vmtoolsd] [907] Plugin 'vix' initialized.
+[2024-07-06T19:31:33.601Z] [ message] [vmtoolsd] [907] Plugin 'appInfo' initialized.
+[2024-07-06T19:31:33.601Z] [ message] [vmtoolsd] [907] Plugin 'componentMgr' initialized.
+[2024-07-06T19:31:33.602Z] [ message] [vmtoolsd] [907] Plugin 'guestInfo' initialized.
+[2024-07-06T19:31:33.602Z] [ message] [vmtoolsd] [907] Plugin 'powerops' initialized.
+[2024-07-06T19:31:33.602Z] [ message] [resolutionCommon] [907] resolutionCheckForKMS: dlopen succeeded.
+[2024-07-06T19:31:34.017Z] [ warning] [resolutionCommon] [907] resolutionCheckForKMS: No system support for resolutionKMS.
+[2024-07-06T19:31:34.020Z] [ message] [vmtoolsd] [907] Plugin 'timeSync' initialized.
+[2024-07-06T19:31:34.020Z] [ message] [vmtoolsd] [907] Plugin 'vmbackup' initialized.
+[2024-07-06T19:31:34.032Z] [ message] [vix] [907] VixTools_ProcessVixCommand: command 62
+[2024-07-06T19:31:34.063Z] [ message] [vix] [907] VixTools_ProcessVixCommand: command 62
+[2024-07-06T19:31:34.063Z] [ message] [vix] [907] ToolsDaemonTcloReceiveVixCommand: command 62, additionalError = 17
+[2024-07-06T19:31:34.064Z] [ message] [vmsvc] [907] Executing script for state change 'OS_PowerOn'.
+[2024-07-06T19:31:34.064Z] [ message] [powerops] [907] Executing script: '/etc/vmware-tools/poweron-vm-default'
+[2024-07-06T19:31:35.056Z] [ message] [vmsvc] [907] Script exit code: 0, success = 1

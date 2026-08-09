@@ -1,0 +1,7 @@
+type: txt
+help: WLB test type (default: ping)
+val_help: ping; Test with ICMP echo response (default)
+val_help: ttl; Test with UDP TTL expired response
+val_help: user-defined; User-defined test script
+allowed: echo "ping ttl user-defined"
+syntax:expression: exec "${vyos_libexec_dir}/validate-value --regex \'(ping|ttl|user-defined)\'   --value \'$VAR(@)\'"; "Invalid value"
