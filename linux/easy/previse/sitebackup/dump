@@ -1,0 +1,587 @@
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php');
+}
+?>
+
+<?php include( 'header.php' ); ?>
+<title>Previse Create Account</title>
+</head>
+<body>
+    
+<?php include( 'nav.php' ); ?>
+
+<section class="uk-section uk-section-default">
+    <div class="uk-container">
+        <h2 class="uk-heading-divider">Add New Account</h2>
+        <p>Create new user.</p>
+        <p class="uk-alert-danger">ONLY ADMINS SHOULD BE ABLE TO ACCESS THIS PAGE!!</p>
+        <p>Usernames and passwords must be between 5 and 32 characters!</p>
+    <?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (empty(trim($_POST['username']))) {
+                    echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>The username needs to be provided!</p></div>';
+            } elseif (empty(trim($_POST['password']))) {
+                echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>The password needs to be provided!</p></div>';
+            } elseif (empty(trim($_POST['confirm']))) {
+                echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>The password confirmation needs to be provided!</p></div>';
+            } else {
+                if (!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST['username']))) {
+                    echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Usernames can only contain letters, numbers, and underscores!</p></div>';
+                } else {
+                    $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+                    $password = $_POST['password'];
+                    $confirm = filter_var($_POST['confirm'], FILTER_SANITIZE_STRING);
+                    if (strlen($username) > 32 || strlen($username) < 5) {
+                        echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Username must be 5 to 32 chars!</p></div>';
+                    } else {
+                        $db = connectDB();
+                        if ($db === false) {
+                            die("ERROR: Could not connect. " . $db->connect_error);
+                        }
+                        $sql = "SELECT username FROM accounts WHERE username = '{$username}' limit 1;";
+                        $accountResult = $db->query($sql);
+                        if ($accountResult->num_rows != 0) {
+                            echo  '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Username is already taken!</p></div>';
+                            $accountResult->free();
+                        } else {
+                            $accountResult->free();
+                            if (strlen($password) > 32 || strlen($password) < 5) {
+                                echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Password must be between 5 and 32 chars!</p></div>';
+                            } else {
+                                if ($password != $confirm) {
+                                    echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>The passwords dont match!</p></div>';
+                                } else {
+                                    $hash = crypt($password, '$1$🧂llol$');
+                                    $db = connectDB();
+                                    if ($db === false) {
+                                        die("ERROR: Could not connect. " . $db->connect_error);
+                                    }                    
+                                    $sql = "INSERT INTO accounts (username, password) VALUES ('{$username}','{$hash}')";
+                                    $result = $db->query($sql);
+                                    if ($result) {
+                                        echo '<div class="uk-alert-success" uk-alert><a class="uk-alert-close" uk-close></a><p>Success! User was added!</p></div>';
+                                    } else {
+                                        echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Error! Failed to add new user</p></div>';
+                                    }
+                                $db->close();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ?></p>
+        <form role="form" method="post" action="accounts.php">
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input type="text" name="username" class="uk-input" id="username" placeholder="Username">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                    <input type="password" name="password" class="uk-input" id="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                    <input type="password" name="confirm" class="uk-input" id="confirm" placeholder="Confirm Password">
+                </div>
+            </div>
+            <button type="submit" name="submit" class="uk-button uk-button-default">CREATE USER</button>
+        </form>
+    </div>
+</section>
+            
+<?php include( 'footer.php' ); ?>
+<?php
+
+function connectDB(){
+    $host = 'localhost';
+    $user = 'root';
+    $passwd = 'mySQL_p@ssw0rd!:)';
+    $db = 'previse';
+    $mycon = new mysqli($host, $user, $passwd, $db);
+    return $mycon;
+}
+
+?>
+<?php                             
+session_start();                  
+if (!isset($_SESSION['user'])) {  
+    header('Location: login.php');
+    exit;
+}                                 
+?> 
+                               
+<?php include( 'config.php' ); ?>
+
+<?php
+if (isset($_GET['file'])) {
+    // Log all file attempts, because security is important!!
+    $logFilename = "/var/www/file_access.log";
+    $epochTime = getdate()[0];
+    $logMsg = "{$epochTime},{$_SESSION['user']},{$_GET['file']}";
+    file_put_contents($logFilename, $logMsg . "\n", FILE_APPEND);
+    if (!filter_var($_GET['file'], FILTER_VALIDATE_INT)) {
+        http_response_code(404);
+        exit;
+    } else {
+        $fileId = filter_var($_GET['file'], FILTER_SANITIZE_NUMBER_INT);
+        $db = connectDB();
+        if ($db === false) {
+            die("ERROR: Could not connect. " . $db->connect_error);
+        } else {
+        $sql = "SELECT name, size, data FROM files WHERE id = {$fileId} limit 1;";
+        $result = $db->query($sql);
+        $row = mysqli_fetch_assoc($result);
+        header("Content-Description: File Transfer");
+        header("Content-Type: application/octet-stream");
+        header("Content-Length: " . $row['size']);
+        header("Content-Disposition: attachment; filename=" . $row['name']);
+        ob_clean(); // Discard any data in the output buffer
+        flush(); // Flush system headers
+        echo $row['data'];
+        $result->free();
+        }
+    }
+    $db->close();
+} else {
+echo '<div class="uk-alert-danger">Nothing requested!</div>';
+}
+?>
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php');
+}
+?>
+
+<?php include( 'header.php' ); ?>
+
+<title>Previse File Access Logs</title>
+</head>
+<body>
+
+<?php include( 'nav.php' ); ?>
+<section class="uk-section uk-section-default">
+    <div class="uk-container">
+        <h2 class="uk-heading-divider">Request Log Data</h2>
+        <p>We take security very seriously, and keep logs of file access actions. We can set delimters for your needs!</p>
+        <p>Find out which users have been downloading files.</p>
+        <form action="logs.php" method="post">
+            <div class="uk-margin uk-width-1-4@s">
+                <label class="uk-form-label" for="delim-log">File delimeter:</label>
+                <select class="uk-select" name="delim" id="delim-log">
+                    <option value="comma">comma</option>
+                    <option value="space">space</option>
+                    <option value="tab">tab</option>
+                </select>
+            </div>
+            <button class="uk-button uk-button-default" type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+</section>
+    
+<?php include( 'footer.php' ); ?>
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php');
+}
+?>
+
+<?php include( 'header.php' ); ?>
+
+<title>Previse Files</title>
+</head>
+<body>
+
+<?php include( 'nav.php' ); ?>
+
+    <section class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h2 class="uk-heading-divider">Files</h2>
+            <p><?php
+                if (count($_FILES) > 0) {
+                    if (is_uploaded_file($_FILES['userData']['tmp_name'])) {
+                        $fileName = $_FILES['userData']['name'];
+                        $fileData = addslashes(file_get_contents($_FILES['userData']['tmp_name']));
+                        $fileSize = $_FILES['userData']['size'];
+                        $sql = "INSERT INTO files(name, size, data, user) VALUES('{$fileName}', '{$fileSize}', '{$fileData}', '{$_SESSION['user']}')";
+                        $db = connectDB();
+                        $result = $db->query($sql);
+                        if ($result) {
+                            echo '<div class="uk-alert-success" uk-alert><a class="uk-alert-close" uk-close></a><p>File successfully uploaded!! :)</p></div>';
+                        } else {
+                            echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Error while uploading! :(</p></div>';
+                        }
+                     }
+                }
+            ?></p>
+            <p>Upload files below, uploaded files in table below</p>
+            <form name="upload" enctype="multipart/form-data" action="" method="post">
+                <div uk-form-custom="target: true">
+                    <input name="userData" type="file">
+                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+                </div>
+                <button class="uk-button uk-button-default" type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+        <div class="uk-container">
+            <br>
+            <h2 class="uk-heading-divider">Uploaded Files</h2>
+<?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST' AND !empty($_POST['del'])){
+        $delID = filter_var($_POST['del'], FILTER_SANITIZE_NUMBER_INT);
+        $db = connectDB();
+        if($db === false) {
+            die("ERROR: Could not connect. " . $db->connect_error);
+        }
+        //check if the file is protected
+        $isProtectedQuery = "SELECT protected FROM files WHERE id = '{$delID}' and protected = 1 limit 1;";
+        $protectedResult = $db->query($isProtectedQuery);
+        if ($protectedResult->num_rows > 0) {
+            echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>This file is protected from deletion!</p></div>';
+            $protectedResult->free();
+        } else {
+            $protectedResult->free();
+            $deleteQuery = "DELETE FROM files WHERE id = '{$delID}';";
+            $deleteResult = $db->query($deleteQuery);
+            if ($deleteResult) {
+                echo '<div class="uk-alert-success" uk-alert><a class="uk-alert-close" uk-close></a><p>Success! File was deleted!</p></div>';
+            } else {
+                echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Unable to delete file for unknown reason!</p></div>';
+            }
+            $db->close();
+        }
+    }
+?>    
+<?php
+    $db = connectDB();
+    if($db === false) {
+        die("ERROR: Could not connect. " . $db->connect_error);
+    }
+    $query = "SELECT id, name, size, user, upload_time FROM files";
+    $result = $db->query($query);
+    if ($result) {
+        if ($result->num_rows != 0) {
+            echo '<table class="uk-table uk-table-hover uk-table-divider">
+            <thead>
+            <tr>
+                <th class="uk-table-shrink">#</th>
+                <th class="uk-table-expand">Name</th>
+                <th>Size</th>
+                <th>User</th>
+                <th>Date</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>';
+        }
+        if($result->num_rows == 0) {
+            echo '</tbody></table>
+            <div class="uk-placeholder uk-text-center">
+                No files uploaded yet, why not add some?
+            </div>';
+        } else {
+            // Add files to the table with counter
+            $counter = 0;
+            while($row = $result->fetch_assoc()) {
+                $counter++;
+                echo "
+                <tr>
+                    <td>{$counter}</td>
+                    <td><a href='download.php?file={$row['id']}'><button class=\"uk-button uk-button-text\">{$row['name']}</button></a></td>
+                    <td>{$row['size']}</td>
+                    <td>{$row['user']}</td>
+                    <td>{$row['upload_time']}</td>
+                    <td><form action=\"files.php\" method=\"post\">
+                        <button class=\"uk-button uk-button-danger uk-button-small\" type=\"button\" uk-toggle=\"target: #offcanvas-flip{$counter}\">Delete</button>
+                        <div id=\"offcanvas-flip{$counter}\" uk-offcanvas=\"flip: true; overlay: true\">
+                            <div class=\"uk-offcanvas-bar\">
+                                <button class=\"uk-offcanvas-close\" type=\"button\" uk-close></button>
+                                <h3>Delete File</h3>
+                                <p>Are you sure you want to delete this file?</p>
+                                <button class=\"uk-button uk-button-danger uk-button-small\" type=\"submit\" name=\"del\" value=\"{$row['id']}\">Delete</button>
+                            </div>
+                        </div>
+                    </form></td>
+                </tr>";
+            }
+            echo '</tbody></table></div>';
+        }
+        $result->free();
+    } else {
+        echo '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Error grabbing files from db!!</p></div>';
+    }
+    $db->close();    
+?>
+        </div>
+    </section>
+    
+<?php include( 'footer.php' ); ?>
+<div class="uk-position-bottom-center uk-padding-small">
+	<a href="https://m4lwhere.org/" target="_blank"><button class="uk-button uk-button-text uk-text-small">Created by m4lwhere</button></a>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+    
+        <?php include('config.php'); ?>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Previse rocks your socks." />
+        <meta name="author" content="m4lwhere" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+   
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php');
+}
+?>
+
+<?php include( 'header.php' ); ?>
+
+<title>Previse Home</title>
+</head>
+<body>
+    
+<?php include( 'nav.php' ); ?>
+
+    <section class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h2 class="uk-heading-divider">Previse File Hosting</h2>
+            <p>Previse File Hosting Service Management.</p>
+            <p>Don't have an account? Create one!</p>
+        </div>
+    </section>
+    
+<?php include( 'footer.php' ); ?>
+<?php
+session_start();
+if (isset($_SESSION['user'])) {
+    header('Location: index.php');
+}
+?>
+
+<?php include( 'header.php' ); ?>
+<title>Previse Login</title>
+</head>
+<body>
+<div class="uk-container">
+    <div class="uk-container uk-position-relative">
+        <h1 class="uk-heading-large">Previse File Storage</h1>
+        <h2>Login</h2>
+        <p>
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+            $password = $_POST['password'];
+            if (empty(trim($username))) {
+                echo '<div class="uk-alert-danger">Invalid Username or Password</div>';
+            } elseif (empty(trim($_POST['password']))) {
+                echo '<div class="uk-alert-danger">Invalid Username or Password</div>';
+            } else {
+                $db = connectDB();
+                if ($db === false) {
+                    die("ERROR: Could not connect. " . $db->connect_error);
+                }
+                $sql = "SELECT * FROM accounts WHERE username = '{$username}';";
+                $result = $db->query($sql);
+                if ($result->num_rows != 1) {
+                    echo '<div class="uk-alert-danger">Invalid Username or Password</div>';
+                    $result->free();
+                    $db->close();
+                } else {
+                    $users = $result->fetch_assoc();
+                    $passHash = $users['password'];
+                    if (crypt($password, '$1$🧂llol$') == $passHash) {
+                        $result->free();
+                        $_SESSION['user'] = $users['username'];
+                        $result = $db->query($sql);
+                        if (!$result) {
+                            echo 'Oops! Something went wrong, try again later!';
+                        }
+                        $db->close();
+                        header('Location: index.php');
+                    } else {
+                        echo '<div class="uk-alert-danger">Invalid Username or Password</div>';
+                    }
+                }
+            }
+        }
+        ?></p>
+        <form action="login.php" method="post">
+            <div class="uk-margin uk-width-1-4@s">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input type="text" name="username" class="uk-input" placeholder="Username">
+                </div>
+            </div>
+            <div class="uk-margin uk-width-1-4@s">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                    <input type="password" name="password" class="uk-input" placeholder="Password" required>
+                </div>
+            </div>
+            <button class="uk-button uk-button-default" type="submit">LOG IN</button>
+        </form>
+    </div>
+</div>
+
+<?php include( 'footer.php' ); ?>
+<?php
+    session_start();
+    if (isset($_SESSION['user'])) {
+        session_destroy();
+        header('Location: login.php');
+    } else {
+        header('Location: login.php');
+    }
+?>
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php');
+    exit;
+}
+?>
+
+<?php
+if (!$_SERVER['REQUEST_METHOD'] == 'POST') {
+    header('Location: login.php');
+    exit;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//I tried really hard to parse the log delims in PHP, but python was SO MUCH EASIER//
+/////////////////////////////////////////////////////////////////////////////////////
+
+$output = exec("/usr/bin/python /opt/scripts/log_process.py {$_POST['delim']}");
+echo $output;
+
+$filepath = "/var/www/out.log";
+$filename = "out.log";    
+
+if(file_exists($filepath)) {
+    header('Content-Description: File Transfer');
+    header('Content-Type: application/octet-stream');
+    header('Content-Disposition: attachment; filename="'.basename($filepath).'"');
+    header('Expires: 0');
+    header('Cache-Control: must-revalidate');
+    header('Pragma: public');
+    header('Content-Length: ' . filesize($filepath));
+    ob_clean(); // Discard data in the output buffer
+    flush(); // Flush system headers
+    readfile($filepath);
+    die();
+} else {
+    http_response_code(404);
+    die();
+} 
+?>
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="/index.php">Home</a></li>
+            <li>
+                <a href="accounts.php">ACCOUNTS</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="accounts.php">CREATE ACCOUNT</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="files.php">FILES</a></li>
+            <li>
+                <a href="status.php">MANAGEMENT MENU</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="status.php">WEBSITE STATUS</a></li>
+                        <li><a href="file_logs.php">LOG DATA</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" class=".uk-text-uppercase"><?php echo $_SESSION['user'] ?></span></a></li>
+            <li>
+                <a href="logout.php">
+                    <button class="uk-button uk-button-default uk-button-small">LOG OUT</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+mySQL_p@ssw0rd!:)
+$1$🧂llol$
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php');
+}
+?>
+
+<?php include( 'header.php' ); ?>
+
+<title>Previse Status</title>
+</head>
+<body>
+
+<?php include( 'nav.php' ); ?>
+
+<section class="uk-section uk-section-default">
+    <div class="uk-container">
+        <h2 class="uk-heading-divider">Status</h2>
+        <div class="uk-container" uk-grid>
+            <div><p>Check website status:</p></div>
+        </div>
+        <div class="uk-container">
+            <?php
+                $db = connectDB();
+                if ($db === false) {
+                    echo("<p class='uk-text-danger'>MySQL server is not functioning properly!</p>");
+                    die("ERROR: Could not connect. " . $db->connect_error);
+                } else {
+                    echo("<p class='uk-text-success'>MySQL server is online and connected!</p>");                 
+                    $userQuery = "SELECT id FROM accounts;";
+                    $fileQuery = "SELECT id FROM files;";
+                    $userResult = $db->query($userQuery);
+                    $fileResult = $db->query($fileQuery);
+                    $userCount = $userResult->num_rows;
+                    $fileCount = $fileResult->num_rows;
+                    if ($userCount == 1) {
+                        echo "<p>There is <b>{$userCount}</b> registered admin</p>";
+                    } else {
+                        echo "<p>There are <b>{$userCount}</b> registered admins</p>";
+                    }
+                    if ($fileCount == 1) {
+                        echo "<p>There is <b>{$fileCount}</b> uploaded file</p>";
+                    } else {
+                        echo "<p>There are <b>{$fileCount}</b> uploaded files</p>";
+                    }
+                }
+                $db->close();
+            ?>
+        </div>
+    </div>
+</section>
+
+<?php include( 'footer.php' ); ?>

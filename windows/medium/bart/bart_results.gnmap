@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sun Aug  9 20:22:38 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA bart_results 10.129.96.185
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.96.185 ()	Status: Up
+Host: 10.129.96.185 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/	Ignored State: filtered (65534)
+# Nmap done at Sun Aug  9 20:23:24 2026 -- 1 IP address (1 host up) scanned in 46.26 seconds

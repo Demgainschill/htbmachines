@@ -1,0 +1,17 @@
+Attack path completed
+
+logged in by changing post req to accounts.php was being redirected EAR
+created a new user
+
+downloaded zip file containing hardcoded password for sql as root
+got a reverse shell using cookie gaining foothold as www-data
+
+accessed mql to get hash for both user m4lware
+cracked using hashcat giving m4lware password
+getting user.txt
+
+check previlege allowed a script to run as sudo
+path hijacking to create malicious gzip in /tmp writing our reverse shell
+
+on execution got reverse shell as root
+getting root.txt
