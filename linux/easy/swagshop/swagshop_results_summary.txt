@@ -1,0 +1,54 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target      : 10.129.229.138
+Output Name : swagshop_results
+Date        : 2026-08-15 19:13:47
+Mode        : Masscan + 2× Nmap
+Rate        : 3000
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+22
+80
+
+[*] Nmap #2 Ports:
+22
+80
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] New ports that appeared only in Nmap #2:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Only found in Nmap #1:
+None
+
+[+] Only found in Nmap #2:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open tcpwrapped
+  → 80/tcp open tcpwrapped
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,80
+
+==============================================
+ FILES GENERATED
+==============================================
+ • swagshop_results_masscan.txt
+ • swagshop_results_1.nmap
+ • swagshop_results_2.nmap
+ • swagshop_results_summary.txt   ← this file
+==============================================

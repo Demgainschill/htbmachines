@@ -1,4 +1,27 @@
-# Nmap 7.99 scan initiated Sat Aug  8 07:32:45 2026 as: /usr/lib/nmap/nmap -p- -v -sV -sC --min-rate 4000 -oA data_results 10.129.234.47
-Nmap scan report for 10.129.234.47 [host down]
-Read data files from: /usr/share/nmap
-# Nmap done at Sat Aug  8 07:32:47 2026 -- 1 IP address (0 hosts up) scanned in 2.25 seconds
+# Nmap 7.99 scan initiated Sun Aug 16 20:47:11 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA data_results 10.129.234.47
+Increasing send delay for 10.129.234.47 from 0 to 5 due to 385 out of 1282 dropped probes since last increase.
+Increasing send delay for 10.129.234.47 from 20 to 40 due to 2872 out of 9572 dropped probes since last increase.
+Nmap scan report for 10.129.234.47
+Host is up (0.26s latency).
+Scanned at 2026-08-16 20:47:12 IST for 46s
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 63:47:0a:81:ad:0f:78:07:46:4b:15:52:4a:4d:1e:39 (RSA)
+|   256 7d:a9:ac:fa:01:e8:dd:09:90:40:48:ec:dd:f3:08:be (ECDSA)
+|_  256 91:33:2d:1a:81:87:1a:84:d3:b9:0b:23:23:3d:19:4b (ED25519)
+3000/tcp open  http    Grafana http
+| http-title: Grafana
+|_Requested resource was /login
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: C308E3090C62A6425B30B4C38883196B
+| http-robots.txt: 1 disallowed entry 
+|_/
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read from /usr/share/nmap: nmap-protocols nmap-service-probes nmap-services.
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 16 20:47:58 2026 -- 1 IP address (1 host up) scanned in 46.55 seconds

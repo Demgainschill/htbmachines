@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Fri Aug 14 06:04:21 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA canape_results 10.129.25.27
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.25.27 ()	Status: Up
+Host: 10.129.25.27 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 65535/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)/	Ignored State: filtered (65533)
+# Nmap done at Fri Aug 14 06:05:09 2026 -- 1 IP address (1 host up) scanned in 48.73 seconds

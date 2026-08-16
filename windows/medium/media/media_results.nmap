@@ -1,0 +1,40 @@
+# Nmap 7.99 scan initiated Wed Aug 12 18:29:33 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA media_results 10.129.234.67
+Nmap scan report for 10.129.234.67
+Host is up (0.24s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp   open  http          Apache httpd 2.4.56 ((Win64) OpenSSL/1.1.1t PHP/8.1.17)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: 556F31ACD686989B1AFCF382C05846AA
+|_http-server-header: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.1.17
+|_http-title: ProMotion Studio
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2026-08-12T06:17:26+00:00; -6h42m59s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: MEDIA
+|   NetBIOS_Domain_Name: MEDIA
+|   NetBIOS_Computer_Name: MEDIA
+|   DNS_Domain_Name: MEDIA
+|   DNS_Computer_Name: MEDIA
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-08-12T06:17:18+00:00
+| ssl-cert: Subject: commonName=MEDIA
+| Issuer: commonName=MEDIA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-08-11T06:15:35
+| Not valid after:  2027-02-10T06:15:35
+| MD5:     2236 42e4 c55b 45dd 5281 707e 0e8f 4c69
+| SHA-1:   9228 b563 a1a3 2144 ea45 cba8 7400 a494 10a5 09f3
+|_SHA-256: a67f aabf c661 e03e 4df4 1896 cd25 767f 9e32 e5f5 e1b7 1497 4f96 535e 161c 1ffb
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -6h42m59s, deviation: 0s, median: -6h42m59s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 12 18:30:25 2026 -- 1 IP address (1 host up) scanned in 51.74 seconds

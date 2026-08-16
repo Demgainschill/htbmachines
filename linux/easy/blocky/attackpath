@@ -1,0 +1,11 @@
+Attack path
+
+going to port 80 reveals jar file with phpmyadmin
+jar file contains sql hardcoded password for sql root
+the password works for phpmyadmin page as root
+we get a user notch with a hash in wordpres database in wp_users table
+
+we try hydra with hardcoded password from jar which works for user notch
+get user flag
+we check priveleges and see ALL=(ALL:ALL) ALL for the user and escalate using sudo su
+get root flag

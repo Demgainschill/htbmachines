@@ -1,0 +1,12 @@
+# Nmap 7.99 scan initiated Sat Aug 15 19:15:17 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=3000 -oN swagshop_results_2.nmap 10.129.229.138
+Nmap scan report for 10.129.229.138
+Host is up (0.066s latency).
+Not shown: 42699 closed tcp ports (reset), 22834 filtered tcp ports (no-response)
+PORT   STATE SERVICE    VERSION
+22/tcp open  tcpwrapped
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+80/tcp open  tcpwrapped
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 15 19:17:35 2026 -- 1 IP address (1 host up) scanned in 137.39 seconds

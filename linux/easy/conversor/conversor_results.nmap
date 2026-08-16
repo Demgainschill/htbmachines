@@ -1,0 +1,23 @@
+# Nmap 7.99 scan initiated Fri Aug 14 09:55:44 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA conversor_results 10.129.238.31
+Increasing send delay for 10.129.238.31 from 0 to 5 due to 614 out of 2046 dropped probes since last increase.
+Increasing send delay for 10.129.238.31 from 5 to 10 due to 2706 out of 9019 dropped probes since last increase.
+Increasing send delay for 10.129.238.31 from 320 to 640 due to 7231 out of 24103 dropped probes since last increase.
+Increasing send delay for 10.129.238.31 from 640 to 1000 due to 3819 out of 12728 dropped probes since last increase.
+Nmap scan report for 10.129.238.31
+Host is up (0.46s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 01:74:26:39:47:bc:6a:e2:cb:12:8b:71:84:9c:f8:5a (ECDSA)
+|_  256 3a:16:90:dc:74:d8:e3:c4:51:36:e2:08:06:26:17:ee (ED25519)
+80/tcp open  http    Apache httpd 2.4.52
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_http-title: Did not follow redirect to http://conversor.htb/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: Host: conversor.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 14 09:56:31 2026 -- 1 IP address (1 host up) scanned in 47.61 seconds

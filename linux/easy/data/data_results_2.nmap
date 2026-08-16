@@ -1,0 +1,1 @@
+# Nmap 7.99 scan initiated Sun Aug 16 20:46:38 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=3000 -oN data_results_2.nmap 10.129.234.47

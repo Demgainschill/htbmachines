@@ -1,0 +1,28 @@
+# Nmap 7.99 scan initiated Fri Aug 14 06:04:21 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA canape_results 10.129.25.27
+Nmap scan report for 10.129.25.27
+Host is up (0.045s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 3BFBCDC99B63224E349D9E065FD70B7B
+| http-methods: 
+|_  Supported Methods: HEAD OPTIONS GET
+|_http-title: Simpsons Fan Site
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-git: 
+|   10.129.25.27:80/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|     Last commit message: final # Please enter the commit message for your changes. Li...
+|     Remotes:
+|_      http://git.canape.htb/simpsons.git
+65535/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 8d:82:0b:31:90:e4:c8:85:b2:53:8b:a1:7c:3b:65:e1 (RSA)
+|   256 22:fc:6e:c3:55:00:85:0f:24:bf:f5:79:6c:92:8b:68 (ECDSA)
+|_  256 0d:91:27:51:80:5e:2b:a3:81:0d:e9:d8:5c:9b:77:35 (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 14 06:05:09 2026 -- 1 IP address (1 host up) scanned in 48.73 seconds

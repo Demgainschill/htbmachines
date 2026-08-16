@@ -1,0 +1,15 @@
+[libdefaults]
+    dns_lookup_kdc = false
+    dns_lookup_realm = false
+    default_realm = DANGLINGTREE.HTB
+
+[realms]
+    DANGLINGTREE.HTB = {
+        kdc = dc.danglingtree.htb
+        admin_server = dc.danglingtree.htb
+        default_domain = danglingtree.htb
+    }
+
+[domain_realm]
+    .danglingtree.htb = DANGLINGTREE.HTB
+    danglingtree.htb = DANGLINGTREE.HTB

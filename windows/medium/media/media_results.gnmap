@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Wed Aug 12 18:29:33 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA media_results 10.129.234.67
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.234.67 ()	Status: Up
+Host: 10.129.234.67 ()	Ports: 22/open/tcp//ssh//OpenSSH for_Windows_9.5 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.56 ((Win64) OpenSSL|1.1.1t PHP|8.1.17)/, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/	Ignored State: filtered (65532)
+# Nmap done at Wed Aug 12 18:30:25 2026 -- 1 IP address (1 host up) scanned in 51.74 seconds
