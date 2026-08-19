@@ -1,0 +1,11 @@
+# Nmap 7.99 scan initiated Tue Aug 18 22:46:53 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN academy_results_1.nmap 10.129.28.56
+Nmap scan report for 10.129.28.56
+Host is up (0.16s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+33060/tcp open  mysqlx
+
+Read data files from: /usr/share/nmap
+# Nmap done at Tue Aug 18 22:47:09 2026 -- 1 IP address (1 host up) scanned in 16.21 seconds

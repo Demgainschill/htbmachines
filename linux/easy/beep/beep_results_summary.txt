@@ -1,0 +1,86 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.229.183
+Output Name   : beep_results
+Date          : 2026-08-17 23:01:10
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 5
+Mode          : Nmap only (5 scans)
+Service scan  : No (port discovery only)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+22 25 80 110 111 143 443 993 995 3306 
+
+[*] Nmap #2 Ports:
+22 25 80 110 111 143 443 993 995 3306 4190 4445 4559 5038 10000 
+
+[*] Nmap #3 Ports:
+22 25 80 110 111 143 443 993 995 3306 
+
+[*] Nmap #4 Ports:
+22 25 80 110 111 143 443 993 995 3306 
+
+[*] Nmap #5 Ports:
+22 25 80 110 111 143 443 993 995 3306 4445 4559 5038 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+22
+25
+80
+110
+111
+143
+443
+993
+995
+3306
+4445
+4559
+5038
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open ssh
+  → 25/tcp open smtp
+  → 80/tcp open http
+  → 110/tcp open pop3
+  → 111/tcp open rpcbind
+  → 143/tcp open imap
+  → 443/tcp open https
+  → 993/tcp open imaps
+  → 995/tcp open pop3s
+  → 3306/tcp open mysql
+  → 4445/tcp open upnotifyp
+  → 4559/tcp open hylafax
+  → 5038/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,25,80,110,111,143,443,993,995,3306,4445,4559,5038
+
+==============================================
+ FILES GENERATED
+==============================================
+  • beep_results_1.nmap
+  • beep_results_2.nmap
+  • beep_results_3.nmap
+  • beep_results_4.nmap
+  • beep_results_5.nmap
+  • beep_results_summary.txt  ← this file
+==============================================

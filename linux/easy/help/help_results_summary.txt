@@ -1,0 +1,57 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target      : 10.129.230.159
+Output Name : help_results
+Date        : 2026-08-17 10:53:33
+Mode        : Masscan + 2× Nmap
+Rate        : 3000
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+22
+80
+3000
+
+[*] Nmap #2 Ports:
+22
+80
+3000
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] New ports that appeared only in Nmap #2:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Only found in Nmap #1:
+None
+
+[+] Only found in Nmap #2:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open ssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
+  → 80/tcp open http Apache httpd 2.4.18
+  → 3000/tcp open http Node.js Express framework
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,80,3000
+
+==============================================
+ FILES GENERATED
+==============================================
+ • help_results_masscan.txt
+ • help_results_1.nmap
+ • help_results_2.nmap
+ • help_results_summary.txt   ← this file
+==============================================

@@ -1,0 +1,66 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.28.56
+Output Name   : academy_results
+Date          : 2026-08-18 22:46:53
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 5
+Mode          : Nmap only (5 scans)
+Service scan  : No (port discovery only)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+22 80 33060 
+
+[*] Nmap #2 Ports:
+22 80 33060 
+
+[*] Nmap #3 Ports:
+22 80 33060 
+
+[*] Nmap #4 Ports:
+22 80 33060 
+
+[*] Nmap #5 Ports:
+22 80 33060 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+22
+80
+33060
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open ssh
+  → 80/tcp open http
+  → 33060/tcp open mysqlx
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,80,33060
+
+==============================================
+ FILES GENERATED
+==============================================
+  • academy_results_1.nmap
+  • academy_results_2.nmap
+  • academy_results_3.nmap
+  • academy_results_4.nmap
+  • academy_results_5.nmap
+  • academy_results_summary.txt  ← this file
+==============================================

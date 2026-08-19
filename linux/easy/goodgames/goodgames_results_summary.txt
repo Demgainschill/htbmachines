@@ -1,0 +1,51 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target      : 10.129.26.250
+Output Name : goodgames_results
+Date        : 2026-08-16 23:44:59
+Mode        : Masscan + 2× Nmap
+Rate        : 3000
+==============================================
+
+[*] Masscan Ports:
+80
+
+[*] Nmap #1 Ports:
+80
+
+[*] Nmap #2 Ports:
+80
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] New ports that appeared only in Nmap #2:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Only found in Nmap #1:
+None
+
+[+] Only found in Nmap #2:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 80/tcp open http Werkzeug httpd 2.0.2 (Python 3.9.2)
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+80
+
+==============================================
+ FILES GENERATED
+==============================================
+ • goodgames_results_masscan.txt
+ • goodgames_results_1.nmap
+ • goodgames_results_2.nmap
+ • goodgames_results_summary.txt   ← this file
+==============================================

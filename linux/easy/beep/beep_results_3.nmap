@@ -1,0 +1,19 @@
+# Nmap 7.99 scan initiated Mon Aug 17 23:03:35 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN beep_results_3.nmap 10.129.229.183
+Nmap scan report for 10.129.229.183
+Host is up (7.0s latency).
+Not shown: 47809 filtered tcp ports (no-response), 17716 closed tcp ports (reset)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+110/tcp  open  pop3
+111/tcp  open  rpcbind
+143/tcp  open  imap
+443/tcp  open  https
+993/tcp  open  imaps
+995/tcp  open  pop3s
+3306/tcp open  mysql
+
+Read data files from: /usr/share/nmap
+# Nmap done at Mon Aug 17 23:04:20 2026 -- 1 IP address (1 host up) scanned in 44.56 seconds
