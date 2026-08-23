@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Thu Aug 20 14:21:43 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA aragog_results 10.129.29.11
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.29.11 (aragog.htb)	Status: Up
+Host: 10.129.29.11 (aragog.htb)	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.18/	Ignored State: closed (65532)
+# Nmap done at Thu Aug 20 14:22:18 2026 -- 1 IP address (1 host up) scanned in 35.49 seconds

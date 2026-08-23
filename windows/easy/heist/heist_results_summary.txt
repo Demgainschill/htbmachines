@@ -1,0 +1,70 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.96.157
+Output Name   : heist_results
+Date          : 2026-08-21 07:25:39
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 5
+Mode          : Nmap only (5 scans)
+Service scan  : No (port discovery only)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+80 135 445 5985 49669 
+
+[*] Nmap #2 Ports:
+80 135 445 5985 49669 
+
+[*] Nmap #3 Ports:
+80 135 445 5985 
+
+[*] Nmap #4 Ports:
+80 135 445 5985 49669 
+
+[*] Nmap #5 Ports:
+80 135 445 5985 49669 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+80
+135
+445
+5985
+49669
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 80/tcp open http
+  → 135/tcp open msrpc
+  → 445/tcp open microsoft-ds
+  → 5985/tcp open wsman
+  → 49669/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+80,135,445,5985,49669
+
+==============================================
+ FILES GENERATED
+==============================================
+  • heist_results_1.nmap
+  • heist_results_2.nmap
+  • heist_results_3.nmap
+  • heist_results_4.nmap
+  • heist_results_5.nmap
+  • heist_results_summary.txt  ← this file
+==============================================

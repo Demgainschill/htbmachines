@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Thu Aug 20 14:21:43 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v -&#45;min-rate=4000 -oA aragog_results 10.129.29.11 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sV -sC -p- -v -&#45;min-rate=4000 -oA aragog_results 10.129.29.11" start="1787215903" startstr="Thu Aug 20 14:21:43 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1787215903"/>
+<taskend task="NSE" time="1787215903"/>
+<taskbegin task="NSE" time="1787215903"/>
+<taskend task="NSE" time="1787215903"/>
+<taskbegin task="NSE" time="1787215903"/>
+<taskend task="NSE" time="1787215903"/>
+<taskbegin task="Ping Scan" time="1787215903"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.29.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1787215903" extrainfo="1 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1787215903"/>
+<taskend task="SYN Stealth Scan" time="1787215923" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1787215923"/>
+<taskend task="Service scan" time="1787215930" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1787215930"/>
+<taskend task="NSE" time="1787215936"/>
+<taskbegin task="NSE" time="1787215936"/>
+<taskend task="NSE" time="1787215938"/>
+<taskbegin task="NSE" time="1787215938"/>
+<taskend task="NSE" time="1787215938"/>
+<host starttime="1787215904" endtime="1787215938"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.129.29.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="aragog.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="reset" count="65532" proto="tcp" ports="1-20,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to ::ffff:10.10.16.187&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to ::ffff:10.10.16.187&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;-r-&#45;r-&#45;r-&#45;    1 ftp      ftp            86 Dec 21  2017 test.txt"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 ad:21:fb:50:16:d4:93:dc:b7:29:1f:4c:c2:61:16:48 (RSA)&#xa;  256 2c:94:00:3c:57:2f:c2:49:77:24:aa:22:6a:43:7d:b1 (ECDSA)&#xa;  256 9a:ff:8b:e4:0e:98:70:52:29:68:0e:cc:a0:7d:5c:1f (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">ad21fb5016d493dcb7291f4cc2611648</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCu4HMMB7TaCe6z0H95oVdD04wNQAQPz5stO+uK5HOTrHGSwsnCa+DRD741FtPzsUon/M8xRoIlDUu/LBT0xs0cWcMwowCTi8v4VTVTMsA0GTdhaltYI/xp2SpMGfkqUgxBqFhLWnaE4d+7GTLDOeCw5vJS8IbqhuWK7al9maUc8+deBexease3MexMEtOsguepQ2ZkwfWiyNvV9W4RP22ya3XTepudsRbDYk9cD7KdMCtOl3K9ca5sNp/N4iB17Nudsfe4XVaXaWBmGdu10Qc/bz46CJPfq9UlOGQh5pjX3f6tiDoazoT6+I593cUkmTrOew6GEj+hK8nasJlsZOsf</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">2c94003c572fc2497724aa226a437db1</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDmmed2ltpDw7m2Qepes/9eywNB+5tkwZuTLrHYzwgjyDP+3G2wE9W3gIhf//twi60/zsy53P4+T8QrvU7hPGOI=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">9aff8be40e98705229680ecca07d5c1f</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINe+WKd9wUgKyqPvcLd8czGF41a5DhKtoQisq/RF9fPy</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" hostname="aragog.htb" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="119093" rttvar="1257" to="124121"/>
+</host>
+<taskbegin task="NSE" time="1787215938"/>
+<taskend task="NSE" time="1787215938"/>
+<taskbegin task="NSE" time="1787215938"/>
+<taskend task="NSE" time="1787215938"/>
+<taskbegin task="NSE" time="1787215938"/>
+<taskend task="NSE" time="1787215938"/>
+<runstats><finished time="1787215938" timestr="Thu Aug 20 14:22:18 2026" summary="Nmap done at Thu Aug 20 14:22:18 2026; 1 IP address (1 host up) scanned in 35.49 seconds" elapsed="35.49" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,66 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.29.11
+Output Name   : aragog_results
+Date          : 2026-08-20 14:08:56
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 5
+Mode          : Nmap only (5 scans)
+Service scan  : No (port discovery only)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+21 22 80 
+
+[*] Nmap #2 Ports:
+21 22 80 
+
+[*] Nmap #3 Ports:
+21 22 80 
+
+[*] Nmap #4 Ports:
+21 22 80 
+
+[*] Nmap #5 Ports:
+21 22 80 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+21
+22
+80
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 21/tcp open ftp
+  → 22/tcp open ssh
+  → 80/tcp open http
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+21,22,80
+
+==============================================
+ FILES GENERATED
+==============================================
+  • aragog_results_1.nmap
+  • aragog_results_2.nmap
+  • aragog_results_3.nmap
+  • aragog_results_4.nmap
+  • aragog_results_5.nmap
+  • aragog_results_summary.txt  ← this file
+==============================================

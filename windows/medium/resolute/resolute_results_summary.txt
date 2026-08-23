@@ -1,0 +1,107 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.28.202
+Output Name   : resolute_results
+Date          : 2026-08-19 21:23:48
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 5
+Mode          : Nmap only (5 scans)
+Service scan  : No (port discovery only)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+53 88 135 139 389 445 464 593 636 3268 3269 5985 9389 47001 49664 49665 49666 49669 49670 49676 49677 49684 49725 
+
+[*] Nmap #2 Ports:
+53 88 135 139 389 445 464 593 636 3268 3269 5985 9389 47001 49664 49665 49666 49669 49670 49676 49677 49684 49725 
+
+[*] Nmap #3 Ports:
+53 88 135 139 389 445 464 593 636 3268 3269 5985 9389 47001 49664 49665 49666 49669 49670 49676 49677 49684 49742 
+
+[*] Nmap #4 Ports:
+53 88 135 139 389 445 464 593 636 3268 3269 5985 9389 47001 49664 49665 49666 49669 49670 49676 49677 49684 49742 
+
+[*] Nmap #5 Ports:
+53 88 135 139 389 445 464 593 636 3268 3269 5985 9389 47001 49664 49665 49666 49669 49670 49676 49677 49684 49742 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+53
+88
+135
+139
+389
+445
+464
+593
+636
+3268
+3269
+5985
+9389
+47001
+49664
+49665
+49666
+49669
+49670
+49676
+49677
+49684
+49742
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+49725
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 53/tcp open domain
+  → 88/tcp open kerberos-sec
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 389/tcp open ldap
+  → 445/tcp open microsoft-ds
+  → 464/tcp open kpasswd5
+  → 593/tcp open http-rpc-epmap
+  → 636/tcp open ldapssl
+  → 3268/tcp open globalcatLDAP
+  → 3269/tcp open globalcatLDAPssl
+  → 5985/tcp open wsman
+  → 9389/tcp open adws
+  → 47001/tcp open winrm
+  → 49664/tcp open unknown
+  → 49665/tcp open unknown
+  → 49666/tcp open unknown
+  → 49669/tcp open unknown
+  → 49670/tcp open unknown
+  → 49676/tcp open unknown
+  → 49677/tcp open unknown
+  → 49684/tcp open unknown
+  → 49725/tcp open unknown
+  → 49742/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+53,88,135,139,389,445,464,593,636,3268,3269,5985,9389,47001,49664,49665,49666,49669,49670,49676,49677,49684,49725,49742
+
+==============================================
+ FILES GENERATED
+==============================================
+  • resolute_results_1.nmap
+  • resolute_results_2.nmap
+  • resolute_results_3.nmap
+  • resolute_results_4.nmap
+  • resolute_results_5.nmap
+  • resolute_results_summary.txt  ← this file
+==============================================

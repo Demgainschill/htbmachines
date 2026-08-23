@@ -1,0 +1,11 @@
+# Nmap 7.99 scan initiated Thu Aug 20 14:09:14 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN aragog_results_2.nmap 10.129.29.11
+Nmap scan report for 10.129.29.11
+Host is up (0.26s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Thu Aug 20 14:09:31 2026 -- 1 IP address (1 host up) scanned in 17.25 seconds

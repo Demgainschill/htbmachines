@@ -1,0 +1,14 @@
+# Nmap 7.99 scan initiated Fri Aug 21 07:27:23 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN heist_results_4.nmap 10.129.96.157
+Nmap scan report for 10.129.96.157
+Host is up (1.4s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+445/tcp   open  microsoft-ds
+5985/tcp  open  wsman
+49669/tcp open  unknown
+
+Read data files from: /usr/share/nmap
+# Nmap done at Fri Aug 21 07:28:01 2026 -- 1 IP address (1 host up) scanned in 37.96 seconds
