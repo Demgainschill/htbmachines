@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Thu Aug 27 07:56:37 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN sea_results_3.nmap 10.129.32.51
+Nmap scan report for 10.129.32.51
+Host is up (0.25s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Thu Aug 27 07:56:56 2026 -- 1 IP address (1 host up) scanned in 18.97 seconds

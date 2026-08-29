@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Fri Aug 28 18:03:46 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN wifinetic_results_1.nmap 10.129.229.90
+doAnyOutstandingRetransmits took 41ms
+Read from /usr/share/nmap: nmap-protocols nmap-services.
+# Nmap done at Fri Aug 28 18:04:21 2026 -- 1 IP address (1 host up) scanned in 35.05 seconds

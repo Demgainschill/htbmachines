@@ -1,9 +1,9 @@
 ==============================================
  MASSMAP - PORT SCAN COMPARISON SUMMARY
 ==============================================
-Target        : 10.129.230.159
-Output Name   : help_results
-Date          : 2026-08-27 20:44:00
+Target        : 10.129.33.255
+Output Name   : topology_results
+Date          : 2026-08-29 21:16:43
 Interface     : tun0
 Rate          : 4000
 Nmap scans    : 3
@@ -15,20 +15,19 @@ Service scan  : No (port discovery only)
 None
 
 [*] Nmap #1 Ports:
-22 80 3000 
+22 80 
 
 [*] Nmap #2 Ports:
-22 80 3000 
+22 80 
 
 [*] Nmap #3 Ports:
-22 80 3000 
+22 80 
 
 ----------- CHANGES / DIFFERENCES -----------
 
 [+] Newly appeared as OPEN in the final Nmap scan:
 22
 80
-3000
 
 [+] Only found by Masscan:
 None
@@ -41,18 +40,17 @@ None
 ==============================================
   → 22/tcp open ssh
   → 80/tcp open http
-  → 3000/tcp open ppp
 
 ==============================================
  RECOMMENDED PORTS FOR FURTHER ENUMERATION
 ==============================================
-22,80,3000
+22,80
 
 ==============================================
  FILES GENERATED
 ==============================================
-  • help_results_1.nmap
-  • help_results_2.nmap
-  • help_results_3.nmap
-  • help_results_summary.txt  ← this file
+  • topology_results_1.nmap
+  • topology_results_2.nmap
+  • topology_results_3.nmap
+  • topology_results_summary.txt  ← this file
 ==============================================

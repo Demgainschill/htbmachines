@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Mon Aug 24 11:35:21 2026 as: /usr/lib/nmap/nmap -sV -Pn -sC -p- -v --min-rate=4000 -oA manage_results 10.129.234.57
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.234.57 ()	Status: Up
+Host: 10.129.234.57 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)/, 2222/open/tcp//java-rmi//Java RMI/, 8080/open/tcp//http//Apache Tomcat 10.1.19/, 36361/open/tcp//java-rmi//Java RMI/, 45001/open/tcp//tcpwrapped///	Ignored State: closed (65530)
+# Nmap done at Mon Aug 24 11:38:35 2026 -- 1 IP address (1 host up) scanned in 193.86 seconds

@@ -1,9 +1,9 @@
 ==============================================
  MASSMAP - PORT SCAN COMPARISON SUMMARY
 ==============================================
-Target        : 10.129.230.159
-Output Name   : help_results
-Date          : 2026-08-27 20:44:00
+Target        : 10.129.32.226
+Output Name   : sau_results
+Date          : 2026-08-28 10:09:22
 Interface     : tun0
 Rate          : 4000
 Nmap scans    : 3
@@ -15,44 +15,41 @@ Service scan  : No (port discovery only)
 None
 
 [*] Nmap #1 Ports:
-22 80 3000 
+22 
 
 [*] Nmap #2 Ports:
-22 80 3000 
+22 55555 
 
 [*] Nmap #3 Ports:
-22 80 3000 
+55555 
 
 ----------- CHANGES / DIFFERENCES -----------
 
 [+] Newly appeared as OPEN in the final Nmap scan:
-22
-80
-3000
+55555
 
 [+] Only found by Masscan:
 None
 
 [+] Flapping / disappeared in final scan:
-None
+22
 
 ==============================================
  FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
 ==============================================
   → 22/tcp open ssh
-  → 80/tcp open http
-  → 3000/tcp open ppp
+  → 55555/tcp open unknown
 
 ==============================================
  RECOMMENDED PORTS FOR FURTHER ENUMERATION
 ==============================================
-22,80,3000
+22,55555
 
 ==============================================
  FILES GENERATED
 ==============================================
-  • help_results_1.nmap
-  • help_results_2.nmap
-  • help_results_3.nmap
-  • help_results_summary.txt  ← this file
+  • sau_results_1.nmap
+  • sau_results_2.nmap
+  • sau_results_3.nmap
+  • sau_results_summary.txt  ← this file
 ==============================================

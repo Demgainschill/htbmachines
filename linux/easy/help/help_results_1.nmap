@@ -1,24 +1,12 @@
-# Nmap 7.99 scan initiated Mon Aug 17 10:54:23 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=3000 -oN help_results_1.nmap 10.129.230.159
+# Nmap 7.99 scan initiated Thu Aug 27 20:44:00 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN help_results_1.nmap 10.129.230.159
 Nmap scan report for 10.129.230.159
-Host is up (0.17s latency).
-Not shown: 65532 closed tcp ports (reset)
-PORT     STATE SERVICE VERSION
-22/tcp   open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-|   2048 e5:bb:4d:9c:de:af:6b:bf:ba:8c:22:7a:d8:d7:43:28 (RSA)
-|   256 d5:b0:10:50:74:86:a3:9f:c5:53:6f:3b:4a:24:61:19 (ECDSA)
-|_  256 e2:1b:88:d3:76:21:d4:1e:38:15:4a:81:11:b7:99:07 (ED25519)
-80/tcp   open  http    Apache httpd 2.4.18
-| http-methods: 
-|_  Supported Methods: GET HEAD POST OPTIONS
-|_http-server-header: Apache/2.4.18 (Ubuntu)
-|_http-title: Did not follow redirect to http://help.htb/
-3000/tcp open  http    Node.js Express framework
-|_http-title: Site doesn't have a title (application/json; charset=utf-8).
-| http-methods: 
-|_  Supported Methods: GET HEAD POST OPTIONS
-Service Info: Host: 127.0.1.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+Host is up (0.054s latency).
+Not shown: 64534 closed tcp ports (reset), 998 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3000/tcp open  ppp
 
 Read data files from: /usr/share/nmap
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Aug 17 10:54:58 2026 -- 1 IP address (1 host up) scanned in 35.28 seconds
+# Nmap done at Thu Aug 27 20:44:16 2026 -- 1 IP address (1 host up) scanned in 16.03 seconds

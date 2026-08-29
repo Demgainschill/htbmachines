@@ -1,0 +1,60 @@
+root:x:0:0: root:/root:/bin/bash
+
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+
+bin:x:2:2: bin:/bin:/usr/sbin/nologin
+
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+
+sync:x:4:65534:sync:/bin:/ bin/sync
+
+games:x:5:60: games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+Ip:x:7:7:lp:/var/spool/Ipd:/usr/sbin/nologin
+
+mail:x:8:8: mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+
+proxy :x:13:13:proxy:/bin:/usr/sbin/nologin
+
+www-data:x:33:33:www-data :/ var/www:/ usr/sbin/nologin
+
+backup:x:34:34: backup :/ var/backups:/usr/sbin/nologin
+
+list:x:38:38: Mailing List Manager:/var/list:/usr/sbin/nologin
+
+irc :x:39:39:ired:/var/run/ircd:/usr/sbin/nologin
+
+gnats:x:41:41:Gnats Bug—Reporting System (admin ):/var/lib/gnats:/usr/sbin/nologin
+nobody: x:65534:65534: nobody :/ nonexistent :/usr/sbin/nologin
+systemd—network:x:100:102:systemd Network Management,, ,:/run/systemd:/usr/sbin/nologin
+systemd—resolve:x:101:103:systemd Resolver ,,,:/run/systemd:/usr/sbin/nologin
+systemd—timesync:x:102:104:systemd Time Synchronization ,, ,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent :/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+
+-apt:x:105:65534::/nonexistent :/usr/sbin/nologin
+
+mysql:x:106:112:MySQL Server ,,,:/nonexistent:/bin/false
+
+tss:x:107:113:TPM software stack ,,,:/var/lib/tpm:/bin/ false
+uuidd:x:108:115::/run/uuidd:/usr/sbin/nologin
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+
+pollinate:x:112:1::/var/cache/ pollinate :/bin/false
+systemd—coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+vdaisley:x:1007:1007: Vajramani Daisley ,W2 | —123,,:/home/ vdaisley :/ bin/bash
+rtkit:x:113:121:RealtimeKit ,, ,:/proc:/usr/sbin/nologin
+dnsmasq:x:114:65534:dnsmasq,, ,:/var/lib/misc:/usr/sbin/nologin
+cups—pk—helper:x:115:119:user for cups—pk—helper service ,, ,:/home/cups—pk—helper:/usr/sbin/nologin
+usbmux:x:116:46:usbmux daemon,, ,:/ var/lib/usbmux:/usr/sbin/nologin
+avahi:x:117:124:Avahi mDNS daemon, , ,:/ var/run/avahi—daemon:/usr/sbin/nologin
+geoclue:x:118:125::/var/lib/geoclue :/usr/sbin/nologin
+saned:x:119:127::/var/1lib/saned :/usr/sbin/nologin
+
+colord:x:120:128:colord colour management daemon,, ,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:121:129: PulseAudio daemon, , ,:/var/run/pulse:/usr/sbin/nologin
+gdm:x:122:131:Gnome Display Manager:/var/1lib/gdm3:/bin/ false
+fwupd—refresh:x:109:116:fwupd—refresh user,, ,:/run/systemd:/usr/sbin/nologin
+-laurel:x:998:998::/var/log/laurel :/bin/false
