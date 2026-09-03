@@ -1,0 +1,66 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.34.197
+Output Name   : irked_results
+Date          : 2026-08-30 20:04:53
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+22 80 111 6697 8067 41232 65534 
+
+[*] Nmap #2 Ports:
+22 80 111 6697 8067 41232 65534 
+
+[*] Nmap #3 Ports:
+22 80 111 6697 8067 41232 65534 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+22
+80
+111
+6697
+8067
+41232
+65534
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open ssh
+  → 80/tcp open http
+  → 111/tcp open rpcbind
+  → 6697/tcp open ircs-u
+  → 8067/tcp open infi-async
+  → 41232/tcp open unknown
+  → 65534/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,80,111,6697,8067,41232,65534
+
+==============================================
+ FILES GENERATED
+==============================================
+  • irked_results_1.nmap
+  • irked_results_2.nmap
+  • irked_results_3.nmap
+  • irked_results_summary.txt  ← this file
+==============================================

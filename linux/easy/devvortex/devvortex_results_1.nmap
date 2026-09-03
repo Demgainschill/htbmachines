@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Wed Sep  2 07:51:57 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN devvortex_results_1.nmap 10.129.229.146
+Nmap scan report for 10.129.229.146
+Host is up (0.21s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Sep  2 07:52:13 2026 -- 1 IP address (1 host up) scanned in 16.15 seconds

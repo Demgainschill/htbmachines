@@ -1,0 +1,60 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.35.0
+Output Name   : lucasadepapel_results
+Date          : 2026-08-31 11:07:56
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+None
+
+[*] Nmap #2 Ports:
+21 22 80 443 
+
+[*] Nmap #3 Ports:
+21 22 80 443 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+21
+22
+80
+443
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 21/tcp open ftp
+  → 22/tcp open ssh
+  → 80/tcp open http
+  → 443/tcp open https
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+21,22,80,443
+
+==============================================
+ FILES GENERATED
+==============================================
+  • lucasadepapel_results_1.nmap
+  • lucasadepapel_results_2.nmap
+  • lucasadepapel_results_3.nmap
+  • lucasadepapel_results_summary.txt  ← this file
+==============================================

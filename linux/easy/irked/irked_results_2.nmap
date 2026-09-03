@@ -1,0 +1,15 @@
+# Nmap 7.99 scan initiated Sun Aug 30 20:05:06 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN irked_results_2.nmap 10.129.34.197
+Nmap scan report for 10.129.34.197
+Host is up (0.14s latency).
+Not shown: 65528 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+111/tcp   open  rpcbind
+6697/tcp  open  ircs-u
+8067/tcp  open  infi-async
+41232/tcp open  unknown
+65534/tcp open  unknown
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Aug 30 20:05:20 2026 -- 1 IP address (1 host up) scanned in 13.47 seconds

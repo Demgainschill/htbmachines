@@ -4,3 +4,10 @@
 *.bin
 winPEAS*
 mimikatz*
+linpeas.sh
+**/id_rsa
+**/*.key
+**/*.p12
+**/hydra.restore
+**/passlist
+**/hashes

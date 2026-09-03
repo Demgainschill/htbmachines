@@ -1,0 +1,56 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.228.98
+Output Name   : precious_results
+Date          : 2026-09-03 08:39:02
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+None
+
+[*] Nmap #2 Ports:
+22 80 
+
+[*] Nmap #3 Ports:
+22 80 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+22
+80
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open ssh
+  → 80/tcp open http
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,80
+
+==============================================
+ FILES GENERATED
+==============================================
+  • precious_results_1.nmap
+  • precious_results_2.nmap
+  • precious_results_3.nmap
+  • precious_results_summary.txt  ← this file
+==============================================
