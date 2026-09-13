@@ -1,0 +1,56 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.231.170
+Output Name   : chemistry_results
+Date          : 2026-09-05 08:23:17
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+22 5000 
+
+[*] Nmap #2 Ports:
+22 5000 
+
+[*] Nmap #3 Ports:
+22 5000 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open ssh
+  → 5000/tcp open upnp
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,5000
+
+==============================================
+ FILES GENERATED
+==============================================
+  • chemistry_results_1.nmap
+  • chemistry_results_2.nmap
+  • chemistry_results_3.nmap
+  • chemistry_results_summary.txt  ← this file
+==============================================

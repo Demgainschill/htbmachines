@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Sun Sep 13 18:44:53 2026 as: /usr/lib/nmap/nmap -Pn -sU -v --open --min-rate=300 --max-retries 2 --top-ports 200 -oN antique_udp_udp.nmap 10.129.42.206
+Warning: 10.129.42.206 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.129.42.206
+Host is up (0.24s latency).
+Not shown: 191 open|filtered udp ports (no-response), 8 closed udp ports (port-unreach)
+PORT    STATE SERVICE
+161/udp open  snmp
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Sep 13 18:44:58 2026 -- 1 IP address (1 host up) scanned in 5.08 seconds

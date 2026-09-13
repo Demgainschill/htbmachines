@@ -1,0 +1,55 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.42.206
+Output Name   : antique_results
+Date          : 2026-09-13 18:39:36
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+23 
+
+[*] Nmap #2 Ports:
+23 
+
+[*] Nmap #3 Ports:
+23 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 23/tcp open telnet
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+23
+
+==============================================
+ FILES GENERATED
+==============================================
+  • antique_results_1.nmap
+  • antique_results_2.nmap
+  • antique_results_3.nmap
+  • antique_results_summary.txt  ← this file
+==============================================

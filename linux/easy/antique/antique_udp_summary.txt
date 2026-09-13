@@ -1,0 +1,61 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.42.206
+Output Name   : antique_udp
+Date          : 2026-09-13 18:44:39
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 1
+Mode          : Nmap only (1 scans)
+Service scan  : No (port discovery only)
+UDP scan      : Yes (top 200, rate=300)
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+23 
+
+[*] Nmap UDP Open Ports:
+161 
+
+[*] Nmap UDP open|filtered:
+None 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  None (falling back to union of all findings)
+
+==============================================
+ UDP OPEN PORTS
+==============================================
+  → 161/udp open snmp
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+,23
+UDP:
+161
+
+==============================================
+ FILES GENERATED
+==============================================
+  • antique_udp_1.nmap
+  • antique_udp_udp.nmap
+  • antique_udp_summary.txt  ← this file
+==============================================
