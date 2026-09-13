@@ -1,0 +1,7 @@
+##tcp scan 
+
+compdiff stocker_results -n -s -c 3 -i tun0 -r 4000 10.129.228.197
+
+###udp scan 
+
+compdiff -n -c 2 -u --udp-top 200 --udp-rate 300 -i tun0 -r 3000 antique 10.129.42.206
