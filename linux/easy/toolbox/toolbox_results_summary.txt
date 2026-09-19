@@ -1,0 +1,68 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.96.171
+Output Name   : toolbox_results
+Date          : 2026-09-14 10:27:18
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+None
+
+[*] Nmap #2 Ports:
+21 22 135 139 443 445 5985 47001 49664 49665 49666 49667 49668 49669 
+
+[*] Nmap #3 Ports:
+21 22 135 139 443 445 5985 47001 49664 49665 49666 49667 49668 49669 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 21/tcp open ftp
+  → 22/tcp open ssh
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 443/tcp open https
+  → 445/tcp open microsoft-ds
+  → 5985/tcp open wsman
+  → 47001/tcp open winrm
+  → 49664/tcp open unknown
+  → 49665/tcp open unknown
+  → 49666/tcp open unknown
+  → 49667/tcp open unknown
+  → 49668/tcp open unknown
+  → 49669/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+21,22,135,139,443,445,5985,47001,49664,49665,49666,49667,49668,49669
+
+==============================================
+ FILES GENERATED
+==============================================
+  • toolbox_results_1.nmap
+  • toolbox_results_2.nmap
+  • toolbox_results_3.nmap
+  • toolbox_results_summary.txt  ← this file
+==============================================

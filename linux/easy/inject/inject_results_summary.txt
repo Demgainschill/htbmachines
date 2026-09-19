@@ -1,0 +1,56 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.228.213
+Output Name   : inject_results
+Date          : 2026-09-15 08:24:27
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+22 8080 
+
+[*] Nmap #2 Ports:
+22 8080 
+
+[*] Nmap #3 Ports:
+22 8080 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open ssh
+  → 8080/tcp open http-proxy
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,8080
+
+==============================================
+ FILES GENERATED
+==============================================
+  • inject_results_1.nmap
+  • inject_results_2.nmap
+  • inject_results_3.nmap
+  • inject_results_summary.txt  ← this file
+==============================================

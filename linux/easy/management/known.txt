@@ -1,0 +1,12 @@
+8rhu0L6Pw4Y7
+changeit
+password
+glpi
+tech
+normal
+post-only
+admin
+management
+openam
+opendj
+owen

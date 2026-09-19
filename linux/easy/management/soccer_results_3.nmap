@@ -1,0 +1,11 @@
+# Nmap 7.99 scan initiated Sat Sep 19 11:59:13 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN soccer_results_3.nmap 10.129.44.187
+Nmap scan report for soccer.htb (10.129.44.187)
+Host is up (0.21s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+9091/tcp open  xmltec-xmlmail
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sat Sep 19 11:59:34 2026 -- 1 IP address (1 host up) scanned in 20.95 seconds

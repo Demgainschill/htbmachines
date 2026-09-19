@@ -1,0 +1,25 @@
+# Nmap 7.99 scan initiated Mon Sep 14 10:27:50 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN toolbox_results_3.nmap 10.129.96.171
+Changing global ping host to 10.129.96.171.
+Nmap scan report for 10.129.96.171
+Host is up (0.053s latency).
+Scanned at 2026-09-14 10:27:51 IST for 15s
+Not shown: 65502 closed tcp ports (reset), 19 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+5985/tcp  open  wsman
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+49669/tcp open  unknown
+
+Read from /usr/share/nmap: nmap-protocols nmap-services.
+# Nmap done at Mon Sep 14 10:28:06 2026 -- 1 IP address (1 host up) scanned in 15.55 seconds

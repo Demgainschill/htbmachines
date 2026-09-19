@@ -1,0 +1,16 @@
+# Nmap 7.99 scan initiated Sat Sep 19 09:12:58 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN management_results_1.nmap 10.129.244.176
+Nmap scan report for 10.129.244.176
+Host is up (0.31s latency).
+Not shown: 64842 closed tcp ports (reset), 686 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+443/tcp   open  https
+1689/tcp  open  firefox
+4444/tcp  open  krb524
+44491/tcp open  unknown
+50389/tcp open  unknown
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sat Sep 19 09:13:13 2026 -- 1 IP address (1 host up) scanned in 15.60 seconds
