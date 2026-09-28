@@ -1,0 +1,11 @@
+# Nmap 7.99 scan initiated Tue Sep 22 11:04:59 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN cohort_results_2.nmap 10.129.244.174
+Nmap scan report for 10.129.244.174 (10.129.244.174)
+Host is up (0.083s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Read data files from: /usr/share/nmap
+# Nmap done at Tue Sep 22 11:05:17 2026 -- 1 IP address (1 host up) scanned in 18.29 seconds

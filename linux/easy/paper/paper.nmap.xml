@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Sep 27 11:48:11 2026 as: /usr/lib/nmap/nmap -sV -sC -vvv -p- -&#45;min-rate 5000 -oA paper.nmap 10.129.36.16 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sV -sC -vvv -p- -&#45;min-rate 5000 -oA paper.nmap 10.129.36.16" start="1790489891" startstr="Sun Sep 27 11:48:11 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1790489891"/>
+<taskend task="NSE" time="1790489891"/>
+<taskbegin task="NSE" time="1790489891"/>
+<taskend task="NSE" time="1790489891"/>
+<taskbegin task="NSE" time="1790489891"/>
+<taskend task="NSE" time="1790489891"/>
+<taskbegin task="Ping Scan" time="1790489891"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.36.16" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1790489891" extrainfo="1 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1790489891"/>
+<taskend task="SYN Stealth Scan" time="1790489946" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1790489946"/>
+<taskend task="Service scan" time="1790489959" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1790489959"/>
+<taskend task="NSE" time="1790489968"/>
+<taskbegin task="NSE" time="1790489968"/>
+<taskend task="NSE" time="1790489971"/>
+<taskbegin task="NSE" time="1790489971"/>
+<taskend task="NSE" time="1790489971"/>
+<host starttime="1790489891" endtime="1790489971"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.129.36.16" addrtype="ipv4"/>
+<hostnames>
+<hostname name="paper.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65350">
+<extrareasons reason="reset" count="65350" proto="tcp" ports="1-21,23-79,81-282,284-442,444-1304,1306-1481,1483-1506,1508-1537,1539-1696,1699-2251,2253-2924,2926-3719,3721-3847,3849-4296,4298-4830,4832-5378,5380-5876,5878-6413,6415-6460,6462-6623,6625-7059,7061-7065,7067-7483,7485-9016,9018-9059,9061-9093,9095-10129,10131-10178,10180-10482,10485-10763,10765-10867,10869-11052,11054-11084,11086-11284,11286-11679,11681-12450,12452-12847,12849-13403,13405-13474,13476-13885,13887-14337,14339-15127,15129-15316,15318-15503,15505-16060,16062-16144,16146-16159,16161-16164,16166-17219,17221-17393,17395-17722,17724-17786,17788-18045,18047-18131,18133-18198,18200-18222,18224-19732,19734-19896,19898-20194,20196-20290,20292-22406,22408-23028,23030-23770,23772-23780,23782-24290,24292-24497,24499-25065,25067-25329,25331-25384,25386-25682,25684-25796,25798-26051,26053-26324,26326-26853,26855-27248,27250-27600,27602-27638,27640-27956,27958-28554,28556-28656,28658-28749,28751-29038,29040-29607,29609-30111,30113-30420,30422-30952,30954-31450,31452-31803,31805-32023,32025-32125,32127-32140,32142-32492,32494-33101,33103-33160,33162-33819,33821-34071,34073-34120,34122-34558,34560-34599,34601-34620,34622-34802,34804-35175,35177-36106,36108-36278,36280-36515,36517-36564,36566-36842,36844-37139,37141-39832,39834-39933,39935-39938,39940-39957,39959-41339,41341-41784,41786-41924,41926-41990,41992-42161,42163-42804,42806-42878,42880-43290,43292-43763,43765-43779,43781-44506,44508-44645,44647-44667,44669-44982,44984-45595,45597-45645,45647-45656,45658-46146,46148-46161,46163-46183,46185-46329,46331-46457,46459-46519,46521-46656,46658-46688,46690-47186,47188-48552,48554-48923,48925-48928,48930-49534,49536-50508,50510-51861,51863-52458,52460-52706,52708-52847,52849-53120,53122-53597,53599-53660,53662-53705,53707-54610,54612-54697,54699-54763,54765-54804,54806-55390,55392-55509,55511-56031,56033-57153,57155-57781,57783-57805,57807-57921,57923-58025,58027-58122,58124-58681,58683-59331,59333-61162,61164-61285,61287-61422,61424-61520,61522-62391,62393-62444,62446-62641,62643-63454,63456-63655,63657-63670,63672-63925,63927-64196,64198-64792,64794-65201,65203-65205,65207-65268,65270-65314,65316-65535"/>
+</extraports>
+<extraports state="filtered" count="182">
+<extrareasons reason="no-response" count="182" proto="tcp" ports="283,1305,1482,1507,1538,1697-1698,2252,2925,3720,3848,4297,4831,5379,5877,6414,6461,6624,7060,7066,7484,9017,9060,9094,10130,10179,10483-10484,10764,10868,11053,11085,11285,11680,12451,12848,13404,13475,13886,14338,15128,15317,15504,16061,16145,16160,16165,17220,17394,17723,17787,18046,18132,18199,18223,19733,19897,20195,20291,22407,23029,23771,23781,24291,24498,25066,25330,25385,25683,25797,26052,26325,26854,27249,27601,27639,27957,28555,28657,28750,29039,29608,30112,30421,30953,31451,31804,32024,32126,32141,32493,33102,33161,33820,34072,34121,34559,34600,34621,34803,35176,36107,36279,36516,36565,36843,37140,39833,39934,39939,39958,41340,41785,41925,41991,42162,42805,42879,43291,43764,43780,44507,44646,44668,44983,45596,45646,45657,46147,46162,46184,46330,46458,46520,46657,46689,47187,48553,48924,48929,49535,50509,51862,52459,52707,52848,53121,53598,53661,53706,54611,54698,54764,54805,55391,55510,56032,57154,57782,57806,57922,58026,58123,58682,59332,61163,61286,61423,61521,62392,62445,62642,63455,63656,63671,63926,64197,64793,65202,65206,65269,65315"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.0" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.0</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 10:05:ea:50:56:a6:00:cb:1c:9c:93:df:5f:83:e0:64 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDcZzzauRoUMdyj6UcbrSejflBMRBeAdjYb2Fkpkn55uduA3qShJ5SP33uotPwllc3wESbYzlB9bGJVjeGA2l+G99r24cqvAsqBl0bLStal3RiXtjI/ws1E3bHW1+U35bzlInU7AVC9HUW6IbAq+VNlbXLrzBCbIO+l3281i3Q4Y2pzpHm5OlM2mZQ8EGMrWxD4dPFFK0D4jCAKUMMcoro3Z/U7Wpdy+xmDfui3iu9UqAxlu4XcdYJr7Iijfkl62jTNFiltbym1AxcIpgyS2QX1xjFlXId7UrJOJo3c7a0F+B3XaBK5iQjpUfPmh7RLlt6CZklzBZ8wsmHakWpysfXN&#xa;  256 58:8c:82:1c:c6:63:2a:83:87:5c:2f:2b:4f:4d:c3:79 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBE/Xwcq0Gc4YEeRtN3QLduvk/5lezmamLm9PNgrhWDyNfPwAXpHiu7H9urKOhtw9SghxtMM2vMIQAUh/RFYgrxg="><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDcZzzauRoUMdyj6UcbrSejflBMRBeAdjYb2Fkpkn55uduA3qShJ5SP33uotPwllc3wESbYzlB9bGJVjeGA2l+G99r24cqvAsqBl0bLStal3RiXtjI/ws1E3bHW1+U35bzlInU7AVC9HUW6IbAq+VNlbXLrzBCbIO+l3281i3Q4Y2pzpHm5OlM2mZQ8EGMrWxD4dPFFK0D4jCAKUMMcoro3Z/U7Wpdy+xmDfui3iu9UqAxlu4XcdYJr7Iijfkl62jTNFiltbym1AxcIpgyS2QX1xjFlXId7UrJOJo3c7a0F+B3XaBK5iQjpUfPmh7RLlt6CZklzBZ8wsmHakWpysfXN</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">1005ea5056a600cb1c9c93df5f83e064</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBE/Xwcq0Gc4YEeRtN3QLduvk/5lezmamLm9PNgrhWDyNfPwAXpHiu7H9urKOhtw9SghxtMM2vMIQAUh/RFYgrxg=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">588c821cc6632a83875c2f2b4f4dc379</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.37" extrainfo="(centos) OpenSSL/1.1.1k mod_fcgid/2.3.9" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.37</cpe></service><script id="http-generator" output="HTML Tidy for HTML5 for Linux version 5.7.28"/><script id="http-title" output="HTTP Server Test Page powered by CentOS"><elem key="title">HTTP Server Test Page powered by CentOS</elem>
+</script><script id="http-server-header" output="Apache/2.4.37 (centos) OpenSSL/1.1.1k mod_fcgid/2.3.9"><elem>Apache/2.4.37 (centos) OpenSSL/1.1.1k mod_fcgid/2.3.9</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.37" extrainfo="(centos) OpenSSL/1.1.1k mod_fcgid/2.3.9" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.37</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=localhost.localdomain/organizationName=Unspecified/countryName=US/emailAddress=root@localhost.localdomain&#xa;Subject Alternative Name: DNS:localhost.localdomain&#xa;Issuer: commonName=localhost.localdomain/organizationName=Unspecified/countryName=US/emailAddress=root@localhost.localdomain/organizationalUnitName=ca-3899279223185377061&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-07-03T08:52:34&#xa;Not valid after:  2022-07-08T10:32:34&#xa;MD5:     579a 92bd 803c ac47 d49c 5add e44e 4f84&#xa;SHA-1:   61a2 301f 9e5c 2603 a643 00b5 e5da 5fd5 c175 f3a9&#xa;SHA-256: d5f0 f409 8515 2a6f eae7 437b 7ef0 888a 983c 503d 759a 2c07 1204 b408 a42b 0fc3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE4DCCAsigAwIBAgIIdryw6eirdUUwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNV&#xa;BAYTAlVTMRQwEgYDVQQKDAtVbnNwZWNpZmllZDEfMB0GA1UECwwWY2EtMzg5OTI3&#xa;OTIyMzE4NTM3NzA2MTEeMBwGA1UEAwwVbG9jYWxob3N0LmxvY2FsZG9tYWluMSkw&#xa;JwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9zdC5sb2NhbGRvbWFpbjAeFw0yMTA3&#xa;MDMwODUyMzRaFw0yMjA3MDgxMDMyMzRaMG4xCzAJBgNVBAYTAlVTMRQwEgYDVQQK&#xa;DAtVbnNwZWNpZmllZDEeMBwGA1UEAwwVbG9jYWxob3N0LmxvY2FsZG9tYWluMSkw&#xa;JwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9zdC5sb2NhbGRvbWFpbjCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAL1/3n1pZvFgeX1ja/w84jNxT2NcBkux&#xa;s5DYnYKeClqncxe7m4mz+my4uP6J1kBP5MudLe6UE62KFX3pGc6HCp2G0CdA1gQm&#xa;4WYgF2E7aLNHZPrKQ+r1fqBBw6o3NkNxS4maXD7AvrCqkgpID/qSziMJdUzs9mS+&#xa;NTzWq0IuSsTztLpxUEFv7T6XPGkS5/pE2hPWO0vz/Bd5BYL+3P08fPsC0/5YvgkV&#xa;uvFbFrxmuOFOTEkrTy88b2fLkbt8/Zeh4LSdmQqriSpxDnag1i3N++1aDkIhAhbA&#xa;LPK+rZq9PmUUFVY9MqizBEixxRvWhaU9gXMIy9ZnPJPpjDqyvju5e+kCAwEAAaNg&#xa;MF4wDgYDVR0PAQH/BAQDAgWgMAkGA1UdEwQCMAAwIAYDVR0RBBkwF4IVbG9jYWxo&#xa;b3N0LmxvY2FsZG9tYWluMB8GA1UdIwQYMBaAFBB8mEcpW4ZNBIaoM7mCF/Z+7ffA&#xa;MA0GCSqGSIb3DQEBCwUAA4ICAQCw4uQfUe+FtsPdT0eXiLHg/5kXBGn8kfJZ45hP&#xa;gcuwa5JfAQeA3JXx7piTSiMMk0GrWbqbrpX9ZIkwPnZrN+9PV9/SNCEJVTMy+LDQ&#xa;QGsyqwkZpMK8QThzxRvXvnyf3XeEFDL6N4YeEzWz47VNlddeqOBHmrDI5SL+Eibh&#xa;wxNj9UXwhEySUpgMAhU+QtXk40sjgv4Cs3kHvERvpwAfgRA7N38WY+njo/2VlGaT&#xa;qP+UekP42JveOIWhf9p88MUmx2QqtOq/WF7vkBVbAsVs+GGp2SNhCubCCWZeP6qc&#xa;HCX0/ipKZqY6zIvCcfr0wHBQDY9QwlbJcthg9Qox4EH1Sgj/qKPva6cehp/NzsbS&#xa;JL9Ygb1h65Xpy/ZwhQTl+y2s+JxAoMy3k50n+9lzCFBiNzPLsV6vrTXCh7t9Cx07&#xa;9jYqMiQ35cEbQGIaKQqzguPXF5nMvWDBow3Oj7fYFlCdLTpaTjh8FJ37/PrhUWIl&#xa;Li+WW8txrQKqm0/u1A41TI7fBxlUDhk6YFA+gIxX27ntQ0g+lLs8rwGlt/o+e3Xa&#xa;OfcJ7Tl0ovWa+c9lWNju5mgdU+0v4P9bqv4XcIuyE0exv5MleA99uOYE1jlWuKf1&#xa;m9v4myEY3dzgw3IBDmlYpGuDWQmMYx8RVytYN3Z3Z64WglMRjwEWNGy7NfKm7oJ4&#xa;mh/ptg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">localhost.localdomain</elem>
+<elem key="countryName">US</elem>
+<elem key="emailAddress">root@localhost.localdomain</elem>
+<elem key="organizationName">Unspecified</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost.localdomain</elem>
+<elem key="countryName">US</elem>
+<elem key="emailAddress">root@localhost.localdomain</elem>
+<elem key="organizationName">Unspecified</elem>
+<elem key="organizationalUnitName">ca-3899279223185377061</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BD7FDE7D6966F160797D636BFC3CE233714F635C064BB1B390D89D829E0A5AA77317BB9B89B3FA6CB8B8FE89D6404FE4CB9D2DEE9413AD8A157DE919CE870A9D86D02740D60426E1662017613B68B34764FACA43EAF57EA041C3AA373643714B899A5C3EC0BEB0AA920A480FFA92CE2309754CECF664BE353CD6AB422E4AC4F3B4BA7150416FED3E973C6912E7FA44DA13D63B4BF3FC17790582FEDCFD3C7CFB02D3FE58BE0915BAF15B16BC66B8E14E4C492B4F2F3C6F67CB91BB7CFD97A1E0B49D990AAB892A710E76A0D62DCDFBED5A0E42210216C02CF2BEAD9ABD3E651415563D32A8B30448B1C51BD685A53D817308CBD6673C93E98C3AB2BE3BB97BE9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:localhost.localdomain</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">10:7C:98:47:29:5B:86:4D:04:86:A8:33:B9:82:17:F6:7E:ED:F7:C0</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-07-03T08:52:34</elem>
+<elem key="notAfter">2022-07-08T10:32:34</elem>
+</table>
+<elem key="md5">579a92bd803cac47d49c5adde44e4f84</elem>
+<elem key="sha1">61a2301f9e5c2603a64300b5e5da5fd5c175f3a9</elem>
+<elem key="sha256">d5f0f40985152a6feae7437b7ef0888a983c503d759a2c071204b408a42b0fc3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE4DCCAsigAwIBAgIIdryw6eirdUUwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNV&#xa;BAYTAlVTMRQwEgYDVQQKDAtVbnNwZWNpZmllZDEfMB0GA1UECwwWY2EtMzg5OTI3&#xa;OTIyMzE4NTM3NzA2MTEeMBwGA1UEAwwVbG9jYWxob3N0LmxvY2FsZG9tYWluMSkw&#xa;JwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9zdC5sb2NhbGRvbWFpbjAeFw0yMTA3&#xa;MDMwODUyMzRaFw0yMjA3MDgxMDMyMzRaMG4xCzAJBgNVBAYTAlVTMRQwEgYDVQQK&#xa;DAtVbnNwZWNpZmllZDEeMBwGA1UEAwwVbG9jYWxob3N0LmxvY2FsZG9tYWluMSkw&#xa;JwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9zdC5sb2NhbGRvbWFpbjCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAL1/3n1pZvFgeX1ja/w84jNxT2NcBkux&#xa;s5DYnYKeClqncxe7m4mz+my4uP6J1kBP5MudLe6UE62KFX3pGc6HCp2G0CdA1gQm&#xa;4WYgF2E7aLNHZPrKQ+r1fqBBw6o3NkNxS4maXD7AvrCqkgpID/qSziMJdUzs9mS+&#xa;NTzWq0IuSsTztLpxUEFv7T6XPGkS5/pE2hPWO0vz/Bd5BYL+3P08fPsC0/5YvgkV&#xa;uvFbFrxmuOFOTEkrTy88b2fLkbt8/Zeh4LSdmQqriSpxDnag1i3N++1aDkIhAhbA&#xa;LPK+rZq9PmUUFVY9MqizBEixxRvWhaU9gXMIy9ZnPJPpjDqyvju5e+kCAwEAAaNg&#xa;MF4wDgYDVR0PAQH/BAQDAgWgMAkGA1UdEwQCMAAwIAYDVR0RBBkwF4IVbG9jYWxo&#xa;b3N0LmxvY2FsZG9tYWluMB8GA1UdIwQYMBaAFBB8mEcpW4ZNBIaoM7mCF/Z+7ffA&#xa;MA0GCSqGSIb3DQEBCwUAA4ICAQCw4uQfUe+FtsPdT0eXiLHg/5kXBGn8kfJZ45hP&#xa;gcuwa5JfAQeA3JXx7piTSiMMk0GrWbqbrpX9ZIkwPnZrN+9PV9/SNCEJVTMy+LDQ&#xa;QGsyqwkZpMK8QThzxRvXvnyf3XeEFDL6N4YeEzWz47VNlddeqOBHmrDI5SL+Eibh&#xa;wxNj9UXwhEySUpgMAhU+QtXk40sjgv4Cs3kHvERvpwAfgRA7N38WY+njo/2VlGaT&#xa;qP+UekP42JveOIWhf9p88MUmx2QqtOq/WF7vkBVbAsVs+GGp2SNhCubCCWZeP6qc&#xa;HCX0/ipKZqY6zIvCcfr0wHBQDY9QwlbJcthg9Qox4EH1Sgj/qKPva6cehp/NzsbS&#xa;JL9Ygb1h65Xpy/ZwhQTl+y2s+JxAoMy3k50n+9lzCFBiNzPLsV6vrTXCh7t9Cx07&#xa;9jYqMiQ35cEbQGIaKQqzguPXF5nMvWDBow3Oj7fYFlCdLTpaTjh8FJ37/PrhUWIl&#xa;Li+WW8txrQKqm0/u1A41TI7fBxlUDhk6YFA+gIxX27ntQ0g+lLs8rwGlt/o+e3Xa&#xa;OfcJ7Tl0ovWa+c9lWNju5mgdU+0v4P9bqv4XcIuyE0exv5MleA99uOYE1jlWuKf1&#xa;m9v4myEY3dzgw3IBDmlYpGuDWQmMYx8RVytYN3Z3Z64WglMRjwEWNGy7NfKm7oJ4&#xa;mh/ptg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-generator" output="HTML Tidy for HTML5 for Linux version 5.7.28"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-server-header" output="Apache/2.4.37 (centos) OpenSSL/1.1.1k mod_fcgid/2.3.9"><elem>Apache/2.4.37 (centos) OpenSSL/1.1.1k mod_fcgid/2.3.9</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="http-title" output="HTTP Server Test Page powered by CentOS"><elem key="title">HTTP Server Test Page powered by CentOS</elem>
+</script></port>
+</ports>
+<times srtt="227311" rttvar="94408" to="604943"/>
+</host>
+<taskbegin task="NSE" time="1790489971"/>
+<taskend task="NSE" time="1790489971"/>
+<taskbegin task="NSE" time="1790489971"/>
+<taskend task="NSE" time="1790489971"/>
+<taskbegin task="NSE" time="1790489971"/>
+<taskend task="NSE" time="1790489971"/>
+<runstats><finished time="1790489971" timestr="Sun Sep 27 11:49:31 2026" summary="Nmap done at Sun Sep 27 11:49:31 2026; 1 IP address (1 host up) scanned in 79.89 seconds" elapsed="79.89" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

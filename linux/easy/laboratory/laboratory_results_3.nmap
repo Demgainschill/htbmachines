@@ -1,0 +1,13 @@
+# Nmap 7.99 scan initiated Sun Sep 27 12:00:56 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN laboratory_results_3.nmap 10.129.47.118
+Increasing send delay for 10.129.47.118 from 0 to 5 due to 11 out of 20 dropped probes since last increase.
+Nmap scan report for 10.129.47.118
+Host is up (1.8s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Sep 27 12:01:44 2026 -- 1 IP address (1 host up) scanned in 48.05 seconds

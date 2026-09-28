@@ -1,0 +1,55 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.238.31
+Output Name   : conversor_results
+Date          : 2026-09-27 15:20:03
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+None
+
+[*] Nmap #2 Ports:
+None
+
+[*] Nmap #3 Ports:
+None
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  None (falling back to union of all findings)
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+
+
+==============================================
+ FILES GENERATED
+==============================================
+  • conversor_results_1.nmap
+  • conversor_results_2.nmap
+  • conversor_results_3.nmap
+  • conversor_results_summary.txt  ← this file
+==============================================

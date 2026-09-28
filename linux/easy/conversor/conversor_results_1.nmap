@@ -1,0 +1,3 @@
+# Nmap 7.99 scan initiated Sun Sep 27 15:20:03 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN conversor_results_1.nmap 10.129.238.31
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Sep 27 15:20:38 2026 -- 1 IP address (1 host up) scanned in 34.62 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.99 scan initiated Fri Sep 25 09:31:34 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN cozyhosting_results_2.nmap 10.129.229.88
+Nmap scan report for 10.129.229.88
+Host is up (0.43s latency).
+Not shown: 61898 closed tcp ports (reset), 3635 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Fri Sep 25 09:32:01 2026 -- 1 IP address (1 host up) scanned in 26.88 seconds

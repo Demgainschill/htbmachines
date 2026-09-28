@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sun Sep 27 15:26:21 2026 as: /usr/lib/nmap/nmap -sV -sC -vvv -p- --min-rate 5000 -oA previous 10.129.47.147
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.47.147 (previous.htb)	Status: Up
+Host: 10.129.47.147 (previous.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/
+# Nmap done at Sun Sep 27 15:27:34 2026 -- 1 IP address (1 host up) scanned in 72.88 seconds

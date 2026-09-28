@@ -1,0 +1,23 @@
+# Nmap 7.99 scan initiated Sun Sep 27 15:26:21 2026 as: /usr/lib/nmap/nmap -sV -sC -vvv -p- --min-rate 5000 -oA previous 10.129.47.147
+Increasing send delay for 10.129.47.147 from 0 to 5 due to 449 out of 1495 dropped probes since last increase.
+Increasing send delay for 10.129.47.147 from 5 to 10 due to 1911 out of 6368 dropped probes since last increase.
+Warning: 10.129.47.147 giving up on port because retransmission cap hit (10).
+Nmap scan report for previous.htb (10.129.47.147)
+Host is up, received reset ttl 63 (0.19s latency).
+Scanned at 2026-09-27 15:26:22 IST for 72s
+Not shown: 65274 closed tcp ports (reset), 259 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOtuEdoYxTohG80Bo6YCqSzUY9+qbnAFnhsk4yAZNqhM
+80/tcp open  http    syn-ack ttl 63 nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: PreviousJS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 27 15:27:34 2026 -- 1 IP address (1 host up) scanned in 72.88 seconds
