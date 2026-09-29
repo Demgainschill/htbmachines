@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Tue Sep 29 08:46:16 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN teacher_results_3.nmap 10.129.48.80
+Nmap scan report for 10.129.48.80
+Host is up (3.3s latency).
+Not shown: 33651 closed tcp ports (reset), 31883 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Tue Sep 29 08:46:52 2026 -- 1 IP address (1 host up) scanned in 35.42 seconds
