@@ -1,0 +1,75 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.48.207
+Output Name   : checkpoint_results
+Date          : 2026-09-30 08:55:35
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+53 88 135 139 389 445 464 593 636 3268 3269 5985 9389 49664 49672 49674 49679 49680 49683 49710 49718 
+
+[*] Nmap #2 Ports:
+53 88 135 139 389 445 464 593 636 3268 3269 5985 9389 49664 49672 49674 49679 49680 49683 49710 49718 
+
+[*] Nmap #3 Ports:
+53 88 135 139 389 445 464 593 636 3268 3269 5985 9389 49664 49672 49674 49679 49680 49683 49710 49718 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 53/tcp open domain
+  → 88/tcp open kerberos-sec
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 389/tcp open ldap
+  → 445/tcp open microsoft-ds
+  → 464/tcp open kpasswd5
+  → 593/tcp open http-rpc-epmap
+  → 636/tcp open ldapssl
+  → 3268/tcp open globalcatLDAP
+  → 3269/tcp open globalcatLDAPssl
+  → 5985/tcp open wsman
+  → 9389/tcp open adws
+  → 49664/tcp open unknown
+  → 49672/tcp open unknown
+  → 49674/tcp open unknown
+  → 49679/tcp open unknown
+  → 49680/tcp open unknown
+  → 49683/tcp open unknown
+  → 49710/tcp open unknown
+  → 49718/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+53,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49664,49672,49674,49679,49680,49683,49710,49718
+
+==============================================
+ FILES GENERATED
+==============================================
+  • checkpoint_results_1.nmap
+  • checkpoint_results_2.nmap
+  • checkpoint_results_3.nmap
+  • checkpoint_results_summary.txt  ← this file
+==============================================

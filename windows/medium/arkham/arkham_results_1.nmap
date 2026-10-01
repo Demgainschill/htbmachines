@@ -1,0 +1,16 @@
+# Nmap 7.99 scan initiated Wed Sep 30 13:02:22 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN arkham_results_1.nmap 10.129.228.116
+Nmap scan report for 10.129.228.116
+Host is up (0.071s latency).
+Not shown: 65528 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+8080/tcp  open  http-proxy
+49666/tcp open  unknown
+49667/tcp open  unknown
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Sep 30 13:02:55 2026 -- 1 IP address (1 host up) scanned in 33.64 seconds

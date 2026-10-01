@@ -1,0 +1,61 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.228.116
+Output Name   : arkham_results
+Date          : 2026-09-30 13:02:21
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+80 135 139 445 8080 49666 49667 
+
+[*] Nmap #2 Ports:
+80 135 139 445 8080 49666 49667 
+
+[*] Nmap #3 Ports:
+80 135 139 445 8080 49666 49667 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 80/tcp open http
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 445/tcp open microsoft-ds
+  → 8080/tcp open http-proxy
+  → 49666/tcp open unknown
+  → 49667/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+80,135,139,445,8080,49666,49667
+
+==============================================
+ FILES GENERATED
+==============================================
+  • arkham_results_1.nmap
+  • arkham_results_2.nmap
+  • arkham_results_3.nmap
+  • arkham_results_summary.txt  ← this file
+==============================================

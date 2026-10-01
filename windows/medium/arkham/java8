@@ -1,0 +1,2 @@
+#!/bin/sh
+exec docker run --rm -i -v "$PWD":/work -w /work eclipse-temurin:8-jdk java "$@"

