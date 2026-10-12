@@ -1,0 +1,54 @@
+# Nmap 7.99 scan initiated Wed Oct  7 09:51:09 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA data_results 10.129.15.216
+Increasing send delay for 10.129.15.216 from 0 to 5 due to 290 out of 965 dropped probes since last increase.
+Increasing send delay for 10.129.15.216 from 5 to 10 due to 470 out of 1565 dropped probes since last increase.
+Increasing send delay for 10.129.15.216 from 40 to 80 due to 341 out of 1136 dropped probes since last increase.
+Warning: 10.129.15.216 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.129.15.216
+Host is up (0.20s latency).
+Not shown: 63334 closed tcp ports (reset), 2188 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds?
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2017 14.00.1000
+|_ssl-date: 2026-10-07T04:23:45+00:00; -1m04s from scanner time.
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-10-07T04:14:24
+| Not valid after:  2056-10-07T04:14:24
+| MD5:     96b4 01fe fe06 f65b e91c 8606 7b41 5c97
+| SHA-1:   4fd3 06ba 877b 88c7 236e 49a1 a6b5 4fbd bcfb 78c3
+|_SHA-256: 220d 77c1 fd4e 96e3 f9b5 e5a2 2071 f278 3f68 50e0 9a15 8022 95e1 8191 6cf9 2ad0
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+| http-methods: 
+|_  Supported Methods: HEAD
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+| http-methods: 
+|_  Supported Methods: OPTIONS
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  msrpc         Microsoft Windows RPC
+49671/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-10-07T04:23:11
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: -1m04s, deviation: 0s, median: -1m04s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct  7 09:54:49 2026 -- 1 IP address (1 host up) scanned in 220.57 seconds

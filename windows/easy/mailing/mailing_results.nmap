@@ -1,0 +1,422 @@
+# Nmap 7.99 scan initiated Thu Oct  8 09:07:48 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA mailing_results 10.129.232.39
+Increasing send delay for 10.129.232.39 from 0 to 5 due to 11 out of 21 dropped probes since last increase.
+Increasing send delay for 10.129.232.39 from 5 to 10 due to 11 out of 15 dropped probes since last increase.
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Increasing send delay for 10.129.232.39 from 10 to 20 due to 11 out of 16 dropped probes since last increase.
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Increasing send delay for 10.129.232.39 from 80 to 160 due to 11 out of 14 dropped probes since last increase.
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan DROPPED PING probe packet to 10.129.232.39 detected
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Ultrascan PING SENT to 10.129.232.39 [tcp to port 587; flags: S]
+Changing global ping host to 10.129.232.39.
+Fetchfile found /usr/share/nmap/nmap-service-probes
+Service scan sending probe NULL to 10.129.232.39:25 (tcp)
+Service scan sending probe NULL to 10.129.232.39:139 (tcp)
+Service scan sending probe NULL to 10.129.232.39:80 (tcp)
+Service scan sending probe NULL to 10.129.232.39:445 (tcp)
+Service scan sending probe NULL to 10.129.232.39:110 (tcp)
+Service scan sending probe NULL to 10.129.232.39:993 (tcp)
+Service scan sending probe NULL to 10.129.232.39:5040 (tcp)
+Service scan sending probe NULL to 10.129.232.39:135 (tcp)
+Service scan sending probe NULL to 10.129.232.39:465 (tcp)
+Service scan sending probe NULL to 10.129.232.39:143 (tcp)
+Service scan sending probe NULL to 10.129.232.39:587 (tcp)
+Service scan sending probe NULL to 10.129.232.39:5985 (tcp)
+Service scan sending probe NULL to 10.129.232.39:49665 (tcp)
+Service scan sending probe NULL to 10.129.232.39:47001 (tcp)
+Service scan sending probe NULL to 10.129.232.39:49664 (tcp)
+Service scan sending probe NULL to 10.129.232.39:49668 (tcp)
+Service scan sending probe NULL to 10.129.232.39:49667 (tcp)
+Service scan sending probe NULL to 10.129.232.39:65011 (tcp)
+Service scan soft match (Probe NULL matched with NULL line 3500): 10.129.232.39:25 is smtp.  Version: ||||
+Service scan soft match (Probe NULL matched with NULL line 3500): 10.129.232.39:587 is smtp.  Version: ||||
+Service scan soft match (Probe NULL matched with NULL line 2798): 10.129.232.39:110 is pop3.  Version: ||||
+Service scan soft match (Probe NULL matched with NULL line 1787): 10.129.232.39:143 is imap.  Version: ||||
+Service scan sending probe Hello to 10.129.232.39:25 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:139 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:80 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:445 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:993 (tcp)
+Service scan sending probe GenericLines to 10.129.232.39:5040 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.232.39:135 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:465 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:5985 (tcp)
+Service scan sending probe GenericLines to 10.129.232.39:49665 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:143 (tcp)
+Service scan sending probe GenericLines to 10.129.232.39:587 (tcp)
+Service scan sending probe GenericLines to 10.129.232.39:110 (tcp)
+Service scan hard match (Probe SSLSessionReq matched with SSLSessionReq line 13733): 10.129.232.39:993 is ssl.  Version: ||||
+Service scan hard match (Probe SSLSessionReq matched with SSLSessionReq line 13733): 10.129.232.39:465 is ssl.  Version: ||||
+Service scan hard match (Probe GetRequest matched with NULL line 5305): 10.129.232.39:5985 is http.  Version: |Microsoft HTTPAPI httpd|2.0|SSDP/UPnP|
+Service scan hard match (Probe GenericLines matched with GenericLines line 6012): 10.129.232.39:110 is pop3.  Version: |hMailServer pop3d|||
+Service scan sending probe JavaRMI to 10.129.232.39:47001 (tcp)
+Service scan sending probe GenericLines to 10.129.232.39:49664 (tcp)
+Service scan sending probe GenericLines to 10.129.232.39:49668 (tcp)
+Service scan sending probe GenericLines to 10.129.232.39:49667 (tcp)
+Service scan sending probe GenericLines to 10.129.232.39:65011 (tcp)
+Service scan hard match (Probe GetRequest matched with GetRequest line 11362): 10.129.232.39:143 is imap.  Version: |hMailServer imapd|||
+Service scan sending probe GenericLines to 10.129.232.39:445 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:135 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:139 (tcp)
+Service scan hard match (Probe JavaRMI matched with NULL line 5305): 10.129.232.39:47001 is http.  Version: |Microsoft HTTPAPI httpd|2.0|SSDP/UPnP|
+Service scan hard match (Probe GetRequest matched with GetRequest line 7033): 10.129.232.39:80 is http.  Version: |Microsoft IIS httpd|10.0||
+Service scan hard match (Probe SMBProgNeg matched with SMBProgNeg line 14121): 10.129.232.39:139 is netbios-ssn.  Version: |Microsoft Windows netbios-ssn|||
+Service scan sending probe GetRequest to 10.129.232.39:445 (tcp)
+Service scan hard match (Probe SMBProgNeg matched with SMBProgNeg line 14101): 10.129.232.39:135 is msrpc.  Version: |Microsoft Windows RPC|||
+Service scan sending probe NULL to 10.129.232.39:993 (tcp)
+Service scan soft match (Probe NULL matched with NULL line 1787): 10.129.232.39:993 is SSL/imap.  Version: ||||
+Service scan sending probe NULL to 10.129.232.39:465 (tcp)
+Service scan soft match (Probe NULL matched with NULL line 3500): 10.129.232.39:465 is SSL/smtp.  Version: ||||
+Service scan sending probe HTTPOptions to 10.129.232.39:445 (tcp)
+Service scan sending probe RTSPRequest to 10.129.232.39:445 (tcp)
+Service scan sending probe RPCCheck to 10.129.232.39:445 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.232.39:445 (tcp)
+Service scan sending probe DNSStatusRequestTCP to 10.129.232.39:445 (tcp)
+Service scan sending probe Help to 10.129.232.39:445 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:445 (tcp)
+Service scan sending probe TerminalServerCookie to 10.129.232.39:445 (tcp)
+Service scan sending probe TLSSessionReq to 10.129.232.39:445 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:49665 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:5040 (tcp)
+Service scan sending probe Hello to 10.129.232.39:587 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:49668 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:49664 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:49667 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:65011 (tcp)
+Service scan sending probe Kerberos to 10.129.232.39:445 (tcp)
+Service scan sending probe X11Probe to 10.129.232.39:445 (tcp)
+Service scan sending probe GetRequest to 10.129.232.39:993 (tcp)
+Service scan sending probe FourOhFourRequest to 10.129.232.39:445 (tcp)
+Service scan sending probe Help to 10.129.232.39:25 (tcp)
+Service scan sending probe Hello to 10.129.232.39:465 (tcp)
+Service scan hard match (Probe GetRequest matched with GetRequest line 11362): 10.129.232.39:993 is SSL/imap.  Version: |hMailServer imapd|||
+Service scan sending probe LPDString to 10.129.232.39:445 (tcp)
+Service scan hard match (Probe Help matched with Help line 13625): 10.129.232.39:25 is smtp.  Version: |hMailServer smtpd|||
+Service scan sending probe LDAPSearchReq to 10.129.232.39:445 (tcp)
+Service scan sending probe LDAPBindReq to 10.129.232.39:445 (tcp)
+Service scan sending probe SIPOptions to 10.129.232.39:445 (tcp)
+Service scan sending probe HTTPOptions to 10.129.232.39:5040 (tcp)
+Service scan sending probe HTTPOptions to 10.129.232.39:49665 (tcp)
+Service scan sending probe HTTPOptions to 10.129.232.39:49668 (tcp)
+Service scan sending probe HTTPOptions to 10.129.232.39:49664 (tcp)
+Service scan sending probe HTTPOptions to 10.129.232.39:49667 (tcp)
+Service scan sending probe HTTPOptions to 10.129.232.39:65011 (tcp)
+Service scan sending probe LANDesk-RC to 10.129.232.39:445 (tcp)
+Service scan sending probe TerminalServer to 10.129.232.39:445 (tcp)
+Service scan sending probe Help to 10.129.232.39:587 (tcp)
+Service scan sending probe NCP to 10.129.232.39:445 (tcp)
+Service scan hard match (Probe Help matched with Help line 13625): 10.129.232.39:587 is smtp.  Version: |hMailServer smtpd|||
+Service scan sending probe NotesRPC to 10.129.232.39:445 (tcp)
+Service scan sending probe Help to 10.129.232.39:465 (tcp)
+Service scan sending probe JavaRMI to 10.129.232.39:445 (tcp)
+Service scan sending probe RTSPRequest to 10.129.232.39:5040 (tcp)
+Service scan sending probe RTSPRequest to 10.129.232.39:49665 (tcp)
+Service scan sending probe RTSPRequest to 10.129.232.39:49668 (tcp)
+Service scan sending probe RTSPRequest to 10.129.232.39:49664 (tcp)
+Service scan sending probe RTSPRequest to 10.129.232.39:65011 (tcp)
+Service scan sending probe RTSPRequest to 10.129.232.39:49667 (tcp)
+Service scan hard match (Probe Help matched with Help line 13625): 10.129.232.39:465 is SSL/smtp.  Version: |hMailServer smtpd|||
+Service scan sending probe WMSRequest to 10.129.232.39:445 (tcp)
+Service scan sending probe oracle-tns to 10.129.232.39:445 (tcp)
+Service scan sending probe ms-sql-s to 10.129.232.39:445 (tcp)
+Service scan sending probe afp to 10.129.232.39:445 (tcp)
+Service scan sending probe giop to 10.129.232.39:445 (tcp)
+Service scan sending probe RPCCheck to 10.129.232.39:49665 (tcp)
+Service scan sending probe RPCCheck to 10.129.232.39:49668 (tcp)
+Service scan sending probe RPCCheck to 10.129.232.39:49664 (tcp)
+Service scan sending probe RPCCheck to 10.129.232.39:5040 (tcp)
+Service scan sending probe RPCCheck to 10.129.232.39:65011 (tcp)
+Service scan sending probe RPCCheck to 10.129.232.39:49667 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.232.39:49668 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.232.39:49665 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.232.39:49664 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.232.39:49667 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.232.39:65011 (tcp)
+Service scan sending probe DNSStatusRequestTCP to 10.129.232.39:49665 (tcp)
+Service scan sending probe DNSStatusRequestTCP to 10.129.232.39:49664 (tcp)
+Service scan sending probe DNSStatusRequestTCP to 10.129.232.39:49668 (tcp)
+Service scan sending probe DNSStatusRequestTCP to 10.129.232.39:65011 (tcp)
+Service scan sending probe DNSStatusRequestTCP to 10.129.232.39:49667 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.232.39:5040 (tcp)
+Service scan sending probe Help to 10.129.232.39:49665 (tcp)
+Service scan sending probe Help to 10.129.232.39:49664 (tcp)
+Service scan sending probe Help to 10.129.232.39:65011 (tcp)
+Service scan sending probe Help to 10.129.232.39:49668 (tcp)
+Service scan sending probe Help to 10.129.232.39:49667 (tcp)
+Service scan sending probe DNSStatusRequestTCP to 10.129.232.39:5040 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:49665 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:49664 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:49668 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:49667 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:65011 (tcp)
+Service scan sending probe Help to 10.129.232.39:5040 (tcp)
+Service scan sending probe TerminalServerCookie to 10.129.232.39:49664 (tcp)
+Service scan sending probe TerminalServerCookie to 10.129.232.39:49665 (tcp)
+Service scan sending probe TerminalServerCookie to 10.129.232.39:49668 (tcp)
+Service scan sending probe TerminalServerCookie to 10.129.232.39:49667 (tcp)
+Service scan sending probe TerminalServerCookie to 10.129.232.39:65011 (tcp)
+Service scan sending probe TLSSessionReq to 10.129.232.39:49665 (tcp)
+Service scan sending probe TLSSessionReq to 10.129.232.39:49668 (tcp)
+Service scan sending probe TLSSessionReq to 10.129.232.39:49664 (tcp)
+Service scan sending probe TLSSessionReq to 10.129.232.39:49667 (tcp)
+Service scan sending probe TLSSessionReq to 10.129.232.39:65011 (tcp)
+Service scan sending probe SSLSessionReq to 10.129.232.39:5040 (tcp)
+Service scan sending probe Kerberos to 10.129.232.39:49665 (tcp)
+Service scan sending probe Kerberos to 10.129.232.39:49664 (tcp)
+Service scan sending probe Kerberos to 10.129.232.39:49668 (tcp)
+Service scan sending probe Kerberos to 10.129.232.39:49667 (tcp)
+Service scan sending probe Kerberos to 10.129.232.39:65011 (tcp)
+Service scan sending probe TerminalServerCookie to 10.129.232.39:5040 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:49665 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:49667 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:49664 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:49668 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:65011 (tcp)
+Service scan hard match (Probe SMBProgNeg matched with SMBProgNeg line 14101): 10.129.232.39:49665 is msrpc.  Version: |Microsoft Windows RPC|||
+Service scan hard match (Probe SMBProgNeg matched with SMBProgNeg line 14101): 10.129.232.39:49664 is msrpc.  Version: |Microsoft Windows RPC|||
+Service scan hard match (Probe SMBProgNeg matched with SMBProgNeg line 14101): 10.129.232.39:49667 is msrpc.  Version: |Microsoft Windows RPC|||
+Service scan hard match (Probe SMBProgNeg matched with SMBProgNeg line 14101): 10.129.232.39:49668 is msrpc.  Version: |Microsoft Windows RPC|||
+Service scan hard match (Probe SMBProgNeg matched with SMBProgNeg line 14101): 10.129.232.39:65011 is msrpc.  Version: |Microsoft Windows RPC|||
+Service scan sending probe TLSSessionReq to 10.129.232.39:5040 (tcp)
+Service scan sending probe Kerberos to 10.129.232.39:5040 (tcp)
+Service scan sending probe SMBProgNeg to 10.129.232.39:5040 (tcp)
+Service scan sending probe X11Probe to 10.129.232.39:5040 (tcp)
+Service scan sending probe FourOhFourRequest to 10.129.232.39:5040 (tcp)
+Service scan sending probe LPDString to 10.129.232.39:5040 (tcp)
+Service scan sending probe LDAPSearchReq to 10.129.232.39:5040 (tcp)
+Service scan sending probe LDAPBindReq to 10.129.232.39:5040 (tcp)
+Service scan sending probe SIPOptions to 10.129.232.39:5040 (tcp)
+Service scan sending probe LANDesk-RC to 10.129.232.39:5040 (tcp)
+Service scan sending probe TerminalServer to 10.129.232.39:5040 (tcp)
+Service scan sending probe NCP to 10.129.232.39:5040 (tcp)
+Service scan sending probe NotesRPC to 10.129.232.39:5040 (tcp)
+Service scan sending probe JavaRMI to 10.129.232.39:5040 (tcp)
+Service scan sending probe WMSRequest to 10.129.232.39:5040 (tcp)
+Service scan sending probe oracle-tns to 10.129.232.39:5040 (tcp)
+Service scan sending probe ms-sql-s to 10.129.232.39:5040 (tcp)
+Service scan sending probe afp to 10.129.232.39:5040 (tcp)
+Service scan sending probe giop to 10.129.232.39:5040 (tcp)
+Fetchfile found /usr/share/nmap/nselib/data/favicon-db
+Fetchfile found /usr/share/nmap/nselib/data/favicon-db
+Fetchfile found /usr/share/nmap/nselib/data/favicon-db
+Fetchfile found /usr/share/nmap/nselib/data/ssl-fingerprints
+Fetchfile found /usr/share/nmap/nmap-rpc
+Nmap scan report for 10.129.232.39
+Host is up (0.66s latency).
+Scanned at 2026-10-08 09:07:48 IST for 390s
+Not shown: 65517 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+25/tcp    open  smtp          hMailServer smtpd
+| smtp-commands: mailing.htb, SIZE 20480000, AUTH LOGIN PLAIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+80/tcp    open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Did not follow redirect to http://mailing.htb
+110/tcp   open  pop3          hMailServer pop3d
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+|_pop3-capabilities: UIDL USER TOP
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp   open  imap          hMailServer imapd
+| ssl-date: 
+|_  ERROR: Unable to obtain data from the target
+|_imap-capabilities: QUOTA completed NAMESPACE RIGHTS=texkA0001 ACL IMAP4 SORT CAPABILITY OK CHILDREN IDLE IMAP4rev1
+445/tcp   open  microsoft-ds?
+465/tcp   open  ssl/smtp      hMailServer smtpd
+| smtp-commands: mailing.htb, SIZE 20480000, AUTH LOGIN PLAIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+| ssl-cert: Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Issuer: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-02-27T18:24:10
+| Not valid after:  2029-10-06T18:24:10
+| MD5:     bd32 df3f 1d16 08b8 99d2 e39b 6467 297e
+| SHA-1:   5c3e 5265 c5bc 68ab aaac 0d8f ab8d 90b4 7895 a3d7
+|_SHA-256: 8d7d 9d08 9308 16c7 b0ff 8cf5 6dea 95a4 46df 683a 8516 9ae0 8269 7677 f80b 5b1e
+|_ssl-date: TLS randomness does not represent time
+587/tcp   open  smtp          hMailServer smtpd
+| smtp-commands: mailing.htb, SIZE 20480000, STARTTLS, AUTH LOGIN PLAIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Issuer: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-02-27T18:24:10
+| Not valid after:  2029-10-06T18:24:10
+| MD5:     bd32 df3f 1d16 08b8 99d2 e39b 6467 297e
+| SHA-1:   5c3e 5265 c5bc 68ab aaac 0d8f ab8d 90b4 7895 a3d7
+|_SHA-256: 8d7d 9d08 9308 16c7 b0ff 8cf5 6dea 95a4 46df 683a 8516 9ae0 8269 7677 f80b 5b1e
+993/tcp   open  ssl/imap      hMailServer imapd
+|_imap-capabilities: QUOTA completed NAMESPACE RIGHTS=texkA0001 ACL IMAP4 SORT CAPABILITY OK CHILDREN IDLE IMAP4rev1
+| ssl-cert: Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Issuer: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-02-27T18:24:10
+| Not valid after:  2029-10-06T18:24:10
+| MD5:     bd32 df3f 1d16 08b8 99d2 e39b 6467 297e
+| SHA-1:   5c3e 5265 c5bc 68ab aaac 0d8f ab8d 90b4 7895 a3d7
+|_SHA-256: 8d7d 9d08 9308 16c7 b0ff 8cf5 6dea 95a4 46df 683a 8516 9ae0 8269 7677 f80b 5b1e
+|_ssl-date: TLS randomness does not represent time
+5040/tcp  open  unknown
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+65011/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: mailing.htb; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+|_clock-skew: -1m03s
+| nbstat: 
+|_  ERROR: Name query failed: TIMEOUT
+| smb-os-discovery: 
+|_  ERROR: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb-security-mode: 
+|_  ERROR: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb2-time: 
+|   date: 2026-10-08T03:42:23
+|_  start_date: N/A
+
+Read from /usr/share/nmap: nmap-protocols nmap-service-probes nmap-services.
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Oct  8 09:14:18 2026 -- 1 IP address (1 host up) scanned in 390.19 seconds

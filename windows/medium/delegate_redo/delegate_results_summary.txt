@@ -1,0 +1,84 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.234.69
+Output Name   : delegate_results
+Date          : 2026-10-01 14:22:55
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+53 88 135 139 389 445 593 636 3268 3269 3389 5985 47001 49669 49670 53002 53003 53007 57547 63545 
+
+[*] Nmap #2 Ports:
+53 88 135 139 389 445 464 636 3268 3389 5985 9389 47001 49664 49665 49667 49669 53002 57547 63545 65335 
+
+[*] Nmap #3 Ports:
+53 88 135 139 389 445 593 636 3268 3269 3389 5985 9389 47001 49664 49666 49667 49669 53003 53007 57547 63545 65335 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+49666
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+47001
+49669
+49670
+53002
+53003
+53007
+57547
+63545
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 53/tcp open domain
+  → 88/tcp open kerberos-sec
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 389/tcp open ldap
+  → 445/tcp open microsoft-ds
+  → 593/tcp open http-rpc-epmap
+  → 636/tcp open ldapssl
+  → 3268/tcp open globalcatLDAP
+  → 3269/tcp open globalcatLDAPssl
+  → 3389/tcp open ms-wbt-server
+  → 5985/tcp open wsman
+  → 9389/tcp open adws
+  → 47001/tcp open winrm
+  → 49664/tcp open unknown
+  → 49667/tcp open unknown
+  → 49669/tcp open unknown
+  → 53002/tcp open unknown
+  → 53003/tcp open unknown
+  → 53007/tcp open unknown
+  → 57547/tcp open unknown
+  → 63545/tcp open unknown
+  → 65335/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+53,88,135,139,389,445,593,636,3268,3269,3389,5985,9389,47001,49664,49667,49669,53002,53003,53007,57547,63545,65335
+
+==============================================
+ FILES GENERATED
+==============================================
+  • delegate_results_1.nmap
+  • delegate_results_2.nmap
+  • delegate_results_3.nmap
+  • delegate_results_summary.txt  ← this file
+==============================================

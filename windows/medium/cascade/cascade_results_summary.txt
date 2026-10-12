@@ -1,0 +1,63 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.53.56
+Output Name   : cascade_results
+Date          : 2026-10-09 22:51:17
+Interface     : tun0
+Rate          : 5000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+53 135 139 445 636 49155 49157 49158 49165 
+
+[*] Nmap #2 Ports:
+None
+
+[*] Nmap #3 Ports:
+389 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+389
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+53
+135
+139
+445
+636
+49155
+49157
+49158
+49165
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  None (falling back to union of all findings)
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+,53,135,139,389,445,636,49155,49157,49158,49165
+
+==============================================
+ FILES GENERATED
+==============================================
+  • cascade_results_1.nmap
+  • cascade_results_2.nmap
+  • cascade_results_3.nmap
+  • cascade_results_summary.txt  ← this file
+==============================================

@@ -1,0 +1,23 @@
+# Nmap 7.99 scan initiated Sat Oct  3 17:53:18 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN sendai_results_1.nmap 10.129.234.66
+Increasing send delay for 10.129.234.66 from 0 to 5 due to 11 out of 29 dropped probes since last increase.
+Increasing send delay for 10.129.234.66 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
+Nmap scan report for 10.129.234.66
+Host is up (0.98s latency).
+Scanned at 2026-10-03 17:53:19 IST for 55s
+Not shown: 65524 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+53/tcp    open  domain
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+49668/tcp open  unknown
+53960/tcp open  unknown
+63008/tcp open  unknown
+
+Read from /usr/share/nmap: nmap-protocols nmap-services.
+# Nmap done at Sat Oct  3 17:54:14 2026 -- 1 IP address (1 host up) scanned in 56.08 seconds

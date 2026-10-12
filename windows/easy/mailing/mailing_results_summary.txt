@@ -1,0 +1,69 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.232.39
+Output Name   : mailing_results
+Date          : 2026-10-08 09:04:41
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+25 80 110 135 139 143 445 587 993 49666 
+
+[*] Nmap #2 Ports:
+25 80 110 135 139 143 445 587 993 5040 5985 47001 49664 49666 65011 
+
+[*] Nmap #3 Ports:
+25 80 110 135 139 143 445 587 993 5040 5985 7680 49664 49667 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+7680
+49664
+49667
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+49666
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 25/tcp open smtp
+  → 80/tcp open http
+  → 110/tcp open pop3
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 143/tcp open imap
+  → 445/tcp open microsoft-ds
+  → 587/tcp open submission
+  → 993/tcp open imaps
+  → 5040/tcp open unknown
+  → 5985/tcp open wsman
+  → 49664/tcp open unknown
+  → 49666/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+25,80,110,135,139,143,445,587,993,5040,5985,49664,49666
+
+==============================================
+ FILES GENERATED
+==============================================
+  • mailing_results_1.nmap
+  • mailing_results_2.nmap
+  • mailing_results_3.nmap
+  • mailing_results_summary.txt  ← this file
+==============================================

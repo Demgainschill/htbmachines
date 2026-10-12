@@ -1,0 +1,2 @@
+SMB                      10.129.234.66   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:sendai.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB                      10.129.234.66   445    DC               [+] sendai.vl\users.txt:Password123! (Guest)

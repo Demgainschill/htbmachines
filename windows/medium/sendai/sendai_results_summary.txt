@@ -1,0 +1,83 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.234.66
+Output Name   : sendai_results
+Date          : 2026-10-03 17:53:18
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+53 80 135 139 389 443 445 3389 49668 53960 63008 
+
+[*] Nmap #2 Ports:
+53 80 88 135 139 389 443 445 464 593 636 3268 3269 3389 5985 9389 49664 49668 53960 53961 53978 63008 63030 
+
+[*] Nmap #3 Ports:
+53 80 88 135 139 389 443 445 593 636 3268 3269 3389 5985 9389 49668 53960 53961 53978 63008 63030 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+135
+139
+389
+443
+445
+3389
+49668
+53960
+63008
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 53/tcp open domain
+  → 80/tcp open http
+  → 88/tcp open kerberos-sec
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 389/tcp open ldap
+  → 443/tcp open https
+  → 445/tcp open microsoft-ds
+  → 593/tcp open http-rpc-epmap
+  → 636/tcp open ldapssl
+  → 3268/tcp open globalcatLDAP
+  → 3269/tcp open globalcatLDAPssl
+  → 3389/tcp open ms-wbt-server
+  → 5985/tcp open wsman
+  → 9389/tcp open adws
+  → 49668/tcp open unknown
+  → 53960/tcp open unknown
+  → 53961/tcp open unknown
+  → 53978/tcp open unknown
+  → 63008/tcp open unknown
+  → 63030/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+53,80,88,135,139,389,443,445,593,636,3268,3269,3389,5985,9389,49668,53960,53961,53978,63008,63030
+
+==============================================
+ FILES GENERATED
+==============================================
+  • sendai_results_1.nmap
+  • sendai_results_2.nmap
+  • sendai_results_3.nmap
+  • sendai_results_summary.txt  ← this file
+==============================================

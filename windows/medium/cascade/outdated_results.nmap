@@ -1,0 +1,21 @@
+# Nmap 7.99 scan initiated Fri Oct  9 22:51:25 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA outdated_results 10.129.53.56
+Increasing send delay for 10.129.53.56 from 0 to 5 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.129.53.56 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.129.53.56 from 10 to 20 due to 11 out of 13 dropped probes since last increase.
+Nmap scan report for 10.129.53.56
+Host is up (3.0s latency).
+Not shown: 65529 filtered tcp ports (no-response)
+PORT      STATE SERVICE      VERSION
+88/tcp    open  kerberos-sec Microsoft Windows Kerberos (server time: 2026-10-09 17:22:28Z)
+389/tcp   open  ldap         Microsoft Windows Active Directory LDAP (Domain: cascade.local, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+5985/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49158/tcp open  msrpc        Microsoft Windows RPC
+49165/tcp open  msrpc        Microsoft Windows RPC
+Service Info: Host: CASC-DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct  9 22:54:40 2026 -- 1 IP address (1 host up) scanned in 195.45 seconds

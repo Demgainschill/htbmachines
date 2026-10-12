@@ -1,0 +1,24 @@
+# Nmap 7.99 scan initiated Wed Oct  7 09:52:56 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN querier_results_1.nmap 10.129.15.216
+Nmap scan report for 10.129.15.216
+Host is up (0.80s latency).
+Scanned at 2026-10-07 09:52:56 IST for 57s
+Not shown: 60436 closed tcp ports (reset), 5085 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1433/tcp  open  ms-sql-s
+5985/tcp  open  wsman
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  unknown
+49671/tcp open  unknown
+
+Read from /usr/share/nmap: nmap-protocols nmap-services.
+# Nmap done at Wed Oct  7 09:53:53 2026 -- 1 IP address (1 host up) scanned in 57.13 seconds

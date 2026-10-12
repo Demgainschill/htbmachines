@@ -1,0 +1,35 @@
+# Nmap 7.99 scan initiated Thu Oct  1 14:24:55 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=4000 --open -oN delegate_results_2.nmap 10.129.234.69
+Increasing send delay for 10.129.234.69 from 0 to 5 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 10.129.234.69 from 5 to 10 due to 11 out of 16 dropped probes since last increase.
+Increasing send delay for 10.129.234.69 from 10 to 20 due to 11 out of 16 dropped probes since last increase.
+Increasing send delay for 10.129.234.69 from 20 to 40 due to 11 out of 13 dropped probes since last increase.
+Nmap scan report for DC1.delegate.vl (10.129.234.69)
+Host is up (1.4s latency).
+Scanned at 2026-10-01 14:24:55 IST for 91s
+Not shown: 65514 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3389/tcp  open  ms-wbt-server
+5985/tcp  open  wsman
+9389/tcp  open  adws
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49667/tcp open  unknown
+49669/tcp open  unknown
+53002/tcp open  unknown
+57547/tcp open  unknown
+63545/tcp open  unknown
+65335/tcp open  unknown
+
+Read from /usr/share/nmap: nmap-protocols nmap-services.
+# Nmap done at Thu Oct  1 14:26:26 2026 -- 1 IP address (1 host up) scanned in 90.57 seconds

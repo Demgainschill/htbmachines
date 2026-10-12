@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Fri Oct  9 22:51:25 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA outdated_results 10.129.53.56
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.53.56 ()	Status: Up
+Host: 10.129.53.56 ()	Ports: 88/open/tcp//kerberos-sec//Microsoft Windows Kerberos (server time: 2026-10-09 17:22:28Z)/, 389/open/tcp//ldap//Microsoft Windows Active Directory LDAP (Domain: cascade.local, Site: Default-First-Site-Name)/, 3269/open/tcp//tcpwrapped///, 5985/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 49158/open/tcp//msrpc//Microsoft Windows RPC/, 49165/open/tcp//msrpc//Microsoft Windows RPC/	Ignored State: filtered (65529)
+# Nmap done at Fri Oct  9 22:54:40 2026 -- 1 IP address (1 host up) scanned in 195.45 seconds

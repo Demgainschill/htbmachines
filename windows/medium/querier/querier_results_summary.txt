@@ -1,0 +1,70 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.15.216
+Output Name   : querier_results
+Date          : 2026-10-07 09:52:56
+Interface     : tun0
+Rate          : 4000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+135 139 445 1433 5985 47001 49664 49665 49666 49667 49668 49669 49670 49671 
+
+[*] Nmap #2 Ports:
+135 139 445 1433 5985 47001 49664 49665 49666 49667 49668 49669 49670 49671 
+
+[*] Nmap #3 Ports:
+135 139 445 5985 47001 49664 49665 49666 49667 49669 49670 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+1433
+49668
+49671
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 445/tcp open microsoft-ds
+  → 1433/tcp open ms-sql-s
+  → 5985/tcp open wsman
+  → 47001/tcp open winrm
+  → 49664/tcp open unknown
+  → 49665/tcp open unknown
+  → 49666/tcp open unknown
+  → 49667/tcp open unknown
+  → 49668/tcp open unknown
+  → 49669/tcp open unknown
+  → 49670/tcp open unknown
+  → 49671/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+135,139,445,1433,5985,47001,49664,49665,49666,49667,49668,49669,49670,49671
+
+==============================================
+ FILES GENERATED
+==============================================
+  • querier_results_1.nmap
+  • querier_results_2.nmap
+  • querier_results_3.nmap
+  • querier_results_summary.txt  ← this file
+==============================================
