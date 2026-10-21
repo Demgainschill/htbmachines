@@ -1,0 +1,79 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.95.241
+Output Name   : return_results
+Date          : 2026-10-15 14:55:45
+Interface     : tun0
+Rate          : 5000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+53 80 88 135 139 389 445 464 593 636 3268 3269 5985 9389 47001 49664 49665 49666 49667 49673 49674 49675 49678 49681 49694 
+
+[*] Nmap #2 Ports:
+53 80 88 135 139 389 445 464 593 636 3268 3269 5985 9389 47001 49664 49665 49666 49667 49673 49674 49675 49678 49681 49694 
+
+[*] Nmap #3 Ports:
+53 80 88 135 139 389 445 464 593 636 3268 3269 5985 9389 47001 49664 49665 49666 49667 49673 49674 49675 49678 49681 49694 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 53/tcp open domain
+  → 80/tcp open http
+  → 88/tcp open kerberos-sec
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 389/tcp open ldap
+  → 445/tcp open microsoft-ds
+  → 464/tcp open kpasswd5
+  → 593/tcp open http-rpc-epmap
+  → 636/tcp open ldapssl
+  → 3268/tcp open globalcatLDAP
+  → 3269/tcp open globalcatLDAPssl
+  → 5985/tcp open wsman
+  → 9389/tcp open adws
+  → 47001/tcp open winrm
+  → 49664/tcp open unknown
+  → 49665/tcp open unknown
+  → 49666/tcp open unknown
+  → 49667/tcp open unknown
+  → 49673/tcp open unknown
+  → 49674/tcp open unknown
+  → 49675/tcp open unknown
+  → 49678/tcp open unknown
+  → 49681/tcp open unknown
+  → 49694/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+53,80,88,135,139,389,445,464,593,636,3268,3269,5985,9389,47001,49664,49665,49666,49667,49673,49674,49675,49678,49681,49694
+
+==============================================
+ FILES GENERATED
+==============================================
+  • return_results_1.nmap
+  • return_results_2.nmap
+  • return_results_3.nmap
+  • return_results_summary.txt  ← this file
+==============================================

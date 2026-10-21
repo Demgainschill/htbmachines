@@ -1,0 +1,17 @@
+# Nmap 7.99 scan initiated Tue Oct 13 09:36:37 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA headless_results 10.129.54.135
+Increasing send delay for 10.129.54.135 from 0 to 5 due to 1064 out of 3546 dropped probes since last increase.
+Warning: 10.129.54.135 giving up on port because retransmission cap hit (10).
+Increasing send delay for 10.129.54.135 from 640 to 1000 due to 480 out of 1599 dropped probes since last increase.
+Nmap scan report for 10.129.54.135
+Host is up (0.73s latency).
+Not shown: 35514 closed tcp ports (reset), 30020 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.2p1 Debian 2+deb12u2 (protocol 2.0)
+| ssh-hostkey: 
+|   256 90:02:94:28:3d:ab:22:74:df:0e:a3:b2:0f:2b:c6:17 (ECDSA)
+|_  256 2e:b9:08:24:02:1b:60:94:60:b3:84:a9:9e:1a:60:ca (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 13 09:37:48 2026 -- 1 IP address (1 host up) scanned in 179.29 seconds

@@ -1,0 +1,17 @@
+# Nmap 7.99 scan initiated Wed Oct 14 09:36:53 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=5000 --open -oN touch_results_2.nmap 10.129.55.18
+Increasing send delay for 10.129.55.18 from 0 to 5 due to 11 out of 14 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of 9314970 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 9314970 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8554887 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 8554887 microseconds.  Ignoring time.
+Nmap scan report for 10.129.55.18
+Host is up (4.9s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+3389/tcp open  ms-wbt-server
+5985/tcp open  wsman
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Oct 14 09:37:39 2026 -- 1 IP address (1 host up) scanned in 46.42 seconds

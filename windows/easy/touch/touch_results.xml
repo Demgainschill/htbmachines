@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Wed Oct 14 09:34:15 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA touch_results 10.129.55.18 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA touch_results 10.129.55.18" start="1791950655" startstr="Wed Oct 14 09:34:15 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1791950655"/>
+<taskend task="NSE" time="1791950655"/>
+<taskbegin task="NSE" time="1791950655"/>
+<taskend task="NSE" time="1791950655"/>
+<taskbegin task="NSE" time="1791950655"/>
+<taskend task="NSE" time="1791950655"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1791950655"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1791950657"/>
+<taskbegin task="SYN Stealth Scan" time="1791950657"/>
+<taskend task="SYN Stealth Scan" time="1791950723" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1791950723"/>
+<taskend task="Service scan" time="1791950728" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1791950728"/>
+<taskend task="NSE" time="1791950763"/>
+<taskbegin task="NSE" time="1791950763"/>
+<taskend task="NSE" time="1791950849"/>
+<taskbegin task="NSE" time="1791950849"/>
+<taskend task="NSE" time="1791950849"/>
+<host starttime="1791950657" endtime="1791950849"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.55.18" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-134,136-3388,3390-8442,8444-65535"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/><script id="http-title" output="Nexion DeviceHub - Login&#xa;Requested resource was /login"><elem key="title">Nexion DeviceHub - Login</elem>
+<elem key="redirect_url">/login</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: 3ED9B25E54B8EC721B21AD7D869875D0"/><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-cors" output="GET POST PUT OPTIONS"/></port>
+</ports>
+<times srtt="3664823" rttvar="1962326" to="10000000"/>
+</host>
+<taskbegin task="NSE" time="1791950849"/>
+<taskend task="NSE" time="1791950849"/>
+<taskbegin task="NSE" time="1791950849"/>
+<taskend task="NSE" time="1791950849"/>
+<taskbegin task="NSE" time="1791950849"/>
+<taskend task="NSE" time="1791950849"/>
+<runstats><finished time="1791950849" timestr="Wed Oct 14 09:37:29 2026" summary="Nmap done at Wed Oct 14 09:37:29 2026; 1 IP address (1 host up) scanned in 194.11 seconds" elapsed="194.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

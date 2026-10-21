@@ -1,0 +1,22 @@
+# Nmap 7.99 scan initiated Wed Oct 14 09:34:15 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA touch_results 10.129.55.18
+Increasing send delay for 10.129.55.18 from 0 to 5 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 10.129.55.18 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.129.55.18
+Host is up (3.7s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+3389/tcp open  tcpwrapped
+8443/tcp open  tcpwrapped
+| http-title: Nexion DeviceHub - Login
+|_Requested resource was /login
+|_http-favicon: Unknown favicon MD5: 3ED9B25E54B8EC721B21AD7D869875D0
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-cors: GET POST PUT OPTIONS
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct 14 09:37:29 2026 -- 1 IP address (1 host up) scanned in 194.11 seconds

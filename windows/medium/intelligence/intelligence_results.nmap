@@ -1,0 +1,43 @@
+# Nmap 7.99 scan initiated Tue Oct 20 10:02:41 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA intelligence_results 10.129.95.154
+Nmap scan report for 10.129.95.154
+Host is up (0.14s latency).
+Not shown: 65517 filtered tcp ports (no-response)
+PORT      STATE SERVICE           VERSION
+53/tcp    open  domain            Simple DNS Plus
+80/tcp    open  http              Microsoft IIS httpd 10.0
+|_http-favicon: Unknown favicon MD5: 556F31ACD686989B1AFCF382C05846AA
+|_http-title: Intelligence
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp    open  kerberos-sec      Microsoft Windows Kerberos (server time: 2026-10-20 11:32:27Z)
+135/tcp   open  msrpc             Microsoft Windows RPC
+139/tcp   open  netbios-ssn       Microsoft Windows netbios-ssn
+389/tcp   open  ldap              Microsoft Windows Active Directory LDAP (Domain: intelligence.htb, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http        Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ldapssl?
+3268/tcp  open  ldap              Microsoft Windows Active Directory LDAP (Domain: intelligence.htb, Site: Default-First-Site-Name)
+3269/tcp  open  globalcatLDAPssl?
+9389/tcp  open  mc-nmf            .NET Message Framing
+49667/tcp open  msrpc             Microsoft Windows RPC
+49695/tcp open  ncacn_http        Microsoft Windows RPC over HTTP 1.0
+49696/tcp open  msrpc             Microsoft Windows RPC
+49712/tcp open  msrpc             Microsoft Windows RPC
+49718/tcp open  msrpc             Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-10-20T11:33:29
+|_  start_date: N/A
+|_clock-skew: 6h58m47s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 20 10:05:58 2026 -- 1 IP address (1 host up) scanned in 197.18 seconds

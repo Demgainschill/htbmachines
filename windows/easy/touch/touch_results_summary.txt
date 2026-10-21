@@ -1,0 +1,57 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.55.18
+Output Name   : touch_results
+Date          : 2026-10-14 09:36:12
+Interface     : tun0
+Rate          : 5000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+135 3389 5985 
+
+[*] Nmap #2 Ports:
+135 3389 5985 
+
+[*] Nmap #3 Ports:
+135 3389 5985 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 135/tcp open msrpc
+  → 3389/tcp open ms-wbt-server
+  → 5985/tcp open wsman
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+135,3389,5985
+
+==============================================
+ FILES GENERATED
+==============================================
+  • touch_results_1.nmap
+  • touch_results_2.nmap
+  • touch_results_3.nmap
+  • touch_results_summary.txt  ← this file
+==============================================

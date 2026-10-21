@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Wed Oct 14 09:34:15 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA touch_results 10.129.55.18
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.55.18 ()	Status: Up
+Host: 10.129.55.18 ()	Ports: 135/open/tcp//tcpwrapped///, 3389/open/tcp//tcpwrapped///, 8443/open/tcp//tcpwrapped///	Ignored State: filtered (65532)
+# Nmap done at Wed Oct 14 09:37:29 2026 -- 1 IP address (1 host up) scanned in 194.11 seconds

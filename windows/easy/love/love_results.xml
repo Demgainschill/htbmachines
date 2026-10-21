@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Mon Oct 19 08:02:48 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA love_results 10.129.48.103 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA love_results 10.129.48.103" start="1792377168" startstr="Mon Oct 19 08:02:48 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1792377168"/>
+<taskend task="NSE" time="1792377168"/>
+<taskbegin task="NSE" time="1792377168"/>
+<taskend task="NSE" time="1792377168"/>
+<taskbegin task="NSE" time="1792377168"/>
+<taskend task="NSE" time="1792377168"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1792377168"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1792377168"/>
+<taskbegin task="SYN Stealth Scan" time="1792377168"/>
+<taskend task="SYN Stealth Scan" time="1792377202" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1792377202"/>
+<taskprogress task="Service scan" time="1792377262" percent="50.00" remaining="60" etc="1792377322"/>
+<taskend task="Service scan" time="1792377373" extrainfo="18 services on 1 host"/>
+<taskbegin task="NSE" time="1792377373"/>
+<taskend task="NSE" time="1792377393"/>
+<taskbegin task="NSE" time="1792377393"/>
+<taskend task="NSE" time="1792377399"/>
+<taskbegin task="NSE" time="1792377399"/>
+<taskend task="NSE" time="1792377399"/>
+<host starttime="1792377168" endtime="1792377399"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.48.103" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65424">
+<extrareasons reason="reset" count="65424" proto="tcp" ports="1-77,79,81-134,137-138,140-442,444,446-546,548-829,831-1019,1021-1478,1480-1810,1812-2628,2630-2721,2723-2923,2925-3006,3008-3191,3193-3305,3307-3393,3395-4067,4069-4580,4582-4999,5001-5039,5041-5750,5752-5844,5846-5984,5987-6129,6131-6305,6307-7679,7681-7791,7793-8143,8145-10487,10489-10936,10938-11929,11931-12430,12432-12511,12513-13549,13551-14026,14028-15245,15247-15305,15307-15398,15400-15897,15899-17759,17761-19499,19501-19620,19622-19732,19734-21768,21770-21967,21969-22037,22039-22418,22420-23099,23101-23401,23403-24489,24491-24646,24648-26530,26532-27031,27033-28070,28072-28719,28721-28950,28952-29218,29220-29806,29808-30176,30178-32554,32556-33464,33466-34407,34409-37932,37934-38247,38249-38793,38795-39976,39978-40130,40132-43516,43518-46018,46020-47481,47483-48155,48157-49050,49052-49663,49671-49699,49701-50789,50791-51313,51315-52019,52021-52854,52856-52999,53001-53240,53242-53341,53343-53346,53348-53701,53703-53854,53856-54777,54779-54812,54814-54973,54975-55378,55380-55696,55698-55869,55871-56007,56009-56584,56586-58299,58301-59491,59493-59602,59604-59671,59673-59859,59861-60044,60046-61610,61612-61886,61888-62241,62243-65535"/>
+</extraports>
+<extraports state="filtered" count="93">
+<extrareasons reason="no-response" count="93" proto="tcp" ports="78,136,547,830,1020,1479,1811,2629,2722,2924,3007,3192,3394,4068,4581,5751,5845,6130,6306,7792,8144,10488,10937,11930,12431,12512,13550,14027,15246,15306,15399,15898,17760,19500,19621,19733,21769,21968,22038,22419,23100,23402,24490,24647,26531,27032,28071,28720,28951,29219,29807,30177,32555,33465,34408,37933,38248,38794,39977,40131,43517,46019,47482,48156,49051,49700,50790,51314,52020,52855,53000,53241,53342,53347,53702,53855,54778,54813,54974,55379,55697,55870,56008,56585,58300,59492,59603,59672,59860,60045,61611,61887,62242"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="(Win64) OpenSSL/1.1.1j PHP/7.3.27" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27"><elem>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Voting System using PHP"><elem key="title">Voting System using PHP</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="OpenSSL/1.1.1j PHP/7.3.27" hostname="www.example.com" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=staging.love.htb/organizationName=ValentineCorp/stateOrProvinceName=m/countryName=in&#xa;Issuer: commonName=staging.love.htb/organizationName=ValentineCorp/stateOrProvinceName=m/countryName=in&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-18T14:00:16&#xa;Not valid after:  2022-01-18T14:00:16&#xa;MD5:     bff0 1add 5048 afc8 b3cf 7140 6e68 5ff6&#xa;SHA-1:   83ed 29c4 70f6 4036 a6f4 2d4d 4cf6 18a2 e9e4 96c2&#xa;SHA-256: ee6b 72d6 0b18 4154 b032 dda0 c62a a401 8456 76dd 0126 1f9d 2d97 26ac 0f59 a74e"><table key="subject">
+<elem key="commonName">staging.love.htb</elem>
+<elem key="countryName">in</elem>
+<elem key="emailAddress">roy@love.htb</elem>
+<elem key="localityName">norway</elem>
+<elem key="organizationName">ValentineCorp</elem>
+<elem key="organizationalUnitName">love.htb</elem>
+<elem key="stateOrProvinceName">m</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">staging.love.htb</elem>
+<elem key="countryName">in</elem>
+<elem key="emailAddress">roy@love.htb</elem>
+<elem key="localityName">norway</elem>
+<elem key="organizationName">ValentineCorp</elem>
+<elem key="organizationalUnitName">love.htb</elem>
+<elem key="stateOrProvinceName">m</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D0947D49FC0C1B126D879E1E018B3721D3CB141E51E0EEF00C184075E0B3EAF46DB43CBFFA42663124E5813E30565B2C0D60ADDC3C8158F325266252C1895234A6245F6928FBC132D6DC61523E1AE999FCF4D3324C29EC81383D3ED4AF41C62510355C849E286C50B64A2E665C17A2E138886238D10BEA628AAF6FE61CB81FA11ED4BCCECE9A6CB074B4602DF5CDD8282992FEDC884011534A6146ADA9D6CE16F479F75C453C895AA07C55ECFD93725F7AFC2ED0E24146AFC27DACF87B5AD26B25234C1A4E6C8EB0DAC4E3081C75C17D90B2BFF6DB4CD6E8132524004166D8A392C3D9B570EC989D3E15FC9842EF89FB48BF95B52E0B826F7B956FA8A97D2871</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-18T14:00:16</elem>
+<elem key="notAfter">2022-01-18T14:00:16</elem>
+</table>
+<elem key="md5">bff01add5048afc8b3cf71406e685ff6</elem>
+<elem key="sha1">83ed29c470f64036a6f42d4d4cf618a2e9e496c2</elem>
+<elem key="sha256">ee6b72d60b184154b032dda0c62aa401845676dd01261f9d2d9726ac0f59a74e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDozCCAosCFFhDHcnclWJmeuqOK/LQv3XDNEu4MA0GCSqGSIb3DQEBCwUAMIGN&#xa;MQswCQYDVQQGEwJpbjEKMAgGA1UECAwBbTEPMA0GA1UEBwwGbm9yd2F5MRYwFAYD&#xa;VQQKDA1WYWxlbnRpbmVDb3JwMREwDwYDVQQLDAhsb3ZlLmh0YjEZMBcGA1UEAwwQ&#xa;c3RhZ2luZy5sb3ZlLmh0YjEbMBkGCSqGSIb3DQEJARYMcm95QGxvdmUuaHRiMB4X&#xa;DTIxMDExODE0MDAxNloXDTIyMDExODE0MDAxNlowgY0xCzAJBgNVBAYTAmluMQow&#xa;CAYDVQQIDAFtMQ8wDQYDVQQHDAZub3J3YXkxFjAUBgNVBAoMDVZhbGVudGluZUNv&#xa;cnAxETAPBgNVBAsMCGxvdmUuaHRiMRkwFwYDVQQDDBBzdGFnaW5nLmxvdmUuaHRi&#xa;MRswGQYJKoZIhvcNAQkBFgxyb3lAbG92ZS5odGIwggEiMA0GCSqGSIb3DQEBAQUA&#xa;A4IBDwAwggEKAoIBAQDQlH1J/AwbEm2Hnh4Bizch08sUHlHg7vAMGEB14LPq9G20&#xa;PL/6QmYxJOWBPjBWWywNYK3cPIFY8yUmYlLBiVI0piRfaSj7wTLW3GFSPhrpmfz0&#xa;0zJMKeyBOD0+1K9BxiUQNVyEnihsULZKLmZcF6LhOIhiONEL6mKKr2/mHLgfoR7U&#xa;vM7OmmywdLRgLfXN2Cgpkv7ciEARU0phRq2p1s4W9Hn3XEU8iVqgfFXs/ZNyX3r8&#xa;LtDiQUavwn2s+Hta0mslI0waTmyOsNrE4wgcdcF9kLK/9ttM1ugTJSQAQWbYo5LD&#xa;2bVw7JidPhX8mELviftIv5W1LguCb3uVb6ipfShxAgMBAAEwDQYJKoZIhvcNAQEL&#xa;BQADggEBANB5x2U0QuQdc9niiW8XtGVqlUZOpmToxstBm4r0Djdqv/Z73I/qys0A&#xa;y7crcy9dRO7M80Dnvj0ReGxoWN/95ZA4GSL8TUfIfXbonrCKFiXOOuS8jCzC9LWE&#xa;nP4jUUlAOJv6uYDajoD3NfbhW8uBvopO+8nywbQdiffatKO35McSl7ukvIK+d7gz&#xa;oool/rMp/fQ40A1nxVHeLPOexyB3YJIMAhm4NexfJ2TKxs10C+lJcuOxt7MhOk0h&#xa;zSPL/pMbMouLTXnIsh4SdJEzEkNnuO69yQoN8XgjM7vHvZQIlzs1R5pk4WIgKHSZ&#xa;0drwvFE50xML9h2wrGh7L9/CSbhIhO8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-server-header" output="Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27"><elem>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows 10 Pro 19042 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="LOVE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mysql" product="MariaDB" version="10.3.24 or later" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb</cpe></service></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="OpenSSL/1.1.1j PHP/7.3.27" hostname="www.love.htb" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="http-server-header" output="Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27"><elem>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="5986"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="wsmans" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2026-10-19T02:56:56+00:00; +20m22s from scanner time."><elem key="date">2026-10-19T02:56:56+00:00</elem>
+<elem key="delta">1222.0</elem>
+</script><script id="ssl-cert" output="Subject: commonName=LOVE&#xa;Subject Alternative Name: DNS:LOVE, DNS:Love&#xa;Issuer: commonName=LOVE&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-04-11T14:39:19&#xa;Not valid after:  2024-04-10T14:39:19&#xa;MD5:     d35a 2ba6 8ef4 7568 f99d d6f4 aaa2 03b5&#xa;SHA-1:   84ef d922 a70a 6d9d 82b8 5bb3 d04f 066b 12f8 6e73&#xa;SHA-256: da33 6d66 634e 87fc 706c c980 c148 ab23 dfe1 1c81 483a 2192 e366 582d e517 da6c"><table key="subject">
+<elem key="commonName">LOVE</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">LOVE</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">F0B9E3E54C33E83DCB29EF3BDC79516A6C92997CA3161CA65BFFCDC935D0B79A9B2A11302A0E6FAFA53E1A246F275FD5C8FFB5DD568CEA02904DB6C3C2815EDF86901B58A7502E6A242E51665B494D537CA2E019307E8EA727E8BF2815DA6630C975ADD816FDD0CB1785914A03DDD5BC1297526B80CD844DB40D6EE13EA4F91400EC10A7D5B6FD871208F01CF9AD376E7B54C40C957BF538C66F462584E589419909CE0A63BE1986222813D37EA96F701FE4C7C9370A605A3A69C0982B7393345C63D8D541DF861239A1B0A090DF1CE76DEAAF21412064D8C2DC22514C629CF293A82EC4EE8262E72E7EA3D486EC7C8FC7E80E13CE42BE1E83C2F6599AB4985DA4D0EC2DF853DA142429ABC0AE937C3192B907025C339B132365484EE7D67BA7B71242DE49B43AD222084FF6778F164CF501169413889F51F59BED9857E59236B160FBCB98A580AFFE109454B3C42B6A2349421AF65BE2EEF10F02F36D4BAE143CB2B45B57700F963D23CAC6334DC7AB92C4A60382F6358123758B88907361547EC853001FC9008A853F59E25F53326BB4C3CE23BC557F7B83D8AD77BB5B78CDAAE288F3E16F800B63EDCAC3917EB1A2E375DDDDD9D7616C3C5641F12F5C1611273144F455C3EAC78A27EA80F5FA20F77643D88BDD3B9078EF1D0A9CE37C99BD148904DCB5D8BB17F5B0F279EC358D604BAA1761D1F029A7EE4B48AC846A710D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:LOVE, DNS:Love</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">0D:27:25:96:61:35:60:EF:20:C4:07:C4:62:0A:91:A4:06:52:F3:72</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-04-11T14:39:19</elem>
+<elem key="notAfter">2024-04-10T14:39:19</elem>
+</table>
+<elem key="md5">d35a2ba68ef47568f99dd6f4aaa203b5</elem>
+<elem key="sha1">84efd922a70a6d9d82b85bb3d04f066b12f86e73</elem>
+<elem key="sha256">da336d66634e87fc706cc980c148ab23dfe11c81483a2192e366582de517da6c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFBTCCAu2gAwIBAgIQQD+VWjjYeaVAiweoWrOJXjANBgkqhkiG9w0BAQsFADAP&#xa;MQ0wCwYDVQQDDARMT1ZFMB4XDTIxMDQxMTE0MzkxOVoXDTI0MDQxMDE0MzkxOVow&#xa;DzENMAsGA1UEAwwETE9WRTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIB&#xa;APC54+VMM+g9yynvO9x5UWpskpl8oxYcplv/zck10LeamyoRMCoOb6+lPhokbydf&#xa;1cj/td1WjOoCkE22w8KBXt+GkBtYp1AuaiQuUWZbSU1TfKLgGTB+jqcn6L8oFdpm&#xa;MMl1rdgW/dDLF4WRSgPd1bwSl1JrgM2ETbQNbuE+pPkUAOwQp9W2/YcSCPAc+a03&#xa;bntUxAyVe/U4xm9GJYTliUGZCc4KY74ZhiIoE9N+qW9wH+THyTcKYFo6acCYK3OT&#xa;NFxj2NVB34YSOaGwoJDfHOdt6q8hQSBk2MLcIlFMYpzyk6guxO6CYucufqPUhux8&#xa;j8foDhPOQr4eg8L2WZq0mF2k0Owt+FPaFCQpq8Cuk3wxkrkHAlwzmxMjZUhO59Z7&#xa;p7cSQt5JtDrSIghP9nePFkz1ARaUE4ifUfWb7ZhX5ZI2sWD7y5ilgK/+EJRUs8Qr&#xa;aiNJQhr2W+Lu8Q8C821LrhQ8srRbV3APlj0jysYzTcerksSmA4L2NYEjdYuIkHNh&#xa;VH7IUwAfyQCKhT9Z4l9TMmu0w84jvFV/e4PYrXe7W3jNquKI8+FvgAtj7crDkX6x&#xa;ouN13d3Z12FsPFZB8S9cFhEnMUT0VcPqx4on6oD1+iD3dkPYi907kHjvHQqc43yZ&#xa;vRSJBNy12LsX9bDyeew1jWBLqhdh0fApp+5LSKyEanENAgMBAAGjXTBbMA4GA1Ud&#xa;DwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAVBgNVHREEDjAMggRMT1ZF&#xa;ggRMb3ZlMB0GA1UdDgQWBBQNJyWWYTVg7yDEB8RiCpGkBlLzcjANBgkqhkiG9w0B&#xa;AQsFAAOCAgEAOtD1tPlQAsAozmZxFGc7PiMkJpZbpS31Hb32/aFwTxeN/7VEmTPM&#xa;+FyIo+ZxgL+GD6SGWtpunCGs2Hms3lbSxnPNPbdcaG6whP12Ih/xGuQEbXVq6uY3&#xa;fmCL/zIHthIjDPbgvtrC0xB/1kioMrDdGK1jp1F9q1cd+9P3cTPXgpekTzcFixGF&#xa;BkQTM0ty8FjZnwTYwtAJ7RcxbzhIGi4YlJGIBOi98XvParnR2co2XhR+gBBPhppC&#xa;0zKscOXtQrOyWymrq1XSEdFhExznQREXkGsUX9Ogw8yTdREt9jdlijjtQGISBlwG&#xa;807Ru8m6HeO35dhUp3fS1ZOQ94Zlmls8Uw4F0slQ5v44rhhbOziy3fcb63zSvFJ1&#xa;jzk5yEoxER7tMiWrxCniGSI7kIs0ACGEWHbsbjfQuGVvTe2S/yBmUbCSuZPS9r1X&#xa;w3EPapovLDMmx8PBLMXDa75bBE+si/3xS4w8OIepTrk+oajAWPjHSFrt6QRRI9Mv&#xa;L1UEoxV1K7amnTybXb66kpvucZz0pQYVuRypOYLlFuFMC2vj8M/64Hfb5OhFG+6p&#xa;RtFRdYl9s/H+R+Y+fB4o9Tf5vMpYwOCrBfTEGvm4JLBRGXn6f0ODcGqwVYVWyPEo&#xa;4pv8jZSiNJsmm6gsQXR4fLIPGuNjwmxJmm51Itv0Lb+FQogRk/9I0AI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 2h05m22s, deviation: 3h30m02s, median: 20m21s"><elem key="count">4</elem>
+<elem key="stddev">12602</elem>
+<elem key="median">1221</elem>
+<elem key="mean">7522</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 10 Pro 19042 (Windows 10 Pro 6.3)&#xa;  OS CPE: cpe:/o:microsoft:windows_10::-&#xa;  Computer name: Love&#xa;  NetBIOS computer name: LOVE\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2026-10-18T19:56:40-07:00&#xa;"><elem key="os">Windows 10 Pro 19042</elem>
+<elem key="lanmanager">Windows 10 Pro 6.3</elem>
+<elem key="server">LOVE\x00</elem>
+<elem key="date">2026-10-18T19:56:40-07:00</elem>
+<elem key="fqdn">Love</elem>
+<elem key="domain_dns">Love</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_10::-</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: &lt;blank&gt;&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">&lt;blank&gt;</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2026-10-19T02:56:39&#xa;  start_date: N/A"><elem key="date">2026-10-19T02:56:39</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="305518" rttvar="103859" to="720954"/>
+</host>
+<taskbegin task="NSE" time="1792377399"/>
+<taskend task="NSE" time="1792377399"/>
+<taskbegin task="NSE" time="1792377399"/>
+<taskend task="NSE" time="1792377399"/>
+<taskbegin task="NSE" time="1792377399"/>
+<taskend task="NSE" time="1792377399"/>
+<runstats><finished time="1792377399" timestr="Mon Oct 19 08:06:39 2026" summary="Nmap done at Mon Oct 19 08:06:39 2026; 1 IP address (1 host up) scanned in 231.72 seconds" elapsed="231.72" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
