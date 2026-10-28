@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Thu Oct 22 11:16:00 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA buff_results 10.129.25.107
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.25.107 ()	Status: Up
+Host: 10.129.25.107 ()	Ports: 7680/open/tcp//pando-pub?///, 8080/open/tcp//http//Apache httpd 2.4.43 ((Win64) OpenSSL|1.1.1g PHP|7.4.6)/	Ignored State: filtered (65533)
+# Nmap done at Thu Oct 22 11:18:26 2026 -- 1 IP address (1 host up) scanned in 146.74 seconds

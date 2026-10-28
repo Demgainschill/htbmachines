@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Mon Oct 26 15:33:43 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=5000 --open -oN makesense_results_3.nmap 10.129.246.24
+Nmap scan report for makesense.htb (10.129.246.24)
+Host is up (0.053s latency).
+Not shown: 46049 closed tcp ports (reset), 19485 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Read data files from: /usr/share/nmap
+# Nmap done at Mon Oct 26 15:34:02 2026 -- 1 IP address (1 host up) scanned in 18.31 seconds

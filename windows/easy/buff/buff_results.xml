@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Thu Oct 22 11:16:00 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA buff_results 10.129.25.107 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA buff_results 10.129.25.107" start="1792647960" startstr="Thu Oct 22 11:16:00 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1792647960"/>
+<taskend task="NSE" time="1792647960"/>
+<taskbegin task="NSE" time="1792647960"/>
+<taskend task="NSE" time="1792647960"/>
+<taskbegin task="NSE" time="1792647960"/>
+<taskend task="NSE" time="1792647960"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1792647960"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1792647960"/>
+<taskbegin task="SYN Stealth Scan" time="1792647960"/>
+<taskend task="SYN Stealth Scan" time="1792647998" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1792647998"/>
+<taskend task="Service scan" time="1792648082" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1792648082"/>
+<taskend task="NSE" time="1792648102"/>
+<taskbegin task="NSE" time="1792648102"/>
+<taskend task="NSE" time="1792648106"/>
+<taskbegin task="NSE" time="1792648106"/>
+<taskend task="NSE" time="1792648106"/>
+<host starttime="1792647960" endtime="1792648106"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.25.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-7679,7681-8079,8081-65535"/>
+</extraports>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.43" extrainfo="(Win64) OpenSSL/1.1.1g PHP/7.4.6" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.43</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-open-proxy" output="Potentially OPEN proxy.&#xa;Methods supported:CONNECTION"/><script id="http-title" output="mrb3n&apos;s Bro Hut"><elem key="title">mrb3n&apos;s Bro Hut</elem>
+</script><script id="http-server-header" output="Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6"><elem>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6</elem>
+</script></port>
+</ports>
+<times srtt="592751" rttvar="533605" to="2727171"/>
+</host>
+<taskbegin task="NSE" time="1792648106"/>
+<taskend task="NSE" time="1792648106"/>
+<taskbegin task="NSE" time="1792648106"/>
+<taskend task="NSE" time="1792648106"/>
+<taskbegin task="NSE" time="1792648106"/>
+<taskend task="NSE" time="1792648106"/>
+<runstats><finished time="1792648106" timestr="Thu Oct 22 11:18:26 2026" summary="Nmap done at Thu Oct 22 11:18:26 2026; 1 IP address (1 host up) scanned in 146.74 seconds" elapsed="146.74" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Fri Oct 23 17:42:28 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA remote_results 10.129.230.172
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.230.172 ()	Status: Up
+Host: 10.129.230.172 ()	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 80/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///, 2049/open/tcp//nlockmgr//1-4 (RPC #100021)/, 5985/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 47001/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 49664/open/tcp//msrpc//Microsoft Windows RPC/, 49665/open/tcp//msrpc//Microsoft Windows RPC/, 49666/open/tcp//msrpc//Microsoft Windows RPC/, 49667/open/tcp//msrpc//Microsoft Windows RPC/, 49678/open/tcp//msrpc//Microsoft Windows RPC/, 49679/open/tcp//msrpc//Microsoft Windows RPC/, 49680/open/tcp//msrpc//Microsoft Windows RPC/	Ignored State: closed (65519)
+# Nmap done at Fri Oct 23 17:44:23 2026 -- 1 IP address (1 host up) scanned in 114.53 seconds

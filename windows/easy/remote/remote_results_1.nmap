@@ -1,0 +1,26 @@
+# Nmap 7.99 scan initiated Fri Oct 23 17:37:51 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=5000 --open -oN remote_results_1.nmap 10.129.230.172
+Nmap scan report for 10.129.230.172
+Host is up (0.27s latency).
+Scanned at 2026-10-23 17:37:51 IST for 39s
+Not shown: 64987 closed tcp ports (reset), 532 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+21/tcp    open  ftp
+80/tcp    open  http
+111/tcp   open  rpcbind
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+2049/tcp  open  nfs
+5985/tcp  open  wsman
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49678/tcp open  unknown
+49679/tcp open  unknown
+49680/tcp open  unknown
+
+Read from /usr/share/nmap: nmap-protocols nmap-services.
+# Nmap done at Fri Oct 23 17:38:30 2026 -- 1 IP address (1 host up) scanned in 39.59 seconds

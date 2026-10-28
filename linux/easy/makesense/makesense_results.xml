@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Mon Oct 26 15:04:16 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA makesense_results 10.129.246.24 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA makesense_results 10.129.246.24" start="1793007256" startstr="Mon Oct 26 15:04:16 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1793007256"/>
+<taskend task="NSE" time="1793007256"/>
+<taskbegin task="NSE" time="1793007256"/>
+<taskend task="NSE" time="1793007256"/>
+<taskbegin task="NSE" time="1793007256"/>
+<taskend task="NSE" time="1793007256"/>
+<taskbegin task="SYN Stealth Scan" time="1793007256"/>
+<taskend task="SYN Stealth Scan" time="1793007272" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1793007272"/>
+<taskend task="Service scan" time="1793007287" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1793007287"/>
+<taskend task="NSE" time="1793007303"/>
+<taskbegin task="NSE" time="1793007303"/>
+<taskend task="NSE" time="1793007306"/>
+<taskbegin task="NSE" time="1793007306"/>
+<taskend task="NSE" time="1793007306"/>
+<host starttime="1793007256" endtime="1793007306"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.246.24" addrtype="ipv4"/>
+<hostnames>
+<hostname name="makesense.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="reset" count="65531" proto="tcp" ports="1-21,23-79,81-442,444-8000,8002-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="9.6p1 Ubuntu 3ubuntu13.16" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 27:c3:7d:10:17:3b:dc:29:cf:05:83:33:ab:28:d0:38 (ECDSA)&#xa;  256 a3:46:f2:d7:1f:43:41:31:35:a2:88:31:ff:2a:0b:22 (ED25519)"><table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNz4cX4T5eERMWbUEHuFD+1SFwwTAr3tU5E2wQzRQ6m2CzIj/2/fMOU+k/mcyoI0WAXs9PEHIV1H0f+i6JieDRg=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">27c37d10173bdc29cf058333ab28d038</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIK7SOmIxHJJ8xGjcGaXoiw/5Y7wL3lR3K0SZvc11DnyQ</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">a346f2d71f43413135a28831ff2a0b22</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.58" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.58</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=makesense.htb&#xa;Issuer: commonName=makesense.htb&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-05-29T16:37:29&#xa;Not valid after:  2126-05-05T16:37:29&#xa;MD5:     137e 40f1 46c6 4920 684e 34dc 3a8e 8887&#xa;SHA-1:   a53c 8772 c319 515b 0b1d 42eb 2327 a5f7 1115 2a61&#xa;SHA-256: 59e3 04ab 3225 c2f6 3984 c784 ad89 508d 0baf 8b57 357b 0b2e d597 21d9 5a5b ead5"><table key="subject">
+<elem key="commonName">makesense.htb</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">makesense.htb</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C027A00D3DD513A6B49460C0F3722B04154941856F125EC8973667B9FF25EFBC8110B5904DDADA5FCE31852FF27CB04C0B5920D2C7E6A06B44E7A24F1B8A811F28C331BC706975C91EEAB7E57EFB798894F2FF3C75D4AAAD6A6D5A6338840C52FF88F78DC8DC3FAC3C8B2A3A480161920F4DB2A61B2129231CC2FC2FE9CF22D0F2FB327849EB1CB3B8A3FBEF39CB1A3349D28C71B2DA7C5F4689A3C9DAD31A7A49256EA6447570B5941E6112215522662F375467CD9CFA6F6E90AE138DA5C2BFBBAFBD32DAE82FD019E900CEB21EF7B120262C238344AD33A63F46F86EF3AC3B6E1056FB3B180F5D9CE1732C2FBAE41BFC6FA3C67FB70C08BBBF4DC2D8AC56B5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">3C:5C:73:DF:8E:88:4C:5E:50:65:EB:F0:65:B8:42:0C:8A:14:45:B6</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">3C:5C:73:DF:8E:88:4C:5E:50:65:EB:F0:65:B8:42:0C:8A:14:45:B6</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-05-29T16:37:29</elem>
+<elem key="notAfter">2126-05-05T16:37:29</elem>
+</table>
+<elem key="md5">137e40f146c64920684e34dc3a8e8887</elem>
+<elem key="sha1">a53c8772c319515b0b1d42eb2327a5f711152a61</elem>
+<elem key="sha256">59e304ab3225c2f63984c784ad89508d0baf8b57357b0b2ed59721d95a5bead5</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAfugAwIBAgIUR42EgNimQclxF1KIe6qw9biQMRYwDQYJKoZIhvcNAQEL&#xa;BQAwGDEWMBQGA1UEAwwNbWFrZXNlbnNlLmh0YjAgFw0yNjA1MjkxNjM3MjlaGA8y&#xa;MTI2MDUwNTE2MzcyOVowGDEWMBQGA1UEAwwNbWFrZXNlbnNlLmh0YjCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAMAnoA091ROmtJRgwPNyKwQVSUGFbxJe&#xa;yJc2Z7n/Je+8gRC1kE3a2l/OMYUv8nywTAtZINLH5qBrROeiTxuKgR8owzG8cGl1&#xa;yR7qt+V++3mIlPL/PHXUqq1qbVpjOIQMUv+I943I3D+sPIsqOkgBYZIPTbKmGyEp&#xa;IxzC/C/pzyLQ8vsyeEnrHLO4o/vvOcsaM0nSjHGy2nxfRomjydrTGnpJJW6mRHVw&#xa;tZQeYRIhVSJmLzdUZ82c+m9ukK4TjaXCv7uvvTLa6C/QGekAzrIe97EgJiwjg0St&#xa;M6Y/Rvhu86w7bhBW+zsYD12c4XMsL7rkG/xvo8Z/twwIu79NwtisVrUCAwEAAaNT&#xa;MFEwHQYDVR0OBBYEFDxcc9+OiExeUGXr8GW4QgyKFEW2MB8GA1UdIwQYMBaAFDxc&#xa;c9+OiExeUGXr8GW4QgyKFEW2MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEL&#xa;BQADggEBAIt8w+pLWhT1cbnVGIfrzNsomEZmrOmwrXtr7kDedmZ8rEEWm1xfwSJg&#xa;bjxil1DY6II/Mx+735lX8YOjGhEY7TbCILu9Y/ADTJJ2SoPoN8+mpow2qREZU4v8&#xa;29MZdxjpgu8XIOaG+Ey/y0363YFBvFZA2r+eaa3cl2HfEhgK+FY1V3wiGIytqGmn&#xa;vAHZGf6yqHWVz80KDJqjVr7KqLs8fE9TyUq/ZyALzQaNZmXmy1SVGr925yMCRNKB&#xa;tzywkBy38ImY5001Oy6rMm27hpsspUixpF5GxUJRRwstVvoyl7Z0NIYaDDRzHrvs&#xa;D0QNYd9rk+JXxcZSffNRxk1CNSj0fpM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="Agency LLC"><elem key="title">Agency LLC</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="http-generator" output="WordPress 7.0"/><script id="http-favicon" output="Unknown favicon MD5: 0E498D216ED846593E66FD1AE2979F5F"/><script id="http-server-header" output="Apache/2.4.58 (Ubuntu)"><elem>Apache/2.4.58 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="8001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="vcom-tunnel" method="table" conf="3"/></port>
+</ports>
+<times srtt="322525" rttvar="86265" to="667585"/>
+</host>
+<taskbegin task="NSE" time="1793007306"/>
+<taskend task="NSE" time="1793007306"/>
+<taskbegin task="NSE" time="1793007306"/>
+<taskend task="NSE" time="1793007306"/>
+<taskbegin task="NSE" time="1793007306"/>
+<taskend task="NSE" time="1793007306"/>
+<runstats><finished time="1793007306" timestr="Mon Oct 26 15:05:06 2026" summary="Nmap done at Mon Oct 26 15:05:06 2026; 1 IP address (1 host up) scanned in 50.38 seconds" elapsed="50.38" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

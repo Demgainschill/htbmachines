@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Mon Oct 26 15:04:16 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA makesense_results 10.129.246.24
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.246.24 (makesense.htb)	Status: Up
+Host: 10.129.246.24 (makesense.htb)	Ports: 22/open/tcp//ssh//OpenSSH 9.6p1 Ubuntu 3ubuntu13.16 (Ubuntu Linux; protocol 2.0)/, 80/filtered/tcp//http///, 443/open/tcp//ssl|http//Apache httpd 2.4.58 ((Ubuntu))/, 8001/filtered/tcp//vcom-tunnel///	Ignored State: closed (65531)
+# Nmap done at Mon Oct 26 15:05:06 2026 -- 1 IP address (1 host up) scanned in 50.38 seconds

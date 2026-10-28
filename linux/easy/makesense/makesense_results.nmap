@@ -1,0 +1,37 @@
+# Nmap 7.99 scan initiated Mon Oct 26 15:04:16 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA makesense_results 10.129.246.24
+Nmap scan report for makesense.htb (10.129.246.24)
+Host is up (0.32s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE    SERVICE     VERSION
+22/tcp   open     ssh         OpenSSH 9.6p1 Ubuntu 3ubuntu13.16 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 27:c3:7d:10:17:3b:dc:29:cf:05:83:33:ab:28:d0:38 (ECDSA)
+|_  256 a3:46:f2:d7:1f:43:41:31:35:a2:88:31:ff:2a:0b:22 (ED25519)
+80/tcp   filtered http
+443/tcp  open     ssl/http    Apache httpd 2.4.58 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_ssl-date: TLS randomness does not represent time
+|_http-trane-info: Problem with XML parsing of /evox/about
+| ssl-cert: Subject: commonName=makesense.htb
+| Issuer: commonName=makesense.htb
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-05-29T16:37:29
+| Not valid after:  2126-05-05T16:37:29
+| MD5:     137e 40f1 46c6 4920 684e 34dc 3a8e 8887
+| SHA-1:   a53c 8772 c319 515b 0b1d 42eb 2327 a5f7 1115 2a61
+|_SHA-256: 59e3 04ab 3225 c2f6 3984 c784 ad89 508d 0baf 8b57 357b 0b2e d597 21d9 5a5b ead5
+|_http-title: Agency LLC
+| tls-alpn: 
+|_  http/1.1
+|_http-generator: WordPress 7.0
+|_http-favicon: Unknown favicon MD5: 0E498D216ED846593E66FD1AE2979F5F
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+8001/tcp filtered vcom-tunnel
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 26 15:05:06 2026 -- 1 IP address (1 host up) scanned in 50.38 seconds
