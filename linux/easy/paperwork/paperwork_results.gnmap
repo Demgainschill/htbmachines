@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sat Oct 31 13:01:58 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA paperwork_results 10.129.64.56
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.64.56 (PRN-ARCHIVE-01.paperwork.htb)	Status: Up
+Host: 10.129.64.56 (PRN-ARCHIVE-01.paperwork.htb)	Ports: 22/open/tcp//ssh//OpenSSH 10.0p2 Ubuntu 5ubuntu5.4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.28.0 (Ubuntu)/, 1515/open/tcp//ifor-protocol?///, 8080/open/tcp//http//SimpleHTTPServer 0.6 (Python 3.13.7)/	Ignored State: closed (65531)
+# Nmap done at Sat Oct 31 13:03:10 2026 -- 1 IP address (1 host up) scanned in 71.15 seconds

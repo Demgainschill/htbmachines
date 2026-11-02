@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Fri Oct 30 09:57:30 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=5000 --open -oN bountyhunter_results_2.nmap 10.129.95.166
+Nmap scan report for 10.129.95.166
+Host is up (0.27s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Fri Oct 30 09:57:45 2026 -- 1 IP address (1 host up) scanned in 14.84 seconds

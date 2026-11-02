@@ -1,0 +1,23 @@
+# Nmap 7.99 scan initiated Sun Nov  1 08:47:05 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA codeparttwo_results 10.129.232.59
+Increasing send delay for 10.129.232.59 from 0 to 5 due to 907 out of 3021 dropped probes since last increase.
+Increasing send delay for 10.129.232.59 from 5 to 10 due to 1179 out of 3928 dropped probes since last increase.
+Warning: 10.129.232.59 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.129.232.59
+Host is up (0.26s latency).
+Not shown: 60379 closed tcp ports (reset), 5154 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 a0:47:b4:0c:69:67:93:3a:f9:b4:5d:b3:2f:bc:9e:23 (RSA)
+|   256 7d:44:3f:f1:b1:e2:bb:3d:91:d5:da:58:0f:51:e5:ad (ECDSA)
+|_  256 f1:6b:1d:36:18:06:7a:05:3f:07:57:e1:ef:86:b4:85 (ED25519)
+8000/tcp open  http    Gunicorn 20.0.4
+|_http-title: Welcome to CodePartTwo
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET
+|_http-server-header: gunicorn/20.0.4
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 08:48:44 2026 -- 1 IP address (1 host up) scanned in 99.00 seconds

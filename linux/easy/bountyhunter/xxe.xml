@@ -1,0 +1,7 @@
+<?xml  version="1.0" encoding="ISO-8859-1"?>
+		<bugreport>
+		<title>Title</title>
+		<cwe>CWE-698</cwe>
+		<cvss>6.8</cvss>
+		<reward>6000</reward>
+		</bugreport>

@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Fri Oct 30 09:57:11 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA bountyhunter_results 10.129.95.166
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.95.166 ()	Status: Up
+Host: 10.129.95.166 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/	Ignored State: closed (65533)
+# Nmap done at Fri Oct 30 09:57:41 2026 -- 1 IP address (1 host up) scanned in 30.25 seconds

@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Thu Oct 29 08:31:58 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA pilgrimage_results 10.129.63.205
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.63.205 ()	Status: Up
+Host: 10.129.63.205 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0/
+# Nmap done at Thu Oct 29 08:34:18 2026 -- 1 IP address (1 host up) scanned in 140.68 seconds

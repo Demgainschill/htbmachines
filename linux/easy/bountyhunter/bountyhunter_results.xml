@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Fri Oct 30 09:57:11 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA bountyhunter_results 10.129.95.166 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA bountyhunter_results 10.129.95.166" start="1793334431" startstr="Fri Oct 30 09:57:11 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1793334431"/>
+<taskend task="NSE" time="1793334431"/>
+<taskbegin task="NSE" time="1793334431"/>
+<taskend task="NSE" time="1793334431"/>
+<taskbegin task="NSE" time="1793334431"/>
+<taskend task="NSE" time="1793334431"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1793334431"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1793334431"/>
+<taskbegin task="SYN Stealth Scan" time="1793334431"/>
+<taskend task="SYN Stealth Scan" time="1793334452" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1793334452"/>
+<taskend task="Service scan" time="1793334458" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1793334458"/>
+<taskend task="NSE" time="1793334460"/>
+<taskbegin task="NSE" time="1793334460"/>
+<taskend task="NSE" time="1793334461"/>
+<taskbegin task="NSE" time="1793334461"/>
+<taskend task="NSE" time="1793334461"/>
+<host starttime="1793334431" endtime="1793334461"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.95.166" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="reset" count="65533" proto="tcp" ports="1-21,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 d4:4c:f5:79:9a:79:a3:b0:f1:66:25:52:c9:53:1f:e1 (RSA)&#xa;  256 a2:1e:67:61:8d:2f:7a:37:a7:ba:3b:51:08:e8:89:a6 (ECDSA)&#xa;  256 a5:75:16:d9:69:58:50:4a:14:11:7a:42:c1:b6:23:44 (ED25519)"><table>
+<elem key="fingerprint">d44cf5799a79a3b0f1662552c9531fe1</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDLosZOXFZWvSPhPmfUE7v+PjfXGErY0KCPmAWrTUkyyFWRFO3gwHQMQqQUIcuZHmH20xMb+mNC6xnX2TRmsyaufPXLmib9Wn0BtEYbVDlu2mOdxWfr+LIO8yvB+kg2Uqg+QHJf7SfTvdO606eBjF0uhTQ95wnJddm7WWVJlJMng7+/1NuLAAzfc0ei14XtyS1u6gDvCzXPR5xus8vfJNSp4n4B5m4GUPqI7odyXG2jK89STkoI5MhDOtzbrQydR0ZUg2PRd5TplgpmapDzMBYCIxH6BwYXFgSU3u3dSxPJnIrbizFVNIbc9ezkF39K+xJPbc9CTom8N59eiNubf63iDOck9yMH+YGk8HQof8ovp9FAT7ao5dfeb8gH9q9mRnuMOOQ9SxYwIxdtgg6mIYh4PRqHaSD5FuTZmsFzPfdnvmurDWDqdjPZ6/CsWAkrzENv45b0F04DFiKYNLwk8xaXLum66w61jz4Lwpko58Hh+m0i4bs25wTH1VDMkguJ1js=</elem>
+</table>
+<table>
+<elem key="fingerprint">a21e67618d2f7a37a7ba3b5108e889a6</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKlGEKJHQ/zTuLAvcemSaOeKfnvOC4s1Qou1E0o9Z0gWONGE1cVvgk1VxryZn7A0L1htGGQqmFe50002LfPQfmY=</elem>
+</table>
+<table>
+<elem key="fingerprint">a57516d96958504a14117a42c1b62344</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJeoMhM6lgQjk6hBf+Lw/sWR4b1h8AEiDv+HAbTNk4J3</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 556F31ACD686989B1AFCF382C05846AA"/><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Bounty Hunters"><elem key="title">Bounty Hunters</elem>
+</script></port>
+</ports>
+<times srtt="73490" rttvar="747" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1793334461"/>
+<taskend task="NSE" time="1793334461"/>
+<taskbegin task="NSE" time="1793334461"/>
+<taskend task="NSE" time="1793334461"/>
+<taskbegin task="NSE" time="1793334461"/>
+<taskend task="NSE" time="1793334461"/>
+<runstats><finished time="1793334461" timestr="Fri Oct 30 09:57:41 2026" summary="Nmap done at Fri Oct 30 09:57:41 2026; 1 IP address (1 host up) scanned in 30.25 seconds" elapsed="30.25" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

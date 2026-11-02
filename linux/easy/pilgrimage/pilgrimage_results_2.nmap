@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Thu Oct 29 08:34:52 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=5000 --open -oN pilgrimage_results_2.nmap 10.129.63.205
+Nmap scan report for 10.129.63.205
+Host is up (0.047s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Thu Oct 29 08:35:06 2026 -- 1 IP address (1 host up) scanned in 14.11 seconds

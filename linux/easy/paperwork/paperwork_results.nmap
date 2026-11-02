@@ -1,0 +1,26 @@
+# Nmap 7.99 scan initiated Sat Oct 31 13:01:58 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA paperwork_results 10.129.64.56
+Nmap scan report for PRN-ARCHIVE-01.paperwork.htb (10.129.64.56)
+Host is up (0.34s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE        VERSION
+22/tcp   open  ssh            OpenSSH 10.0p2 Ubuntu 5ubuntu5.4 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http           nginx 1.28.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: nginx/1.28.0 (Ubuntu)
+|_http-title: Did not follow redirect to http://paperwork.htb/
+1515/tcp open  ifor-protocol?
+| fingerprint-strings: 
+|   TerminalServer, TerminalServerCookie: 
+|_    Archive_Printer is ready and printing.
+8080/tcp open  http           SimpleHTTPServer 0.6 (Python 3.13.7)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1515-TCP:V=7.99%I=7%D=10/31%Time=6AE5998E%P=x86_64-pc-linux-gnu%r(T
+SF:erminalServerCookie,27,"Archive_Printer\x20is\x20ready\x20and\x20printi
+SF:ng\.\n")%r(TerminalServer,27,"Archive_Printer\x20is\x20ready\x20and\x20
+SF:printing\.\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 31 13:03:10 2026 -- 1 IP address (1 host up) scanned in 71.15 seconds
