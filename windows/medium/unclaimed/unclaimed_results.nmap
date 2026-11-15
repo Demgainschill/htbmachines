@@ -1,0 +1,42 @@
+# Nmap 7.99 scan initiated Fri Nov 13 19:32:04 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA unclaimed_results 10.129.69.116
+Increasing send delay for 10.129.69.116 from 0 to 5 due to 426 out of 1418 dropped probes since last increase.
+Increasing send delay for 10.129.69.116 from 5 to 10 due to 94 out of 312 dropped probes since last increase.
+Increasing send delay for 10.129.69.116 from 10 to 20 due to 88 out of 293 dropped probes since last increase.
+Increasing send delay for 10.129.69.116 from 40 to 80 due to 80 out of 265 dropped probes since last increase.
+Increasing send delay for 10.129.69.116 from 80 to 160 due to 166 out of 553 dropped probes since last increase.
+Increasing send delay for 10.129.69.116 from 160 to 320 due to 100 out of 333 dropped probes since last increase.
+Increasing send delay for 10.129.69.116 from 320 to 640 due to 88 out of 292 dropped probes since last increase.
+Warning: 10.129.69.116 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.129.69.116
+Host is up (0.084s latency).
+Not shown: 65429 closed tcp ports (reset), 95 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Did not follow redirect to http://unclaimed.htb/
+|_http-server-header: Microsoft-HTTPAPI/2.0
+| http-methods: 
+|_  Supported Methods: HEAD POST OPTIONS
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds?
+5040/tcp  open  unknown
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  msrpc         Microsoft Windows RPC
+49670/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-11-13T14:02:29
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: -1m26s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov 13 19:34:08 2026 -- 1 IP address (1 host up) scanned in 123.41 seconds

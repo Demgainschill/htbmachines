@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Wed Nov  4 10:06:59 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA pov_results 10.129.65.197 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA pov_results 10.129.65.197" start="1793767019" startstr="Wed Nov  4 10:06:59 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1793767019"/>
+<taskend task="NSE" time="1793767019"/>
+<taskbegin task="NSE" time="1793767019"/>
+<taskend task="NSE" time="1793767019"/>
+<taskbegin task="NSE" time="1793767019"/>
+<taskend task="NSE" time="1793767019"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1793767019"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1793767019"/>
+<taskbegin task="SYN Stealth Scan" time="1793767019"/>
+<taskend task="SYN Stealth Scan" time="1793767052" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1793767053"/>
+<taskend task="Service scan" time="1793767059" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1793767059"/>
+<taskend task="NSE" time="1793767064"/>
+<taskbegin task="NSE" time="1793767064"/>
+<taskend task="NSE" time="1793767065"/>
+<taskbegin task="NSE" time="1793767065"/>
+<taskend task="NSE" time="1793767065"/>
+<host starttime="1793767019" endtime="1793767065"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.65.197" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-response" count="65534" proto="tcp" ports="1-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-favicon" output="Unknown favicon MD5: E9B5E66DEBD9405ED864CAC17E2A888E"/><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="pov.htb"><elem key="title">pov.htb</elem>
+</script></port>
+</ports>
+<times srtt="57377" rttvar="21076" to="141681"/>
+</host>
+<taskbegin task="NSE" time="1793767065"/>
+<taskend task="NSE" time="1793767065"/>
+<taskbegin task="NSE" time="1793767065"/>
+<taskend task="NSE" time="1793767065"/>
+<taskbegin task="NSE" time="1793767065"/>
+<taskend task="NSE" time="1793767065"/>
+<runstats><finished time="1793767065" timestr="Wed Nov  4 10:07:45 2026" summary="Nmap done at Wed Nov  4 10:07:45 2026; 1 IP address (1 host up) scanned in 45.83 seconds" elapsed="45.83" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Mon Nov  9 10:33:19 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA admirer_results 10.129.229.101 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sV -sC -p- -v -&#45;min-rate=4000 -oA admirer_results 10.129.229.101" start="1794200599" startstr="Mon Nov  9 10:33:19 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1794200599"/>
+<taskend task="NSE" time="1794200599"/>
+<taskbegin task="NSE" time="1794200599"/>
+<taskend task="NSE" time="1794200599"/>
+<taskbegin task="NSE" time="1794200599"/>
+<taskend task="NSE" time="1794200599"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1794200599"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1794200599"/>
+<taskbegin task="SYN Stealth Scan" time="1794200599"/>
+<taskend task="SYN Stealth Scan" time="1794200612" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1794200612"/>
+<taskend task="Service scan" time="1794200619" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1794200619"/>
+<taskprogress task="NSE" time="1794200619" percent="92.54" remaining="0" etc="1794200619"/>
+<taskprogress task="NSE" time="1794200620" percent="96.27" remaining="1" etc="1794200620"/>
+<taskend task="NSE" time="1794200632"/>
+<taskbegin task="NSE" time="1794200632"/>
+<taskend task="NSE" time="1794200638"/>
+<taskbegin task="NSE" time="1794200638"/>
+<taskend task="NSE" time="1794200638"/>
+<host starttime="1794200599" endtime="1794200638"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.229.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="reset" count="65532" proto="tcp" ports="1-20,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u7" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 4a:71:e9:21:63:69:9d:cb:dd:84:02:1a:23:97:e1:b9 (RSA)&#xa;  256 c5:95:b6:21:4d:46:a4:25:55:7a:87:3e:19:a8:e7:02 (ECDSA)&#xa;  256 d0:2d:dd:d0:5c:42:f8:7b:31:5a:be:57:c4:a9:a7:56 (ED25519)"><table>
+<elem key="fingerprint">4a71e92163699dcbdd84021a2397e1b9</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDaQHjxkc8zeXPgI5C7066uFJaB6EjvTGDEwbfl0cwM95npP9G8icv1F/YQgKxqqcGzl+pVaAybRnQxiZkrZHbnJlMzUzNTxxI5cy+7W0dRZN4VH4YjkXFrZRw6dx/5L1wP4qLtdQ0tLHmgzwJZO+111mrAGXMt0G+SCnQ30U7vp95EtIC0gbiGDx0dDVgMeg43+LkzWG+Nj+mQ5KCQBjDLFaZXwCp5Pqfrpf3AmERjoFHIE8Df4QO3lKT9Ov1HWcnfFuqSH/pl5+m83ecQGS1uxAaokNfn9Nkg12dZP1JSk+Tt28VrpOZDKhVvAQhXWONMTyuRJmVg/hnrSfxTwbM9</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">c595b6214d46a425557a873e19a8e702</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNHgxoAB6NHTQnBo+/MqdfMsEet9jVzP94okTOAWWMpWkWkT+X4EEWRzlxZKwb/dnt99LS8WNZkR0P9HQxMcIII=</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">d02dddd05c42f87b315abe57c4a9a756</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIBqp21lADoWZ+184z0m9zCpORbmmngq+h498H9JVf7kP</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/admin-dir"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Admirer"><elem key="title">Admirer</elem>
+</script><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script></port>
+</ports>
+<times srtt="186192" rttvar="139036" to="742336"/>
+</host>
+<taskbegin task="NSE" time="1794200638"/>
+<taskend task="NSE" time="1794200638"/>
+<taskbegin task="NSE" time="1794200638"/>
+<taskend task="NSE" time="1794200638"/>
+<taskbegin task="NSE" time="1794200638"/>
+<taskend task="NSE" time="1794200638"/>
+<runstats><finished time="1794200638" timestr="Mon Nov  9 10:33:58 2026" summary="Nmap done at Mon Nov  9 10:33:58 2026; 1 IP address (1 host up) scanned in 38.83 seconds" elapsed="38.83" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

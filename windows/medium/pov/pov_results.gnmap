@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Wed Nov  4 10:06:59 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA pov_results 10.129.65.197
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.65.197 ()	Status: Up
+Host: 10.129.65.197 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/	Ignored State: filtered (65534)
+# Nmap done at Wed Nov  4 10:07:45 2026 -- 1 IP address (1 host up) scanned in 45.83 seconds

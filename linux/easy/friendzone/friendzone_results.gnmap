@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Mon Nov  2 10:48:20 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA friendzone_results 10.129.65.43
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.65.43 ()	Status: Up
+Host: 10.129.65.43 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 53/open/tcp//domain//ISC BIND 9.11.3-1ubuntu1.2 (Ubuntu Linux)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 443/open/tcp//ssl|http//Apache httpd 2.4.29/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)/	Ignored State: closed (65528)
+# Nmap done at Mon Nov  2 10:49:03 2026 -- 1 IP address (1 host up) scanned in 42.93 seconds

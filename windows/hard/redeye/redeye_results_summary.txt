@@ -1,0 +1,57 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.245.51
+Output Name   : redeye_results
+Date          : 2026-11-15 12:30:10
+Interface     : tun0
+Rate          : 5000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+22 80 3000 
+
+[*] Nmap #2 Ports:
+22 80 3000 
+
+[*] Nmap #3 Ports:
+22 80 3000 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 22/tcp open ssh
+  → 80/tcp open http
+  → 3000/tcp open ppp
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+22,80,3000
+
+==============================================
+ FILES GENERATED
+==============================================
+  • redeye_results_1.nmap
+  • redeye_results_2.nmap
+  • redeye_results_3.nmap
+  • redeye_results_summary.txt  ← this file
+==============================================

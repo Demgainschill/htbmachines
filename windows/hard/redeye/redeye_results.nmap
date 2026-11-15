@@ -1,0 +1,19 @@
+# Nmap 7.99 scan initiated Sun Nov 15 12:33:49 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA redeye_results 10.129.245.51
+Nmap scan report for geo.airways.htb (10.129.245.51)
+Host is up (0.14s latency).
+Not shown: 65531 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 10.0p2 Debian 7+deb13u4 (protocol 2.0)
+80/tcp   open  http    nginx
+|_http-title: Starting up\xE2\x80\xA6
+443/tcp  open  https?
+3000/tcp open  http    nginx
+| http-title: Rocket.Chat
+|_Requested resource was https://geo.airways.htb:3000/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 15 12:34:54 2026 -- 1 IP address (1 host up) scanned in 65.32 seconds

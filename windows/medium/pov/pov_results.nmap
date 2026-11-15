@@ -1,0 +1,17 @@
+# Nmap 7.99 scan initiated Wed Nov  4 10:06:59 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA pov_results 10.129.65.197
+Nmap scan report for 10.129.65.197
+Host is up (0.057s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 10.0
+|_http-favicon: Unknown favicon MD5: E9B5E66DEBD9405ED864CAC17E2A888E
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: pov.htb
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov  4 10:07:45 2026 -- 1 IP address (1 host up) scanned in 45.83 seconds

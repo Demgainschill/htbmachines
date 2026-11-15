@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Fri Nov 13 19:32:04 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA unclaimed_results 10.129.69.116
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.69.116 ()	Status: Up
+Host: 10.129.69.116 ()	Ports: 80/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///, 5040/open/tcp/////, 49664/open/tcp//msrpc//Microsoft Windows RPC/, 49665/open/tcp//msrpc//Microsoft Windows RPC/, 49666/open/tcp//msrpc//Microsoft Windows RPC/, 49667/open/tcp//msrpc//Microsoft Windows RPC/, 49669/open/tcp//msrpc//Microsoft Windows RPC/, 49670/open/tcp//msrpc//Microsoft Windows RPC/
+# Nmap done at Fri Nov 13 19:34:08 2026 -- 1 IP address (1 host up) scanned in 123.41 seconds

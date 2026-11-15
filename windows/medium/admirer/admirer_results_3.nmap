@@ -1,0 +1,11 @@
+# Nmap 7.99 scan initiated Mon Nov  9 14:52:19 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=5000 --open -oN admirer_results_3.nmap 10.129.229.101
+Nmap scan report for 10.129.229.101
+Host is up (0.077s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Mon Nov  9 14:52:35 2026 -- 1 IP address (1 host up) scanned in 15.48 seconds

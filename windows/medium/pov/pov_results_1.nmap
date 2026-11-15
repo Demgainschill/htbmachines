@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Wed Nov  4 10:06:46 2026 as: /usr/lib/nmap/nmap -Pn -p- -v --min-rate=5000 --open -oN pov_results_1.nmap 10.129.65.197
+Nmap scan report for 10.129.65.197
+Host is up (0.072s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Nov  4 10:07:13 2026 -- 1 IP address (1 host up) scanned in 27.00 seconds

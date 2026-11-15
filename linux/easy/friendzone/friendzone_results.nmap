@@ -1,0 +1,73 @@
+# Nmap 7.99 scan initiated Mon Nov  2 10:48:20 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- -v --min-rate=4000 -oA friendzone_results 10.129.65.43
+Increasing send delay for 10.129.65.43 from 0 to 5 due to 959 out of 3196 dropped probes since last increase.
+Nmap scan report for 10.129.65.43
+Host is up (0.44s latency).
+Not shown: 65528 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         vsftpd 3.0.3
+22/tcp  open  ssh         OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a9:68:24:bc:97:1f:1e:54:a5:80:45:e7:4c:d9:aa:a0 (RSA)
+|   256 e5:44:01:46:ee:7a:bb:7c:e9:1a:cb:14:99:9e:2b:8e (ECDSA)
+|_  256 00:4e:1a:4f:33:e8:a0:de:86:a6:e4:2a:5f:84:61:2b (ED25519)
+53/tcp  open  domain      ISC BIND 9.11.3-1ubuntu1.2 (Ubuntu Linux)
+| dns-nsid: 
+|_  bind.version: 9.11.3-1ubuntu1.2-Ubuntu
+80/tcp  open  http        Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-title: Friend Zone Escape software
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+443/tcp open  ssl/http    Apache httpd 2.4.29
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_ssl-date: TLS randomness does not represent time
+|_http-title: 404 Not Found
+| ssl-cert: Subject: commonName=friendzone.red/organizationName=CODERED/stateOrProvinceName=CODERED/countryName=JO
+| Issuer: commonName=friendzone.red/organizationName=CODERED/stateOrProvinceName=CODERED/countryName=JO
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-10-05T21:02:30
+| Not valid after:  2018-11-04T21:02:30
+| MD5:     c144 1868 5e8b 468d fc7d 888b 1123 781c
+| SHA-1:   88d2 e8ee 1c2c dbd3 ea55 2e5e cdd4 e94c 4c8b 9233
+|_SHA-256: 0b5b 4eed 552a 37d8 2cc9 abe8 0d53 8cd0 cb39 d5cc a678 36fe 2cf9 725d f180 97d8
+445/tcp open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+Service Info: Hosts: FRIENDZONE, 127.0.1.1; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: -41m19s, deviation: 1h09m16s, median: -1m20s
+| smb2-time: 
+|   date: 2026-11-02T05:17:35
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: friendzone
+|   NetBIOS computer name: FRIENDZONE\x00
+|   Domain name: \x00
+|   FQDN: friendzone
+|_  System time: 2026-11-02T07:17:35+02:00
+| nbstat: NetBIOS name: FRIENDZONE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   FRIENDZONE<00>       Flags: <unique><active>
+|   FRIENDZONE<03>       Flags: <unique><active>
+|   FRIENDZONE<20>       Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov  2 10:49:03 2026 -- 1 IP address (1 host up) scanned in 42.93 seconds

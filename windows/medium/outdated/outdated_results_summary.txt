@@ -1,0 +1,75 @@
+==============================================
+ MASSMAP - PORT SCAN COMPARISON SUMMARY
+==============================================
+Target        : 10.129.229.239
+Output Name   : outdated_results
+Date          : 2026-11-07 01:48:36
+Interface     : tun0
+Rate          : 5000
+Nmap scans    : 3
+Mode          : Nmap only (3 scans)
+Service scan  : No (port discovery only)
+UDP scan      : No
+==============================================
+
+[*] Masscan Ports:
+None
+
+[*] Nmap #1 Ports:
+25 53 88 135 139 389 445 464 593 636 3268 3269 5985 8530 8531 9389 49667 49689 49690 49927 49959 
+
+[*] Nmap #2 Ports:
+25 53 88 135 139 389 445 464 593 636 3268 3269 5985 8530 8531 9389 49667 49689 49690 49927 49959 
+
+[*] Nmap #3 Ports:
+25 53 88 135 139 389 445 464 593 636 3268 3269 5985 8530 8531 9389 49667 49689 49690 49927 49959 
+
+----------- CHANGES / DIFFERENCES -----------
+
+[+] Newly appeared as OPEN in the final Nmap scan:
+None
+
+[+] Only found by Masscan:
+None
+
+[+] Flapping / disappeared in final scan:
+None
+
+==============================================
+ FINAL CONFIRMED OPEN PORTS (≥ 2 scanners)
+==============================================
+  → 25/tcp open smtp
+  → 53/tcp open domain
+  → 88/tcp open kerberos-sec
+  → 135/tcp open msrpc
+  → 139/tcp open netbios-ssn
+  → 389/tcp open ldap
+  → 445/tcp open microsoft-ds
+  → 464/tcp open kpasswd5
+  → 593/tcp open http-rpc-epmap
+  → 636/tcp open ldapssl
+  → 3268/tcp open globalcatLDAP
+  → 3269/tcp open globalcatLDAPssl
+  → 5985/tcp open wsman
+  → 8530/tcp open unknown
+  → 8531/tcp open unknown
+  → 9389/tcp open adws
+  → 49667/tcp open unknown
+  → 49689/tcp open unknown
+  → 49690/tcp open unknown
+  → 49927/tcp open unknown
+  → 49959/tcp open unknown
+
+==============================================
+ RECOMMENDED PORTS FOR FURTHER ENUMERATION
+==============================================
+25,53,88,135,139,389,445,464,593,636,3268,3269,5985,8530,8531,9389,49667,49689,49690,49927,49959
+
+==============================================
+ FILES GENERATED
+==============================================
+  • outdated_results_1.nmap
+  • outdated_results_2.nmap
+  • outdated_results_3.nmap
+  • outdated_results_summary.txt  ← this file
+==============================================
