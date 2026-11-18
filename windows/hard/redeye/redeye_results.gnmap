@@ -1,5 +1,5 @@
-# Nmap 7.99 scan initiated Sun Nov 15 12:33:49 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA redeye_results 10.129.245.51
+# Nmap 7.99 scan initiated Wed Nov 18 20:53:22 2026 as: /usr/lib/nmap/nmap -sV -sC -p- -v --min-rate=4000 -oA redeye_results 10.129.71.100
 # Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 10.129.245.51 (geo.airways.htb)	Status: Up
-Host: 10.129.245.51 (geo.airways.htb)	Ports: 22/open/tcp//ssh//OpenSSH 10.0p2 Debian 7+deb13u4 (protocol 2.0)/, 80/open/tcp//http//nginx/, 443/open/tcp//https?///, 3000/open/tcp//http//nginx/	Ignored State: filtered (65531)
-# Nmap done at Sun Nov 15 12:34:54 2026 -- 1 IP address (1 host up) scanned in 65.32 seconds
+Host: 10.129.71.100 (geo.airways.htb)	Status: Up
+Host: 10.129.71.100 (geo.airways.htb)	Ports: 22/open/tcp//ssh//OpenSSH 10.0p2 Debian 7+deb13u4 (protocol 2.0)/, 80/open/tcp//http//nginx/, 443/open/tcp//https?///, 3000/open/tcp//http//nginx/	Ignored State: filtered (65531)
+# Nmap done at Wed Nov 18 20:54:23 2026 -- 1 IP address (1 host up) scanned in 60.97 seconds

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<wps:Capabilities version="1.0.0">
+  <wps:ProcessOfferings>
+    <wps:Process wps:processVersion="1.0">
+      <ows:Identifier>test</ows:Identifier>
+      <ows:Title>SSRF Test</ows:Title>
+    </wps:Process>
+  </wps:ProcessOfferings>
+</wps:Capabilities>
